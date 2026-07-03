@@ -1,0 +1,35 @@
+/* GENERATED FROM config/tokens.json — DO NOT EDIT */
+/* PLACEHOLDER: hand-mirrored from the harness's config/tokens.json so the site
+   builds standalone. `harness tokens build` overwrites this file with the real
+   generated output; the header line above exempts it from the hex lint. */
+:root {
+	color-scheme: dark;
+
+	/* palette */
+	--color-bg: #0c1022;
+	--color-surface: #171d33;
+	--color-text: #f4efe6;
+	--color-brand-mint: #54e6b4;
+	--color-brand-rose: #ff7aa2;
+	--color-brand-periwinkle: #8b9dff;
+
+	/* semantic data series — one color, one job, everywhere */
+	--color-data-observed: #8fa3ff;
+	--color-data-params: #c79bf2;
+	--color-data-truth: #f4efe6;
+	--color-data-heat: #ffc46b;
+	--color-data-fit: #54e6b4;
+	--color-data-error: #ff7aa2;
+
+	/* type */
+	--font-heading: 'Bricolage Grotesque';
+	--font-body: 'Literata';
+	--font-mono: 'IBM Plex Mono';
+
+	/* motion */
+	--motion-ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+	--motion-wobble-max: 2px;
+	--motion-min-duration: 150ms;
+	--motion-true-up: 800ms;
+	--motion-dramatic-min: 1500ms;
+}
