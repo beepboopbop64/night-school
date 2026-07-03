@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.svelte-kit/
+.env
+.env.*
+*.log
+__pycache__/
+.venv/
+
+# Rendered video is never committed — hosting is decision D-O1 (see ARCHITECTURE.md §12)
+sessions/*/media/
+sessions/*/video/audio/
+sessions/*/video/out/
+
+# Manim partial-render caches
+**/media/Tex/
+**/media/texts/
+**/media/videos/
