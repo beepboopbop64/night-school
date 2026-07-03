@@ -1,0 +1,8 @@
+# Deterministic line endings everywhere (Windows dev + windows-latest CI):
+# generated token files (tokens.css, colors.py) are written LF by the harness
+# and must stay byte-stable across checkouts.
+* text=auto eol=lf
+*.png binary
+*.mp3 binary
+*.mp4 binary
+*.ipynb text eol=lf

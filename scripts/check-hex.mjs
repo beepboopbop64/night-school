@@ -11,7 +11,9 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 const SCAN_EXTS = new Set(['.ts', '.js', '.mjs', '.svelte', '.css', '.py', '.yaml', '.yml']);
-const SKIP_DIRS = new Set(['node_modules', '.git', 'dist', '.svelte-kit']);
+// 'docs' matches the harness linter's exclusion semantics (session dirs use
+// singular 'doc/', which IS scanned).
+const SKIP_DIRS = new Set(['node_modules', '.git', 'dist', '.svelte-kit', 'docs']);
 const GENERATED_MARKER = 'GENERATED FROM config/tokens.json — DO NOT EDIT';
 
 // #RGB, #RGBA, #RRGGBB, #RRGGBBAA — longest alternative first; \b rejects
