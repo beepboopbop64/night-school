@@ -1,4 +1,6 @@
 # Storyboard: attention (S3, schema v2). The Director's per-beat contract.
+# LOCKED 2026-07-04 at table-read round 4: zero blocking verdicts from
+# Sam/Petra/Vera (verdict history in state/table-read/round-{1..4}/).
 # Source of truth upstream: spine.md (locked beats, metaphor registry, color
 # assignments) and treatment.md (merged, S2 final). Narration here matches
 # script.md exactly; the script adds the [visual:] cue timeline per beat.
