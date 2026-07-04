@@ -13,3 +13,7 @@
 {"ts":"2026-07-04T18:28:43.288Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"artifact_written","data":{"path":"media/scene_01.mp4","renderWallMs":23436,"videoSeconds":52.466667}}
 {"ts":"2026-07-04T18:28:43.294Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"gate_result","data":{"passed":true,"checks":[{"id":"scene.mp4-rendered","pass":true}]}}
 {"ts":"2026-07-04T18:28:43.296Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"node_completed","data":{"costUsd":0,"durationMs":23549}}
+{"ts":"2026-07-04T18:28:43.595Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"commit","data":{"sha":"5eb395d10fb7b6120c612b928301d50a3962963d"}}
+{"ts":"2026-07-04T18:28:43.598Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:28:43.616Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"gate_result","data":{"passed":true,"checks":[{"id":"web.section-written","pass":true},{"id":"web.interactive-written","pass":true}]}}
+{"ts":"2026-07-04T18:28:43.618Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"node_completed","data":{"costUsd":0,"durationMs":6}}

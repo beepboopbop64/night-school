@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "node": "web-section",
+  "inputs": [
+    {
+      "path": "storyboard.yaml",
+      "sha256": "1d23f840dfa7ab7ac9382bf988d24ed0101c1319dd18f30709ebec612c98564f"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "page/sections/beat-01.md",
+      "sha256": "28523238473ec9cd1c3f37f12ec35a97fe262256cc3b9eb8310c235cabae3f61"
+    },
+    {
+      "path": "page/interactives/ToySlider.svelte",
+      "sha256": "044950378aa026936b8241e680b906b1ef166d1cb57b58bfc68f04c8ad567dd9"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "web.section-written",
+        "pass": true
+      },
+      {
+        "id": "web.interactive-written",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:28:43.596Z",
+  "endedAt": "2026-07-04T18:28:43.602Z",
+  "transcript": "",
+  "promptSha": ""
+}
