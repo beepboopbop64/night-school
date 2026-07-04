@@ -86,3 +86,4 @@
 {"ts":"2026-07-04T18:48:35.747Z","runId":"run-2026-07-04T1848-8e2b4c","node":"sdk-smoke","agent":"sdk-smoke","event":"agent_call","data":{"model":"claude-haiku-4-5","costUsd":0.000819,"response":"ok"}}
 {"ts":"2026-07-04T18:48:35.749Z","runId":"run-2026-07-04T1848-8e2b4c","node":"sdk-smoke","event":"gate_result","data":{"passed":true,"checks":[{"id":"sdk.auth","pass":true}]}}
 {"ts":"2026-07-04T18:48:35.750Z","runId":"run-2026-07-04T1848-8e2b4c","node":"sdk-smoke","event":"node_completed","data":{"costUsd":0.000819,"durationMs":2872}}
+{"ts":"2026-07-04T18:48:36.046Z","runId":"run-2026-07-04T1848-8e2b4c","node":"sdk-smoke","event":"commit","data":{"sha":"9c6334bfde3b7124aa057f8c275108fca17bd774"}}
