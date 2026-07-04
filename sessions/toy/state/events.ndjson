@@ -25,3 +25,18 @@
 {"ts":"2026-07-04T17:59:35.950Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T17:59:35.953Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.ran","pass":true}]}}
 {"ts":"2026-07-04T17:59:35.954Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
+{"ts":"2026-07-04T17:59:36.168Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"commit","data":{"sha":"261fba8396087bb4dab39c179419cc4c445ab63f"}}
+{"ts":"2026-07-04T17:59:36.169Z","runId":"run-2026-07-04T1759-c6c2c2","node":"sdk-smoke","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:38.159Z","runId":"run-2026-07-04T1759-c6c2c2","node":"sdk-smoke","event":"needs_jake","data":{"reason":"Claude Code returned an error result: Not logged in · Please run /login"}}
+{"ts":"2026-07-04T18:02:21.931Z","runId":"run-2026-07-04T1802-2f46fd","node":"brief","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.933Z","runId":"run-2026-07-04T1802-2f46fd","node":"storyboard","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.934Z","runId":"run-2026-07-04T1802-2f46fd","node":"scene-render","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.935Z","runId":"run-2026-07-04T1802-2f46fd","node":"web-section","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.936Z","runId":"run-2026-07-04T1802-2f46fd","node":"tts","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.939Z","runId":"run-2026-07-04T1802-2f46fd","node":"assemble","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.940Z","runId":"run-2026-07-04T1802-2f46fd","node":"packet","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:02:21.941Z","runId":"run-2026-07-04T1802-2f46fd","node":"sdk-smoke","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:02:23.284Z","runId":"run-2026-07-04T1802-2f46fd","node":"sdk-smoke","event":"needs_jake","data":{"reason":"Claude Code returned an error result: Not logged in · Please run /login"}}
+{"ts":"2026-07-04T18:02:33.427Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:02:33.438Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.ran","pass":true}]}}
+{"ts":"2026-07-04T18:02:33.440Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":5}}

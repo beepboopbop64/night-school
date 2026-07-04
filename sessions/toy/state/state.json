@@ -7,49 +7,55 @@
   "nodes": {
     "brief": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/brief.receipt.json"
     },
     "storyboard": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/storyboard.receipt.json"
     },
     "scene-render": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/scene-render.receipt.json"
     },
     "web-section": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/web-section.receipt.json"
     },
     "tts": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/tts.receipt.json"
     },
     "assemble": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/assemble.receipt.json"
     },
     "packet": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/packet.receipt.json"
     },
     "sdk-smoke": {
-      "status": "pending"
+      "status": "flagged"
     }
   },
-  "needsJake": []
+  "needsJake": [
+    {
+      "node": "sdk-smoke",
+      "reason": "Claude Code returned an error result: Not logged in · Please run /login",
+      "since": "2026-07-04T18:02:23.284Z"
+    }
+  ]
 }
