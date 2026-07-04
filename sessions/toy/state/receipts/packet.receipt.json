@@ -4,7 +4,7 @@
   "inputs": [
     {
       "path": "manifest.yaml",
-      "sha256": "6e9ce66b5b5faab51185a2cb20b6648ae9400f2f9e1a6e4e0de064a7e9c01a76"
+      "sha256": "048a6bee1a0e58197866cf6093fc907152283c08fe1f7dfccfb808f4c41049ac"
     },
     {
       "path": "page/sections/beat-01.md",
@@ -26,7 +26,7 @@
     },
     {
       "path": "rounds/round-01/flags.md",
-      "sha256": "519a08b150166c240417d73ddae4eb31c9dfbc080bea055a2776c41d931447fb"
+      "sha256": "9fed303d1f0fc89d4e968d0edabc9ba438036f275c2d07af3e5447aa1222375b"
     }
   ],
   "gate": {
@@ -45,11 +45,11 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-04T18:28:45.224Z",
-  "endedAt": "2026-07-04T18:28:52.283Z",
+  "startedAt": "2026-07-04T18:34:10.542Z",
+  "endedAt": "2026-07-04T18:34:15.767Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "siteBuildMs": 7037
+    "siteBuildMs": 5220
   }
 }

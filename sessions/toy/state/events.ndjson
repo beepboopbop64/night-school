@@ -44,3 +44,7 @@
 {"ts":"2026-07-04T18:34:09.880Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"node_started","data":{"reason":"input-changed:video/audio/beat-01.mp3"}}
 {"ts":"2026-07-04T18:34:10.293Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.mux-video-stream","pass":true},{"id":"assemble.mux-audio-stream","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
 {"ts":"2026-07-04T18:34:10.294Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"node_completed","data":{"costUsd":0,"durationMs":407}}
+{"ts":"2026-07-04T18:34:10.541Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"commit","data":{"sha":"9c767dd7dfe6ca919f340aba542ccfbe101763bb"}}
+{"ts":"2026-07-04T18:34:10.543Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"node_started","data":{"reason":"input-changed:manifest.yaml"}}
+{"ts":"2026-07-04T18:34:15.770Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.site-built","pass":true},{"id":"packet.session-page-in-dist","pass":true}]}}
+{"ts":"2026-07-04T18:34:15.771Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"node_completed","data":{"costUsd":0,"durationMs":5225}}
