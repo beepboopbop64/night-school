@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber query vector is the clear focus by brightness and centrality, with periwinkle keys and lilac score bars as supporting context that covary with it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Only the query, four keys, and their score bars are present — a single coherent system, not five competing novel ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "q sits on the amber arrow, k1..k4 sit at their vector tips, and each score bar has its key name directly above it; no legend or swatch key exists.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only text is the instruction 'Turn q until it lines up with a key.', object labels, the q-degree readout, and the numeric dot-product readouts under each bar — all annotating visible referents.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels, the q-degree readout, and the mono numeric readouts are all comfortably legible at all three viewport widths including 375px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The circle diagram, all vectors, bars, and readouts sit fully inside the frame with margins at 375, 768, and 1280 px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "In aligned-with-k1-1280 the 'q' label and the 'k1' label overlap into an illegible 'kq1' cluster because the query is directly on top of k1.",
+    "suggestion": "When the query aligns with a key, offset the q label above or below so it never collides with the key's label."
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The query is amber (attention/heat), the keys are periwinkle (observed), and the score bars are lilac (parameters), consistent across all frames with no concept switching color.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — vectors, tips, labels, bars, readouts, and the unit circle — carries propositional content; no mascots or ornaments appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Query direction and score height covary readably from stills: at 90deg k2/k3 lead at 0.94, at 30deg k1 leads at 0.98, at 20deg k1 peaks at 1.00, and at 200deg k1 bottoms at -1.00.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each numeric readout and its bar sit under a matching key name, and vectors carry their labels at their tips.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across the driven states the query sweeps continuously and bars rise and fall smoothly, reading as a morph rather than cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Generous negative space surrounds the circle and bar row, with a clear top-to-bottom reading order at all widths.",
+    "suggestion": ""
+  }
+]

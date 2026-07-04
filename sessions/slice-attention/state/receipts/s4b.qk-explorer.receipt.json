@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "node": "s4b.qk-explorer",
+  "inputs": [
+    {
+      "path": "interactive.yaml",
+      "sha256": "27be8bbc0194abba9139a5b22c451482998ccb2f457c7cd7da7446413ee4511f"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "page/interactives/QkExplorer.svelte",
+      "sha256": "b47b1327ad77ef8529dc0d12f0b42beeabec0f3ed640378f60c7003cb164a547"
+    },
+    {
+      "path": "../../site/src/routes/dev/slice-attention/qk-explorer/+page.svelte",
+      "sha256": "b82654ba7bc021ede020c8b80681b4f058853b0b3df64d0d468fce2740713a19"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "weba11y.clean",
+        "pass": true
+      },
+      {
+        "id": "iris.pass",
+        "pass": true,
+        "iter": 2
+      }
+    ]
+  },
+  "iterations": 2,
+  "costUsd": 1.27,
+  "tier": "opus",
+  "startedAt": "2026-07-04T21:26:07.705Z",
+  "endedAt": "2026-07-04T21:35:47.750Z",
+  "transcript": "state/dailies/webslice-2026-07-04T2126-7606e4",
+  "promptSha": "2fdf04bacd0ba2641eb2716b3302ca578c5354698bf3e724d6393620f1436d61",
+  "meta": {
+    "runId": "webslice-2026-07-04T2126-7606e4",
+    "coderModel": "claude-sonnet-5",
+    "widths": [
+      375,
+      768,
+      1280
+    ],
+    "states": [
+      "initial",
+      "mid-drag",
+      "aligned-with-k1",
+      "anti-aligned"
+    ],
+    "perIteration": [
+      {
+        "iter": 1,
+        "outcome": "iris-failed",
+        "coderCostUsd": 0.7174956,
+        "irisCostUsd": 0.195178,
+        "wallMs": 437078,
+        "fingerprints": [
+          "iris:V7"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 2,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.16409369999999995,
+        "irisCostUsd": 0.192363,
+        "wallMs": 142958,
+        "fingerprints": [],
+        "replanWasForced": false
+      }
+    ]
+  }
+}

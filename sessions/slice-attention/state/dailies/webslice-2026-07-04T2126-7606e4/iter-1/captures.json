@@ -1,0 +1,74 @@
+[
+  {
+    "stateId": "initial",
+    "width": 375,
+    "frame": "initial-375.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 90 deg\n\nk1\n0.34\nk2\n0.94\nk3\n0.94\nk4\n0.34"
+  },
+  {
+    "stateId": "mid-drag",
+    "width": 375,
+    "frame": "mid-drag-375.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 30 deg\n\nk1\n0.98\nk2\n0.77\nk3\n0.17\nk4\n-0.64"
+  },
+  {
+    "stateId": "aligned-with-k1",
+    "width": 375,
+    "frame": "aligned-with-k1-375.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 20 deg\n\nk1\n1.00\nk2\n0.64\nk3\n0.00\nk4\n-0.77"
+  },
+  {
+    "stateId": "anti-aligned",
+    "width": 375,
+    "frame": "anti-aligned-375.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 200 deg\n\nk1\n-1.00\nk2\n-0.64\nk3\n0.00\nk4\n0.77"
+  },
+  {
+    "stateId": "initial",
+    "width": 768,
+    "frame": "initial-768.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 90 deg\n\nk1\n0.34\nk2\n0.94\nk3\n0.94\nk4\n0.34"
+  },
+  {
+    "stateId": "mid-drag",
+    "width": 768,
+    "frame": "mid-drag-768.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 30 deg\n\nk1\n0.98\nk2\n0.77\nk3\n0.17\nk4\n-0.64"
+  },
+  {
+    "stateId": "aligned-with-k1",
+    "width": 768,
+    "frame": "aligned-with-k1-768.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 20 deg\n\nk1\n1.00\nk2\n0.64\nk3\n0.00\nk4\n-0.77"
+  },
+  {
+    "stateId": "anti-aligned",
+    "width": 768,
+    "frame": "anti-aligned-768.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 200 deg\n\nk1\n-1.00\nk2\n-0.64\nk3\n0.00\nk4\n0.77"
+  },
+  {
+    "stateId": "initial",
+    "width": 1280,
+    "frame": "initial-1280.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 90 deg\n\nk1\n0.34\nk2\n0.94\nk3\n0.94\nk4\n0.34"
+  },
+  {
+    "stateId": "mid-drag",
+    "width": 1280,
+    "frame": "mid-drag-1280.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 30 deg\n\nk1\n0.98\nk2\n0.77\nk3\n0.17\nk4\n-0.64"
+  },
+  {
+    "stateId": "aligned-with-k1",
+    "width": 1280,
+    "frame": "aligned-with-k1-1280.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 20 deg\n\nk1\n1.00\nk2\n0.64\nk3\n0.00\nk4\n-0.77"
+  },
+  {
+    "stateId": "anti-aligned",
+    "width": 1280,
+    "frame": "anti-aligned-1280.png",
+    "innerText": "Turn q until it lines up with a key.\n\nk1\nk2\nk3\nk4\nq\n\nq = 200 deg\n\nk1\n-1.00\nk2\n-0.64\nk3\n0.00\nk4\n0.77"
+  }
+]

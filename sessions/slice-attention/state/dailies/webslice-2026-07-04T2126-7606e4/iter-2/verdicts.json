@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber query vector on the dial is the clear focus; the periwinkle keys and lilac score bars are supporting context that covary with it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "A single coherent system (one dial plus a row of four score bars) is presented, well under the four-novel-element ceiling.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "q sits on the amber arrow, k1..k4 label their tips, and each bar/readout is captioned k1..k4 directly above it; no legend or swatch key exists.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only text is the short instruction 'Turn q until it lines up with a key.', the 'q = 90 deg' readout, and object labels — all annotating visible referents.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels, the degree readout, and numeric dot-product values are crisp and readable at all three viewport widths including 375px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The dial, all key tips, the q label, and the full bar row sit inside the frame with margin at 375, 768, and 1280 px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text overlaps; the q label repositions to avoid the arrow (e.g. beside k1 in aligned frame) and bar captions clear their bars.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Query is amber (attention), keys are periwinkle (observed), score bars are lilac (parameters/derived), labels are cream — token semantics held consistently across frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — vectors, dial circle, bars, readouts — carries propositional content; no decorative ornament is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Covariation is legible from stills: aligned-with-k1 shows k1 bar peaked at 1.00, anti-aligned shows k1 at -1.00 minimum, and mid-drag shows k1 (0.98) leading k2, matching the intended query-direction-to-score-height mapping.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each score bar sits directly under its captioned key and above its numeric readout, keeping related items contiguous.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The frame set shows a continuous sweep of the query (90->30->20->200 deg) with bars morphing accordingly rather than cutting.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Generous margins and a clear top-to-bottom reading order (dial, then readout, then bar row) hold across all viewport widths.",
+    "suggestion": ""
+  }
+]
