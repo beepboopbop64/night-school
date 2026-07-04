@@ -1,0 +1,24 @@
+# Delivery contract (toy, M1 walking skeleton) — written by the assemble node.
+# Every contracted artifact, valid or flagged; nothing ships silently bad.
+schemaVersion: 1
+session: toy
+artifacts:
+  - path: brief.md
+    status: valid
+  - path: storyboard.yaml
+    status: valid
+  - path: video/scenes/scene_01.py
+    status: valid
+  - path: media/scene_01.mp4
+    status: valid
+    note: "gitignored; media hosting is open decision D-O1"
+  - path: page/sections/beat-01.md
+    status: valid
+  - path: page/interactives/ToySlider.svelte
+    status: valid
+  - path: video/audio/beat-01.mp3
+    status: flagged
+    note: "tts-silent-fallback: no ELEVENLABS_API_KEY"
+  - path: media/session.mp4
+    status: valid
+    note: "gitignored; media hosting is open decision D-O1"

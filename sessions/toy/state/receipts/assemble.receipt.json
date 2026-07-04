@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "node": "assemble",
+  "inputs": [
+    {
+      "path": "media/scene_01.mp4",
+      "sha256": "b360044df8f0e29b659f4d2203fe177d784539958c08acec2e9773253e1b8e71"
+    },
+    {
+      "path": "video/audio/beat-01.mp3",
+      "sha256": "a67e4b79481db07ffea5ebcfe4beaed520ef0cee5beb4efff711971b59e029b9"
+    },
+    {
+      "path": "page/sections/beat-01.md",
+      "sha256": "28523238473ec9cd1c3f37f12ec35a97fe262256cc3b9eb8310c235cabae3f61"
+    },
+    {
+      "path": "page/interactives/ToySlider.svelte",
+      "sha256": "044950378aa026936b8241e680b906b1ef166d1cb57b58bfc68f04c8ad567dd9"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "media/session.mp4",
+      "sha256": "59ee492477226d480394241f06cc2303bca2f813e3163c74fc187fd16f9b42ca"
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "6e9ce66b5b5faab51185a2cb20b6648ae9400f2f9e1a6e4e0de064a7e9c01a76"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "assemble.mux-video-stream",
+        "pass": true
+      },
+      {
+        "id": "assemble.mux-audio-stream",
+        "pass": true
+      },
+      {
+        "id": "assemble.manifest-complete",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:28:44.541Z",
+  "endedAt": "2026-07-04T18:28:44.869Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "streams": [
+      "video",
+      "audio"
+    ]
+  }
+}

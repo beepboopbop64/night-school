@@ -22,3 +22,7 @@
 {"ts":"2026-07-04T18:28:44.240Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.audio-written","pass":true},{"id":"tts-silent-fallback: no ELEVENLABS_API_KEY","pass":true}]}}
 {"ts":"2026-07-04T18:28:44.241Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"needs_jake","data":{"reason":"G1 voice pick blocked: no ElevenLabs key","blocking":false}}
 {"ts":"2026-07-04T18:28:44.243Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":313}}
+{"ts":"2026-07-04T18:28:44.529Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"commit","data":{"sha":"333a50d9151198100213ad239c3edb31c0112edf"}}
+{"ts":"2026-07-04T18:28:44.543Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:28:44.885Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.mux-video-stream","pass":true},{"id":"assemble.mux-audio-stream","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
+{"ts":"2026-07-04T18:28:44.886Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"node_completed","data":{"costUsd":0,"durationMs":328}}
