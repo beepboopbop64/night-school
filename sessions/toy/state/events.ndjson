@@ -5,3 +5,11 @@
 {"ts":"2026-07-04T18:27:33.997Z","runId":"run-2026-07-04T1827-d96a4d","node":"storyboard","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T18:27:34.000Z","runId":"run-2026-07-04T1827-d96a4d","node":"storyboard","event":"gate_result","data":{"passed":true,"checks":[{"id":"storyboard.ran","pass":true}]}}
 {"ts":"2026-07-04T18:27:34.001Z","runId":"run-2026-07-04T1827-d96a4d","node":"storyboard","event":"node_completed","data":{"costUsd":0,"durationMs":3}}
+{"ts":"2026-07-04T18:27:34.271Z","runId":"run-2026-07-04T1827-d96a4d","node":"storyboard","event":"commit","data":{"sha":"63cc0d59d19042c67e857a00954b125acda2d8a9"}}
+{"ts":"2026-07-04T18:27:34.274Z","runId":"run-2026-07-04T1827-d96a4d","node":"scene-render","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:28:19.738Z","runId":"run-2026-07-04T1828-bb09c4","node":"brief","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:28:19.739Z","runId":"run-2026-07-04T1828-bb09c4","node":"storyboard","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:28:19.741Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:28:43.288Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"artifact_written","data":{"path":"media/scene_01.mp4","renderWallMs":23436,"videoSeconds":52.466667}}
+{"ts":"2026-07-04T18:28:43.294Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"gate_result","data":{"passed":true,"checks":[{"id":"scene.mp4-rendered","pass":true}]}}
+{"ts":"2026-07-04T18:28:43.296Z","runId":"run-2026-07-04T1828-bb09c4","node":"scene-render","event":"node_completed","data":{"costUsd":0,"durationMs":23549}}

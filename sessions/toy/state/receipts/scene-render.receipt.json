@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "node": "scene-render",
+  "inputs": [
+    {
+      "path": "storyboard.yaml",
+      "sha256": "1d23f840dfa7ab7ac9382bf988d24ed0101c1319dd18f30709ebec612c98564f"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/scenes/scene_01.py",
+      "sha256": "62a5ac03671093a48a6b6c182e6758725fe4845e25259fd708c9ad14fe84d50f"
+    },
+    {
+      "path": "media/scene_01.mp4",
+      "sha256": "b360044df8f0e29b659f4d2203fe177d784539958c08acec2e9773253e1b8e71"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "scene.mp4-rendered",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:28:19.740Z",
+  "endedAt": "2026-07-04T18:28:43.289Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "renderWallMs": 23436,
+    "videoSeconds": 52.466667
+  }
+}
