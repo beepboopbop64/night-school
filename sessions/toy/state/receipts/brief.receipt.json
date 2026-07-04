@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "node": "brief",
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "brief.md",
+      "sha256": "b4d8f62c5ba735d206a6098164737aa76d22ab908a830856bfdffd556c445e42"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "brief.ran",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:27:33.721Z",
+  "endedAt": "2026-07-04T18:27:33.724Z",
+  "transcript": "",
+  "promptSha": ""
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "session": "toy",
+  "stage": "S0",
+  "round": 0,
+  "fidelity": "sketch",
+  "nodes": {
+    "brief": {
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/brief.receipt.json"
+    },
+    "storyboard": {
+      "status": "pending"
+    },
+    "scene-render": {
+      "status": "pending"
+    },
+    "web-section": {
+      "status": "pending"
+    },
+    "tts": {
+      "status": "pending"
+    },
+    "assemble": {
+      "status": "pending"
+    },
+    "packet": {
+      "status": "pending"
+    },
+    "sdk-smoke": {
+      "status": "pending"
+    }
+  },
+  "needsJake": []
+}
