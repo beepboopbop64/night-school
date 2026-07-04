@@ -142,7 +142,7 @@ beats:
     predictionPrompt:
       prompt: >-
         How do you make "where to look" something a gradient can touch? Take
-        ten seconds. Wrong guesses count double.
+        ten seconds.
     estimatedSeconds: 35
   - id: beat-03
     title: One query, asked of every key
@@ -369,7 +369,7 @@ beats:
       summed: that's the blend. The weights: softmax of the scores. It's the
       exponentiate and normalize you already did. Smooth argmax, picks the
       winner? No. Cat got point seven seven, not one, and kitten is
-      measurably in the answer. Nothing was discarded. Now that square
+      measurably in the answer. It discarded nothing. Now that square
       root's bill. Wide vectors make big dot products, big scores freeze
       softmax near one hot, where the slope is nearly zero. Divide by the
       square root of the width: same preference, living gradient. Which
