@@ -1,0 +1,29 @@
+# Rails-verification spec (M4): drives the hand-written RailsProbe.svelte
+# through the webslice machinery WITHOUT the coder or Iris. Used by the
+# harness's rails-probe script; kept so future machinery changes can be
+# re-verified on a known-good component before blaming any coder loop.
+schemaVersion: 1
+session: toy
+interactive:
+  id: rails-probe
+  title: Rails probe
+  learnerGoal: Verify the S4b machinery, not the learner.
+  visual: >-
+    A mint gauge bar and a mono readout track a native range slider. Known
+    good by construction.
+  colors:
+    gauge: data.fit
+    background: bg
+  slider:
+    min: 0
+    max: 100
+    step: 5
+    initial: 35
+  states:
+    - id: initial
+      description: untouched first render at 35
+      drive: []
+    - id: driven-high
+      description: slider driven to 80; gauge and readout follow
+      drive:
+        - { do: set-slider, value: 80 }
