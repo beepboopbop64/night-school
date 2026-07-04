@@ -48,3 +48,13 @@
 {"ts":"2026-07-04T18:34:10.543Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"node_started","data":{"reason":"input-changed:manifest.yaml"}}
 {"ts":"2026-07-04T18:34:15.770Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.site-built","pass":true},{"id":"packet.session-page-in-dist","pass":true}]}}
 {"ts":"2026-07-04T18:34:15.771Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"node_completed","data":{"costUsd":0,"durationMs":5225}}
+{"ts":"2026-07-04T18:34:16.060Z","runId":"run-2026-07-04T1834-6850ee","node":"packet","event":"commit","data":{"sha":"cbc2f5f3c2435be3cd34037659c280564ecbb9b2"}}
+{"ts":"2026-07-04T18:34:16.062Z","runId":"run-2026-07-04T1834-6850ee","node":"sdk-smoke","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:34:17.328Z","runId":"run-2026-07-04T1834-6850ee","node":"sdk-smoke","event":"needs_jake","data":{"reason":"Claude Code returned an error result: Not logged in · Please run /login"}}
+{"ts":"2026-07-04T18:39:10.646Z","runId":"run-2026-07-04T1839-bebb0d","node":"brief","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:39:10.651Z","runId":"run-2026-07-04T1839-bebb0d","node":"storyboard","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:39:10.653Z","runId":"run-2026-07-04T1839-bebb0d","node":"scene-render","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:39:10.654Z","runId":"run-2026-07-04T1839-bebb0d","node":"web-section","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:39:10.656Z","runId":"run-2026-07-04T1839-bebb0d","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:39:11.994Z","runId":"run-2026-07-04T1839-bebb0d","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.audio-written","pass":true}]}}
+{"ts":"2026-07-04T18:39:11.995Z","runId":"run-2026-07-04T1839-bebb0d","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":1333}}

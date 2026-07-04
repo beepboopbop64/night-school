@@ -14,7 +14,7 @@
   "outputs": [
     {
       "path": "video/audio/beat-01.mp3",
-      "sha256": "ae25734effafcaf1435b975f92c2f5ce3669906086086030a03a65ad8b3bade9"
+      "sha256": "af906601e27b982a7787f5f5ae03631c20e390b2b82cbc32357e9c6018862cb4"
     }
   ],
   "gate": {
@@ -29,13 +29,15 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-04T18:34:08.345Z",
-  "endedAt": "2026-07-04T18:34:09.580Z",
+  "startedAt": "2026-07-04T18:39:10.655Z",
+  "endedAt": "2026-07-04T18:39:11.988Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
     "mode": "elevenlabs",
-    "voiceId": "21m00Tcm4TlvDq8ikWAM",
-    "model": "eleven_multilingual_v2"
+    "voiceId": "XrExE9yKIg1WjnnlVkGX",
+    "voiceName": "Matilda",
+    "model": "eleven_multilingual_v2",
+    "locked": true
   }
 }
