@@ -13,3 +13,7 @@
 {"ts":"2026-07-04T17:59:35.286Z","runId":"run-2026-07-04T1759-c6c2c2","node":"web-section","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T17:59:35.289Z","runId":"run-2026-07-04T1759-c6c2c2","node":"web-section","event":"gate_result","data":{"passed":true,"checks":[{"id":"web-section.ran","pass":true}]}}
 {"ts":"2026-07-04T17:59:35.291Z","runId":"run-2026-07-04T1759-c6c2c2","node":"web-section","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
+{"ts":"2026-07-04T17:59:35.518Z","runId":"run-2026-07-04T1759-c6c2c2","node":"web-section","event":"commit","data":{"sha":"b73e3f6c9a6743b067f9855db8d1f8233f8b6fb0"}}
+{"ts":"2026-07-04T17:59:35.521Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:35.524Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.ran","pass":true}]}}
+{"ts":"2026-07-04T17:59:35.525Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":3}}

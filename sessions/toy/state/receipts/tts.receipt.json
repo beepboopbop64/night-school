@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "node": "tts",
+  "inputs": [
+    {
+      "path": "video/scenes/scene_beat-01.py",
+      "sha256": "e3a994956ea551803c663496c66c544aa4385f0981614ddd97947b2f6c7f905c"
+    },
+    {
+      "path": "page/sections/beat-01.md",
+      "sha256": "a2914b7119fc0a94eeababa2ae6b4c526b25e85cc13e6f27069b565153ffde26"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/audio/beat-01.txt",
+      "sha256": "dfb3e5a68fcc4e40ec69e5bede16d1fe2e9820a082deefb0ab64760fd63f2acf"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "tts.ran",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T17:59:35.519Z",
+  "endedAt": "2026-07-04T17:59:35.522Z",
+  "transcript": "",
+  "promptSha": ""
+}
