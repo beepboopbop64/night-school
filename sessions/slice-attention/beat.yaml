@@ -1,0 +1,32 @@
+# M3 vertical-slice beat — hand-written by the operator harness (no writer
+# agents yet). One idea: a query vector sweeping across keys, similarity
+# scores lighting up as dot products. Colors follow the Night School semantic
+# cast (docs/BRAND.md): query wears attention amber, keys wear observed
+# periwinkle, scores wear parameter lilac, on the 10pm Sky background.
+schemaVersion: 1
+session: slice-attention
+beat:
+  id: qk-similarity
+  title: One query, asked of every key
+  narration: >-
+    A query is a question you ask every key at once. Sweep it across the row
+    and each dot product answers out loud: point the same way and the score
+    climbs, point away and it dies.
+  visual: >-
+    [visual: covary | dynamic-concept] One amber query vector (labeled q, on
+    the object) rotates through a range of directions while a row of four
+    periwinkle key vectors (labeled k1..k4 at their tips) holds still. Under
+    each key sits a lilac score bar with a numeric readout: its height rises
+    and falls WITH the query's alignment to that key, live, as the query
+    sweeps. At any moment the best-aligned key's bar visibly leads and the
+    query's motion is the single focus; keys and bars recede when not
+    changing. No legends, no swatch keys: every label sits on its object.
+    The covariation (query direction <-> score height) must be readable from
+    the frames alone.
+  colors:
+    query: data.heat        # amber - the thing doing the asking
+    keys: data.observed     # periwinkle - the data being interrogated
+    scores: data.params     # lilac - the numbers the mechanism produces
+    background: bg          # 10pm Sky
+    labels: text            # Paper Under Lamplight cream
+  durationTargetSeconds: 24
