@@ -1,0 +1,318 @@
+# S1 sources for session "attention". Every load-bearing dossier claim maps
+# to a resolving URL. checked = date the URL was fetched and the claim read
+# against the source by the Researcher.
+schemaVersion: 1
+session: attention
+entries:
+  - claim: >-
+      Sutskever, Vinyals, Le, "Sequence to Sequence Learning with Neural
+      Networks": arXiv v1 Sep 10, 2014; maps a variable-length sentence to a
+      fixed-dimensional vector; abstract reports 34.8 BLEU (ensemble) vs 33.3
+      phrase-based SMT baseline and 36.5 reranking on WMT'14 En-Fr; abstract
+      states reversing source (not target) sentences "improved the LSTM's
+      performance markedly."
+    url: https://arxiv.org/abs/1409.3215
+    checked: 2026-07-04
+    note: NIPS 2014 paper; venue not stated on the abs page but standard.
+  - claim: >-
+      Exact reversal numbers, single LSTM, WMT'14 En-Fr: "the LSTM's test
+      perplexity dropped from 5.8 to 4.7, and the test BLEU scores of its
+      decoded translations increased from 25.9 to 30.6"; the deep LSTM "uses
+      8000 real numbers to represent a sentence."
+    url: https://ar5iv.labs.arxiv.org/html/1409.3215
+    checked: 2026-07-04
+    note: Quotes verbatim from the paper body via ar5iv rendering.
+  - claim: >-
+      Cho, van Merrienboer, Bahdanau, Bengio, "On the Properties of Neural
+      Machine Translation": arXiv v1 Sep 3, 2014, SSST-8 workshop; NMT
+      "performs relatively well on short sentences without unknown words, but
+      its performance degrades rapidly as the length of the sentence and the
+      number of unknown words increase."
+    url: https://arxiv.org/abs/1409.1259
+    checked: 2026-07-04
+    note: The brief's "Cho et al. measured the collapse" paper.
+  - claim: >-
+      Cho et al. BLEU-vs-length figure caption: "The BLEU scores achieved by
+      (a) the RNNenc and (b) the grConv for sentences of a given length";
+      also "the fixed-length vector representation does not have enough
+      capacity to encode a long sentence with complicated structure and
+      meaning."
+    url: https://ar5iv.labs.arxiv.org/html/1409.1259
+    checked: 2026-07-04
+    note: >-
+      Figure 4 in the ar5iv rendering; confirm figure number against the
+      anthology PDF before quoting a number on screen.
+  - claim: >-
+      Cho et al., "Learning Phrase Representations using RNN Encoder-Decoder
+      for Statistical Machine Translation": arXiv v1 Jun 3, 2014, EMNLP 2014;
+      one RNN "encodes a sequence of symbols into a fixed-length vector
+      representation"; Bahdanau is a co-author (the project he interned on).
+    url: https://arxiv.org/abs/1406.1078
+    checked: 2026-07-04
+    note: Establishes the encoder-decoder bottleneck Bahdanau worked on.
+  - claim: >-
+      Bahdanau, Cho, Bengio, "Neural Machine Translation by Jointly Learning
+      to Align and Translate": arXiv v1 Mon Sep 1, 2014 (v7 May 2016); ICLR
+      2015 oral; abstract conjectures the "fixed-length vector is a
+      bottleneck" and proposes letting the model "automatically (soft-)search
+      for parts of a source sentence that are relevant to predicting a target
+      word."
+    url: https://arxiv.org/abs/1409.0473
+    checked: 2026-07-04
+    note: Submission history quoted on the abs page.
+  - claim: >-
+      Bahdanau et al. Figure 2 caption: "The BLEU scores of the generated
+      translations on the test set with respect to the lengths of the
+      sentences"; "the performance of RNNencdec dramatically drops as the
+      length of the sentences increases" while "RNNsearch-50, especially,
+      shows no performance deterioration even with sentences of length 50 or
+      more"; Table 1: RNNencdec-50 17.82 / 26.71, RNNsearch-50 26.75 / 34.16
+      (all sentences / no unknown words).
+    url: https://ar5iv.labs.arxiv.org/html/1409.0473
+    checked: 2026-07-04
+    note: Primary redraw artifact for the video.
+  - claim: >-
+      Bahdanau 2014 scoring is additive, not dot-product: a(s_{i-1}, h_j) =
+      v_a^T tanh(W_a s_{i-1} + U_a h_j) (section A.1.2); the paper says
+      "Intuitively, this implements a mechanism of attention in the decoder.
+      The decoder decides parts of the source sentence to pay attention to."
+      (section 3.1).
+    url: https://ar5iv.labs.arxiv.org/html/1409.0473
+    checked: 2026-07-04
+    note: Grounds disclosure 5 and the naming-anecdote wrinkle.
+  - claim: >-
+      Bahdanau's own origin account: intern in Bengio's lab after the first
+      year of his MSc at Jacobs University; about five weeks left in the
+      internship; gaze-shifting inspiration; softmax weighted averaging
+      worked on the first attempt; he named it RNNSearch; "The better name
+      (attention) was only added by Yoshua to the conclusion in one of the
+      final passes"; arose independently of NTM / Memory Networks.
+    url: https://x.com/karpathy/status/1864023344435380613
+    checked: 2026-07-04
+    note: >-
+      Bahdanau email published by Karpathy Dec 2024 with permission; quotes
+      as reproduced in coverage (see next two entries); eyeball the X post
+      image before quoting on screen.
+  - claim: >-
+      Secondary coverage of the Bahdanau account, including Bengio's naming
+      motivation and Schmidhuber's contested-priority claim (1992 fast-weight
+      programmers); Bahdanau reports no influence from that work.
+    url: https://www.turingpost.com/p/attention
+    checked: 2026-07-04
+    note: Secondary source, Dec 14, 2024; use for orientation, not quotes.
+  - claim: >-
+      HN discussion pointer to the Karpathy post ("The True Origin of
+      Attention, from Its Author Dzmitry Bahdanau").
+    url: https://news.ycombinator.com/item?id=42310213
+    checked: 2026-07-04
+    note: Lead only.
+  - claim: >-
+      Luong, Pham, Manning, "Effective Approaches to Attention-based Neural
+      Machine Translation": arXiv v1 Aug 17, 2015, EMNLP 2015; section 3.1
+      defines the score functions dot (h_t^T h_s), general (h_t^T W_a h_s),
+      and concat (v_a^T tanh(W_a [h_t; h_s])).
+    url: https://ar5iv.labs.arxiv.org/html/1508.04025
+    checked: 2026-07-04
+    note: Dot-product attention scoring predates Vaswani; abs page at arxiv.org/abs/1508.04025.
+  - claim: >-
+      Vaswani et al., "Attention Is All You Need": arXiv v1 Jun 12, 2017;
+      "An attention function can be described as mapping a query and a set of
+      key-value pairs to an output, where the query, keys, values, and output
+      are all vectors"; Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V;
+      footnote: components of q and k "independent random variables with mean
+      0 and variance 1. Then their dot product ... has mean 0 and variance
+      d_k"; "for large values of d_k, the dot products grow large in
+      magnitude, pushing the softmax function into regions where it has
+      extremely small gradients"; base model d_model = 512, d_k = 64, h = 8;
+      28.4 BLEU En-De, 41.8 BLEU En-Fr.
+    url: https://ar5iv.labs.arxiv.org/html/1706.03762
+    checked: 2026-07-04
+    note: Abs page with submission history at arxiv.org/abs/1706.03762.
+  - claim: >-
+      "Attention Is All You Need" venue: Advances in Neural Information
+      Processing Systems 30 (NIPS 2017).
+    url: https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+    checked: 2026-07-04
+    note: Official proceedings page.
+  - claim: >-
+      Wu et al., "Google's Neural Machine Translation System": arXiv v1 Sep
+      26, 2016; 8 encoder + 8 decoder LSTM layers "using attention and
+      residual connections"; "reduces translation errors by an average of 60%
+      compared to Google's phrase-based production system."
+    url: https://arxiv.org/abs/1609.08144
+    checked: 2026-07-04
+    note: The GNMT system paper (31 authors).
+  - claim: >-
+      GNMT production launch: Google Research blog, Sep 27, 2016 (Le and
+      Schuster); launched on Chinese-to-English, "about 18 million
+      translations per day"; "GNMT reduces translation errors by more than
+      55%-85% on several major language pairs measured on sampled sentences
+      from Wikipedia and news websites."
+    url: https://research.google/blog/a-neural-network-for-machine-translation-at-production-scale/
+    checked: 2026-07-04
+    note: Citable source for "Google Translate went neural" in 2016.
+  - claim: >-
+      GNMT rollout to 8 language pairs (English with French, German, Spanish,
+      Portuguese, Chinese, Japanese, Korean, Turkish), "more than 35% of all
+      Google Translate queries": Google blog, Nov 15, 2016 (Turovsky).
+    url: https://blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/
+    checked: 2026-07-04
+    note: Second half of the deployment story.
+  - claim: >-
+      Google Translate scale in 2016: "more than 500 million of you using
+      Google Translate" and "we translate more than 100 billion words a day"
+      (Turovsky, Apr 28, 2016).
+    url: https://blog.google/products/translate/ten-years-of-google-translate/
+    checked: 2026-07-04
+    note: >-
+      This CORRECTS the brief's "billion users" stakes line, which failed
+      verification.
+  - claim: >-
+      Jain and Wallace, "Attention is not Explanation": NAACL 2019, pages
+      3543-3556; "learned attention weights are frequently uncorrelated with
+      gradient-based measures of feature importance" and one "can identify
+      very different attention distributions that nonetheless yield
+      equivalent predictions."
+    url: https://aclanthology.org/N19-1357/
+    checked: 2026-07-04
+    note: arXiv v1 Feb 26, 2019 at arxiv.org/abs/1902.10186.
+  - claim: >-
+      Jain and Wallace scope, verbatim from the paper body: the relationship
+      "is not obvious, at least for RNN encoders"; "we have limited our
+      evaluation to tasks with unstructured output spaces, i.e., we have not
+      considered seq2seq tasks"; "one cannot conclude that the model made a
+      particular prediction because it attended over inputs in a specific
+      way"; BiLSTM encoders; datasets SST, IMDB, ADR Tweets, 20 Newsgroups,
+      AG News, Diabetes and Anemia (MIMIC), CNN QA, bAbI 1/2/3, SNLI.
+    url: https://aclanthology.org/N19-1357.pdf
+    checked: 2026-07-04
+    note: Quotes extracted from the published PDF (sections 3 and 7).
+  - claim: >-
+      Wiegreffe and Pinter, "Attention is not not Explanation": EMNLP 2019,
+      arXiv v1 Aug 13, 2019; "even when reliable adversarial distributions
+      can be found, they don't perform well on the simple diagnostic,
+      indicating that prior work does not disprove the usefulness of
+      attention mechanisms for explainability"; proposes uniform-weights
+      baseline, seed-variance calibration, frozen-weights diagnostic, and
+      end-to-end adversarial training tests.
+    url: https://arxiv.org/abs/1908.04626
+    checked: 2026-07-04
+    note: The rebuttal's actual counterclaim, per the brief's S1 flag.
+  - claim: >-
+      Serrano and Smith, "Is Attention Interpretable?": ACL 2019, arXiv v1
+      Jun 9, 2019; attention weights only noisily predict the overall
+      importance of input components and are not a reliable importance
+      ranking (paraphrase of abstract).
+    url: https://arxiv.org/abs/1906.03731
+    checked: 2026-07-04
+    note: Belongs in the account per the brief's question; paraphrase, not quote.
+  - claim: >-
+      Bibal et al., "Is Attention Explanation? An Introduction to the
+      Debate": ACL 2022, pages 3889-3900; survey of record showing the
+      debate is unresolved as of 2022.
+    url: https://aclanthology.org/2022.acl-long.269/
+    checked: 2026-07-04
+    note: Use for the "as of 2026 the debate stands" framing.
+  - claim: >-
+      RETAIN (Choi et al.): arXiv v1 Aug 19, 2016, NIPS 2016; "a two-level
+      neural attention model that detects influential past visits and
+      significant clinical variables within those visits"; marketed as
+      clinically interpretable prediction on EHR data.
+    url: https://arxiv.org/abs/1608.05745
+    checked: 2026-07-04
+    note: >-
+      Citable real-world case of attention presented as interpretability in a
+      high-stakes domain; do not claim specific hospital deployment.
+  - claim: >-
+      Neural Turing Machines (Graves, Wayne, Danihelka): arXiv v1 Oct 20,
+      2014; networks coupled to external memory "which they can interact
+      with by attentional processes"; "differentiable end-to-end."
+    url: https://arxiv.org/abs/1410.5401
+    checked: 2026-07-04
+    note: Soft-memory lineage, dated.
+  - claim: >-
+      Memory Networks (Weston, Chopra, Bordes): arXiv v1 Oct 15, 2014; ICLR
+      2015; long-term memory that "can be read and written to" combined with
+      inference components.
+    url: https://arxiv.org/abs/1410.3916
+    checked: 2026-07-04
+    note: Soft-memory lineage, dated.
+  - claim: >-
+      Key-Value Memory Networks (Miller et al.): arXiv v1 Jun 9, 2016; EMNLP
+      2016; "utilizing different encodings in the addressing and output
+      stages of the memory read operation" (address by key, answer with
+      value).
+    url: https://arxiv.org/abs/1606.03126
+    checked: 2026-07-04
+    note: The explicit key-value split before Vaswani et al.
+  - claim: >-
+      Google Transformer announcement (Jakob Uszkoreit, Aug 31, 2017)
+      contains the sentence "The animal didn't cross the street because it
+      was too tired" and states "the Transformer clearly identified the two
+      nouns 'it' could refer to and the respective amount of attention
+      reflects its choice in the different contexts."
+    url: https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/
+    checked: 2026-07-04
+    note: >-
+      PARTIAL for hook D: the contrast variant ("wide" vs an inverted
+      sentence) is inside an embedded image; eyeball before on-screen use.
+  - claim: >-
+      3Blue1Brown, "Attention in transformers, step-by-step" (Deep Learning
+      Chapter 6), April 2024: geometric embedding-refinement angle; queries
+      as questions, keys as potential answers, values as embedding deltas;
+      "lookup table" used only for the context-free initial embedding.
+    url: https://www.3blue1brown.com/lessons/attention
+    checked: 2026-07-04
+    note: Prior-art scan.
+  - claim: >-
+      Jay Alammar, "The Illustrated Transformer" (2018): architecture
+      walkthrough; QKV introduced as "abstractions that are useful for
+      calculating and thinking about attention"; no lookup or retrieval
+      metaphor.
+    url: https://jalammar.github.io/illustrated-transformer/
+    checked: 2026-07-04
+    note: Prior-art scan.
+  - claim: >-
+      Karpathy, "Let's build GPT: from scratch, in code, spelled out" (Jan
+      2023): attention framed as a communication mechanism, nodes in a
+      directed graph aggregating information via data-dependent weighted
+      sums.
+    url: https://www.youtube.com/watch?v=kCc8FmEb1nY
+    checked: 2026-07-04
+    note: >-
+      Framing widely transcribed from the lecture; treat wording as
+      paraphrase, not quotation.
+  - claim: >-
+      d2l.ai section 11.1 (Queries, Keys, and Values): defines attention over
+      a database D of key-value pairs, Attention(q, D) = sum alpha(q, k_i)
+      v_i, and names exact-match lookup as the special case where "exactly
+      one of the weights alpha(q, k_i) is 1, while all others are 0. This is
+      akin to a traditional database query."
+    url: https://d2l.ai/chapter_attention-mechanisms-and-transformers/queries-keys-values.html
+    checked: 2026-07-04
+    note: Closest prior art to the soft-lookup framing; textbook aside.
+  - claim: >-
+      d2l.ai section 11.2 (Attention Pooling): "Nadaraya-Watson kernel
+      regression is an early precursor of the current attention mechanisms";
+      cites Nadaraya 1964 and Watson 1964; kernel-weighted averages of
+      training outputs are attention weights.
+    url: https://d2l.ai/chapter_attention-mechanisms-and-transformers/attention-pooling.html
+    checked: 2026-07-04
+    note: Second-instance candidate 1.
+  - claim: >-
+      Olah and Carter, "Attention and Augmented Recurrent Neural Networks"
+      (distill.pub, Sep 8, 2016): "We'd like attention to be differentiable,
+      so that we can learn where to focus. To do this, we use the same trick
+      Neural Turing Machines use: we focus everywhere, just to different
+      extents."
+    url: https://distill.pub/2016/augmented-rnns/
+    checked: 2026-07-04
+    note: Prior-art scan; RNN-era interactive explainer.
+  - claim: >-
+      Lewis et al., "Retrieval-Augmented Generation for Knowledge-Intensive
+      NLP Tasks": arXiv v1 May 22, 2020, NeurIPS 2020; "the non-parametric
+      memory is a dense vector index of Wikipedia, accessed with a
+      pre-trained neural retriever."
+    url: https://arxiv.org/abs/2005.11401
+    checked: 2026-07-04
+    note: Second-instance candidate 2 (hard top-k cousin the students use).
