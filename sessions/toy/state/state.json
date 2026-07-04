@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "toy",
-  "stage": "S4b",
+  "stage": "S4f",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -30,7 +30,10 @@
       "receipt": "state/receipts/web-section.receipt.json"
     },
     "tts": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/tts.receipt.json"
     },
     "assemble": {
       "status": "pending"
@@ -42,5 +45,11 @@
       "status": "pending"
     }
   },
-  "needsJake": []
+  "needsJake": [
+    {
+      "node": "tts",
+      "reason": "G1 voice pick blocked: no ElevenLabs key",
+      "since": "2026-07-04T18:28:44.241Z"
+    }
+  ]
 }

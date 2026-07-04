@@ -17,3 +17,8 @@
 {"ts":"2026-07-04T18:28:43.598Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T18:28:43.616Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"gate_result","data":{"passed":true,"checks":[{"id":"web.section-written","pass":true},{"id":"web.interactive-written","pass":true}]}}
 {"ts":"2026-07-04T18:28:43.618Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"node_completed","data":{"costUsd":0,"durationMs":6}}
+{"ts":"2026-07-04T18:28:43.915Z","runId":"run-2026-07-04T1828-bb09c4","node":"web-section","event":"commit","data":{"sha":"d98b1f0e275198cb1520dfcbefe3f0f61011b6f6"}}
+{"ts":"2026-07-04T18:28:43.916Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:28:44.240Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.audio-written","pass":true},{"id":"tts-silent-fallback: no ELEVENLABS_API_KEY","pass":true}]}}
+{"ts":"2026-07-04T18:28:44.241Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"needs_jake","data":{"reason":"G1 voice pick blocked: no ElevenLabs key","blocking":false}}
+{"ts":"2026-07-04T18:28:44.243Z","runId":"run-2026-07-04T1828-bb09c4","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":313}}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "node": "tts",
+  "inputs": [
+    {
+      "path": "storyboard.yaml",
+      "sha256": "1d23f840dfa7ab7ac9382bf988d24ed0101c1319dd18f30709ebec612c98564f"
+    },
+    {
+      "path": "media/scene_01.mp4",
+      "sha256": "b360044df8f0e29b659f4d2203fe177d784539958c08acec2e9773253e1b8e71"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/audio/beat-01.mp3",
+      "sha256": "a67e4b79481db07ffea5ebcfe4beaed520ef0cee5beb4efff711971b59e029b9"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "tts.audio-written",
+        "pass": true
+      },
+      {
+        "id": "tts-silent-fallback: no ELEVENLABS_API_KEY",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:28:43.916Z",
+  "endedAt": "2026-07-04T18:28:44.229Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "mode": "silent-fallback",
+    "reason": "no ELEVENLABS_API_KEY",
+    "durationSeconds": 52.466667
+  }
+}
