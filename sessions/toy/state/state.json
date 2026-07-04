@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "toy",
-  "stage": "S4a",
+  "stage": "S4b",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -24,7 +24,10 @@
       "receipt": "state/receipts/scene-render.receipt.json"
     },
     "web-section": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/web-section.receipt.json"
     },
     "tts": {
       "status": "pending"
