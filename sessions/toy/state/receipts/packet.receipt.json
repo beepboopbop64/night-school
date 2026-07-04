@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "node": "packet",
+  "inputs": [
+    {
+      "path": "manifest.yaml",
+      "sha256": "6e9ce66b5b5faab51185a2cb20b6648ae9400f2f9e1a6e4e0de064a7e9c01a76"
+    },
+    {
+      "path": "page/sections/beat-01.md",
+      "sha256": "28523238473ec9cd1c3f37f12ec35a97fe262256cc3b9eb8310c235cabae3f61"
+    },
+    {
+      "path": "page/interactives/ToySlider.svelte",
+      "sha256": "044950378aa026936b8241e680b906b1ef166d1cb57b58bfc68f04c8ad567dd9"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "rounds/round-01/packet/README.md",
+      "sha256": "8a1fd9cb03f3ca96e6ea9426368a3b3a859ae6913c907c761fcc1a52d528199b"
+    },
+    {
+      "path": "rounds/round-01/notes.md",
+      "sha256": "d5d23807b4da79c0b49d68c7f0a356b2972358210c0333afd293fe3b0a4b68bc"
+    },
+    {
+      "path": "rounds/round-01/flags.md",
+      "sha256": "519a08b150166c240417d73ddae4eb31c9dfbc080bea055a2776c41d931447fb"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "packet.site-built",
+        "pass": true
+      },
+      {
+        "id": "packet.session-page-in-dist",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:28:45.224Z",
+  "endedAt": "2026-07-04T18:28:52.283Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "siteBuildMs": 7037
+  }
+}

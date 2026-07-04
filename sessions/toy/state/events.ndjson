@@ -26,3 +26,7 @@
 {"ts":"2026-07-04T18:28:44.543Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T18:28:44.885Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.mux-video-stream","pass":true},{"id":"assemble.mux-audio-stream","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
 {"ts":"2026-07-04T18:28:44.886Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"node_completed","data":{"costUsd":0,"durationMs":328}}
+{"ts":"2026-07-04T18:28:45.223Z","runId":"run-2026-07-04T1828-bb09c4","node":"assemble","event":"commit","data":{"sha":"b13b0ee691c8c552ce68238c00367bc6481af630"}}
+{"ts":"2026-07-04T18:28:45.225Z","runId":"run-2026-07-04T1828-bb09c4","node":"packet","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:28:52.289Z","runId":"run-2026-07-04T1828-bb09c4","node":"packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.site-built","pass":true},{"id":"packet.session-page-in-dist","pass":true}]}}
+{"ts":"2026-07-04T18:28:52.290Z","runId":"run-2026-07-04T1828-bb09c4","node":"packet","event":"node_completed","data":{"costUsd":0,"durationMs":7059}}
