@@ -8,7 +8,7 @@
     },
     {
       "path": "video/audio/beat-01.mp3",
-      "sha256": "a67e4b79481db07ffea5ebcfe4beaed520ef0cee5beb4efff711971b59e029b9"
+      "sha256": "ae25734effafcaf1435b975f92c2f5ce3669906086086030a03a65ad8b3bade9"
     },
     {
       "path": "page/sections/beat-01.md",
@@ -22,11 +22,11 @@
   "outputs": [
     {
       "path": "media/session.mp4",
-      "sha256": "59ee492477226d480394241f06cc2303bca2f813e3163c74fc187fd16f9b42ca"
+      "sha256": "a76cf027794c4488c96f8533cf8d327b522c80c08ddeee986b924919f55e2334"
     },
     {
       "path": "manifest.yaml",
-      "sha256": "6e9ce66b5b5faab51185a2cb20b6648ae9400f2f9e1a6e4e0de064a7e9c01a76"
+      "sha256": "048a6bee1a0e58197866cf6093fc907152283c08fe1f7dfccfb808f4c41049ac"
     }
   ],
   "gate": {
@@ -49,8 +49,8 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-04T18:28:44.541Z",
-  "endedAt": "2026-07-04T18:28:44.869Z",
+  "startedAt": "2026-07-04T18:34:09.879Z",
+  "endedAt": "2026-07-04T18:34:10.286Z",
   "transcript": "",
   "promptSha": "",
   "meta": {

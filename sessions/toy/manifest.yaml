@@ -17,8 +17,8 @@ artifacts:
   - path: page/interactives/ToySlider.svelte
     status: valid
   - path: video/audio/beat-01.mp3
-    status: flagged
-    note: "tts-silent-fallback: no ELEVENLABS_API_KEY"
+    status: valid
+    note: "gitignored; throwaway M1 audio"
   - path: media/session.mp4
     status: valid
     note: "gitignored; media hosting is open decision D-O1"

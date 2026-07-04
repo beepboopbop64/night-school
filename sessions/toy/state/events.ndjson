@@ -40,3 +40,7 @@
 {"ts":"2026-07-04T18:34:08.346Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T18:34:09.586Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.audio-written","pass":true}]}}
 {"ts":"2026-07-04T18:34:09.587Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":1235}}
+{"ts":"2026-07-04T18:34:09.876Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"commit","data":{"sha":"e6ced943fa45f757a060341c850e0180db6f5dfa"}}
+{"ts":"2026-07-04T18:34:09.880Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"node_started","data":{"reason":"input-changed:video/audio/beat-01.mp3"}}
+{"ts":"2026-07-04T18:34:10.293Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.mux-video-stream","pass":true},{"id":"assemble.mux-audio-stream","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
+{"ts":"2026-07-04T18:34:10.294Z","runId":"run-2026-07-04T1834-6850ee","node":"assemble","event":"node_completed","data":{"costUsd":0,"durationMs":407}}
