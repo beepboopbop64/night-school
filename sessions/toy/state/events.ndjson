@@ -1,3 +1,7 @@
 {"ts":"2026-07-04T17:59:34.661Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T17:59:34.665Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"gate_result","data":{"passed":true,"checks":[{"id":"brief.ran","pass":true}]}}
 {"ts":"2026-07-04T17:59:34.677Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"node_completed","data":{"costUsd":0,"durationMs":4}}
+{"ts":"2026-07-04T17:59:34.884Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"commit","data":{"sha":"f6df526a90ad40ff97f1ce4de6a2787acaf35966"}}
+{"ts":"2026-07-04T17:59:34.886Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:34.888Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"gate_result","data":{"passed":true,"checks":[{"id":"storyboard.ran","pass":true}]}}
+{"ts":"2026-07-04T17:59:34.889Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
