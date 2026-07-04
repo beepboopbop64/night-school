@@ -48,14 +48,11 @@
       "receipt": "state/receipts/packet.receipt.json"
     },
     "sdk-smoke": {
-      "status": "flagged"
+      "status": "passed",
+      "costUsd": 0.000819,
+      "iter": 0,
+      "receipt": "state/receipts/sdk-smoke.receipt.json"
     }
   },
-  "needsJake": [
-    {
-      "node": "sdk-smoke",
-      "reason": "Claude Code returned an error result: Not logged in · Please run /login",
-      "since": "2026-07-04T18:34:17.328Z"
-    }
-  ]
+  "needsJake": []
 }

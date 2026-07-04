@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "node": "sdk-smoke",
+  "inputs": [],
+  "outputs": [],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "sdk.auth",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0.000819,
+  "tier": "haiku",
+  "startedAt": "2026-07-04T18:48:32.876Z",
+  "endedAt": "2026-07-04T18:48:35.748Z",
+  "transcript": "state/logs/sdk-smoke-run-2026-07-04T1848-8e2b4c.jsonl",
+  "promptSha": "",
+  "meta": {
+    "model": "claude-haiku-4-5",
+    "response": "ok"
+  }
+}
