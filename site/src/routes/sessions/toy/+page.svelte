@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Night School — toy session</title>
+	<title>Night School · toy session</title>
 	<meta name="description" content="Walking-skeleton toy session. Rails, not teaching." />
 </svelte:head>
 

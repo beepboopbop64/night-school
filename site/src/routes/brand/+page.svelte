@@ -15,7 +15,7 @@
 		{
 			token: '--color-text',
 			name: 'Paper Under Lamplight',
-			job: 'Body text — warm cream, never clinical white'
+			job: 'Body text: warm cream, never clinical white'
 		},
 		{
 			token: '--color-brand-mint',
@@ -25,7 +25,7 @@
 		{
 			token: '--color-brand-rose',
 			name: 'Open-Sign Rose',
-			job: 'Warmth, jokes, emphasis — rationed 1–2× per lesson'
+			job: 'Warmth, jokes, emphasis. Rationed to a couple of moments per lesson'
 		},
 		{
 			token: '--color-brand-periwinkle',
@@ -39,8 +39,8 @@
 		{ token: '--data-params', name: 'params', job: 'Weights / learned things' },
 		{ token: '--data-truth', name: 'truth', job: 'Ground truth / reference' },
 		{ token: '--data-heat', name: 'heat', job: 'Attention / intensity (sparing)' },
-		{ token: '--data-fit', name: 'fit', job: 'Converged / TRUE — rhymes with mint' },
-		{ token: '--data-error', name: 'error', job: 'Residual / tension — rhymes with rose' }
+		{ token: '--data-fit', name: 'fit', job: 'Converged, fitted, true. Rhymes with mint' },
+		{ token: '--data-error', name: 'error', job: 'Residual, tension. Rhymes with rose' }
 	];
 
 	// Resolved swatch values are read from the stylesheet at runtime so the
@@ -61,7 +61,7 @@
 </script>
 
 <svelte:head>
-	<title>Night School — brand</title>
+	<title>Night School · brand</title>
 	<meta name="description" content="Brand ratification sample: palette, type, motion, True-Up." />
 </svelte:head>
 
@@ -94,7 +94,7 @@
 			{/each}
 		</ul>
 		<p class="rule-note">
-			Semantic data series — one color, one job, across every session. The two rhymes are the
+			Semantic data series: one color, one job, across every session. The two rhymes are the
 			point: brand colors accrue mathematical meaning.
 		</p>
 		<ul class="swatches data">
@@ -114,7 +114,7 @@
 		<h2>Three voices, no costumes</h2>
 
 		<div class="specimen">
-			<p class="specimen-meta">Headings / UI — Bricolage Grotesque</p>
+			<p class="specimen-meta">Headings and UI: Bricolage Grotesque</p>
 			<p class="spec-display">Still up?</p>
 			<p class="spec-heading">Class dismissed.</p>
 			<p class="spec-weights">
@@ -124,10 +124,10 @@
 		</div>
 
 		<div class="specimen">
-			<p class="specimen-meta">Body — Literata</p>
+			<p class="specimen-meta">Body: Literata</p>
 			<p class="spec-body">
-				Class dismissed. Every trick we pulled up there is disclosed in the notes — go check our
-				work. Then take the long way home; ideas true up better in motion.
+				Class dismissed. Every trick we pulled up there is disclosed in the notes, so go check
+				our work. Then take the long way home. Ideas true up better in motion.
 			</p>
 			<p class="spec-body-italic">
 				Advanced machine learning, after hours. Stories first. Rigor always. Kettle&rsquo;s on.
@@ -135,7 +135,7 @@
 		</div>
 
 		<div class="specimen well">
-			<p class="specimen-meta">Mono — IBM Plex Mono</p>
+			<p class="specimen-meta">Mono: IBM Plex Mono</p>
 			<p class="spec-mono">NIGHT SCHOOL · SESSION 01 <span class="dim">23:47</span></p>
 			<p class="spec-mono">shapes: Q (B, T, d) · K (B, T, d) · V (B, T, d)</p>
 			<p class="spec-mono annotation"># pre-formal: a lookup table, but the keys negotiate</p>
@@ -150,7 +150,7 @@
 		<p class="prose">
 			Elements arrive on easeOutQuint with a small decaying wobble, so the final 150ms of every
 			key animation is the rough becoming exact. Never instant; dramatic durations are
-			user-triggered only — like this one.
+			user-triggered only, like this one.
 		</p>
 		<div class="motion-stage">
 			<button class="bell" onclick={() => (arrivals += 1)}>
@@ -180,7 +180,7 @@
 	<footer>
 		<p class="walk-home-label">FOR THE WALK HOME</p>
 		<p class="walk-home">
-			If every answer is a weighted average, what — exactly — chooses the weights?
+			If every answer is a weighted average, what exactly chooses the weights?
 		</p>
 	</footer>
 </main>
