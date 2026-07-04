@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "session": "toy",
-  "stage": "S3",
+  "stage": "S4a",
   "round": 0,
-  "fidelity": "sketch",
+  "fidelity": "half-trued",
   "nodes": {
     "brief": {
       "status": "passed",
@@ -18,7 +18,10 @@
       "receipt": "state/receipts/storyboard.receipt.json"
     },
     "scene-render": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/scene-render.receipt.json"
     },
     "web-section": {
       "status": "pending"

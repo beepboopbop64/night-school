@@ -5,3 +5,7 @@
 {"ts":"2026-07-04T17:59:34.886Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T17:59:34.888Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"gate_result","data":{"passed":true,"checks":[{"id":"storyboard.ran","pass":true}]}}
 {"ts":"2026-07-04T17:59:34.889Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
+{"ts":"2026-07-04T17:59:35.077Z","runId":"run-2026-07-04T1759-c6c2c2","node":"storyboard","event":"commit","data":{"sha":"31c7614a531ef6e8dd2ebc8a4fe3860e7419adfa"}}
+{"ts":"2026-07-04T17:59:35.078Z","runId":"run-2026-07-04T1759-c6c2c2","node":"scene-render","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:35.082Z","runId":"run-2026-07-04T1759-c6c2c2","node":"scene-render","event":"gate_result","data":{"passed":true,"checks":[{"id":"scene-render.ran","pass":true}]}}
+{"ts":"2026-07-04T17:59:35.083Z","runId":"run-2026-07-04T1759-c6c2c2","node":"scene-render","event":"node_completed","data":{"costUsd":0,"durationMs":2}}

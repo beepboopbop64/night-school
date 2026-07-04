@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "node": "scene-render",
+  "inputs": [
+    {
+      "path": "storyboard.yaml",
+      "sha256": "c3db5ca28cddf8063bfcabd7678e57978c64b7c353c9e9a2d875308bf8b5a19d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/scenes/scene_beat-01.py",
+      "sha256": "e3a994956ea551803c663496c66c544aa4385f0981614ddd97947b2f6c7f905c"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "scene-render.ran",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T17:59:35.078Z",
+  "endedAt": "2026-07-04T17:59:35.080Z",
+  "transcript": "",
+  "promptSha": ""
+}
