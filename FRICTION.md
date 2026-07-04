@@ -4,3 +4,4 @@ Every step where the operator spends hands-on time gets a `manual_work` receipt 
 
 | Date | Minutes | What | Why it was manual |
 |---|---|---|---|
+| 2026-07-04 | ~8 | G3 calibration labeling (20 frames) + G2 brand ratification | Taste-holder judgment; performed by Claude as Jake's proxy, provisional |
