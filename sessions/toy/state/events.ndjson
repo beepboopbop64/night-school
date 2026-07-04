@@ -1,0 +1,3 @@
+{"ts":"2026-07-04T17:59:34.661Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:34.665Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"gate_result","data":{"passed":true,"checks":[{"id":"brief.ran","pass":true}]}}
+{"ts":"2026-07-04T17:59:34.677Z","runId":"run-2026-07-04T1759-c6c2c2","node":"brief","event":"node_completed","data":{"costUsd":0,"durationMs":4}}
