@@ -63,9 +63,9 @@ beats:
       stop. The intern was Dzmitry Bahdanau, five weeks left in Yoshua
       Bengio's Montreal lab. By his own account, the idea came from watching
       his own eyes: when you translate, your gaze hops back and forth between
-      the source and the line you're writing. So keep every word, and for
-      each word the model writes, let it look back. So why did nobody just
-      build it?
+      the source and the line you're writing. Keep every word, and for each
+      word the model writes, let it look back. So why did nobody just build
+      it?
     visual: >-
       [visual: connect-to-reality | dynamic-process] Title card per brand
       spec: lit window blooms on the 10pm Sky, title in cream, freehand
@@ -104,7 +104,7 @@ beats:
       titleTrueUp: data.fit
       background: bg
       labels: text
-    estimatedSeconds: 90
+    estimatedSeconds: 95
   - id: beat-02
     title: Looking is choosing
     narration: >-
@@ -112,8 +112,8 @@ beats:
       is a choice. This word, not that one. Watch what a choice does to
       learning. Nudge the parameters. The selector arm doesn't move. Nudge
       again. It slams to a different word. Flat, cliff, flat. The slope is
-      zero everywhere you can stand, and training means following slopes. So
-      here's the question of the night: how do you learn where to look? Take
+      zero everywhere you can stand, and training means following slopes.
+      Here's the question of the night: how do you learn where to look? Take
       ten seconds before we go on. Wrong guesses count double. Gradients need
       a slope, and a choice is a cliff.
     visual: >-
@@ -147,18 +147,17 @@ beats:
   - id: beat-03
     title: One query, asked of every key
     narration: >-
-      Strip the problem to its smallest piece. Forget translation. You're mid
-      sentence and you need cat flavored information. One probe vector, four
-      stored candidates. Before it moves, call the order the bars will peak.
-      A query is a question you ask every key at once. Sweep it across the
-      row and each dot product answers out loud: point the same way and the
-      score climbs, point away and it dies. Now the candidates take names:
-      cat, kitten, car, sofa. Park the probe near cat and read the scores.
-      Four, two, zero, minus four. You might think a high score means two
-      tokens are the same kind of thing. But the keys never moved. Every
-      score rose and died with the probe's direction alone. Alignment in a
-      learned space, not sameness. Alignment is the score. Your hands already
-      know it.
+      Strip it to the smallest piece. Forget translation. You're mid sentence
+      and you need cat flavored information. One probe vector, four stored
+      candidates. Before it moves, call the order the bars will peak. A query
+      is a question you ask every key at once. Sweep it across the row and
+      each dot product answers out loud: point the same way and the score
+      climbs, point away and it dies. The candidates take names: cat, kitten,
+      car, sofa. Park the probe near cat: four, two, zero, minus four. Then a
+      high score means two tokens are the same kind of thing, right? But the
+      keys never moved. Every score rose and died with the probe's direction
+      alone. Alignment in a learned space, not sameness. Alignment is the
+      score. Your hands already know it.
     visual: >-
       [visual: covary | dynamic-concept] PLACED ASSET, verbatim: the PASSED
       qk-similarity beat (24s). One amber query vector q sweeps through its
@@ -204,17 +203,16 @@ beats:
     title: The perfect answer that learns nothing
     narration: >-
       Each key now carries a card, the content it hands over when found. The
-      obvious machine scores every key, takes the winner, returns its card.
+      obvious machine: score every key, take the winner, return its card.
       Cat wins. Correct. Rearrange it: keys left, cards right. You know this
-      object. It's a Python dict. Ask for cat, instant answer. Ask for
-      feline, KeyError, one synonym from a key it's literally holding. Our
-      version scores the near miss, kitten earned a two, and the pick is
-      like, kitten, noted... anyway, one hundred percent cat. Now try to
-      learn. Wiggle the query. Winner unchanged, output unchanged, gradient
+      object: a Python dict. Ask for cat, instant answer. Ask for feline,
+      KeyError, one synonym from a key it's literally holding. Our version
+      scores the near miss, kitten earned a two, and the pick just shrugs:
+      kitten, noted... anyway, one hundred percent cat. Try to learn with
+      it. Wiggle the query. Winner unchanged, output unchanged, gradient
       zero. Push further and the output teleports. The staircase is back,
-      with numbers on it. That's not a failure of effort. It's the shape of
-      the function. Keep the ranking. Lose the cliff. What's the smallest
-      edit you can make?
+      with numbers. That's not a failure of effort. It's the shape of the
+      function. Keep the ranking. Lose the cliff.
     visual: >-
       [visual: dynamic-process | connect] Cream value cards clip onto the
       keys, pre-trained as objects before anything interacts. The
@@ -227,7 +225,7 @@ beats:
       flatlines in rose (this composite is the session's first of two rose
       spends). A larger push and the output card teleports; the beat-02
       staircase redraws under the toy with the actual scores on its treads.
-      P3 lands as a pause card.
+      P3 lands as a pause card carrying the full smallest-edit question.
     tracks: [video, page]
     newIdea: >-
       Score-then-pick is exactly a Python dict, and it answers perfectly
@@ -260,12 +258,12 @@ beats:
       score. One piece of bookkeeping first: shrink the scores by the square
       root of the vector length, one point four one here. That bill comes due
       in two minutes. Exponentiate, so nothing's negative. Divide by the sum,
-      so they total one. Blend the cards in exactly those proportions. The
-      answer is mostly cat, a real slice of kitten, almost nothing else. Now
-      wiggle the query. Weights slide, output slides, the meter is alive. And
-      wait. You know these bars. Point seven seven on cat, so cat is
-      seventy seven percent of the why. Right? Hold that thought. The lookup
-      didn't fail to answer. It failed to learn.
+      so they total one. Blend the cards in those proportions. Mostly cat, a
+      real slice of kitten, almost nothing else. Wiggle the query. Weights
+      slide, output slides, the meter is alive. Wait. You know these bars.
+      Point seven seven on cat, so cat is seventy seven percent of the why.
+      Right? Hold that thought. The lookup didn't fail to answer. It failed
+      to learn.
     visual: >-
       [visual: covary | dynamic-process] The lilac bars morph from
       winner-take-all to proportions: scores shrink by 1.41, exponentiate,
@@ -306,16 +304,15 @@ beats:
     narration: >-
       Freeze the machine. Three columns: the thing you ask with, the things
       stored under labels, the things handed back. You have seen this shape
-      before. Where? The dict from earlier slides in beside it. Walk the
-      rows. Exact match becomes a continuous score. Return one value becomes
-      return a blend. KeyError becomes impossible: the weights just spread.
-      Row by row, the dict you use every day becomes the machine you just
-      built. Attention is a soft lookup table. And those lilac bars? A recipe
-      card: what got mixed, never why the recipe was chosen. The choosing
-      lives upstream, in the scoring that learned to build those numbers.
-      This blend is what the intern implemented, and it worked on the first
-      try. The curve from the opening completes: over the collapsing line,
-      the rescue draws in flat.
+      before. Where? The dict from earlier slides in beside it. Exact match
+      becomes a continuous score. Return one value becomes return a blend.
+      KeyError becomes impossible: the weights just spread. Row by row, the
+      dict you use every day becomes the machine you just built. Attention is
+      a soft lookup table. And those lilac bars? A recipe card: what got
+      mixed, never why the recipe was chosen. The choosing lives upstream, in
+      the scoring that learned to build those numbers. This is what the
+      intern implemented, and it worked on the first try. The curve from the
+      opening completes: the rescue line draws in flat.
     visual: >-
       [visual: connect | connect-to-reality] THE morph of the session. The
       frozen machine stands as three columns (amber probe, periwinkle keys,
@@ -355,20 +352,20 @@ beats:
     majorReveal: true
     misconceptionBeat: true
     misconception: attention-weights-are-explanations
-    estimatedSeconds: 60
+    estimatedSeconds: 55
   - id: beat-06a
     title: Written small
     narration: >-
       Everything you just watched, written small. Weights times values,
-      summed: that's the blend. The weights: softmax of the scores. That's
-      the exponentiate and normalize you already did. It had a name. Smooth
-      argmax, picks the winner? No. Cat got point seven seven, not one, and
-      kitten is measurably in the answer. Nothing was discarded. Now the bill
-      for that square root. Wide vectors make big dot products, big scores
-      freeze softmax near one hot, and a frozen softmax has a slope near
-      zero. Dividing by the square root of the width keeps the same
-      preference and a living gradient. Which keeps learning healthy,
-      probably. The authors wrote, we suspect.
+      summed: that's the blend. The weights: softmax of the scores. It's the
+      exponentiate and normalize you already did. Smooth argmax, picks the
+      winner? No. Cat got point seven seven, not one, and kitten is
+      measurably in the answer. Nothing was discarded. Now that square
+      root's bill. Wide vectors make big dot products, big scores freeze
+      softmax near one hot, where the slope is nearly zero. Divide by the
+      square root of the width: same preference, living gradient. Which
+      keeps learning healthy, probably. The authors themselves wrote, we
+      suspect.
     visual: >-
       [visual: symbol-sense] The fade, shown: the bars and cards morph INTO
       the symbols that name them. The formula assembles term by term,
@@ -404,14 +401,15 @@ beats:
   - id: beat-06b
     title: Sharpen it until the dictionary comes back
     narration: >-
-      The sentence is a claim, so try to break it. Multiply every score by
+      The sentence is a claim. Try to break it. Multiply every score by
       twenty. What do the weights become? One, zero, zero, zero, to eight
       decimals. The hard dictionary, back on screen. And right there the
-      gradient dies: weight times one minus weight, zero. Quick honesty: the
-      sharpening dial is softmax's, not the transformer's; its fixed cousin
-      is that square root. And 2014 scored with a tiny network, not dot
-      products; those came later. So the hard lookup was never wrong. It was
-      unlearnable. Gradient flows only while the lookup stays soft.
+      gradient dies: the slope is weight times one minus weight, nothing at
+      one or zero. Quick honesty: the sharpening dial is softmax's, not the
+      transformer's. Its fixed cousin is that square root. And 2014 scored
+      with a tiny network, not dot products. Those came later. The hard
+      lookup was never wrong. It was unlearnable. Gradient flows only while
+      the lookup stays soft.
     visual: >-
       [visual: dynamic-process | generalize] A sharpening dial multiplies
       the scores: at 5x the lilac weights read 0.9992 and 0.0008; at 20x
@@ -447,20 +445,18 @@ beats:
   - id: beat-07
     title: Same skeleton, opposite hardness
     narration: >-
-      One more test, on the thing you run at work: RAG. Embed the question:
-      a query vector. Compare against a vector index: keys. Fetch passages:
-      values. Map it yourself. Same skeleton, and the differences are the
-      lesson. RAG's lookup is hard and external, a top k you can't backprop
-      through. Attention's is soft, internal, learned end to end. Opposite
-      ends of one dial. One aside: chat models also mask future keys before
-      the softmax; the machine is otherwise unchanged. Now, that splinter
-      from earlier. Forty percent of the attention went to the word
-      terrible, so terrible is forty percent of why the review read
+      New test: the thing you run at work. RAG. Embed the question: a query
+      vector. Compare against a vector index: keys. Fetch passages: values.
+      Same skeleton. The differences are the lesson. RAG's lookup is hard
+      and external, a top k you can't backprop through. Attention's is soft,
+      internal, learned end to end. Opposite ends of one dial. Chat models
+      also mask future keys before the softmax. Otherwise, the same machine.
+      Now the thought you've been holding. Forty percent of the attention
+      went to terrible, so terrible is forty percent of why the review read
       negative. True or false? In 2019, on BiLSTM classifiers, not
       transformers, very different attention maps produced the same
-      predictions and correlated weakly with other importance measures. The
-      follow-up debate is honestly unresolved. So a heatmap sold as why is
-      really a recipe: what got mixed, never why it was chosen. Same
+      predictions and matched other importance measures only weakly. Still
+      unresolved. A heatmap is a recipe: what got mixed, never why. Same
       skeleton, opposite hardness.
     visual: >-
       [visual: generalize | dynamic-concept] Two-column alignment table,
@@ -509,21 +505,18 @@ beats:
   - id: beat-08
     title: What a dictionary cannot know
     narration: >-
-      Before the door: rebuild it from memory. Three objects, two
-      operations. What replaced the exact match, and what replaced returning
-      one value? While you think, watch the stored pairs shuffle. The
-      weights follow them. The output doesn't move a digit. A dictionary has
-      no idea what order you wrote it in. Neither does attention. The cat
-      sat on the mat. The mat sat on the cat. Same tokens, same keys, same
-      values, same blend. Your language can tell them apart. This machine
-      can't. So, for the walk home: what's the cheapest thing you could add
-      to a token so that where it sits becomes something a lookup can find?
-      Two years after that September, Google Translate went neural in
-      production, half a billion users, a hundred billion words a day. Three
-      years after, Vaswani and colleagues threw away the recurrent network
-      and kept only the fix. The fix outlived the architecture it rescued.
-      And the amber dot from the opening, Bahdanau's own gaze: session two
-      gives it the one thing it still lacks. Where the words sit.
+      Rebuild it from memory: three objects, two operations. What replaced
+      the exact match, and what replaced returning one value? While you
+      think, the stored pairs shuffle. The weights follow. The output
+      doesn't move a digit. Dictionaries don't know order. Neither does
+      attention. The cat sat on the mat. The mat sat on the cat. Same cards,
+      same blend. Your language tells them apart. This machine can't. For
+      the walk home: what's the cheapest thing you could add to a token so
+      that where it sits becomes something a lookup can find? Two years
+      later, Google Translate went neural: half a billion users. Three years
+      later, Vaswani and colleagues kept only the fix. The fix outlived the
+      architecture it rescued. That amber dot was Bahdanau's gaze. Session
+      two gives it the one thing it still lacks: where the words sit.
     visual: >-
       [visual: dynamic-process | connect-to-reality] The key-value pairs
       permute; the lilac weights shuffle with them; the mint output chip's
@@ -531,9 +524,13 @@ beats:
       the retrieval prompt. The two cat-mat sentences render as identical
       token bags: same cards, different sentences. The closing card in brand
       microcopy: "For the walk home: how does order get in?" A quiet chip
-      notes the extensions menu ("Still up?") on the page. Final image: the
-      amber gaze dot from beat-01 hops once more between source and target,
-      then parks on the unanswered question.
+      gestures at the extensions menu ("Still up?") on the page. The stakes
+      sequence reuses the beat-01 chip pattern: a timeline chip ticks
+      "+2 years" (GNMT, Sep 2016) with "500M users" and "100B words a day"
+      readouts, then "+3 years" (Transformer, 2017) as the recurrent network
+      dissolves and only the attention block stays lit. Reserved for the
+      final sentence alone: the amber gaze dot from beat-01 hops once more
+      between source and target rows, then parks on the unanswered question.
     tracks: [video, page]
     newIdea: >-
       Attention is order-blind the way a dictionary is, and language is not.
@@ -543,6 +540,9 @@ beats:
     onScreenText:
       - "For the walk home: how does order get in?"
       - "Still up?"
+      - "+2 years  GNMT  Sep 2016"
+      - "500M users  100B words a day"
+      - "+3 years  Transformer  2017"
     colors:
       keys: data.observed
       values: data.truth
