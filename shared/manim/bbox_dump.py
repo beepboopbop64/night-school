@@ -97,7 +97,10 @@ def _opacity_of(mob: Any) -> float:
                 continue
             try:
                 value = float(getter())
-            except (TypeError, ValueError):
+            except (AttributeError, TypeError, ValueError):
+                # Mobject.__getattr__ synthesizes getters for attributes the
+                # object never had (ValueTracker has no fill_opacity); the
+                # AttributeError only surfaces when the getter is CALLED.
                 continue
             found = True
             best = max(best, value)
@@ -110,6 +113,13 @@ def _collect(mob: Any, records: list[dict[str, Any]], state: dict[str, Any]) -> 
             _collect(sub, records, state)
         return
     if not _has_points(mob):
+        return
+    try:
+        # Non-visual mobjects (ValueTracker stores its value in .points) have
+        # zero extent; recording them would pollute the dump with phantoms.
+        if float(mob.width) == 0.0 and float(mob.height) == 0.0:
+            return
+    except (AttributeError, TypeError, ValueError):
         return
     registry: dict[int, str] = state["registry"]
     key = id(mob)
