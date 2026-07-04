@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "toy",
-  "stage": "S5",
+  "stage": "S7",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -42,7 +42,10 @@
       "receipt": "state/receipts/assemble.receipt.json"
     },
     "packet": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/packet.receipt.json"
     },
     "sdk-smoke": {
       "status": "pending"

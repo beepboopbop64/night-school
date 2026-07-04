@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "node": "packet",
+  "inputs": [
+    {
+      "path": "manifest.yaml",
+      "sha256": "2124fb6167cb3e5a73426d565a2691e6529e015fcefbe48853202e6c453b7635"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "rounds/round-00/packet/index.md",
+      "sha256": "7d6fd791efa9522e6c9900b6103b038323000e4067234a04de4ca83c6c5861f0"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "packet.ran",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T17:59:35.950Z",
+  "endedAt": "2026-07-04T17:59:35.952Z",
+  "transcript": "",
+  "promptSha": ""
+}

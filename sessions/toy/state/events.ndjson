@@ -21,3 +21,7 @@
 {"ts":"2026-07-04T17:59:35.755Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T17:59:35.758Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.ran","pass":true}]}}
 {"ts":"2026-07-04T17:59:35.758Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
+{"ts":"2026-07-04T17:59:35.949Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"commit","data":{"sha":"e9cddfc3f56199e5a7f85955885ebbcb8c0e4047"}}
+{"ts":"2026-07-04T17:59:35.950Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:35.953Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.ran","pass":true}]}}
+{"ts":"2026-07-04T17:59:35.954Z","runId":"run-2026-07-04T1759-c6c2c2","node":"packet","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
