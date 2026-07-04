@@ -17,3 +17,7 @@
 {"ts":"2026-07-04T17:59:35.521Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T17:59:35.524Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.ran","pass":true}]}}
 {"ts":"2026-07-04T17:59:35.525Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":3}}
+{"ts":"2026-07-04T17:59:35.754Z","runId":"run-2026-07-04T1759-c6c2c2","node":"tts","event":"commit","data":{"sha":"0d9e251e1c27aefed8b8780b92573c5417c2f933"}}
+{"ts":"2026-07-04T17:59:35.755Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T17:59:35.758Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.ran","pass":true}]}}
+{"ts":"2026-07-04T17:59:35.758Z","runId":"run-2026-07-04T1759-c6c2c2","node":"assemble","event":"node_completed","data":{"costUsd":0,"durationMs":2}}
