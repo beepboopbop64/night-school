@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "node": "storyboard",
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "b4d8f62c5ba735d206a6098164737aa76d22ab908a830856bfdffd556c445e42"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "storyboard.yaml",
+      "sha256": "1d23f840dfa7ab7ac9382bf988d24ed0101c1319dd18f30709ebec612c98564f"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "storyboard.ran",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-04T18:27:33.996Z",
+  "endedAt": "2026-07-04T18:27:33.999Z",
+  "transcript": "",
+  "promptSha": ""
+}
