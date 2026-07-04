@@ -1,0 +1,68 @@
+# The felt-obstruction interactive for beat-04a (DOCTRINE: the learner hits
+# the wall in their own hands BEFORE the resolving concept is named). It
+# extends qk-explorer's geometry with value cards, a hard/soft mode toggle,
+# an output chip, and a gradient meter. In hard mode the learner discovers
+# the cliff personally: the output ignores every nudge, then teleports.
+schemaVersion: 1
+session: attention
+interactive:
+  id: qk-cliff
+  title: Take the winner, then try to learn
+  learnerGoal: >-
+    The hard pick answers correctly and learns nothing. Dragging the query
+    in hard mode, the learner feels the output refuse to move (gradient
+    meter flat at zero) and then teleport at a score boundary; flipping to
+    soft mode, the same drag makes the output glide and the meter wake. The
+    cliff is felt before anything names the escape.
+  visual: >-
+    [visual: dynamic-process | covary] The qk-explorer geometry (amber query
+    q draggable by angle, four periwinkle keys at 20, 70, 110, 160 degrees,
+    lilac score bars with mono readouts) gains a cream value card pinned to
+    each key (card outline carries the channel, never color alone), an
+    output chip at the right, and a gradient meter under the chip. A mode
+    toggle reads "take the winner" (hard, initial) and "blend by score"
+    (soft). Hard mode: the winning key's card is copied to the output chip;
+    dragging q leaves the chip frozen and the meter flat at 0.000 in rose
+    until the top score changes hands, when the chip snaps with no
+    in-between. Soft mode: the chip renders the softmax-weighted blend in
+    mint; dragging q slides weights and chip smoothly and the meter reads a
+    living value. Readable from a still frame at 375, 768, and 1280 px.
+  colors:
+    query: data.heat        # amber - the thing doing the asking
+    keys: data.observed     # periwinkle - stored labels being interrogated
+    scores: data.params     # lilac - scores and blend weights (one family)
+    values: data.truth      # cream cards - the content handed back
+    output: data.fit        # mint - the blended output chip (soft mode)
+    failure: data.error     # rose - the flatlined gradient meter (hard mode)
+    labels: text
+    background: bg
+  slider:
+    min: 0
+    max: 360
+    step: 5
+    initial: 45
+    unit: degrees
+  toggle:
+    id: mode
+    options: [hard, soft]
+    initial: hard
+    labels:
+      hard: take the winner
+      soft: blend by score
+  states:
+    - id: initial
+      description: hard mode, query at 45 degrees; k1 wins, its card fills the output chip, meter at 0.000
+      drive: []
+    - id: obstruction
+      description: hard mode, query dragged 45 to 60 degrees; scores visibly change, output chip and meter unmoved
+      drive:
+        - { do: set-slider, value: 60 }
+    - id: teleport
+      description: hard mode, query at 95 degrees; the top score changed hands and the chip snapped to k2's card with no in-between
+      drive:
+        - { do: set-slider, value: 95 }
+    - id: success
+      description: soft mode, query back at 60 degrees; mint blended chip, weights spread across bars, meter alive
+      drive:
+        - { do: set-toggle, id: mode, value: soft }
+        - { do: set-slider, value: 60 }

@@ -1,0 +1,555 @@
+# Storyboard: attention (S3, schema v2). The Director's per-beat contract.
+# Source of truth upstream: spine.md (locked beats, metaphor registry, color
+# assignments) and treatment.md (merged, S2 final). Narration here matches
+# script.md exactly; the script adds the [visual:] cue timeline per beat.
+# Timing is budgeted honestly at ~150 spoken wpm plus explicit silences;
+# the sum (535s) sits under the 540s hard cap (L10). The treatment's trim
+# plan to 480s remains available and is recorded in treatment.md front
+# matter.
+schemaVersion: 2
+session: attention
+aha: "Attention is a soft lookup table."
+openingQuestion: "How do you learn where to look?"
+closingRetrievalPrompt: >-
+  Rebuild it from memory: three objects, two operations. What replaced the
+  exact match, and what replaced returning one value?
+breadcrumbQuestion: >-
+  What is the cheapest thing you could add to a token so that where it sits
+  becomes something a lookup can find?
+extensionsMenuRef: extensions.yaml
+notationSchedule:
+  # Pre-formal on-object labels (q, k1..k4 during the beat-03 sweep, the
+  # periwinkle mono "q . k" annotation) are characterization during
+  # manipulation, per the visual grammar; formal symbols enter at the
+  # compression beat only, strictly after their referents have been moved,
+  # scored, scaled, and blended by hand.
+  - symbol: q
+    referent: the query vector
+    firstManipulatedBeat: beat-03
+    firstSymbolicBeat: beat-06a
+  - symbol: K
+    referent: the key vectors, stacked as a matrix
+    firstManipulatedBeat: beat-03
+    firstSymbolicBeat: beat-06a
+  - symbol: V
+    referent: the value cards, stacked as a matrix
+    firstManipulatedBeat: beat-04a
+    firstSymbolicBeat: beat-06a
+  - symbol: softmax
+    referent: the exponentiate-and-normalize operation performed at the blend
+    firstManipulatedBeat: beat-04b
+    firstSymbolicBeat: beat-06a
+  - symbol: sqrt(d_k)
+    referent: the shrink-the-scores bookkeeping step performed at the blend
+    firstManipulatedBeat: beat-04b
+    firstSymbolicBeat: beat-06a
+beats:
+  - id: beat-01
+    title: The box that broke translation
+    narration: >-
+      In 2014, the best neural translator on Earth worked like this: read the
+      whole sentence, squeeze everything you understood into one fixed list
+      of 8,000 numbers, then write the translation from that list alone.
+      Every sentence got the same box. "The cat sat." 8,000 numbers. A sixty
+      word contract clause with three nested caveats. The same 8,000 numbers.
+      You can guess what the data showed: translation quality fell apart as
+      sentences got longer. And the fix that actually shipped is my favorite
+      desperate hack in the history of the field. They fed the sentence in
+      backwards. That's it. Reverse the input, and a single LSTM's BLEU score
+      jumped from 25.9 to 30.6. The model is like, wow, what if the first
+      words were just... closer. And it worked. That's the uncomfortable
+      part. It worked, and it changed nothing, because the box was still a
+      box. So the field kept squeezing. And an intern in Montreal decided to
+      stop. The intern was Dzmitry Bahdanau, five weeks left in Yoshua
+      Bengio's Montreal lab. By his own account, the idea came from watching
+      his own eyes: when you translate, your gaze hops back and forth between
+      the source and the line you're writing. So keep every word, and for
+      each word the model writes, let it look back. So why did nobody just
+      build it?
+    visual: >-
+      [visual: connect-to-reality | dynamic-process] Title card per brand
+      spec: lit window blooms on the 10pm Sky, title in cream, freehand
+      underline trues with mint glow on the first narrated syllable. Then a
+      sentence funnels into a literal box labeled "8,000 numbers"; a short
+      sentence and a sixty word clause squeeze into the same box. The
+      degradation curve draws itself from the verified artifacts: BLEU
+      against sentence length, ONLY the collapsing line; the axes stay on
+      screen, unresolved, half the frame deliberately empty. The reversal
+      hack plays: the sentence physically flips end to end, and the BLEU
+      readout ticks from 25.9 to 30.6. A timeline chip places Sep 1 before
+      Sep 10. Last, the gaze image: source row above, target row below, one
+      amber dot hopping between them as a translator's eyes would. The amber
+      dot is the series' query color, planted a minute before anything names
+      it. The question closes the beat over the unresolved curve.
+    tracks: [video, page]
+    newIdea: >-
+      A fixed-size vector cannot carry an unbounded sentence, and the field's
+      best shipped fix was a hack that left the box a box.
+    novelElements:
+      - the 8,000-number box
+      - the BLEU-versus-length collapse curve
+      - the sentence-reversal hack
+      - the amber gaze dot
+    onScreenText:
+      - "How Do You Take a Gradient Through a Choice?"
+      - "One vector, five weeks, eight thousand numbers."
+      - "8,000 numbers"
+      - "BLEU 25.9"
+      - "BLEU 30.6"
+      - "Sep 1"
+      - "Sep 10"
+    colors:
+      gazeDot: data.heat
+      collapseCurve: data.observed
+      titleTrueUp: data.fit
+      background: bg
+      labels: text
+    estimatedSeconds: 90
+  - id: beat-02
+    title: Looking is choosing
+    narration: >-
+      Here's the trap. To look back, the model has to decide where, and where
+      is a choice. This word, not that one. Watch what a choice does to
+      learning. Nudge the parameters. The selector arm doesn't move. Nudge
+      again. It slams to a different word. Flat, cliff, flat. The slope is
+      zero everywhere you can stand, and training means following slopes. So
+      here's the question of the night: how do you learn where to look? Take
+      ten seconds before we go on. Wrong guesses count double. Gradients need
+      a slope, and a choice is a cliff.
+    visual: >-
+      [visual: dynamic-concept | covary] A selector arm hovers over the
+      source words. Parameters nudge: the arm holds perfectly still. Nudge
+      again: it slams to a different word with no in-between. Underneath, a
+      step function draws itself in periwinkle as the arm moves: flat, cliff,
+      flat, a staircase with slope zero on every tread. The organizer
+      question lands as a pause card while the staircase holds. This exact
+      staircase returns inside the toy at beat-04a.
+    tracks: [video, page]
+    newIdea: >-
+      Where to look is a discrete choice, and a choice has no gradient to
+      follow.
+    novelElements:
+      - the selector arm
+      - the flat-cliff-flat staircase
+    onScreenText:
+      - "How do you learn where to look?"
+      - "slope = 0"
+    colors:
+      staircase: brand.periwinkle
+      selectorArm: brand.periwinkle
+      background: bg
+      labels: text
+    predictionPrompt:
+      prompt: >-
+        How do you make "where to look" something a gradient can touch? Take
+        ten seconds. Wrong guesses count double.
+    estimatedSeconds: 40
+  - id: beat-03
+    title: One query, asked of every key
+    narration: >-
+      Strip the problem to its smallest piece. Forget translation. You're mid
+      sentence and you need cat flavored information. One probe vector, four
+      stored candidates. Before it moves, call the order the bars will peak.
+      A query is a question you ask every key at once. Sweep it across the
+      row and each dot product answers out loud: point the same way and the
+      score climbs, point away and it dies. Now the candidates take names:
+      cat, kitten, car, sofa. Park the probe near cat and read the scores.
+      Four, two, zero, minus four. You might think a high score means two
+      tokens are the same kind of thing. But the keys never moved. Every
+      score rose and died with the probe's direction alone. Alignment in a
+      learned space, not sameness. Alignment is the score. Your hands already
+      know it.
+    visual: >-
+      [visual: covary | dynamic-concept] PLACED ASSET, verbatim: the PASSED
+      qk-similarity beat (24s). One amber query vector q sweeps through its
+      directions; four periwinkle key vectors hold still; under each key a
+      lilac score bar with numeric readout rises and dies with the query's
+      alignment, live. A freeze frame before the sweep carries the
+      prediction card. After the sweep the keys take names at the dossier
+      coordinates: cat, kitten, car, sofa; q parks at cat's direction and the
+      raw scores appear as integers on the bars: 4, 2, 0, -4. Sofa's
+      negative bar is left unnarrated; the sweep already showed
+      anti-alignment. After the sweep is felt, one pre-formal annotation in
+      periwinkle mono italic: "q . k". Labels live on objects; no legends.
+    tracks: [video, page]
+    newIdea: >-
+      A dot product turns "how relevant is this candidate" into a number that
+      moves continuously with alignment.
+    novelElements:
+      - the query vector
+      - the key vectors
+      - the lilac score bars
+    onScreenText:
+      - "q"
+      - "k1  k2  k3  k4"
+      - "cat  kitten  car  sofa"
+      - "4  2  0  -4"
+      - "q . k"
+    colors:
+      query: data.heat
+      keys: data.observed
+      scores: data.params
+      annotation: brand.periwinkle
+      background: bg
+      labels: text
+    interactiveSpec: page/interactives/qk-explorer.yaml
+    predictionPrompt:
+      prompt: >-
+        The query is about to sweep from zero to one hundred eighty degrees.
+        Call the order the bars will peak.
+    misconceptionBeat: true
+    misconception: similarity-means-identical
+    estimatedSeconds: 55
+  - id: beat-04a
+    title: The perfect answer that learns nothing
+    narration: >-
+      Each key now carries a card, the content it hands over when found. The
+      obvious machine scores every key, takes the winner, returns its card.
+      Cat wins. Correct. Rearrange it: keys left, cards right. You know this
+      object. It's a Python dict. Ask for cat, instant answer. Ask for
+      feline, KeyError, one synonym from a key it's literally holding. Our
+      version scores the near miss, kitten earned a two, and the pick is
+      like, kitten, noted... anyway, one hundred percent cat. Now try to
+      learn. Wiggle the query. Winner unchanged, output unchanged, gradient
+      zero. Push further and the output teleports. The staircase is back,
+      with numbers on it. That's not a failure of effort. It's the shape of
+      the function. Keep the ranking. Lose the cliff. What's the smallest
+      edit you can make?
+    visual: >-
+      [visual: dynamic-process | connect] Cream value cards clip onto the
+      keys, pre-trained as objects before anything interacts. The
+      score-then-pick machine runs once: cat's bar wins, cat's card slides
+      out. The picture rearranges into two columns, keys left, cards right,
+      and holds a beat so the learner recognizes the dict before any label
+      says so. A code well appears: d["cat"] returns instantly; d["feline"]
+      dies in a rose KeyError. A gradient meter attaches to the output. The
+      query wiggles: bars shiver, winner holds, output frozen, meter
+      flatlines in rose (this composite is the session's first of two rose
+      spends). A larger push and the output card teleports; the beat-02
+      staircase redraws under the toy with the actual scores on its treads.
+      P3 lands as a pause card.
+    tracks: [video, page]
+    newIdea: >-
+      Score-then-pick is exactly a Python dict, and it answers perfectly
+      while learning nothing.
+    novelElements:
+      - the cream value cards
+      - the dict code well
+      - the gradient meter
+    onScreenText:
+      - d["cat"]
+      - "KeyError: 'feline'"
+      - "gradient 0.000"
+    colors:
+      values: data.truth
+      keys: data.observed
+      query: data.heat
+      failure: data.error
+      background: bg
+      labels: text
+    interactiveSpec: page/interactives/qk-cliff.yaml
+    predictionPrompt:
+      prompt: >-
+        Keep the ranking. Lose the cliff. What is the smallest edit you can
+        make?
+    estimatedSeconds: 50
+  - id: beat-04b
+    title: Never choose
+    narration: >-
+      Never choose. Give every card partial credit in proportion to its
+      score. One piece of bookkeeping first: shrink the scores by the square
+      root of the vector length, one point four one here. That bill comes due
+      in two minutes. Exponentiate, so nothing's negative. Divide by the sum,
+      so they total one. Blend the cards in exactly those proportions. The
+      answer is mostly cat, a real slice of kitten, almost nothing else. Now
+      wiggle the query. Weights slide, output slides, the meter is alive. And
+      wait. You know these bars. Point seven seven on cat, so cat is
+      seventy seven percent of the why. Right? Hold that thought. The lookup
+      didn't fail to answer. It failed to learn.
+    visual: >-
+      [visual: covary | dynamic-process] The lilac bars morph from
+      winner-take-all to proportions: scores shrink by 1.41, exponentiate,
+      normalize; the four weights land on the bars as 0.766, 0.186, 0.045,
+      0.003. The value cards pour into one mint output chip that reads
+      [0.912, 0.083]. The query wiggles: weights slide smoothly, the output
+      chip drifts smoothly, the gradient meter wakes. The lilac weight bars
+      settle over the four tokens and hold; the frame is now structurally an
+      attention heatmap, though nothing on screen says so. The misconception
+      is voiced over that exact frame and left open across the beat
+      boundary.
+    tracks: [video, page]
+    newIdea: >-
+      The escape from the cliff is to never choose: blend every value in
+      proportion to its score.
+    novelElements:
+      - the shrink-by-1.41 bookkeeping step
+      - the softmax weight proportions
+      - the mint output chip
+    onScreenText:
+      - "/ 1.41"
+      - "exp, then normalize"
+      - "0.766  0.186  0.045  0.003"
+      - "[0.912, 0.083]"
+    colors:
+      weights: data.params
+      values: data.truth
+      output: data.fit
+      query: data.heat
+      background: bg
+      labels: text
+    majorReveal: true
+    misconceptionBeat: true
+    misconception: attention-weights-are-explanations
+    estimatedSeconds: 45
+  - id: beat-05
+    title: You have built this before
+    narration: >-
+      Freeze the machine. Three columns: the thing you ask with, the things
+      stored under labels, the things handed back. You have seen this shape
+      before. Where? The dict from earlier slides in beside it. Walk the
+      rows. Exact match becomes a continuous score. Return one value becomes
+      return a blend. KeyError becomes impossible: the weights just spread.
+      Row by row, the dict you use every day becomes the machine you just
+      built. Attention is a soft lookup table. And those lilac bars? A recipe
+      card: what got mixed, never why the recipe was chosen. The choosing
+      lives upstream, in the scoring that learned to build those numbers.
+      This blend is what the intern implemented, and it worked on the first
+      try. The curve from the opening completes: over the collapsing line,
+      the rescue draws in flat.
+    visual: >-
+      [visual: connect | connect-to-reality] THE morph of the session. The
+      frozen machine stands as three columns (amber probe, periwinkle keys,
+      cream cards). The beat-04a dict code well slides in beside it. Three
+      seconds of silence on the prediction card. Then each dict row
+      physically morphs into its attention row, one at a time: exact match
+      stretches into a continuous score bar; the single returned value fans
+      into a weighted blend; the KeyError row dissolves as the weights
+      spread. The sentence trues up on screen, freehand to exact, mint glow
+      on the final word: "Attention is a soft lookup table." Then the hook's
+      BLEU curve returns and the rescue line draws in flat above the
+      collapse, redrawn from the verified Figure 2 and Table 1 (17.82
+      against 26.75 on long sentences). Page aside carries the RNNSearch
+      naming recollection; video narration stays on the mechanism.
+    tracks: [video, page]
+    newIdea: >-
+      The blending machine is a dictionary with the hardness removed, and the
+      identity is checkable row by row.
+    novelElements:
+      - the aha sentence true-up
+      - the rescue line
+    onScreenText:
+      - "Attention is a soft lookup table."
+      - "17.82"
+      - "26.75"
+    colors:
+      query: data.heat
+      keys: data.observed
+      values: data.truth
+      weights: data.params
+      ahaTrueUp: data.fit
+      rescueLine: data.observed
+      background: bg
+      labels: text
+    predictionPrompt:
+      prompt: "You have seen this shape before. Where?"
+    majorReveal: true
+    misconceptionBeat: true
+    misconception: attention-weights-are-explanations
+    estimatedSeconds: 60
+  - id: beat-06a
+    title: Written small
+    narration: >-
+      Everything you just watched, written small. Weights times values,
+      summed: that's the blend. The weights: softmax of the scores. That's
+      the exponentiate and normalize you already did. It had a name. Smooth
+      argmax, picks the winner? No. Cat got point seven seven, not one, and
+      kitten is measurably in the answer. Nothing was discarded. Now the bill
+      for that square root. Wide vectors make big dot products, big scores
+      freeze softmax near one hot, and a frozen softmax has a slope near
+      zero. Dividing by the square root of the width keeps the same
+      preference and a living gradient. Which keeps learning healthy,
+      probably. The authors wrote, we suspect.
+    visual: >-
+      [visual: symbol-sense] The fade, shown: the bars and cards morph INTO
+      the symbols that name them. The formula assembles term by term,
+      spatially attached to its objects: the amber q lifts off the probe, K
+      off the periwinkle keys, the softmax expression wraps the lilac
+      weights, V off the cream cards; sqrt(d_k) docks under the score term
+      as the 1.41 bookkeeping comes due. A width dial demonstrates the debt:
+      at width 64 typical scores hit 8, softmax at 8 versus minus 8 reads
+      0.9999997, the slope readout collapses; divide by 8 and the same
+      preference breathes. The completed formula trues up as a whole, mint
+      glow, one time.
+    tracks: [video, page]
+    newIdea: >-
+      The formula softmax(q K^T / sqrt(d_k)) V is the soft lookup written
+      small, term by term.
+    novelElements:
+      - the assembled formula
+      - the name softmax
+    onScreenText:
+      - "softmax(q K^T / sqrt(d_k)) V"
+      - "0.9999997"
+    colors:
+      query: data.heat
+      keys: data.observed
+      weights: data.params
+      values: data.truth
+      truedFormula: data.fit
+      background: bg
+      labels: text
+    misconceptionBeat: true
+    misconception: softmax-picks-the-max
+    estimatedSeconds: 40
+  - id: beat-06b
+    title: Sharpen it until the dictionary comes back
+    narration: >-
+      The sentence is a claim, so try to break it. Multiply every score by
+      twenty. What do the weights become? One, zero, zero, zero, to eight
+      decimals. The hard dictionary, back on screen. And right there the
+      gradient dies: weight times one minus weight, zero. Quick honesty: the
+      sharpening dial is softmax's, not the transformer's; its fixed cousin
+      is that square root. And 2014 scored with a tiny network, not dot
+      products; those came later. So the hard lookup was never wrong. It was
+      unlearnable. Gradient flows only while the lookup stays soft.
+    visual: >-
+      [visual: dynamic-process | generalize] A sharpening dial multiplies
+      the scores: at 5x the lilac weights read 0.9992 and 0.0008; at 20x
+      they read 1, 0, 0, 0 to eight decimal places and the literal hard dict
+      from beat-04a returns on screen, exact. The gradient meter attached
+      since beat-04a rolls to zero as w(1 - w) collapses; no rose is spent
+      here, the numbers alone carry the death. The honesty callouts land as
+      two one-line page-style captions in periwinkle mono; full lineage
+      lives on the page.
+    tracks: [video, page]
+    newIdea: >-
+      The hard lookup is the sharp limit of the soft one, and the gradient
+      dies exactly at that limit.
+    novelElements:
+      - the sharpening dial
+      - the gradient factor w(1 - w)
+    onScreenText:
+      - "x 20"
+      - "1.000  0.000  0.000  0.000"
+      - "w(1 - w) -> 0"
+    colors:
+      weights: data.params
+      hardDict: data.observed
+      background: bg
+      labels: text
+    predictionPrompt:
+      prompt: "Multiply every score by twenty. What do the weights become?"
+      expectedWrongAnswer: >-
+        Roughly the same four proportions, since softmax normalizes
+        everything anyway.
+    majorReveal: true
+    estimatedSeconds: 40
+  - id: beat-07
+    title: Same skeleton, opposite hardness
+    narration: >-
+      One more test, on the thing you run at work: RAG. Embed the question:
+      a query vector. Compare against a vector index: keys. Fetch passages:
+      values. Map it yourself. Same skeleton, and the differences are the
+      lesson. RAG's lookup is hard and external, a top k you can't backprop
+      through. Attention's is soft, internal, learned end to end. Opposite
+      ends of one dial. One aside: chat models also mask future keys before
+      the softmax; the machine is otherwise unchanged. Now, that splinter
+      from earlier. Forty percent of the attention went to the word
+      terrible, so terrible is forty percent of why the review read
+      negative. True or false? In 2019, on BiLSTM classifiers, not
+      transformers, very different attention maps produced the same
+      predictions and correlated weakly with other importance measures. The
+      follow-up debate is honestly unresolved. So a heatmap sold as why is
+      really a recipe: what got mixed, never why it was chosen. Same
+      skeleton, opposite hardness.
+    visual: >-
+      [visual: generalize | dynamic-concept] Two-column alignment table,
+      attention left, RAG right, rows lighting pairwise: amber query beside
+      embedded question, periwinkle keys beside the vector index, cream
+      value cards beside fetched passages. The table appears with blanks
+      first and holds four seconds for the learner to map it. A single
+      hard-soft dial renders both machines as one axis with RAG and
+      attention at opposite ends; a one-line causal mask caption sits under
+      the attention column. Then the dual-heatmap morph: two visibly
+      different lilac weight maps over the same review collapse into the
+      same output bar; the false explanation sentence gets crossed out in
+      rose, the session's second and final rose spend. The beat-06a formula
+      persists in the corner; RAG's top-k pointer taps the softmax term it
+      replaces.
+    tracks: [video, page]
+    newIdea: >-
+      RAG runs the same three-object lookup skeleton at the opposite end of
+      the hard-soft dial, which is also why weights are plumbing, not
+      reasons.
+    novelElements:
+      - the RAG pipeline column
+      - the hard-soft dial
+      - the dual heatmap pair
+    onScreenText:
+      - "query  keys  values"
+      - "top-k"
+      - "hard, external"
+      - "soft, internal"
+    colors:
+      query: data.heat
+      keys: data.observed
+      values: data.truth
+      weights: data.params
+      crossOut: data.error
+      background: bg
+      labels: text
+    predictionPrompt:
+      prompt: >-
+        Forty percent of the attention went to the word "terrible", so
+        "terrible" is forty percent of why the review read negative. True or
+        false?
+      expectedWrongAnswer: "True."
+    majorReveal: true
+    estimatedSeconds: 60
+  - id: beat-08
+    title: What a dictionary cannot know
+    narration: >-
+      Before the door: rebuild it from memory. Three objects, two
+      operations. What replaced the exact match, and what replaced returning
+      one value? While you think, watch the stored pairs shuffle. The
+      weights follow them. The output doesn't move a digit. A dictionary has
+      no idea what order you wrote it in. Neither does attention. The cat
+      sat on the mat. The mat sat on the cat. Same tokens, same keys, same
+      values, same blend. Your language can tell them apart. This machine
+      can't. So, for the walk home: what's the cheapest thing you could add
+      to a token so that where it sits becomes something a lookup can find?
+      Two years after that September, Google Translate went neural in
+      production, half a billion users, a hundred billion words a day. Three
+      years after, Vaswani and colleagues threw away the recurrent network
+      and kept only the fix. The fix outlived the architecture it rescued.
+      And the amber dot from the opening, Bahdanau's own gaze: session two
+      gives it the one thing it still lacks. Where the words sit.
+    visual: >-
+      [visual: dynamic-process | connect-to-reality] The key-value pairs
+      permute; the lilac weights shuffle with them; the mint output chip's
+      digits stay frozen, held long enough to be believed, wordless under
+      the retrieval prompt. The two cat-mat sentences render as identical
+      token bags: same cards, different sentences. The closing card in brand
+      microcopy: "For the walk home: how does order get in?" A quiet chip
+      notes the extensions menu ("Still up?") on the page. Final image: the
+      amber gaze dot from beat-01 hops once more between source and target,
+      then parks on the unanswered question.
+    tracks: [video, page]
+    newIdea: >-
+      Attention is order-blind the way a dictionary is, and language is not.
+    novelElements:
+      - the shuffle permutation
+      - the identical token bags
+    onScreenText:
+      - "For the walk home: how does order get in?"
+      - "Still up?"
+    colors:
+      keys: data.observed
+      values: data.truth
+      weights: data.params
+      output: data.fit
+      gazeDot: data.heat
+      closingCard: brand.periwinkle
+      background: bg
+      labels: text
+    estimatedSeconds: 55

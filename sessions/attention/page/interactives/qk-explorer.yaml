@@ -1,0 +1,51 @@
+# PASSED asset, absorbed from the M4 vertical slice (slice-attention)
+# unchanged in behavior; twinned to beat-03 on the page track. States are
+# the Playwright screenshot checkpoints.
+schemaVersion: 1
+session: attention
+interactive:
+  id: qk-explorer
+  title: Turn the question until it matches
+  learnerGoal: >-
+    Alignment IS the score. Dragging the query's angle, the learner feels
+    each dot product climb exactly as the query turns toward that key and
+    die as it turns away. Nobody has to say it; the hands already know.
+  visual: >-
+    [visual: covary | dynamic-concept] One amber query vector (labeled q on
+    the object) points at an angle the learner sets by dragging or with
+    arrow keys. Four periwinkle key vectors (labeled k1..k4 at their tips)
+    hold still at 20, 70, 110, and 160 degrees. Under each key sits a lilac
+    score bar with a mono numeric readout of the dot product: bar and number
+    rise and fall WITH the query's alignment to that key, live, as the query
+    turns. At any moment the best-aligned key's bar visibly leads. Labels
+    are cream and sit on their objects; no legends, no swatch keys. The
+    covariation (query direction <-> score height) must be readable from a
+    still frame alone, at 375, 768, and 1280 px viewport widths.
+  colors:
+    query: data.heat        # amber - the thing doing the asking
+    keys: data.observed     # periwinkle - the data being interrogated
+    scores: data.params     # lilac - the numbers the mechanism produces
+    labels: text            # Paper Under Lamplight cream
+    background: bg          # 10pm Sky (the page's own background)
+  slider:
+    min: 0
+    max: 360
+    step: 5
+    initial: 90
+    unit: degrees
+  states:
+    - id: initial
+      description: untouched first render; the query rests at 90 degrees
+      drive: []
+    - id: mid-drag
+      description: query mid-sweep at 30 degrees; k1 pulling ahead of k2
+      drive:
+        - { do: set-slider, value: 30 }
+    - id: aligned-with-k1
+      description: query exactly along k1 at 20 degrees; k1's bar and readout at their peak
+      drive:
+        - { do: set-slider, value: 20 }
+    - id: anti-aligned
+      description: query at 200 degrees, dead opposite k1; k1's readout at its minimum
+      drive:
+        - { do: set-slider, value: 200 }
