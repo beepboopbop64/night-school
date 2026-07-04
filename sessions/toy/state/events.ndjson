@@ -40,3 +40,4 @@
 {"ts":"2026-07-04T18:02:33.427Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T18:02:33.438Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.ran","pass":true}]}}
 {"ts":"2026-07-04T18:02:33.440Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":5}}
+{"ts":"2026-07-04T18:02:33.713Z","runId":"run-2026-07-04T1802-77b5e7","node":"tts","event":"commit","data":{"sha":"265c0df10a911832e5acb41809ce026320171520"}}
