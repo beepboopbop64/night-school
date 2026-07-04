@@ -1,0 +1,91 @@
+Session title (page header + title card): "How Do You Take a Gradient Through a Choice?"
+Session subtitle (title card): "One vector, five weeks, eight thousand numbers."
+Aha sentence (on screen at the true-up): "Attention is a soft lookup table."
+Opening organizer question (pause card): "How do you learn where to look?"
+Closing retrieval prompt: "Rebuild it from memory: three objects, two operations. What replaced the exact match, and what replaced returning one value?"
+Breadcrumb question ("For the walk home"): "What is the cheapest thing you could add to a token so that where it sits becomes something a lookup can find?"
+
+--- beat-01 ---
+Beat title: The box that broke translation
+On-screen text (labels/terms):
+  * How Do You Take a Gradient Through a Choice?
+  * One vector, five weeks, eight thousand numbers.
+  * 8,000 numbers
+  * BLEU 25.9
+  * BLEU 30.6
+  * Sep 1
+  * Sep 10
+
+--- beat-02 ---
+Beat title: Looking is choosing
+On-screen text (labels/terms):
+  * How do you learn where to look?
+  * slope = 0
+Prediction prompt (pause card): "How do you make "where to look" something a gradient can touch? Take ten seconds. Wrong guesses count double."
+
+--- beat-03 ---
+Beat title: One query, asked of every key
+On-screen text (labels/terms):
+  * q
+  * k1  k2  k3  k4
+  * cat  kitten  car  sofa
+  * 4  2  0  -4
+  * q . k
+Prediction prompt (pause card): "The query is about to sweep from zero to one hundred eighty degrees. Call the order the bars will peak."
+
+--- beat-04a ---
+Beat title: The perfect answer that learns nothing
+On-screen text (labels/terms):
+  * d["cat"]
+  * KeyError: 'feline'
+  * gradient 0.000
+Prediction prompt (pause card): "Keep the ranking. Lose the cliff. What is the smallest edit you can make?"
+
+--- beat-04b ---
+Beat title: Never choose
+On-screen text (labels/terms):
+  * / 1.41
+  * exp, then normalize
+  * 0.766  0.186  0.045  0.003
+  * [0.912, 0.083]
+
+--- beat-05 ---
+Beat title: You have built this before
+On-screen text (labels/terms):
+  * Attention is a soft lookup table.
+  * 17.82
+  * 26.75
+Prediction prompt (pause card): "You have seen this shape before. Where?"
+
+--- beat-06a ---
+Beat title: Written small
+On-screen text (labels/terms):
+  * softmax(q K^T / sqrt(d_k)) V
+  * 0.9999997
+
+--- beat-06b ---
+Beat title: Sharpen it until the dictionary comes back
+On-screen text (labels/terms):
+  * x 20
+  * 1.000  0.000  0.000  0.000
+  * w(1 - w) -> 0
+Prediction prompt (pause card): "Multiply every score by twenty. What do the weights become?"
+
+--- beat-07 ---
+Beat title: Same skeleton, opposite hardness
+On-screen text (labels/terms):
+  * query  keys  values
+  * top-k
+  * hard, external
+  * soft, internal
+Prediction prompt (pause card): "Forty percent of the attention went to the word "terrible", so "terrible" is forty percent of why the review read negative. True or false?"
+
+--- beat-08 ---
+Beat title: What a dictionary cannot know
+On-screen text (labels/terms):
+  * For the walk home: how does order get in?
+  * Still up?
+  * +2 years  GNMT  Sep 2016
+  * 500M users  100B words a day
+  * +3 years  Transformer  2017
+
