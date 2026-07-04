@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber query vector reorients across frames while the periwinkle keys hold still, and the tallest lilac bar (leading key) tracks the query, giving a single covariation focus.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frame shows one query, four keys, and their four paired score bars — a single coherent system, not five independent novel ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels q and k1..k4 sit directly on their arrow tips, and each numeric readout sits under its own bar; no legend or swatch key appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is limited to object labels and numeric score readouts beside their bars; no prose block sits alone on the background.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The q/k labels and the +0.98/+1.00 style readouts are rendered at a large, easily readable size relative to frame height.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All arrows, labels, bars, and readouts sit fully inside the frame with comfortable margins, including the rightmost k4 group.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each label, arrow, bar, and readout occupies its own column with no overlap or stacking across the frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The query is amber (attention/heat), the keys are periwinkle (observed), and the score bars are lilac, matching Night School token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — query, keys, bars, readouts — carries propositional content; no mascots or decorative filler are present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber query sweeps direction across frames while the four periwinkle keys stay fixed and the lilac score bars rise/fall with alignment (e.g. k1 leads when q points left, k3/k4 lead when q rotates right), delivering the promised covariation.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each key's arrow, its bar, and its numeric readout are stacked in a single vertical column, keeping related items together.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the query rotates continuously and bar heights morph smoothly with the score values, reading as motion rather than cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition has generous negative space with evenly spaced columns and a clear left-to-right reading order.",
+    "suggestion": ""
+  }
+]

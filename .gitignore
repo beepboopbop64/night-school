@@ -16,3 +16,6 @@ sessions/*/video/out/
 **/media/Tex/
 **/media/texts/
 **/media/videos/
+
+# dailies keep frames+verdicts in git; renders stay out
+sessions/*/state/dailies/**/render.mp4

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "node": "s4a.qk-similarity",
+  "inputs": [
+    {
+      "path": "beat.yaml",
+      "sha256": "bdb42b41bda4dd51085644502b187d7b99f6e7720a92b2bb5d3b2e5fd7b99e64"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/scenes/scene_qk_similarity.py",
+      "sha256": "67900fbb06ab9ec76b8a5acccd6e3bc04f60d7b7477638658fe719cc69fc17c5"
+    },
+    {
+      "path": "media/qk-similarity.mp4",
+      "sha256": "dc5220d64104ddfd36ab29ee2989531e97c822bb0458002f844925d15c6a1cf7"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "bbox.clean",
+        "pass": true
+      },
+      {
+        "id": "iris.pass",
+        "pass": true,
+        "iter": 1
+      }
+    ]
+  },
+  "iterations": 1,
+  "costUsd": 1,
+  "tier": "opus",
+  "startedAt": "2026-07-04T20:36:16.962Z",
+  "endedAt": "2026-07-04T20:50:40.562Z",
+  "transcript": "state/dailies/slice-2026-07-04T2036-3bd626",
+  "promptSha": "ef0fdfd568f062bd5f514cfdaee1b7982f811f2fbc0823a136b005e8186ec143",
+  "meta": {
+    "runId": "slice-2026-07-04T2036-3bd626",
+    "coderModel": "claude-sonnet-5",
+    "videoSeconds": 23.2,
+    "perIteration": [
+      {
+        "iter": 1,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.8490500999999999,
+        "irisCostUsd": 0.147517,
+        "wallMs": 863590,
+        "fingerprints": [],
+        "replanWasForced": false
+      }
+    ]
+  }
+}
