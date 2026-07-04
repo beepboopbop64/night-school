@@ -19,32 +19,32 @@
     },
     "scene-render": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/scene-render.receipt.json"
     },
     "web-section": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/web-section.receipt.json"
     },
     "tts": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/tts.receipt.json"
     },
     "assemble": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/assemble.receipt.json"
     },
     "packet": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/packet.receipt.json"
     },
     "sdk-smoke": {
@@ -52,11 +52,6 @@
     }
   },
   "needsJake": [
-    {
-      "node": "tts",
-      "reason": "G1 voice pick blocked: no ElevenLabs key",
-      "since": "2026-07-04T18:28:44.241Z"
-    },
     {
       "node": "sdk-smoke",
       "reason": "Claude Code returned an error result: Not logged in · Please run /login",

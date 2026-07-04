@@ -33,3 +33,10 @@
 {"ts":"2026-07-04T18:28:52.627Z","runId":"run-2026-07-04T1828-bb09c4","node":"packet","event":"commit","data":{"sha":"1a5af9e45b6721e02057210a68cd7004b0aea162"}}
 {"ts":"2026-07-04T18:28:52.629Z","runId":"run-2026-07-04T1828-bb09c4","node":"sdk-smoke","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-04T18:28:54.109Z","runId":"run-2026-07-04T1828-bb09c4","node":"sdk-smoke","event":"needs_jake","data":{"reason":"Claude Code returned an error result: Not logged in · Please run /login"}}
+{"ts":"2026-07-04T18:34:08.341Z","runId":"run-2026-07-04T1834-6850ee","node":"brief","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:34:08.342Z","runId":"run-2026-07-04T1834-6850ee","node":"storyboard","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:34:08.344Z","runId":"run-2026-07-04T1834-6850ee","node":"scene-render","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:34:08.345Z","runId":"run-2026-07-04T1834-6850ee","node":"web-section","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-04T18:34:08.346Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-04T18:34:09.586Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.audio-written","pass":true}]}}
+{"ts":"2026-07-04T18:34:09.587Z","runId":"run-2026-07-04T1834-6850ee","node":"tts","event":"node_completed","data":{"costUsd":0,"durationMs":1235}}

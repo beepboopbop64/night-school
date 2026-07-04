@@ -14,7 +14,7 @@
   "outputs": [
     {
       "path": "video/audio/beat-01.mp3",
-      "sha256": "a67e4b79481db07ffea5ebcfe4beaed520ef0cee5beb4efff711971b59e029b9"
+      "sha256": "ae25734effafcaf1435b975f92c2f5ce3669906086086030a03a65ad8b3bade9"
     }
   ],
   "gate": {
@@ -23,23 +23,19 @@
       {
         "id": "tts.audio-written",
         "pass": true
-      },
-      {
-        "id": "tts-silent-fallback: no ELEVENLABS_API_KEY",
-        "pass": true
       }
     ]
   },
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-04T18:28:43.916Z",
-  "endedAt": "2026-07-04T18:28:44.229Z",
+  "startedAt": "2026-07-04T18:34:08.345Z",
+  "endedAt": "2026-07-04T18:34:09.580Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "mode": "silent-fallback",
-    "reason": "no ELEVENLABS_API_KEY",
-    "durationSeconds": 52.466667
+    "mode": "elevenlabs",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM",
+    "model": "eleven_multilingual_v2"
   }
 }
