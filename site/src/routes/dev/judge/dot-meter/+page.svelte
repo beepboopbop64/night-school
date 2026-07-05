@@ -22,11 +22,10 @@
 			'A quiet song that matches your mix exactly gets buried under bigger ones. Size is drowning direction, and fixing that is exactly where this lesson is headed.'
 	};
 	function startChallenge(kind: 'cheat' | 'short') {
-		if (challenge === kind) {
-			// clicking an armed card is a retry
-			if (kind === 'cheat') solvedCheat = false;
-			else solvedShort = false;
-		}
+		// one click always re-arms: a solved card resets on first click,
+		// whether or not another challenge was active in between
+		if (kind === 'cheat' && (challenge === 'cheat' || solvedCheat)) solvedCheat = false;
+		if (kind === 'short' && (challenge === 'short' || solvedShort)) solvedShort = false;
 		challenge = kind;
 		probeAngle = 40;
 		lengthC1 = 1.0;
@@ -462,7 +461,7 @@
 	.lgt { fill: color-mix(in oklab, var(--color-text) 55%, transparent); font-size: 10.5px; }
 	.cand.hov { opacity: 1; }
 	.cand.hov .shaft { stroke-width: 3.2; }
-	.challenges { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin: 0 0 1rem; }
+	.challenges { display: flex; gap: 0.6rem; align-items: stretch; flex-wrap: wrap; margin: 0 0 1rem; }
 	.chal {
 		flex: 1 1 0; min-width: 0;
 		display: flex; flex-direction: column; align-items: flex-start; gap: 0.18rem;
