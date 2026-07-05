@@ -5,39 +5,62 @@ beat:
   id: beat-02
   title: Turn the probe and feel it
   narration: >-
-    Strip it down. A taste is an arrow: each direction is a quality, and the
-    length is how hard the song leans that way. Take one probe arrow and four
-    candidate arrows. Multiply them entry by entry and add. That single sum is
-    the score.
+    You just tried to score that match by hand, and it fought back. Add
+    everything up and loudness wins, not agreement. Count exact matches and
+    nothing ever matches. Here is the move that lands it. A taste is an arrow:
+    each direction is one quality, and the length is how hard the song leans
+    that way.
 
 
-    Before you drag anything, call it: which candidate ends up on top, and does
-    any score go negative?
+    The recipe is almost embarrassingly small. Multiply the two arrows entry by
+    entry, then add. If your taste is two and one, and a song is one and three,
+    that is two times one plus one times three: five. One number, the whole
+    tangle collapsed.
 
 
-    Now turn the probe and watch the bars answer. Point at a candidate and its
-    score climbs. Turn away and it dies. So a big score means two songs are the
-    same, right? Watch again. The bars moved while the candidates never moved at
-    all. The score reads agreement of direction, not sameness.
+    Now meet the instrument. One probe arrow, the thing doing the asking. Four
+    candidates, holding still, and under each candidate a bar showing its
+    current score.
+
+
+    Before anything moves, call your shot, and make it one the sweep can prove
+    wrong: as the probe turns, does any score go negative?
+
+
+    Now the sweep, and everything on screen is frozen except the probe. As the
+    probe turns toward a candidate, that bar climbs. As it turns away, the bar
+    dies. The candidates never moved, so direction is the only thing the score
+    can be reading.
+
+
+    So a big score means two songs are the same, right? Now watch what length
+    does. One candidate stretches longer, direction pinned, and its bar climbs
+    anyway, on length alone, even though its direction never got closer. The
+    score reads agreement of direction, not sameness, and a long arrow can fake
+    a high number.
   visual: "[visual: covary | dynamic-concept] The stacked lists of qualities from
     the hook fold down, each feature becoming one direction, until each song is
     a single arrow. All arrows use thin exact strokes with arrowheads sized in
     proportion to shaft length; the amber probe's head is drawn to the same
-    proportion as the candidates', never bloated or malformed. One amber probe
-    arrow sweeps through directions; four periwinkle candidate arrows hold
-    still; under each candidate a lilac score bar with a small mono numeric
-    readout climbs and dies as the probe turns toward and away from it. Each
-    candidate label, and the 'probe' label, sits nudged clear of every arrow so
-    nothing ever collides, staying readable at every probe angle including when
-    the probe passes candidate B. Candidate c1 carries a length handle: dragging
-    it stretches c1 while its direction holds, and c1's score climbs on length
-    alone. A freeze frame before the sweep carries the prediction card that asks
-    the learner to name the candidate whose bar will top out; after the sweep
-    the probe parks and the four scores land as integers on the bars."
+    proportion as the candidates', never bloated or malformed. The recipe lands
+    first as a tiny worked chip: two short columns, two and one against one and
+    three, products pooling into a single lilac five. Then the instrument
+    assembles: one amber probe arrow, four periwinkle candidate arrows holding
+    still, and under each candidate a lilac score bar with a small mono numeric
+    readout. Each candidate label, and the 'probe' label, sits nudged clear of
+    every arrow so nothing ever collides, staying readable at every probe angle
+    including when the probe passes candidate B. A freeze frame before the sweep
+    carries the prediction card asking whether any score goes negative; then the
+    probe sweeps through directions while everything else holds frozen, each bar
+    climbing and dying as the probe turns toward and away from its candidate,
+    and the four scores land as integers on the bars. Last, candidate c1
+    stretches longer while its direction holds pinned and its score climbs on
+    length alone; on the page, c1 carries a length handle so the learner can
+    drive the stretch by hand."
   colors:
     probe: data.heat
     candidates: data.observed
     scores: data.params
     background: bg
     labels: text
-  durationTargetSeconds: 52.6
+  durationTargetSeconds: 115
