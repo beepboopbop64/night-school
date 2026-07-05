@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The final frames give the meter, its lilac readout '58', and the closing line clear focus while the two 'you'/'the role' columns recede to dimmed supporting context.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Content accumulates gradually across frames (arc, then meter, then columns row by row, then products and readout), never flooding more than the two paired columns and one dial at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each value sits on its row ('Python hours: 12', 'SQL reps: 5'), columns are headed by 'you' and 'the role', and 'two arrows in, one number out' labels the 58 readout directly.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text is either a row label, the readout label, or the short closing annotation 'Different aisle, same meter.' sitting beneath the meter it describes.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Column headers, row entries, the '58' readout and both bottom lines are all comfortably above the ~2.2% legibility threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All columns, the meter, readout, and closing line sit well inside the frame with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or labels overlap; the products (36, 20, 2) sit cleanly in the central gutter between the two columns.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Input values wear periwinkle blue consistently while the products and pooled readout stay lilac throughout, and the dial needle matches the lilac readout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element—the two attribute columns, the meter, the needle, and the readout—carries propositional content; no decorative filler is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The promised composition lands: 'you'/'the role' columns with Python hours, SQL reps, nights free multiply and pool to a lilac 58 on the dial, labeled 'two arrows in, one number out' with 'Different aisle, same meter.' as the closing line.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Matched entries and their products align across the central gutter and the readout sits directly under the meter, keeping related items adjacent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across the six frames the meter forms, columns build row by row, and the products pool into the readout as a continuous progression rather than a hard cut.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The layout has ample negative space with the two columns balanced left and right and the meter centered below, yielding a clear reading order.",
+    "suggestion": ""
+  }
+]

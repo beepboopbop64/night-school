@@ -48,9 +48,9 @@
       "receipt": "state/receipts/s4a.beat-03.receipt.json"
     },
     "s4a.beat-04": {
-      "status": "flagged",
+      "status": "passed",
       "iter": 1,
-      "costUsd": 1.6173478000000001,
+      "costUsd": 1.682087,
       "receipt": "state/receipts/s4a.beat-04.receipt.json"
     },
     "s4b.sec-beat-01": {
@@ -138,11 +138,5 @@
       "receipt": "state/receipts/s4b.sec-beat-04b.receipt.json"
     }
   },
-  "needsJake": [
-    {
-      "node": "s4a.beat-04",
-      "reason": "gate failed: scene.duration-within-tolerance",
-      "since": "2026-07-05T14:21:06.021Z"
-    }
-  ]
+  "needsJake": []
 }

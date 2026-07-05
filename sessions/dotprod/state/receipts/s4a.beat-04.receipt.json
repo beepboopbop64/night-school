@@ -22,15 +22,15 @@
     },
     {
       "path": "video/scenes/scene_beat_04.py",
-      "sha256": "26daf66e19cb0529ce8df183082becaeb6c0e887b4493527d12e0f032843b203"
+      "sha256": "ef08ef168968c772a2641262c5a991521a466fcdf3fa4eb65301f19948b35b8c"
     },
     {
       "path": "media/beat-04.mp4",
-      "sha256": "24a88840c6cccabb086c5ca6b54108de0bfc6b3892070cafebf3fdad760a9eae"
+      "sha256": "abe59b11ed8014a0eeb94561f10a7cc75d9af9f4d731f85e486b6a187fb823d4"
     }
   ],
   "gate": {
-    "passed": false,
+    "passed": true,
     "checks": [
       {
         "id": "bbox.clean",
@@ -43,28 +43,28 @@
       },
       {
         "id": "scene.duration-within-tolerance",
-        "pass": false
+        "pass": true
       }
     ]
   },
   "iterations": 1,
-  "costUsd": 1.2494368999999999,
+  "costUsd": 1.682087,
   "tier": "opus",
-  "startedAt": "2026-07-05T14:11:33.762Z",
-  "endedAt": "2026-07-05T14:21:05.997Z",
-  "transcript": "state/dailies/slice-2026-07-05T1411-19926f",
+  "startedAt": "2026-07-05T14:27:59.950Z",
+  "endedAt": "2026-07-05T14:39:55.214Z",
+  "transcript": "state/dailies/slice-2026-07-05T1428-fc0c88",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 26.666344,
+    "videoSeconds": 31.733,
     "audioSeconds": 31.76,
     "toleranceSeconds": 3.18,
     "perIteration": [
       {
         "iter": 1,
         "outcome": "iris-passed",
-        "coderCostUsd": 1.0698203999999998,
-        "irisCostUsd": 0.1796165,
-        "wallMs": 571233,
+        "coderCostUsd": 1.5020745000000002,
+        "irisCostUsd": 0.18001249999999996,
+        "wallMs": 714955,
         "fingerprints": [],
         "replanWasForced": false
       }

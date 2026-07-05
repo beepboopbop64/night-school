@@ -1,0 +1,2360 @@
+{
+ "schemaVersion": 1,
+ "scene": "Beat04",
+ "frame": {
+  "width": 14.2222,
+  "height": 8.0,
+  "pixelWidth": 854,
+  "pixelHeight": 480
+ },
+ "keyframes": [
+  {
+   "index": 0,
+   "timeSeconds": 1.0,
+   "label": "Create",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "timeSeconds": 1.6,
+   "label": "Create, Create",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "timeSeconds": 1.867,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "timeSeconds": 2.667,
+   "label": "Create, _AnimationBuilder",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m3",
+     "type": "SurroundingRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 2.7,
+     "w": 9.9795,
+     "h": 1.8912,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "timeSeconds": 3.867,
+   "label": "Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m3",
+     "type": "SurroundingRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 2.7,
+     "w": 9.9795,
+     "h": 1.8912,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Text",
+     "text": "Twoarrowsgoin.Whattwooperationsturnthemintothescore?",
+     "x": 0.0,
+     "y": 2.7,
+     "w": 9.1795,
+     "h": 1.0912,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "timeSeconds": 8.933,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m3",
+     "type": "SurroundingRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 2.7,
+     "w": 9.9795,
+     "h": 1.8912,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Text",
+     "text": "Twoarrowsgoin.Whattwooperationsturnthemintothescore?",
+     "x": 0.0,
+     "y": 2.7,
+     "w": 9.1795,
+     "h": 1.0912,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "timeSeconds": 9.667,
+   "label": "FadeOut",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "timeSeconds": 9.933,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "timeSeconds": 10.933,
+   "label": "Write, Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "timeSeconds": 11.733,
+   "label": "Write, Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "timeSeconds": 12.133,
+   "label": "Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "timeSeconds": 12.933,
+   "label": "Write, Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "timeSeconds": 13.333,
+   "label": "Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.4,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "timeSeconds": 14.133,
+   "label": "Write, Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.4,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "timeSeconds": 14.533,
+   "label": "Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.4,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "timeSeconds": 15.133,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.4,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1617,
+     "h": 0.1635,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "timeSeconds": 16.133,
+   "label": "Transform, Transform, Transform",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.4533,
+     "h": 0.301,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.4,
+     "w": 0.4496,
+     "h": 0.301,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1967,
+     "h": 0.2959,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "timeSeconds": 16.6,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.3,
+     "w": 0.4533,
+     "h": 0.301,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.4,
+     "w": 0.4496,
+     "h": 0.301,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1967,
+     "h": 0.2959,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "timeSeconds": 17.933,
+   "label": "_AnimationBuilder, _AnimationBuilder, _AnimationBuilder, FadeIn, _AnimationBuilder, _AnimationBuilder",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": -0.2652,
+     "y": -0.9348,
+     "w": 0.5303,
+     "h": 0.5303,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.0227,
+     "h": 0.015,
+     "opacity": 0.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.0225,
+     "h": 0.015,
+     "opacity": 0.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.0098,
+     "h": 0.0148,
+     "opacity": 0.0
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 0.4
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 0.4
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "58",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.6385,
+     "h": 0.4414,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "timeSeconds": 18.933,
+   "label": "Rotate",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": 0.0933,
+     "y": -0.8368,
+     "w": 0.1865,
+     "h": 0.7264,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 0.4
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 0.4
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "58",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.6385,
+     "h": 0.4414,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "timeSeconds": 19.933,
+   "label": "Write",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": 0.0933,
+     "y": -0.8368,
+     "w": 0.1865,
+     "h": 0.7264,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 0.4
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 0.4
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "58",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.6385,
+     "h": 0.4414,
+     "opacity": 1.0
+    },
+    {
+     "id": "m17",
+     "type": "Text",
+     "text": "twoarrowsin,onenumberout",
+     "x": 0.0,
+     "y": -2.7022,
+     "w": 5.9406,
+     "h": 0.3631,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "timeSeconds": 23.2,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": 0.0933,
+     "y": -0.8368,
+     "w": 0.1865,
+     "h": 0.7264,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 0.4
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 0.4
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "58",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.6385,
+     "h": 0.4414,
+     "opacity": 1.0
+    },
+    {
+     "id": "m17",
+     "type": "Text",
+     "text": "twoarrowsin,onenumberout",
+     "x": 0.0,
+     "y": -2.7022,
+     "w": 5.9406,
+     "h": 0.3631,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "timeSeconds": 24.733,
+   "label": "Write, _AnimationBuilder",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": 0.0933,
+     "y": -0.8368,
+     "w": 0.1865,
+     "h": 0.7264,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 0.4
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 0.4
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "58",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.6385,
+     "h": 0.4414,
+     "opacity": 0.4
+    },
+    {
+     "id": "m17",
+     "type": "Text",
+     "text": "twoarrowsin,onenumberout",
+     "x": 0.0,
+     "y": -2.7022,
+     "w": 5.9406,
+     "h": 0.3631,
+     "opacity": 0.4
+    },
+    {
+     "id": "m18",
+     "type": "Text",
+     "text": "Differentaisle,samemeter.",
+     "x": 0.0,
+     "y": -3.4842,
+     "w": 5.5816,
+     "h": 0.4008,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "timeSeconds": 31.733,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -0.75,
+     "w": 1.8,
+     "h": 0.9,
+     "opacity": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -1.2,
+     "w": 0.11,
+     "h": 0.11,
+     "opacity": 0.4
+    },
+    {
+     "id": "m2",
+     "type": "Line",
+     "text": null,
+     "x": 0.0933,
+     "y": -0.8368,
+     "w": 0.1865,
+     "h": 0.7264,
+     "opacity": 0.4
+    },
+    {
+     "id": "m5",
+     "type": "Text",
+     "text": "you",
+     "x": -3.5,
+     "y": 3.2,
+     "w": 0.7125,
+     "h": 0.3324,
+     "opacity": 0.4
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "therole",
+     "x": 3.5,
+     "y": 3.2,
+     "w": 1.5367,
+     "h": 0.3365,
+     "opacity": 0.4
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "Pythonhours:12",
+     "x": -3.5,
+     "y": 2.3,
+     "w": 3.2709,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "Pythonhours:3",
+     "x": 3.5,
+     "y": 2.3,
+     "w": 3.1271,
+     "h": 0.415,
+     "opacity": 0.4
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "SQLreps:5",
+     "x": -3.5,
+     "y": 1.4,
+     "w": 2.1746,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "SQLreps:4",
+     "x": 3.5,
+     "y": 1.4,
+     "w": 2.198,
+     "h": 0.3875,
+     "opacity": 0.4
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "nightsfree:2",
+     "x": -3.5,
+     "y": 0.5,
+     "w": 2.5775,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "nightsfree:1",
+     "x": 3.5,
+     "y": 0.5,
+     "w": 2.54,
+     "h": 0.4217,
+     "opacity": 0.4
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "58",
+     "x": 0.0,
+     "y": -1.9,
+     "w": 0.6385,
+     "h": 0.4414,
+     "opacity": 0.4
+    },
+    {
+     "id": "m17",
+     "type": "Text",
+     "text": "twoarrowsin,onenumberout",
+     "x": 0.0,
+     "y": -2.7022,
+     "w": 5.9406,
+     "h": 0.3631,
+     "opacity": 0.4
+    },
+    {
+     "id": "m18",
+     "type": "Text",
+     "text": "Differentaisle,samemeter.",
+     "x": 0.0,
+     "y": -3.4842,
+     "w": 5.5816,
+     "h": 0.4008,
+     "opacity": 1.0
+    }
+   ]
+  }
+ ]
+}

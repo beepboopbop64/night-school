@@ -775,3 +775,22 @@
 {"ts":"2026-07-05T14:27:43.169Z","runId":"run-2026-07-05T1411-445d74","node":"s4e.notebook","agent":"notebook-author","event":"agent_call","data":{"attempt":1,"costUsd":0.5143203000000001,"summary":"DONE 17"}}
 {"ts":"2026-07-05T14:27:43.617Z","runId":"run-2026-07-05T1411-445d74","node":"s4e.notebook","event":"gate_result","data":{"passed":true,"checks":[{"id":"nb.json","pass":true},{"id":"nb.numpy-only","pass":true},{"id":"nb.executes","pass":true}]}}
 {"ts":"2026-07-05T14:27:43.618Z","runId":"run-2026-07-05T1411-445d74","node":"s4e.notebook","event":"node_completed","data":{"costUsd":0.5143203000000001,"durationMs":186939}}
+{"ts":"2026-07-05T14:27:44.284Z","runId":"run-2026-07-05T1411-445d74","node":"s4e.notebook","event":"commit","data":{"sha":"3c2ea9bb899ce5573f8cf381c68ae4a5615783e5"}}
+{"ts":"2026-07-05T14:27:44.284Z","runId":"run-2026-07-05T1411-445d74","node":"s5.assemble","event":"node_skipped","data":{"reason":"dep_failed:s4a.beat-04"}}
+{"ts":"2026-07-05T14:27:44.284Z","runId":"run-2026-07-05T1411-445d74","node":"s6.screening","event":"node_skipped","data":{"reason":"dep_failed:s5.assemble"}}
+{"ts":"2026-07-05T14:27:44.284Z","runId":"run-2026-07-05T1411-445d74","node":"s7.packet","event":"node_skipped","data":{"reason":"dep_failed:s6.screening"}}
+{"ts":"2026-07-05T14:27:59.907Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4f.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.910Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4f.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.912Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4f.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.914Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4f.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.916Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4f.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.923Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4a.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.929Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4a.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.946Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4a.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:27:59.952Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4a.beat-04","event":"node_started","data":{"reason":"gate-failed"}}
+{"ts":"2026-07-05T14:28:00.159Z","runId":"slice-2026-07-05T1428-fc0c88","node":"s4a.beat-04","event":"node_started","data":{"beat":"beat-04","session":"dotprod","maxIter":5}}
+{"ts":"2026-07-05T14:38:52.221Z","runId":"slice-2026-07-05T1428-fc0c88","node":"s4a.beat-04","agent":"manim-coder","event":"agent_call","data":{"iter":1,"costUsd":1.5020745000000002,"replanForced":false,"summary":"DONE Wrote scene_beat_04.py defining Beat04: a persistent half-dial meter that idles (dimmed) beneath a question card (\"Two arrows go in. What two operations turn them into the score?\"), then swaps to two columns (\"you\" / \"the role\") with six matched rows (Python hours, SQL reps, nights free) whose "}}
+{"ts":"2026-07-05T14:39:55.116Z","runId":"slice-2026-07-05T1428-fc0c88","node":"s4a.beat-04","agent":"iris","event":"critique_iteration","data":{"iter":1,"blocking":0,"rules":[],"costUsd":0.18001249999999996,"attempts":1},"verdictRef":"state/dailies/slice-2026-07-05T1428-fc0c88/iter-1"}
+{"ts":"2026-07-05T14:39:55.123Z","runId":"slice-2026-07-05T1428-fc0c88","node":"s4a.beat-04","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.682087,"wallMs":714966}}
+{"ts":"2026-07-05T14:39:55.224Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4a.beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
+{"ts":"2026-07-05T14:39:55.225Z","runId":"run-2026-07-05T1427-f56d7e","node":"s4a.beat-04","event":"node_completed","data":{"costUsd":1.682087,"durationMs":715264}}
