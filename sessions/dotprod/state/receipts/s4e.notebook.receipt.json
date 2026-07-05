@@ -8,7 +8,7 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "ce8b98f586bff94f8dfab7dd485565fa582e6945b55a285ebbf3e2800292fb57"
+      "sha256": "c6b8181af10ff6a513dcafe6eec52d2092c85b0885bd59ba86e1a23d7235debf"
     },
     {
       "path": "doc/lesson.md",
@@ -39,10 +39,10 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 0.30932909999999997,
+  "costUsd": 0.2559462,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T03:24:26.233Z",
-  "endedAt": "2026-07-05T03:26:06.619Z",
+  "startedAt": "2026-07-05T03:56:06.148Z",
+  "endedAt": "2026-07-05T03:57:43.679Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
