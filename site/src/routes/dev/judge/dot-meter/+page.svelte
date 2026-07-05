@@ -178,9 +178,9 @@
 
 <div class="lab" data-interactive="dot-meter">
 	<p class="invite">
-		Every song here is two numbers: how <em>loud</em>, how <em>fast</em>. So is your taste. Turn
-		the amber taste arrow and watch each song's match get <em>built</em>: the loud product plus
-		the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.
+		Every song here is two numbers: how <em class="qw-loud">loud</em>, how <em class="qw-fast">fast</em>. So is your taste. Turn
+		the amber taste arrow and watch each song's match get <em>built</em>: the <span class="qw-loud">loud product</span> plus
+		the <span class="qw-fast">fast product</span>, stacked into one bar. Then grab Night Drive's round handle and change its size.
 	</p>
 	<div class="challenges">
 		<button class="chal" class:active={challenge === 'cheat' && !solvedCheat} class:done={solvedCheat} onclick={() => startChallenge('cheat')}>
@@ -404,6 +404,8 @@
 		color: color-mix(in oklab, var(--color-text) 88%, transparent);
 	}
 	.invite em { color: var(--color-brand-mint); font-style: normal; }
+	.invite .qw-loud, .lab .invite .qw-loud { color: var(--data-params); font-style: normal; }
+	.invite .qw-fast, .lab .invite .qw-fast { color: color-mix(in oklab, var(--color-brand-mint) 85%, var(--color-text)); font-style: normal; }
 	.mono { font-family: var(--font-mono); }
 
 	.stage { display: flex; gap: 1.4rem; align-items: stretch; }
