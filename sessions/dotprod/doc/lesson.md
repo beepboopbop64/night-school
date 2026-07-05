@@ -58,7 +58,7 @@ Rebuild the meter from memory: two arrows go in, so what two operations turn the
 
 If "multiply pairwise, then add" came back without a peek, you own $a \cdot b$ now. It's yours.
 
-While that settles, keep the same meter running and walk it one aisle over. We don't rebuild anything, we just point the needle at a job posting instead of a song. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Same meter, new aisle. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
+While that settles, keep the same meter running and walk it one aisle over. We don't rebuild anything. We just point the needle at a job posting instead of a song. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Same meter, new aisle. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
 
 Now one more honest look, because a meter you trust blindly is a meter that will lie to you. Take one candidate and stretch it longer without turning it at all. Its direction holds dead still. Its score climbs anyway.
 
