@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "videoSeconds": 128.54,
+  "chapters": [
+    {
+      "beatId": "beat-01",
+      "title": "The score behind the song",
+      "startSeconds": 0
+    },
+    {
+      "beatId": "beat-02",
+      "title": "Turn the probe and feel it",
+      "startSeconds": 22.523
+    },
+    {
+      "beatId": "beat-03",
+      "title": "Name the machine you just used",
+      "startSeconds": 65.527
+    },
+    {
+      "beatId": "beat-04",
+      "title": "What the meter gets wrong",
+      "startSeconds": 99.66
+    }
+  ]
+}

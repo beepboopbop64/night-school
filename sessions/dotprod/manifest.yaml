@@ -1,0 +1,66 @@
+# Delivery contract (toy, M1 walking skeleton) — written by the assemble node.
+# Every contracted artifact, valid or flagged; nothing ships silently bad.
+schemaVersion: 1
+session: dotprod
+artifacts:
+  - path: brief.md
+    status: valid
+  - path: spine.md
+    status: valid
+  - path: storyboard.yaml
+    status: valid
+  - path: script.md
+    status: valid
+  - path: video/scenes/scene_beat_01.py
+    status: valid
+  - path: media/beat-01.mp4
+    status: valid
+    note: "gitignored; hosting is open decision D-O1"
+  - path: video/audio/beat-01.mp3
+    status: valid
+    note: "gitignored; cached by (voiceId, textHash)"
+  - path: video/scenes/scene_beat_02.py
+    status: valid
+  - path: media/beat-02.mp4
+    status: valid
+    note: "gitignored; hosting is open decision D-O1"
+  - path: video/audio/beat-02.mp3
+    status: valid
+    note: "gitignored; cached by (voiceId, textHash)"
+  - path: video/scenes/scene_beat_03.py
+    status: valid
+  - path: media/beat-03.mp4
+    status: valid
+    note: "gitignored; hosting is open decision D-O1"
+  - path: video/audio/beat-03.mp3
+    status: valid
+    note: "gitignored; cached by (voiceId, textHash)"
+  - path: video/scenes/scene_beat_04.py
+    status: valid
+  - path: media/beat-04.mp4
+    status: valid
+    note: "gitignored; hosting is open decision D-O1"
+  - path: video/audio/beat-04.mp3
+    status: valid
+    note: "gitignored; cached by (voiceId, textHash)"
+  - path: page/sections/beat-01.md
+    status: valid
+  - path: page/sections/beat-02.md
+    status: valid
+  - path: page/sections/beat-03.md
+    status: valid
+  - path: page/sections/beat-04.md
+    status: valid
+  - path: page/interactives/DotAlignment.svelte
+    status: valid
+  - path: video/captions.vtt
+    status: valid
+  - path: media/session.mp4
+    status: valid
+    note: "gitignored; hosting is open decision D-O1"
+  - path: doc/lesson.md
+    status: valid
+  - path: extensions.yaml
+    status: valid
+  - path: notebook/lesson.ipynb
+    status: valid

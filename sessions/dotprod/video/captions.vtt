@@ -1,0 +1,165 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.369
+Your music app just played you a song you love, by a band you have never heard of.
+
+2
+00:00:05.369 --> 00:00:09.428
+Somewhere in a data center, two lists of numbers got compared,
+
+3
+00:00:09.428 --> 00:00:11.785
+and the comparison said: same taste.
+
+4
+00:00:11.785 --> 00:00:14.208
+So here is the question of the night.
+
+5
+00:00:14.208 --> 00:00:17.744
+How do you score a match between two lists of numbers?
+
+6
+00:00:17.744 --> 00:00:18.988
+Hold that question.
+
+7
+00:00:18.988 --> 00:00:22.523
+One answer to it runs half of modern machine learning.
+
+8
+00:00:22.523 --> 00:00:23.520
+Strip it down.
+
+9
+00:00:23.520 --> 00:00:27.008
+A taste is an arrow: each direction is a quality,
+
+10
+00:00:27.008 --> 00:00:30.640
+and the length is how hard the song leans that way.
+
+11
+00:00:30.640 --> 00:00:33.986
+Take one probe arrow and four candidate arrows.
+
+12
+00:00:33.986 --> 00:00:36.620
+Multiply them entry by entry and add.
+
+13
+00:00:36.620 --> 00:00:38.685
+That single sum is the score.
+
+14
+00:00:38.685 --> 00:00:43.384
+Before you drag anything, call it: which candidate ends up on top,
+
+15
+00:00:43.384 --> 00:00:45.591
+and does any score go negative?
+
+16
+00:00:45.591 --> 00:00:48.795
+Now turn the probe and watch the bars answer.
+
+17
+00:00:48.795 --> 00:00:51.785
+Point at a candidate and its score climbs.
+
+18
+00:00:51.785 --> 00:00:53.352
+Turn away and it dies.
+
+19
+00:00:53.352 --> 00:00:56.983
+So a big score means two songs are the same, right?
+
+20
+00:00:56.983 --> 00:00:57.837
+Watch again.
+
+21
+00:00:57.837 --> 00:01:01.753
+The bars moved while the candidates never moved at all.
+
+22
+00:01:01.753 --> 00:01:05.526
+The score reads agreement of direction, not sameness.
+
+23
+00:01:05.527 --> 00:01:08.148
+Look at what your hands just learned.
+
+24
+00:01:08.148 --> 00:01:11.902
+Point the probe along a candidate and the sum climbs.
+
+25
+00:01:11.902 --> 00:01:14.806
+Point it across and the sum dies to zero.
+
+26
+00:01:14.806 --> 00:01:17.852
+Point it against and the sum goes negative.
+
+27
+00:01:17.852 --> 00:01:22.173
+One multiply and add, and it behaves like a meter with agree,
+
+28
+00:01:22.173 --> 00:01:24.369
+ignore, and oppose on the dial.
+
+29
+00:01:24.369 --> 00:01:28.407
+So say it plainly: the dot product is a similarity meter.
+
+30
+00:01:28.407 --> 00:01:30.319
+Two lists of numbers go in.
+
+31
+00:01:30.319 --> 00:01:33.295
+One honest reading of alignment comes out.
+
+32
+00:01:33.295 --> 00:01:39.103
+And the reading tracks direction, because direction is all the sweep ever changed.
+
+33
+00:01:39.660 --> 00:01:41.217
+Time to close the loop.
+
+34
+00:01:41.217 --> 00:01:44.467
+Rebuild the meter from memory: two arrows go in,
+
+35
+00:01:44.467 --> 00:01:47.716
+so what two operations turn them into the score?
+
+36
+00:01:47.716 --> 00:01:50.289
+While you think, one more honest look.
+
+37
+00:01:50.289 --> 00:01:56.178
+Stretch a candidate longer and its score climbs, even though its direction never moved.
+
+38
+00:01:56.178 --> 00:01:58.818
+Long songs would win on sheer loudness.
+
+39
+00:01:58.818 --> 00:02:04.911
+For the walk home: what is the cheapest fix that keeps the direction and forgets the size?
+
+40
+00:02:04.911 --> 00:02:05.611
+Still up?
+
+41
+00:02:05.611 --> 00:02:08.499
+The menu below has three ways to keep going.

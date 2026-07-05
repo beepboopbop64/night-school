@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "dotprod",
-  "stage": "S4e",
+  "stage": "S5",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -102,7 +102,10 @@
       "receipt": "state/receipts/s4e.notebook.receipt.json"
     },
     "s5.assemble": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/s5.assemble.receipt.json"
     },
     "s6.screening": {
       "status": "pending"

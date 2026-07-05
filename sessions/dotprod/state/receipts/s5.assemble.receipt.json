@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "node": "s5.assemble",
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "6e440a2fea779cc7d933d83b6e5fff5947abd8e86e3e0dbf91d4b1e60de5b295"
+    },
+    {
+      "path": "storyboard.yaml",
+      "sha256": "bd0efd3d39b481e969d1d7c2b7d65b446b35175da02d237e86615433f9f9440a"
+    },
+    {
+      "path": "script.md",
+      "sha256": "ce8c2c590fe2231bb83ae287dfa169f86872704b5307cbde3a35cc42eaf686b5"
+    },
+    {
+      "path": "doc/lesson.md",
+      "sha256": "556bd1d627b56478ed181812005f62808c07f500b841f14e0fe12bc9c1ed4d67"
+    },
+    {
+      "path": "extensions.yaml",
+      "sha256": "cf9bdadda77c6ae9c2f382ca58891c5ee6b0a3d6974b28d86f0793c289ac0c9d"
+    },
+    {
+      "path": "media/beat-01.mp4",
+      "sha256": "c6578f7b293d3b5d27cde411e2b7676a9eff54665c17ddaf6bee56a05d4d6bf6"
+    },
+    {
+      "path": "video/audio/beat-01.mp3",
+      "sha256": "c2e113c8269dfdc8eacf686c3746639b2c70d46c93031f3a81fe4abbe279ecc9"
+    },
+    {
+      "path": "media/beat-02.mp4",
+      "sha256": "97cef7dc320b0a1ecd63416fd8470984a192874602d13b095790fe516b05c2bc"
+    },
+    {
+      "path": "video/audio/beat-02.mp3",
+      "sha256": "6e4f70ac164545809b2724a12e16db960f7aac17ab09c8f4ea698bff27adf2d9"
+    },
+    {
+      "path": "media/beat-03.mp4",
+      "sha256": "323a9e2bbaa7687360d08d6aedb2d63ea15bb96e790597c7c5501169e0ad3516"
+    },
+    {
+      "path": "video/audio/beat-03.mp3",
+      "sha256": "33d5747c04c6b6d95a1305bf9106171d7f7748e077e6e0e897e52b9ea56ef37b"
+    },
+    {
+      "path": "media/beat-04.mp4",
+      "sha256": "6a40ac7f19742c4f154d9057819739636ac4d2c0545076407e654f36f1a628e0"
+    },
+    {
+      "path": "video/audio/beat-04.mp3",
+      "sha256": "a486e66a85f2f958d9ce4f93f03929c674d63ae599f6c5769cc53545cdc9901e"
+    },
+    {
+      "path": "page/sections/beat-01.md",
+      "sha256": "704621587b2fa1c6f689b74b679a82075e0fe8963c1f558b0bc1106b65fc9304"
+    },
+    {
+      "path": "page/sections/beat-02.md",
+      "sha256": "174c6e778cc19c99e1942e7e84b3cd29e894ff18c17b1fa23b83c86ba03f601d"
+    },
+    {
+      "path": "page/sections/beat-03.md",
+      "sha256": "e6b35d9b0ebe9889153398072cc9e8813e9c3bf0db49336a0703afdae5b8e3b7"
+    },
+    {
+      "path": "page/sections/beat-04.md",
+      "sha256": "335ada5272eae0d8b87c096c6b1322ae1fdcff74d7845b5ed311437b83ab0dc8"
+    },
+    {
+      "path": "notebook/lesson.ipynb",
+      "sha256": "2a3a1acd85803b3daa75029dc7d81b19249b212904c1abcb1485978957d781df"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "media/session.mp4",
+      "sha256": "daaf700542f9d7d6d68f5147c02a40acdffc625dd6e4b026c9521f1c0aa8aa92"
+    },
+    {
+      "path": "video/captions.vtt",
+      "sha256": "2003e7be473de80a7f71f2cddc798488b017298eac5662147ea0d4e04c0a3be2"
+    },
+    {
+      "path": "page/video.json",
+      "sha256": "5893bdaef49b5953919f9a90a17afbccc2c4a27b735d841358b1236456809443"
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "3fa6c804e76afd21cd97dcb520f38258df4a16eeabfb20bdf1f0a55f2b784004"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "assemble.av-drift",
+        "pass": true
+      },
+      {
+        "id": "assemble.captions-written",
+        "pass": true
+      },
+      {
+        "id": "assemble.aha-consistency",
+        "pass": true
+      },
+      {
+        "id": "assemble.lchecks-rerun",
+        "pass": true
+      },
+      {
+        "id": "assemble.token-lint",
+        "pass": true
+      },
+      {
+        "id": "assemble.site-built",
+        "pass": true
+      },
+      {
+        "id": "assemble.manifest-complete",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-05T01:40:16.900Z",
+  "endedAt": "2026-07-05T01:40:29.851Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "videoSeconds": 128.54,
+    "beats": [
+      {
+        "beatId": "beat-01",
+        "startSeconds": 0,
+        "targetSeconds": 22.523,
+        "measuredSeconds": 22.533333
+      },
+      {
+        "beatId": "beat-02",
+        "startSeconds": 22.523,
+        "targetSeconds": 43.003,
+        "measuredSeconds": 43.002993
+      },
+      {
+        "beatId": "beat-03",
+        "startSeconds": 65.527,
+        "targetSeconds": 34.133,
+        "measuredSeconds": 34.133333
+      },
+      {
+        "beatId": "beat-04",
+        "startSeconds": 99.66,
+        "targetSeconds": 28.839,
+        "measuredSeconds": 28.866667
+      }
+    ],
+    "ahaOk": {
+      "page": true,
+      "narration": true,
+      "doc": true,
+      "storyboard": true
+    }
+  }
+}
