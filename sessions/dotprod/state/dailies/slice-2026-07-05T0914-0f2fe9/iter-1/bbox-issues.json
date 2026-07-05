@@ -1,0 +1,26 @@
+[
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 10,
+    "mobjects": [
+      "m20"
+    ],
+    "message": "Text \"=\" height 0.127 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 10,
+    "mobjects": [
+      "m21"
+    ],
+    "message": "Text \"=\" height 0.127 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 10,
+    "mobjects": [
+      "m22"
+    ],
+    "message": "Text \"=\" height 0.127 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  }
+]

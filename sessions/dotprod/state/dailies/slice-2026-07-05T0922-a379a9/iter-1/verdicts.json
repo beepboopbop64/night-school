@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Frame 3 makes the doubled periwinkle vector plus its lilac 4.2/x2/8.4 readout the single focus, with the question kept as supporting header and the rose flag subordinate.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "At most the vector, the stacked score, and the flag caption appear together — well under four novel elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'c1' label sits directly on the vector and no legend or color key is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — the doubling question, the flag caption, the walk-home prompt — annotates a visible referent or poses the beat's question.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text including the 4.2/x2/8.4 stack and captions is comfortably readable at frame scale.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element sits inside the rounded card with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The score stack, vector, label, and captions occupy distinct regions with no overlap.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Periwinkle vector for the observed candidate, lilac for the score readout, and rose for the pass flag are all consistent with token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The blank build frames are transitional card states in the animation and the populated frames carry only content-bearing elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The doubling question poses directly without a header, the periwinkle candidate doubles while the lilac 4.2/x2/8.4 stacks headerless, the rose flag marks size passing through, and the walk-home card with its extensions chip closes.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The score stack sits immediately right of the vector tip and the flag caption sits beside its flag.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the vector grows and the score reveals in reasoning order rather than materializing whole.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The compositions keep clear margins and an unambiguous top-to-bottom reading order.",
+    "suggestion": ""
+  }
+]

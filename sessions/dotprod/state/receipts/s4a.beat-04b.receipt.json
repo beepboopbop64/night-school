@@ -4,7 +4,7 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-04b",
-      "sha256": "e82e3a8a397d6cdecee65ee509726a09ee9157fd2574ae123d8ba367a645a8c6"
+      "sha256": "866a590ae9b27e582f33f75c23dbea4da6c1d88a16ef859d64f90c09a826832e"
     },
     {
       "path": "script.md#beat-04b",
@@ -18,15 +18,15 @@
   "outputs": [
     {
       "path": "video/beats/beat-04b.yaml",
-      "sha256": "a2bf9030403fc584a3abc35f2f3d16f95f5b9ddd4d8ab6e8db20d16b292629ad"
+      "sha256": "f303350f5b368daeec0ab879dc365f30756a701e071efb7349cc68eab618ca20"
     },
     {
       "path": "video/scenes/scene_beat_04b.py",
-      "sha256": "7e72ce1bb5aaeda7dc3388d8d25d48548158aa682b563fd4c9206a5904cb2d09"
+      "sha256": "21893b5512383300b726b9d2c2687934515bba92427b6a7a57f92bc43ab33138"
     },
     {
       "path": "media/beat-04b.mp4",
-      "sha256": "e021c1f46564939b6ae9c1d2150ac967bdc18c764920c8ce5e79b1892003dd70"
+      "sha256": "513ebc774dd6f10175a6329b784fa3eb8deae3b9eed523a2db78e04bb8d77487"
     }
   ],
   "gate": {
@@ -39,7 +39,7 @@
       {
         "id": "iris.pass",
         "pass": true,
-        "iter": 2
+        "iter": 1
       },
       {
         "id": "scene.duration-within-tolerance",
@@ -47,36 +47,24 @@
       }
     ]
   },
-  "iterations": 2,
-  "costUsd": 2.1091746,
+  "iterations": 1,
+  "costUsd": 0.9559536,
   "tier": "opus",
-  "startedAt": "2026-07-05T07:48:50.671Z",
-  "endedAt": "2026-07-05T08:04:52.011Z",
-  "transcript": "state/dailies/slice-2026-07-05T0748-541744",
+  "startedAt": "2026-07-05T09:22:43.172Z",
+  "endedAt": "2026-07-05T09:29:33.345Z",
+  "transcript": "state/dailies/slice-2026-07-05T0922-a379a9",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 46.266667,
+    "videoSeconds": 46.332678,
     "audioSeconds": 46.32,
     "toleranceSeconds": 4.63,
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "iris-failed",
-        "coderCostUsd": 1.1457951,
-        "irisCostUsd": 0.21932549999999998,
-        "wallMs": 633651,
-        "fingerprints": [
-          "iris:V4",
-          "iris:V10"
-        ],
-        "replanWasForced": false
-      },
-      {
-        "iter": 2,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.5738985,
-        "irisCostUsd": 0.17015550000000002,
-        "wallMs": 327478,
+        "coderCostUsd": 0.8069346,
+        "irisCostUsd": 0.149019,
+        "wallMs": 409903,
         "fingerprints": [],
         "replanWasForced": false
       }

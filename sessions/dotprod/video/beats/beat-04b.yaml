@@ -19,13 +19,15 @@ beat:
     forgets the size, now that you know size scales the score in lockstep? Still
     up? The menu below has three ways to keep going.
   visual: "[visual: dynamic-process | connect-to-reality] A guess card holds with
-    one candidate outlined and the score readout hidden, asking whether doubling
-    c1 doubles the number. Then that periwinkle candidate doubles in length
-    while its direction holds still; its lilac score reads out at exactly twice
-    its former value, the two numbers stacked to show the clean doubling; a
-    small rose flag marks that size passed straight through. The walk-home
-    question lands as the closing card, and a quiet chip points to the
-    extensions menu on the page."
+    one candidate outlined and the score readout hidden; the card carries no
+    header and instead poses the doubling question directly, asking whether
+    doubling c1 doubles the number. Then that periwinkle candidate doubles in
+    length while its direction holds still; its lilac score reads out at exactly
+    twice its former value, the two numbers stacked with no header so the
+    stacked 4.2 / x2 / 8.4 stands as the reveal itself; a small rose flag marks
+    that size passed straight through. The walk-home question lands as the
+    closing card under a single 'For the walk home' header, and a quiet chip
+    points to the extensions menu on the page."
   colors:
     candidates: data.observed
     score: data.params
