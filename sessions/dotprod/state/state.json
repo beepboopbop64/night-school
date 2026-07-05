@@ -118,6 +118,15 @@
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s7.packet.receipt.json"
+    },
+    "s4f.beat-04b": {
+      "status": "pending"
+    },
+    "s4a.beat-04b": {
+      "status": "pending"
+    },
+    "s4b.sec-beat-04b": {
+      "status": "pending"
     }
   },
   "needsJake": [
