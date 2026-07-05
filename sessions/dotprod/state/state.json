@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "stage": "S7",
-  "round": 1,
+  "round": 2,
   "fidelity": "half-trued",
   "nodes": {
     "s4f.beat-01": {
