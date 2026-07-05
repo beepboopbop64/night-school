@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "node": "s7.packet",
+  "inputs": [
+    {
+      "path": "manifest.yaml",
+      "sha256": "d289d28018122d90488714748fdbb23233e1bb969605d6e09293b34e28095285"
+    },
+    {
+      "path": "storyboard.yaml",
+      "sha256": "d25bd1b5f7da75ff2a324718875474383a3336f1681e45aac627aeb5123dd626"
+    },
+    {
+      "path": "brief.md",
+      "sha256": "6e440a2fea779cc7d933d83b6e5fff5947abd8e86e3e0dbf91d4b1e60de5b295"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "rounds/round-05/packet/README.md",
+      "sha256": "41a526df6ad69b5cfc11ed983cad00fe6df04f62572ae25466101a33b32c6d73"
+    },
+    {
+      "path": "rounds/round-05/notes.md",
+      "sha256": "15f2cdc89f1d5de70eeb6659c1ce223470ad110a6273ed79691265dbaf1de284"
+    },
+    {
+      "path": "rounds/round-05/flags.md",
+      "sha256": "6a8a94c2b3519fe7483e130f4daff5bb1bb28399c3e6481bd7a82c51da8fac1b"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "packet.serves-locally",
+        "pass": true
+      },
+      {
+        "id": "packet.notes-preseeded",
+        "pass": true
+      },
+      {
+        "id": "packet.flags-written",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-05T15:14:59.273Z",
+  "endedAt": "2026-07-05T15:15:01.091Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "anchors": [
+      "@video/beat-01",
+      "@video/beat-02",
+      "@video/beat-03",
+      "@video/beat-04",
+      "@video/beat-04b",
+      "@page/beat-01",
+      "@page/beat-02",
+      "@page/beat-03",
+      "@page/beat-04",
+      "@page/beat-04b",
+      "@ix/dot-alignment",
+      "@doc",
+      "@ext",
+      "@notebook"
+    ]
+  }
+}
