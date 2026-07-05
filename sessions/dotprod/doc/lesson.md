@@ -58,12 +58,10 @@ Rebuild the meter from memory: two arrows go in, so what two operations turn the
 
 If "multiply pairwise, then add" came back without a peek, you own $a \cdot b$ now. It's yours.
 
-While that settles, one detour worth naming. Swap the songs for a job posting. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Different aisle, same meter. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
+While that settles, keep the same meter running and walk it one aisle over. We don't rebuild anything, we just point the needle at a job posting instead of a song. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Same meter, new aisle. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
 
 Now one more honest look, because a meter you trust blindly is a meter that will lie to you. Take one candidate and stretch it longer without turning it at all. Its direction holds dead still. Its score climbs anyway.
 
-That's a problem. It means a long, loud song can win on sheer size, not on agreement, and a padded resume can win on sheer length. The meter can't tell "points the same way" apart from "just bigger." A shout beats a whisper even when the whisper agrees with you more. That gap is exactly where the next session opens.
-
-For the walk home: what is the cheapest fix that keeps the direction and forgets the size?
+That's a problem. It means a long, loud song can win on sheer size, not on agreement, and a padded resume can win on sheer length. The meter can't tell "points the same way" apart from "just bigger." A shout beats a whisper even when the whisper agrees with you more. That gap is exactly where the next session opens, and it leaves you one thread to pull. For the walk home: if the score keeps rewarding size, what is the cheapest fix that keeps the direction and forgets the size?
 
 Still up? The menu below has three ways to keep going: argue the metaphor with an LLM until it cracks, chase this same score into the attention papers where it reappears, or build the meter yourself in a few lines of NumPy.

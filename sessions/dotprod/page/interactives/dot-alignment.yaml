@@ -1,7 +1,8 @@
 # Interactive spec for dotprod beat-02 (Director output, locked with the
 # storyboard). The felt obstruction: the learner turns the probe and feels
 # alignment become the score, including the sign flip nobody warned them
-# about. Colors follow the Night School semantic cast.
+# about, then stretches a candidate and feels length cheat the similarity
+# read. Colors follow the Night School semantic cast.
 schemaVersion: 1
 session: dotprod
 interactive:
@@ -11,20 +12,32 @@ interactive:
     Alignment IS the score. Dragging the probe's angle, the learner feels
     each multiply-and-add climb exactly as the probe turns toward that
     candidate, die to zero across it, and go negative against it. The sign
-    flip lands in the hands before any words name it.
+    flip lands in the hands before any words name it. Then, dragging c1's
+    length handle while its direction holds, the learner feels the score
+    climb on length alone: magnitude cheats the meter that direction earns.
   visual: >-
-    [visual: covary | dynamic-concept] One amber probe arrow (labeled
-    "probe" on the object) points at an angle the learner sets by dragging
-    or with arrow keys. Four periwinkle candidate arrows (labeled c1..c4 at
-    their tips) hold still at 20, 70, 110, and 160 degrees. Under each
-    candidate sits a lilac score bar with a mono numeric readout of the dot
-    product, rounded to whole numbers and kept small and low-contrast so the
-    bars carry the motion and the digits stay quiet: bar and number rise and
-    fall WITH the probe's alignment to that candidate, live, as the probe
-    turns; negative scores drop below a zero baseline. At any moment the best-aligned candidate's bar visibly
-    leads. Labels are cream and sit on their objects; no legends. The
-    covariation (probe direction to score height, including sign) must be
-    readable from a still frame alone at 375, 768, and 1280 px widths.
+    [visual: covary | dynamic-concept] All arrows are drawn with thin exact
+    strokes and arrowheads sized in proportion to their shaft length; the
+    amber probe's head matches the candidates' proportion exactly and is
+    never bloated or malformed. One amber probe arrow (labeled "probe" on
+    the object, the label offset so it never collides with any candidate
+    arrow) points at an angle the learner sets by dragging or with arrow
+    keys. Four periwinkle candidate arrows (labeled c1..c4 at their tips,
+    each label nudged radially clear so the sweeping probe never buries or
+    overlaps it) hold still at 20, 70, 110, and 160 degrees. Candidate c1
+    carries a small length handle: dragging it stretches or shrinks c1 while
+    its direction holds, so the learner can watch a shorter or longer
+    candidate score differently at the same angle. Under each candidate sits
+    a lilac score bar with a mono numeric readout of the dot product,
+    rounded to whole numbers and kept small and low-contrast so the bars
+    carry the motion and the digits stay quiet: bar and number rise and fall
+    WITH the probe's alignment to that candidate, live, as the probe turns,
+    and also shift as c1's length changes; negative scores drop below a zero
+    baseline. At any moment the best-aligned candidate's bar visibly leads.
+    Labels are cream and sit clear of their objects so none ever collide; no
+    legends. The covariation (probe direction to score height, including
+    sign, and candidate length to score magnitude) must be readable from a
+    still frame alone at 375, 768, and 1280 px widths.
   colors:
     probe: data.heat        # amber - the thing doing the asking
     candidates: data.observed  # periwinkle - the data being interrogated
@@ -37,6 +50,18 @@ interactive:
     step: 5
     initial: 90
     unit: degrees
+  candidateLength:
+    target: c1
+    min: 0.5
+    max: 2.0
+    step: 0.1
+    initial: 1.0
+    unit: relative-length
+    note: >-
+      Stretches or shrinks c1 only, holding its direction. Lets the learner
+      watch c1's score climb on length alone at a fixed angle, so length
+      visibly cheats the similarity read while probe direction is what
+      actually earns alignment.
   states:
     - id: initial
       description: untouched first render; the probe rests at 90 degrees
@@ -53,3 +78,11 @@ interactive:
       description: probe at 200 degrees, dead against c1; c1's readout negative, bar below the baseline
       drive:
         - { do: set-slider, value: 200 }
+    - id: length-cheat
+      description: >-
+        probe held at 90 degrees while c1 is stretched to 2.0; c1's score
+        climbs on length alone though its direction never improved, showing
+        length cheats the similarity read
+      drive:
+        - { do: set-slider, value: 90 }
+        - { do: set-candidate-length, target: c1, value: 2.0 }

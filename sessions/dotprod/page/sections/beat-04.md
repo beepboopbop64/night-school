@@ -1,6 +1,6 @@
 ## So does bigger just mean better?
 
-Let's stress-test the meter we just rebuilt. Same recipe every time: multiply matching entries, add up the products, get one number. That's why it travels so well between wildly different aisles. Swap the songs for a job posting, score a candidate against what the role wants, and you're doing the identical operation: multiply the matched entries, add them up. The math never asked what the numbers meant, which is exactly why it doesn't care whether they're loudness levels or years of experience.
+Let's stress-test the meter we just rebuilt. Same recipe every time: multiply matching entries, add up the products, get one number. That's why it travels so well between wildly different aisles. So let's keep the same meter running and walk it one aisle over. We don't rebuild anything, we just point the needle at a job posting instead of a song. Score a candidate against what the role wants and you're doing the identical operation: multiply the matched entries, add them up. The math never asked what the numbers meant, which is exactly why it doesn't care whether they're loudness levels or years of experience.
 
 That portability is the whole appeal. It's also where the trouble starts.
 

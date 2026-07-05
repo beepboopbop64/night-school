@@ -30,12 +30,12 @@ agreement of direction, not identity of items).
 
 | id | Beat | One-line intent | Est. sec |
 |----|------|-----------------|----------|
-| beat-01 | Hook | The recommendation moment: two lists of numbers agreed; how do you score a match? | 24 |
-| beat-02 | Felt elemental unit | Multiply pairwise and add; the learner sweeps the probe and feels the score move; misconception (similarity means identical) voiced and refuted | 34 |
+| beat-01 | Hook | The recommendation moment: a song matched your taste, but each is many qualities at once; pose the genuine puzzle of collapsing many features into one match number and let the learner attempt it before any mechanism | 34 |
+| beat-02 | Felt elemental unit | Multiply pairwise and add arrives as the resolution to the hook's puzzle; the learner sweeps the probe and feels the score move; misconception (similarity means identical) voiced and refuted via the length cheat | 66 |
 | beat-03 | Aha | The behavior gets its name: agree positive, across zero, oppose negative; the sentence trues up in mint | 28 |
 | beat-04 | Close | Retrieval prompt, the length problem as the walk-home gap, extensions menu | 26 |
 
-Total 112s estimated; hard cap 540s (L10).
+Total 154s estimated; hard cap 540s (L10).
 
 ## 3. The metaphor registry (with honesty boundaries)
 

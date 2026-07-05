@@ -22,63 +22,82 @@ notationSchedule:
 beats:
   - id: beat-01
     title: The score behind the song
-    narration: >-
-      Your music app just played you a song you love, by a band you have
-      never heard of. Somewhere in a data center, two lists of numbers got
-      compared, and the comparison said: same taste. So here is the question
-      of the night. How do you score a match between two lists of numbers?
-      Hold that question. One answer to it runs half of modern machine
-      learning.
-    visual: >-
-      [visual: connect-to-reality] Two columns of numbers slide in side by
-      side, one for the listener's taste and one for the song; paired
-      entries light up in periwinkle and a single lilac score readout counts
-      up as the comparison lands. The question card holds over the frozen
-      score, half the frame deliberately empty.
-    tracks: [video, page]
-    newIdea: >-
-      Two lists of numbers can be compared into one score, and that one
-      comparison runs recommendation.
+    narration: "Your music app just played you a song you love, by a band you have
+      never heard of. Two descriptions got compared in a data center and the
+      verdict was: same taste. But sit with what that comparison has to do. A
+      song is not one number. It is loud, fast, sad, bright, many qualities at
+      once, and your taste is that same tangle. So try it first. How would you
+      boil the match between two many-featured things down to a single number?
+      Harder than it sounds. One answer to it runs half of modern machine
+      learning."
+    visual: "[visual: connect-to-reality] Two tall stacks of qualities slide in
+      side by side, one for the listener's taste and one for the song, each row
+      a named feature in periwinkle: loud, fast, sad, bright, and more trailing
+      off the frame. A single lilac match readout waits with a question mark
+      where its number should be. The question card holds over the unfilled
+      readout, half the frame deliberately empty so the puzzle, not an answer,
+      owns the screen."
+    tracks:
+      - video
+      - page
+    newIdea: Collapsing two many-featured things into a single match number is a
+      genuine puzzle, and it is what recommendation runs on.
     novelElements:
-      - the two number lists
-      - the match score readout
+      - the two many-featured descriptions
+      - the single match readout
     onScreenText:
-      - "How do you score a match?"
+      - How would you score the match?
     colors:
       lists: data.observed
       score: data.params
       background: bg
       labels: text
-    estimatedSeconds: 26
+    majorReveal: false
+    misconceptionBeat: false
+    estimatedSeconds: 34
   - id: beat-02
     title: Turn the probe and feel it
-    narration: "Strip it down. A taste is an arrow: each direction is a quality,
+    narration: "You just tried to score that match by hand, and it fought back:
+      too many qualities, no clean way to fold them into one number. Here is the
+      move that lands it. A taste is an arrow: each direction is one quality,
       and the length is how hard the song leans that way. Take one probe arrow
       and four candidate arrows. Multiply them entry by entry and add. That
-      single sum is the score. Before you drag anything, call it: which
-      candidate ends up on top, and does any score go negative? Now turn the
-      probe and watch the bars answer. Point at a candidate and its score
-      climbs. Turn away and it dies. So a big score means two songs are the
-      same, right? Watch again. The bars moved while the candidates never moved
-      at all. The score reads agreement of direction, not sameness."
-    visual: "[visual: covary | dynamic-concept] One amber probe arrow sweeps
-      through directions; four periwinkle candidate arrows hold still; under
-      each candidate a lilac score bar with a numeric readout climbs and dies as
-      the probe turns toward and away from it. Each candidate label sits nudged
-      outward past its arrow tip so the sweeping amber probe never buries it,
-      staying readable at every probe angle including when the probe passes
-      candidate B. A freeze frame before the sweep carries the prediction card;
-      after the sweep the probe parks and the four scores land as integers on
-      the bars."
+      single sum is the score, the whole tangle collapsed to one number. Before
+      you touch the probe, call your shot: name the one candidate whose bar will
+      top out. Now turn the probe and watch the bars answer. Point at a
+      candidate and its score climbs. Turn away and it dies. So a big score
+      means two songs are the same, right? Watch again. Stretch one candidate
+      longer without turning it at all, and its bar climbs anyway, on length
+      alone, even though its direction never got closer. Length cheats the
+      meter. The score reads agreement of direction, not sameness, and a long
+      arrow can fake a high number."
+    visual: "[visual: covary | dynamic-concept] The stacked lists of qualities
+      from the hook fold down, each feature becoming one direction, until each
+      song is a single arrow. All arrows use thin exact strokes with arrowheads
+      sized in proportion to shaft length; the amber probe's head is drawn to
+      the same proportion as the candidates', never bloated or malformed. One
+      amber probe arrow sweeps through directions; four periwinkle candidate
+      arrows hold still; under each candidate a lilac score bar with a small
+      mono numeric readout climbs and dies as the probe turns toward and away
+      from it. Each candidate label, and the 'probe' label, sits nudged clear of
+      every arrow so nothing ever collides, staying readable at every probe
+      angle including when the probe passes candidate B. Candidate c1 carries a
+      length handle: dragging it stretches c1 while its direction holds, and
+      c1's score climbs on length alone. A freeze frame before the sweep carries
+      the prediction card that asks the learner to name the candidate whose bar
+      will top out; after the sweep the probe parks and the four scores land as
+      integers on the bars."
     tracks:
       - video
       - page
-    newIdea: "Multiply pairwise and add: the score moves continuously with the
-      probe's direction, and agreement is not identity."
+    newIdea: "Multiply pairwise and add: the score climbs with the probe's
+      direction, so agreement is not identity, and stretching a candidate climbs
+      the score on length alone, so size can fake it."
     novelElements:
       - the probe arrow
       - the candidate arrows
       - the score bars
+      - the candidate length handle
     onScreenText:
       - probe
       - candidates
@@ -91,14 +110,15 @@ beats:
       labels: text
     interactiveSpec: page/interactives/dot-alignment.yaml
     predictionPrompt:
-      prompt: "Before you drag anything, call it: which candidate ends up on top,
-        and does any score go negative?"
-      expectedWrongAnswer: The candidate that looks most similar to the probe wins,
-        and nothing goes negative because similarity cannot be less than zero.
+      prompt: "Before you touch the probe, call your shot: name the one candidate
+        whose bar tops out."
+      expectedWrongAnswer: The longest candidate, or the one that looks most
+        similar, tops out, and no score can go negative because similarity
+        cannot drop below zero.
     majorReveal: false
     misconceptionBeat: true
     misconception: similarity-means-identical
-    estimatedSeconds: 42
+    estimatedSeconds: 66
   - id: beat-03
     title: Name the machine you just used
     narration: >-

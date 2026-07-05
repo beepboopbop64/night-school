@@ -2,9 +2,125 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "round": "round-02",
-  "phase": "paused",
-  "appliedOrders": [],
-  "applyCostUsd": 0,
+  "phase": "applied",
+  "appliedOrders": [
+    "r02-n01",
+    "r02-n02",
+    "r02-n03"
+  ],
+  "applyCostUsd": 1.124135,
   "triageCostUsd": 0.28145000000000003,
-  "orderResults": []
+  "preHashes": {
+    "files": {
+      "video/beats/beat-01.yaml": "8b49598e1cbc1a13f4accaad49912abead3f65abdecfa8c6e7ee779915e31324",
+      "video/scenes/scene_beat_01.py": "bdad46faed358bfb6e8abfeac3b059285913076c7cb7299681f564afa4a283cf",
+      "media/beat-01.mp4": "c6578f7b293d3b5d27cde411e2b7676a9eff54665c17ddaf6bee56a05d4d6bf6",
+      "video/beats/beat-02.yaml": "4f712a85a4bac83e9f026020af99c7c0de5a402ca4f339548ba9d0edd6bb1b6a",
+      "video/scenes/scene_beat_02.py": "8a3b2932f45061acd28d54a377061ef4bb1965a557a5667d6de5171e82664761",
+      "media/beat-02.mp4": "2c9af7927dc9d42cc1188fdd0a26e6db73cad68eeb55d5a28801557d3901e898",
+      "video/beats/beat-03.yaml": "9469c8bf2afae44f20352f63979448f89c3808af85e8d3ae2a1c1347878e775d",
+      "video/scenes/scene_beat_03.py": "ccfd69fe68ab5b1cb2ffc4812747d28652f3201447550349a6f4449022294aaa",
+      "media/beat-03.mp4": "323a9e2bbaa7687360d08d6aedb2d63ea15bb96e790597c7c5501169e0ad3516",
+      "video/scenes/scene_beat_04.py": "6deee86ee309cbc786d4bac929544f97a8b0fbe018cef56a7732036df24065a9",
+      "page/interactives/DotAlignment.svelte": "95621fe8e206bed95249642286d161eb550e9507459624ac39efa95c480dab76",
+      "page/sections/beat-01.md": "704621587b2fa1c6f689b74b679a82075e0fe8963c1f558b0bc1106b65fc9304",
+      "page/sections/beat-02.md": "18861f7398760e7aebcda97659bb4b1974df9e167a0dedd9178bd7905aa1f99e",
+      "page/sections/beat-03.md": "e6b35d9b0ebe9889153398072cc9e8813e9c3bf0db49336a0703afdae5b8e3b7",
+      "page/sections/beat-04.md": "3711c2cb6f899f30ddf5a3fb6bed24732d60ab294a0b498f0668f215b4428345",
+      "doc/lesson.md": "4804b0736ab0ce1957d8d15c3eea879cdb9c0ff60018f1669e7291515ebf4a36",
+      "extensions.yaml": "e0b0ffcda9c16a1418a1af752bd393873a6eb0f9f219c560896f31292e1426be",
+      "notebook/lesson.ipynb": "460ad1ceb72dbb918279dcbe45e5005c7e614efc54f333abe2b5a5f222a39216",
+      "video/audio/beat-01.mp3": "c2e113c8269dfdc8eacf686c3746639b2c70d46c93031f3a81fe4abbe279ecc9",
+      "video/audio/beat-02.mp3": "6e4f70ac164545809b2724a12e16db960f7aac17ab09c8f4ea698bff27adf2d9",
+      "video/audio/beat-03.mp3": "33d5747c04c6b6d95a1305bf9106171d7f7748e077e6e0e897e52b9ea56ef37b",
+      "video/audio/beat-04.mp3": "0fed1ad1ffb67fc80a853cd4c4837de7aebd956bc98d294f874ef4a87a4d9d6a",
+      "media/session.mp4": "9f9929bc45b29de026939dc2242f6ef556a33cece4bc5c78921c96c81c0856e6",
+      "video/captions.vtt": "b037227372c0d24e8e46d8424eda71d226d0b8f82348c9214461f7194c8b19d1",
+      "page/video.json": "c83c311832552cbb8dc7a394ec27230494e2e0636846a96cbedff05a60a0898b",
+      "manifest.yaml": "3fa6c804e76afd21cd97dcb520f38258df4a16eeabfb20bdf1f0a55f2b784004",
+      "rounds/round-02/screening-report.md": "f81f7f369c6aa0a84934316b6957f826a22165e83c66b4f589a737540bc9e724",
+      "rounds/round-02/packet/README.md": "1ded5232b9b9be4c8ef2ddf3a60a06b7181d6554f7070f11e125421201babbe1",
+      "rounds/round-02/notes.md": "fd01ee11ceada156ef705afabf6d8e10b61cf0bdc7e840e33b44a18ccc98db15",
+      "rounds/round-02/flags.md": "9236fccd1e72ff743ac5c9535f48e599dc08436feba60f9e94b6952e15916266"
+    },
+    "fragments": {
+      "storyboard.yaml#beat-01": "4aaab0ec0ea78135176f063979729b1e4d88657c640a94763af73ec9166f6a43",
+      "script.md#beat-01": "3a9ffed8506304f5d2cef2d8506188f9f0daaa3834b5db446d6ac9ad15640e69",
+      "storyboard.yaml#beat-02": "501aec93f6fd5b0ed388fb216008ecdbf6d67dc5daad2ce44006a94852c39c7d",
+      "script.md#beat-02": "4b817f3b661cf0cfe8cdd99673fdf69fdd0b9ae216aefd9f85f83b968a27681b",
+      "storyboard.yaml#beat-03": "e604cf58ab9595db323b07fc50224b73ebafc08292df95d85b235436c3ea98fc",
+      "script.md#beat-03": "3dbf70c80cd9283ce1397b4b26ff88ea4af6ed19d74c13dc190f2dc6fb9ad745",
+      "storyboard.yaml#beat-04": "ded0f775f2957040a12a45d6943132ff5ff3e9eb6bc373842837b12f6e2aa252",
+      "script.md#beat-04": "c349c0c695864514afd1d089fdc99ce743c0a11637059f5b23b17b1ffa53757d"
+    },
+    "producers": {
+      "video/beats/beat-01.yaml": "s4a.beat-01",
+      "video/scenes/scene_beat_01.py": "s4a.beat-01",
+      "media/beat-01.mp4": "s4a.beat-01",
+      "video/beats/beat-02.yaml": "s4a.beat-02",
+      "video/scenes/scene_beat_02.py": "s4a.beat-02",
+      "media/beat-02.mp4": "s4a.beat-02",
+      "video/beats/beat-03.yaml": "s4a.beat-03",
+      "video/scenes/scene_beat_03.py": "s4a.beat-03",
+      "media/beat-03.mp4": "s4a.beat-03",
+      "video/scenes/scene_beat_04.py": "s4a.beat-04",
+      "page/interactives/DotAlignment.svelte": "s4b.dot-alignment",
+      "page/sections/beat-01.md": "s4b.sec-beat-01",
+      "page/sections/beat-02.md": "s4b.sec-beat-02",
+      "page/sections/beat-03.md": "s4b.sec-beat-03",
+      "page/sections/beat-04.md": "s4b.sec-beat-04",
+      "doc/lesson.md": "s4c.doc",
+      "extensions.yaml": "s4d.extensions",
+      "notebook/lesson.ipynb": "s4e.notebook",
+      "video/audio/beat-01.mp3": "s4f.beat-01",
+      "video/audio/beat-02.mp3": "s4f.beat-02",
+      "video/audio/beat-03.mp3": "s4f.beat-03",
+      "video/audio/beat-04.mp3": "s4f.beat-04",
+      "media/session.mp4": "s5.assemble",
+      "video/captions.vtt": "s5.assemble",
+      "page/video.json": "s5.assemble",
+      "manifest.yaml": "s5.assemble",
+      "rounds/round-02/screening-report.md": "s6.screening",
+      "rounds/round-02/packet/README.md": "s7.packet",
+      "rounds/round-02/notes.md": "s7.packet",
+      "rounds/round-02/flags.md": "s7.packet"
+    }
+  },
+  "orderResults": [
+    {
+      "id": "r02-n01",
+      "status": "applied",
+      "summary": "Bridged the songs-to-resumes switch as the same meter deliberately visiting a new aisle in script, page, and doc, and reworked the cheapest-fix walk-home question so it lands naturally at the close.",
+      "filesChanged": [
+        "doc/lesson.md",
+        "page/sections/beat-04.md",
+        "script.md",
+        "script.md#beat-04"
+      ],
+      "costUsd": 0.22963
+    },
+    {
+      "id": "r02-n02",
+      "status": "applied",
+      "summary": "Rebuilt dot-alignment to brand spec (thin strokes, proportional probe arrowhead, non-colliding labels), added a c1 length control so learners feel direction earn the score while length cheats it (session's second conflict), and replaced the vague 'call it' prompt with a concrete 'name which candidate tops out' prediction in beat-02 and the interactive.",
+      "filesChanged": [
+        "page/interactives/dot-alignment.yaml",
+        "storyboard.yaml",
+        "storyboard.yaml#beat-02"
+      ],
+      "costUsd": 0.35047
+    },
+    {
+      "id": "r02-n03",
+      "status": "applied",
+      "summary": "Restructured the opening so beat-01 poses the many-feature comparison as a puzzle the learner attempts and beat-02 hands the dot product over as its resolution; updated the spine beat table intents and timing (154s total) to match, aha unchanged.",
+      "filesChanged": [
+        "spine.md",
+        "storyboard.yaml",
+        "storyboard.yaml#beat-01",
+        "storyboard.yaml#beat-02"
+      ],
+      "costUsd": 0.544035
+    }
+  ]
 }
