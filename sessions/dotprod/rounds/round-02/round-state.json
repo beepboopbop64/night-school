@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "round": "round-02",
-  "phase": "applied",
+  "phase": "executed",
   "appliedOrders": [
     "r02-n01",
     "r02-n02",
