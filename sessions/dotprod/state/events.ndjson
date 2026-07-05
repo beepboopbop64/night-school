@@ -878,3 +878,4 @@
 {"ts":"2026-07-05T15:14:59.274Z","runId":"run-2026-07-05T1442-7a10de","node":"s7.packet","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-05T15:15:01.096Z","runId":"run-2026-07-05T1442-7a10de","node":"s7.packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.serves-locally","pass":true},{"id":"packet.notes-preseeded","pass":true},{"id":"packet.flags-written","pass":true}]}}
 {"ts":"2026-07-05T15:15:01.097Z","runId":"run-2026-07-05T1442-7a10de","node":"s7.packet","event":"node_completed","data":{"costUsd":0,"durationMs":1818}}
+{"ts":"2026-07-05T15:15:01.685Z","runId":"run-2026-07-05T1442-7a10de","node":"s7.packet","event":"commit","data":{"sha":"60ab18ce557da11c1eb54b78c6d1e5bdc06f99c6"}}

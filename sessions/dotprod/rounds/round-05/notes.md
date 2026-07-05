@@ -3,6 +3,10 @@
 Write freeform prose under any anchor below, or under General. Every
 note is triaged; nothing is silently dropped.
 
+(Two notes below are pre-seeded from the round-05 screening dissent, both
+one-character semicolon fixes Vera blocks on. Add your own notes anywhere;
+one round applies everything together.)
+
 Conventions:
 - `@spine` or `@global` anywhere in a note marks it spine-level; the
   round PAUSES with an editable plan instead of auto-executing.
@@ -22,7 +26,11 @@ Conventions:
 
 ## @page/beat-01
 
+From screening (Vera V-DASH): "Try answering it first; it's genuinely harder than it sounds." The semicolon is clause glue. Split it: "Try answering it first. It's genuinely harder than it sounds."
+
 ## @page/beat-02
+
+From screening (Vera V-DASH): "Nothing about its direction changed; it never got any closer to the probe." Same fix: "Nothing about its direction changed. It never got any closer to the probe."
 
 ## @page/beat-03
 
