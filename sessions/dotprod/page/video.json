@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "videoSeconds": 194.09,
+  "videoSeconds": 194.53,
   "chapters": [
     {
       "beatId": "beat-01",
@@ -25,7 +25,7 @@
     {
       "beatId": "beat-04b",
       "title": "The honest look",
-      "startSeconds": 147.758
+      "startSeconds": 148.197
     }
   ]
 }

@@ -4,43 +4,43 @@
   "lanes": {
     "llm": [
       {
-        "prompt": "We called the dot product a similarity meter, and the breadcrumb question was: what is the cheapest fix that keeps the direction and forgets the size? I will tell you the fix I came up with; your job is to stress-test it. Show me a case where the raw dot product and my proposed fix would rank two candidate vectors in a different order, and check whether my fix really keeps only the direction. Use the aligned / perpendicular / opposed sign behavior from the sweep to check your example.",
-        "whatGoodLooksLike": "A good answer produces two vectors where a long-but-misaligned vector beats a short-but-aligned one on raw dot product, then flips the ranking once the learner's fix removes the length, and explains the flip using length times projection rather than just asserting it."
+        "prompt": "Tonight's meter is two arrows in, one number out, and you watched a candidate win purely by getting longer, not more aligned. Before you ask for help, propose your own cheapest fix: one change you'd make to how the candidate lists are compared so that stretching a candidate's length can never shout over a better-aligned one. Hand your fix to an LLM and ask it to stress-test it: what happens under your fix if a candidate doubles in length, and what happens if two candidates point in exactly the same direction but different lengths?",
+        "whatGoodLooksLike": "A good conversation pressure-tests your fix with concrete numbers rather than taking your word for it, and it should surface whether your fix actually stops length from moving the ranking or just hides the cheat somewhere else in the arithmetic."
       },
       {
-        "prompt": "The meter shows up in transformers as scaled dot-product attention, next session's machine if you want a preview tonight: query dot key, divided by sqrt(d_k), fed into a softmax. Explain to me why the divide-by-sqrt(d_k) step exists, what breaks in the softmax if you skip it, and how that connects back to the meter reading you get from turning the probe in the geometric sweep.",
-        "whatGoodLooksLike": "A good answer talks about dot products growing with dimension so the pre-softmax scores get too large and saturate the softmax into near one-hot outputs, and ties that growth back to the length-times-projection picture rather than treating sqrt(d_k) as a magic constant."
+        "prompt": "Ask an LLM to walk you through scaled dot-product attention as tonight's meter in its work uniform: a dot product, divided by sqrt(d_k), then softmaxed, scoring every word against every other word. Push on one specific question: given what the amber probe showed you about a candidate's length hijacking the raw score, what problem is the division by sqrt(d_k) actually solving?",
+        "whatGoodLooksLike": "A good answer ties the sqrt(d_k) division back to a length-style problem at the scale of many dimensions, not just to a vague claim about numerical stability, and leaves you able to say in your own words what changes if that division is dropped."
       },
       {
-        "prompt": "I just named the machine I've been using all along: the dot product. Give me three places outside language models where the same meter shows up under a different name in the same aisle, like we did in \"same meter, different aisle.\" For each one tell me what gets treated as query and what gets treated as key, and what a high score means in that domain.",
-        "whatGoodLooksLike": "A good answer names concrete domains (recommendation matching, document search, image embedding lookup, and similar) and for each one correctly identifies the two vectors being compared and states what a high score physically means there, not just \"similarity.\""
+        "prompt": "In \"Same meter, different aisle\" the probe list and candidate lists moved from songs to resumes and the score kept working the same way. Pick a third aisle from your own life, anything you compare using a handful of features, and ask an LLM to help you write out what the probe list and candidate lists would look like there, and what a high, zero, and negative score would each mean in that setting.",
+        "whatGoodLooksLike": "A good answer keeps the sign readings straight in your new aisle: positive still means aligned, zero still means unrelated, negative still means opposed, just translated into words that fit whatever you picked."
       }
     ],
     "papers": [
       {
         "title": "Attention Is All You Need",
         "url": "https://arxiv.org/abs/1706.03762",
-        "hook": "Read the attention equation once and you will see tonight's meter in its work uniform: a dot product, divided by sqrt(d_k), then softmaxed, scoring every word against every other word."
+        "hook": "Next session's machine: you'll see tonight's meter in its work uniform, a dot product divided by sqrt(d_k) then softmaxed, scoring every word in a sentence against every other word. Read section 3.2.1 tonight if you want the preview before the next session opens with it."
       },
       {
         "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
         "url": "https://arxiv.org/abs/1409.0473",
-        "hook": "Before the dot product got the job, alignment scoring was done a different way. Reading this next to tonight's session shows you that the similarity meter is the idea; the dot product is just the cheapest gauge anyone found for it."
+        "hook": "Before the dot product got the job of scoring alignment, a small trained network did it by hand, one learned function per comparison. Read this to see the score you built tonight replacing that learned function with a much cheaper piece of arithmetic."
       },
       {
         "title": "Dot products and duality",
         "url": "https://www.3blue1brown.com/lessons/dot-products",
-        "hook": "This is the geometric grammar underneath the sweep you did tonight: projection times length, with the same aligned-positive, perpendicular-zero, opposed-negative sign behavior, drawn out instead of described."
+        "hook": "The sweep you turned by hand tonight, projection times length, sign flipping as the probe crosses perpendicular, gets its full moving picture here. Watch it if you want the geometry behind the honest look you just took."
       }
     ],
     "projects": [
       {
-        "title": "Build the honest-look ranking flip",
-        "brief": "In NumPy, make five short \"document\" vectors and one \"query\" vector, all with different lengths on purpose. Rank the documents two ways: by raw dot product with the query, and by the cheapest fix you proposed for the breadcrumb. Print both rankings side by side. Finish line: at least one document changes rank between the two lists, and you can point to its length as the reason, proving your proposed fix really does forget the size and keep only the direction."
+        "title": "Stress-test the length cheat",
+        "brief": "Rebuild tonight's probe-and-candidates setup in NumPy: one probe vector and three candidate vectors, each just a short list of floats. Write a plain_score(probe, candidate) function that returns the raw dot product, and confirm you can reproduce the length cheat by stretching one candidate until it overtakes a better-aligned rival. Then write your own fixed_score function that applies the cheapest fix you can think of, and prove in code that stretching a candidate's length no longer changes who wins. Finish line: a printed table of raw vs. fixed scores across at least three length settings, showing the ranking holding steady under your fix while it still visibly flips under the raw score."
       },
       {
-        "title": "Turn the probe into a tiny attention layer",
-        "brief": "Using only NumPy, encode four short toy \"words\" as small random vectors, pick one as the query, and compute scaled dot-product attention (query dot each key, divide by sqrt(d_k), softmax) over the other three as keys and values. Finish line: print the attention weights and confirm the word whose vector you deliberately made most aligned with the query gets the highest weight, so you can watch the similarity meter drive the machine you named tonight."
+        "title": "Score your own aisle",
+        "brief": "Pick ten short things you actually care about comparing, songs, job posts, anything you can turn into a handful of numeric features, and hand-build feature vectors for a probe and every candidate. Compute the plain dot-product score for each candidate, print them ranked high to low, and read down the list against your own gut feeling. Finish line: a ranked printout plus one sentence naming a spot where the raw score's blindness to length pushed a candidate higher than your gut says it deserved, the same blind spot the amber probe showed you tonight."
       }
     ]
   }

@@ -102,7 +102,7 @@
       "receipt": "state/receipts/s4e.notebook.receipt.json"
     },
     "s5.assemble": {
-      "status": "flagged",
+      "status": "passed",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s5.assemble.receipt.json"
@@ -138,11 +138,5 @@
       "receipt": "state/receipts/s4b.sec-beat-04b.receipt.json"
     }
   },
-  "needsJake": [
-    {
-      "node": "s5.assemble",
-      "reason": "gate failed: assemble.lchecks-rerun",
-      "since": "2026-07-05T14:40:23.241Z"
-    }
-  ]
+  "needsJake": []
 }
