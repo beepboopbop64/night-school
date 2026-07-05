@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "node": "s4d.extensions",
+  "inputs": [
+    {
+      "path": "sources.yaml",
+      "sha256": "c32a5349799a2a517eefed46878e43e67985e413abc3dfe5ab4013c511f052c7"
+    },
+    {
+      "path": "spine.md",
+      "sha256": "91c6ee10ce2a1bfc17f186047dca446b5dfa84ae7b2a1744c718b524dd8782ad"
+    },
+    {
+      "path": "storyboard.yaml",
+      "sha256": "bd0efd3d39b481e969d1d7c2b7d65b446b35175da02d237e86615433f9f9440a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "extensions.yaml",
+      "sha256": "cf9bdadda77c6ae9c2f382ca58891c5ee6b0a3d6974b28d86f0793c289ac0c9d"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "ext.schema",
+        "pass": true
+      },
+      {
+        "id": "ext.source-whitelist",
+        "pass": true
+      },
+      {
+        "id": "ext.dash-lint",
+        "pass": true
+      },
+      {
+        "id": "ext.links-resolve",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 1,
+  "costUsd": 0.062255399999999995,
+  "tier": "sonnet",
+  "startedAt": "2026-07-05T01:38:05.051Z",
+  "endedAt": "2026-07-05T01:38:33.196Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "attempts": 1
+  }
+}

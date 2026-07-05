@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "dotprod",
-  "stage": "S4c",
+  "stage": "S4d",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -90,7 +90,10 @@
       "receipt": "state/receipts/s4c.doc.receipt.json"
     },
     "s4d.extensions": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0.062255399999999995,
+      "iter": 1,
+      "receipt": "state/receipts/s4d.extensions.receipt.json"
     },
     "s4e.notebook": {
       "status": "pending"
