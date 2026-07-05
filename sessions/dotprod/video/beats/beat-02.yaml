@@ -22,9 +22,12 @@ beat:
   visual: "[visual: covary | dynamic-concept] One amber probe arrow sweeps through
     directions; four periwinkle candidate arrows hold still; under each
     candidate a lilac score bar with a numeric readout climbs and dies as the
-    probe turns toward and away from it. A freeze frame before the sweep carries
-    the prediction card; after the sweep the probe parks and the four scores
-    land as integers on the bars."
+    probe turns toward and away from it. Each candidate label sits nudged
+    outward past its arrow tip so the sweeping amber probe never buries it,
+    staying readable at every probe angle including when the probe passes
+    candidate B. A freeze frame before the sweep carries the prediction card;
+    after the sweep the probe parks and the four scores land as integers on the
+    bars."
   colors:
     probe: data.heat
     candidates: data.observed

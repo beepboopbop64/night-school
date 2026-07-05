@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe arrow plus the climbing lilac score bars carry the beat; the periwinkle candidates and labels read as steady supporting context.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Only one probe arrow, a group of four candidate arrows, and a matching row of four score bars appear — well within the budget.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels A/B/C/D sit at each arrow tip and repeat beside each corresponding score bar; no legend or corner key is used.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is limited to candidate letters and integer bar readouts (-3, 0, 3, 4, etc.), each annotating a visible object.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Candidate letters and the numeric bar readouts are rendered at readable size against the dark sky.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The arrow fan and the full row of four score bars sit inside the frame with margin on all sides.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Candidate labels are nudged outward past their tips, so even the sweeping amber probe near B/C never overlaps a label, and bar numbers stay clear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe is amber (attention), the candidate arrows periwinkle (observed), and the score bars lilac — consistent with token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — probe, candidate arrows, labels, score bars, and readouts — carries propositional content with no decorative filler.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe sweeps from toward-A (A=4 highest) to toward-C/D (C=4, D=3), the four lilac bars climb and dip with the angle, and integers land on the bars as promised.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each score bar sits under its labeled candidate in matching left-to-right order, keeping claim and object together.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds continuously from a bare origin dot to arrows, then bars filling and probe rotating across frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Generous negative space separates the arrow fan above from the score-bar row below with a clear top-to-bottom scan path.",
+    "suggestion": ""
+  }
+]

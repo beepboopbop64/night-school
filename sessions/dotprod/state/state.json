@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "stage": "S7",
-  "round": 0,
+  "round": 1,
   "fidelity": "half-trued",
   "nodes": {
     "s4f.beat-01": {
@@ -38,7 +38,7 @@
     "s4a.beat-02": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 1.1168462,
+      "costUsd": 1.2118678999999999,
       "receipt": "state/receipts/s4a.beat-02.receipt.json"
     },
     "s4a.beat-03": {
@@ -109,14 +109,14 @@
     },
     "s6.screening": {
       "status": "passed",
-      "costUsd": 1.240657,
       "iter": 2,
+      "costUsd": 1.240657,
       "receipt": "state/receipts/s6.screening.receipt.json"
     },
     "s7.packet": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/s7.packet.receipt.json"
     }
   },
