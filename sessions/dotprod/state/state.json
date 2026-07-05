@@ -24,7 +24,7 @@
       "receipt": "state/receipts/s4f.beat-03.receipt.json"
     },
     "s4f.beat-04": {
-      "status": "flagged",
+      "status": "passed",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-04.receipt.json"
@@ -152,11 +152,6 @@
       "node": "s6.screening",
       "reason": "gate failed: screening.vera-opus, screening.rounds-within-cap",
       "since": "2026-07-05T15:14:59.271Z"
-    },
-    {
-      "node": "s4f.beat-04",
-      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"0f2ce3534d2733ab8093b10a2b5f691c\",\"param\":\"model_id\"}}",
-      "since": "2026-07-05T23:33:16.024Z"
     },
     {
       "node": "s4f.beat-04b",
