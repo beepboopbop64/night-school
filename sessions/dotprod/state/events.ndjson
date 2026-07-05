@@ -328,3 +328,5 @@
 {"ts":"2026-07-05T03:37:52.461Z","runId":"run-2026-07-05T0303-982fd1","node":"s7.packet","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-05T03:37:54.567Z","runId":"run-2026-07-05T0303-982fd1","node":"s7.packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.serves-locally","pass":true},{"id":"packet.notes-preseeded","pass":true},{"id":"packet.flags-written","pass":true}]}}
 {"ts":"2026-07-05T03:37:54.568Z","runId":"run-2026-07-05T0303-982fd1","node":"s7.packet","event":"node_completed","data":{"costUsd":0,"durationMs":2104}}
+{"ts":"2026-07-05T03:37:55.134Z","runId":"run-2026-07-05T0303-982fd1","node":"s7.packet","event":"commit","data":{"sha":"c8775b484a7903c3ba383446130ff91479f36112"}}
+{"ts":"2026-07-05T03:37:55.196Z","runId":"round-2026-07-05T0301-2aa5ac","node":"s8.round-01","event":"node_completed","data":{"costUsd":3.88,"failedOrders":[],"proofViolations":1,"runFailed":["s6.screening"]}}
