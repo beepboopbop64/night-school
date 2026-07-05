@@ -689,3 +689,10 @@
 {"ts":"2026-07-05T09:29:33.218Z","runId":"slice-2026-07-05T0922-a379a9","node":"s4a.beat-04b","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":0.9559536,"wallMs":409911}}
 {"ts":"2026-07-05T09:29:33.372Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-04b","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-05T09:29:33.375Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-04b","event":"node_completed","data":{"costUsd":0.9559536,"durationMs":410173}}
+{"ts":"2026-07-05T09:29:34.008Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-04b","event":"commit","data":{"sha":"051cabbdc9340c5d03ccda0414d6f83532a7c7a9"}}
+{"ts":"2026-07-05T09:29:34.013Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T09:29:34.019Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T09:29:34.028Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4b.sec-beat-03","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-03"}}
+{"ts":"2026-07-05T09:30:08.536Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4b.sec-beat-03","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.09327210000000001,"summary":"DONE What did that sweep actually teach you?"}}
+{"ts":"2026-07-05T09:30:08.546Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4b.sec-beat-03","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T09:30:08.548Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4b.sec-beat-03","event":"node_completed","data":{"costUsd":0.09327210000000001,"durationMs":34512}}
