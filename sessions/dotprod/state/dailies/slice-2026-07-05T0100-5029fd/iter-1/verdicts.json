@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame has one load-bearing element — the probe stills in F1-2, the lilac dial in F3-4, the mint aha sentence anchoring the settled dial in F5-6.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The busiest frame (F2) shows three parallel probe stills of the same idea plus a score, well under four novel elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels 'along/across/against', 'oppose/ignore/agree', and 'a · b' all sit directly on their arrows, dial positions, and readout with no legend box.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is limited to labels, the 'a · b' term, and the short annotation 'dot product = similarity meter' beside the dial and readout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — dial labels, scores, and the aha sentence — is well above the ~2.2% height threshold and clearly readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The dial, arrows, readout, and sentence all sit inside the frame with margins on every side.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or graphic overlaps another; the aha sentence sits clear below the readout and dial.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Periwinkle vectors and 'a · b', lilac meter dial, amber needle/heat, and mint aha sentence all follow token semantics consistently.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — arrows, scores, dial, needle, annotation — carries propositional content with no decoration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The three probe stills replay with frozen scores, collapse into a lilac dial whose needle swings oppose/ignore/agree, and the mint aha sentence with periwinkle 'a · b' true up — matching the intent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "'a · b' sits directly above its score, labels touch their dial positions, and the aha sentence is adjacent to the readout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order: stills, then dial with swinging needle, then filled dial and mint aha sentence, reading as continuous morphs.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition has generous negative space and a clear top-to-bottom scan path from dial to readout to sentence.",
+    "suggestion": ""
+  }
+]

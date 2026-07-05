@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "node": "s4a.beat-03",
+  "inputs": [
+    {
+      "path": "storyboard.yaml#beat-03",
+      "sha256": "e604cf58ab9595db323b07fc50224b73ebafc08292df95d85b235436c3ea98fc"
+    },
+    {
+      "path": "script.md#beat-03",
+      "sha256": "3dbf70c80cd9283ce1397b4b26ff88ea4af6ed19d74c13dc190f2dc6fb9ad745"
+    },
+    {
+      "path": "video/audio/beat-03.mp3",
+      "sha256": "33d5747c04c6b6d95a1305bf9106171d7f7748e077e6e0e897e52b9ea56ef37b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/beats/beat-03.yaml",
+      "sha256": "9469c8bf2afae44f20352f63979448f89c3808af85e8d3ae2a1c1347878e775d"
+    },
+    {
+      "path": "video/scenes/scene_beat_03.py",
+      "sha256": "ccfd69fe68ab5b1cb2ffc4812747d28652f3201447550349a6f4449022294aaa"
+    },
+    {
+      "path": "media/beat-03.mp4",
+      "sha256": "323a9e2bbaa7687360d08d6aedb2d63ea15bb96e790597c7c5501169e0ad3516"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "bbox.clean",
+        "pass": true
+      },
+      {
+        "id": "iris.pass",
+        "pass": true,
+        "iter": 1
+      },
+      {
+        "id": "scene.duration-within-tolerance",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 1,
+  "costUsd": 1.0160084999999999,
+  "tier": "opus",
+  "startedAt": "2026-07-05T01:00:10.346Z",
+  "endedAt": "2026-07-05T01:10:33.950Z",
+  "transcript": "state/dailies/slice-2026-07-05T0100-5029fd",
+  "promptSha": "",
+  "meta": {
+    "videoSeconds": 34.133333,
+    "audioSeconds": 33.576054,
+    "toleranceSeconds": 3.36,
+    "perIteration": [
+      {
+        "iter": 1,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.8688134999999999,
+        "irisCostUsd": 0.14719500000000002,
+        "wallMs": 623383,
+        "fingerprints": [],
+        "replanWasForced": false
+      }
+    ]
+  }
+}
