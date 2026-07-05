@@ -98,7 +98,7 @@
     "s4e.notebook": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 0.4126257,
+      "costUsd": 0.3464226,
       "receipt": "state/receipts/s4e.notebook.receipt.json"
     },
     "s5.assemble": {
