@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame has a single load-bearing element: the retrieval card in F1, the you/role comparison in F2, the emerging guess in F3, the outlined candidate with rose flag in F4, and the closing card in F5-F6.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The busiest frame (F2) shows two labeled columns and one dial, well under the four-novel-element budget.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels sit on their objects: 'YOU'/'THE ROLE' head their columns, 'candidate' sits under the vector, 'size, not fit' beside the flag, 'score: 96' by the dial.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text functions as card prompts, column headers, or annotations of visible referents (flag, vector, dial).",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Card prompts, column entries, and readouts are all rendered at comfortably readable size.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The cards, columns, vector, dial, and extensions chip all sit inside the frame with margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or labels overlap; the 'size, not fit' annotation and 'score: 96' readout sit clear of the vector and dial.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The candidate vector is periwinkle blue, the dial needle and score readout are lilac, and the unearned-win flag is rose — consistent with token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The stray marks in F3 read as the incipient build of the candidate vector and angle arc rather than decoration; every element carries propositional role.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The sequence delivers the intent: retrieval card, you/role columns pooling into a lilac dial, a guess card with outlined candidate and hidden score, then the candidate stretching longer with lilac score climbing to 96, a rose flag marking the unearned win, and the closing walk-home card with an extensions-menu chip.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Annotations touch their referents: 'size, not fit' beside the flag, 'candidate' under the vector, and the extensions chip near its pointing arrow.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the candidate builds from a fragment (F3) into a full outlined vector with flag (F4), reading as a continuous construction in reasoning order.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Generous negative space and clear top-to-bottom reading order across all six frames.",
+    "suggestion": ""
+  }
+]

@@ -3,59 +3,71 @@
   "node": "s4a.beat-04",
   "inputs": [
     {
-      "path": "beat.yaml",
-      "sha256": "647ef070bff6ac474ce68bd097eeb57e2b9cdbcfa6bae9e340a220d451130d9d"
+      "path": "storyboard.yaml#beat-04",
+      "sha256": "ded0f775f2957040a12a45d6943132ff5ff3e9eb6bc373842837b12f6e2aa252"
+    },
+    {
+      "path": "script.md#beat-04",
+      "sha256": "4e3f969f8849e6b6b25e4350146d1d3d788270a46693bb9ef63199e63a83aedf"
+    },
+    {
+      "path": "video/audio/beat-04.mp3",
+      "sha256": "84183fe2fa6859e89e96656f36ec6a5c1cfb13c2c6fb017709abea4064e5007e"
     }
   ],
   "outputs": [
     {
+      "path": "video/beats/beat-04.yaml",
+      "sha256": "3834d2a4d19168dc6ec8f4ae8700abf986d92f565ab29539b4b154b92d4ed57a"
+    },
+    {
       "path": "video/scenes/scene_beat_04.py",
-      "sha256": "6deee86ee309cbc786d4bac929544f97a8b0fbe018cef56a7732036df24065a9"
+      "sha256": "0620c7ca1a5886f12690c388171cd4e9252cda7830f5e6dbc927574ca016726b"
+    },
+    {
+      "path": "media/beat-04.mp4",
+      "sha256": "a8abde25d3d57288d9d5f9fe7ce9a982129c21a7f2234f056033fc6ef61b3cff"
     }
   ],
   "gate": {
-    "passed": false,
+    "passed": true,
     "checks": [
       {
         "id": "bbox.clean",
-        "pass": false
+        "pass": true
       },
       {
         "id": "iris.pass",
-        "pass": false
+        "pass": true,
+        "iter": 1
+      },
+      {
+        "id": "scene.duration-within-tolerance",
+        "pass": true
       }
     ]
   },
   "iterations": 1,
-  "costUsd": 1.34,
+  "costUsd": 1.3694566999999997,
   "tier": "opus",
-  "startedAt": "2026-07-05T03:42:01.245Z",
-  "endedAt": "2026-07-05T03:52:33.133Z",
-  "transcript": "state/dailies/slice-2026-07-05T0342-28843d",
-  "promptSha": "ef0fdfd568f062bd5f514cfdaee1b7982f811f2fbc0823a136b005e8186ec143",
+  "startedAt": "2026-07-05T05:02:56.003Z",
+  "endedAt": "2026-07-05T05:14:44.231Z",
+  "transcript": "state/dailies/slice-2026-07-05T0502-87e073",
+  "promptSha": "",
   "meta": {
-    "runId": "slice-2026-07-05T0342-28843d",
-    "coderModel": "claude-sonnet-5",
-    "videoSeconds": 58.2,
+    "videoSeconds": 85.266344,
+    "audioSeconds": 86.4,
+    "toleranceSeconds": 8.64,
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "bbox-failed",
-        "coderCostUsd": 1.3377012000000001,
-        "irisCostUsd": 0,
-        "wallMs": 631881,
-        "fingerprints": [
-          "bbox:bbox.text-height:Text:×",
-          "bbox:bbox.text-height:Text:×",
-          "bbox:bbox.text-height:Text:×",
-          "bbox:bbox.text-height:Text:+",
-          "bbox:bbox.text-height:Text:+",
-          "bbox:bbox.text-height:Text:score",
-          "bbox:bbox.text-height:Text:score"
-        ],
+        "outcome": "iris-passed",
+        "coderCostUsd": 1.2112961999999998,
+        "irisCostUsd": 0.1581605,
+        "wallMs": 708012,
+        "fingerprints": [],
         "replanWasForced": false
       }
-    ],
-    "flagReason": "no-progress: bbox defect repeated 3x"
+    ]
   }
 }

@@ -48,9 +48,9 @@
       "receipt": "state/receipts/s4a.beat-03.receipt.json"
     },
     "s4a.beat-04": {
-      "status": "flagged",
+      "status": "passed",
       "iter": 1,
-      "costUsd": 1.7079685,
+      "costUsd": 1.3694566999999997,
       "receipt": "state/receipts/s4a.beat-04.receipt.json"
     },
     "s4b.sec-beat-01": {
@@ -125,11 +125,6 @@
       "node": "s6.screening",
       "reason": "gate failed: screening.petra, screening.rounds-within-cap",
       "since": "2026-07-05T03:37:52.459Z"
-    },
-    {
-      "node": "s4a.beat-04",
-      "reason": "slice beat-04 failed: no-progress: bbox defect repeated 3x (dailies: C:\\Users\\jaker\\Desktop\\projects\\harnesses\\lessons\\sessions\\dotprod\\state\\dailies\\slice-2026-07-05T0342-28843d)",
-      "since": "2026-07-05T03:52:33.136Z"
     }
   ]
 }
