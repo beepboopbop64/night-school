@@ -49,9 +49,13 @@ Time to close the loop. Rebuild the meter from memory: two arrows go in, so what
 
 While you think, one detour worth naming. Swap the songs for a job posting. Score yourself against what the role wants: multiply the matched entries, add them up, one number for the fit. Different aisle, same meter. The multiply-and-add never asked what the numbers meant, and that is exactly why it travels.
 
+[visual: dynamic-process] A guess card holds: one candidate outlined, an arrow hinting it is about to grow, the score readout hidden.
+
+Now the honest look, and guess before you watch. If a candidate's numbers just get bigger, same direction, longer arrow, does its score change?
+
 [visual: dynamic-process] One periwinkle candidate stretches longer; its lilac score climbs while its direction holds still; a small rose flag marks the unearned win.
 
-Now the honest look. Stretch a candidate longer and its score climbs, even though its direction never moved. Long songs would win on sheer loudness, and padded resumes would win on sheer length.
+It climbs. The direction never moved, and the score climbed anyway. Long songs would win on sheer loudness, and padded resumes would win on sheer length.
 
 [visual: connect-to-reality] The walk-home question lands as the closing card, and a quiet chip points to the extensions menu on the page.
 
