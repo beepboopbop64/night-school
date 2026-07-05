@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one load-bearing element: the retrieval card alone in frame 1, the growing bar and climbing score in frame 4, and the walk-home question card in frames 5-6, with the feature bars serving as supporting context.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Frame 3 shows three labeled feature comparisons plus one dial readout, which read as a single comparison-table-plus-meter structure rather than five independent novel ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels sit directly on their objects: 'you'/'the role' beside the bars, 'Python hours'/'SQL reps'/'nights free' above each pair, 'fit score' under the dial, with no boxed legend.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'Keep the direction. Drop the size. How?' text in frames 5-6 sits on the card directly above two visible vector arrows it annotates, and 'direction fixed' labels the held-still bar in frame 4.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — bar labels, numeric readouts, dial score '137', and the closing card question — is well above the ~2.2% frame-height threshold and clearly readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every focal element sits inside the frame with margin; the '3 ways below' chip and its arrow in frames 5-6 stay fully within the lower-right area.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The numeric readouts sit on or immediately beside their bars in frame 4 without rendering any element illegible, and no unrelated text elements intersect.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The candidate bars stay in the periwinkle blue family (observed features) while the dial and its climbing score are lilac (the parameter/readout), consistent across frames 2-4.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No mascots, ornaments, or filler; the dial, bars, arrows, and cards all carry propositional roles.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The retrieval card holds while the meter idles, the columns swap for 'you'/'the role' across three labeled features that pool into the lilac dial, one bar stretches longer with a climbing score and 'direction fixed', and the walk-home card plus extensions chip close the beat.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Annotations touch their referents: 'direction fixed' beside the held bar, numeric scores beside their bars, and 'fit score' under the dial.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order across frames — card, then bars, then numbers and dial, then the grown bar and score — reading as a continuous morph rather than cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The compositions keep clear margins and a top-to-bottom, left-to-right reading order, with the closing card centered and well-spaced.",
+    "suggestion": ""
+  }
+]
