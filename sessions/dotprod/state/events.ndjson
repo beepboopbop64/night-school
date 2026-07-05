@@ -63,3 +63,8 @@
 {"ts":"2026-07-05T01:20:36.746Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-01","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.025208699999999997,"summary":"DONE How did it know?"}}
 {"ts":"2026-07-05T01:20:36.753Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-01","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
 {"ts":"2026-07-05T01:20:36.754Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-01","event":"node_completed","data":{"costUsd":0.025208699999999997,"durationMs":11273}}
+{"ts":"2026-07-05T01:20:37.161Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-01","event":"commit","data":{"sha":"af1471c86b6689de785d71c65b696e904f491e80"}}
+{"ts":"2026-07-05T01:20:37.162Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-02","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-05T01:20:49.310Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-02","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.0263445,"summary":"DONE What happens when you turn the probe?"}}
+{"ts":"2026-07-05T01:20:49.317Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-02","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T01:20:49.319Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-02","event":"node_completed","data":{"costUsd":0.0263445,"durationMs":12150}}
