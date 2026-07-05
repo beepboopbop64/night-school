@@ -1,0 +1,98 @@
+# Change orders — THE literal, editable execution input (§7.3).
+# Edit this YAML, then `harness round <session> --execute`: the file IS the plan.
+schemaVersion: 1
+session: dotprod
+round: round-01
+policy:
+  totalEstimateUsd: 7.04
+  capUsd: 25
+  autoExecute: true
+  pauseReasons: []
+orders:
+  - id: r01-n01
+    noteId: n01
+    note: When the probe sweeps near candidate B, the B label gets buried under the amber arrow and
+      disappears. Keep every candidate label readable at all probe angles; nudging the labels
+      outward past the arrow tips would probably do it.
+    kind: change-order
+    targets:
+      - storyboard#beat-02
+      - video/beat-02
+    changeType: visual
+    interpretation: Keep every candidate label readable at all probe angles; nudge labels outward past
+      the arrow tips so the amber probe arrow never buries a label (esp. candidate B).
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4a.beat-02
+      - s4b.sec-beat-02
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 4.18
+    miss:
+      critic: iris
+      artifact: video/scenes/scene_02.py
+  - id: r01-n02
+    noteId: n02
+    note: '"The question worth sitting with tonight" uses the exact crutch phrase Vera flagged at
+      screening. Rephrase so "sit with" appears at most once in the whole session.'
+    kind: change-order
+    targets:
+      - page/beat-01
+    changeType: voice
+    interpretation: Rephrase 'The question worth sitting with tonight' to drop the 'sit with' crutch so
+      the phrase appears at most once across the whole session.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/beat-01
+  - id: r01-n03
+    noteId: n03
+    note: The numbers under the bars feel busy.
+    kind: change-order
+    targets:
+      - ix/dot-alignment
+    changeType: visual+content
+    interpretation: "Guessing at the fix: reduce visual busyness of the numeric readouts beneath the
+      bars in the dot-alignment interactive (fewer/cleaner numbers)."
+    alternative: Jake wants the numbers removed entirely rather than simplified.
+    confidence: low
+    spineTouch: false
+    blastRadius:
+      - s4b.dot-alignment
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 2.06
+    miss:
+      critic: iris
+      artifact: ix/dot-alignment
+  - id: r01-n04
+    noteId: n04
+    note: "#style: when a demo puts a computed number on screen, round the readout to at most two
+      decimals; full float precision reads as debug output, not teaching."
+    kind: style-amendment
+    targets: []
+    changeType: content
+    interpretation: General taste rule; no one-off session fix demanded.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: ""
+    styleAmendment:
+      rule: Round any computed number shown on screen to at most two decimal places.
+      rationale: Full float precision reads as debug output rather than teaching; a clean two-decimal
+        readout keeps the focus on the concept across every demo.

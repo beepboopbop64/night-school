@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "session": "dotprod",
+  "round": "round-01",
+  "phase": "triaged",
+  "appliedOrders": [],
+  "applyCostUsd": 0,
+  "triageCostUsd": 0.147455,
+  "orderResults": []
+}
