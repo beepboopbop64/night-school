@@ -1,0 +1,30 @@
+# S1 sources for session "dotprod". Every load-bearing claim maps to a
+# resolving URL. checked = date the URL was fetched and the claim read
+# against the source.
+schemaVersion: 1
+session: dotprod
+entries:
+  - claim: >-
+      Vaswani et al., "Attention Is All You Need" (2017): scaled dot-product
+      attention scores query-key pairs with dot products divided by
+      sqrt(d_k); the dot product as a learned similarity score is the core
+      comparison of the transformer.
+    url: https://arxiv.org/abs/1706.03762
+    checked: 2026-07-04
+    note: The breadcrumb target; tonight's score inside a softmax.
+  - claim: >-
+      Bahdanau, Cho, Bengio (2014), "Neural Machine Translation by Jointly
+      Learning to Align and Translate": the first shipped attention
+      mechanism scores alignment between decoder state and encoder
+      annotations; learned similarity scoring predates the dot-product
+      formulation.
+    url: https://arxiv.org/abs/1409.0473
+    checked: 2026-07-04
+    note: Where learned alignment scores first shipped.
+  - claim: >-
+      3Blue1Brown, "Dot products and duality": geometric account of the dot
+      product as projection times length, including the sign behavior
+      (aligned positive, perpendicular zero, opposed negative).
+    url: https://www.3blue1brown.com/lessons/dot-products
+    checked: 2026-07-04
+    note: The visual grammar this session's sweep echoes.

@@ -1,0 +1,54 @@
+# Interactive spec for dotprod beat-02 (Director output, locked with the
+# storyboard). The felt obstruction: the learner turns the probe and feels
+# alignment become the score, including the sign flip nobody warned them
+# about. Colors follow the Night School semantic cast.
+schemaVersion: 1
+session: dotprod
+interactive:
+  id: dot-alignment
+  title: Turn the probe until the meter agrees
+  learnerGoal: >-
+    Alignment IS the score. Dragging the probe's angle, the learner feels
+    each multiply-and-add climb exactly as the probe turns toward that
+    candidate, die to zero across it, and go negative against it. The sign
+    flip lands in the hands before any words name it.
+  visual: >-
+    [visual: covary | dynamic-concept] One amber probe arrow (labeled
+    "probe" on the object) points at an angle the learner sets by dragging
+    or with arrow keys. Four periwinkle candidate arrows (labeled c1..c4 at
+    their tips) hold still at 20, 70, 110, and 160 degrees. Under each
+    candidate sits a lilac score bar with a mono numeric readout of the dot
+    product: bar and number rise and fall WITH the probe's alignment to
+    that candidate, live, as the probe turns; negative scores drop below a
+    zero baseline. At any moment the best-aligned candidate's bar visibly
+    leads. Labels are cream and sit on their objects; no legends. The
+    covariation (probe direction to score height, including sign) must be
+    readable from a still frame alone at 375, 768, and 1280 px widths.
+  colors:
+    probe: data.heat        # amber - the thing doing the asking
+    candidates: data.observed  # periwinkle - the data being interrogated
+    scores: data.params     # lilac - the numbers the mechanism produces
+    labels: text            # cream
+    background: bg          # 10pm Sky (the page's own background)
+  slider:
+    min: 0
+    max: 360
+    step: 5
+    initial: 90
+    unit: degrees
+  states:
+    - id: initial
+      description: untouched first render; the probe rests at 90 degrees
+      drive: []
+    - id: aligned
+      description: probe exactly along c1 at 20 degrees; c1's bar and readout at their peak
+      drive:
+        - { do: set-slider, value: 20 }
+    - id: orthogonal
+      description: probe at 110 degrees, right on c3; c1 near zero, c3 at its peak
+      drive:
+        - { do: set-slider, value: 110 }
+    - id: anti-aligned
+      description: probe at 200 degrees, dead against c1; c1's readout negative, bar below the baseline
+      drive:
+        - { do: set-slider, value: 200 }

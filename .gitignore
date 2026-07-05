@@ -11,6 +11,8 @@ __pycache__/
 sessions/*/media/
 sessions/*/video/audio/
 sessions/*/video/out/
+shared/cache/
+site/static/media/
 
 # Manim partial-render caches
 **/media/Tex/
