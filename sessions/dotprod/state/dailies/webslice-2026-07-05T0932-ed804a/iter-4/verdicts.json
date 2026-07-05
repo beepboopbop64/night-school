@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe plus four periwinkle candidates and their lilac score bars form one coherent system with the probe as the moving focus; nothing else competes.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frame presents the probe, four candidates, and four score bars as a single covarying interactive rather than four unrelated novel ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels c1..c4 and 'probe' sit at their arrow tips and each score bar carries its own c1..c4 caption; no legend or key is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is limited to the instructional annotation and object labels, all referring to visible arrows and bars.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The title, candidate labels, and mono score digits are all rendered legibly at the shown resolutions including the 375px frame.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The unit circle, all arrows, labels, and the row of score bars sit fully inside every frame with margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "In orthogonal-1280 the amber 'probe' label is stamped over the 'c3' label, and in initial-1280 and initial-375 the 'probe' label overlaps the 'c1' label and dot.",
+    "suggestion": "Offset the probe's label dynamically so it clears candidate tip labels as the probe sweeps past c1 and c3."
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Amber probe, periwinkle candidates, lilac score bars, and cream labels are used consistently across all states with no concept switching color.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element carries content; the amber circle reads as the unit-length reference for the vectors, not decoration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each driven state matches its promise: aligned peaks c1 at 1.0, orthogonal peaks c3 with c1 at 0.0, anti-aligned drops c1 to -1.0 below baseline, and length-cheat stretches c1 to a bolded 1.3 past c2's 1.0.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The score bars sit below the vectors but each is captioned with its candidate name, keeping the arrow-to-bar link readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "not applicable: frames are independent driven states rather than a continuous build sequence.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition has generous margins and clear negative space between the vector cluster and the score row.",
+    "suggestion": ""
+  }
+]

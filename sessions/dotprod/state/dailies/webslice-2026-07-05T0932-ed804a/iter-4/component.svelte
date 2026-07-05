@@ -18,6 +18,7 @@
 	const HEAD_LEN_RATIO = 0.2;
 	const HEAD_WIDTH_RATIO = 0.11;
 	const LABEL_RADIAL_OFFSET = 30;
+	const PROBE_LABEL_TANGENT = 26;
 
 	const baseCandidates = [
 		{ name: 'c1', angle: 20 },
@@ -25,27 +26,6 @@
 		{ name: 'c3', angle: 110 },
 		{ name: 'c4', angle: 160 }
 	];
-	const CANDIDATE_ANGLES = baseCandidates.map((c) => c.angle);
-
-	// The probe label never chases the probe pixel-for-pixel: it snaps to
-	// the midpoint of whichever gap between two neighboring candidates
-	// currently holds the probe. That midpoint is, by construction, as far
-	// in angle from both flanking candidate labels as that gap allows, so
-	// the probe label can never land on top of a candidate's tip label (or
-	// its arrow) no matter where in the gap the probe itself sits.
-	function probeLabelAngle(probeDeg) {
-		const p = ((probeDeg % 360) + 360) % 360;
-		const angles = CANDIDATE_ANGLES;
-		const n = angles.length;
-		for (let i = 0; i < n; i++) {
-			const a = angles[i];
-			const b = angles[(i + 1) % n] + (i + 1 === n ? 360 : 0);
-			if (p >= a && p < b) return ((a + b) / 2 + 360) % 360;
-		}
-		const start = angles[n - 1] - 360;
-		const end = angles[0];
-		return ((start + end) / 2 + 360) % 360;
-	}
 
 	function toRad(deg) {
 		return (deg * Math.PI) / 180;
@@ -105,10 +85,11 @@
 	let probeGeo = $derived.by(() => {
 		const geo = arrow(probeAngle, 1);
 		const labelDist = geo.shaft + LABEL_RADIAL_OFFSET;
-		const labelDeg = probeLabelAngle(probeAngle);
-		const labelRad = toRad(labelDeg);
-		const labelX = CENTER + Math.cos(labelRad) * labelDist;
-		const labelY = CENTER - Math.sin(labelRad) * labelDist;
+		// Radial reach plus a fixed tangential kick: even when the probe
+		// sits exactly on a candidate's line, the two label centers stay a
+		// fixed distance apart, independent of angle.
+		const labelX = CENTER + geo.dirX * labelDist + geo.perpX * PROBE_LABEL_TANGENT;
+		const labelY = CENTER + geo.dirY * labelDist + geo.perpY * PROBE_LABEL_TANGENT;
 		return { ...geo, labelX, labelY };
 	});
 

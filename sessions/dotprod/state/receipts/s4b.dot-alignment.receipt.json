@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "page/interactives/dot-alignment.yaml",
-      "sha256": "a77a51eda1197d5d0d037f641315cd02925d0df3096a1f965f873277baf2da6d"
+      "sha256": "4c7e068fb916ac4a76eaf398697754fccd9ae5f5b903b7081cffe4e1b7dbf66d"
     }
   ],
   "outputs": [
     {
       "path": "page/interactives/DotAlignment.svelte",
-      "sha256": "6243b4489f515c83f0cf2ea6e2aca467ed58060cea15e911450c353883e2973f"
+      "sha256": "7ecc5b073eb3e302c0019408bdcaf401ffb0759946a3d55a05adb86bd8ecf979"
     }
   ],
   "gate": {
@@ -23,36 +23,69 @@
       {
         "id": "iris.pass",
         "pass": true,
-        "iter": 2
+        "iter": 5
       }
     ]
   },
-  "iterations": 2,
-  "costUsd": 1.7725298,
+  "iterations": 5,
+  "costUsd": 3.360289,
   "tier": "opus",
-  "startedAt": "2026-07-05T06:51:10.989Z",
-  "endedAt": "2026-07-05T07:04:45.674Z",
-  "transcript": "state/dailies/webslice-2026-07-05T0651-305f50",
+  "startedAt": "2026-07-05T09:32:34.131Z",
+  "endedAt": "2026-07-05T12:42:37.107Z",
+  "transcript": "state/dailies/webslice-2026-07-05T0932-ed804a",
   "promptSha": "",
   "meta": {
     "perIteration": [
       {
         "iter": 1,
+        "outcome": "build-failed",
+        "coderCostUsd": 1.0810655999999998,
+        "irisCostUsd": 0,
+        "wallMs": 459510,
+        "fingerprints": [
+          "build:failed"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 2,
+        "outcome": "build-failed",
+        "coderCostUsd": 0.863844,
+        "irisCostUsd": 0,
+        "wallMs": 405444,
+        "fingerprints": [
+          "build:failed"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 3,
+        "outcome": "web-checks-failed",
+        "coderCostUsd": 0,
+        "irisCostUsd": 0,
+        "wallMs": 9881770,
+        "fingerprints": [
+          "web:web.pointer-drag:slider"
+        ],
+        "replanWasForced": true
+      },
+      {
+        "iter": 4,
         "outcome": "iris-failed",
-        "coderCostUsd": 0.874215,
-        "irisCostUsd": 0.24897999999999998,
-        "wallMs": 500902,
+        "coderCostUsd": 0.513783,
+        "irisCostUsd": 0.2320705,
+        "wallMs": 349221,
         "fingerprints": [
           "iris:V7"
         ],
         "replanWasForced": false
       },
       {
-        "iter": 2,
+        "iter": 5,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.3562998,
-        "irisCostUsd": 0.29303500000000005,
-        "wallMs": 313772,
+        "coderCostUsd": 0.3586104,
+        "irisCostUsd": 0.3109155,
+        "wallMs": 307012,
         "fingerprints": [],
         "replanWasForced": false
       }

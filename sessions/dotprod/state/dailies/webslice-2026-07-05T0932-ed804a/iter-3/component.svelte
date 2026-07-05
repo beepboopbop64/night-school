@@ -18,6 +18,7 @@
 	const HEAD_LEN_RATIO = 0.2;
 	const HEAD_WIDTH_RATIO = 0.11;
 	const LABEL_RADIAL_OFFSET = 30;
+	const PROBE_LABEL_TANGENT = 26;
 
 	const baseCandidates = [
 		{ name: 'c1', angle: 20 },
@@ -25,27 +26,6 @@
 		{ name: 'c3', angle: 110 },
 		{ name: 'c4', angle: 160 }
 	];
-	const CANDIDATE_ANGLES = baseCandidates.map((c) => c.angle);
-
-	// The probe label never chases the probe pixel-for-pixel: it snaps to
-	// the midpoint of whichever gap between two neighboring candidates
-	// currently holds the probe. That midpoint is, by construction, as far
-	// in angle from both flanking candidate labels as that gap allows, so
-	// the probe label can never land on top of a candidate's tip label (or
-	// its arrow) no matter where in the gap the probe itself sits.
-	function probeLabelAngle(probeDeg) {
-		const p = ((probeDeg % 360) + 360) % 360;
-		const angles = CANDIDATE_ANGLES;
-		const n = angles.length;
-		for (let i = 0; i < n; i++) {
-			const a = angles[i];
-			const b = angles[(i + 1) % n] + (i + 1 === n ? 360 : 0);
-			if (p >= a && p < b) return ((a + b) / 2 + 360) % 360;
-		}
-		const start = angles[n - 1] - 360;
-		const end = angles[0];
-		return ((start + end) / 2 + 360) % 360;
-	}
 
 	function toRad(deg) {
 		return (deg * Math.PI) / 180;
@@ -105,10 +85,11 @@
 	let probeGeo = $derived.by(() => {
 		const geo = arrow(probeAngle, 1);
 		const labelDist = geo.shaft + LABEL_RADIAL_OFFSET;
-		const labelDeg = probeLabelAngle(probeAngle);
-		const labelRad = toRad(labelDeg);
-		const labelX = CENTER + Math.cos(labelRad) * labelDist;
-		const labelY = CENTER - Math.sin(labelRad) * labelDist;
+		// Radial reach plus a fixed tangential kick: even when the probe
+		// sits exactly on a candidate's line, the two label centers stay a
+		// fixed distance apart, independent of angle.
+		const labelX = CENTER + geo.dirX * labelDist + geo.perpX * PROBE_LABEL_TANGENT;
+		const labelY = CENTER + geo.dirY * labelDist + geo.perpY * PROBE_LABEL_TANGENT;
 		return { ...geo, labelX, labelY };
 	});
 
@@ -285,11 +266,9 @@
 			>
 		</svg>
 
-		<!-- The slider's hit area is the whole diagram, not the small tip
-		     dot: any pointer press-and-drag anywhere in the stage rotates
-		     the probe, so the control is impossible to miss or drag past. -->
 		<div
-			class="slider-surface"
+			class="handle probe-handle"
+			style="left: {probeHandlePos.x}%; top: {probeHandlePos.y}%;"
 			role="slider"
 			tabindex="0"
 			aria-label="probe angle in degrees"
@@ -300,12 +279,6 @@
 			onpointermove={onProbePointerMove}
 			onpointerup={onProbePointerUp}
 			onkeydown={onProbeKeydown}
-		></div>
-
-		<div
-			class="probe-dot"
-			style="left: {probeHandlePos.x}%; top: {probeHandlePos.y}%;"
-			aria-hidden="true"
 		></div>
 
 		<div
@@ -393,36 +366,6 @@
 		user-select: none;
 	}
 
-	/* The full-stage drag surface: covers the entire diagram so a press
-	   and drag anywhere on it rotates the probe. Comfortably exceeds the
-	   44x44 touch-target minimum at every viewport width. */
-	.slider-surface {
-		position: absolute;
-		inset: 0;
-		touch-action: none;
-		cursor: grab;
-		background: transparent;
-		border: none;
-		padding: 0;
-		border-radius: 50%;
-	}
-
-	.slider-surface:focus-visible {
-		outline: 2px solid var(--data-heat);
-		outline-offset: 3px;
-	}
-
-	.probe-dot {
-		position: absolute;
-		width: 14px;
-		height: 14px;
-		transform: translate(-50%, -50%);
-		border-radius: 50%;
-		background: var(--data-heat);
-		box-shadow: 0 0 0 3px var(--color-bg);
-		pointer-events: none;
-	}
-
 	.handle {
 		position: absolute;
 		width: 48px;
@@ -438,6 +381,15 @@
 		padding: 0;
 	}
 
+	.probe-handle::before {
+		content: '';
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: var(--data-heat);
+		box-shadow: 0 0 0 3px var(--color-bg);
+	}
+
 	.length-handle::before {
 		content: '';
 		width: 12px;
@@ -449,6 +401,10 @@
 
 	.handle:focus-visible::before {
 		box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 5px currentColor;
+	}
+
+	.probe-handle:focus-visible::before {
+		color: var(--data-heat);
 	}
 
 	.length-handle:focus-visible::before {

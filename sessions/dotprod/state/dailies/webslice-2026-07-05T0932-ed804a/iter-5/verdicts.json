@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe and periwinkle candidate cluster is the single focus, with the low-contrast lilac score bars playing a clear supporting role below.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frame presents one coherent widget (probe + four candidates + their four bars), not five-plus independent novel ideas competing at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels c1..c4 sit at each arrow tip, 'probe' rides on the amber arrow, and each score readout is labeled with its candidate name directly beneath the bar; no legend box exists.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the two-line instruction at top annotating the interactive it sits above; all other text is object labels or numeric readouts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The instruction header, arrow-tip labels, and mono score digits are all legible in every frame, and the 375px frame renders the same text proportionally larger.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The arrow cluster, amber range circle, and the full row of four score bars sit entirely inside every frame with margin to the edges.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Although 'c3 probe c2' cluster tightly at the top in the initial and length-cheat frames, each word keeps a visible gap and none is rendered illegible by overlap.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Amber marks the probe/attention arrow, periwinkle the candidate vectors, lilac the score bars/digits, and cream the labels, held consistent across all five states.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber ring present in aligned/orthogonal/anti-aligned frames marks the probe's rotation range and carries content; no mascots or filler shapes appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each promised state reads from its still: aligned shows c1 peaking at bold 1.0, orthogonal c3 at 1.0 with c1 at 0.0, anti-aligned c1 at -1.0 with its bar below the baseline, and length-cheat shows c1 stretched to a bold 1.3 flipping past c2's 1.0.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Score bars sit in a labeled left-to-right row well below the arrow cluster, so identity is preserved despite the vertical gap between an arrow and its bar.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The frames form a continuous probe-rotation sequence (40 to 20 to 110 to 200 degrees plus the length stretch) reading as smooth morphs rather than cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition has generous margins and a clear top-to-bottom reading order from instruction to diagram to bars, though a large empty band separates the two groups.",
+    "suggestion": ""
+  }
+]

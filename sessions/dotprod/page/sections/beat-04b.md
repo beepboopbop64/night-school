@@ -11,4 +11,3 @@ That clean scaling is generous right up until it isn't. A long song racks up lou
 That's the crack: a standing invitation for anything hooked up to this meter to pad instead of align. So here's the question for the walk home, now that you know size scales the score in lockstep: what's the cheapest fix, the one that keeps the direction and forgets the size?
 
 Next time the app hands you a stranger's song that's exactly right, you'll know the number that said ship it, and you'll know that number can be shouted over.
-</content>
