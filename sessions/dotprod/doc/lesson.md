@@ -26,7 +26,7 @@ Now turn the probe and watch the scores answer. Point at a candidate and its sco
 
 Watch again, more carefully. The scores moved while the candidates never moved at all. Nothing about the songs changed. Only your direction changed. So the score can't be reading sameness of items. It's reading agreement of direction.
 
-And yes, scores go negative. Point against a candidate and the sum drops below zero, because some of those pairwise products come out negative and drag the sum down. Similarity, it turns out, has a basement.
+And yes, scores go negative. Point against a candidate and the sum drops below zero, because some of those pairwise products come out negative and drag the sum down. Similarity, it turns out, has a basement. Before you scroll on, call one more reading: what would a score of exactly zero mean for two songs? Not opposed, not aligned. Say it in your own words, then check yourself against the sweep.
 
 The number measures which way two arrows point, not what the things are.
 
@@ -44,7 +44,7 @@ Two lists of numbers go in. One honest reading of alignment comes out. That's th
 
 > Honest edges: real embeddings live in hundreds of dimensions. Two dimensions is the picture, not the territory. Nothing in the mechanism changes when you add axes: you still multiply entry by entry and add, there are just more entries. The dial in your head stays exactly as true with hundreds of axes as it is with two.
 
-And notice why the reading tracks direction and not size or identity. Direction is the only thing the sweep ever changed. The meter answers the question you actually moved.
+And notice why the reading tracks direction and not size or identity. Direction is the only thing the sweep ever changed. The meter answers the question you actually moved. Close the loop yourself before the next section: the meter has three readings worth knowing, positive, zero, and negative. State what each one says about two vectors, out loud or on paper, in your own words.
 
 ## Where does the meter travel, and where does it break?
 
