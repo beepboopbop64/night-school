@@ -4,7 +4,7 @@
   "inputs": [
     {
       "path": "manifest.yaml",
-      "sha256": "3fa6c804e76afd21cd97dcb520f38258df4a16eeabfb20bdf1f0a55f2b784004"
+      "sha256": "d289d28018122d90488714748fdbb23233e1bb969605d6e09293b34e28095285"
     },
     {
       "path": "brief.md",
@@ -16,25 +16,25 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "e3c8639036b898abae0ea4ce2943388f19bed9c052f3ccbed42196d4b6d67116"
+      "sha256": "5b77a95b7cd851622f47c673e56ef179f67e0716b4c2a5b1d3de94144086e6ce"
     },
     {
       "path": "script.md",
-      "sha256": "cde77a9ae956e290d548271fbf455e2ec8f072dc1d99c8cfaefad5f08c9926be"
+      "sha256": "26bdb1a9d40b868789b58faf5e3dd7b1c5aa1c97ffbecc5df6b90e3913830de0"
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "38120d6551faa418717a5a077b1479d162d4e9bbfb1ff5dfbbf7bff74e1d4f78"
+      "sha256": "4f8208e3e923a92611037974595d96affb803435274e721512120125713c69bd"
     },
     {
       "path": "video/captions.vtt",
-      "sha256": "ac06c839567d1f6ab42d12717fc0cf260bf3bd6735b39a6421a326dc2e5d6602"
+      "sha256": "8ed38bab485cc523f1d0a2d5b4ef38d37194b6c5d1e09ab19985d4bc2dc64c81"
     }
   ],
   "outputs": [
     {
-      "path": "rounds/round-03/screening-report.md",
-      "sha256": "f23df80382c11db7b660a03a3ecc5dae52479eec941e5e05d15ece5c85154bdb"
+      "path": "rounds/round-04/screening-report.md",
+      "sha256": "56ed98514b3326bb62476156652e20a520ea24b38201843de75f637db85b49d3"
     }
   ],
   "gate": {
@@ -59,23 +59,23 @@
       {
         "id": "screening.rounds-within-cap",
         "pass": true,
-        "iter": 2
+        "iter": 1
       }
     ]
   },
-  "iterations": 2,
-  "costUsd": 0.9204182000000001,
+  "iterations": 1,
+  "costUsd": 0.7916129999999999,
   "tier": "opus",
-  "startedAt": "2026-07-05T05:41:55.004Z",
-  "endedAt": "2026-07-05T05:50:47.889Z",
+  "startedAt": "2026-07-05T08:11:47.140Z",
+  "endedAt": "2026-07-05T08:19:06.797Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "rounds": 2,
+    "rounds": 1,
     "samAdvisory": {
       "curiosity": 4,
       "wouldFinish": true,
-      "note": "It felt clear and well-paced for the first two beats but started to drag slightly by the end from restating the same recipe multiple times before finally getting to the actual twist."
+      "note": "It felt like a well-paced, hands-on walkthrough that clicked mechanically, though by the end my energy was fading and the extension menu felt like extra effort rather than a natural continuation."
     }
   }
 }

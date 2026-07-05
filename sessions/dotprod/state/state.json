@@ -109,8 +109,8 @@
     },
     "s6.screening": {
       "status": "passed",
-      "iter": 2,
-      "costUsd": 0.9204182000000001,
+      "iter": 1,
+      "costUsd": 0.7916129999999999,
       "receipt": "state/receipts/s6.screening.receipt.json"
     },
     "s7.packet": {
