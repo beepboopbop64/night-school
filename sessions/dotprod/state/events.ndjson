@@ -595,3 +595,11 @@
 {"ts":"2026-07-05T08:04:51.910Z","runId":"slice-2026-07-05T0748-541744","node":"s4a.beat-04b","event":"node_completed","data":{"passed":true,"iterations":2,"costUsd":2.1091746,"wallMs":961137}}
 {"ts":"2026-07-05T08:04:52.021Z","runId":"run-2026-07-05T0736-2bc703","node":"s4a.beat-04b","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":2},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-05T08:04:52.022Z","runId":"run-2026-07-05T0736-2bc703","node":"s4a.beat-04b","event":"node_completed","data":{"costUsd":2.1091746,"durationMs":961340}}
+{"ts":"2026-07-05T08:04:52.529Z","runId":"run-2026-07-05T0736-2bc703","node":"s4a.beat-04b","event":"commit","data":{"sha":"d1aa55a2fcb7420ab240ab2f87f6af6db962251e"}}
+{"ts":"2026-07-05T08:04:52.534Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:04:52.538Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:04:52.542Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:04:52.546Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-04"}}
+{"ts":"2026-07-05T08:05:21.789Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.057770100000000005,"summary":"DONE Same math, different aisle"}}
+{"ts":"2026-07-05T08:05:21.798Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T08:05:21.799Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","event":"node_completed","data":{"costUsd":0.057770100000000005,"durationMs":29246}}
