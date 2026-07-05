@@ -8,7 +8,7 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "a6b91e2123b57d35ae244bde5ee7867b9b19518c3fb5ac20232efd547893f2f1"
+      "sha256": "ce8b98f586bff94f8dfab7dd485565fa582e6945b55a285ebbf3e2800292fb57"
     },
     {
       "path": "script.md",
@@ -16,7 +16,7 @@
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "8f065034afc065db1ef35f1d56744334f4833e0279897e158b65821ba85739a1"
+      "sha256": "4804b0736ab0ce1957d8d15c3eea879cdb9c0ff60018f1669e7291515ebf4a36"
     },
     {
       "path": "extensions.yaml",
@@ -32,7 +32,7 @@
     },
     {
       "path": "media/beat-02.mp4",
-      "sha256": "97cef7dc320b0a1ecd63416fd8470984a192874602d13b095790fe516b05c2bc"
+      "sha256": "2c9af7927dc9d42cc1188fdd0a26e6db73cad68eeb55d5a28801557d3901e898"
     },
     {
       "path": "video/audio/beat-02.mp3",
@@ -56,11 +56,11 @@
     },
     {
       "path": "page/sections/beat-01.md",
-      "sha256": "704621587b2fa1c6f689b74b679a82075e0fe8963c1f558b0bc1106b65fc9304"
+      "sha256": "804d01b0bda6ffb5e51ef206130deba93f3174fc8447324389e2ab4aa7d246d7"
     },
     {
       "path": "page/sections/beat-02.md",
-      "sha256": "174c6e778cc19c99e1942e7e84b3cd29e894ff18c17b1fa23b83c86ba03f601d"
+      "sha256": "18861f7398760e7aebcda97659bb4b1974df9e167a0dedd9178bd7905aa1f99e"
     },
     {
       "path": "page/sections/beat-03.md",
@@ -72,13 +72,13 @@
     },
     {
       "path": "notebook/lesson.ipynb",
-      "sha256": "a7f0b5c38bfdf5471748a86a5d163d376225c0a03713a611051e36804ef5307f"
+      "sha256": "460ad1ceb72dbb918279dcbe45e5005c7e614efc54f333abe2b5a5f222a39216"
     }
   ],
   "outputs": [
     {
       "path": "media/session.mp4",
-      "sha256": "aa2fe7a00f9e06d640a9a0f2174e711dad41491023772ad22805b831272cde06"
+      "sha256": "9f9929bc45b29de026939dc2242f6ef556a33cece4bc5c78921c96c81c0856e6"
     },
     {
       "path": "video/captions.vtt",
@@ -129,8 +129,8 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T02:29:36.456Z",
-  "endedAt": "2026-07-05T02:29:50.769Z",
+  "startedAt": "2026-07-05T03:26:06.941Z",
+  "endedAt": "2026-07-05T03:26:20.799Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
