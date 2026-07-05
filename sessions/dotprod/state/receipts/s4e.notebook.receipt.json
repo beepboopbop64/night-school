@@ -8,17 +8,17 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "5b77a95b7cd851622f47c673e56ef179f67e0716b4c2a5b1d3de94144086e6ce"
+      "sha256": "38ae5d288caeaf5d096f39e508906e181810ef0c6a2fc91dff011509782cc112"
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "4f8208e3e923a92611037974595d96affb803435274e721512120125713c69bd"
+      "sha256": "740731237d9a28a7c379a7c40c9be7b8a86d79f09482b12172adb4581ea2620a"
     }
   ],
   "outputs": [
     {
       "path": "notebook/lesson.ipynb",
-      "sha256": "4d04c3b381651fe5ac9ed58af200737ba809272a8cad0b9782c74e3727b254b8"
+      "sha256": "eed77f3a8074d45a0deeda59c0f21a4d48c7645e1aaa7542ef48ba46b9e78e3e"
     }
   ],
   "gate": {
@@ -39,10 +39,10 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 0.39540929999999996,
+  "costUsd": 0.5143203000000001,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T08:09:12.117Z",
-  "endedAt": "2026-07-05T08:11:28.980Z",
+  "startedAt": "2026-07-05T14:24:36.675Z",
+  "endedAt": "2026-07-05T14:27:43.614Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
