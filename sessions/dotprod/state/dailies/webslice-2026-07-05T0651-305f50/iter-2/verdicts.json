@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame presents a single coherent interactive — the amber probe plus periwinkle candidates up top with their lilac score bars below — and the currently leading candidate is emphasized by a brighter bar and bold readout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The elements are one probe, four candidate arrows, and four score bars belonging to a single scoring system, not five unrelated novel ideas competing at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Candidates are labeled c1..c4 at their tips, the probe is labeled on its object, and each score bar carries a c1..c4 label directly beneath it with no legend or key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the short instruction 'Drag the probe to score each candidate...' which annotates the visible interactive rather than replacing it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The instruction line, arrow labels, and mono score readouts are all rendered clearly enough to read at both the 1280 and 375 px widths.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "In every state the arrows, labels, and score bars sit well inside the frame with generous margins on all sides.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Across states the probe label, candidate labels, and score readouts stay clear of one another; where the probe lies along a candidate (aligned frame) the labels remain radially offset and readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe (attention), periwinkle candidates (observed), and lilac score bars hold their colors consistently across all frames with no concept switching hue.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — arrows, handles, bars, readouts, labels — carries propositional meaning; there is no decorative filler.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each driven state matches its promise: initial probe up with c2/c3 leading, aligned c1 peaks at 1.0, orthogonal c3 peaks and c1 at 0.0, anti-aligned c1 reads -1.0, and length-cheat shows c1 stretched with score 1.3 flipping past c2's 1.0 while the probe stays on c2.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The score bars sit some distance below the arrow diagram, but shared c1..c4 labels bridge each bar to its candidate so the mapping is unambiguous.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "These are separate driven states of the same interactive rather than a single built-up morph sequence; the probe repositioning reads consistently across them.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The layout has ample margins and a clear top-to-bottom reading order from arrows to score bars, though the lower portion of the frame is largely empty.",
+    "suggestion": ""
+  }
+]

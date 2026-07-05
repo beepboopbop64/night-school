@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame centers on the amber probe against the four periwinkle candidates with the lilac score bars as supporting readout; one interaction system carries the focus.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frame presents a single covariation system (probe, four candidates, four score bars) rather than five-plus unrelated novel ideas at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "c1..c4 sit at their arrow tips, the probe is labeled on its shaft, and each score bar carries its c1..c4 tag directly beneath it; no legend or key appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the short instruction 'Drag the probe to score each candidate...' which annotates the visible interactive rather than replacing it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Candidate labels, the instruction line, and the mono score readouts (e.g. 1.3, -1.0, 0.9) are all legible at each viewport width including 375px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All arrows, labels, and score bars sit well inside the frame with generous margins at both 1280 and 375 widths.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "In length-cheat-1280 the 'c2' candidate label and the 'probe' label abut with no gap, rendering as a merged 'c2probe' string near the top center.",
+    "suggestion": "Offset the probe label further from the c2 tip label when the probe rests at 70 degrees so the two never touch."
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe is amber, candidates periwinkle, score bars lilac, and labels cream throughout; each concept holds one consistent color across states.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element—arrows, length handle, score bars, readouts, labels—carries propositional meaning; no mascots or ornaments appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each driven state matches its promise: initial probe near vertical, aligned c1 at 1.0 peak, orthogonal c3 at 1.0 with c1 at 0.0, anti-aligned c1 at -1.0 with bar below baseline, and length-cheat shows c1 (1.3) climbing past c2 (1.0) on length.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Score bars sit some distance below the vector cluster, but each bar's c1..c4 tag keeps the mapping to its arrow unambiguous.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "not applicable: frames are independent driven-state snapshots, not a continuous build sequence.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition keeps ample negative space and a clear top-to-bottom reading order from instruction to vectors to score bars.",
+    "suggestion": ""
+  }
+]

@@ -72,13 +72,10 @@
 		const perpY = dirX;
 		// Pushed well clear of the 44px handle hit box (radial + tangential
 		// combined) so the label never sits under the probe dot or its focus
-		// ring at any angle. The radial reach is deliberately well beyond any
-		// candidate label's radius (even c1 stretched to its own labels'
-		// range) and the tangential kick is large enough that even when the
-		// probe sits exactly on top of a candidate's line (e.g. 70 degrees on
-		// c2), the two label centers land 40+ px apart, never abutting.
-		const labelX = CENTER_X + dirX * (R + 56) + perpX * 38;
-		const labelY = CENTER_Y + dirY * (R + 56) + perpY * 38;
+		// ring at any angle, including when the probe lands exactly on a
+		// candidate's line.
+		const labelX = CENTER_X + dirX * (R + 48) + perpX * 26;
+		const labelY = CENTER_Y + dirY * (R + 48) + perpY * 26;
 		return { tipX, tipY, ...head, labelX, labelY };
 	});
 

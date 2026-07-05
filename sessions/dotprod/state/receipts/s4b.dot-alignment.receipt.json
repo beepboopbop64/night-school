@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "page/interactives/dot-alignment.yaml",
-      "sha256": "540cdacefe1ed5b774b421ec4516a46946aa7782282814dae6f1779f8a67bb31"
+      "sha256": "a77a51eda1197d5d0d037f641315cd02925d0df3096a1f965f873277baf2da6d"
     }
   ],
   "outputs": [
     {
       "path": "page/interactives/DotAlignment.svelte",
-      "sha256": "de8adbccfbd8b5b9eabb94c3caa6adbe6dd2bc8b4d36b3607af5fd5a27f53f35"
+      "sha256": "6243b4489f515c83f0cf2ea6e2aca467ed58060cea15e911450c353883e2973f"
     }
   ],
   "gate": {
@@ -28,20 +28,20 @@
     ]
   },
   "iterations": 2,
-  "costUsd": 2.1604011,
+  "costUsd": 1.7725298,
   "tier": "opus",
-  "startedAt": "2026-07-05T05:15:28.590Z",
-  "endedAt": "2026-07-05T05:32:37.509Z",
-  "transcript": "state/dailies/webslice-2026-07-05T0515-75eb68",
+  "startedAt": "2026-07-05T06:51:10.989Z",
+  "endedAt": "2026-07-05T07:04:45.674Z",
+  "transcript": "state/dailies/webslice-2026-07-05T0651-305f50",
   "promptSha": "",
   "meta": {
     "perIteration": [
       {
         "iter": 1,
         "outcome": "iris-failed",
-        "coderCostUsd": 0.8446752000000001,
-        "irisCostUsd": 0.402965,
-        "wallMs": 591400,
+        "coderCostUsd": 0.874215,
+        "irisCostUsd": 0.24897999999999998,
+        "wallMs": 500902,
         "fingerprints": [
           "iris:V7"
         ],
@@ -50,9 +50,9 @@
       {
         "iter": 2,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.5929959,
-        "irisCostUsd": 0.319765,
-        "wallMs": 437502,
+        "coderCostUsd": 0.3562998,
+        "irisCostUsd": 0.29303500000000005,
+        "wallMs": 313772,
         "fingerprints": [],
         "replanWasForced": false
       }
