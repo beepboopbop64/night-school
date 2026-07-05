@@ -23,6 +23,7 @@
 	let probeAngle = $state(40);
 	let lengthC1 = $state(1.0);
 	let selected = $state('c1');
+	let hovered = $state<string | null>(null);
 	let dragging = $state<'probe' | 'length' | null>(null);
 
 	const rad = (d: number) => (d * Math.PI) / 180;
@@ -141,6 +142,7 @@
 	}
 
 	const f = (n: number) => (Object.is(n, -0) ? 0 : n).toFixed(2);
+	const cl = (v: number) => Math.min(Math.max(v, 24), S - 24);
 	const f1 = (n: number) => (Object.is(n, -0) ? 0 : n).toFixed(1);
 
 	// Bar scale: scores live in [-2, 2] once c1 can stretch.
@@ -198,36 +200,44 @@
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
 				<text x={CX + R + 18} y={CY - 6} class="axisq mono">loud</text>
-				<text x={CX + 8} y={CY - R - 20} class="axisq mono">fast</text>
+				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq mono">fast</text>
+				<g class="legend">
+					<line x1="16" y1="20" x2="34" y2="20" class="lg probe-stroke" />
+					<text x="40" y="24" class="lgt mono">your taste</text>
+					<line x1="16" y1="38" x2="34" y2="38" class="lg cand-stroke" />
+					<text x="40" y="42" class="lgt mono">songs</text>
+				</g>
 
 				<!-- coordinates made visible: dashed drops for probe and selected -->
 				{#each [{ x: probe.x, y: probe.y, cls: 'p' }, { x: sel.x, y: sel.y, cls: 'c' }] as d (d.cls)}
 					{@const tip = pt(d.x, d.y)}
 					<line x1={tip.px} y1={tip.py} x2={tip.px} y2={CY} class="drop {d.cls}" />
 					<line x1={tip.px} y1={tip.py} x2={CX} y2={tip.py} class="drop {d.cls}" />
-					<text x={tip.px} y={CY + (d.cls === 'p' ? 13 : 24)} class="coord mono {d.cls}">{f(d.x)}</text>
-					<text x={CX - (d.cls === 'p' ? 4 : 30)} y={tip.py - 3} class="coord mono {d.cls}" text-anchor="end">{f(d.y)}</text>
+					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}">{f(d.x)}</text>
+					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end">{f(d.y)}</text>
 				{/each}
 
 				<!-- candidates -->
 				{#each rows as r (r.id)}
 					{@const a = arrow(r.x, r.y)}
-					{@const near = Math.abs(((r.angle - probeAngle + 540) % 360) - 180) < 14 && Math.abs(r.len - 1) < 0.2}
-					{@const lp0 = labelPos(r.angle, r.len, 24)}
-					{@const lp = near
-						? { px: lp0.px + 20 * Math.cos(rad(r.angle - 90)), py: lp0.py - 20 * Math.sin(rad(r.angle - 90)) }
-						: lp0}
 					<g
 						class="cand"
 						class:sel={selected === r.id}
+						class:hov={hovered === r.id}
 						onpointerdown={() => (selected = r.id)}
 						role="button"
 						tabindex="-1"
-						aria-label={`select ${r.id}`}
+						aria-label={`select ${r.name}`}
 					>
 						<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft cand-stroke" />
 						<polygon points={a.head} class="cand-fill" />
-						<text x={lp.px} y={lp.py} class="lab song-lab">{r.name}</text>
+						{#if selected === r.id}
+							{@const lp = labelPos(r.angle, r.len, 26)}
+							<text
+								x={Math.min(Math.max(lp.px, 44), S - 48)}
+								y={Math.min(Math.max(lp.py, 16), S - 10)}
+								class="lab song-lab halo">{r.name}</text>
+						{/if}
 					</g>
 				{/each}
 
@@ -252,10 +262,8 @@
 				<!-- probe on top -->
 				{#if true}
 					{@const a = arrow(probe.x, probe.y)}
-					{@const plp = labelPos(probeAngle, 1, 42)}
 					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
 					<polygon points={a.head} class="probe-fill" />
-					<text x={plp.px} y={plp.py} class="lab probe-lab mono">your taste</text>
 				{/if}
 				<circle
 					cx={probeTip.px}
@@ -272,7 +280,7 @@
 					aria-valuemax="360"
 					aria-valuenow={Math.round(probeAngle)}
 				/>
-				<text x={CX + R + 8} y={CY + 26} class="angle mono">{Math.round(probeAngle)}°</text>
+				<text x="14" y={S - 14} class="angle mono">taste at {Math.round(probeAngle)}°</text>
 			</svg>
 		</div>
 
@@ -282,6 +290,8 @@
 					class="row"
 					class:leading={leaders.includes(r.id) && !tied}
 					class:sel={selected === r.id}
+					onmouseenter={() => (hovered = r.id)}
+					onmouseleave={() => (hovered = null)}
 					onclick={() => (selected = r.id)}
 					aria-label={`${r.id} score ${f1(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
 				>
@@ -418,6 +428,11 @@
 	.why { margin: 0.7rem 0 0; font-size: 0.88rem; color: color-mix(in oklab, var(--color-text) 82%, transparent); }
 	.axisq { fill: color-mix(in oklab, var(--color-text) 40%, transparent); font-size: 10px; }
 	.song-lab { font-size: 11.5px; }
+	.halo { paint-order: stroke; stroke: var(--color-bg); stroke-width: 4px; }
+	.lg { stroke-width: 2.4; stroke-linecap: round; }
+	.lgt { fill: color-mix(in oklab, var(--color-text) 55%, transparent); font-size: 10.5px; }
+	.cand.hov { opacity: 1; }
+	.cand.hov .shaft { stroke-width: 3.2; }
 	.challenges { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin: 0 0 1rem; }
 	.chal {
 		font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-text);
