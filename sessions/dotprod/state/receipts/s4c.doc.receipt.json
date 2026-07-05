@@ -8,7 +8,7 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "e3c8639036b898abae0ea4ce2943388f19bed9c052f3ccbed42196d4b6d67116"
+      "sha256": "bcda24eb4bb5f0b04ea436e6f9769e86f816e241310d3f23c79ab0bbef4701b3"
     },
     {
       "path": "spine.md",
@@ -22,7 +22,7 @@
   "outputs": [
     {
       "path": "doc/lesson.md",
-      "sha256": "38120d6551faa418717a5a077b1479d162d4e9bbfb1ff5dfbbf7bff74e1d4f78"
+      "sha256": "c9e3438d65555d1051da9b23cc68926a98ad615d77beb4a737971827554bb554"
     }
   ],
   "gate": {
@@ -48,10 +48,10 @@
     ]
   },
   "iterations": 2,
-  "costUsd": 0.9345159999999999,
+  "costUsd": 0.7305935,
   "tier": "opus",
-  "startedAt": "2026-07-05T05:32:38.041Z",
-  "endedAt": "2026-07-05T05:38:19.219Z",
+  "startedAt": "2026-07-05T07:04:46.226Z",
+  "endedAt": "2026-07-05T07:09:19.252Z",
   "transcript": "",
   "promptSha": "",
   "meta": {

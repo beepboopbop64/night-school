@@ -16,7 +16,7 @@ Before you read on, take a guess: if you had to turn two lists of numbers into a
 
 Strip it down until it fits in your palm. A taste is an arrow. Each direction is a quality, some axis like "loud" or "mellow," and the length along that direction is how hard the song leans that way. Two dimensions, so we can actually see the thing.
 
-Now picture one amber probe arrow, that's you, and four candidate arrows, four songs sitting still. Here's the rule for scoring a match: multiply the two arrows entry by entry, then add up the products. That single sum is the score. One multiply, one add.
+Now picture one amber probe arrow (that's you) and four candidate arrows (four songs sitting still). Here's the rule for scoring a match: multiply the two arrows entry by entry, then add up the products. That single sum is the score. One multiply, one add.
 
 > Honest edges: the numbers in this session are chosen for readability. Real embedding coordinates are neither small nor round. We use tidy integers so your eyes can do the arithmetic the machine does silently.
 
