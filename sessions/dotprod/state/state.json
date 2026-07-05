@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "dotprod",
-  "stage": "S4b",
+  "stage": "S4c",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -84,7 +84,10 @@
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"
     },
     "s4c.doc": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 1.1260744999999999,
+      "iter": 3,
+      "receipt": "state/receipts/s4c.doc.receipt.json"
     },
     "s4d.extensions": {
       "status": "pending"
