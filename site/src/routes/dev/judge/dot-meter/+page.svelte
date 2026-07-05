@@ -4,12 +4,21 @@
 	// Every bar is literally its two products stacked; the strip below shows
 	// the arithmetic for whichever candidate you select, live, to two decimals.
 
+	// The two entries mean something: x is how loud, y is how fast.
 	const CANDIDATES = [
-		{ id: 'c1', angle: 20 },
-		{ id: 'c2', angle: 70 },
-		{ id: 'c3', angle: 110 },
-		{ id: 'c4', angle: 160 }
+		{ id: 'c1', name: 'Night Drive', angle: 20 },
+		{ id: 'c2', name: 'Glass Rain', angle: 70 },
+		{ id: 'c3', name: 'Slow Burn', angle: 110 },
+		{ id: 'c4', name: 'Static', angle: 160 }
 	];
+
+	let challenge = $state<null | 'cheat' | 'short'>(null);
+	function startChallenge(kind: 'cheat' | 'short') {
+		challenge = challenge === kind ? null : kind;
+		probeAngle = 40;
+		lengthC1 = 1.0;
+		selected = 'c1';
+	}
 
 	let probeAngle = $state(40);
 	let lengthC1 = $state(1.0);
@@ -148,9 +157,21 @@
 
 <div class="lab" data-interactive="dot-meter">
 	<p class="invite">
-		Turn the amber probe and watch each score get <em>built</em>: two products, stacked into a bar.
-		Then stretch <span class="mono">c1</span> and watch size cheat a meter that direction earned.
+		Every song here is two numbers: how <em>loud</em>, how <em>fast</em>. So is your taste. Turn
+		the amber taste arrow and watch each song's match get <em>built</em>: the loud product plus
+		the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.
 	</p>
+	<div class="challenges">
+		<button class="chal" class:active={challenge === 'cheat'} onclick={() => startChallenge('cheat')}>
+			challenge: make a worse match win
+		</button>
+		<button class="chal" class:active={challenge === 'short'} onclick={() => startChallenge('short')}>
+			challenge: make the truest song lose
+		</button>
+		{#if (challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged)}
+			<span class="solved mono">✓ solved</span>
+		{/if}
+	</div>
 
 	<div class="stage">
 		<div class="arena-wrap">
@@ -173,9 +194,11 @@
 						class="tick"
 					/>
 				{/each}
-				<!-- axes, whisper-quiet -->
+				<!-- axes, whisper-quiet, but named: the two entries ARE qualities -->
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
+				<text x={CX + R + 18} y={CY - 6} class="axisq mono">loud</text>
+				<text x={CX + 8} y={CY - R - 20} class="axisq mono">fast</text>
 
 				<!-- coordinates made visible: dashed drops for probe and selected -->
 				{#each [{ x: probe.x, y: probe.y, cls: 'p' }, { x: sel.x, y: sel.y, cls: 'c' }] as d (d.cls)}
@@ -204,7 +227,7 @@
 					>
 						<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft cand-stroke" />
 						<polygon points={a.head} class="cand-fill" />
-						<text x={lp.px} y={lp.py} class="lab mono">{r.id}</text>
+						<text x={lp.px} y={lp.py} class="lab song-lab">{r.name}</text>
 					</g>
 				{/each}
 
@@ -232,7 +255,7 @@
 					{@const plp = labelPos(probeAngle, 1, 42)}
 					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
 					<polygon points={a.head} class="probe-fill" />
-					<text x={plp.px} y={plp.py} class="lab probe-lab mono">probe</text>
+					<text x={plp.px} y={plp.py} class="lab probe-lab mono">your taste</text>
 				{/if}
 				<circle
 					cx={probeTip.px}
@@ -262,7 +285,7 @@
 					onclick={() => (selected = r.id)}
 					aria-label={`${r.id} score ${f1(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
 				>
-					<span class="row-id mono">{r.id}</span>
+					<span class="row-id">{r.name}</span>
 					<span class="bar" style="--h: {barH}px">
 						<span class="zero"></span>
 						<!-- x-term segment then y-term segment, stacked from the baseline -->
@@ -291,16 +314,29 @@
 			{/if}
 		</div>
 	</div>
+	{#if cheatActive}
+		<p class="why">
+			Why this matters: a song that is simply louder and faster everywhere piles up score
+			without matching your mix. A raw meter overrates intense tracks, so a recommender
+			built on it keeps pushing whatever is biggest.
+		</p>
+	{:else if shortChanged}
+		<p class="why">
+			Why this matters: a quiet song that matches your mix exactly gets buried under bigger
+			ones. Size is drowning direction, and fixing that is exactly where this lesson is headed.
+		</p>
+	{/if}
 	<p class="hint">
 		Click any bar or arrow to inspect it. The dashed lines are that arrow's two
-		entries, the numbers the recipe multiplies.
+		entries (its loudness and its speed), the numbers the recipe multiplies.
 	</p>
 
 	<div class="strip" aria-live="polite">
-		<span class="strip-lead">the whole recipe, live for <b class="mono">{sel.id}</b>:</span>
+		<span class="strip-lead">the whole recipe, live for <b>{sel.name}</b>:</span>
 		<span class="mono eq">
+			<span class="op">loud</span>
 			<span class="probe-c">{f(probe.x)}</span>·<span class="cand-c">{f(sel.x)}</span>
-			<span class="op">+</span>
+			<span class="op">+ fast</span>
 			<span class="probe-c">{f(probe.y)}</span>·<span class="cand-c">{f(sel.y)}</span>
 			<span class="op">=</span>
 			<span class="segx-c">{f(sel.px)}</span>
@@ -309,7 +345,10 @@
 			<span class="op">=</span>
 			<span class="score-c">{f(sel.score)}</span>
 		</span>
-		<span class="strip-note">multiply the matched entries, add the products. That sum is the bar.</span>
+		<span class="strip-note">
+			multiply the matched entries, add the products. The darker slice of each bar is its
+			loud product, the lighter slice its fast product; stacked, they are the score.
+		</span>
 	</div>
 </div>
 
@@ -376,6 +415,18 @@
 	.coord.c { fill: var(--data-observed); }
 	.flag.short { color: var(--data-heat); }
 	.hint { margin: 0.7rem 0 0; font-size: 0.78rem; opacity: 0.55; }
+	.why { margin: 0.7rem 0 0; font-size: 0.88rem; color: color-mix(in oklab, var(--color-text) 82%, transparent); }
+	.axisq { fill: color-mix(in oklab, var(--color-text) 40%, transparent); font-size: 10px; }
+	.song-lab { font-size: 11.5px; }
+	.challenges { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin: 0 0 1rem; }
+	.chal {
+		font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-text);
+		background: none; border: 1px solid color-mix(in oklab, var(--color-text) 18%, transparent);
+		border-radius: 999px; padding: 0.35rem 0.75rem; cursor: pointer; opacity: 0.85;
+	}
+	.chal:hover { border-color: var(--color-brand-mint); opacity: 1; }
+	.chal.active { border-color: var(--color-brand-mint); color: var(--color-brand-mint); opacity: 1; }
+	.solved { color: var(--data-fit); font-size: 0.78rem; }
 	.row.leading .row-id { color: var(--color-brand-mint); }
 	.row-id { font-size: 0.8rem; opacity: 0.85; }
 	.row-score { font-size: 0.85rem; color: var(--data-params); }
