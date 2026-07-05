@@ -830,3 +830,12 @@
 {"ts":"2026-07-05T14:52:31.852Z","runId":"slice-2026-07-05T1442-1ba358","node":"s4a.beat-04","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.4368845000000001,"wallMs":608409}}
 {"ts":"2026-07-05T14:52:31.963Z","runId":"run-2026-07-05T1442-7a10de","node":"s4a.beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-05T14:52:31.966Z","runId":"run-2026-07-05T1442-7a10de","node":"s4a.beat-04","event":"node_completed","data":{"costUsd":1.4368845000000001,"durationMs":608607}}
+{"ts":"2026-07-05T14:52:32.421Z","runId":"run-2026-07-05T1442-7a10de","node":"s4a.beat-04","event":"commit","data":{"sha":"65ff276b1792b4abdeb3343e93a60cf06275f105"}}
+{"ts":"2026-07-05T14:52:32.429Z","runId":"run-2026-07-05T1442-7a10de","node":"s4a.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:52:32.434Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:52:32.440Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:52:32.446Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:52:32.452Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-04","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-04"}}
+{"ts":"2026-07-05T14:53:16.628Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-04","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.11922719999999999,"summary":"DONE Same meter, different aisle"}}
+{"ts":"2026-07-05T14:53:16.636Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true},{"id":"section.no-wrapper-tags","pass":true}]}}
+{"ts":"2026-07-05T14:53:16.637Z","runId":"run-2026-07-05T1442-7a10de","node":"s4b.sec-beat-04","event":"node_completed","data":{"costUsd":0.11922719999999999,"durationMs":44179}}

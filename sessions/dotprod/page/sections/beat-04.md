@@ -2,14 +2,12 @@
 
 > From memory: two arrows go in. What two operations turn them into the score?
 
-Hold that answer for a beat. Here's the quiet part. The recipe we just rebuilt, multiply the matching pieces, add the results, never once looked at what those pieces stood for. It didn't care that they were song counts, or minutes, or ratings. It just multiplied and added.
+Take a second before you scroll past that one. If you've got it, say it out loud: multiply the matching entries, then add up what you get. One number falls out the other end. That's the whole recipe, and you rebuilt it from nothing but the sweep you already ran.
 
-That's why we can lift the whole thing out of the music app and drop it somewhere that has nothing to do with music. Same meter, new aisle: a job posting lists what it wants, some years of experience here, some skill level there, a handful of weighted requirements. A candidate has their own numbers for those same slots.
+Here's a detour worth naming, because it's the same structure turning up somewhere you wouldn't expect. Swap the app that hands you a stranger's song for a job posting. Same shape, different aisle: a hiring manager wants one number for how well a resume fits a role.
 
 > In the job aisle, which list plays the probe?
 
-Take a moment with that before we confirm it. It's the job posting: the fixed thing you measure every candidate against, the same role the query arrow played back with the songs. Multiply each requirement by how well the candidate matches it, add up the products, and you get one number: a fit score.
+The posting plays the probe. It's the fixed thing everything gets measured against, the row of "must haves" that never moves. The resume is the candidate arrow: skills, years, keywords, whatever entries the role cares about. Multiply the matched entries, add them up, and you land on one number for the fit, the exact same two moves that scored a candidate song against a taste vector.
 
-Look at the two setups side by side and the shape is identical. Two lists, lined up entry by entry. Multiply, then add. The only thing that changed is the label on the shelf. Songs became requirements, taste became qualifications, but the operation underneath never blinked.
-
-That indifference is the whole point. A recipe that asks what the numbers mean only works in the one kitchen it was built for. A recipe that never asks goes wherever you carry it. Different aisle, same meter.
+Different aisle, same meter. The multiply-and-add never once asked what those numbers meant, songs or skills or anything at all, and that's exactly why it walks into a brand new room and still works.
