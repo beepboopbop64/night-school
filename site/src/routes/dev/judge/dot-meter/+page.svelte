@@ -75,18 +75,21 @@
 		);
 	});
 
-	// The overtake: c1 stretched AND leading over a candidate that out-aligns it.
-	const cheatActive = $derived.by(() => {
+	// The overtake: c1 stretched AND outscoring a candidate that out-aligns it.
+	// Returns the most deserving victim (best-aligned beaten song) so the flag
+	// can name the exact pair instead of making a vague claim about the board.
+	const cheatVictim = $derived.by(() => {
 		const c1 = rows[0];
-		if (lengthC1 <= 1.05) return false;
-		return rows.some(
-			(r) =>
-				r.id !== 'c1' &&
-				Math.abs(((r.angle - probeAngle + 540) % 360) - 180) <
-					Math.abs(((c1.angle - probeAngle + 540) % 360) - 180) &&
-				c1.score > r.score + 0.005
+		if (lengthC1 <= 1.05) return null;
+		const dist = (angle: number) => Math.abs(((angle - probeAngle + 540) % 360) - 180);
+		const beaten = rows.filter(
+			(r) => r.id !== 'c1' && dist(r.angle) < dist(c1.angle) && c1.score > r.score + 0.005
 		);
+		if (beaten.length === 0) return null;
+		return beaten.reduce((a, b) => (dist(a.angle) < dist(b.angle) ? a : b));
 	});
+	const cheatActive = $derived(cheatVictim !== null);
+	const leaderName = $derived(rows.find((r) => r.id === leaders[0])?.name ?? '');
 
 	// --- Arena geometry (SVG units) ---
 	const S = 400; // viewBox square
@@ -346,10 +349,10 @@
 				</button>
 			{/each}
 			{#if tied}<span class="tie mono">tied</span>{/if}
-			{#if cheatActive}
-				<span class="flag mono">⚑ size passed straight through</span>
+			{#if cheatVictim}
+				<span class="flag mono">⚑ {cheatVictim.name} matches your taste better, but Night Drive outscores it on size</span>
 			{:else if shortChanged}
-				<span class="flag short mono">⚑ truest direction, too short to win</span>
+				<span class="flag short mono">⚑ Night Drive matches best, but {leaderName} wins on size</span>
 			{/if}
 		</div>
 	</div>
@@ -461,6 +464,7 @@
 	.cand.hov .shaft { stroke-width: 3.2; }
 	.challenges { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin: 0 0 1rem; }
 	.chal {
+		flex: 1 1 0; min-width: 0;
 		display: flex; flex-direction: column; align-items: flex-start; gap: 0.18rem;
 		color: var(--color-text); text-align: left;
 		background: color-mix(in oklab, var(--color-text) 3%, transparent);
@@ -502,7 +506,8 @@
 	.seg.neg { opacity: 0.85; }
 
 	.tie, .flag {
-		position: absolute; top: -0.4rem; right: 0; font-size: 0.72rem;
+		position: absolute; top: -1.1rem; right: 0; font-size: 0.72rem;
+		max-width: 24rem; text-align: right; line-height: 1.35;
 	}
 	.tie { color: color-mix(in oklab, var(--color-text) 55%, transparent); }
 	.flag { color: var(--data-error); }
