@@ -164,15 +164,20 @@
 		the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.
 	</p>
 	<div class="challenges">
-		<button class="chal" class:active={challenge === 'cheat'} onclick={() => startChallenge('cheat')}>
-			challenge: make a worse match win
+		<button class="chal" class:active={challenge === 'cheat'} class:done={challenge === 'cheat' && cheatActive} onclick={() => startChallenge('cheat')}>
+			<span class="chal-t mono">challenge 01</span>
+			<span class="chal-g">Make a worse match win</span>
+			{#if challenge === 'cheat'}
+				<span class="chal-s mono" class:live={!cheatActive}>{cheatActive ? '✓ solved' : 'in play…'}</span>
+			{/if}
 		</button>
-		<button class="chal" class:active={challenge === 'short'} onclick={() => startChallenge('short')}>
-			challenge: make the truest song lose
+		<button class="chal" class:active={challenge === 'short'} class:done={challenge === 'short' && shortChanged} onclick={() => startChallenge('short')}>
+			<span class="chal-t mono">challenge 02</span>
+			<span class="chal-g">Make the truest song lose</span>
+			{#if challenge === 'short'}
+				<span class="chal-s mono" class:live={!shortChanged}>{shortChanged ? '✓ solved' : 'in play…'}</span>
+			{/if}
 		</button>
-		{#if (challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged)}
-			<span class="solved mono">✓ solved</span>
-		{/if}
 	</div>
 
 	<div class="stage">
@@ -199,8 +204,8 @@
 				<!-- axes, whisper-quiet, but named: the two entries ARE qualities -->
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
-				<text x={CX + R + 18} y={CY - 6} class="axisq mono">loud</text>
-				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq mono">fast</text>
+				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono">loud</text>
+				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono">fast</text>
 				<g class="legend">
 					<line x1="16" y1="20" x2="34" y2="20" class="lg probe-stroke" />
 					<text x="40" y="24" class="lgt mono">your taste</text>
@@ -248,6 +253,7 @@
 					r="9"
 					class="handle length-handle"
 					class:active={dragging === 'length'}
+					class:pulse={challenge !== null && !((challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged))}
 					onpointerdown={(e) => startDrag('length', e)}
 					onkeydown={lengthKeys}
 					role="slider"
@@ -344,9 +350,10 @@
 	<div class="strip" aria-live="polite">
 		<span class="strip-lead">the whole recipe, live for <b>{sel.name}</b>:</span>
 		<span class="mono eq">
-			<span class="op">loud</span>
+			<span class="op qw-loud">loud</span>
 			<span class="probe-c">{f(probe.x)}</span>·<span class="cand-c">{f(sel.x)}</span>
-			<span class="op">+ fast</span>
+			<span class="op">+</span>
+			<span class="op qw-fast">fast</span>
 			<span class="probe-c">{f(probe.y)}</span>·<span class="cand-c">{f(sel.y)}</span>
 			<span class="op">=</span>
 			<span class="segx-c">{f(sel.px)}</span>
@@ -356,8 +363,9 @@
 			<span class="score-c">{f(sel.score)}</span>
 		</span>
 		<span class="strip-note">
-			multiply the matched entries, add the products. The darker slice of each bar is its
-			loud product, the lighter slice its fast product; stacked, they are the score.
+			multiply the matched entries, add the products. The <span class="qw-loud">lilac slice</span>
+			of each bar is its loud product, the <span class="qw-fast">mint slice</span> its fast
+			product; stacked, they are the score.
 		</span>
 	</div>
 </div>
@@ -413,7 +421,9 @@
 		background: none; padding: 0.3rem 0.35rem; border-radius: 8px; cursor: pointer;
 		color: var(--color-text);
 		border: 1px solid color-mix(in oklab, var(--color-text) 10%, transparent);
+		width: 5.6rem; box-sizing: border-box;
 	}
+	.row-id { min-height: 2.1em; display: flex; align-items: center; justify-content: center; text-align: center; }
 	.row:hover { border-color: var(--color-brand-mint); }
 	.row.sel { background: color-mix(in oklab, var(--color-text) 6%, transparent); border-color: var(--data-observed); }
 	.leads { font-size: 0.6rem; color: var(--color-brand-mint); letter-spacing: 0.06em; }
@@ -435,13 +445,24 @@
 	.cand.hov .shaft { stroke-width: 3.2; }
 	.challenges { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin: 0 0 1rem; }
 	.chal {
-		font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-text);
-		background: none; border: 1px solid color-mix(in oklab, var(--color-text) 18%, transparent);
-		border-radius: 999px; padding: 0.35rem 0.75rem; cursor: pointer; opacity: 0.85;
+		display: flex; flex-direction: column; align-items: flex-start; gap: 0.18rem;
+		color: var(--color-text); text-align: left;
+		background: color-mix(in oklab, var(--color-text) 3%, transparent);
+		border: 1px solid color-mix(in oklab, var(--color-text) 16%, transparent);
+		border-radius: 10px; padding: 0.55rem 0.85rem; cursor: pointer; opacity: 0.9;
 	}
 	.chal:hover { border-color: var(--color-brand-mint); opacity: 1; }
-	.chal.active { border-color: var(--color-brand-mint); color: var(--color-brand-mint); opacity: 1; }
-	.solved { color: var(--data-fit); font-size: 0.78rem; }
+	.chal.active { border-color: var(--data-heat); opacity: 1; }
+	.chal.done { border-color: var(--data-fit); }
+	.chal-t { font-size: 0.6rem; letter-spacing: 0.1em; opacity: 0.55; }
+	.chal-g { font-family: var(--font-heading), sans-serif; font-size: 0.88rem; }
+	.chal-s { font-size: 0.7rem; color: var(--data-fit); }
+	.chal-s.live { color: var(--data-heat); }
+	.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
+	@keyframes hpulse {
+		0%, 100% { stroke-width: 1.5; }
+		50% { stroke-width: 4.5; stroke-opacity: 1; }
+	}
 	.row.leading .row-id { color: var(--color-brand-mint); }
 	.row-id { font-size: 0.8rem; opacity: 0.85; }
 	.row-score { font-size: 0.85rem; color: var(--data-params); }
@@ -457,7 +478,7 @@
 		transition: height var(--motion-min-ms) linear, bottom var(--motion-min-ms) linear;
 	}
 	.segx { background: var(--data-params); }
-	.segy { background: color-mix(in oklab, var(--data-params) 55%, var(--color-surface)); }
+	.segy { background: color-mix(in oklab, var(--color-brand-mint) 72%, var(--color-surface)); }
 	.seg.neg { opacity: 0.85; }
 
 	.tie, .flag {
@@ -477,7 +498,11 @@
 	.probe-c { color: var(--data-heat); }
 	.cand-c { color: var(--data-observed); }
 	.segx-c { color: var(--data-params); }
-	.segy-c { color: color-mix(in oklab, var(--data-params) 65%, var(--color-text)); }
+	.segy-c { color: color-mix(in oklab, var(--color-brand-mint) 85%, var(--color-text)); }
+	.qw-loud { color: var(--data-params); opacity: 0.9; }
+	.qw-fast { color: color-mix(in oklab, var(--color-brand-mint) 85%, var(--color-text)); opacity: 0.9; }
+	.q-loud { fill: color-mix(in oklab, var(--data-params) 80%, transparent); }
+	.q-fast { fill: color-mix(in oklab, var(--color-brand-mint) 70%, transparent); }
 	.score-c { color: var(--data-fit); font-weight: 600; }
 	.strip-note { flex-basis: 100%; font-size: 0.8rem; opacity: 0.55; }
 
