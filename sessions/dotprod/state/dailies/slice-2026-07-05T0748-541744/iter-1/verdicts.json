@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries a single focus — the doubling vector in frames 2-3 and the sequentially-built question stack in frames 4-6 — with no equal-weight competition.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No frame exceeds four simultaneous novel elements; the question lines in frames 5-6 accrue across frames rather than flooding at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'c1' label sits on the vector and 'score' sits directly above its readout box; no detached legend appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "Frames 4-6 are text-only cards ('Keep the direction. Lose the size.', 'What's the cheapest fix?', 'Still up?') stacked on the black background with no visible referent to annotate.",
+    "suggestion": "Anchor the walk-home questions to a small residual visual (the un-doubled vector or the size-preserved candidate) so the text annotates something on screen rather than standing alone."
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All titles, question lines, the '4.2'/'8.4' readouts, and the chip text render well above the ~2.2% height threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The vector, dashed box, score readout, and text cards all sit fully inside the frame with margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'x2' sits cleanly between the stacked 4.2 and 8.4 in frame 3, and no text overlaps other content.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The candidate vector is consistently periwinkle blue and the score readout is consistently lilac, matching the observed/parameter token roles.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — vector, dashed box, readout, chip, arrow — carries propositional content; no decoration is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "The opening guess card (frame 1) shows only the word 'Guess' with no candidate outlined and no doubling question, and the promised rose flag marking that 'size passed straight through' never appears in the reveal frames.",
+    "suggestion": "Populate the guess card with the outlined candidate and the doubling question, and add the small rose flag on the reveal to mark that size passed through unchanged."
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The score readout sits opposite the vector but each is a self-contained unit, so no cross-frame jump is forced.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The vector grows continuously from frame 2 to frame 3 and the question stack builds line by line across frames 4-6.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The compositions keep generous margins and a clear top-to-bottom reading order.",
+    "suggestion": ""
+  }
+]

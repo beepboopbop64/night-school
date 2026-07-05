@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "node": "s4a.beat-04b",
+  "inputs": [
+    {
+      "path": "storyboard.yaml#beat-04b",
+      "sha256": "e82e3a8a397d6cdecee65ee509726a09ee9157fd2574ae123d8ba367a645a8c6"
+    },
+    {
+      "path": "script.md#beat-04b",
+      "sha256": "f548b6f1954eae79d8a09fc6d35dcdd9b16178cfd20452bf149fc91dbdb882bc"
+    },
+    {
+      "path": "video/audio/beat-04b.mp3",
+      "sha256": "73c3fd3d30416a6bd060c682a83ddc70792ddf88c3f1c82402031678fa35e5fb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/beats/beat-04b.yaml",
+      "sha256": "a2bf9030403fc584a3abc35f2f3d16f95f5b9ddd4d8ab6e8db20d16b292629ad"
+    },
+    {
+      "path": "video/scenes/scene_beat_04b.py",
+      "sha256": "7e72ce1bb5aaeda7dc3388d8d25d48548158aa682b563fd4c9206a5904cb2d09"
+    },
+    {
+      "path": "media/beat-04b.mp4",
+      "sha256": "e021c1f46564939b6ae9c1d2150ac967bdc18c764920c8ce5e79b1892003dd70"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "bbox.clean",
+        "pass": true
+      },
+      {
+        "id": "iris.pass",
+        "pass": true,
+        "iter": 2
+      },
+      {
+        "id": "scene.duration-within-tolerance",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 2,
+  "costUsd": 2.1091746,
+  "tier": "opus",
+  "startedAt": "2026-07-05T07:48:50.671Z",
+  "endedAt": "2026-07-05T08:04:52.011Z",
+  "transcript": "state/dailies/slice-2026-07-05T0748-541744",
+  "promptSha": "",
+  "meta": {
+    "videoSeconds": 46.266667,
+    "audioSeconds": 46.32,
+    "toleranceSeconds": 4.63,
+    "perIteration": [
+      {
+        "iter": 1,
+        "outcome": "iris-failed",
+        "coderCostUsd": 1.1457951,
+        "irisCostUsd": 0.21932549999999998,
+        "wallMs": 633651,
+        "fingerprints": [
+          "iris:V4",
+          "iris:V10"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 2,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.5738985,
+        "irisCostUsd": 0.17015550000000002,
+        "wallMs": 327478,
+        "fingerprints": [],
+        "replanWasForced": false
+      }
+    ]
+  }
+}

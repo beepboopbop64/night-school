@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame has a clear single focus: frame 1 the 'Guess' title, frames 2-3 the doubling of the periwinkle vector and score, frames 5-6 the closing question with the chip.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No frame introduces more than four novel elements at once; the vector, score box, flag, and questions build progressively.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'c1' label sits on the vector and 'direction kept' sits beside it; no boxed legend or corner key appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The floating questions in frames 5-6 accompany the visible c1 vector and the 'ways to keep going' chip, functioning as the closing walk-home card annotations.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Titles, the 4.2/8.4 readouts, labels, and chip text are all comfortably above the legibility threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All vectors, boxes, flags, and text sit within the frame with margins; nothing is cropped.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or labels overlap; the stacked 4.2/x2/8.4 readouts are cleanly separated inside their box.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The candidate vector is periwinkle (observed), the score readouts are lilac (parameters/number), and the 'size passes through' flag is rose, matching token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element carries content: the vector, dashed bounding box, score readouts, rose flag, and chip all have propositional roles.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frames show the periwinkle candidate doubling in length while direction holds, the lilac 4.2→8.4 doubling stacked, a rose 'size passes through' flag, and the closing question with a chip pointing to the extensions menu.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The score box sits to the right of the vector, a deliberate comparison layout, and the flag sits directly under the readout it explains.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the vector visibly lengthens and the score reads out continuously rather than cutting to a finished state.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The compositions keep generous margins and a clear reading order from vector to score to closing question.",
+    "suggestion": ""
+  }
+]
