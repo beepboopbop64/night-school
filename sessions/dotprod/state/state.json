@@ -144,7 +144,10 @@
       "status": "pending"
     },
     "s4b.sec-beat-05": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0.1990656,
+      "iter": 0,
+      "receipt": "state/receipts/s4b.sec-beat-05.receipt.json"
     }
   },
   "needsJake": [
