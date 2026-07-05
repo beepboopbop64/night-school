@@ -6,25 +6,25 @@
   "fidelity": "half-trued",
   "nodes": {
     "s4f.beat-01": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-01.receipt.json"
     },
     "s4f.beat-02": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-02.receipt.json"
     },
     "s4f.beat-03": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-03.receipt.json"
     },
     "s4f.beat-04": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-04.receipt.json"
@@ -54,15 +54,15 @@
       "receipt": "state/receipts/s4a.beat-04.receipt.json"
     },
     "s4b.sec-beat-01": {
-      "status": "running",
+      "status": "passed",
       "iter": 0,
-      "costUsd": 0.049641000000000005,
+      "costUsd": 0.3658182,
       "receipt": "state/receipts/s4b.sec-beat-01.receipt.json"
     },
     "s4b.sec-beat-02": {
       "status": "passed",
       "iter": 0,
-      "costUsd": 0.0474816,
+      "costUsd": 0.16230840000000002,
       "receipt": "state/receipts/s4b.sec-beat-02.receipt.json"
     },
     "s4b.sec-beat-03": {
@@ -120,7 +120,7 @@
       "receipt": "state/receipts/s7.packet.receipt.json"
     },
     "s4f.beat-04b": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-04b.receipt.json"
@@ -152,6 +152,31 @@
       "node": "s6.screening",
       "reason": "gate failed: screening.vera-opus, screening.rounds-within-cap",
       "since": "2026-07-05T15:14:59.271Z"
+    },
+    {
+      "node": "s4f.beat-01",
+      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"4b7a8e93d88e43c78093b10a2b5f653f\",\"param\":\"model_id\"}}",
+      "since": "2026-07-05T23:33:15.873Z"
+    },
+    {
+      "node": "s4f.beat-02",
+      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"5caf52ff727990378093b10a2b5f6976\",\"param\":\"model_id\"}}",
+      "since": "2026-07-05T23:33:15.923Z"
+    },
+    {
+      "node": "s4f.beat-03",
+      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"ff42bc270f2da9ed8093b10a2b5f601e\",\"param\":\"model_id\"}}",
+      "since": "2026-07-05T23:33:15.972Z"
+    },
+    {
+      "node": "s4f.beat-04",
+      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"0f2ce3534d2733ab8093b10a2b5f691c\",\"param\":\"model_id\"}}",
+      "since": "2026-07-05T23:33:16.024Z"
+    },
+    {
+      "node": "s4f.beat-04b",
+      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"f7571ba3b16d2d518093b10a2b5f68e6\",\"param\":\"model_id\"}}",
+      "since": "2026-07-05T23:33:16.072Z"
     },
     {
       "node": "s4f.beat-05",

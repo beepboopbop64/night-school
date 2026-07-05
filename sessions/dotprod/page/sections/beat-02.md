@@ -6,6 +6,11 @@ The recipe is almost embarrassingly simple. Multiply the two arrows entry by ent
 
 > Before you touch the probe: swing it all the way around. Does any bar ever drop below zero? Call it.
 
+<details class="reveal">
+<summary>Made your call? Turn the probe and check.</summary>
+Yes, and it's not just fading toward zero. Once the probe points far enough away from a candidate, the two arrows disagree enough that the product actually goes negative, not merely small.
+</details>
+
 Now turn the probe and watch. Point it at a candidate and its bar climbs. Turn away and the bar dies back down. That part feels right: the score is clearly tracking how closely the probe's direction lines up with each candidate's direction.
 
 But here's the catch, and it's the one that trips people up. Stretch a candidate's arrow longer, without rotating it at all, and its score climbs anyway. Nothing about its direction changed; it never got any closer to the probe. Length alone was enough to fake a higher number. So a big score doesn't mean "these two songs are the same." It means agreement of direction, inflated by however long the candidate's arrow happens to be. A long arrow can win on size without ever really matching.
