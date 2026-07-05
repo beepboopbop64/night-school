@@ -98,7 +98,7 @@
     "s4e.notebook": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 0.365235,
+      "costUsd": 0.4621254,
       "receipt": "state/receipts/s4e.notebook.receipt.json"
     },
     "s5.assemble": {
@@ -118,7 +118,7 @@
     {
       "node": "s6.screening",
       "reason": "gate failed: screening.petra, screening.rounds-within-cap",
-      "since": "2026-07-05T01:52:19.474Z"
+      "since": "2026-07-05T02:25:10.202Z"
     }
   ]
 }

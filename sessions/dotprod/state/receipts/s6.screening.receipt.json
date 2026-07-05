@@ -16,25 +16,25 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "bd0efd3d39b481e969d1d7c2b7d65b446b35175da02d237e86615433f9f9440a"
+      "sha256": "a6b91e2123b57d35ae244bde5ee7867b9b19518c3fb5ac20232efd547893f2f1"
     },
     {
       "path": "script.md",
-      "sha256": "ce8c2c590fe2231bb83ae287dfa169f86872704b5307cbde3a35cc42eaf686b5"
+      "sha256": "f149f1ebc94d7d73e5d6ea8a4d6b0d5f993c8228f3428efdb1be24e0e6b7aabb"
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "556bd1d627b56478ed181812005f62808c07f500b841f14e0fe12bc9c1ed4d67"
+      "sha256": "8c3018b4fa585ecb7616b2c3f9bb1af030f54343aa236a14d5b001cb85847515"
     },
     {
       "path": "video/captions.vtt",
-      "sha256": "2003e7be473de80a7f71f2cddc798488b017298eac5662147ea0d4e04c0a3be2"
+      "sha256": "b037227372c0d24e8e46d8424eda71d226d0b8f82348c9214461f7194c8b19d1"
     }
   ],
   "outputs": [
     {
       "path": "rounds/round-01/screening-report.md",
-      "sha256": "3aa7fe871928217f62fc8c78c3bc17ad7fa938d30196e4627dbb2037e1cd2786"
+      "sha256": "0efeab6b6f5292c9d7a0228df50ba38e54c45aac8377d016a638e279a50143a2"
     }
   ],
   "gate": {
@@ -64,18 +64,18 @@
     ]
   },
   "iterations": 2,
-  "costUsd": 1.1099344,
+  "costUsd": 1.043352,
   "tier": "opus",
-  "startedAt": "2026-07-05T01:40:30.206Z",
-  "endedAt": "2026-07-05T01:52:19.471Z",
+  "startedAt": "2026-07-05T02:15:01.795Z",
+  "endedAt": "2026-07-05T02:25:10.198Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
     "rounds": 2,
     "samAdvisory": {
-      "curiosity": 4,
+      "curiosity": 3,
       "wouldFinish": true,
-      "note": "It felt clear and hands-on for most of it, but the abrupt unresolved cliffhanger at the end left me a little unsatisfied rather than hooked."
+      "note": "Short and mostly clear, but the mismatched example numbers and the abrupt unresolved ending left me a little unsatisfied rather than hooked."
     },
     "dissent": [
       "petra"
