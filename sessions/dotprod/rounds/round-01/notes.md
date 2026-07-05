@@ -14,11 +14,15 @@ Conventions:
 
 ## @video/beat-02
 
+When the probe sweeps near candidate B, the B label gets buried under the amber arrow and disappears. Keep every candidate label readable at all probe angles; nudging the labels outward past the arrow tips would probably do it.
+
 ## @video/beat-03
 
 ## @video/beat-04
 
 ## @page/beat-01
+
+"The question worth sitting with tonight" uses the exact crutch phrase Vera flagged at screening. Rephrase so "sit with" appears at most once in the whole session.
 
 ## @page/beat-02
 
@@ -28,6 +32,8 @@ Conventions:
 
 ## @ix/dot-alignment
 
+The numbers under the bars feel busy.
+
 ## @doc
 
 ## @ext
@@ -35,3 +41,5 @@ Conventions:
 ## @notebook
 
 ## General
+
+#style: when a demo puts a computed number on screen, round the readout to at most two decimals; full float precision reads as debug output, not teaching.
