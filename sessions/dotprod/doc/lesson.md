@@ -10,7 +10,7 @@ So here is the question of the night. How do you score a match between two lists
 
 Hold that question before we reach for any definition. One answer to it runs half of modern machine learning. We're going to build that answer with our hands, not memorize it.
 
-Before you read on, take a guess: if you had to turn two lists of numbers into a single match score, what would you do to them?
+Take a guess before the next paragraph gives it away: if you had to turn two lists of numbers into a single match score, what would you do to them?
 
 ## What does a taste look like as numbers?
 
@@ -18,9 +18,9 @@ Strip it down until it fits in your palm. A taste is an arrow. Each direction is
 
 Now picture one amber probe arrow (that's you) and four candidate arrows (four songs sitting still). Here's the rule for scoring a match: multiply the two arrows entry by entry, then add up the products. That single sum is the score. One multiply, one add.
 
-> Honest edges: the numbers in this session are chosen for readability. Real embedding coordinates are neither small nor round. We use tidy integers so your eyes can do the arithmetic the machine does silently.
+> Honest edges: the numbers in this session are chosen for readability. Real embedding coordinates are neither small nor round. We use tidy integers so the reading stays clean while the machine does the same work silently.
 
-Before you read on, call it. Which candidate ends up with the highest score, and does any score go negative? Say an answer out loud. A prediction you can be wrong about is worth ten definitions you nod along to.
+Stop and call it. Which candidate ends up with the highest score, and does any score go negative? Say an answer out loud. A prediction you can be wrong about is worth ten definitions you nod along to.
 
 The tempting guess is that the candidate that looks most like the probe wins, and that no score dips below zero, because how could similarity be less than nothing?
 
@@ -48,7 +48,7 @@ Two lists of numbers go in. One honest reading of alignment comes out. That's th
 
 > Honest edges: real embeddings live in hundreds of dimensions. Two dimensions is the picture, not the territory. Nothing in the mechanism changes when you add axes: you still multiply entry by entry and add, there are just more entries. The dial in your head stays exactly as true with hundreds of axes as it is with two.
 
-And notice why the reading tracks direction and not size or identity. Direction is the only thing the sweep ever changed. The meter answers the question you actually moved. Close the loop yourself before the next section: the meter has three readings worth knowing, positive, zero, and negative. State what each one says about two vectors, out loud or on paper, in your own words.
+And notice why the reading tracks direction and not size or identity. Direction is the only thing the sweep ever changed. The meter answers the question you actually moved. The meter has three readings worth knowing: positive, zero, and negative. State what each one says about two vectors, out loud or on paper, in your own words.
 
 ## Where does the meter travel, and where does it break?
 
@@ -58,12 +58,12 @@ Rebuild the meter from memory: two arrows go in, so what two operations turn the
 
 If "multiply pairwise, then add" came back without a peek, you own $a \cdot b$ now. It's yours.
 
-While that settles, keep the same meter running and walk it one aisle over. We don't rebuild anything. We just point the needle at a job posting instead of a song. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Same meter, new aisle. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
+While that settles, keep the same meter running and walk it one aisle over. We don't rebuild anything. We just point the needle at a job posting instead of a song. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Same meter, different aisle. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
 
 Now one more honest look, because a meter you trust blindly is a meter that will lie to you. Guess before you read on: double one candidate's length exactly, leave its direction untouched, does the number double too?
 
 It does, exactly. Double one input, double the output. The meter is linear in each arrow you feed it, and that clean scaling is the crack. Size passes straight through the multiply-and-add, untouched.
 
-That's a problem. It means a long, loud song can win on sheer size, not on agreement, and a padded resume can win on sheer length. The meter can't tell "points the same way" apart from "just bigger." A shout beats a whisper even when the whisper agrees with you more. That gap is exactly where the next session opens, and it leaves you one thread to pull. For the walk home: if the score keeps rewarding size, what is the cheapest fix that keeps the direction and forgets the size?
+That's a problem. It means a long, loud song can win on sheer size, not on agreement, and a padded resume can win on sheer length. The meter can't tell "points the same way" apart from "just bigger." A shout beats a whisper even when the whisper agrees with you more. That gap is exactly where the next session opens, and it leaves you one thread to pull. Remember where we started: two lists of numbers got compared, and the comparison said same taste. Now you can run that comparison yourself. Next time the app hands you a stranger's song that is exactly right, you will know the number that said ship it, and you will know that number can be shouted over. For the walk home: if the score keeps rewarding size, what is the cheapest fix that keeps the direction and forgets the size?
 
 Still up? The menu below has three ways to keep going: argue the metaphor with an LLM until it cracks, chase this same score into the attention papers where it reappears, or build the meter yourself in a few lines of NumPy.

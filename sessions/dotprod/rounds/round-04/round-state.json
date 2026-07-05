@@ -2,9 +2,219 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "round": "round-04",
-  "phase": "triaged",
-  "appliedOrders": [],
-  "applyCostUsd": 0,
+  "phase": "applied",
+  "appliedOrders": [
+    "r04-n01",
+    "r04-n02",
+    "r04-n03",
+    "r04-n04",
+    "r04-n05",
+    "r04-n06",
+    "r04-n07",
+    "r04-n08",
+    "r04-n09",
+    "r04-n10",
+    "r04-n11"
+  ],
+  "applyCostUsd": 1.8015050000000001,
   "triageCostUsd": 0.5730299999999999,
-  "orderResults": []
+  "preHashes": {
+    "files": {
+      "video/beats/beat-01.yaml": "1e531d5522a475ddfeffdd32c4c299ebc81c56e59a907b0035ede62ec758a054",
+      "video/scenes/scene_beat_01.py": "1825786ec58dcfb149567aef0e06c86fb3e9399f01700a225594fb005e27b706",
+      "media/beat-01.mp4": "6600dc697c24ed4f7e59647144077d3d09847391ac420601711854de63c8abc8",
+      "video/beats/beat-02.yaml": "44b23badca5babac42b2173c1986d736f8e92e6454a4786acd8aea640c2240d4",
+      "video/scenes/scene_beat_02.py": "f72cdb78b56ce20df3c95d887f0642e30ece6cc7bcb56db3f863dfeeb6461169",
+      "media/beat-02.mp4": "3537ccba6d39025def2c341530b4ec9542d48ced7a4c228604d118b290b4dcd8",
+      "video/beats/beat-03.yaml": "6f73ae343ccd030f479e20b5c6339ac30e67cfb7ea9be510ed4b29f09531e60e",
+      "video/scenes/scene_beat_03.py": "0809a87bacbd69bc72a54a5d4ff64d0874d50a96a89c5e072ebd2cbf26610ad2",
+      "media/beat-03.mp4": "1dc29a29d6abdd4342a63ec7cfa6992de49179b95818df6bda804ff263617ab7",
+      "video/beats/beat-04.yaml": "08d54608f1dd84f27bbde9605f9c690285d5ab8d4918532391dc1ca10f797418",
+      "video/scenes/scene_beat_04.py": "f70f8cdc80fd94241c9b47f3f1ae31095bb38b18faded8120659229bae1ea860",
+      "media/beat-04.mp4": "3ce5658763de99c07edde374ca746cb97046bef101333205be52bb252ab76ea9",
+      "video/beats/beat-04b.yaml": "a2bf9030403fc584a3abc35f2f3d16f95f5b9ddd4d8ab6e8db20d16b292629ad",
+      "video/scenes/scene_beat_04b.py": "7e72ce1bb5aaeda7dc3388d8d25d48548158aa682b563fd4c9206a5904cb2d09",
+      "media/beat-04b.mp4": "e021c1f46564939b6ae9c1d2150ac967bdc18c764920c8ce5e79b1892003dd70",
+      "page/interactives/DotAlignment.svelte": "6243b4489f515c83f0cf2ea6e2aca467ed58060cea15e911450c353883e2973f",
+      "page/sections/beat-01.md": "40436205c3983d3c9863c715025b322ccf00c9fff7ee03608eb47b20c62f9cf6",
+      "page/sections/beat-02.md": "ab8d802ee89ade781a392044f0c90ec35e479bd0a93962b45faf624dbb4ec5c7",
+      "page/sections/beat-03.md": "e6b35d9b0ebe9889153398072cc9e8813e9c3bf0db49336a0703afdae5b8e3b7",
+      "page/sections/beat-04.md": "bd60a8710ca17c21779b646cc7dc134e2eb7abc3bb80aa04621f025f4513bfbe",
+      "page/sections/beat-04b.md": "2d4ca854858d560193354363b1a69fdbbbb917663aa7bedf2ac56cfec6bec961",
+      "doc/lesson.md": "4f8208e3e923a92611037974595d96affb803435274e721512120125713c69bd",
+      "extensions.yaml": "f6987b5299b3aac145269bc7b314cd6f055e0744478e9f620fc315c624ded7f0",
+      "notebook/lesson.ipynb": "4d04c3b381651fe5ac9ed58af200737ba809272a8cad0b9782c74e3727b254b8",
+      "video/audio/beat-01.mp3": "35eea7a82b363689c5d635e9ea009d630a9788090ffd3bf9709878ed54fb3608",
+      "video/audio/beat-02.mp3": "ef5c80d0882dba86be16b2398fe46fd78bd98268cac401f20908b1e41e319f7c",
+      "video/audio/beat-03.mp3": "5b4da1b214e90439a0a23478201bda262c420d02f3c4d7ab4eefcedef11c0498",
+      "video/audio/beat-04.mp3": "b4d4a950542f4bb0e0bbcd6153052f7c4fb741bf3e6a666e745d1c7a8fa565d5",
+      "video/audio/beat-04b.mp3": "73c3fd3d30416a6bd060c682a83ddc70792ddf88c3f1c82402031678fa35e5fb",
+      "media/session.mp4": "5cb83b053d8be0e60d2c40e2d714de06b81b364cd23fec33164a46e515dd6343",
+      "video/captions.vtt": "8ed38bab485cc523f1d0a2d5b4ef38d37194b6c5d1e09ab19985d4bc2dc64c81",
+      "page/video.json": "8138e0a1c3c24b21c891a8527cff9fbbf5a5ca4ffb89aeaad45f4fe38029d7ca",
+      "page/extensions.json": "17aeb974cb7395fe942a15ccdd6588a1ebd3b12b886eff1567c1846690fcd1d0",
+      "manifest.yaml": "d289d28018122d90488714748fdbb23233e1bb969605d6e09293b34e28095285",
+      "rounds/round-04/screening-report.md": "56ed98514b3326bb62476156652e20a520ea24b38201843de75f637db85b49d3",
+      "rounds/round-04/packet/README.md": "90fb4669e9a99b140838d9ee18712c31410e27cdbbb150b0218fcb241e53595c",
+      "rounds/round-04/notes.md": "0f82216dcda945cc090e96d9ae5b82a6f0adccacbf4741fb27e94196f11690d9",
+      "rounds/round-04/flags.md": "342aabe2f4953d9d73e723d856fbf8c8850ad1020a97f8a43d4812bc7069a027"
+    },
+    "fragments": {
+      "storyboard.yaml#beat-01": "f511152447e95ab3062bff99c32feae7d0e5c33c5e0c14b17adce6abf46bc587",
+      "script.md#beat-01": "3a9ffed8506304f5d2cef2d8506188f9f0daaa3834b5db446d6ac9ad15640e69",
+      "storyboard.yaml#beat-02": "73f262919de1285f15d2e91502f8c4edd454a3516e427c9950854999a7908f7c",
+      "script.md#beat-02": "4b817f3b661cf0cfe8cdd99673fdf69fdd0b9ae216aefd9f85f83b968a27681b",
+      "storyboard.yaml#beat-03": "e604cf58ab9595db323b07fc50224b73ebafc08292df95d85b235436c3ea98fc",
+      "script.md#beat-03": "3dbf70c80cd9283ce1397b4b26ff88ea4af6ed19d74c13dc190f2dc6fb9ad745",
+      "storyboard.yaml#beat-04": "41651480fe7654a5b340450c068da821da29fdac3ed9461c15a1e18523cae0f4",
+      "script.md#beat-04": "9826e924e9937b96e7bbad3223204d8ed2c060e15f451999abfab3230c5c7c6f",
+      "storyboard.yaml#beat-04b": "e82e3a8a397d6cdecee65ee509726a09ee9157fd2574ae123d8ba367a645a8c6",
+      "script.md#beat-04b": "f548b6f1954eae79d8a09fc6d35dcdd9b16178cfd20452bf149fc91dbdb882bc"
+    },
+    "producers": {
+      "video/beats/beat-01.yaml": "s4a.beat-01",
+      "video/scenes/scene_beat_01.py": "s4a.beat-01",
+      "media/beat-01.mp4": "s4a.beat-01",
+      "video/beats/beat-02.yaml": "s4a.beat-02",
+      "video/scenes/scene_beat_02.py": "s4a.beat-02",
+      "media/beat-02.mp4": "s4a.beat-02",
+      "video/beats/beat-03.yaml": "s4a.beat-03",
+      "video/scenes/scene_beat_03.py": "s4a.beat-03",
+      "media/beat-03.mp4": "s4a.beat-03",
+      "video/beats/beat-04.yaml": "s4a.beat-04",
+      "video/scenes/scene_beat_04.py": "s4a.beat-04",
+      "media/beat-04.mp4": "s4a.beat-04",
+      "video/beats/beat-04b.yaml": "s4a.beat-04b",
+      "video/scenes/scene_beat_04b.py": "s4a.beat-04b",
+      "media/beat-04b.mp4": "s4a.beat-04b",
+      "page/interactives/DotAlignment.svelte": "s4b.dot-alignment",
+      "page/sections/beat-01.md": "s4b.sec-beat-01",
+      "page/sections/beat-02.md": "s4b.sec-beat-02",
+      "page/sections/beat-03.md": "s4b.sec-beat-03",
+      "page/sections/beat-04.md": "s4b.sec-beat-04",
+      "page/sections/beat-04b.md": "s4b.sec-beat-04b",
+      "doc/lesson.md": "s4c.doc",
+      "extensions.yaml": "s4d.extensions",
+      "notebook/lesson.ipynb": "s4e.notebook",
+      "video/audio/beat-01.mp3": "s4f.beat-01",
+      "video/audio/beat-02.mp3": "s4f.beat-02",
+      "video/audio/beat-03.mp3": "s4f.beat-03",
+      "video/audio/beat-04.mp3": "s4f.beat-04",
+      "video/audio/beat-04b.mp3": "s4f.beat-04b",
+      "media/session.mp4": "s5.assemble",
+      "video/captions.vtt": "s5.assemble",
+      "page/video.json": "s5.assemble",
+      "page/extensions.json": "s5.assemble",
+      "manifest.yaml": "s5.assemble",
+      "rounds/round-04/screening-report.md": "s6.screening",
+      "rounds/round-04/packet/README.md": "s7.packet",
+      "rounds/round-04/notes.md": "s7.packet",
+      "rounds/round-04/flags.md": "s7.packet"
+    }
+  },
+  "orderResults": [
+    {
+      "id": "r04-n01",
+      "status": "applied",
+      "summary": "Bound the a . b annotation to data.params (lilac) so it matches the score readout instead of inheriting candidates' periwinkle.",
+      "filesChanged": [
+        "storyboard.yaml",
+        "storyboard.yaml#beat-03"
+      ],
+      "costUsd": 0.164825
+    },
+    {
+      "id": "r04-n02",
+      "status": "applied",
+      "summary": "Replaced the 'retrieval prompt' stage-direction label with the real question and landed the two planned on-screen texts on beat-04's card, readout, and landing line.",
+      "filesChanged": [
+        "storyboard.yaml",
+        "storyboard.yaml#beat-04"
+      ],
+      "costUsd": 0.27012500000000006
+    },
+    {
+      "id": "r04-n03",
+      "status": "applied",
+      "summary": "Dropped director-facing Guess/Reveal/Next headers (guess card poses the doubling question headerless, stacked 4.2/x2/8.4 stays as the reveal, closing card uses 'For the walk home') and set the breadcrumb to canon 'Keep the direction. Forget the size.'",
+      "filesChanged": [
+        "storyboard.yaml",
+        "storyboard.yaml#beat-04b"
+      ],
+      "costUsd": 0.27264000000000005
+    },
+    {
+      "id": "r04-n04",
+      "status": "applied",
+      "summary": "Removed repeated 'before you read on' in beat-01 by rewriting the sentence per Jake's note.",
+      "filesChanged": [
+        "page/sections/beat-01.md"
+      ],
+      "costUsd": 0.039325
+    },
+    {
+      "id": "r04-n05",
+      "status": "applied",
+      "summary": "Replaced the un-callable call-your-shot blockquote in beat-02 with the falsifiable, sweep-cueing version so students get a prompt with a real answer and are cued to observe zero/negative scores for beat-03's debrief.",
+      "filesChanged": [
+        "page/sections/beat-02.md"
+      ],
+      "costUsd": 0.045955
+    },
+    {
+      "id": "r04-n06",
+      "status": "applied",
+      "summary": "Scoped direction-only claims to the equal-length sweep, dropped 'exactly', softened 'honest', added the a/b referent, swapped the restatement for the doc's generative close, and varied the 'for a second' filler in beat-03; aha sentence kept verbatim.",
+      "filesChanged": [
+        "page/sections/beat-03.md"
+      ],
+      "costUsd": 0.08409
+    },
+    {
+      "id": "r04-n07",
+      "status": "applied",
+      "summary": "Retitled heading to 'Same meter, different aisle', swapped record store to the beat-01 music app, and opened with the retrieval blockquote plus a 'which list plays the probe' fill-in so the page sequences recall then transfer.",
+      "filesChanged": [
+        "page/sections/beat-04.md"
+      ],
+      "costUsd": 0.12049499999999999
+    },
+    {
+      "id": "r04-n08",
+      "status": "applied",
+      "summary": "Purged both 'sit with' phrases with distinct non-repeating replacements, fixed 'unpaid invitation' to 'a standing invitation', added a steering sentence (probe along c1, length back to 1.0) so the doubling reads a clean 1.0 to 2.0, aligned the page breadcrumb to canon 'keeps the direction and forgets the size', and added the recursive opening-app close to both page and doc final sections.",
+      "filesChanged": [
+        "doc/lesson.md",
+        "page/sections/beat-04b.md"
+      ],
+      "costUsd": 0.156045
+    },
+    {
+      "id": "r04-n09",
+      "status": "applied",
+      "summary": "Moved initial probe angle 90->40 for a unique honest leader, suppressed leading emphasis on ties, and added score-readout aria-labels plus aria-hidden decorative SVG text for accessibility.",
+      "filesChanged": [
+        "page/interactives/dot-alignment.yaml"
+      ],
+      "costUsd": 0.13033499999999998
+    },
+    {
+      "id": "r04-n10",
+      "status": "applied",
+      "summary": "Renamed the beat-04 section header to 'Same meter, different aisle,' rewrote the section-3 closer to drop the redundant loop phrase without using 'one more,' varied two 'Before you read on' prediction frames, trimmed the eyes-do-arithmetic promise while keeping readability language, and added a recursive close mirroring beat-04b that loops back to the opening; the comma-splice sentence was not present in the doc target so no such edit was applied.",
+      "filesChanged": [
+        "doc/lesson.md"
+      ],
+      "costUsd": 0.26469
+    },
+    {
+      "id": "r04-n11",
+      "status": "applied",
+      "summary": "Reworded attention prompt 2 and the Attention Is All You Need hook to forward preview framing (no 'we said'/'we walked through'), and reworked the first LLM prompt, its what-good line, and the ranking-flip project brief so the learner proposes the fix and the LLM stress-tests it, stripping 'cosine' and 'normalize' from all visible menu text.",
+      "filesChanged": [
+        "extensions.yaml"
+      ],
+      "costUsd": 0.25298000000000004
+    }
+  ]
 }

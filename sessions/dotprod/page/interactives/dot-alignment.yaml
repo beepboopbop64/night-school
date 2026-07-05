@@ -34,9 +34,12 @@ interactive:
     carry the motion and the digits stay quiet: bar and number rise and fall
     WITH the probe's alignment to that candidate, live, as the probe turns,
     and also shift as c1's length changes; negative scores drop below a zero
-    baseline. At any moment the best-aligned candidate's bar visibly leads while all lengths are equal; when c1 is stretched, its bar can climb past a better-aligned candidate's, and that ranking flip must read from a still frame.
+    baseline. At any moment the best-aligned candidate's bar visibly leads while all lengths are equal, but whenever two or more scores tie the leading emphasis is suppressed so no bar is ever falsely bolded as the leader; when c1 is stretched, its bar can climb past a better-aligned candidate's, and that ranking flip must read from a still frame.
     Labels are cream and sit clear of their objects so none ever collide; no
-    legends. The covariation (probe direction to score height, including
+    legends. Each score readout carries an aria-label of the form "c2
+    score 0.9" naming its candidate and value, while every decorative label
+    baked into the SVG is marked aria-hidden, so assistive tech no longer
+    reads the digits and glyphs as one unparseable run. The covariation (probe direction to score height, including
     sign, and candidate length to score magnitude) must be readable from a
     still frame alone at 375, 768, and 1280 px widths.
   colors:
@@ -49,7 +52,7 @@ interactive:
     min: 0
     max: 360
     step: 5
-    initial: 90
+    initial: 40
     unit: degrees
   # length-c1 stretches or shrinks c1 only, holding its direction: the
   # learner watches c1's score climb on length alone at a fixed angle, so
@@ -63,7 +66,7 @@ interactive:
       unit: relative-length
   states:
     - id: initial
-      description: untouched first render; the probe rests at 90 degrees
+      description: untouched first render; the probe rests at 40 degrees
       drive: []
     - id: aligned
       description: probe exactly along c1 at 20 degrees; c1's bar and readout at their peak

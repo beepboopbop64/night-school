@@ -4,7 +4,7 @@ Scoring by hand fell apart because you were juggling too many qualities at once 
 
 The recipe is almost embarrassingly simple. Multiply the two arrows entry by entry, then add up all those products. That single sum is the score. Everything that felt tangled a moment ago collapses into one number you can compare across candidates.
 
-> Before you touch the probe, call your shot: name the one candidate whose bar will top out.
+> Before you touch the probe: swing it all the way around. Does any bar ever drop below zero? Call it.
 
 Now turn the probe and watch. Point it at a candidate and its bar climbs. Turn away and the bar dies back down. That part feels right: the score is clearly tracking how closely the probe's direction lines up with each candidate's direction.
 

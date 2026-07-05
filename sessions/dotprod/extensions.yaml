@@ -5,21 +5,22 @@ lanes:
     - prompt: >-
         We called the dot product a similarity meter, and the breadcrumb
         question was: what is the cheapest fix that keeps the direction and
-        forgets the size? Walk me through why dividing each vector by its
-        own length (cosine similarity) is that fix, and show me a case
-        where the raw dot product and the cosine similarity would rank two
-        candidate vectors in a different order. Use the aligned /
+        forgets the size? I will tell you the fix I came up with; your job
+        is to stress-test it. Show me a case where the raw dot product and
+        my proposed fix would rank two candidate vectors in a different
+        order, and check whether my fix really keeps only the direction.
+        Use the aligned /
         perpendicular / opposed sign behavior from the sweep to check your
         example.
       whatGoodLooksLike: >-
         A good answer produces two vectors where a long-but-misaligned
         vector beats a short-but-aligned one on raw dot product, then
-        flips the ranking after normalizing, and explains the flip using
+        flips the ranking once the learner's fix removes the length, and explains the flip using
         length times projection rather than just asserting it.
     - prompt: >-
-        In "the score behind the song" we said scaled dot-product attention
-        is the similarity meter wearing a work uniform: query dot key,
-        divided by sqrt(d_k), fed into a softmax. Explain to me why the
+        The meter shows up in transformers as scaled dot-product attention,
+        next session's machine if you want a preview tonight: query dot
+        key, divided by sqrt(d_k), fed into a softmax. Explain to me why the
         divide-by-sqrt(d_k) step exists, what breaks in the softmax if you
         skip it, and how that connects back to the meter reading you get
         from turning the probe in the geometric sweep.
@@ -46,9 +47,9 @@ lanes:
       url: https://arxiv.org/abs/1706.03762
       hook: >-
         This is where tonight's meter gets its uniform. Read the attention
-        equation once with fresh eyes and you will see the exact
-        dot-product-divided-by-sqrt(d_k)-then-softmax we walked through,
-        now scoring every word against every other word at once.
+        equation once with fresh eyes and you will see tonight's meter in
+        its work uniform: a dot product, divided by sqrt(d_k), then
+        softmaxed, scoring every word against every other word.
     - title: >-
         Neural Machine Translation by Jointly Learning to Align and
         Translate
@@ -70,11 +71,12 @@ lanes:
       brief: >-
         In NumPy, make five short "document" vectors and one "query"
         vector, all with different lengths on purpose. Rank the documents
-        two ways: by raw dot product with the query, and by cosine
-        similarity. Print both rankings side by side. Finish line: at least
-        one document changes rank between the two lists, and you can point
-        to its length as the reason, proving the cheapest fix (normalize)
-        really does forget the size and keep only the direction.
+        two ways: by raw dot product with the query, and by the cheapest
+        fix you proposed for the breadcrumb. Print both rankings side by
+        side. Finish line: at least one document changes rank between the
+        two lists, and you can point to its length as the reason, proving
+        your proposed fix really does forget the size and keep only the
+        direction.
     - title: Turn the probe into a tiny attention layer
       brief: >-
         Using only NumPy, encode four short toy "words" as small random

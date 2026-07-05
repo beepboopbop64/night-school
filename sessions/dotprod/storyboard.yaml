@@ -121,55 +121,59 @@ beats:
     estimatedSeconds: 66
   - id: beat-03
     title: Name the machine you just used
-    narration: >-
-      Look at what your hands just learned. Point the probe along a
-      candidate and the sum climbs. Point it across and the sum dies to
-      zero. Point it against and the sum goes negative. One multiply and
-      add, and it behaves like a meter with agree, ignore, and oppose on the
-      dial. So say it plainly: the dot product is a similarity meter. Two
-      lists of numbers go in. One honest reading of alignment comes out. And
-      the reading tracks direction, because direction is all the sweep ever
-      changed.
-    visual: >-
-      [visual: connect | symbol-sense] The three probe positions replay as
+    narration: "Look at what your hands just learned. Point the probe along a
+      candidate and the sum climbs. Point it across and the sum dies to zero.
+      Point it against and the sum goes negative. One multiply and add, and it
+      behaves like a meter with agree, ignore, and oppose on the dial. So say it
+      plainly: the dot product is a similarity meter. Two lists of numbers go
+      in. One honest reading of alignment comes out. And the reading tracks
+      direction, because direction is all the sweep ever changed."
+    visual: "[visual: connect | symbol-sense] The three probe positions replay as
       stills: along, across, against, each with its frozen score. The stills
-      collapse into one lilac meter dial whose needle swings from oppose
-      through ignore to agree as the probe sweep replays. The aha sentence
-      trues up on screen, freehand to exact with a mint glow. A small
-      periwinkle mono annotation, a . b, sits on the score readout.
-    tracks: [video, page]
-    newIdea: >-
-      The multiply-and-add score behaves like a meter for alignment: agree
-      positive, across zero, oppose negative.
+      collapse into one lilac meter dial whose needle swings from oppose through
+      ignore to agree as the probe sweep replays. The aha sentence trues up on
+      screen, freehand to exact with a mint glow. A small lilac mono annotation,
+      a . b, sits on the score readout."
+    tracks:
+      - video
+      - page
+    newIdea: "The multiply-and-add score behaves like a meter for alignment: agree
+      positive, across zero, oppose negative."
     novelElements:
       - the meter dial
       - the annotation a . b
     onScreenText:
-      - "a . b"
-      - "agree  ignore  oppose"
-      - "The dot product is a similarity meter."
+      - a . b
+      - agree  ignore  oppose
+      - The dot product is a similarity meter.
     colors:
       probe: data.heat
       candidates: data.observed
       meter: data.params
+      annotation: data.params
       ahaTrueUp: data.fit
       background: bg
       labels: text
     majorReveal: true
+    misconceptionBeat: false
     estimatedSeconds: 36
   - id: beat-04
     title: Same meter, different aisle
     narration: "Time to close the loop. Rebuild the meter from memory: two arrows
-      go in, so what two operations turn them into the score? While you think,
-      one detour worth naming. Swap the songs for a job posting. Score yourself
-      against what the role wants: multiply the matched entries, add them up,
-      one number for the fit. Different aisle, same meter. The multiply-and-add
-      never asked what the numbers meant, and that is exactly why it travels."
-    visual: '[visual: dynamic-process | connect-to-reality] The retrieval prompt
-      holds as a card while the meter idles. The song columns swap for two
-      labeled "you" and "the role": Python hours, SQL reps, nights free, six
-      rows at full readable size with the whole frame to breathe; matched
-      entries multiply and pool into the same lilac readout on the same dial.'
+      go in, and which two operations turn them into a single score? While you
+      think, one detour worth naming. Swap the songs for a job posting. Score
+      yourself against what the role wants: multiply the matched entries, add
+      them up, one number for the fit. Different aisle, same meter. The
+      multiply-and-add never asked what the numbers meant, and that is exactly
+      why it travels."
+    visual: '[visual: dynamic-process | connect-to-reality] The card holds the
+      actual question, "Two arrows go in. What two operations turn them into the
+      score?", while the meter idles. The song columns swap for two labeled
+      "you" and "the role": Python hours, SQL reps, nights free, six rows at
+      full readable size with the whole frame to breathe; matched entries
+      multiply and pool into the same lilac readout on the same dial, and "two
+      arrows in, one number out" lands as the readout label. "Different aisle,
+      same meter" lands as the closing line.'
     tracks:
       - video
       - page
@@ -178,6 +182,7 @@ beats:
     novelElements:
       - the job-fit columns
     onScreenText:
+      - Two arrows go in. What two operations turn them into the score?
       - two arrows in, one number out
       - different aisle, same meter
     colors:
@@ -191,22 +196,24 @@ beats:
   - id: beat-04b
     title: The honest look
     narration: "Now the honest look, and guess before you watch. Double c1's
-      length exactly, leave its direction untouched, does the number double
-      too? It does, exactly. Double one input, double the output: the meter is
-      linear in each arrow you feed it. That clean scaling is the crack. Long
-      songs would win on sheer loudness, and padded resumes would win on sheer
-      length, because size passes straight through. For the walk home: what is
-      the cheapest fix that keeps the direction and forgets the size, now that
-      you know size scales the score in lockstep? Still up? The menu below has
-      three ways to keep going."
-    visual: '[visual: dynamic-process | connect-to-reality] A guess card holds
-      with one candidate outlined and the score readout hidden, asking whether
+      length exactly, leave its direction untouched, does the number double too?
+      It does, exactly. Double one input, double the output: the meter is linear
+      in each arrow you feed it. That clean scaling is the crack. Long songs
+      would win on sheer loudness, and padded resumes would win on sheer length,
+      because size passes straight through. For the walk home: what is the
+      cheapest fix that keeps the direction and forgets the size, now that you
+      know size scales the score in lockstep? Still up? The menu below has three
+      ways to keep going."
+    visual: "[visual: dynamic-process | connect-to-reality] A guess card holds
+      with one candidate outlined and the score readout hidden; the card carries
+      no header and instead poses the doubling question directly, asking whether
       doubling c1 doubles the number. Then that periwinkle candidate doubles in
       length while its direction holds still; its lilac score reads out at
-      exactly twice its former value, the two numbers stacked to show the clean
-      doubling; a small rose flag marks that size passed straight through. The
-      walk-home question lands as the closing card, and a quiet chip points to
-      the extensions menu on the page.'
+      exactly twice its former value, the two numbers stacked with no header so
+      the stacked 4.2 / x2 / 8.4 stands as the reveal itself; a small rose flag
+      marks that size passed straight through. The walk-home question lands as
+      the closing card under a single 'For the walk home' header, and a quiet
+      chip points to the extensions menu on the page."
     tracks:
       - video
       - page
@@ -217,7 +224,9 @@ beats:
       - the doubled arrow
       - the unearned-win flag
     onScreenText:
-      - keep the direction, forget the size
+      - Double c1. Same direction. Does the score double?
+      - For the walk home
+      - Keep the direction. Forget the size.
       - Still up?
     colors:
       candidates: data.observed
