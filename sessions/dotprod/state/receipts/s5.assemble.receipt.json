@@ -16,7 +16,7 @@
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "8c3018b4fa585ecb7616b2c3f9bb1af030f54343aa236a14d5b001cb85847515"
+      "sha256": "8f065034afc065db1ef35f1d56744334f4833e0279897e158b65821ba85739a1"
     },
     {
       "path": "extensions.yaml",
@@ -72,7 +72,7 @@
     },
     {
       "path": "notebook/lesson.ipynb",
-      "sha256": "4874b7b33d33bb0f3a2b31701ed701597cd2170699d182ea3f765701fea4a7fd"
+      "sha256": "a7f0b5c38bfdf5471748a86a5d163d376225c0a03713a611051e36804ef5307f"
     }
   ],
   "outputs": [
@@ -129,8 +129,8 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T02:14:47.801Z",
-  "endedAt": "2026-07-05T02:15:01.453Z",
+  "startedAt": "2026-07-05T02:29:36.456Z",
+  "endedAt": "2026-07-05T02:29:50.769Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
