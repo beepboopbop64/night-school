@@ -73,3 +73,8 @@
 {"ts":"2026-07-05T01:20:57.430Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-03","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.0220317,"summary":"DONE What did we just build?"}}
 {"ts":"2026-07-05T01:20:57.435Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-03","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
 {"ts":"2026-07-05T01:20:57.436Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-03","event":"node_completed","data":{"costUsd":0.0220317,"durationMs":7815}}
+{"ts":"2026-07-05T01:20:57.730Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-03","event":"commit","data":{"sha":"980175f88831d3b00d517b56377aa09154075321"}}
+{"ts":"2026-07-05T01:20:57.732Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-04","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-05T01:21:16.928Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-04","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.0380832,"summary":"DONE So the meter isn't perfect. What's it missing?"}}
+{"ts":"2026-07-05T01:21:16.934Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T01:21:16.935Z","runId":"run-2026-07-05T0120-bba6c8","node":"s4b.sec-beat-04","event":"node_completed","data":{"costUsd":0.0380832,"durationMs":19200}}
