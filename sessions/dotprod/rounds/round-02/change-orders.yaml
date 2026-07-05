@@ -1,0 +1,195 @@
+# Change orders — THE literal, editable execution input (§7.3).
+# Edit this YAML, then `harness round <session> --execute`: the file IS the plan.
+schemaVersion: 1
+session: dotprod
+round: round-02
+policy:
+  totalEstimateUsd: 8.57
+  capUsd: 25
+  autoExecute: false
+  pauseReasons:
+    - r02-n03 touches the spine
+orders:
+  - id: r02-n01
+    noteId: n01
+    note: >-
+      Jake: we jump around in our example. We go from songs to resumes and it feels confusing. Keep
+      the two-instances teaching but bridge the switch so it reads as the same meter deliberately
+      visiting a new aisle, not a topic change. Applies to the doc too.
+
+
+      Jake: the walk-home line reads out of place at the close. Rework the phrasing of the
+      cheapest-fix question so it lands naturally instead of feeling bolted on.
+    kind: change-order
+    targets:
+      - script#beat-04
+      - page/beat-04
+      - doc
+    changeType: content+structure+voice
+    interpretation: Add an explicit bridge when the example moves from songs to resumes so it reads as
+      the same meter visiting a new aisle (not a topic change), mirror the bridge in the doc, and
+      rework the walk-home / cheapest-fix prediction question so it lands naturally at the close
+      instead of feeling bolted on.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4f.beat-04
+      - s4a.beat-04
+      - s4c.doc
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 3.86
+    miss:
+      critic: vera
+      artifact: script/beat-04
+  - id: r02-n02
+    noteId: n02
+    note: >-
+      Jake: this looks really unprofessional. I kind of get what it's trying to say but it just
+      looks sloppy. The amber probe arrowhead is huge and malformed, the "probe 90" label collides
+      with the candidate arrows, and the whole thing reads rough. Make it precise and clean per the
+      brand: thin exact strokes, labels that never collide, arrowheads proportional.
+
+
+      Jake: the interactive never shows magnitude mattering or not. Tie it to the story: let me
+      change a candidate's length as well as the probe's direction so I can FEEL that direction
+      moves the score and length cheats it. That is the session's whole second conflict and the
+      interactive ignores it.
+
+
+      Jake: "Before you drag anything, call it:" does not make sense here. Call what? I am dragging
+      a visual arrow wherever I want and the bars just follow. If there is a prediction ask, make it
+      concrete (say which candidate will top out before you touch the probe) and make it fit an
+      interactive where dragging is the point. Rework this phrasing wherever it appears in the
+      session.
+    kind: change-order
+    targets:
+      - ix/dot-alignment
+      - storyboard#beat-02
+    changeType: visual+content+voice+scope
+    interpretation: Rebuild the dot-alignment interactive to brand spec (thin exact strokes,
+      proportional arrowhead on the amber probe, labels like 'probe 90' that never collide with
+      candidate arrows); add a candidate-length control alongside probe direction so the learner
+      feels direction move the score while length cheats it (the session's second conflict); and
+      replace the vague 'call it' / 'Before you drag anything, call it:' prompt with a concrete
+      prediction ask (name which candidate tops out before touching the probe), fixing this phrasing
+      wherever it appears.
+    alternative: Treat only the visual cleanup and prompt rewording as in-scope and defer the
+      length-control feature as a larger interactive rebuild.
+    confidence: medium
+    spineTouch: false
+    blastRadius:
+      - s4a.beat-02
+      - s4b.sec-beat-02
+      - s4b.dot-alignment
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 3.31
+    miss:
+      critic: iris
+      artifact: ix/dot-alignment
+  - id: r02-n03
+    noteId: n03
+    note: "@spine Jake: we don't build up why this matters. We just say \"we compare two numbered
+      lists\" which makes it seem trivial and we get right to \"this works\" without going through a
+      challenge. Build the problem first, 3b1b style: comparing things with many features is
+      genuinely hard, pose it as a puzzle the reader actually tries to solve before we hand them the
+      mechanism, and let the dot product arrive as the resolution. Maybe a light touch of why many
+      features make comparison painful (full curse-of-dimensionality treatment is probably too much,
+      use judgment). The aha should feel earned, not announced."
+    kind: change-order
+    targets:
+      - spine
+      - storyboard#beat-01
+      - storyboard#beat-02
+    changeType: structure+content+scope
+    interpretation: "SPINE-LEVEL, pauses the round for sign-off: restructure the opening so the
+      difficulty of comparing many-featured things is posed as a puzzle the reader actually attempts
+      before the dot product is handed over as the resolution (light, judgment-limited touch on why
+      many features make comparison painful), so the aha feels earned rather than announced."
+    confidence: high
+    spineTouch: true
+    blastRadius:
+      - s4a.beat-01
+      - s4a.beat-02
+      - s4b.sec-beat-01
+      - s4b.sec-beat-02
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 1.4
+    miss:
+      critic: petra
+      artifact: spine.md
+  - id: r02-n04
+    noteId: n04
+    note: '#style: pose the puzzle before the mechanism. Every session builds the problem until the
+      reader has genuinely tried it, then the answer lands as a resolution. Never open with "here is
+      the trick."'
+    kind: style-amendment
+    targets: []
+    interpretation: Draft a bible rule requiring every session to pose the problem as a puzzle the
+      reader has genuinely tried before revealing the mechanism, with the answer arriving as a
+      resolution and never opening with 'here is the trick.'
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: spine.md
+    styleAmendment:
+      rule: Pose the problem as a puzzle the reader has genuinely tried before revealing the mechanism,
+        and let the answer arrive as a resolution; never open with 'here is the trick.'
+      rationale: Generalizes the earned-aha structure across every session, making the arc a repeatable
+        pedagogical contract rather than a one-off fix to dotprod.
+  - id: r02-n05
+    noteId: n05
+    note: '#style: prediction prompts must be concrete asks the learner can actually answer ("say which
+      candidate tops out"), never vague imperatives like "call it."'
+    kind: style-amendment
+    targets: []
+    interpretation: Draft a bible rule requiring every prediction prompt to be a concrete ask the
+      learner can actually answer (e.g. 'say which candidate tops out'), never a vague imperative
+      like 'call it.'
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: ix/dot-alignment
+    styleAmendment:
+      rule: Write every prediction prompt as a concrete ask the learner can actually answer (e.g. 'say
+        which candidate tops out'), never a vague imperative like 'call it.'
+      rationale: Prediction prompts recur in interactives and storyboards across sessions; requiring
+        answerable specificity generalizes beyond this interactive's broken 'call it' line.
+  - id: r02-n06
+    noteId: n06
+    note: "#style: never switch analogy domains mid-session without an explicit bridge sentence naming
+      that it is the same structure in a new setting."
+    kind: style-amendment
+    targets: []
+    interpretation: Draft a bible rule forbidding any mid-session analogy-domain switch that lacks an
+      explicit bridge sentence naming that it is the same structure in a new setting.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: spine.md
+    styleAmendment:
+      rule: Never switch analogy domains mid-session without an explicit bridge sentence naming that it is
+        the same structure in a new setting.
+      rationale: Domain jumps read as topic changes whenever they happen; a mandatory bridge sentence
+        generalizes the fix beyond the dotprod songs-to-resumes switch.
