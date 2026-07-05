@@ -325,7 +325,7 @@
 					onmouseenter={() => (hovered = r.id)}
 					onmouseleave={() => (hovered = null)}
 					onclick={() => (selected = r.id)}
-					aria-label={`${r.id} score ${f1(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
+					aria-label={`${r.name} score ${f(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
 				>
 					<span class="row-id">{r.name}</span>
 					<span class="bar" style="--h: {barH}px">
@@ -344,7 +344,7 @@
 								: barH / 2 - segH(r.py) - (r.px < 0 ? segH(r.px) : 0)}px"
 						></span>
 					</span>
-					<span class="row-score mono" class:neg={r.score < 0}>{f1(r.score)}</span>
+					<span class="row-score mono" class:neg={r.score < 0}>{f(r.score)}</span>
 					{#if leaders.includes(r.id) && !tied}<span class="leads mono">leads</span>{/if}
 				</button>
 			{/each}
