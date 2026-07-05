@@ -6,7 +6,7 @@
   "fidelity": "half-trued",
   "nodes": {
     "s4f.beat-01": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-01.receipt.json"
@@ -54,9 +54,9 @@
       "receipt": "state/receipts/s4a.beat-04.receipt.json"
     },
     "s4b.sec-beat-01": {
-      "status": "running",
+      "status": "passed",
       "iter": 0,
-      "costUsd": 0.049641000000000005,
+      "costUsd": 0.3658182,
       "receipt": "state/receipts/s4b.sec-beat-01.receipt.json"
     },
     "s4b.sec-beat-02": {
@@ -152,6 +152,11 @@
       "node": "s6.screening",
       "reason": "gate failed: screening.vera-opus, screening.rounds-within-cap",
       "since": "2026-07-05T15:14:59.271Z"
+    },
+    {
+      "node": "s4f.beat-01",
+      "reason": "ElevenLabs TTS failed: HTTP 400 {\"detail\":{\"type\":\"validation_error\",\"code\":\"unsupported_model\",\"message\":\"Providing previous_text or next_text is not yet supported with the 'eleven_v3' model.\",\"status\":\"unsupported_model\",\"request_id\":\"4b7a8e93d88e43c78093b10a2b5f653f\",\"param\":\"model_id\"}}",
+      "since": "2026-07-05T23:33:15.873Z"
     },
     {
       "node": "s4f.beat-02",

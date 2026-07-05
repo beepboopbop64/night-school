@@ -8,4 +8,9 @@ A song isn't one thing you can measure with a single ruler. It's loud, it's fast
 
 Try answering it first; it's genuinely harder than it sounds. You can't just check if the two lists agree, because they're not the same kind of thing, and even similar things rarely match on every quality at once. You need some way to let the qualities that matter count more, let the ones that don't cancel out, and still end up with one clean number at the end.
 
+<details class="reveal">
+<summary>Made your attempt?</summary>
+There's a specific move that works: pair up matching qualities, multiply each pair, and add the results into one running total. Agreeing hard on a quality adds a lot; pulling in opposite directions can subtract. The next section builds exactly that, one pair of arrows at a time.
+</details>
+
 Here's the payoff for pushing through the discomfort: whatever answer you land on, some version of it runs underneath a huge share of modern machine learning. Recommendation, search, even how language models decide which words relate to which. One trick, endlessly reused, and you're about to build it from scratch.
