@@ -625,3 +625,12 @@
 {"ts":"2026-07-05T08:11:28.730Z","runId":"run-2026-07-05T0736-2bc703","node":"s4e.notebook","agent":"notebook-author","event":"agent_call","data":{"attempt":1,"costUsd":0.39540929999999996,"summary":"DONE 16"}}
 {"ts":"2026-07-05T08:11:28.983Z","runId":"run-2026-07-05T0736-2bc703","node":"s4e.notebook","event":"gate_result","data":{"passed":true,"checks":[{"id":"nb.json","pass":true},{"id":"nb.numpy-only","pass":true},{"id":"nb.executes","pass":true}]}}
 {"ts":"2026-07-05T08:11:28.984Z","runId":"run-2026-07-05T0736-2bc703","node":"s4e.notebook","event":"node_completed","data":{"costUsd":0.39540929999999996,"durationMs":136863}}
+{"ts":"2026-07-05T08:11:29.358Z","runId":"run-2026-07-05T0736-2bc703","node":"s4e.notebook","event":"commit","data":{"sha":"5087ad0ee895d5e55c8bce6f4a4bb4d21e0ceae1"}}
+{"ts":"2026-07-05T08:11:29.360Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"node_started","data":{"reason":"inputs-renamed"}}
+{"ts":"2026-07-05T08:11:31.461Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-01.mp4","index":0,"targetSeconds":24.4}}
+{"ts":"2026-07-05T08:11:33.899Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-02.mp4","index":1,"targetSeconds":52.665}}
+{"ts":"2026-07-05T08:11:35.701Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-03.mp4","index":2,"targetSeconds":38.8}}
+{"ts":"2026-07-05T08:11:37.190Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-04.mp4","index":3,"targetSeconds":31.76}}
+{"ts":"2026-07-05T08:11:39.300Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-04b.mp4","index":4,"targetSeconds":46.32}}
+{"ts":"2026-07-05T08:11:46.752Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.av-drift","pass":true},{"id":"assemble.captions-written","pass":true},{"id":"assemble.aha-consistency","pass":true},{"id":"assemble.lchecks-rerun","pass":true},{"id":"assemble.token-lint","pass":true},{"id":"assemble.site-built","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
+{"ts":"2026-07-05T08:11:46.754Z","runId":"run-2026-07-05T0736-2bc703","node":"s5.assemble","event":"node_completed","data":{"costUsd":0,"durationMs":17350}}

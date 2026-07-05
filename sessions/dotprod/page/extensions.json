@@ -4,43 +4,43 @@
   "lanes": {
     "llm": [
       {
-        "prompt": "Tonight's meter is the dot product: it reads out alignment times length, \"the score behind the song.\" Ask the LLM to build you two vectors that point in the exact same direction but give wildly different dot-product readings, and to explain in the meter's own terms why the number moved even though the \"song\" didn't change. Then push it on the breadcrumb question: what is the cheapest fix that keeps the direction and forgets the size?",
-        "whatGoodLooksLike": "A good answer produces two same-direction, different-length vectors, shows the dot product scaling with length, and names cosine similarity (dividing by the norms) as the cheap fix, not a new machine."
+        "prompt": "We called the dot product a similarity meter, and the breadcrumb question was: what is the cheapest fix that keeps the direction and forgets the size? Walk me through why dividing each vector by its own length (cosine similarity) is that fix, and show me a case where the raw dot product and the cosine similarity would rank two candidate vectors in a different order. Use the aligned / perpendicular / opposed sign behavior from the sweep to check your example.",
+        "whatGoodLooksLike": "A good answer produces two vectors where a long-but-misaligned vector beats a short-but-aligned one on raw dot product, then flips the ranking after normalizing, and explains the flip using length times projection rather than just asserting it."
       },
       {
-        "prompt": "In \"Name the machine you just used\" you learned that scaled dot-product attention is a bank of similarity meters run in parallel, one per query-key pair. Ask the LLM to walk through why Vaswani et al. divide by sqrt(d_k) before the softmax, using the \"meter\" and \"sweep\" vocabulary from tonight: what reading is the scaling correcting for, and is it the same problem as the breadcrumb question or a different one?",
-        "whatGoodLooksLike": "A strong answer distinguishes the two fixes: sqrt(d_k) tames the variance of dot products as dimension grows, while normalizing/cosine similarity removes vector length entirely, and explains why attention keeps some size information instead of fully normalizing."
+        "prompt": "In \"the score behind the song\" we said scaled dot-product attention is the similarity meter wearing a work uniform: query dot key, divided by sqrt(d_k), fed into a softmax. Explain to me why the divide-by-sqrt(d_k) step exists, what breaks in the softmax if you skip it, and how that connects back to the meter reading you get from turning the probe in the geometric sweep.",
+        "whatGoodLooksLike": "A good answer talks about dot products growing with dimension so the pre-softmax scores get too large and saturate the softmax into near one-hot outputs, and ties that growth back to the length-times-projection picture rather than treating sqrt(d_k) as a magic constant."
       },
       {
-        "prompt": "Recreate \"Turn the probe and feel it\" verbally: ask the LLM to narrate what happens to a dot-product reading as one vector is rotated through 360 degrees against a fixed probe, in the same sign language this session used, aligned positive, perpendicular zero, opposed negative, and then ask it where a reader would get fooled if they mistook a long vector for a \"more similar\" one.",
-        "whatGoodLooksLike": "Look for a clean sign trace across the sweep plus an explicit warning that a big dot product can mean \"longer,\" not \"more aligned,\" which is exactly the meter's blind spot named in the last beat."
+        "prompt": "I just named the machine I've been using all along: the dot product. Give me three places outside language models where the same meter shows up under a different name in the same aisle, like we did in \"same meter, different aisle.\" For each one tell me what gets treated as query and what gets treated as key, and what a high score means in that domain.",
+        "whatGoodLooksLike": "A good answer names concrete domains (recommendation matching, document search, image embedding lookup, and similar) and for each one correctly identifies the two vectors being compared and states what a high score physically means there, not just \"similarity.\""
       }
     ],
     "papers": [
       {
-        "title": "3Blue1Brown, \"Dot products and duality\"",
-        "url": "https://www.3blue1brown.com/lessons/dot-products",
-        "hook": "This is the visual grammar your sweep echoed tonight, projection times length, watch it once as animation instead of a fixed frame and the sign flips in \"Turn the probe and feel it\" will click harder."
-      },
-      {
-        "title": "Bahdanau, Cho, Bengio, \"Neural Machine Translation by Jointly Learning to Align and Translate\"",
-        "url": "https://arxiv.org/abs/1409.0473",
-        "hook": "Before anyone wrote the score as a dot product, this paper shipped a learned alignment score doing the same job by hand, read it to see \"the score behind the song\" invented from scratch, one layer before it got simplified into the meter you used tonight."
-      },
-      {
-        "title": "Vaswani et al., \"Attention Is All You Need\"",
+        "title": "Attention Is All You Need",
         "url": "https://arxiv.org/abs/1706.03762",
-        "hook": "This is \"the machine you just named,\" in full: query-key dot products divided by sqrt(d_k) feeding a softmax, read section 3.2.1 to see your meter running at scale, then decide for yourself whether the scaling is the same fix as tonight's breadcrumb question or a cousin of it."
+        "hook": "This is where tonight's meter gets its uniform. Read the attention equation once with fresh eyes and you will see the exact dot-product-divided-by-sqrt(d_k)-then-softmax we walked through, now scoring every word against every other word at once."
+      },
+      {
+        "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "url": "https://arxiv.org/abs/1409.0473",
+        "hook": "Before the dot product got the job, alignment scoring was done a different way. Reading this next to tonight's session shows you that the similarity meter is the idea; the dot product is just the cheapest gauge anyone found for it."
+      },
+      {
+        "title": "Dot products and duality",
+        "url": "https://www.3blue1brown.com/lessons/dot-products",
+        "hook": "This is the geometric grammar underneath the sweep you did tonight: projection times length, with the same aligned-positive, perpendicular-zero, opposed-negative sign behavior, drawn out instead of described."
       }
     ],
     "projects": [
       {
-        "title": "Build the cheapest fix",
-        "brief": "In NumPy, make three word-ish vectors: two pointing the same direction but different lengths, one pointing a different direction. Compute raw dot products for all pairs, then compute cosine similarity for the same pairs. Finish line: a printed table showing the raw dot product ranking the same-direction pair with different lengths as \"more similar\" than it should be, while cosine similarity correctly reports the two same-direction vectors as near-identical regardless of length, the cheap fix caught on camera."
+        "title": "Build the honest-look ranking flip",
+        "brief": "In NumPy, make five short \"document\" vectors and one \"query\" vector, all with different lengths on purpose. Rank the documents two ways: by raw dot product with the query, and by cosine similarity. Print both rankings side by side. Finish line: at least one document changes rank between the two lists, and you can point to its length as the reason, proving the cheapest fix (normalize) really does forget the size and keep only the direction."
       },
       {
-        "title": "Scale the meter bank",
-        "brief": "Using NumPy, hand-build a tiny scaled dot-product attention over 4 to 6 toy word vectors (random or one-hot-ish): compute raw QK^T, then QK^T / sqrt(d_k), run both through softmax, and compare the two attention weight matrices. Finish line: show that the unscaled version produces near one-hot, overconfident attention weights as d_k grows while the scaled version stays spread out, proof that \"Name the machine you just used\" needs its own fix, distinct from cosine similarity."
+        "title": "Turn the probe into a tiny attention layer",
+        "brief": "Using only NumPy, encode four short toy \"words\" as small random vectors, pick one as the query, and compute scaled dot-product attention (query dot each key, divide by sqrt(d_k), softmax) over the other three as keys and values. Finish line: print the attention weights and confirm the word whose vector you deliberately made most aligned with the query gets the highest weight, so you can watch the similarity meter drive the machine you named tonight."
       }
     ]
   }

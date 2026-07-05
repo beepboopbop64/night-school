@@ -129,89 +129,85 @@ One honest reading of alignment comes out.
 And the reading tracks direction, because direction is all the sweep ever changed.
 
 33
-00:01:55.865 --> 00:01:57.673
+00:01:55.865 --> 00:01:57.600
 Time to close the loop.
 
 34
-00:01:57.673 --> 00:02:01.447
+00:01:57.600 --> 00:02:01.221
 Rebuild the meter from memory: two arrows go in,
 
 35
-00:02:01.447 --> 00:02:05.220
+00:02:01.221 --> 00:02:04.842
 so what two operations turn them into the score?
 
 36
-00:02:05.220 --> 00:02:10.488
-While you think, keep the meter running and walk it one aisle over.
+00:02:04.842 --> 00:02:07.935
+While you think, one detour worth naming.
 
 37
-00:02:10.488 --> 00:02:16.620
-Same needle, same recipe, we just point it at a job posting instead of a song.
+00:02:07.935 --> 00:02:10.425
+Swap the songs for a job posting.
 
 38
-00:02:16.620 --> 00:02:22.359
+00:02:10.425 --> 00:02:15.932
 Score yourself against what the role wants: multiply the matched entries,
 
 39
-00:02:22.359 --> 00:02:25.189
+00:02:15.932 --> 00:02:18.648
 add them up, one number for the fit.
 
 40
-00:02:25.189 --> 00:02:30.063
-Nothing about the meter changed, only the shelf it is reading.
+00:02:18.648 --> 00:02:20.760
+Different aisle, same meter.
 
 41
-00:02:30.063 --> 00:02:34.466
+00:02:20.760 --> 00:02:24.985
 The multiply-and-add never asked what the numbers meant,
 
 42
-00:02:34.466 --> 00:02:37.218
+00:02:24.985 --> 00:02:27.625
 and that is exactly why it travels.
 
 43
-00:02:37.218 --> 00:02:40.991
+00:02:27.625 --> 00:02:31.439
 Now the honest look, and guess before you watch.
 
 44
-00:02:40.991 --> 00:02:44.214
-If a candidate's numbers just get bigger,
+00:02:31.439 --> 00:02:38.271
+Double c1's length exactly, leave its direction untouched, does the number double too?
 
 45
-00:02:44.214 --> 00:02:48.302
-same direction, longer arrow, does its score change?
+00:02:38.271 --> 00:02:39.622
+It does, exactly.
 
 46
-00:02:48.302 --> 00:02:49.089
-It climbs.
+00:02:39.622 --> 00:02:46.217
+Double one input, double the output: the meter is linear in each arrow you feed it.
 
 47
-00:02:49.089 --> 00:02:53.491
-The direction never moved, and the score climbed anyway.
+00:02:46.217 --> 00:02:48.759
+That clean scaling is the crack.
 
 48
-00:02:53.491 --> 00:03:00.174
-Long songs would win on sheer loudness, and padded resumes would win on sheer length.
+00:02:48.759 --> 00:02:55.512
+Long songs would win on sheer loudness, and padded resumes would win on sheer length,
 
 49
-00:03:00.174 --> 00:03:06.306
-So the meter has a gap with a shape: it cannot tell direction apart from size.
+00:02:55.512 --> 00:02:58.452
+because size passes straight through.
 
 50
-00:03:06.306 --> 00:03:09.844
-That is the thread to pull for the walk home.
+00:02:58.452 --> 00:03:05.603
+For the walk home: what is the cheapest fix that keeps the direction and forgets the size,
 
 51
-00:03:09.844 --> 00:03:12.517
-If the score keeps rewarding size,
+00:03:05.603 --> 00:03:09.734
+now that you know size scales the score in lockstep?
 
 52
-00:03:12.517 --> 00:03:18.098
-what is the cheapest fix that keeps the direction and forgets the size?
-
-53
-00:03:18.098 --> 00:03:18.806
+00:03:09.734 --> 00:03:10.449
 Still up?
 
-54
-00:03:18.806 --> 00:03:22.265
+53
+00:03:10.449 --> 00:03:13.945
 The menu below has three ways to keep going.

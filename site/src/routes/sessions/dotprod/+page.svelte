@@ -6,6 +6,7 @@
 	import IxBeat02 from '../../../../../sessions/dotprod/page/interactives/DotAlignment.svelte';
 	import SecBeat03 from '../../../../../sessions/dotprod/page/sections/beat-03.md';
 	import SecBeat04 from '../../../../../sessions/dotprod/page/sections/beat-04.md';
+	import SecBeat04b from '../../../../../sessions/dotprod/page/sections/beat-04b.md';
 	import extensionsData from '../../../../../sessions/dotprod/page/extensions.json';
 	import chaptersData from '../../../../../sessions/dotprod/page/video.json';
 
@@ -75,6 +76,9 @@
 	</section>
 	<section class="prose" aria-label="beat-04" id="sec-beat-04">
 		<SecBeat04 />
+	</section>
+	<section class="prose" aria-label="beat-04b" id="sec-beat-04b">
+		<SecBeat04b />
 	</section>
 
 	<section class="extensions" aria-label="extensions">
