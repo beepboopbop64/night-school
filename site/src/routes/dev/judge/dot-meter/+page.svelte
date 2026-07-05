@@ -36,6 +36,18 @@
 	const tied = $derived(leaders.length > 1);
 	const sel = $derived(rows.find((r) => r.id === selected) ?? rows[0]);
 
+	// The mirror lesson: c1 aims truest but is too short to win.
+	const shortChanged = $derived.by(() => {
+		const c1 = rows[0];
+		if (lengthC1 >= 0.95 || leaders.includes('c1')) return false;
+		return rows.every(
+			(r) =>
+				r.id === 'c1' ||
+				Math.abs(((r.angle - probeAngle + 540) % 360) - 180) >
+					Math.abs(((c1.angle - probeAngle + 540) % 360) - 180)
+		);
+	});
+
 	// The overtake: c1 stretched AND leading over a candidate that out-aligns it.
 	const cheatActive = $derived.by(() => {
 		const c1 = rows[0];
@@ -50,10 +62,10 @@
 	});
 
 	// --- Arena geometry (SVG units) ---
-	const S = 340; // viewBox square
+	const S = 400; // viewBox square
 	const CX = S / 2;
 	const CY = S / 2;
-	const R = 118; // unit arrow length in px
+	const R = 92; // unit arrow length in px; 2.0 x R stays inside the frame
 	const pt = (x: number, y: number) => ({ px: CX + x * R, py: CY - y * R });
 
 	function arrow(x: number, y: number) {
@@ -124,7 +136,7 @@
 
 	// Bar scale: scores live in [-2, 2] once c1 can stretch.
 	const BARMAX = 2.05;
-	const barH = 92;
+	const barH = 110;
 	const segH = (v: number) => (Math.abs(v) / BARMAX) * (barH / 2);
 
 	const probeTip = $derived(pt(probe.x, probe.y));
@@ -165,10 +177,23 @@
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
 
+				<!-- coordinates made visible: dashed drops for probe and selected -->
+				{#each [{ x: probe.x, y: probe.y, cls: 'p' }, { x: sel.x, y: sel.y, cls: 'c' }] as d (d.cls)}
+					{@const tip = pt(d.x, d.y)}
+					<line x1={tip.px} y1={tip.py} x2={tip.px} y2={CY} class="drop {d.cls}" />
+					<line x1={tip.px} y1={tip.py} x2={CX} y2={tip.py} class="drop {d.cls}" />
+					<text x={tip.px} y={CY + (d.cls === 'p' ? 13 : 24)} class="coord mono {d.cls}">{f(d.x)}</text>
+					<text x={CX - (d.cls === 'p' ? 4 : 30)} y={tip.py - 3} class="coord mono {d.cls}" text-anchor="end">{f(d.y)}</text>
+				{/each}
+
 				<!-- candidates -->
 				{#each rows as r (r.id)}
 					{@const a = arrow(r.x, r.y)}
-					{@const lp = labelPos(r.angle, r.len)}
+					{@const near = Math.abs(((r.angle - probeAngle + 540) % 360) - 180) < 14 && Math.abs(r.len - 1) < 0.2}
+					{@const lp0 = labelPos(r.angle, r.len, 24)}
+					{@const lp = near
+						? { px: lp0.px + 20 * Math.cos(rad(r.angle - 90)), py: lp0.py - 20 * Math.sin(rad(r.angle - 90)) }
+						: lp0}
 					<g
 						class="cand"
 						class:sel={selected === r.id}
@@ -204,13 +229,10 @@
 				<!-- probe on top -->
 				{#if true}
 					{@const a = arrow(probe.x, probe.y)}
-					{@const mid = pt(probe.x * 0.55, probe.y * 0.55)}
+					{@const plp = labelPos(probeAngle, 1, 42)}
 					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
 					<polygon points={a.head} class="probe-fill" />
-					<text
-						x={mid.px + 14 * Math.cos(rad(probeAngle + 90))}
-						y={mid.py - 14 * Math.sin(rad(probeAngle + 90))}
-						class="lab probe-lab mono">probe</text>
+					<text x={plp.px} y={plp.py} class="lab probe-lab mono">probe</text>
 				{/if}
 				<circle
 					cx={probeTip.px}
@@ -258,14 +280,21 @@
 						></span>
 					</span>
 					<span class="row-score mono" class:neg={r.score < 0}>{f1(r.score)}</span>
+					{#if leaders.includes(r.id) && !tied}<span class="leads mono">leads</span>{/if}
 				</button>
 			{/each}
 			{#if tied}<span class="tie mono">tied</span>{/if}
 			{#if cheatActive}
 				<span class="flag mono">⚑ size passed straight through</span>
+			{:else if shortChanged}
+				<span class="flag short mono">⚑ truest direction, too short to win</span>
 			{/if}
 		</div>
 	</div>
+	<p class="hint">
+		Click any bar or arrow to inspect it. The dashed lines are that arrow's two
+		entries, the numbers the recipe multiplies.
+	</p>
 
 	<div class="strip" aria-live="polite">
 		<span class="strip-lead">the whole recipe, live for <b class="mono">{sel.id}</b>:</span>
@@ -332,10 +361,21 @@
 	.meter { flex: 0 0 auto; display: flex; gap: 0.9rem; align-items: flex-end; align-self: center; padding: 1.6rem 0.2rem 0.4rem; position: relative; }
 	.row {
 		display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
-		background: none; border: none; padding: 0.3rem 0.35rem; border-radius: 8px; cursor: pointer;
+		background: none; padding: 0.3rem 0.35rem; border-radius: 8px; cursor: pointer;
 		color: var(--color-text);
+		border: 1px solid color-mix(in oklab, var(--color-text) 10%, transparent);
 	}
-	.row.sel { background: color-mix(in oklab, var(--color-text) 6%, transparent); }
+	.row:hover { border-color: var(--color-brand-mint); }
+	.row.sel { background: color-mix(in oklab, var(--color-text) 6%, transparent); border-color: var(--data-observed); }
+	.leads { font-size: 0.6rem; color: var(--color-brand-mint); letter-spacing: 0.06em; }
+	.drop { stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.55; }
+	.drop.p { stroke: var(--data-heat); }
+	.drop.c { stroke: var(--data-observed); }
+	.coord { font-size: 10px; }
+	.coord.p { fill: var(--data-heat); }
+	.coord.c { fill: var(--data-observed); }
+	.flag.short { color: var(--data-heat); }
+	.hint { margin: 0.7rem 0 0; font-size: 0.78rem; opacity: 0.55; }
 	.row.leading .row-id { color: var(--color-brand-mint); }
 	.row-id { font-size: 0.8rem; opacity: 0.85; }
 	.row-score { font-size: 0.85rem; color: var(--data-params); }
