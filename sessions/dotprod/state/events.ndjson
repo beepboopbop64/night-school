@@ -1,0 +1,6 @@
+{"ts":"2026-07-05T00:16:33.632Z","runId":"run-2026-07-05T0016-950636","node":"s4f.beat-01","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-05T00:16:37.446Z","runId":"run-2026-07-05T0016-950636","node":"s4f.beat-01","event":"needs_jake","data":{"reason":"ENOENT: no such file or directory, open 'C:\\Users\\jaker\\Desktop\\projects\\harnesses\\lessons\\shared\\cache\\tts\\XrExE9yKIg1WjnnlVkGX\\dc1a82ae48814d2bb392d8d06ca043df1eae4d21d60450d5518d5974d5938dff.mp3.tmp'"}}
+{"ts":"2026-07-05T00:16:57.230Z","runId":"run-2026-07-05T0016-e823dc","node":"s4f.beat-01","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-05T00:17:01.132Z","runId":"run-2026-07-05T0016-e823dc","node":"s4f.beat-01","event":"artifact_written","data":{"path":"video/audio/beat-01.mp3","audioSeconds":22.523356,"cacheHit":false,"textHash":"dc1a82ae48814d2bb392d8d06ca043df1eae4d21d60450d5518d5974d5938dff"}}
+{"ts":"2026-07-05T00:17:01.136Z","runId":"run-2026-07-05T0016-e823dc","node":"s4f.beat-01","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.safe-lint","pass":true},{"id":"tts.audio-written","pass":true}]}}
+{"ts":"2026-07-05T00:17:01.137Z","runId":"run-2026-07-05T0016-e823dc","node":"s4f.beat-01","event":"node_completed","data":{"costUsd":0,"durationMs":3904}}

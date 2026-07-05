@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "session": "dotprod",
+  "stage": "S4f",
+  "round": 0,
+  "fidelity": "half-trued",
+  "nodes": {
+    "s4f.beat-01": {
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/s4f.beat-01.receipt.json"
+    },
+    "s4f.beat-02": {
+      "status": "pending"
+    },
+    "s4f.beat-03": {
+      "status": "pending"
+    },
+    "s4f.beat-04": {
+      "status": "pending"
+    },
+    "s4a.beat-01": {
+      "status": "pending"
+    },
+    "s4a.beat-02": {
+      "status": "pending"
+    },
+    "s4a.beat-03": {
+      "status": "pending"
+    },
+    "s4a.beat-04": {
+      "status": "pending"
+    },
+    "s4b.sec-beat-01": {
+      "status": "pending"
+    },
+    "s4b.sec-beat-02": {
+      "status": "pending"
+    },
+    "s4b.sec-beat-03": {
+      "status": "pending"
+    },
+    "s4b.sec-beat-04": {
+      "status": "pending"
+    },
+    "s4b.dot-alignment": {
+      "status": "pending"
+    },
+    "s4c.doc": {
+      "status": "pending"
+    },
+    "s4d.extensions": {
+      "status": "pending"
+    },
+    "s4e.notebook": {
+      "status": "pending"
+    },
+    "s5.assemble": {
+      "status": "pending"
+    },
+    "s6.screening": {
+      "status": "pending"
+    },
+    "s7.packet": {
+      "status": "pending"
+    }
+  },
+  "needsJake": []
+}
