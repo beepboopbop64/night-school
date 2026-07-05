@@ -504,3 +504,7 @@
 {"ts":"2026-07-05T05:50:50.893Z","runId":"round-2026-07-05T0425-8d13f1","node":"s8.round-02","event":"node_completed","data":{"costUsd":11.68,"failedOrders":[],"proofViolations":0,"runFailed":[]}}
 {"ts":"2026-07-05T06:32:06.488Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","event":"node_started","data":{"notes":5}}
 {"ts":"2026-07-05T06:33:12.924Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","agent":"triage","event":"agent_call","data":{"costUsd":0.220325,"rows":5}}
+{"ts":"2026-07-05T06:35:25.371Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","agent":"showrunner","event":"agent_call","data":{"orderId":"r03-n01","filesChanged":["page/sections/beat-04.md","storyboard.yaml","storyboard.yaml#beat-04"],"costUsd":0.37705}}
+{"ts":"2026-07-05T06:35:40.044Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","agent":"showrunner","event":"agent_call","data":{"orderId":"r03-n02","filesChanged":["page/sections/beat-01.md"],"costUsd":0.05516}}
+{"ts":"2026-07-05T06:38:19.352Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","agent":"showrunner","event":"agent_call","data":{"orderId":"r03-n03","filesChanged":["page/interactives/dot-alignment.yaml"],"costUsd":0.362}}
+{"ts":"2026-07-05T06:38:36.711Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","agent":"showrunner","event":"agent_call","data":{"orderId":"r03-n04","filesChanged":["extensions.yaml"],"costUsd":0.07925}}

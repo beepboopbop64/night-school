@@ -159,44 +159,47 @@ beats:
     estimatedSeconds: 36
   - id: beat-04
     title: What the meter gets wrong
-    narration: >-
-      Time to close the loop. Rebuild the meter from memory: two arrows go
-      in, so what two operations turn them into the score? While you think,
-      one detour worth naming. Swap the songs for a job posting. Score
-      yourself against what the role wants: multiply the matched entries,
-      add them up, one number for the fit. Different aisle, same meter. The
-      multiply-and-add never asked what the numbers meant, and that is
-      exactly why it travels. Now the honest look, and guess before you
-      watch. If a candidate's numbers just get bigger, same direction,
-      longer arrow, does its score change? It climbs. The direction never
-      moved, and the score climbed anyway. Long songs would win on sheer
-      loudness, and padded resumes would win on sheer length. For the walk
-      home: what is the cheapest fix that keeps the direction and forgets
-      the size? Still up? The menu below has three ways to keep going.
-    visual: >-
-      [visual: dynamic-process | connect-to-reality] The retrieval prompt
+    narration: "Time to close the loop. Rebuild the meter from memory: two arrows
+      go in, so what two operations turn them into the score? While you think,
+      one detour worth naming. Swap the songs for a job posting. Score yourself
+      against what the role wants: multiply the matched entries, add them up,
+      one number for the fit. Different aisle, same meter. The multiply-and-add
+      never asked what the numbers meant, and that is exactly why it travels.
+      Now the honest look, and guess before you watch. Double c1's length
+      exactly, leave its direction untouched, does the number double too? It
+      does, exactly. Double one input, double the output: the meter is linear in
+      each arrow you feed it. That clean scaling is the crack. Long songs would
+      win on sheer loudness, and padded resumes would win on sheer length,
+      because size passes straight through. For the walk home: what is the
+      cheapest fix that keeps the direction and forgets the size, now that you
+      know size scales the score in lockstep? Still up? The menu below has three
+      ways to keep going."
+    visual: '[visual: dynamic-process | connect-to-reality] The retrieval prompt
       holds as a card while the meter idles. The song columns swap for two
-      labeled "you" and "the role": Python hours, SQL reps, nights free;
-      matched entries multiply and pool into the same lilac readout on the
-      same dial. A guess card holds with one candidate outlined and the
-      score readout hidden. Then that periwinkle candidate stretches longer;
-      its lilac score climbs while its direction holds still; a small rose
-      flag marks the unearned win. The walk-home question lands as the
-      closing card,
-      and a quiet chip points to the extensions menu on the page.
-    tracks: [video, page]
-    newIdea: >-
-      The raw score rewards length as well as direction, and that gap is
-      the next session's opening.
+      labeled "you" and "the role": Python hours, SQL reps, nights free; matched
+      entries multiply and pool into the same lilac readout on the same dial. A
+      guess card holds with one candidate outlined and the score readout hidden,
+      asking whether doubling c1 doubles the number. Then that periwinkle
+      candidate doubles in length while its direction holds still; its lilac
+      score reads out at exactly twice its former value, the two numbers stacked
+      to show the clean doubling; a small rose flag marks that size passed
+      straight through. The walk-home question lands as the closing card, and a
+      quiet chip points to the extensions menu on the page.'
+    tracks:
+      - video
+      - page
+    newIdea: The meter is linear in each input, so doubling one arrow exactly
+      doubles the score, and that clean scaling is the crack the cheapest fix
+      will exploit.
     novelElements:
       - the job-fit columns
-      - the stretched candidate
+      - the doubled arrow
       - the unearned-win flag
     onScreenText:
-      - "two arrows in, one number out"
-      - "different aisle, same meter"
-      - "keep the direction, forget the size"
-      - "Still up?"
+      - two arrows in, one number out
+      - different aisle, same meter
+      - keep the direction, forget the size
+      - Still up?
     colors:
       candidates: data.observed
       score: data.params
@@ -204,9 +207,10 @@ beats:
       background: bg
       labels: text
     predictionPrompt:
-      prompt: "If a candidate's numbers just get bigger, same direction, longer
-        arrow, does its score change?"
-      expectedWrongAnswer: "No: the direction is the same, so the similarity
-        score stays the same."
+      prompt: If you double c1's length exactly, same direction, just twice as long,
+        does the number double too?
+      expectedWrongAnswer: "No: stretching one arrow nudges the number up in some
+        messy way, not a clean doubling."
     majorReveal: true
-    estimatedSeconds: 58
+    misconceptionBeat: false
+    estimatedSeconds: 70

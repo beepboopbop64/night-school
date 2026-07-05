@@ -4,9 +4,9 @@ Let's stress-test the meter we just rebuilt. Same recipe every time: multiply ma
 
 That portability is the whole appeal. It's also where the trouble starts.
 
-> If a candidate's numbers just get bigger, same direction, longer arrow, does its score change?
+> If you double a candidate's arrow exactly, same direction, just twice as long, does the number double too?
 
-It climbs. Every single time. Stretch a candidate's arrow without changing its direction at all, an exaggerated "5 years" where the truth was "3," an inflated confidence score, and the meter goes up anyway. The direction, the thing that was supposed to represent fit, never moved. The score climbed on size alone.
+It does, exactly. Double the arrow, double the score, every single time. The meter is linear in each input: scale one arrow by some amount and the number scales by that same amount. An exaggerated "5 years" where the truth was "3," an inflated confidence score, and the meter climbs in lockstep. The direction, the thing that was supposed to represent fit, never moved. The score climbed on size alone.
 
 Same story back in the song aisle: a longer track, more notes, more everything, racks up a bigger score even if its taste in genres is identical to a shorter one. Long wins on sheer loudness. Padded resumes win on sheer length. The meter we built to measure alignment is quietly rewarding volume instead, and it never tells you which one did the work.
 

@@ -16,9 +16,10 @@ lanes:
         cosine similarity (dividing by the norms) as the cheap fix, not a
         new machine.
     - prompt: >-
-        In "Name the machine you just used" you learned that scaled
-        dot-product attention is a bank of similarity meters run in
-        parallel, one per query-key pair. Ask the LLM to walk through why
+        Here is next session's machine, if you want a preview
+        tonight: scaled dot-product attention is a bank of similarity
+        meters run in parallel, one per query-key pair. Ask the LLM to
+        walk through why
         Vaswani et al. divide by sqrt(d_k) before the softmax, using the
         "meter" and "sweep" vocabulary from tonight: what reading is the
         scaling correcting for, and is it the same problem as the

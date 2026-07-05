@@ -14,7 +14,8 @@ interactive:
     candidate, die to zero across it, and go negative against it. The sign
     flip lands in the hands before any words name it. Then, dragging c1's
     length handle while its direction holds, the learner feels the score
-    climb on length alone: magnitude cheats the meter that direction earns.
+    climb on length alone until poorly aligned c1 overtakes a better
+    aligned candidate: magnitude cheats the meter that direction earns.
   visual: >-
     [visual: covary | dynamic-concept] All arrows are drawn with thin exact
     strokes and arrowheads sized in proportion to their shaft length; the
@@ -29,11 +30,11 @@ interactive:
     its direction holds, so the learner can watch a shorter or longer
     candidate score differently at the same angle. Under each candidate sits
     a lilac score bar with a mono numeric readout of the dot product,
-    rounded to whole numbers and kept small and low-contrast so the bars
+    rounded to one decimal place and kept small and low-contrast so the bars
     carry the motion and the digits stay quiet: bar and number rise and fall
     WITH the probe's alignment to that candidate, live, as the probe turns,
     and also shift as c1's length changes; negative scores drop below a zero
-    baseline. At any moment the best-aligned candidate's bar visibly leads.
+    baseline. At any moment the best-aligned candidate's bar visibly leads while all lengths are equal; when c1 is stretched, its bar can climb past a better-aligned candidate's, and that ranking flip must read from a still frame.
     Labels are cream and sit clear of their objects so none ever collide; no
     legends. The covariation (probe direction to score height, including
     sign, and candidate length to score magnitude) must be readable from a
@@ -78,9 +79,11 @@ interactive:
         - { do: set-slider, value: 200 }
     - id: length-cheat
       description: >-
-        probe held at 90 degrees while c1 is stretched to 2.0; c1's score
-        climbs on length alone though its direction never improved, showing
-        length cheats the similarity read
+        probe held at 70 degrees, pointing straight along c2 so c2 honestly
+        leads the reading; then c1 is stretched to 2.0 until its score
+        climbs past c2's on length alone though c1's direction never
+        improved, a visible ranking flip showing length cheats the
+        similarity read
       drive:
-        - { do: set-slider, value: 90 }
+        - { do: set-slider, value: 70 }
         - { do: set-control, control: length-c1, value: 2.0 }
