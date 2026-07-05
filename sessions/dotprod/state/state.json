@@ -132,7 +132,10 @@
       "receipt": "state/receipts/s4a.beat-04b.receipt.json"
     },
     "s4b.sec-beat-04b": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0.025899,
+      "iter": 0,
+      "receipt": "state/receipts/s4b.sec-beat-04b.receipt.json"
     }
   },
   "needsJake": []

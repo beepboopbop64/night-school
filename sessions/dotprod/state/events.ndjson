@@ -603,3 +603,8 @@
 {"ts":"2026-07-05T08:05:21.789Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.057770100000000005,"summary":"DONE Same math, different aisle"}}
 {"ts":"2026-07-05T08:05:21.798Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
 {"ts":"2026-07-05T08:05:21.799Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","event":"node_completed","data":{"costUsd":0.057770100000000005,"durationMs":29246}}
+{"ts":"2026-07-05T08:05:22.145Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04","event":"commit","data":{"sha":"a9b65bd91c4530d5c7514d7c3817ab89e30946f4"}}
+{"ts":"2026-07-05T08:05:22.147Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04b","event":"node_started","data":{"reason":"no-receipt"}}
+{"ts":"2026-07-05T08:05:34.430Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04b","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.025899,"summary":"DONE Double the arrow, double the number?"}}
+{"ts":"2026-07-05T08:05:34.437Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04b","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T08:05:34.438Z","runId":"run-2026-07-05T0736-2bc703","node":"s4b.sec-beat-04b","event":"node_completed","data":{"costUsd":0.025899,"durationMs":12285}}

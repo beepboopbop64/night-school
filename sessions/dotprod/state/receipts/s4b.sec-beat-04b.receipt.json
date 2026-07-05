@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "node": "s4b.sec-beat-04b",
+  "inputs": [
+    {
+      "path": "storyboard.yaml#beat-04b",
+      "sha256": "e82e3a8a397d6cdecee65ee509726a09ee9157fd2574ae123d8ba367a645a8c6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "page/sections/beat-04b.md",
+      "sha256": "2d4ca854858d560193354363b1a69fdbbbb917663aa7bedf2ac56cfec6bec961"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "section.nonempty",
+        "pass": true
+      },
+      {
+        "id": "section.heading",
+        "pass": true
+      },
+      {
+        "id": "section.dash-lint",
+        "pass": true
+      },
+      {
+        "id": "section.aha-verbatim",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0.025899,
+  "tier": "sonnet",
+  "startedAt": "2026-07-05T08:05:22.146Z",
+  "endedAt": "2026-07-05T08:05:34.431Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "carriesAha": false
+  }
+}
