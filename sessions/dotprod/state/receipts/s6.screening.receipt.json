@@ -24,7 +24,7 @@
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "8c3018b4fa585ecb7616b2c3f9bb1af030f54343aa236a14d5b001cb85847515"
+      "sha256": "8f065034afc065db1ef35f1d56744334f4833e0279897e158b65821ba85739a1"
     },
     {
       "path": "video/captions.vtt",
@@ -34,11 +34,11 @@
   "outputs": [
     {
       "path": "rounds/round-01/screening-report.md",
-      "sha256": "0efeab6b6f5292c9d7a0228df50ba38e54c45aac8377d016a638e279a50143a2"
+      "sha256": "a8ba8a8bb8e48a23bbffc0971c7fa747d9146f9168917a6860add50c98f6fe6b"
     }
   ],
   "gate": {
-    "passed": false,
+    "passed": true,
     "checks": [
       {
         "id": "screening.sam-probes",
@@ -46,7 +46,7 @@
       },
       {
         "id": "screening.petra",
-        "pass": false
+        "pass": true
       },
       {
         "id": "screening.vera-opus",
@@ -58,27 +58,24 @@
       },
       {
         "id": "screening.rounds-within-cap",
-        "pass": false,
+        "pass": true,
         "iter": 2
       }
     ]
   },
   "iterations": 2,
-  "costUsd": 1.043352,
+  "costUsd": 1.240657,
   "tier": "opus",
-  "startedAt": "2026-07-05T02:15:01.795Z",
-  "endedAt": "2026-07-05T02:25:10.198Z",
+  "startedAt": "2026-07-05T02:43:52.865Z",
+  "endedAt": "2026-07-05T02:58:07.941Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
     "rounds": 2,
     "samAdvisory": {
-      "curiosity": 3,
+      "curiosity": 4,
       "wouldFinish": true,
-      "note": "Short and mostly clear, but the mismatched example numbers and the abrupt unresolved ending left me a little unsatisfied rather than hooked."
-    },
-    "dissent": [
-      "petra"
-    ]
+      "note": "It felt clear and hands-on while I was doing it, but a little thin and repetitive by the end, like the same insight got restated more times than it needed to be."
+    }
   }
 }

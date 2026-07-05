@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "dotprod",
-  "stage": "S5",
+  "stage": "S6",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -108,17 +108,14 @@
       "receipt": "state/receipts/s5.assemble.receipt.json"
     },
     "s6.screening": {
-      "status": "flagged"
+      "status": "passed",
+      "costUsd": 1.240657,
+      "iter": 2,
+      "receipt": "state/receipts/s6.screening.receipt.json"
     },
     "s7.packet": {
       "status": "pending"
     }
   },
-  "needsJake": [
-    {
-      "node": "s6.screening",
-      "reason": "gate failed: screening.petra, screening.rounds-within-cap",
-      "since": "2026-07-05T02:25:10.202Z"
-    }
-  ]
+  "needsJake": []
 }
