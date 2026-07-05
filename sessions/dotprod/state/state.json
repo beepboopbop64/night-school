@@ -7,12 +7,15 @@
   "nodes": {
     "s4f.beat-01": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-01.receipt.json"
     },
     "s4f.beat-02": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/s4f.beat-02.receipt.json"
     },
     "s4f.beat-03": {
       "status": "pending"
