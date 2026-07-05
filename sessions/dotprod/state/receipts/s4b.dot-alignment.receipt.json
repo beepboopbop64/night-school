@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "page/interactives/dot-alignment.yaml",
-      "sha256": "0c1a06a7de6bf8a4bface5acb817029c283bc3531ec4b1f7c48da4fe85c9b961"
+      "sha256": "540cdacefe1ed5b774b421ec4516a46946aa7782282814dae6f1779f8a67bb31"
     }
   ],
   "outputs": [
     {
       "path": "page/interactives/DotAlignment.svelte",
-      "sha256": "95621fe8e206bed95249642286d161eb550e9507459624ac39efa95c480dab76"
+      "sha256": "de8adbccfbd8b5b9eabb94c3caa6adbe6dd2bc8b4d36b3607af5fd5a27f53f35"
     }
   ],
   "gate": {
@@ -23,47 +23,36 @@
       {
         "id": "iris.pass",
         "pass": true,
-        "iter": 3
+        "iter": 2
       }
     ]
   },
-  "iterations": 3,
-  "costUsd": 1.1481267,
+  "iterations": 2,
+  "costUsd": 2.1604011,
   "tier": "opus",
-  "startedAt": "2026-07-05T03:12:50.108Z",
-  "endedAt": "2026-07-05T03:20:45.590Z",
-  "transcript": "state/dailies/webslice-2026-07-05T0312-f0915d",
+  "startedAt": "2026-07-05T05:15:28.590Z",
+  "endedAt": "2026-07-05T05:32:37.509Z",
+  "transcript": "state/dailies/webslice-2026-07-05T0515-75eb68",
   "promptSha": "",
   "meta": {
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "hex-lint-failed",
-        "coderCostUsd": 0.4331136,
-        "irisCostUsd": 0,
-        "wallMs": 178505,
-        "fingerprints": [
-          "lint:raw-hex"
-        ],
-        "replanWasForced": false
-      },
-      {
-        "iter": 2,
         "outcome": "iris-failed",
-        "coderCostUsd": 0.0666459,
-        "irisCostUsd": 0.2793685,
-        "wallMs": 147251,
+        "coderCostUsd": 0.8446752000000001,
+        "irisCostUsd": 0.402965,
+        "wallMs": 591400,
         "fingerprints": [
           "iris:V7"
         ],
         "replanWasForced": false
       },
       {
-        "iter": 3,
+        "iter": 2,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.1773402,
-        "irisCostUsd": 0.1916585,
-        "wallMs": 149718,
+        "coderCostUsd": 0.5929959,
+        "irisCostUsd": 0.319765,
+        "wallMs": 437502,
         "fingerprints": [],
         "replanWasForced": false
       }

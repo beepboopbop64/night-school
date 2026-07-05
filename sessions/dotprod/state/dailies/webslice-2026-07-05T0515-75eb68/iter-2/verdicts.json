@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe is the single attention-colored manipulator while the periwinkle candidates and lilac bars read as supporting apparatus of one similarity meter, giving a clear hierarchy.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Only three concept types are present — the probe, the repeated candidate arrows, and their repeated score bars — not five-plus distinct ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each candidate carries a c1..c4 label at its tip, the probe is labeled on its object, and every bar is labeled beneath it with no legend or key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is a short instructional caption 'Drag the probe to score each candidate. Drag c1's handle to change its length,' which annotates the visible interactive rather than replacing it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The candidate labels, instruction, and mono score readouts (0, 1, -1) are all legible across the 1280 and 375 frames despite the digits being intentionally quiet.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All arrows, labels, bars, and readouts sit well inside the frame with generous margins in every state including the 375 width.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Stacked labels like 'c1' and 'probe' in the aligned frame sit on separate lines without overlapping, and no label is stamped across an unrelated line.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe is amber (attention), candidates periwinkle (observed), score bars lilac (parameters), and labels cream, each held consistently across all states.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — probe, candidates, length handle, bars, readouts, drop-lines — carries propositional content with no decorative filler.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each driven state delivers its promise: aligned peaks c1, orthogonal peaks c3, anti-aligned drops c1/c2 below the baseline as negative, and length-cheat lifts c1's score at a fixed 90-degree probe.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "The score bars are ordered c1..c4 left-to-right along the bottom while the candidate arrows run c4..c1 left-to-right in space, so each bar sits under the wrong candidate and the drop-lines do not align with the bars.",
+    "suggestion": "Reorder the bars to match the candidates' angular left-to-right order (c4,c3,c2,c1) and align each bar directly beneath its candidate's tip drop-line."
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The driven states show the same diagram at successive probe angles, reading as a continuous rotation rather than unrelated cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition is centered with ample margins and a clear top-to-bottom reading order from instruction to diagram to score bars.",
+    "suggestion": ""
+  }
+]

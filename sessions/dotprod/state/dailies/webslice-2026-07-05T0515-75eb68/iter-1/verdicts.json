@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe is the brightest, most saturated element and clearly leads; the periwinkle candidates and lilac score bars recede as supporting context.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe, four fixed candidate arrows, and four score bars form one coherent scoring system rather than five unrelated novel ideas introduced at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels c1..c4 sit radially near their arrow tips and are repeated directly under each score bar, and the probe is labeled on its shaft; there is no boxed legend or color key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only running text is a short two-line instruction that names the visible probe and c1 handle; every other string is a label on an object.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The heading is clearly legible and the small low-contrast mono readouts (0/1/-1 and c1..c4) remain readable, if borderline in size, at this resolution.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe, all candidate arrows, and all score bars sit fully inside the frame with generous margins at both 1280 and 375 px widths.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "The white active-handle selection box and amber probe dot overlap the 'probe' label in the aligned and anti-aligned frames (the label reads 'prob○') and the box overlaps the 'c1' label in the length-cheat frame.",
+    "suggestion": "Offset the probe and c1 labels farther from their draggable handles so the selection box and handle dot never sit on top of the text."
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe (attention/active element), periwinkle candidate arrows, lilac score bars, and cream labels follow consistent Night School palette semantics with no concept switching color.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The white boxes mark which handle is currently active/draggable, an affordance with meaning; there are no mascots, ornaments, or filler graphics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe, four fixed candidates, c1's length handle, live lilac score bars with numeric readouts, the best-aligned bar leading, and a negative c1 readout in anti-aligned are all present as promised.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "The four score bars sit far below the arrow diagram with a large empty band between them, forcing a long vertical jump from each candidate arrow to its distant score bar.",
+    "suggestion": "Move the score bars nearer the arrows or draw light connectors so each candidate's direction and its bar read together."
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "not applicable: the images are discrete driven states rather than a single build sequence, so no morph path can be judged from stills.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Margins are ample and the reading order runs top-to-bottom, though a large empty vertical band separates the diagram cluster from the bar cluster.",
+    "suggestion": ""
+  }
+]

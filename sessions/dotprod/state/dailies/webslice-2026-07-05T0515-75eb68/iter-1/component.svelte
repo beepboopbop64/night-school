@@ -7,14 +7,8 @@
 
 	let diagramEl = $state(null);
 
-	// viewBox is deliberately wider than tall: candidates only ever fan through
-	// the upper half of the circle, so the canvas is cropped to that content
-	// instead of wasting a full square of empty space above the score bars.
-	const VIEW_W = 320;
-	const VIEW_H = 230;
-	const CENTER_X = 160;
-	const CENTER_Y = 150;
-	const R = 50;
+	const CENTER = 150;
+	const R = 55;
 	const MAX_SCORE = 2;
 
 	const baseCandidates = [
@@ -45,15 +39,12 @@
 			const dirX = Math.cos(rad);
 			const dirY = -Math.sin(rad);
 			const shaft = R * len;
-			const tipX = CENTER_X + dirX * shaft;
-			const tipY = CENTER_Y + dirY * shaft;
+			const tipX = CENTER + dirX * shaft;
+			const tipY = CENTER + dirY * shaft;
 			const head = computeHead(tipX, tipY, dirX, dirY, shaft);
-			// label offset is measured from the TIP, not from the center, so it
-			// stays a fixed safe distance from the length handle no matter how
-			// long or short c1 gets.
-			const labelR = shaft + 36;
-			const labelX = CENTER_X + dirX * labelR;
-			const labelY = CENTER_Y + dirY * labelR;
+			const labelR = R * 2 + 20;
+			const labelX = CENTER + dirX * labelR;
+			const labelY = CENTER + dirY * labelR;
 			const diff = ((probeAngle - c.angle) * Math.PI) / 180;
 			const score = Math.cos(diff) * len;
 			return { ...c, len, tipX, tipY, ...head, labelX, labelY, score };
@@ -65,28 +56,24 @@
 		const dirX = Math.cos(rad);
 		const dirY = -Math.sin(rad);
 		const shaft = R;
-		const tipX = CENTER_X + dirX * shaft;
-		const tipY = CENTER_Y + dirY * shaft;
+		const tipX = CENTER + dirX * shaft;
+		const tipY = CENTER + dirY * shaft;
 		const head = computeHead(tipX, tipY, dirX, dirY, shaft);
 		const perpX = -dirY;
 		const perpY = dirX;
-		// Pushed well clear of the 44px handle hit box (radial + tangential
-		// combined) so the label never sits under the probe dot or its focus
-		// ring at any angle, including when the probe lands exactly on a
-		// candidate's line.
-		const labelX = CENTER_X + dirX * (R + 48) + perpX * 26;
-		const labelY = CENTER_Y + dirY * (R + 48) + perpY * 26;
+		const labelX = CENTER + dirX * (R + 18) + perpX * 12;
+		const labelY = CENTER + dirY * (R + 18) + perpY * 12;
 		return { tipX, tipY, ...head, labelX, labelY };
 	});
 
 	let probeHandlePos = $derived.by(() => ({
-		x: (probeGeom.tipX / VIEW_W) * 100,
-		y: (probeGeom.tipY / VIEW_H) * 100
+		x: (probeGeom.tipX / 300) * 100,
+		y: (probeGeom.tipY / 300) * 100
 	}));
 
 	let c1HandlePos = $derived.by(() => {
 		const c1 = candidateData.find((c) => c.name === 'c1');
-		return { x: (c1.tipX / VIEW_W) * 100, y: (c1.tipY / VIEW_H) * 100 };
+		return { x: (c1.tipX / 300) * 100, y: (c1.tipY / 300) * 100 };
 	});
 
 	let leaderName = $derived.by(() =>
@@ -96,12 +83,11 @@
 	function updateProbeFromEvent(e) {
 		if (!diagramEl) return;
 		const rect = diagramEl.getBoundingClientRect();
-		const scaleX = VIEW_W / rect.width;
-		const scaleY = VIEW_H / rect.height;
-		const lx = (e.clientX - rect.left) * scaleX;
-		const ly = (e.clientY - rect.top) * scaleY;
-		const dx = lx - CENTER_X;
-		const dy = ly - CENTER_Y;
+		const scale = 300 / rect.width;
+		const lx = (e.clientX - rect.left) * scale;
+		const ly = (e.clientY - rect.top) * scale;
+		const dx = lx - CENTER;
+		const dy = ly - CENTER;
 		let deg = (Math.atan2(-dy, dx) * 180) / Math.PI;
 		if (deg < 0) deg += 360;
 		if (deg > 360) deg = 360;
@@ -133,12 +119,11 @@
 	function updateLengthFromEvent(e) {
 		if (!diagramEl) return;
 		const rect = diagramEl.getBoundingClientRect();
-		const scaleX = VIEW_W / rect.width;
-		const scaleY = VIEW_H / rect.height;
-		const lx = (e.clientX - rect.left) * scaleX;
-		const ly = (e.clientY - rect.top) * scaleY;
-		const dx = lx - CENTER_X;
-		const dy = ly - CENTER_Y;
+		const scale = 300 / rect.width;
+		const lx = (e.clientX - rect.left) * scale;
+		const ly = (e.clientY - rect.top) * scale;
+		const dx = lx - CENTER;
+		const dy = ly - CENTER;
 		const dist = Math.sqrt(dx * dx + dy * dy);
 		let len = dist / R;
 		len = Math.min(2, Math.max(0.5, len));
@@ -175,25 +160,15 @@
 
 	<div class="diagram-wrap" bind:this={diagramEl}>
 		<svg
-			viewBox="0 0 {VIEW_W} {VIEW_H}"
+			viewBox="0 0 300 300"
 			class="diagram-svg"
 			role="img"
 			aria-label="Diagram: an amber probe arrow rotates among four periwinkle candidate arrows, c1 through c4"
 		>
 			{#each candidateData as c (c.name)}
 				<line
-					x1={c.tipX}
-					y1={c.tipY}
-					x2={c.tipX}
-					y2={VIEW_H}
-					stroke="var(--data-observed)"
-					stroke-width="1"
-					stroke-dasharray="2,3"
-					opacity="0.22"
-				/>
-				<line
-					x1={CENTER_X}
-					y1={CENTER_Y}
+					x1={CENTER}
+					y1={CENTER}
 					x2={c.backX}
 					y2={c.backY}
 					stroke="var(--data-observed)"
@@ -207,8 +182,8 @@
 			{/each}
 
 			<line
-				x1={CENTER_X}
-				y1={CENTER_Y}
+				x1={CENTER}
+				y1={CENTER}
 				x2={probeGeom.backX}
 				y2={probeGeom.backY}
 				stroke="var(--data-heat)"
@@ -281,7 +256,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 0.65rem;
+		gap: 1rem;
 		width: 100%;
 		max-width: 520px;
 		margin: 0 auto;
@@ -301,8 +276,8 @@
 	.diagram-wrap {
 		position: relative;
 		width: 100%;
-		max-width: 400px;
-		aspect-ratio: 320 / 230;
+		max-width: 420px;
+		aspect-ratio: 1 / 1;
 	}
 
 	.diagram-svg {
@@ -357,7 +332,6 @@
 		gap: 1.25rem;
 		width: 100%;
 		flex-wrap: wrap;
-		margin-top: -0.25rem;
 	}
 
 	.bar-col {

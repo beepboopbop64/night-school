@@ -79,8 +79,8 @@
     },
     "s4b.dot-alignment": {
       "status": "passed",
-      "iter": 3,
-      "costUsd": 1.1481267,
+      "iter": 2,
+      "costUsd": 2.1604011,
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"
     },
     "s4c.doc": {
