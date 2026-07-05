@@ -1,0 +1,2689 @@
+{
+ "schemaVersion": 1,
+ "scene": "Beat04",
+ "frame": {
+  "width": 14.2222,
+  "height": 8.0,
+  "pixelWidth": 854,
+  "pixelHeight": 480
+ },
+ "keyframes": [
+  {
+   "index": 0,
+   "timeSeconds": 1.4,
+   "label": "FadeIn, FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 2.3,
+     "w": 5.3748,
+     "h": 1.9552,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Text",
+     "text": "retrievalprompt",
+     "x": 0.0,
+     "y": 2.6333,
+     "w": 3.165,
+     "h": 0.3885,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Text",
+     "text": "resume->jobposting",
+     "x": 0.0,
+     "y": 1.9458,
+     "w": 4.1748,
+     "h": 0.3467,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "timeSeconds": 3.0,
+   "label": "Create, FadeIn, GrowFromPoint, FadeIn",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 2.3,
+     "w": 5.3748,
+     "h": 1.9552,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Text",
+     "text": "retrievalprompt",
+     "x": 0.0,
+     "y": 2.6333,
+     "w": 3.165,
+     "h": 0.3885,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Text",
+     "text": "resume->jobposting",
+     "x": 0.0,
+     "y": 1.9458,
+     "w": 4.1748,
+     "h": 0.3467,
+     "opacity": 1.0
+    },
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "timeSeconds": 7.0,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m0",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 2.3,
+     "w": 5.3748,
+     "h": 1.9552,
+     "opacity": 1.0
+    },
+    {
+     "id": "m1",
+     "type": "Text",
+     "text": "retrievalprompt",
+     "x": 0.0,
+     "y": 2.6333,
+     "w": 3.165,
+     "h": 0.3885,
+     "opacity": 1.0
+    },
+    {
+     "id": "m2",
+     "type": "Text",
+     "text": "resume->jobposting",
+     "x": 0.0,
+     "y": 1.9458,
+     "w": 4.1748,
+     "h": 0.3467,
+     "opacity": 1.0
+    },
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "timeSeconds": 8.0,
+   "label": "FadeOut, FadeOut, FadeOut",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "timeSeconds": 9.0,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "timeSeconds": 10.0,
+   "label": "FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "timeSeconds": 11.4,
+   "label": "FadeIn, FadeIn, FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "pythonhours",
+     "x": -4.4,
+     "y": 2.1,
+     "w": 2.2922,
+     "h": 0.3596,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "9",
+     "x": -0.9,
+     "y": 2.1,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.1,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "8",
+     "x": 0.9,
+     "y": 2.1,
+     "w": 0.1904,
+     "h": 0.2809,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "timeSeconds": 12.8,
+   "label": "FadeIn, FadeIn, FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "pythonhours",
+     "x": -4.4,
+     "y": 2.1,
+     "w": 2.2922,
+     "h": 0.3596,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "9",
+     "x": -0.9,
+     "y": 2.1,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.1,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "8",
+     "x": 0.9,
+     "y": 2.1,
+     "w": 0.1904,
+     "h": 0.2809,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "sqlreps",
+     "x": -4.4,
+     "y": 1.3,
+     "w": 1.1846,
+     "h": 0.3545,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "6",
+     "x": -0.9,
+     "y": 1.3,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.3,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "7",
+     "x": 0.9,
+     "y": 1.3,
+     "w": 0.1813,
+     "h": 0.2715,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "timeSeconds": 14.2,
+   "label": "FadeIn, FadeIn, FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "pythonhours",
+     "x": -4.4,
+     "y": 2.1,
+     "w": 2.2922,
+     "h": 0.3596,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "9",
+     "x": -0.9,
+     "y": 2.1,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.1,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "8",
+     "x": 0.9,
+     "y": 2.1,
+     "w": 0.1904,
+     "h": 0.2809,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "sqlreps",
+     "x": -4.4,
+     "y": 1.3,
+     "w": 1.1846,
+     "h": 0.3545,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "6",
+     "x": -0.9,
+     "y": 1.3,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.3,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "7",
+     "x": 0.9,
+     "y": 1.3,
+     "w": 0.1813,
+     "h": 0.2715,
+     "opacity": 1.0
+    },
+    {
+     "id": "m17",
+     "type": "Text",
+     "text": "nightsfree",
+     "x": -4.4,
+     "y": 0.5,
+     "w": 1.807,
+     "h": 0.3654,
+     "opacity": 1.0
+    },
+    {
+     "id": "m18",
+     "type": "Text",
+     "text": "3",
+     "x": -0.9,
+     "y": 0.5,
+     "w": 0.1826,
+     "h": 0.2809,
+     "opacity": 1.0
+    },
+    {
+     "id": "m19",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m20",
+     "type": "Text",
+     "text": "2",
+     "x": 0.9,
+     "y": 0.5,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "timeSeconds": 15.667,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    },
+    {
+     "id": "m9",
+     "type": "Text",
+     "text": "pythonhours",
+     "x": -4.4,
+     "y": 2.1,
+     "w": 2.2922,
+     "h": 0.3596,
+     "opacity": 1.0
+    },
+    {
+     "id": "m10",
+     "type": "Text",
+     "text": "9",
+     "x": -0.9,
+     "y": 2.1,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m11",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 2.1,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m12",
+     "type": "Text",
+     "text": "8",
+     "x": 0.9,
+     "y": 2.1,
+     "w": 0.1904,
+     "h": 0.2809,
+     "opacity": 1.0
+    },
+    {
+     "id": "m13",
+     "type": "Text",
+     "text": "sqlreps",
+     "x": -4.4,
+     "y": 1.3,
+     "w": 1.1846,
+     "h": 0.3545,
+     "opacity": 1.0
+    },
+    {
+     "id": "m14",
+     "type": "Text",
+     "text": "6",
+     "x": -0.9,
+     "y": 1.3,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    },
+    {
+     "id": "m15",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 1.3,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m16",
+     "type": "Text",
+     "text": "7",
+     "x": 0.9,
+     "y": 1.3,
+     "w": 0.1813,
+     "h": 0.2715,
+     "opacity": 1.0
+    },
+    {
+     "id": "m17",
+     "type": "Text",
+     "text": "nightsfree",
+     "x": -4.4,
+     "y": 0.5,
+     "w": 1.807,
+     "h": 0.3654,
+     "opacity": 1.0
+    },
+    {
+     "id": "m18",
+     "type": "Text",
+     "text": "3",
+     "x": -0.9,
+     "y": 0.5,
+     "w": 0.1826,
+     "h": 0.2809,
+     "opacity": 1.0
+    },
+    {
+     "id": "m19",
+     "type": "Text",
+     "text": "\u00d7",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1648,
+     "h": 0.1648,
+     "opacity": 1.0
+    },
+    {
+     "id": "m20",
+     "type": "Text",
+     "text": "2",
+     "x": 0.9,
+     "y": 0.5,
+     "w": 0.1836,
+     "h": 0.2762,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "timeSeconds": 17.8,
+   "label": "ReplacementTransform, ReplacementTransform, ReplacementTransform, FadeOut, FadeOut, FadeOut",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    },
+    {
+     "id": "m21",
+     "type": "Text",
+     "text": "72",
+     "x": 0.0,
+     "y": 2.1,
+     "w": 0.4467,
+     "h": 0.2959,
+     "opacity": 1.0
+    },
+    {
+     "id": "m22",
+     "type": "Text",
+     "text": "42",
+     "x": 0.0,
+     "y": 1.3,
+     "w": 0.4596,
+     "h": 0.2959,
+     "opacity": 1.0
+    },
+    {
+     "id": "m23",
+     "type": "Text",
+     "text": "6",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1965,
+     "h": 0.2959,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "timeSeconds": 18.8,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m6",
+     "type": "Text",
+     "text": "--",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.3789,
+     "h": 0.0373,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    },
+    {
+     "id": "m21",
+     "type": "Text",
+     "text": "72",
+     "x": 0.0,
+     "y": 2.1,
+     "w": 0.4467,
+     "h": 0.2959,
+     "opacity": 1.0
+    },
+    {
+     "id": "m22",
+     "type": "Text",
+     "text": "42",
+     "x": 0.0,
+     "y": 1.3,
+     "w": 0.4596,
+     "h": 0.2959,
+     "opacity": 1.0
+    },
+    {
+     "id": "m23",
+     "type": "Text",
+     "text": "6",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.1965,
+     "h": 0.2959,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "timeSeconds": 21.133,
+   "label": "FadeOut, FadeOut, FadeOut, ReplacementTransform",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m24",
+     "type": "Text",
+     "text": "120",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    },
+    {
+     "id": "m7",
+     "type": "Text",
+     "text": "you",
+     "x": -0.9,
+     "y": 3.0,
+     "w": 0.7477,
+     "h": 0.3129,
+     "opacity": 1.0
+    },
+    {
+     "id": "m8",
+     "type": "Text",
+     "text": "therole",
+     "x": 0.9,
+     "y": 3.0,
+     "w": 1.485,
+     "h": 0.325,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "timeSeconds": 21.933,
+   "label": "FadeOut, FadeOut",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m24",
+     "type": "Text",
+     "text": "120",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "timeSeconds": 24.4,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m24",
+     "type": "Text",
+     "text": "120",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "timeSeconds": 25.0,
+   "label": "FadeOut",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "timeSeconds": 25.6,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "timeSeconds": 26.933,
+   "label": "GrowArrow, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "timeSeconds": 27.933,
+   "label": "Create",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m27",
+     "type": "SurroundingRectangle",
+     "text": null,
+     "x": -2.6827,
+     "y": 0.2763,
+     "w": 1.7053,
+     "h": 1.3926,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "timeSeconds": 29.467,
+   "label": "FadeIn, FadeIn, FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m27",
+     "type": "SurroundingRectangle",
+     "text": null,
+     "x": -2.6827,
+     "y": 0.2763,
+     "w": 1.7053,
+     "h": 1.3926,
+     "opacity": 1.0
+    },
+    {
+     "id": "m28",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 3.0,
+     "y": 1.6,
+     "w": 5.3082,
+     "h": 2.4324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m29",
+     "type": "Text",
+     "text": "guessbeforeyouwatch",
+     "x": 3.0,
+     "y": 2.2453,
+     "w": 4.0404,
+     "h": 0.3418,
+     "opacity": 1.0
+    },
+    {
+     "id": "m30",
+     "type": "Text",
+     "text": "c1doublesinlength--",
+     "x": 3.0,
+     "y": 1.5808,
+     "w": 4.1529,
+     "h": 0.3873,
+     "opacity": 1.0
+    },
+    {
+     "id": "m31",
+     "type": "Text",
+     "text": "doesthescoredouble?",
+     "x": 3.0,
+     "y": 0.9354,
+     "w": 4.3082,
+     "h": 0.3033,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "timeSeconds": 41.467,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m27",
+     "type": "SurroundingRectangle",
+     "text": null,
+     "x": -2.6827,
+     "y": 0.2763,
+     "w": 1.7053,
+     "h": 1.3926,
+     "opacity": 1.0
+    },
+    {
+     "id": "m28",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 3.0,
+     "y": 1.6,
+     "w": 5.3082,
+     "h": 2.4324,
+     "opacity": 1.0
+    },
+    {
+     "id": "m29",
+     "type": "Text",
+     "text": "guessbeforeyouwatch",
+     "x": 3.0,
+     "y": 2.2453,
+     "w": 4.0404,
+     "h": 0.3418,
+     "opacity": 1.0
+    },
+    {
+     "id": "m30",
+     "type": "Text",
+     "text": "c1doublesinlength--",
+     "x": 3.0,
+     "y": 1.5808,
+     "w": 4.1529,
+     "h": 0.3873,
+     "opacity": 1.0
+    },
+    {
+     "id": "m31",
+     "type": "Text",
+     "text": "doesthescoredouble?",
+     "x": 3.0,
+     "y": 0.9354,
+     "w": 4.3082,
+     "h": 0.3033,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "timeSeconds": 42.4,
+   "label": "FadeOut, FadeOut, FadeOut, FadeOut, FadeOut",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "timeSeconds": 43.0,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "timeSeconds": 43.8,
+   "label": "FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.4545,
+     "h": 0.3154,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "timeSeconds": 45.8,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.325,
+     "y": 0.2763,
+     "w": 0.55,
+     "h": 0.9526,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.4545,
+     "h": 0.3154,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "timeSeconds": 52.333,
+   "label": "_AnimationBuilder, _AnimationBuilder",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.05,
+     "y": 0.7526,
+     "w": 1.1,
+     "h": 1.9053,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "timeSeconds": 53.8,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.05,
+     "y": 0.7526,
+     "w": 1.1,
+     "h": 1.9053,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "timeSeconds": 54.8,
+   "label": "FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.05,
+     "y": 0.7526,
+     "w": 1.1,
+     "h": 1.9053,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    },
+    {
+     "id": "m33",
+     "type": "Text",
+     "text": "before:55",
+     "x": 3.0,
+     "y": 0.6212,
+     "w": 2.4203,
+     "h": 0.2924,
+     "opacity": 1.0
+    },
+    {
+     "id": "m34",
+     "type": "Text",
+     "text": "after:110",
+     "x": 3.0,
+     "y": -0.0212,
+     "w": 2.4359,
+     "h": 0.2924,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "timeSeconds": 55.6,
+   "label": "FadeIn",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.05,
+     "y": 0.7526,
+     "w": 1.1,
+     "h": 1.9053,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    },
+    {
+     "id": "m33",
+     "type": "Text",
+     "text": "before:55",
+     "x": 3.0,
+     "y": 0.6212,
+     "w": 2.4203,
+     "h": 0.2924,
+     "opacity": 1.0
+    },
+    {
+     "id": "m34",
+     "type": "Text",
+     "text": "after:110",
+     "x": 3.0,
+     "y": -0.0212,
+     "w": 2.4359,
+     "h": 0.2924,
+     "opacity": 1.0
+    },
+    {
+     "id": "m35",
+     "type": "Text",
+     "text": "sizepassedstraightthrough",
+     "x": 3.0,
+     "y": -0.7472,
+     "w": 4.6602,
+     "h": 0.3596,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "timeSeconds": 61.6,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m3",
+     "type": "Arc",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6,
+     "w": 2.0,
+     "h": 1.0,
+     "opacity": 1.0
+    },
+    {
+     "id": "m4",
+     "type": "Dot",
+     "text": null,
+     "x": 0.0,
+     "y": -2.1,
+     "w": 0.14,
+     "h": 0.14,
+     "opacity": 1.0
+    },
+    {
+     "id": "m5",
+     "type": "Line",
+     "text": null,
+     "x": 0.2724,
+     "y": -1.7109,
+     "w": 0.5449,
+     "h": 0.7782,
+     "opacity": 1.0
+    },
+    {
+     "id": "m25",
+     "type": "Arrow",
+     "text": null,
+     "x": -2.05,
+     "y": 0.7526,
+     "w": 1.1,
+     "h": 1.9053,
+     "opacity": 1.0
+    },
+    {
+     "id": "m26",
+     "type": "Text",
+     "text": "c1",
+     "x": -3.15,
+     "y": 0.15,
+     "w": 0.3307,
+     "h": 0.2824,
+     "opacity": 1.0
+    },
+    {
+     "id": "m32",
+     "type": "Text",
+     "text": "55",
+     "x": 0.0,
+     "y": -2.95,
+     "w": 0.7182,
+     "h": 0.3209,
+     "opacity": 1.0
+    },
+    {
+     "id": "m33",
+     "type": "Text",
+     "text": "before:55",
+     "x": 3.0,
+     "y": 0.6212,
+     "w": 2.4203,
+     "h": 0.2924,
+     "opacity": 1.0
+    },
+    {
+     "id": "m34",
+     "type": "Text",
+     "text": "after:110",
+     "x": 3.0,
+     "y": -0.0212,
+     "w": 2.4359,
+     "h": 0.2924,
+     "opacity": 1.0
+    },
+    {
+     "id": "m35",
+     "type": "Text",
+     "text": "sizepassedstraightthrough",
+     "x": 3.0,
+     "y": -0.7472,
+     "w": 4.6602,
+     "h": 0.3596,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "timeSeconds": 62.8,
+   "label": "FadeOut",
+   "mobjects": []
+  },
+  {
+   "index": 31,
+   "timeSeconds": 63.4,
+   "label": "Wait",
+   "mobjects": []
+  },
+  {
+   "index": 32,
+   "timeSeconds": 64.733,
+   "label": "FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m36",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 0.6,
+     "w": 7.9045,
+     "h": 2.6943,
+     "opacity": 1.0
+    },
+    {
+     "id": "m37",
+     "type": "Text",
+     "text": "stillup?",
+     "x": 0.0,
+     "y": 1.2908,
+     "w": 1.4588,
+     "h": 0.4127,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "timeSeconds": 66.067,
+   "label": "FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m36",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 0.6,
+     "w": 7.9045,
+     "h": 2.6943,
+     "opacity": 1.0
+    },
+    {
+     "id": "m37",
+     "type": "Text",
+     "text": "stillup?",
+     "x": 0.0,
+     "y": 1.2908,
+     "w": 1.4588,
+     "h": 0.4127,
+     "opacity": 1.0
+    },
+    {
+     "id": "m38",
+     "type": "Text",
+     "text": "keepthedirection,forgetthesize--",
+     "x": 0.0,
+     "y": 0.5877,
+     "w": 6.7045,
+     "h": 0.3936,
+     "opacity": 1.0
+    },
+    {
+     "id": "m39",
+     "type": "Text",
+     "text": "what'sthecheapestfix?",
+     "x": 0.0,
+     "y": -0.1031,
+     "w": 4.3734,
+     "h": 0.3881,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "timeSeconds": 71.067,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m36",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 0.6,
+     "w": 7.9045,
+     "h": 2.6943,
+     "opacity": 1.0
+    },
+    {
+     "id": "m37",
+     "type": "Text",
+     "text": "stillup?",
+     "x": 0.0,
+     "y": 1.2908,
+     "w": 1.4588,
+     "h": 0.4127,
+     "opacity": 1.0
+    },
+    {
+     "id": "m38",
+     "type": "Text",
+     "text": "keepthedirection,forgetthesize--",
+     "x": 0.0,
+     "y": 0.5877,
+     "w": 6.7045,
+     "h": 0.3936,
+     "opacity": 1.0
+    },
+    {
+     "id": "m39",
+     "type": "Text",
+     "text": "what'sthecheapestfix?",
+     "x": 0.0,
+     "y": -0.1031,
+     "w": 4.3734,
+     "h": 0.3881,
+     "opacity": 1.0
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "timeSeconds": 72.4,
+   "label": "FadeIn, FadeIn",
+   "mobjects": [
+    {
+     "id": "m36",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 0.6,
+     "w": 7.9045,
+     "h": 2.6943,
+     "opacity": 1.0
+    },
+    {
+     "id": "m37",
+     "type": "Text",
+     "text": "stillup?",
+     "x": 0.0,
+     "y": 1.2908,
+     "w": 1.4588,
+     "h": 0.4127,
+     "opacity": 1.0
+    },
+    {
+     "id": "m38",
+     "type": "Text",
+     "text": "keepthedirection,forgetthesize--",
+     "x": 0.0,
+     "y": 0.5877,
+     "w": 6.7045,
+     "h": 0.3936,
+     "opacity": 1.0
+    },
+    {
+     "id": "m39",
+     "type": "Text",
+     "text": "what'sthecheapestfix?",
+     "x": 0.0,
+     "y": -0.1031,
+     "w": 4.3734,
+     "h": 0.3881,
+     "opacity": 1.0
+    },
+    {
+     "id": "m40",
+     "type": "Arrow",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6087,
+     "w": 0.35,
+     "h": 1.423,
+     "opacity": 0.6
+    },
+    {
+     "id": "m41",
+     "type": "Text",
+     "text": "morewaystokeepgoing:extensionsmenu",
+     "x": 0.0,
+     "y": -2.6,
+     "w": 7.0516,
+     "h": 0.3596,
+     "opacity": 0.75
+    }
+   ]
+  },
+  {
+   "index": 36,
+   "timeSeconds": 86.4,
+   "label": "Wait",
+   "mobjects": [
+    {
+     "id": "m36",
+     "type": "RoundedRectangle",
+     "text": null,
+     "x": 0.0,
+     "y": 0.6,
+     "w": 7.9045,
+     "h": 2.6943,
+     "opacity": 1.0
+    },
+    {
+     "id": "m37",
+     "type": "Text",
+     "text": "stillup?",
+     "x": 0.0,
+     "y": 1.2908,
+     "w": 1.4588,
+     "h": 0.4127,
+     "opacity": 1.0
+    },
+    {
+     "id": "m38",
+     "type": "Text",
+     "text": "keepthedirection,forgetthesize--",
+     "x": 0.0,
+     "y": 0.5877,
+     "w": 6.7045,
+     "h": 0.3936,
+     "opacity": 1.0
+    },
+    {
+     "id": "m39",
+     "type": "Text",
+     "text": "what'sthecheapestfix?",
+     "x": 0.0,
+     "y": -0.1031,
+     "w": 4.3734,
+     "h": 0.3881,
+     "opacity": 1.0
+    },
+    {
+     "id": "m40",
+     "type": "Arrow",
+     "text": null,
+     "x": 0.0,
+     "y": -1.6087,
+     "w": 0.35,
+     "h": 1.423,
+     "opacity": 0.6
+    },
+    {
+     "id": "m41",
+     "type": "Text",
+     "text": "morewaystokeepgoing:extensionsmenu",
+     "x": 0.0,
+     "y": -2.6,
+     "w": 7.0516,
+     "h": 0.3596,
+     "opacity": 0.75
+    }
+   ]
+  }
+ ]
+}
