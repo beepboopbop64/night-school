@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "node": "s4e.notebook",
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "6e440a2fea779cc7d933d83b6e5fff5947abd8e86e3e0dbf91d4b1e60de5b295"
+    },
+    {
+      "path": "storyboard.yaml",
+      "sha256": "bd0efd3d39b481e969d1d7c2b7d65b446b35175da02d237e86615433f9f9440a"
+    },
+    {
+      "path": "doc/lesson.md",
+      "sha256": "556bd1d627b56478ed181812005f62808c07f500b841f14e0fe12bc9c1ed4d67"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "notebook/lesson.ipynb",
+      "sha256": "2a3a1acd85803b3daa75029dc7d81b19249b212904c1abcb1485978957d781df"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "nb.json",
+        "pass": true
+      },
+      {
+        "id": "nb.numpy-only",
+        "pass": true
+      },
+      {
+        "id": "nb.executes",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 1,
+  "costUsd": 0.2648253,
+  "tier": "sonnet",
+  "startedAt": "2026-07-05T01:38:33.522Z",
+  "endedAt": "2026-07-05T01:40:16.576Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "attempts": 1,
+    "executor": "checks/run_notebook.py (stdlib exec runner; no jupyter on this machine)"
+  }
+}
