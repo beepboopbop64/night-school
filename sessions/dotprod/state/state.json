@@ -120,7 +120,10 @@
       "receipt": "state/receipts/s7.packet.receipt.json"
     },
     "s4f.beat-04b": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/s4f.beat-04b.receipt.json"
     },
     "s4a.beat-04b": {
       "status": "pending"

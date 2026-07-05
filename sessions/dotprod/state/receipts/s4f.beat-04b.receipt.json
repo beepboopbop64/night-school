@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "node": "s4f.beat-04b",
+  "inputs": [
+    {
+      "path": "script.md#beat-04b",
+      "sha256": "f548b6f1954eae79d8a09fc6d35dcdd9b16178cfd20452bf149fc91dbdb882bc"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/audio/beat-04b.mp3",
+      "sha256": "73c3fd3d30416a6bd060c682a83ddc70792ddf88c3f1c82402031678fa35e5fb"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "tts.safe-lint",
+        "pass": true
+      },
+      {
+        "id": "tts.audio-written",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-05T07:36:31.635Z",
+  "endedAt": "2026-07-05T07:36:42.899Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "mode": "elevenlabs",
+    "voiceId": "cgSgspJ2msm6clMCkdW9",
+    "voiceName": "Jessica",
+    "textHash": "1842d19311197bf2422547445542a3ff30b136e8a22033416e9f57f896fc08e2",
+    "cacheHit": false,
+    "audioSeconds": 46.32
+  }
+}
