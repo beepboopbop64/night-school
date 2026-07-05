@@ -13,12 +13,29 @@
 	];
 
 	let challenge = $state<null | 'cheat' | 'short'>(null);
+	let solvedCheat = $state(false);
+	let solvedShort = $state(false);
+	const WHY = {
+		cheat:
+			'A song that is simply louder and faster everywhere piles up score without matching your mix. A raw meter overrates intense tracks, so a recommender built on it keeps pushing whatever is biggest.',
+		short:
+			'A quiet song that matches your mix exactly gets buried under bigger ones. Size is drowning direction, and fixing that is exactly where this lesson is headed.'
+	};
 	function startChallenge(kind: 'cheat' | 'short') {
-		challenge = challenge === kind ? null : kind;
+		if (challenge === kind) {
+			// clicking an armed card is a retry
+			if (kind === 'cheat') solvedCheat = false;
+			else solvedShort = false;
+		}
+		challenge = kind;
 		probeAngle = 40;
 		lengthC1 = 1.0;
 		selected = 'c1';
 	}
+	$effect(() => {
+		if (challenge === 'cheat' && cheatActive) solvedCheat = true;
+		if (challenge === 'short' && shortChanged) solvedShort = true;
+	});
 
 	let probeAngle = $state(40);
 	let lengthC1 = $state(1.0);
@@ -147,7 +164,7 @@
 
 	// Bar scale: scores live in [-2, 2] once c1 can stretch.
 	const BARMAX = 2.05;
-	const barH = 110;
+	const barH = 96;
 	const segH = (v: number) => (Math.abs(v) / BARMAX) * (barH / 2);
 
 	const probeTip = $derived(pt(probe.x, probe.y));
@@ -164,18 +181,24 @@
 		the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.
 	</p>
 	<div class="challenges">
-		<button class="chal" class:active={challenge === 'cheat'} class:done={challenge === 'cheat' && cheatActive} onclick={() => startChallenge('cheat')}>
+		<button class="chal" class:active={challenge === 'cheat' && !solvedCheat} class:done={solvedCheat} onclick={() => startChallenge('cheat')}>
 			<span class="chal-t mono">challenge 01</span>
 			<span class="chal-g">Make a worse match win</span>
-			{#if challenge === 'cheat'}
-				<span class="chal-s mono" class:live={!cheatActive}>{cheatActive ? '✓ solved' : 'in play…'}</span>
+			{#if solvedCheat}
+				<span class="chal-s mono">✓ solved · click to retry</span>
+				<span class="chal-why">{WHY.cheat}</span>
+			{:else if challenge === 'cheat'}
+				<span class="chal-s mono live">in play…</span>
 			{/if}
 		</button>
-		<button class="chal" class:active={challenge === 'short'} class:done={challenge === 'short' && shortChanged} onclick={() => startChallenge('short')}>
+		<button class="chal" class:active={challenge === 'short' && !solvedShort} class:done={solvedShort} onclick={() => startChallenge('short')}>
 			<span class="chal-t mono">challenge 02</span>
 			<span class="chal-g">Make the truest song lose</span>
-			{#if challenge === 'short'}
-				<span class="chal-s mono" class:live={!shortChanged}>{shortChanged ? '✓ solved' : 'in play…'}</span>
+			{#if solvedShort}
+				<span class="chal-s mono">✓ solved · click to retry</span>
+				<span class="chal-why">{WHY.short}</span>
+			{:else if challenge === 'short'}
+				<span class="chal-s mono live">in play…</span>
 			{/if}
 		</button>
 	</div>
@@ -330,17 +353,10 @@
 			{/if}
 		</div>
 	</div>
-	{#if cheatActive}
-		<p class="why">
-			Why this matters: a song that is simply louder and faster everywhere piles up score
-			without matching your mix. A raw meter overrates intense tracks, so a recommender
-			built on it keeps pushing whatever is biggest.
-		</p>
-	{:else if shortChanged}
-		<p class="why">
-			Why this matters: a quiet song that matches your mix exactly gets buried under bigger
-			ones. Size is drowning direction, and fixing that is exactly where this lesson is headed.
-		</p>
+	{#if challenge === null && cheatActive}
+		<p class="why">Why this matters: {WHY.cheat}</p>
+	{:else if challenge === null && shortChanged}
+		<p class="why">Why this matters: {WHY.short}</p>
 	{/if}
 	<p class="hint">
 		Click any bar or arrow to inspect it. The dashed lines are that arrow's two
@@ -389,7 +405,7 @@
 	.mono { font-family: var(--font-mono); }
 
 	.stage { display: flex; gap: 1.4rem; align-items: stretch; }
-	.arena-wrap { flex: 1 1 55%; min-width: 0; }
+	.arena-wrap { flex: 1 1 62%; min-width: 0; }
 	.arena { width: 100%; height: auto; touch-action: none; display: block; }
 
 	.ring { fill: none; stroke: color-mix(in oklab, var(--color-text) 10%, transparent); stroke-width: 1; }
@@ -458,6 +474,10 @@
 	.chal-g { font-family: var(--font-heading), sans-serif; font-size: 0.88rem; }
 	.chal-s { font-size: 0.7rem; color: var(--data-fit); }
 	.chal-s.live { color: var(--data-heat); }
+	.chal-why {
+		max-width: 30rem; font-size: 0.78rem; line-height: 1.45;
+		color: color-mix(in oklab, var(--color-text) 78%, transparent);
+	}
 	.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
 	@keyframes hpulse {
 		0%, 100% { stroke-width: 1.5; }
