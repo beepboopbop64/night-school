@@ -1,0 +1,10 @@
+[
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 23,
+    "mobjects": [
+      "m8"
+    ],
+    "message": "Text \"c1\" is 81% out of frame (max 15%)"
+  }
+]

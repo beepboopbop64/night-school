@@ -57,12 +57,7 @@ def arrow_for(angle_deg: float, length: float, color: str) -> Arrow:
 
 def label_pos(angle_deg: float, length: float) -> np.ndarray:
     tip = ORIGIN + direction(angle_deg) * length
-    pos = tip + perp_of(angle_deg) * 0.45 + direction(angle_deg) * 0.15
-    # Safety clamp: never let a label drift toward the frame edge (frame is
-    # 14.2 x 8 units centered on the origin).
-    pos[0] = float(np.clip(pos[0], -6.4, 6.4))
-    pos[1] = float(np.clip(pos[1], -3.4, 3.4))
-    return pos
+    return tip + perp_of(angle_deg) * 0.45 + direction(angle_deg) * 0.15
 
 
 class Beat02(Scene):
@@ -143,14 +138,14 @@ class Beat02(Scene):
         )
         c1_arrow.add_updater(lambda m: m.become(build_c1_arrow()))
 
-        # c1's label is pinned to its *starting* length so that stretching the
-        # arrow later (the length-handle drag) never pushes the label toward
-        # the frame edge; the label only ever needs to stay clear of the
-        # candidate's own arrow, not chase a growing tip.
-        c1_label_anchor = label_pos(C1_ANGLE, C1_LEN_START)
-        c1_label = Text("c1", font=FONT_BODY, font_size=28, color=TEXT)
-        c1_label.move_to(c1_label_anchor)
+        def build_c1_label():
+            return Text("c1", font=FONT_BODY, font_size=28, color=TEXT).move_to(
+                label_pos(C1_ANGLE, c1_len.get_value())
+            )
+
+        c1_label = build_c1_label()
         self.play(FadeIn(c1_label), run_time=0.5)
+        c1_label.add_updater(lambda m: m.become(build_c1_label()))
 
         # -- candidates c2, c3, c4: appear directly as arrows --------------------
         c2_arrow = arrow_for(C2_ANGLE, C2_LEN, DATA_OBSERVED)

@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame has a single load-bearing element: frame 1 the folding qualities, frame 3 the lone c1 score bar, frames 5-6 the parked probe with the four landed bars reading as supporting rows.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe, four candidate arrows, and four score bars are introduced progressively across the build (2 arrows in frame 2, four plus bars later), never five-plus novel ideas at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels 'probe', c1-c4 sit directly beside their arrows and each score numeric sits on its own bar; no legend or corner key appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Only labels and numeric readouts (timbre: 0.9, +4.7, etc.) appear, each annotating a visible arrow or bar; no free-floating prose blocks.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All labels and mono numerics are rendered at a comfortably readable size well above the ~2.2% frame-height guide.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Arrows, bars, and labels all sit inside the frame with margins; nothing is cropped by an edge.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "In frames 2-3 the 'c1' label and clustered arrowheads sit close but remain separable, and no text element is stamped illegibly across another.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe stays amber (attention), candidate arrows periwinkle (observed), and score bars lilac (parameters/measure) consistently across all frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — arrows, labels, bars, numerics — carries propositional content; no mascots or ornaments appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The qualities fold to a single arrow, an amber probe sweeps while four periwinkle candidates hold, and lilac score bars climb/land as numerics — the promised composition is on screen, though the amber arrowhead in frames 2-3 reads slightly bloated relative to its short shaft.",
+    "suggestion": "Scale the amber probe arrowhead down to match the candidate arrows' head-to-shaft proportion when the shaft is short."
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each score numeric sits on its bar and each label touches its arrow, so claims stay next to their objects.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order: qualities collapse to a dot, arrows appear one pair then all four, bars grow in, and the probe sweeps continuously to its parked pose.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The diagram sits upper-center with the score row spread evenly below, leaving generous negative space and a clear top-to-bottom scan path.",
+    "suggestion": ""
+  }
+]

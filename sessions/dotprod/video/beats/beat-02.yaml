@@ -19,19 +19,25 @@ beat:
     score climbs. Turn away and it dies. So a big score means two songs are the
     same, right? Watch again. The bars moved while the candidates never moved at
     all. The score reads agreement of direction, not sameness.
-  visual: "[visual: covary | dynamic-concept] One amber probe arrow sweeps through
-    directions; four periwinkle candidate arrows hold still; under each
-    candidate a lilac score bar with a numeric readout climbs and dies as the
-    probe turns toward and away from it. Each candidate label sits nudged
-    outward past its arrow tip so the sweeping amber probe never buries it,
-    staying readable at every probe angle including when the probe passes
-    candidate B. A freeze frame before the sweep carries the prediction card;
-    after the sweep the probe parks and the four scores land as integers on the
-    bars."
+  visual: "[visual: covary | dynamic-concept] The stacked lists of qualities from
+    the hook fold down, each feature becoming one direction, until each song is
+    a single arrow. All arrows use thin exact strokes with arrowheads sized in
+    proportion to shaft length; the amber probe's head is drawn to the same
+    proportion as the candidates', never bloated or malformed. One amber probe
+    arrow sweeps through directions; four periwinkle candidate arrows hold
+    still; under each candidate a lilac score bar with a small mono numeric
+    readout climbs and dies as the probe turns toward and away from it. Each
+    candidate label, and the 'probe' label, sits nudged clear of every arrow so
+    nothing ever collides, staying readable at every probe angle including when
+    the probe passes candidate B. Candidate c1 carries a length handle: dragging
+    it stretches c1 while its direction holds, and c1's score climbs on length
+    alone. A freeze frame before the sweep carries the prediction card that asks
+    the learner to name the candidate whose bar will top out; after the sweep
+    the probe parks and the four scores land as integers on the bars."
   colors:
     probe: data.heat
     candidates: data.observed
     scores: data.params
     background: bg
     labels: text
-  durationTargetSeconds: 43
+  durationTargetSeconds: 52.6
