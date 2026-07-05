@@ -164,3 +164,8 @@
 {"ts":"2026-07-05T02:12:47.994Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4d.extensions","agent":"extensions-curator","event":"agent_call","data":{"attempt":1,"costUsd":0.09894720000000001,"summary":"DONE 3 llm / 3 papers / 2 projects"}}
 {"ts":"2026-07-05T02:12:48.706Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4d.extensions","event":"gate_result","data":{"passed":true,"checks":[{"id":"ext.schema","pass":true},{"id":"ext.source-whitelist","pass":true},{"id":"ext.dash-lint","pass":true},{"id":"ext.links-resolve","pass":true}]}}
 {"ts":"2026-07-05T02:12:48.707Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4d.extensions","event":"node_completed","data":{"costUsd":0.09894720000000001,"durationMs":40761}}
+{"ts":"2026-07-05T02:12:49.020Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4d.extensions","event":"commit","data":{"sha":"f2412025bee18255bec50ef8a2e76ac4e64ca654"}}
+{"ts":"2026-07-05T02:12:49.023Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4e.notebook","event":"node_started","data":{"reason":"input-changed:storyboard.yaml"}}
+{"ts":"2026-07-05T02:14:46.955Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4e.notebook","agent":"notebook-author","event":"agent_call","data":{"attempt":1,"costUsd":0.365235,"summary":"DONE 19"}}
+{"ts":"2026-07-05T02:14:47.470Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4e.notebook","event":"gate_result","data":{"passed":true,"checks":[{"id":"nb.json","pass":true},{"id":"nb.numpy-only","pass":true},{"id":"nb.executes","pass":true}]}}
+{"ts":"2026-07-05T02:14:47.472Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4e.notebook","event":"node_completed","data":{"costUsd":0.365235,"durationMs":118446}}
