@@ -55,64 +55,70 @@
     },
     "s4b.sec-beat-01": {
       "status": "passed",
-      "costUsd": 0.025208699999999997,
       "iter": 0,
+      "costUsd": 0.025208699999999997,
       "receipt": "state/receipts/s4b.sec-beat-01.receipt.json"
     },
     "s4b.sec-beat-02": {
       "status": "passed",
-      "costUsd": 0.0263445,
       "iter": 0,
+      "costUsd": 0.0263445,
       "receipt": "state/receipts/s4b.sec-beat-02.receipt.json"
     },
     "s4b.sec-beat-03": {
       "status": "passed",
-      "costUsd": 0.0220317,
       "iter": 0,
+      "costUsd": 0.0220317,
       "receipt": "state/receipts/s4b.sec-beat-03.receipt.json"
     },
     "s4b.sec-beat-04": {
       "status": "passed",
-      "costUsd": 0.0380832,
       "iter": 0,
+      "costUsd": 0.0380832,
       "receipt": "state/receipts/s4b.sec-beat-04.receipt.json"
     },
     "s4b.dot-alignment": {
       "status": "passed",
-      "costUsd": 1.2639561000000001,
       "iter": 2,
+      "costUsd": 1.2639561000000001,
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"
     },
     "s4c.doc": {
       "status": "passed",
-      "costUsd": 1.1260744999999999,
       "iter": 3,
+      "costUsd": 1.1260744999999999,
       "receipt": "state/receipts/s4c.doc.receipt.json"
     },
     "s4d.extensions": {
       "status": "passed",
-      "costUsd": 0.062255399999999995,
       "iter": 1,
+      "costUsd": 0.062255399999999995,
       "receipt": "state/receipts/s4d.extensions.receipt.json"
     },
     "s4e.notebook": {
       "status": "passed",
-      "costUsd": 0.2648253,
       "iter": 1,
+      "costUsd": 0.2648253,
       "receipt": "state/receipts/s4e.notebook.receipt.json"
     },
     "s5.assemble": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/s5.assemble.receipt.json"
     },
     "s6.screening": {
-      "status": "pending"
+      "status": "flagged"
     },
     "s7.packet": {
       "status": "pending"
     }
   },
-  "needsJake": []
+  "needsJake": [
+    {
+      "node": "s6.screening",
+      "reason": "gate failed: screening.petra, screening.rounds-within-cap",
+      "since": "2026-07-05T01:52:19.474Z"
+    }
+  ]
 }

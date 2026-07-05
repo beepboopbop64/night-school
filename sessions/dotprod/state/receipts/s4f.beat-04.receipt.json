@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "script.md#beat-04",
-      "sha256": "5dbeee049ea926ca1b5aabd2a809012eb78e9f6ade2edd28b1d52b608eead107"
+      "sha256": "ac0a8b2a606bb32f44ad249a44e2a54a8750d916f7382a77b86e92a6ac97930d"
     }
   ],
   "outputs": [
     {
       "path": "video/audio/beat-04.mp3",
-      "sha256": "a486e66a85f2f958d9ce4f93f03929c674d63ae599f6c5769cc53545cdc9901e"
+      "sha256": "d5734446c93189cabc296c75b698dc0ee5af4c93620edc4d2b534cac8396e7d1"
     }
   ],
   "gate": {
@@ -29,16 +29,16 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T00:20:59.474Z",
-  "endedAt": "2026-07-05T00:21:04.051Z",
+  "startedAt": "2026-07-05T01:55:23.948Z",
+  "endedAt": "2026-07-05T01:55:32.880Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
     "mode": "elevenlabs",
     "voiceId": "XrExE9yKIg1WjnnlVkGX",
     "voiceName": "Matilda",
-    "textHash": "bdf84d827bf9f2cdb339205a177400136215a25e07a589e046115a1f5a42f497",
+    "textHash": "be44d6637f49f528585ff7500e8f9316664dd1180fd1561ae4c89430797bae14",
     "cacheHit": false,
-    "audioSeconds": 28.839184
+    "audioSeconds": 51.594739
   }
 }
