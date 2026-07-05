@@ -1,0 +1,34 @@
+# DERIVED by the s4a.beat-02 node from storyboard.yaml#beat-02; do not edit.
+schemaVersion: 1
+session: dotprod
+beat:
+  id: beat-02
+  title: Turn the probe and feel it
+  narration: >-
+    Strip it down. A taste is an arrow: each direction is a quality, and the
+    length is how hard the song leans that way. Take one probe arrow and four
+    candidate arrows. Multiply them entry by entry and add. That single sum is
+    the score.
+
+
+    Before you drag anything, call it: which candidate ends up on top, and does
+    any score go negative?
+
+
+    Now turn the probe and watch the bars answer. Point at a candidate and its
+    score climbs. Turn away and it dies. So a big score means two songs are the
+    same, right? Watch again. The bars moved while the candidates never moved at
+    all. The score reads agreement of direction, not sameness.
+  visual: "[visual: covary | dynamic-concept] One amber probe arrow sweeps through
+    directions; four periwinkle candidate arrows hold still; under each
+    candidate a lilac score bar with a numeric readout climbs and dies as the
+    probe turns toward and away from it. A freeze frame before the sweep carries
+    the prediction card; after the sweep the probe parks and the four scores
+    land as integers on the bars."
+  colors:
+    probe: data.heat
+    candidates: data.observed
+    scores: data.params
+    background: bg
+    labels: text
+  durationTargetSeconds: 43

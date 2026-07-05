@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The build establishes the two number columns, then the lilac score readout counts up as the focal payoff; in later frames the columns recede in brightness while the score and question card carry focus.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Elements are introduced incrementally across frames — columns, then values, then connectors and score, then the question card — never more than four novel ideas at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'your taste' and 'this song' labels sit directly atop their number columns and 'score' sits beside its readout; no legend or corner key exists.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the question card 'How do you score two lists of numbers?' which annotates the visible paired columns and score readout beside it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — column labels, numeric values, score, and question card — is well above the ~2.2% frame-height legibility threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element sits fully inside the frame with comfortable margins; nothing is cropped.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Columns, connectors, score, and question card occupy distinct regions with no overlapping or intersecting text.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Both paired number columns wear periwinkle (observed data) and the score readout is lilac, consistent with the intent and token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — labels, numbers, connector lines, score, question card — carries propositional content; no decoration present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The two side-by-side columns slide in, paired entries connect in periwinkle, the lilac score counts up to 0.87, and the question card holds over the frozen score with half the frame empty — matching the intent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Paired values sit adjacent with connecting lines and the score sits directly beneath its columns; the question card sits in the deliberately empty right half.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the diagram builds in reasoning order — labels, then values, then connectors and score, then the question card — as a continuous construction.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Generous negative space, deliberate empty right half, and clear left-to-right reading order give the composition ample breathing room.",
+    "suggestion": ""
+  }
+]

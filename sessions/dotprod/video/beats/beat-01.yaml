@@ -1,0 +1,26 @@
+# DERIVED by the s4a.beat-01 node from storyboard.yaml#beat-01; do not edit.
+schemaVersion: 1
+session: dotprod
+beat:
+  id: beat-01
+  title: The score behind the song
+  narration: >-
+    Your music app just played you a song you love, by a band you have never
+    heard of. Somewhere in a data center, two lists of numbers got compared, and
+    the comparison said: same taste.
+
+
+    So here is the question of the night. How do you score a match between two
+    lists of numbers? Hold that question. One answer to it runs half of modern
+    machine learning.
+  visual: "[visual: connect-to-reality] Two columns of numbers slide in side by
+    side, one for the listener's taste and one for the song; paired entries
+    light up in periwinkle and a single lilac score readout counts up as the
+    comparison lands. The question card holds over the frozen score, half the
+    frame deliberately empty."
+  colors:
+    lists: data.observed
+    score: data.params
+    background: bg
+    labels: text
+  durationTargetSeconds: 22.5

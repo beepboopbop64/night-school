@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame centers on the single amber probe arrow and the lilac score bars responding to it, with the periwinkle candidates as supporting context.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The elements form one coherent system: one probe, four candidate arrows, and four score bars, well under the flood threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels A/B/C/D sit on their arrows, 'probe' rides the amber arrow, and numeric readouts sit on their bars with no legend box.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is limited to the 'Predict' prompt card and short object labels/readouts, each tied to a visible referent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All labels, numeric readouts, and the prediction card text are rendered at readable size against the dark sky.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All arrows, bars, and the prediction card sit fully inside the frame with adequate margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "When the probe aligns near candidate D the amber arrow slightly overlaps the 'D' label, but no unrelated content is rendered illegible.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Probe is amber (attention), candidate direction arrows are periwinkle, and score bars are lilac (parameter/score), consistent across frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element—probe, candidates, bars, readouts, prediction card—carries propositional content with no decoration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The prediction card precedes the sweep, the amber probe rotates through directions, and lilac bars climb with integer readouts (3/5/4/0, 4/1/-2/-5) as promised.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Score bars sit directly beneath their candidate arrows and readouts sit on the bars, keeping related items together.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the probe angle and bar heights change continuously, reading as a sweep rather than cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition keeps generous margins with the arrow cluster above and the bar chart below in a clear reading order.",
+    "suggestion": ""
+  }
+]
