@@ -13,6 +13,8 @@
 	let player: HTMLVideoElement | undefined = $state();
 	const chapters: { beatId: string; title: string; startSeconds: number }[] =
 		chaptersData.chapters ?? [];
+	const videoMinutes = Math.max(1, Math.round((chaptersData.videoSeconds ?? 0) / 60));
+	const sectionBeatIds = new Set<string>(["beat-01","beat-02","beat-03","beat-04","beat-04b"]);
 
 	function seek(seconds: number): void {
 		if (player) {
@@ -26,6 +28,12 @@
 		const s = Math.floor(seconds % 60);
 		return `${m}:${String(s).padStart(2, '0')}`;
 	}
+
+	function firstWords(text: string, count = 8): string {
+		const words = text.split(/\s+/).filter((word) => word.length > 0);
+		if (words.length <= count) return text;
+		return words.slice(0, count).join(' ') + '\u2026';
+	}
 </script>
 
 <svelte:head>
@@ -38,7 +46,8 @@
 		<div class="rule" aria-hidden="true"></div>
 	</header>
 
-	<section aria-label="video">
+	<section class="video-card" aria-label="video">
+		<p class="video-hook">Watch the {videoMinutes}-minute build: How do you score a match between two lists of numbers?</p>
 		<video
 			bind:this={player}
 			controls
@@ -51,16 +60,24 @@
 		{#if chapters.length > 0}
 			<ol class="chapters">
 				{#each chapters as chapter (chapter.beatId)}
-					<li>
+					<li class="chapter-row">
 						<button type="button" onclick={() => seek(chapter.startSeconds)}>
 							<span class="mono">{format(chapter.startSeconds)}</span>
 							{chapter.title}
 						</button>
+						{#if sectionBeatIds.has(chapter.beatId)}
+							<a class="read-link" href={'#sec-' + chapter.beatId}>read</a>
+						{/if}
 					</li>
 				{/each}
 			</ol>
 		{/if}
+		<a class="skip-chip" href="#extensions">Still up? Skip to the menu</a>
 	</section>
+
+	<div class="divider" role="separator">
+		<span class="divider-label">Prefer to read? The same build, in prose.</span>
+	</div>
 
 	<section class="prose" aria-label="beat-01" id="sec-beat-01">
 		<SecBeat01 />
@@ -81,39 +98,44 @@
 		<SecBeat04b />
 	</section>
 
-	<section class="extensions" aria-label="extensions">
+	<section class="extensions" aria-label="extensions" id="extensions">
 		<h2 class="still-up">Still up?</h2>
 		<p class="ext-sub">
 			Pick one door, not all three: argue it out with an LLM, read the paper
 			that started all this, or build something small before bed. One is
 			plenty. This is dessert, not homework.
 		</p>
-		<div class="lane">
-			<h3>Argue it out</h3>
-			{#each extensionsData.lanes.llm as item (item.prompt)}
-				<div class="ext-card">
-					<p class="ext-main">{item.prompt}</p>
-					<p class="ext-hint">{item.whatGoodLooksLike}</p>
-				</div>
-			{/each}
-		</div>
-		<div class="lane">
-			<h3>Read the real thing</h3>
-			{#each extensionsData.lanes.papers as paper (paper.url)}
-				<div class="ext-card">
-					<p class="ext-main"><a href={paper.url} rel="noopener">{paper.title}</a></p>
-					<p class="ext-hint">{paper.hook}</p>
-				</div>
-			{/each}
-		</div>
-		<div class="lane">
-			<h3>Build something</h3>
-			{#each extensionsData.lanes.projects as project (project.title)}
-				<div class="ext-card">
-					<p class="ext-main">{project.title}</p>
-					<p class="ext-hint">{project.brief}</p>
-				</div>
-			{/each}
+		<div class="lanes">
+			<div class="lane">
+				<h3>Argue it out</h3>
+				{#each extensionsData.lanes.llm as item (item.prompt)}
+					<details class="ext-item">
+						<summary>{firstWords(item.prompt)}</summary>
+						<p class="ext-main">{item.prompt}</p>
+						<p class="ext-hint">{item.whatGoodLooksLike}</p>
+					</details>
+				{/each}
+			</div>
+			<div class="lane">
+				<h3>Read the real thing</h3>
+				{#each extensionsData.lanes.papers as paper (paper.url)}
+					<details class="ext-item">
+						<summary>{firstWords(paper.title)}</summary>
+						<p class="ext-main"><a href={paper.url} rel="noopener">{paper.title}</a></p>
+						<p class="ext-hint">{paper.hook}</p>
+					</details>
+				{/each}
+			</div>
+			<div class="lane">
+				<h3>Build something</h3>
+				{#each extensionsData.lanes.projects as project (project.title)}
+					<details class="ext-item">
+						<summary>{firstWords(project.title)}</summary>
+						<p class="ext-main">{project.title}</p>
+						<p class="ext-hint">{project.brief}</p>
+					</details>
+				{/each}
+			</div>
 		</div>
 	</section>
 </main>
@@ -143,24 +165,48 @@
 		background: var(--color-brand-mint);
 	}
 
+	.video-card {
+		background: var(--color-surface);
+		border: 1px solid color-mix(in oklab, var(--color-text) 10%, transparent);
+		border-radius: 12px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.video-hook {
+		margin: 0;
+		font-family: var(--font-heading), sans-serif;
+		font-weight: 600;
+		font-size: 1.05rem;
+		line-height: 1.4;
+	}
+
 	video {
 		width: 100%;
 		border-radius: 8px;
-		background: var(--color-surface);
+		background: var(--color-bg);
 	}
 
 	.chapters {
 		list-style: none;
-		margin: 0.75rem 0 0;
+		margin: 0;
 		padding: 0;
 		display: flex;
 		flex-direction: column;
 		gap: 0.25rem;
 	}
 
+	.chapter-row {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
 	.chapters button {
 		min-height: 44px;
-		width: 100%;
+		flex: 1;
 		text-align: left;
 		background: none;
 		border: none;
@@ -174,13 +220,69 @@
 
 	.chapters button:hover,
 	.chapters button:focus-visible {
-		background: var(--color-surface);
+		background: color-mix(in oklab, var(--color-text) 8%, transparent);
+	}
+
+	.read-link {
+		flex: none;
+		font-family: var(--font-mono), monospace;
+		font-size: 0.75rem;
+		color: var(--color-brand-periwinkle);
+		text-decoration: none;
+		padding: 0.35rem 0.5rem;
+		border-radius: 6px;
+	}
+
+	.read-link:hover,
+	.read-link:focus-visible {
+		text-decoration: underline;
+	}
+
+	.skip-chip {
+		align-self: flex-end;
+		font-family: var(--font-mono), monospace;
+		font-size: 0.75rem;
+		color: var(--color-brand-mint);
+		text-decoration: none;
+		border: 1px solid color-mix(in oklab, var(--color-brand-mint) 35%, transparent);
+		border-radius: 999px;
+		padding: 0.3rem 0.75rem;
+	}
+
+	.skip-chip:hover,
+	.skip-chip:focus-visible {
+		border-color: var(--color-brand-mint);
+	}
+
+	.divider {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.divider::before,
+	.divider::after {
+		content: '';
+		flex: 1;
+		height: 1px;
+		background: color-mix(in oklab, var(--color-text) 12%, transparent);
+	}
+
+	.divider-label {
+		font-style: italic;
+		font-size: 0.9rem;
+		opacity: 0.7;
+		text-align: center;
 	}
 
 	.mono {
 		font-family: var(--font-mono), monospace;
 		color: var(--color-brand-mint);
 		margin-right: 0.75rem;
+	}
+
+	section[id] {
+		scroll-margin-top: 1.25rem;
 	}
 
 	.prose :global(h2) {
@@ -198,6 +300,26 @@
 
 	.prose :global(p) {
 		line-height: 1.65;
+	}
+
+	.prose :global(details.reveal) {
+		margin: 1rem 0;
+		background: var(--color-surface);
+		border: 1px solid color-mix(in oklab, var(--color-brand-mint) 25%, transparent);
+		border-radius: 10px;
+		padding: 0.6rem 0.9rem;
+	}
+
+	.prose :global(details.reveal summary) {
+		cursor: pointer;
+		color: var(--color-brand-mint);
+		font-family: var(--font-heading), sans-serif;
+		font-weight: 600;
+		font-size: 0.95rem;
+	}
+
+	.prose :global(details.reveal[open] summary) {
+		margin-bottom: 0.5rem;
 	}
 
 	.extensions {
@@ -222,24 +344,76 @@
 		font-style: italic;
 	}
 
+	.lanes {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+		align-items: start;
+	}
+
+	@media (max-width: 40rem) {
+		.lanes {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	.lane h3 {
 		font-family: var(--font-mono), monospace;
-		font-size: 0.8rem;
-		letter-spacing: 0.2em;
+		font-size: 0.72rem;
+		letter-spacing: 0.14em;
 		text-transform: uppercase;
+		white-space: nowrap;
 		color: var(--color-brand-periwinkle);
 		margin: 0 0 0.5rem;
 	}
 
-	.ext-card {
+	.ext-item {
 		background: var(--color-surface);
+		border: 1px solid color-mix(in oklab, var(--color-text) 8%, transparent);
 		border-radius: 10px;
-		padding: 0.85rem 1rem;
-		margin: 0 0 0.6rem;
+		margin: 0 0 0.5rem;
+	}
+
+	.ext-item:hover,
+	.ext-item[open] {
+		border-color: color-mix(in oklab, var(--color-brand-mint) 40%, transparent);
+	}
+
+	.ext-item summary {
+		list-style: none;
+		cursor: pointer;
+		font-size: 0.88rem;
+		line-height: 1.4;
+		padding: 0.55rem 1.6rem 0.55rem 0.75rem;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.ext-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.ext-item summary::after {
+		content: '+';
+		position: absolute;
+		right: 0.6rem;
+		top: 50%;
+		transform: translateY(-50%);
+		font-family: var(--font-mono), monospace;
+		color: var(--color-brand-mint);
+		transition: transform var(--motion-min-ms) var(--ease-out-quint);
+	}
+
+	.ext-item[open] summary::after {
+		transform: translateY(-50%) rotate(45deg);
 	}
 
 	.ext-main {
 		margin: 0 0 0.35rem;
+		padding: 0 0.75rem;
+		font-size: 0.9rem;
 		line-height: 1.5;
 	}
 
@@ -249,7 +423,8 @@
 
 	.ext-hint {
 		margin: 0;
-		font-size: 0.85rem;
+		padding: 0 0.75rem 0.65rem;
+		font-size: 0.82rem;
 		opacity: 0.7;
 		line-height: 1.5;
 	}
