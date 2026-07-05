@@ -144,3 +144,11 @@
 {"ts":"2026-07-05T02:08:52.310Z","runId":"slice-2026-07-05T0155-cd1438","node":"s4a.beat-04","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.7079685,"wallMs":798886}}
 {"ts":"2026-07-05T02:08:52.418Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4a.beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-05T02:08:52.419Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4a.beat-04","event":"node_completed","data":{"costUsd":1.7079685,"durationMs":799072}}
+{"ts":"2026-07-05T02:08:52.834Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4a.beat-04","event":"commit","data":{"sha":"f9e49a267f3bc293752d28963571a61ab08a012a"}}
+{"ts":"2026-07-05T02:08:52.839Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T02:08:52.845Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T02:08:52.849Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T02:08:52.853Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-04","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-04"}}
+{"ts":"2026-07-05T02:09:17.206Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-04","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.0551577,"summary":"DONE So what does the meter actually compute?"}}
+{"ts":"2026-07-05T02:09:17.213Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T02:09:17.215Z","runId":"run-2026-07-05T0155-f2bb31","node":"s4b.sec-beat-04","event":"node_completed","data":{"costUsd":0.0551577,"durationMs":24355}}
