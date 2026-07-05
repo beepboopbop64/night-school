@@ -10,6 +10,8 @@ So here is the question of the night. How do you score a match between two lists
 
 Hold that question before we reach for any definition. One answer to it runs half of modern machine learning. We're going to build that answer with our hands, not memorize it.
 
+Before you read on, take a guess: if you had to turn two lists of numbers into a single match score, what would you do to them?
+
 ## What does a taste look like as numbers?
 
 Strip it down until it fits in your palm. A taste is an arrow. Each direction is a quality, some axis like "loud" or "mellow," and the length along that direction is how hard the song leans that way. Two dimensions, so we can actually see the thing.
@@ -26,9 +28,11 @@ Now turn the probe and watch the scores answer. Point at a candidate and its sco
 
 Watch again, more carefully. The scores moved while the candidates never moved at all. Nothing about the songs changed. Only your direction changed. So the score can't be reading sameness of items. It's reading agreement of direction.
 
-And yes, scores go negative. Point against a candidate and the sum drops below zero, because some of those pairwise products come out negative and drag the sum down. Similarity, it turns out, has a basement. Before you scroll on, call one more reading: what would a score of exactly zero mean for two songs? Not opposed, not aligned. Say it in your own words, then check yourself against the sweep.
+And yes, scores go negative. Point against a candidate and the sum drops below zero, because some of those pairwise products come out negative and drag the sum down. Similarity, it turns out, has a basement.
 
 The number measures which way two arrows point, not what the things are.
+
+Before you scroll on, call one more reading: what would a score of exactly zero mean for two songs? Not opposed, not aligned. Say it in your own words, then check yourself against the sweep.
 
 ## What is the machine you just used?
 
