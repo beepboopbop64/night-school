@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The lilac question-mark match card is the single focus; the two periwinkle feature stacks and their arrows serve as supporting context feeding into it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Elements build progressively across frames — two stacks, then the readout card — never exceeding four novel ideas at equal weight in any single frame.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each feature name (loud, fast, sad, bright, more) sits directly in its stack under the LISTENER or SONG header; no legend or key panel is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text is labels or key terms (headers, feature names, the '?' readout); no spoken-register prose sits alone on the background.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Headers, feature words, and the question mark are all rendered large and readable, well above the ~2.2% frame-height threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Both stacks, the arrows, and the readout card sit entirely inside the frame with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or arrow overlaps another element; arrowheads terminate cleanly at the card edges without touching the labels.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Feature names are consistent periwinkle blue and the match readout is lilac, matching the described observed/parameter roles with no color switching.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — headers, feature stacks, arrows, and the '?' card — carries propositional meaning; no decorative filler is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frames deliver the intent: two side-by-side periwinkle feature stacks for listener and song with a lilac match readout holding a question mark and half the frame left empty.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Feature names sit tightly under their headers and arrows connect both stacks directly to the readout card between them.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order — headers, then features row by row, then the readout card and arrows — as a continuous construction.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition keeps wide margins and a deliberately empty lower-center region, giving a clear reading path from stacks down into the readout.",
+    "suggestion": ""
+  }
+]

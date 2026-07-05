@@ -13,14 +13,15 @@ beat:
     So here is the question of the night. How do you score a match between two
     lists of numbers? Hold that question. One answer to it runs half of modern
     machine learning.
-  visual: "[visual: connect-to-reality] Two columns of numbers slide in side by
-    side, one for the listener's taste and one for the song; paired entries
-    light up in periwinkle and a single lilac score readout counts up as the
-    comparison lands. The question card holds over the frozen score, half the
-    frame deliberately empty."
+  visual: "[visual: connect-to-reality] Two tall stacks of qualities slide in side
+    by side, one for the listener's taste and one for the song, each row a named
+    feature in periwinkle: loud, fast, sad, bright, and more trailing off the
+    frame. A single lilac match readout waits with a question mark where its
+    number should be. The question card holds over the unfilled readout, half
+    the frame deliberately empty so the puzzle, not an answer, owns the screen."
   colors:
     lists: data.observed
     score: data.params
     background: bg
     labels: text
-  durationTargetSeconds: 22.5
+  durationTargetSeconds: 24.4

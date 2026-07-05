@@ -4,7 +4,7 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-01",
-      "sha256": "4aaab0ec0ea78135176f063979729b1e4d88657c640a94763af73ec9166f6a43"
+      "sha256": "f511152447e95ab3062bff99c32feae7d0e5c33c5e0c14b17adce6abf46bc587"
     },
     {
       "path": "script.md#beat-01",
@@ -12,21 +12,21 @@
     },
     {
       "path": "video/audio/beat-01.mp3",
-      "sha256": "c2e113c8269dfdc8eacf686c3746639b2c70d46c93031f3a81fe4abbe279ecc9"
+      "sha256": "35eea7a82b363689c5d635e9ea009d630a9788090ffd3bf9709878ed54fb3608"
     }
   ],
   "outputs": [
     {
       "path": "video/beats/beat-01.yaml",
-      "sha256": "8b49598e1cbc1a13f4accaad49912abead3f65abdecfa8c6e7ee779915e31324"
+      "sha256": "1e531d5522a475ddfeffdd32c4c299ebc81c56e59a907b0035ede62ec758a054"
     },
     {
       "path": "video/scenes/scene_beat_01.py",
-      "sha256": "bdad46faed358bfb6e8abfeac3b059285913076c7cb7299681f564afa4a283cf"
+      "sha256": "1825786ec58dcfb149567aef0e06c86fb3e9399f01700a225594fb005e27b706"
     },
     {
       "path": "media/beat-01.mp4",
-      "sha256": "c6578f7b293d3b5d27cde411e2b7676a9eff54665c17ddaf6bee56a05d4d6bf6"
+      "sha256": "6600dc697c24ed4f7e59647144077d3d09847391ac420601711854de63c8abc8"
     }
   ],
   "gate": {
@@ -39,7 +39,7 @@
       {
         "id": "iris.pass",
         "pass": true,
-        "iter": 1
+        "iter": 2
       },
       {
         "id": "scene.duration-within-tolerance",
@@ -47,26 +47,38 @@
       }
     ]
   },
-  "iterations": 1,
-  "costUsd": 0.5746814,
+  "iterations": 2,
+  "costUsd": 0.846453,
   "tier": "opus",
-  "startedAt": "2026-07-05T00:21:23.626Z",
-  "endedAt": "2026-07-05T00:27:31.035Z",
-  "transcript": "state/dailies/slice-2026-07-05T0021-81c834",
+  "startedAt": "2026-07-05T04:25:54.145Z",
+  "endedAt": "2026-07-05T04:31:41.319Z",
+  "transcript": "state/dailies/slice-2026-07-05T0425-edc63d",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 21.266667,
-    "audioSeconds": 22.523356,
-    "toleranceSeconds": 2.25,
+    "videoSeconds": 24.333,
+    "audioSeconds": 24.4,
+    "toleranceSeconds": 2.44,
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "iris-passed",
-        "coderCostUsd": 0.4293879,
-        "irisCostUsd": 0.1452935,
-        "wallMs": 367202,
-        "fingerprints": [],
+        "outcome": "bbox-failed",
+        "coderCostUsd": 0.4781196,
+        "irisCostUsd": 0,
+        "wallMs": 226940,
+        "fingerprints": [
+          "bbox:bbox.text-height:Text:…",
+          "bbox:bbox.text-height:Text:…"
+        ],
         "replanWasForced": false
+      },
+      {
+        "iter": 2,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.2229039,
+        "irisCostUsd": 0.1454295,
+        "wallMs": 119959,
+        "fingerprints": [],
+        "replanWasForced": true
       }
     ]
   }

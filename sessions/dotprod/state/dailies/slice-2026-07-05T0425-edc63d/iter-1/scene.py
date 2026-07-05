@@ -17,16 +17,14 @@ class Beat01(Scene):
         # ------------------------------------------------------------------
         # Layout: two symmetric feature stacks in the top half (periwinkle,
         # DATA_OBSERVED), converging arrows, and a lilac (DATA_PARAMS) match
-        # readout card holding a bare question mark in the lower half. Every
-        # row label is a real word (never bare punctuation) so its glyph
-        # height always clears the readability floor. The bottom-most strip
-        # of the frame stays empty on purpose.
+        # readout card holding a bare question mark in the lower half. The
+        # bottom-most strip of the frame stays empty on purpose.
         # ------------------------------------------------------------------
         x_left = -4.5
         x_right = 4.5
-        header_y = 3.3
+        header_y = 3.4
         row_ys = [2.5, 1.7, 0.9, 0.1, -0.7]
-        features = ["loud", "fast", "sad", "bright", "more"]
+        features = ["loud", "fast", "sad", "bright", "…"]
 
         left_header = Text("LISTENER", font=FONT_HEADING, font_size=34, color=TEXT)
         left_header.move_to([x_left, header_y, 0])
@@ -41,9 +39,7 @@ class Beat01(Scene):
         self.wait(0.6)
 
         # Build the two lists row by row, pairing the same feature side by
-        # side so the comparison reads directly off the layout. The last row
-        # ("more") fades to half opacity to read as the list trailing off,
-        # while remaining a full word so it stays legible.
+        # side so the comparison reads directly off the layout.
         left_rows = []
         right_rows = []
         last_i = len(features) - 1
