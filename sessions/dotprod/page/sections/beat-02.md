@@ -1,11 +1,13 @@
-## What happens when you turn the probe?
+## What happens when you actually turn the probe?
 
-Think of a taste as an arrow. Each direction it points is some quality, maybe how much bass it wants, how fast it likes its tempo, how much it wants a voice in the mix. The length of the arrow along any one of those directions says how hard the song leans that way.
-
-Here's the whole trick, stripped down to arithmetic: take your probe arrow and one candidate arrow, multiply them entry by entry, and add up the results. That single number is the score. No magic, just multiply and sum.
+Strip a taste down to its bones and it's an arrow. Each direction is some quality the song has, and how far the arrow reaches in that direction is how hard the song leans that way. One arrow for the probe, one arrow for each candidate. Multiply them entry by entry, add up the results, and that single number is the score.
 
 > Before you drag anything, call it: which candidate ends up on top, and does any score go negative?
 
-Now go turn the probe and watch. Point it at a candidate and its bar climbs. Swing away and the bar sinks, maybe past zero into negative territory. Nothing about the candidates changed. Only the probe moved, and the scores followed it around like a compass needle.
+Sit with that guess for a second before you touch anything. It's tempting to eyeball the arrows and pick the one that "looks closest," but closest isn't really what we're computing yet. We're computing something narrower: how much of the probe's direction shows up in each candidate.
 
-That's worth sitting with for a second, because it's tempting to read a big score as "these two songs are basically the same song." They're not. The score tracks agreement of direction, not identity. Two arrows can point the same way and still be totally different lengths, different songs, different everything else about them. The dot product only ever tells you how much they agree on where they're pointing.
+Now turn the probe and watch the bars answer. Point it at a candidate and that candidate's score climbs. Turn away and the score dies off, sometimes past zero into negative territory. Nothing about the candidates changed. You only rotated one arrow, and every bar moved anyway.
+
+That's the part worth sitting with: a big score does not mean two songs are the same. It means they agree on direction. Two arrows can differ wildly in what they're made of and still score high together, as long as they point the same way. The score reads agreement, not identity.
+
+The bars answering to a single turning arrow is the whole game in miniature. Everything after this is just more arrows, more directions, same handshake.

@@ -271,3 +271,11 @@
 {"ts":"2026-07-05T03:12:30.653Z","runId":"slice-2026-07-05T0303-2d2b03","node":"s4a.beat-02","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.2118678999999999,"wallMs":524654}}
 {"ts":"2026-07-05T03:12:30.747Z","runId":"run-2026-07-05T0303-982fd1","node":"s4a.beat-02","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-05T03:12:30.748Z","runId":"run-2026-07-05T0303-982fd1","node":"s4a.beat-02","event":"node_completed","data":{"costUsd":1.2118678999999999,"durationMs":524834}}
+{"ts":"2026-07-05T03:12:31.163Z","runId":"run-2026-07-05T0303-982fd1","node":"s4a.beat-02","event":"commit","data":{"sha":"1c8ae825b16caa81789228e4fbd603fa302ded0c"}}
+{"ts":"2026-07-05T03:12:31.170Z","runId":"run-2026-07-05T0303-982fd1","node":"s4a.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T03:12:31.178Z","runId":"run-2026-07-05T0303-982fd1","node":"s4a.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T03:12:31.181Z","runId":"run-2026-07-05T0303-982fd1","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T03:12:31.186Z","runId":"run-2026-07-05T0303-982fd1","node":"s4b.sec-beat-02","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-02"}}
+{"ts":"2026-07-05T03:12:49.747Z","runId":"run-2026-07-05T0303-982fd1","node":"s4b.sec-beat-02","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.0458172,"summary":"DONE What happens when you actually turn the probe?"}}
+{"ts":"2026-07-05T03:12:49.754Z","runId":"run-2026-07-05T0303-982fd1","node":"s4b.sec-beat-02","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T03:12:49.756Z","runId":"run-2026-07-05T0303-982fd1","node":"s4b.sec-beat-02","event":"node_completed","data":{"costUsd":0.0458172,"durationMs":18563}}
