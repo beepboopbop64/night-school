@@ -12,7 +12,7 @@
         "whatGoodLooksLike": "A good answer ties the sqrt(d_k) division back to a length-style problem at the scale of many dimensions, not just to a vague claim about numerical stability, and leaves you able to say in your own words what changes if that division is dropped."
       },
       {
-        "prompt": "In \"Same meter, different aisle\" the probe list and candidate lists moved from songs to resumes and the score kept working the same way. Pick a third aisle from your own life, anything you compare using a handful of features, and ask an LLM to help you write out what the probe list and candidate lists would look like there, and what a high, zero, and negative score would each mean in that setting.",
+        "prompt": "In the session's close, the probe list and candidate lists moved from songs to a job posting and the score kept working the same way. Pick a third aisle from your own life, anything you compare using a handful of features, and ask an LLM to help you write out what the probe list and candidate lists would look like there, and what a high, zero, and negative score would each mean in that setting.",
         "whatGoodLooksLike": "A good answer keeps the sign readings straight in your new aisle: positive still means aligned, zero still means unrelated, negative still means opposed, just translated into words that fit whatever you picked."
       }
     ],

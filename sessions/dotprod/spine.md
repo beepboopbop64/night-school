@@ -1,8 +1,8 @@
 ---
 session: dotprod
 aha: "The dot product is a similarity meter."
-spineVersion: 1
-locked: 2026-07-04
+spineVersion: 2
+locked: 2026-07-05
 scope: >-
   Plain dot product as an alignment score, in two dimensions, four
   candidates. No cosine, no matrices, no attention; those are breadcrumbs.
@@ -16,6 +16,8 @@ compromises:
 # Spine: dotprod
 
 The session's constitution. Every downstream artifact answers to this file.
+(spineVersion 1 locked 2026-07-04; version 2 is the Phase 3 single-thread
+rewrite of 2026-07-05.)
 
 ## 1. The aha (canonical sentence, string-matched everywhere)
 
@@ -30,16 +32,18 @@ agreement of direction, not identity of items).
 
 | id | Beat | One-line intent | Est. sec |
 |----|------|-----------------|----------|
-| beat-01 | Hook | The recommendation moment: a song matched your taste, but each is many qualities at once; pose the genuine puzzle of collapsing many features into one match number and let the learner attempt it before any mechanism | 34 |
-| beat-02 | Felt elemental unit | Multiply pairwise and add arrives as the resolution to the hook's puzzle; the learner sweeps the probe and feels the score move; misconception (similarity means identical) voiced and refuted via the length cheat | 66 |
-| beat-03 | Aha | The behavior gets its name: agree positive, across zero, oppose negative; the sentence trues up in mint | 28 |
-| beat-04 | Close | Retrieval prompt, the length problem as the walk-home gap, extensions menu | 26 |
+| beat-01 | Hook | The recommendation moment: a song matched your taste, but each is many qualities at once; the difficulty made explicit (no single ruler spans the qualities, exact match on all of them is a lottery, the collapse must be principled) before the learner attempts it | 58 |
+| beat-02 | Felt elemental unit | Struggle recap, the arrow idea, THE RECIPE stated plainly with tiny worked numbers, meet the instrument (probe, candidates, bars), a falsifiable prediction (does any score go negative?), the sweep with everything frozen but the probe (direction story), then the explicit length stretch; misconception (similarity means identical) voiced and refuted | 100 |
+| beat-03 | Aha | The behavior gets its name: agree positive, across zero, oppose negative; the sentence trues up in mint | 36 |
+| beat-04 | Close the loop | Retrieval prompt, then the hook's data center reread as the learner's own machine: taste = probe, catalog = candidates, meter at scale. Song thread only | 40 |
+| beat-04b | The honest look | Sharpened doubling prediction (exactly double, or just drift up?), linearity named, the crack; stakes song-side only (loud songs win on loudness) | 38 |
+| beat-05 | Take it with you | Recap chain (tangle, arrows, multiply-and-add, meter with a crack), the ONE licensed aside (job posting), invent-your-own-pair invitation, walk-home breadcrumb, extensions menu pointer | 36 |
 
-Total 154s estimated; hard cap 540s (L10).
+Total 308s estimated; hard cap 540s (L10).
 
 ## 3. The metaphor registry (with honesty boundaries)
 
-Primary, load-bearing beats 2 through 4: **the meter**. A physical dial
+Primary, load-bearing beats 2 through 5: **the meter**. A physical dial
 whose needle answers a comparison: agree, ignore, oppose. Exact as far as
 sign and monotone-in-alignment go. Declared strains, disclosed in-session:
 
@@ -49,7 +53,19 @@ sign and monotone-in-alignment go. Declared strains, disclosed in-session:
    picture, not the territory. Nothing in the mechanism changes with
    dimension count (beat-03, page callout).
 
-## 4. Color assignments (semantic cast, locked)
+## 4. Single-thread discipline (Phase 3; L12 enforces)
+
+The session rides ONE walked example end to end: songs and your taste.
+Every beat's narration, on-screen text, and visuals stay on that thread.
+The second, surface-different instance (R28) is **a job posting**, licensed
+to appear in exactly one place: the consolidation beat (beat-05), clearly
+marked as an aside, after the recap and before the invitation to invent
+your own pair. The storyboard's `thread` block declares the aside keywords
+(job, resume, role, posting, hiring, fit); the L12 linter fails the build
+if any of them leaks into another beat, page section, or the doc outside
+its closing section.
+
+## 5. Color assignments (semantic cast, locked)
 
 | Concept | Token |
 |---|---|
@@ -60,7 +76,7 @@ sign and monotone-in-alignment go. Declared strains, disclosed in-session:
 | labels | text (cream) |
 | background | bg (10pm Sky) |
 
-## 5. Extensions sketch (Still up?)
+## 6. Extensions sketch (Still up?)
 
 - talk lane: have an LLM defend, then attack, the meter metaphor; a good
   conversation surfaces the length problem unprompted.

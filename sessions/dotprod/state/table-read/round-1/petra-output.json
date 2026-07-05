@@ -1,0 +1,30 @@
+[
+  {
+    "ruleId": "R19",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "beat-01's narration poses 'How would you boil the match between two many-featured things down to a single number?' but this is the opening organizer question (R16), not a prediction with a checkable wrong answer (R19). There is no expectedWrongAnswer field on beat-01, no falsifiable guess structure, and no sweep/reveal that proves the guess right or wrong. It is rhetorical framing, not a predictive commitment.",
+    "suggestion": "Leave beat-01's question as the R16 organizer; do not double-count it as R19. If a prediction is intended here, give it a checkable form (e.g. 'guess: does a simple average of the two lists work as the match score?') with an explicit wrong-answer to falsify at the reveal."
+  },
+  {
+    "ruleId": "R23",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "beat-03's narration states the conclusion ('the dot product is a similarity meter... the reading tracks direction') immediately after replaying the three probe positions, but the learner-facing connection (naming what the sweep behavior amounts to) is delivered entirely by narration rather than left one step short for the learner. beat-02 already showed the sweep and the length-fake; beat-03's visual ('aha sentence trues up on screen, freehand to exact') has the words appear before the learner is asked to supply the name themselves.",
+    "suggestion": "Consider a beat between 02 and 03 (or a pause inside beat-03) where the learner is prompted to name the pattern themselves (e.g. 'What would you call a machine that reads agree/ignore/oppose off direction alone?') before the sentence trues up. This is advisory since the components were genuinely pre-established across beat-02 and the reveal is one step from the learner, not zero, but the sentence lands via narration first rather than a learner-supplied label."
+  },
+  {
+    "ruleId": "R25",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "beat-01 sets up a genuine struggle framing ('So try it first. How would you boil the match... down to a single number?') but beat-01 ends without ever returning to compare the learner's own attempt against a canonical solution; beat-02 opens with 'You just tried to score that match by hand, and it fought back' which asserts a failed attempt happened rather than showing or resolving one. No bounded struggle segment with explicit comparison of the learner's guess to the canonical answer appears.",
+    "suggestion": "This is likely intentional as an R16 organizer rather than an R25 struggle segment (no minutes-long attempt window is implied), but if R25 credit is being claimed for beat-01/02's framing, add an explicit moment contrasting what a naive attempt (e.g. summing raw features, or Euclidean distance) would produce versus the canonical multiply-and-add, rather than only asserting 'it fought back.'"
+  },
+  {
+    "ruleId": "R12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "No violation found; noting only that beat-02 introduces the probe, four candidates, and score bars all within one beat before the sweep. Storyboard novelElements lists probe arrow, candidate arrows, score bars, and length handle together as beat-02's novel set (4 items, within the R15 mechanical cap), and narration does characterize probe then candidates then bars in sequence before the sweep interaction begins, so pre-training order is respected. Marked pass explicitly since R15's mechanical count could mask an ordering issue on casual read; on inspection the ordering is sound.",
+    "suggestion": ""
+  }
+]

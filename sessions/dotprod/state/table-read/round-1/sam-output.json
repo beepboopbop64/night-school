@@ -1,0 +1,24 @@
+{
+  "probes": {
+    "drivingQuestion": "How do you turn a big messy comparison between two multi-featured things (like a song and your taste) into one single similarity number, and what does a computer actually do to compute that?",
+    "ahaRestated": "If you represent each thing as a list of numbers (an arrow), you can measure how similar they are by multiplying matching entries and adding the results, and that sum works like a meter for whether the two arrows point the same way, but it also gets thrown off by how long the arrows are, not just their direction.",
+    "retrievalAnswer": "Two arrows go in, and you multiply their matching entries together, then add up those products to get one score."
+  },
+  "map": [
+    { "where": "beat-01 / ruler visual", "kind": "confusion", "note": "the 'no single ruler works, waiting for tangles to agree is a lottery' bit was a little abstract on first pass, I wasn't sure what 'agreeing on every quality at once' concretely meant until later." },
+    { "where": "beat-02 / recipe worked chip", "kind": "click", "note": "the tiny numeric example (2,1) and (1,3) making 5 was the first moment it actually clicked what 'multiply then add' means." },
+    { "where": "beat-02 / instrument assembly", "kind": "overload", "note": "probe arrow, four candidates, bars, mono readouts all introduced in one breath, felt like a lot of new visual elements at once." },
+    { "where": "beat-02 / covary sweep", "kind": "click", "note": "the frozen-everything-but-the-probe sweep was satisfying, made it obvious the score depends on angle." },
+    { "where": "beat-02 / c1 stretches longer", "kind": "notation", "note": "no real symbol issue here, but I had to pause and re-derive why a longer arrow raises the score even though direction didn't change; not immediately intuitive." },
+    { "where": "beat-03 / dot product name", "kind": "click", "note": "naming it 'a . b' after already having built the intuition felt earned, that landed well." },
+    { "where": "beat-03", "kind": "boredom", "note": "the meter dial (agree/ignore/oppose) recap felt a bit redundant with what beat-02 already showed, my attention dipped slightly here." },
+    { "where": "beat-04b / doubling guess", "kind": "confusion", "note": "I predicted the score would just 'drift up' not double exactly, so the reveal was informative, but I had to rewind my own assumption rather than the video explaining why linearity implies exact doubling." },
+    { "where": "beat-04b", "kind": "click", "note": "'a loud song wins on sheer loudness whether or not taste agrees' finally made the crack concrete and worth caring about." },
+    { "where": "beat-05 / walk home question", "kind": "confusion", "note": "the closing question 'what is the cheapest fix that keeps direction and forgets size' assumes I already know the answer is normalization, but the word normalization or dividing by length was never actually said anywhere in the video, so I'm not sure what answer it wants." }
+  ],
+  "advisory": {
+    "curiosity": 4,
+    "wouldFinish": true,
+    "note": "engaging and the arrow/meter framing mostly landed, but it was 9:15pm and a couple of stretches (the instrument assembly, the dial recap) asked me to hold a lot of visual state in my head at once."
+  }
+}

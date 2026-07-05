@@ -2,11 +2,11 @@
 
 ## The score behind the song
 
-Your music app just played you a song you love, by a band you have never heard of. No human picked it for you. Somewhere in a data center, two lists of numbers got compared, and the comparison said: same taste.
+Say your music app plays you a song you love, by a band you have never heard of. No human picked it for you. Somewhere in a data center, two lists of numbers got compared, and the comparison said: same taste.
 
 Here's the part worth chewing on before you nod along. A song isn't one number. It's loud, fast, sad, bright, a dozen qualities at once, and your taste is that same tangle. So before any machine gets a turn, take your own swing at it. How do you score a match between two lists of numbers?
 
-Try answering it first. It's genuinely harder than it sounds. You've got two stacks of features and you want one number for how well they fit. Add the stacks? That rewards loudness, not agreement. Line them up and count exact matches? Real features aren't yes or no. The moment there are more than a couple of qualities, the honest score stops being obvious.
+Try answering it first. It's genuinely harder than it sounds. You've got two stacks of features and you want one number for how well they go together. Add the stacks? That rewards loudness, not agreement. Line them up and count exact matches? Real features aren't yes or no, and two tangles agreeing on every quality at once is a lottery you would never win. The moment there are more than a couple of qualities, the honest score stops being obvious.
 
 One answer to this question runs half of modern machine learning. The puzzle was never the machine. The puzzle is you, right now, trying to fold a tangle into a single fair number.
 
@@ -48,7 +48,7 @@ While every arrow held the same length, direction was all the sum ever responded
 
 The meter has three readings worth knowing: positive, zero, negative. Say what each one claims about two vectors, out loud or on paper, in your own words, before you go on.
 
-## Same meter, different aisle
+## Back to the data center
 
 Time to close the loop. Do this from memory, not from scrolling up.
 
@@ -56,16 +56,24 @@ Time to close the loop. Do this from memory, not from scrolling up.
 
 If "multiply pairwise, then add" came back without a peek, you own $a \cdot b$ now. It's yours.
 
-Now keep the same meter running and walk it one aisle over. We don't rebuild anything. It's the same meter, just pointing its needle at a job posting instead of a song. The role wants Python hours, SQL reps, nights free. In the job aisle, which list plays the probe? It's you, the one asking the question. The role is the candidate you're scoring. Multiply the matched entries, add them up, one number for the fit. Different aisle, same meter. The multiply-and-add never asked what the numbers meant, and that is exactly why it travels.
+So spend it on the mystery that opened the night. Your music app handed you a stranger's song and called it your taste, and the whole transaction happened somewhere in a data center. You can now read that sentence as arithmetic. Your taste is the probe, the one arrow doing the asking. The catalog is a shelf of candidates, thousands of arrows deep instead of four. The machine compares your probe against every candidate on the shelf, multiply and add, multiply and add, and hands you the top bar. The comparison that said same taste was your meter, run at scale.
 
-Now the honest look, because a meter you trust blindly is a meter that will lie to you. First point the probe straight along c1 and set its length back to 1.0, so it reads a clean 1.0. Then guess before you read on: if you double c1's length exactly, same direction, just twice as long, does the number double too?
+## The honest look
 
-It does, exactly. Double one input, double the output. The meter is linear in each arrow you feed it: 4.2 becomes 8.4, no surprise hiding in the middle. That clean scaling is the crack. Size passes straight through the multiply-and-add, untouched.
+A meter you trust blindly is a meter that will lie to you, so before the night ends, one stress test. You watched length raise the score back when c1 stretched. The sharper question is by how much. Guess before you read on: double c1's length exactly, same direction, just twice as long. Does the score double exactly, or just drift up?
 
-That's the problem. A long, loud song can win on sheer size, not on agreement, and a padded resume can win on sheer length. The meter can't tell "points the same way" apart from "just bigger." A shout beats a whisper even when the whisper agrees with you more.
+It doubles, exactly. 4.2 becomes 8.4, no surprise hiding in the middle. Double one input, double the output: the meter is linear in each arrow you feed it. That clean scaling is the crack. Size passes straight through the multiply-and-add, untouched, so a long, loud song can win on sheer size rather than agreement. A shout beats a whisper even when the whisper agrees with you more.
 
-Remember where we started: two lists of numbers got compared, and the verdict was same taste. Now you can run that comparison yourself. Next time the app hands you a stranger's song that is exactly right, you will know the number that said ship it, and you will know that number can be shouted over.
+## Take it with you
 
-For the walk home: what is the cheapest fix that keeps the direction and forgets the size, now that you know size scales the score in lockstep?
+Here's the chain you walked, short enough to carry. A song and a taste became two tangles of qualities. The tangles folded into arrows. Multiply-and-add collapsed the arrows into one score. And the score turned out to be a similarity meter with one crack in the glass, where size can shout over alignment.
+
+One more aisle before you go, just to make sure the recipe really travels: score yourself against a job posting. The posting lists what the role wants. You list what you bring. The same multiply-and-add folds the match into one number for the fit, and nothing in the arithmetic ever asks whether the entries are songs or skills. That indifference is exactly why the trick travels.
+
+Now invent your own pair. Pick any two things you could describe with the same short list of numbers: you and a city, a recipe and a pantry, a workout and a week. Write both lists. Multiply the matching entries and add. Then say what a high score, a zero, and a negative number would each mean for your pair. If you can read all three, the meter is yours.
+
+Next time the app plays you a stranger's song that is exactly right, you will know the number that said ship it, and you will know that number can be shouted over.
+
+For the walk home: what is the cheapest fix that keeps the direction and forgets the size?
 
 Still up? The menu below has three ways to keep going: argue the metaphor with an LLM until it cracks, chase this same score into the attention papers where it reappears, or build the meter yourself in a few lines of NumPy.

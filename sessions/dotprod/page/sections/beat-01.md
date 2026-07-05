@@ -1,6 +1,6 @@
 ## How do you turn "same taste" into a number?
 
-Your music app just handed you a song by a band you've never heard of, and it's exactly right. Somewhere in a data center, two descriptions got compared and the machine decided: close enough, ship it. That comparison is doing something stranger than it looks.
+Say your music app hands you a song by a band you've never heard of, and it's exactly right. Somewhere in a data center, two descriptions got compared and the machine decided: close enough, ship it. That comparison is doing something stranger than it looks.
 
 A song isn't one thing you can measure with a single ruler. It's loud, it's fast, it's sad in the verses and bright in the chorus, dozens of qualities layered on top of each other at once. Your taste is the same kind of tangle: you like some of that loudness, some of that sadness, in your own particular mix. Neither the song nor your taste reduces to a single word. So how does the app collapse both of them into one verdict?
 

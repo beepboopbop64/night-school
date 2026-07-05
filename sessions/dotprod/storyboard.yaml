@@ -1,7 +1,9 @@
 # Storyboard: dotprod (S3, schema v2). The per-beat contract for the M6
 # round-trip testbed session, "the dot product as similarity". Authored and
-# locked 2026-07-04 as the M6 seed (the production graph consumes this; the
-# attention session's S3 machinery produced its equivalent at M5).
+# locked 2026-07-04 as the M6 seed; Phase 3 spine rewrite 2026-07-05 put the
+# session on a single walked thread (songs and taste), moved the job-posting
+# aside into the new consolidation beat (beat-05), and declared the `thread`
+# block that L12 enforces.
 # Narration here matches script.md exactly; the script adds the [visual:]
 # cue timeline per beat. Timing budgeted at ~150 spoken wpm.
 schemaVersion: 2
@@ -14,6 +16,11 @@ closingRetrievalPrompt: >-
 breadcrumbQuestion: >-
   What is the cheapest fix that keeps the direction and forgets the size?
 extensionsMenuRef: extensions.yaml
+thread:
+  threadExample: songs and your taste
+  asideExample: a job posting
+  asideKeywords: [job, resume, role, posting, hiring, fit]
+  consolidationBeat: beat-05
 notationSchedule:
   - symbol: a . b
     referent: the multiply-and-add score
@@ -22,21 +29,26 @@ notationSchedule:
 beats:
   - id: beat-01
     title: The score behind the song
-    narration: "Your music app just played you a song you love, by a band you have
-      never heard of. Two descriptions got compared in a data center and the
-      verdict was: same taste. But sit with what that comparison has to do. A
-      song is not one number. It is loud, fast, sad, bright, many qualities at
-      once, and your taste is that same tangle. So try it first. How would you
-      boil the match between two many-featured things down to a single number?
-      Harder than it sounds. One answer to it runs half of modern machine
-      learning."
+    narration: "Say your music app plays you a song you love, by a band you have
+      never heard of. Two descriptions get compared in a data center and the
+      verdict comes back: same taste. But weigh what that comparison has to do.
+      A song is not one number. It is loud, fast, sad, bright, many qualities at
+      once, and your taste is that same tangle. No single ruler works here,
+      because the ruler that measures loud says nothing about sad. And waiting
+      for two tangles to agree on every quality at once is a lottery you would
+      never win, so the comparison needs a principled way to collapse many
+      measurements into one. So try it first. How would you boil the match
+      between two many-featured things down to a single number? Harder than it
+      sounds. One answer to it runs half of modern machine learning."
     visual: "[visual: connect-to-reality] Two tall stacks of qualities slide in
       side by side, one for the listener's taste and one for the song, each row
       a named feature in periwinkle: loud, fast, sad, bright, and more trailing
-      off the frame. A single lilac match readout waits with a question mark
-      where its number should be. The question card holds over the unfilled
-      readout, half the frame deliberately empty so the puzzle, not an answer,
-      owns the screen."
+      off the frame. A short cream ruler lays against one row at a time and
+      never spans the stack, and a run of exact-match ticks flickers out as
+      rows refuse to agree. A single lilac match readout waits with a question
+      mark where its number should be. The question card holds over the
+      unfilled readout, half the frame deliberately empty so the puzzle, not an
+      answer, owns the screen."
     tracks:
       - video
       - page
@@ -54,39 +66,49 @@ beats:
       labels: text
     majorReveal: false
     misconceptionBeat: false
-    estimatedSeconds: 34
+    estimatedSeconds: 58
   - id: beat-02
     title: Turn the probe and feel it
-    narration: "You just tried to score that match by hand, and it fought back:
-      too many qualities, no clean way to fold them into one number. Here is the
-      move that lands it. A taste is an arrow: each direction is one quality,
-      and the length is how hard the song leans that way. Take one probe arrow
-      and four candidate arrows. Multiply them entry by entry and add. That
-      single sum is the score, the whole tangle collapsed to one number. Before
-      you touch the probe, call your shot: name the one candidate whose bar will
-      top out. Now turn the probe and watch the bars answer. Point at a
-      candidate and its score climbs. Turn away and it dies. So a big score
-      means two songs are the same, right? Watch again. Stretch one candidate
-      longer without turning it at all, and its bar climbs anyway, on length
-      alone, even though its direction never got closer. Length cheats the
-      meter. The score reads agreement of direction, not sameness, and a long
-      arrow can fake a high number."
+    narration: "You just tried to score that match by hand, and it fought back.
+      Add everything up and loudness wins, not agreement. Count exact matches
+      and nothing ever matches. Here is the move that lands it. A taste is an
+      arrow: each direction is one quality, and the length is how hard the song
+      leans that way. The recipe is almost embarrassingly small. Multiply the
+      two arrows entry by entry, then add. If your taste is two and one, and a
+      song is one and three, that is two times one plus one times three: five.
+      One number, the whole tangle collapsed. Now meet the instrument. One
+      probe arrow, the thing doing the asking. Four candidates, holding still,
+      and under each candidate a bar showing its current score. Before
+      anything moves, call your shot, and
+      make it one the sweep can prove wrong: as the probe turns, does any score
+      go negative? Now the sweep, and everything on screen is frozen except the
+      probe. As the probe turns toward a candidate, that bar climbs. As it
+      turns away, the bar dies. The candidates never moved, so direction is the
+      only thing the score can be reading. So a big score means two songs are
+      the same, right? Now watch what length does. One candidate stretches
+      longer, direction pinned, and its bar climbs anyway, on length alone,
+      even though its direction never got closer. The score reads agreement of
+      direction, not sameness, and a long arrow can fake a high number."
     visual: "[visual: covary | dynamic-concept] The stacked lists of qualities
       from the hook fold down, each feature becoming one direction, until each
       song is a single arrow. All arrows use thin exact strokes with arrowheads
       sized in proportion to shaft length; the amber probe's head is drawn to
-      the same proportion as the candidates', never bloated or malformed. One
-      amber probe arrow sweeps through directions; four periwinkle candidate
-      arrows hold still; under each candidate a lilac score bar with a small
-      mono numeric readout climbs and dies as the probe turns toward and away
-      from it. Each candidate label, and the 'probe' label, sits nudged clear of
-      every arrow so nothing ever collides, staying readable at every probe
-      angle including when the probe passes candidate B. Candidate c1 carries a
-      length handle: dragging it stretches c1 while its direction holds, and
-      c1's score climbs on length alone. A freeze frame before the sweep carries
-      the prediction card that asks the learner to name the candidate whose bar
-      will top out; after the sweep the probe parks and the four scores land as
-      integers on the bars."
+      the same proportion as the candidates', never bloated or malformed. The
+      recipe lands first as a tiny worked chip: two short columns, two and one
+      against one and three, products pooling into a single lilac five. Then
+      the instrument assembles: one amber probe arrow, four periwinkle
+      candidate arrows holding still, and under each candidate a lilac score
+      bar with a small mono numeric readout. Each candidate label, and the
+      'probe' label, sits nudged clear of every arrow so nothing ever collides,
+      staying readable at every probe angle including when the probe passes
+      candidate B. A freeze frame before the sweep carries the prediction card
+      asking whether any score goes negative; then the probe sweeps through
+      directions while everything else holds frozen, each bar climbing and
+      dying as the probe turns toward and away from its candidate, and the four
+      scores land as integers on the bars. Last, candidate c1 stretches longer
+      while its direction holds pinned and its score climbs on length alone; on
+      the page, c1 carries a length handle so the learner can drive the stretch
+      by hand."
     tracks:
       - video
       - page
@@ -101,7 +123,8 @@ beats:
     onScreenText:
       - probe
       - candidates
-      - 3  2  0  -2
+      - "2 x 1 + 1 x 3 = 5"
+      - "3  2  0  -2"
     colors:
       probe: data.heat
       candidates: data.observed
@@ -110,15 +133,14 @@ beats:
       labels: text
     interactiveSpec: page/interactives/dot-alignment.yaml
     predictionPrompt:
-      prompt: "Before you touch the probe, call your shot: name the one candidate
-        whose bar tops out."
-      expectedWrongAnswer: The longest candidate, or the one that looks most
-        similar, tops out, and no score can go negative because similarity
-        cannot drop below zero.
+      prompt: "Before anything moves, call your shot, and make it one the sweep
+        can prove wrong: as the probe turns, does any score go negative?"
+      expectedWrongAnswer: "No score ever goes negative, because a similarity
+        cannot be less than zero."
     majorReveal: false
     misconceptionBeat: true
     misconception: similarity-means-identical
-    estimatedSeconds: 66
+    estimatedSeconds: 100
   - id: beat-03
     title: Name the machine you just used
     narration: "Look at what your hands just learned. Point the probe along a
@@ -158,62 +180,63 @@ beats:
     misconceptionBeat: false
     estimatedSeconds: 36
   - id: beat-04
-    title: Same meter, different aisle
+    title: Back to the data center
     narration: "Time to close the loop. Rebuild the meter from memory: two arrows
-      go in, and which two operations turn them into a single score? While you
-      think, one detour worth naming. Swap the songs for a job posting. Score
-      yourself against what the role wants: multiply the matched entries, add
-      them up, one number for the fit. Different aisle, same meter. The
-      multiply-and-add never asked what the numbers meant, and that is exactly
-      why it travels."
-    visual: '[visual: dynamic-process | connect-to-reality] The card holds the
-      actual question in compressed form, "Rebuild the meter from memory. Which
-      two operations?", while the meter idles. The song columns swap for two labeled
-      "you" and "the role": Python hours, SQL reps, nights free, six rows at
-      full readable size with the whole frame to breathe; matched entries
-      multiply and pool into the same lilac readout on the same dial, and "two
-      arrows in, one number out" lands as the readout label. "Different aisle,
-      same meter" lands as the closing line.'
+      go in, and which two operations turn them into a single score? Hold your
+      answer while the opening scene comes back. Your app played you a
+      stranger's song and called it your taste. You know what that took now.
+      Your taste is the probe. The catalog is a shelf of candidates, thousands
+      of arrows long. And the machine in the data center is the thing you just
+      built, running multiply-and-add a few million times and handing you the
+      top bar. That was the whole mystery: your meter, at scale."
+    visual: "[visual: connect | connect-to-reality] The retrieval card holds the
+      compressed question while the meter idles. Then the hook's frame returns:
+      the two tall stacks from beat-01 stand beside the arrows they folded
+      into, the amber probe takes the label 'your taste', and the candidate row
+      extends into a long periwinkle catalog shelf running off frame, arrows
+      all the way down. Score bars rank themselves under the shelf, the top bar
+      slides forward as the played song, and the data center readout from the
+      opening fills its question mark with the winning score."
     tracks:
       - video
       - page
-    newIdea: The same multiply-and-add travels across domains untouched, because
-      the recipe never asks what the numbers mean.
+    newIdea: "The recommendation from the hook is this same meter at catalog
+      scale: your taste is the probe and every song on the shelf is a
+      candidate."
     novelElements:
-      - the job-fit columns
+      - the catalog shelf
     onScreenText:
       - Rebuild the meter from memory. Which two operations?
-      - two arrows in, one number out
-      - different aisle, same meter
+      - your taste
+      - the catalog
     colors:
+      probe: data.heat
       candidates: data.observed
       score: data.params
       background: bg
       labels: text
     majorReveal: false
     misconceptionBeat: false
-    estimatedSeconds: 30
+    estimatedSeconds: 40
   - id: beat-04b
     title: The honest look
-    narration: "Now the honest look, and guess before you watch. Double c1's
-      length exactly, leave its direction untouched, does the number double too?
-      It does, exactly. Double one input, double the output: the meter is linear
-      in each arrow you feed it. That clean scaling is the crack. Long songs
-      would win on sheer loudness, and padded resumes would win on sheer length,
-      because size passes straight through. For the walk home: what is the
-      cheapest fix that keeps the direction and forgets the size, now that you
-      know size scales the score in lockstep? Still up? The menu below has three
-      ways to keep going."
-    visual: "[visual: dynamic-process | connect-to-reality] A guess card holds
-      with one candidate outlined and the score readout hidden; the card carries
-      no header and instead poses the doubling question directly, asking whether
-      doubling c1 doubles the number. Then that periwinkle candidate doubles in
+    narration: "Now the honest look, and guess before you watch. You saw length
+      raise the score. But by how much? Double c1's length exactly, same
+      direction, just twice as long: does the score double exactly, or just
+      drift up? It doubles, exactly. Four point two becomes eight point four,
+      to the last digit. Double one input, double the output: the meter is
+      linear in each arrow you feed it. That clean scaling is the crack. A loud
+      song wins on sheer loudness, whether or not the taste underneath agrees,
+      because size passes straight through the arithmetic."
+    visual: "[visual: dynamic-process] A guess card holds with candidate c1
+      outlined and its score readout hidden; the card carries no header and
+      poses the doubling question directly, asking whether the score doubles
+      exactly or just drifts up. Then the periwinkle candidate doubles in
       length while its direction holds still; its lilac score reads out at
       exactly twice its former value, the two numbers stacked with no header so
       the stacked 4.2 / x2 / 8.4 stands as the reveal itself; a small rose flag
-      marks that size passed straight through. The walk-home question lands as
-      the closing card under a single 'For the walk home' header, and a quiet
-      chip points to the extensions menu on the page."
+      marks that size passed straight through, and a long loud candidate's bar
+      outranks a better-aligned short one while both stay on screen."
     tracks:
       - video
       - page
@@ -224,10 +247,8 @@ beats:
       - the doubled arrow
       - the unearned-win flag
     onScreenText:
-      - Double c1. Same direction. Does the score double?
-      - For the walk home
-      - Keep the direction. Forget the size.
-      - Still up?
+      - Double c1. Same direction. Exactly double, or just up?
+      - "4.2  x2  8.4"
     colors:
       candidates: data.observed
       score: data.params
@@ -235,10 +256,57 @@ beats:
       background: bg
       labels: text
     predictionPrompt:
-      prompt: If you double c1's length exactly, same direction, just twice as long,
-        does the number double too?
-      expectedWrongAnswer: "No: stretching one arrow nudges the number up in some
-        messy way, not a clean doubling."
+      prompt: "You saw length raise the score, but by how much? Double c1's
+        length exactly, same direction: does the score double exactly, or just
+        drift up?"
+      expectedWrongAnswer: "It just drifts up: stretching one arrow nudges the
+        number in some messy way, not a clean doubling."
     majorReveal: true
     misconceptionBeat: false
-    estimatedSeconds: 40
+    estimatedSeconds: 38
+  - id: beat-05
+    title: Take it with you
+    narration: "Take it with you. A song and a taste, folded into arrows,
+      collapsed by multiply-and-add into one score: a meter with a crack in it.
+      One more aisle, to make sure it lands: score yourself against a job
+      posting. Same multiply-and-add, one number for the fit. Now invent your
+      own pair. Anything you can describe as two matching lists, the meter can
+      score. For the walk home: what is the cheapest fix that keeps the
+      direction and forgets the size? Still up? The menu below has three ways
+      to keep going."
+    visual: "[visual: connect | connect-to-reality] The chain replays as a strip
+      of four small stills drawing left to right in reasoning order: the two
+      stacked tangles from the hook, the arrows they folded into, the
+      multiply-and-add pooling into one score bar, and the meter dial with its
+      hairline rose crack. Then a clearly framed aside panel slides in: two
+      short columns labeled 'you' and 'the posting', matched entries
+      multiplying and pooling into one lilac fit readout on the same dial. The
+      aside panel slides out and leaves a pair of blank columns under the
+      invitation to invent your own pair; the walk-home question lands as the
+      closing card under the 'For the walk home' header, and a quiet chip
+      points to the extensions menu below."
+    tracks:
+      - video
+      - page
+    newIdea: The meter recipe transfers to any pair of matching feature lists,
+      shown once in a second aisle and then handed to the learner to invent
+      with.
+    novelElements:
+      - the recap chain
+      - the job-fit columns
+    onScreenText:
+      - tangle, arrows, multiply-and-add, meter
+      - you  vs  the posting
+      - invent your own pair
+      - For the walk home
+      - Keep the direction. Forget the size.
+      - Still up?
+    colors:
+      asideColumns: data.observed
+      score: data.params
+      crack: data.error
+      background: bg
+      labels: text
+    majorReveal: false
+    misconceptionBeat: false
+    estimatedSeconds: 36

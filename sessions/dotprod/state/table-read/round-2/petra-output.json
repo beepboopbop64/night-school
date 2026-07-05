@@ -1,0 +1,30 @@
+[
+  {
+    "ruleId": "R19",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Confirming prior round's disposition: beat-01's question is the R16 organizer, not R19; beat-02's predictionPrompt (does any score go negative, expectedWrongAnswer declared) and beat-04b's predictionPrompt (doubling exactly vs drift) both give checkable falsifiable guesses ahead of their reveals. No violation remains.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "R23",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "Dissenting from the round-1 overrule's closure, since the artifact text at issue is unchanged and I still see the same gap: beat-03's aha ('the dot product is a similarity meter... the reading tracks direction') is delivered as narrated exposition immediately after the stills replay, with the sentence truing up on screen rather than being supplied or completed by the learner. The Showrunner's rationale is that beat-02's prediction 'does any score go negative' does the connecting, but that prediction resolves a narrower claim (sign behavior) inside beat-02 itself; it does not by itself make beat-03's naming step ('a meter with agree/ignore/oppose') learner-supplied rather than narrator-supplied. The components are genuinely pre-established (beat-02 sweep, beat-02 length-fake), so this is one step from the learner as the Showrunner says, and I am not upgrading it. Recording as a standing dissent per the consistency duty rather than silently accepting the closure.",
+    "suggestion": "Unchanged from round 1: a one-line prompt before the sentence trues up (e.g. 'what would you call an instrument that reads agree, ignore, oppose off direction alone?') would move this from narrated to learner-completed without touching the locked beat's structure."
+  },
+  {
+    "ruleId": "R25",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Accepting the round-1 disposition's fix as sufficient: beat-02's narration now names two concrete failed naive attempts ('Add everything up and loudness wins, not agreement. Count exact matches and nothing ever matches.') before the canonical recipe lands, giving the struggle recap an explicit comparison point. No residual violation.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "R11",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "beat-03's onScreenText and visual introduce the symbolic annotation 'a . b' immediately alongside the meter-dial consolidation, and notationSchedule marks firstSymbolicBeat as beat-03 with firstManipulatedBeat beat-02, which satisfies the mechanical letter of R11. However the annotation is attached to the score readout only after the dial replaces the sweep stills; the referent being compressed at that exact moment is the dial/meter behavior, not the raw multiply-and-add operation the learner manipulated in beat-02. This is a judgment call on whether the compression targets the right referent, not a mechanical gap.",
+    "suggestion": "Advisory only: consider anchoring 'a . b' visually to the worked chip's numbers (the 2x1+1x3=5 pooling) rather than only to the dial, so the symbol compresses the manipulated arithmetic directly rather than the metaphor built on top of it."
+  }
+]
