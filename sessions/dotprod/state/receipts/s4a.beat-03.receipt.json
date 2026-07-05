@@ -12,21 +12,21 @@
     },
     {
       "path": "video/audio/beat-03.mp3",
-      "sha256": "33d5747c04c6b6d95a1305bf9106171d7f7748e077e6e0e897e52b9ea56ef37b"
+      "sha256": "5b4da1b214e90439a0a23478201bda262c420d02f3c4d7ab4eefcedef11c0498"
     }
   ],
   "outputs": [
     {
       "path": "video/beats/beat-03.yaml",
-      "sha256": "9469c8bf2afae44f20352f63979448f89c3808af85e8d3ae2a1c1347878e775d"
+      "sha256": "6f73ae343ccd030f479e20b5c6339ac30e67cfb7ea9be510ed4b29f09531e60e"
     },
     {
       "path": "video/scenes/scene_beat_03.py",
-      "sha256": "ccfd69fe68ab5b1cb2ffc4812747d28652f3201447550349a6f4449022294aaa"
+      "sha256": "0809a87bacbd69bc72a54a5d4ff64d0874d50a96a89c5e072ebd2cbf26610ad2"
     },
     {
       "path": "media/beat-03.mp4",
-      "sha256": "323a9e2bbaa7687360d08d6aedb2d63ea15bb96e790597c7c5501169e0ad3516"
+      "sha256": "1dc29a29d6abdd4342a63ec7cfa6992de49179b95818df6bda804ff263617ab7"
     }
   ],
   "gate": {
@@ -48,23 +48,23 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 1.0160084999999999,
+  "costUsd": 1.5677221999999997,
   "tier": "opus",
-  "startedAt": "2026-07-05T01:00:10.346Z",
-  "endedAt": "2026-07-05T01:10:33.950Z",
-  "transcript": "state/dailies/slice-2026-07-05T0100-5029fd",
+  "startedAt": "2026-07-05T04:50:06.565Z",
+  "endedAt": "2026-07-05T05:02:55.552Z",
+  "transcript": "state/dailies/slice-2026-07-05T0450-405a6b",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 34.133333,
-    "audioSeconds": 33.576054,
-    "toleranceSeconds": 3.36,
+    "videoSeconds": 38.666667,
+    "audioSeconds": 38.8,
+    "toleranceSeconds": 3.88,
     "perIteration": [
       {
         "iter": 1,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.8688134999999999,
-        "irisCostUsd": 0.14719500000000002,
-        "wallMs": 623383,
+        "coderCostUsd": 1.4195171999999998,
+        "irisCostUsd": 0.148205,
+        "wallMs": 768780,
         "fingerprints": [],
         "replanWasForced": false
       }

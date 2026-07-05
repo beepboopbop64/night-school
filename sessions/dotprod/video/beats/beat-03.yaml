@@ -27,4 +27,4 @@ beat:
     ahaTrueUp: data.fit
     background: bg
     labels: text
-  durationTargetSeconds: 33.6
+  durationTargetSeconds: 38.8

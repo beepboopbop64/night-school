@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries a single load-bearing focus — the probe stills in 1-2, the swinging lilac meter in 3-4, and the mint aha sentence anchoring 5-6 while the meter recedes to a filled dim shape.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The busiest frame (frame-02) shows three parallel probe stills sharing one visual grammar, well under the four-element budget.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels sit directly on their objects — 'oppose/ignore/agree' ring the dial arc and 'a . b' sits atop the score readout, with no legend box.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose, 'dot product = similarity meter', annotates the visible meter dial directly beneath it and reads as a key term, not narration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — dial labels, +6.0/-6.0 readouts, and the aha sentence — is rendered well above the ~2.2% frame-height threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every focal element sits inside the frame with margin; the meter dial and aha sentence are fully contained.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or label overlaps another; the 'oppose' and 'agree' labels sit just outside the arc endpoints without collision.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The lilac dial for parameters/similarity, periwinkle 'a . b' annotation, amber score readout, and mint aha glow all follow the Night School token meanings consistently.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — probe arrows, scores, dial, needle, and aha sentence — carries propositional content; no decoration present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The intent is delivered: probe stills (along/across/against with frozen scores) collapse into a lilac meter dial swinging oppose→ignore→agree, with 'a . b' on the readout and the mint aha sentence truing up.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each probe still keeps its label, arrows, and score stacked together, and the 'a . b' annotation sits directly on the score.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order — stills accumulate, then the needle swings from -6.0 to +6.0 across frames 3-4, then the dial recedes as the aha sentence appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Generous negative space surrounds the dial and readouts with a clear top-to-bottom reading order.",
+    "suggestion": ""
+  }
+]
