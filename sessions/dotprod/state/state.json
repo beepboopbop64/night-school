@@ -62,7 +62,7 @@
     "s4b.sec-beat-02": {
       "status": "passed",
       "iter": 0,
-      "costUsd": 0.0458172,
+      "costUsd": 0.0474816,
       "receipt": "state/receipts/s4b.sec-beat-02.receipt.json"
     },
     "s4b.sec-beat-03": {
