@@ -486,3 +486,13 @@
 {"ts":"2026-07-05T05:41:47.239Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-04.mp4","index":3,"targetSeconds":86.4}}
 {"ts":"2026-07-05T05:41:54.612Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.av-drift","pass":true},{"id":"assemble.captions-written","pass":true},{"id":"assemble.aha-consistency","pass":true},{"id":"assemble.lchecks-rerun","pass":true},{"id":"assemble.token-lint","pass":true},{"id":"assemble.site-built","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
 {"ts":"2026-07-05T05:41:54.613Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"node_completed","data":{"costUsd":0,"durationMs":19369}}
+{"ts":"2026-07-05T05:41:54.990Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"commit","data":{"sha":"31aae368f1ccfec43b690f8f04b0dc3de125aa8b"}}
+{"ts":"2026-07-05T05:41:55.006Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","event":"node_started","data":{"reason":"gate-failed"}}
+{"ts":"2026-07-05T05:43:22.352Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","agent":"sam","event":"critique_iteration","data":{"round":1,"passed":false,"matcherModel":"claude-haiku-4-5"}}
+{"ts":"2026-07-05T05:47:28.604Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","agent":"petra","event":"critique_iteration","data":{"round":1,"blocking":0}}
+{"ts":"2026-07-05T05:48:37.469Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","agent":"vera","event":"critique_iteration","data":{"round":1,"blocking":1}}
+{"ts":"2026-07-05T05:49:09.373Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","agent":"iris","event":"critique_iteration","data":{"round":1,"blocking":0}}
+{"ts":"2026-07-05T05:50:09.404Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","agent":"sam","event":"critique_iteration","data":{"round":2,"passed":true,"matcherModel":"claude-haiku-4-5"}}
+{"ts":"2026-07-05T05:50:47.887Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","agent":"vera","event":"critique_iteration","data":{"round":2,"blocking":0}}
+{"ts":"2026-07-05T05:50:47.892Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","event":"gate_result","data":{"passed":true,"checks":[{"id":"screening.sam-probes","pass":true},{"id":"screening.petra","pass":true},{"id":"screening.vera-opus","pass":true},{"id":"screening.iris-continuity","pass":true},{"id":"screening.rounds-within-cap","pass":true,"iter":2}]}}
+{"ts":"2026-07-05T05:50:47.893Z","runId":"run-2026-07-05T0425-9fe80e","node":"s6.screening","event":"node_completed","data":{"costUsd":0.9204182000000001,"durationMs":532885}}

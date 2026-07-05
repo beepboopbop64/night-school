@@ -12,33 +12,33 @@
     },
     {
       "path": "spine.md",
-      "sha256": "91c6ee10ce2a1bfc17f186047dca446b5dfa84ae7b2a1744c718b524dd8782ad"
+      "sha256": "71c51bb6e2f351875c1c67a033f0ea8257287c23c59ad8ae8d0bbd2dcdf39fd8"
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "ce8b98f586bff94f8dfab7dd485565fa582e6945b55a285ebbf3e2800292fb57"
+      "sha256": "e3c8639036b898abae0ea4ce2943388f19bed9c052f3ccbed42196d4b6d67116"
     },
     {
       "path": "script.md",
-      "sha256": "f149f1ebc94d7d73e5d6ea8a4d6b0d5f993c8228f3428efdb1be24e0e6b7aabb"
+      "sha256": "cde77a9ae956e290d548271fbf455e2ec8f072dc1d99c8cfaefad5f08c9926be"
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "4804b0736ab0ce1957d8d15c3eea879cdb9c0ff60018f1669e7291515ebf4a36"
+      "sha256": "38120d6551faa418717a5a077b1479d162d4e9bbfb1ff5dfbbf7bff74e1d4f78"
     },
     {
       "path": "video/captions.vtt",
-      "sha256": "b037227372c0d24e8e46d8424eda71d226d0b8f82348c9214461f7194c8b19d1"
+      "sha256": "ac06c839567d1f6ab42d12717fc0cf260bf3bd6735b39a6421a326dc2e5d6602"
     }
   ],
   "outputs": [
     {
-      "path": "rounds/round-02/screening-report.md",
-      "sha256": "f81f7f369c6aa0a84934316b6957f826a22165e83c66b4f589a737540bc9e724"
+      "path": "rounds/round-03/screening-report.md",
+      "sha256": "f23df80382c11db7b660a03a3ecc5dae52479eec941e5e05d15ece5c85154bdb"
     }
   ],
   "gate": {
-    "passed": false,
+    "passed": true,
     "checks": [
       {
         "id": "screening.sam-probes",
@@ -46,7 +46,7 @@
       },
       {
         "id": "screening.petra",
-        "pass": false
+        "pass": true
       },
       {
         "id": "screening.vera-opus",
@@ -58,16 +58,16 @@
       },
       {
         "id": "screening.rounds-within-cap",
-        "pass": false,
+        "pass": true,
         "iter": 2
       }
     ]
   },
   "iterations": 2,
-  "costUsd": 1.1286456,
+  "costUsd": 0.9204182000000001,
   "tier": "opus",
-  "startedAt": "2026-07-05T03:26:21.178Z",
-  "endedAt": "2026-07-05T03:37:52.455Z",
+  "startedAt": "2026-07-05T05:41:55.004Z",
+  "endedAt": "2026-07-05T05:50:47.889Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
@@ -75,10 +75,7 @@
     "samAdvisory": {
       "curiosity": 4,
       "wouldFinish": true,
-      "note": "It felt satisfying while I was dragging the arrow around, but the ending crammed a new example and a new problem in fast, so I left a little foggy instead of clearly hooked for next time."
-    },
-    "dissent": [
-      "petra"
-    ]
+      "note": "It felt clear and well-paced for the first two beats but started to drag slightly by the end from restating the same recipe multiple times before finally getting to the actual twist."
+    }
   }
 }

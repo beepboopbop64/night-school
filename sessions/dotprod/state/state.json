@@ -108,9 +108,9 @@
       "receipt": "state/receipts/s5.assemble.receipt.json"
     },
     "s6.screening": {
-      "status": "flagged",
+      "status": "passed",
       "iter": 2,
-      "costUsd": 1.240657,
+      "costUsd": 0.9204182000000001,
       "receipt": "state/receipts/s6.screening.receipt.json"
     },
     "s7.packet": {
@@ -120,11 +120,5 @@
       "receipt": "state/receipts/s7.packet.receipt.json"
     }
   },
-  "needsJake": [
-    {
-      "node": "s6.screening",
-      "reason": "gate failed: screening.petra, screening.rounds-within-cap",
-      "since": "2026-07-05T03:37:52.459Z"
-    }
-  ]
+  "needsJake": []
 }
