@@ -8,17 +8,17 @@
     },
     {
       "path": "spine.md",
-      "sha256": "91c6ee10ce2a1bfc17f186047dca446b5dfa84ae7b2a1744c718b524dd8782ad"
+      "sha256": "71c51bb6e2f351875c1c67a033f0ea8257287c23c59ad8ae8d0bbd2dcdf39fd8"
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "c6b8181af10ff6a513dcafe6eec52d2092c85b0885bd59ba86e1a23d7235debf"
+      "sha256": "e3c8639036b898abae0ea4ce2943388f19bed9c052f3ccbed42196d4b6d67116"
     }
   ],
   "outputs": [
     {
       "path": "extensions.yaml",
-      "sha256": "e0b0ffcda9c16a1418a1af752bd393873a6eb0f9f219c560896f31292e1426be"
+      "sha256": "f15618c10169d50d9e57cfb6164680252c2d7784ba94f8756842f019a3d602b2"
     }
   ],
   "gate": {
@@ -43,10 +43,10 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 0.10525499999999999,
+  "costUsd": 0.11946119999999999,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T03:55:19.293Z",
-  "endedAt": "2026-07-05T03:56:05.848Z",
+  "startedAt": "2026-07-05T05:38:19.640Z",
+  "endedAt": "2026-07-05T05:39:14.503Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
