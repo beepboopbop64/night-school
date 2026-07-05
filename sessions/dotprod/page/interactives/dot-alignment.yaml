@@ -50,18 +50,16 @@ interactive:
     step: 5
     initial: 90
     unit: degrees
-  candidateLength:
-    target: c1
-    min: 0.5
-    max: 2.0
-    step: 0.1
-    initial: 1.0
-    unit: relative-length
-    note: >-
-      Stretches or shrinks c1 only, holding its direction. Lets the learner
-      watch c1's score climb on length alone at a fixed angle, so length
-      visibly cheats the similarity read while probe direction is what
-      actually earns alignment.
+  # length-c1 stretches or shrinks c1 only, holding its direction: the
+  # learner watches c1's score climb on length alone at a fixed angle, so
+  # length visibly cheats the similarity read that direction earns.
+  controls:
+    length-c1:
+      min: 0.5
+      max: 2.0
+      step: 0.1
+      initial: 1.0
+      unit: relative-length
   states:
     - id: initial
       description: untouched first render; the probe rests at 90 degrees
@@ -85,4 +83,4 @@ interactive:
         length cheats the similarity read
       drive:
         - { do: set-slider, value: 90 }
-        - { do: set-candidate-length, target: c1, value: 2.0 }
+        - { do: set-control, control: length-c1, value: 2.0 }
