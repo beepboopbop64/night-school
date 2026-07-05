@@ -129,85 +129,85 @@ One honest reading of alignment comes out.
 And the reading tracks direction, because direction is all the sweep ever changed.
 
 33
-00:01:55.865 --> 00:01:57.600
+00:01:55.998 --> 00:01:57.733
 Time to close the loop.
 
 34
-00:01:57.600 --> 00:02:01.221
+00:01:57.733 --> 00:02:01.354
 Rebuild the meter from memory: two arrows go in,
 
 35
-00:02:01.221 --> 00:02:04.842
+00:02:01.354 --> 00:02:04.975
 so what two operations turn them into the score?
 
 36
-00:02:04.842 --> 00:02:07.935
+00:02:04.975 --> 00:02:08.068
 While you think, one detour worth naming.
 
 37
-00:02:07.935 --> 00:02:10.425
+00:02:08.068 --> 00:02:10.558
 Swap the songs for a job posting.
 
 38
-00:02:10.425 --> 00:02:15.932
+00:02:10.558 --> 00:02:16.065
 Score yourself against what the role wants: multiply the matched entries,
 
 39
-00:02:15.932 --> 00:02:18.648
+00:02:16.065 --> 00:02:18.781
 add them up, one number for the fit.
 
 40
-00:02:18.648 --> 00:02:20.760
+00:02:18.781 --> 00:02:20.893
 Different aisle, same meter.
 
 41
-00:02:20.760 --> 00:02:24.985
+00:02:20.893 --> 00:02:25.118
 The multiply-and-add never asked what the numbers meant,
 
 42
-00:02:24.985 --> 00:02:27.625
+00:02:25.118 --> 00:02:27.758
 and that is exactly why it travels.
 
 43
-00:02:27.625 --> 00:02:31.439
+00:02:27.758 --> 00:02:31.572
 Now the honest look, and guess before you watch.
 
 44
-00:02:31.439 --> 00:02:38.271
+00:02:31.572 --> 00:02:38.404
 Double c1's length exactly, leave its direction untouched, does the number double too?
 
 45
-00:02:38.271 --> 00:02:39.622
+00:02:38.404 --> 00:02:39.755
 It does, exactly.
 
 46
-00:02:39.622 --> 00:02:46.217
+00:02:39.755 --> 00:02:46.350
 Double one input, double the output: the meter is linear in each arrow you feed it.
 
 47
-00:02:46.217 --> 00:02:48.759
+00:02:46.350 --> 00:02:48.892
 That clean scaling is the crack.
 
 48
-00:02:48.759 --> 00:02:55.512
+00:02:48.892 --> 00:02:55.645
 Long songs would win on sheer loudness, and padded resumes would win on sheer length,
 
 49
-00:02:55.512 --> 00:02:58.452
+00:02:55.645 --> 00:02:58.585
 because size passes straight through.
 
 50
-00:02:58.452 --> 00:03:05.603
+00:02:58.585 --> 00:03:05.736
 For the walk home: what is the cheapest fix that keeps the direction and forgets the size,
 
 51
-00:03:05.603 --> 00:03:09.734
+00:03:05.736 --> 00:03:09.867
 now that you know size scales the score in lockstep?
 
 52
-00:03:09.734 --> 00:03:10.449
+00:03:09.867 --> 00:03:10.582
 Still up?
 
 53
-00:03:10.449 --> 00:03:13.945
+00:03:10.582 --> 00:03:14.078
 The menu below has three ways to keep going.

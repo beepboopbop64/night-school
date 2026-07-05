@@ -84,8 +84,9 @@
 	<section class="extensions" aria-label="extensions">
 		<h2 class="still-up">Still up?</h2>
 		<p class="ext-sub">
-			Pick a door: argue it out with an LLM, read the paper that started all
-			this, or build something small before bed.
+			Pick one door, not all three: argue it out with an LLM, read the paper
+			that started all this, or build something small before bed. One is
+			plenty. This is dessert, not homework.
 		</p>
 		<div class="lane">
 			<h3>Argue it out</h3>

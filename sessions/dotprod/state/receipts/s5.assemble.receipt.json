@@ -8,7 +8,7 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "5b77a95b7cd851622f47c673e56ef179f67e0716b4c2a5b1d3de94144086e6ce"
+      "sha256": "38ae5d288caeaf5d096f39e508906e181810ef0c6a2fc91dff011509782cc112"
     },
     {
       "path": "script.md",
@@ -16,11 +16,11 @@
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "4f8208e3e923a92611037974595d96affb803435274e721512120125713c69bd"
+      "sha256": "740731237d9a28a7c379a7c40c9be7b8a86d79f09482b12172adb4581ea2620a"
     },
     {
       "path": "extensions.yaml",
-      "sha256": "f6987b5299b3aac145269bc7b314cd6f055e0744478e9f620fc315c624ded7f0"
+      "sha256": "6cd950b33c2bc34eea338628cd92a12610262bda61caf7a63b68c9b49e467b3f"
     },
     {
       "path": "media/beat-01.mp4",
@@ -40,7 +40,7 @@
     },
     {
       "path": "media/beat-03.mp4",
-      "sha256": "1dc29a29d6abdd4342a63ec7cfa6992de49179b95818df6bda804ff263617ab7"
+      "sha256": "9f149584f1efc486d0a06d3435076e6fc589c43d1351f9ef07adbc02e793e870"
     },
     {
       "path": "video/audio/beat-03.mp3",
@@ -48,7 +48,7 @@
     },
     {
       "path": "media/beat-04.mp4",
-      "sha256": "3ce5658763de99c07edde374ca746cb97046bef101333205be52bb252ab76ea9"
+      "sha256": "abe59b11ed8014a0eeb94561f10a7cc75d9af9f4d731f85e486b6a187fb823d4"
     },
     {
       "path": "video/audio/beat-04.mp3",
@@ -56,7 +56,7 @@
     },
     {
       "path": "media/beat-04b.mp4",
-      "sha256": "e021c1f46564939b6ae9c1d2150ac967bdc18c764920c8ce5e79b1892003dd70"
+      "sha256": "513ebc774dd6f10175a6329b784fa3eb8deae3b9eed523a2db78e04bb8d77487"
     },
     {
       "path": "video/audio/beat-04b.mp3",
@@ -64,45 +64,45 @@
     },
     {
       "path": "page/sections/beat-01.md",
-      "sha256": "64c2346916b941c6fa4493032422a403f80b6e406aa17dba97323def4e939f45"
+      "sha256": "aabd04aab8a2e76f469909425e4657841a2f6e11213ca87a22f8316dc0bece90"
     },
     {
       "path": "page/sections/beat-02.md",
-      "sha256": "ab8d802ee89ade781a392044f0c90ec35e479bd0a93962b45faf624dbb4ec5c7"
+      "sha256": "768e718a69ff5270d665ff9ed23dc0f73c04cba1c5dfe1ce7f530b7092b27c3d"
     },
     {
       "path": "page/sections/beat-03.md",
-      "sha256": "e6b35d9b0ebe9889153398072cc9e8813e9c3bf0db49336a0703afdae5b8e3b7"
+      "sha256": "1535b52444e3b0f6ee8ffd9f1f489f69e861fe46589169952c2c907d4254d2a2"
     },
     {
       "path": "page/sections/beat-04.md",
-      "sha256": "bd60a8710ca17c21779b646cc7dc134e2eb7abc3bb80aa04621f025f4513bfbe"
+      "sha256": "8c2c85abf3ec3271035e26908da57fd72566463d849b7875e1873d1b33025e10"
     },
     {
       "path": "page/sections/beat-04b.md",
-      "sha256": "2d4ca854858d560193354363b1a69fdbbbb917663aa7bedf2ac56cfec6bec961"
+      "sha256": "f689dfa1176973190d15ace2bac1aef74737568d9866dae32927e22615368660"
     },
     {
       "path": "notebook/lesson.ipynb",
-      "sha256": "4d04c3b381651fe5ac9ed58af200737ba809272a8cad0b9782c74e3727b254b8"
+      "sha256": "eed77f3a8074d45a0deeda59c0f21a4d48c7645e1aaa7542ef48ba46b9e78e3e"
     }
   ],
   "outputs": [
     {
       "path": "media/session.mp4",
-      "sha256": "5cb83b053d8be0e60d2c40e2d714de06b81b364cd23fec33164a46e515dd6343"
+      "sha256": "3272e45c645daea0f48293ab4f1963c9452549104620cd2cb2e5fd2a380be439"
     },
     {
       "path": "video/captions.vtt",
-      "sha256": "8ed38bab485cc523f1d0a2d5b4ef38d37194b6c5d1e09ab19985d4bc2dc64c81"
+      "sha256": "7d9851ea385c05144cb39b871b2c0ac123c29fee802ffc1ebea79b57814d21df"
     },
     {
       "path": "page/video.json",
-      "sha256": "8138e0a1c3c24b21c891a8527cff9fbbf5a5ca4ffb89aeaad45f4fe38029d7ca"
+      "sha256": "175db3f78ebe336ecf34484c103b332704570ddc939f200519c28c1898fda287"
     },
     {
       "path": "page/extensions.json",
-      "sha256": "17aeb974cb7395fe942a15ccdd6588a1ebd3b12b886eff1567c1846690fcd1d0"
+      "sha256": "b9fc8e37f178510dc67f43e5f18e8f52dad88293d4c730739c920594c2cf47d9"
     },
     {
       "path": "manifest.yaml",
@@ -110,7 +110,7 @@
     }
   ],
   "gate": {
-    "passed": true,
+    "passed": false,
     "checks": [
       {
         "id": "assemble.av-drift",
@@ -126,7 +126,7 @@
       },
       {
         "id": "assemble.lchecks-rerun",
-        "pass": true
+        "pass": false
       },
       {
         "id": "assemble.token-lint",
@@ -145,12 +145,12 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T08:11:29.359Z",
-  "endedAt": "2026-07-05T08:11:46.709Z",
+  "startedAt": "2026-07-05T14:39:55.693Z",
+  "endedAt": "2026-07-05T14:40:23.164Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 193.96,
+    "videoSeconds": 194.09,
     "beats": [
       {
         "beatId": "beat-01",
@@ -167,21 +167,24 @@
       {
         "beatId": "beat-03",
         "startSeconds": 77.065,
-        "targetSeconds": 38.8,
-        "measuredSeconds": 38.8
+        "targetSeconds": 38.933,
+        "measuredSeconds": 38.933333
       },
       {
         "beatId": "beat-04",
-        "startSeconds": 115.865,
+        "startSeconds": 115.998,
         "targetSeconds": 31.76,
         "measuredSeconds": 31.76
       },
       {
         "beatId": "beat-04b",
-        "startSeconds": 147.625,
-        "targetSeconds": 46.32,
+        "startSeconds": 147.758,
+        "targetSeconds": 46.333,
         "measuredSeconds": 46.333333
       }
+    ],
+    "lcheckIssues": [
+      "L7: on-screen text duplicates narration for 8 consecutive words (\"Two arrows go in. What two operations turn them into the sco\"); on-screen text is labels and key t"
     ],
     "ahaOk": {
       "page": true,

@@ -15,13 +15,13 @@ beat:
     multiply-and-add never asked what the numbers meant, and that is exactly why
     it travels.
   visual: '[visual: dynamic-process | connect-to-reality] The card holds the
-    actual question, "Two arrows go in. What two operations turn them into the
-    score?", while the meter idles. The song columns swap for two labeled "you"
-    and "the role": Python hours, SQL reps, nights free, six rows at full
-    readable size with the whole frame to breathe; matched entries multiply and
-    pool into the same lilac readout on the same dial, and "two arrows in, one
-    number out" lands as the readout label. "Different aisle, same meter" lands
-    as the closing line.'
+    actual question in compressed form, "Rebuild the meter from memory. Which
+    two operations?", while the meter idles. The song columns swap for two
+    labeled "you" and "the role": Python hours, SQL reps, nights free, six rows
+    at full readable size with the whole frame to breathe; matched entries
+    multiply and pool into the same lilac readout on the same dial, and "two
+    arrows in, one number out" lands as the readout label. "Different aisle,
+    same meter" lands as the closing line.'
   colors:
     candidates: data.observed
     score: data.params

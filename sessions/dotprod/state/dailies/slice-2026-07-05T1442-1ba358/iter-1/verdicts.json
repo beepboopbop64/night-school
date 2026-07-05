@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries a single focus: frame 3 the you/role value table, frame 5 the 'Different aisle, same meter' line with the lilac readout dial beneath it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The value rows are grouped as one two-column table and the dial is a single persistent anchor; no more than four novel ideas appear at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Row labels (Python hours, SQL reps, nights free, years exp) sit immediately left of their values and 'you'/'the role' headers sit atop their columns; no legend or corner key is used.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "'two arrows in, one number out' sits directly under the dial it annotates and 'Different aisle, same meter' is a short closing key term, not transcribed narration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Row labels, headers, values and the closing line are all rendered well above the ~2.2% frame-height threshold and are clearly readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The table, dial, readout, and closing line all sit within the frame with comfortable margins; nothing is cropped.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels, values, the dial, and text lines occupy distinct regions with no overlap in any frame.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Observed entry values wear periwinkle while the pooled products and the '98' readout and dial needle wear lilac (parameters), consistently across frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The half-dial meter is the load-bearing readout instrument, not ornament; every element carries propositional weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The columns swap to 'you'/'the role', the labeled rows appear at readable size, matched entries multiply and pool into the lilac dial readout labeled 'two arrows in, one number out', and 'Different aisle, same meter' lands as the closing line.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Products pool into the dial directly below the table and the readout label sits against the dial, keeping claim and object adjacent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order: idle dial, fading-in headers, full table, products pooling, then the readout and closing line.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition keeps generous margins and a clear top-to-bottom scan path from table to dial to readout.",
+    "suggestion": ""
+  }
+]

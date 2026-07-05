@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "videoSeconds": 193.96,
+  "videoSeconds": 194.09,
   "chapters": [
     {
       "beatId": "beat-01",
@@ -20,12 +20,12 @@
     {
       "beatId": "beat-04",
       "title": "Same meter, different aisle",
-      "startSeconds": 115.865
+      "startSeconds": 115.998
     },
     {
       "beatId": "beat-04b",
       "title": "The honest look",
-      "startSeconds": 147.625
+      "startSeconds": 147.758
     }
   ]
 }

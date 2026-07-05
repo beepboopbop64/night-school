@@ -50,7 +50,7 @@
     "s4a.beat-04": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 1.682087,
+      "costUsd": 1.4368845000000001,
       "receipt": "state/receipts/s4a.beat-04.receipt.json"
     },
     "s4b.sec-beat-01": {
@@ -102,7 +102,7 @@
       "receipt": "state/receipts/s4e.notebook.receipt.json"
     },
     "s5.assemble": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 0,
       "costUsd": 0,
       "receipt": "state/receipts/s5.assemble.receipt.json"
@@ -138,5 +138,11 @@
       "receipt": "state/receipts/s4b.sec-beat-04b.receipt.json"
     }
   },
-  "needsJake": []
+  "needsJake": [
+    {
+      "node": "s5.assemble",
+      "reason": "gate failed: assemble.lchecks-rerun",
+      "since": "2026-07-05T14:40:23.241Z"
+    }
+  ]
 }
