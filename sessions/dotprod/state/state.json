@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "dotprod",
-  "stage": "S6",
+  "stage": "S7",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -114,7 +114,10 @@
       "receipt": "state/receipts/s6.screening.receipt.json"
     },
     "s7.packet": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0,
+      "iter": 0,
+      "receipt": "state/receipts/s7.packet.receipt.json"
     }
   },
   "needsJake": []
