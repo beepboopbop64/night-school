@@ -46,9 +46,8 @@ lanes:
     - title: Attention Is All You Need
       url: https://arxiv.org/abs/1706.03762
       hook: >-
-        This is where tonight's meter gets its uniform. Read the attention
-        equation once with fresh eyes and you will see tonight's meter in
-        its work uniform: a dot product, divided by sqrt(d_k), then
+        Read the attention equation once and you will see tonight's meter
+        in its work uniform: a dot product, divided by sqrt(d_k), then
         softmaxed, scoring every word against every other word.
     - title: >-
         Neural Machine Translation by Jointly Learning to Align and

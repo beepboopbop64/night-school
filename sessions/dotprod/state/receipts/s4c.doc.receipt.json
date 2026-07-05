@@ -8,7 +8,7 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "5b77a95b7cd851622f47c673e56ef179f67e0716b4c2a5b1d3de94144086e6ce"
+      "sha256": "38ae5d288caeaf5d096f39e508906e181810ef0c6a2fc91dff011509782cc112"
     },
     {
       "path": "spine.md",
@@ -22,11 +22,11 @@
   "outputs": [
     {
       "path": "doc/lesson.md",
-      "sha256": "4f8208e3e923a92611037974595d96affb803435274e721512120125713c69bd"
+      "sha256": "740731237d9a28a7c379a7c40c9be7b8a86d79f09482b12172adb4581ea2620a"
     }
   ],
   "gate": {
-    "passed": true,
+    "passed": false,
     "checks": [
       {
         "id": "doc.dash-lint",
@@ -42,23 +42,26 @@
       },
       {
         "id": "doc.vera-pass",
-        "pass": true,
-        "iter": 1
+        "pass": false,
+        "iter": 3
       }
     ]
   },
-  "iterations": 1,
-  "costUsd": 0.4343499999999999,
+  "iterations": 3,
+  "costUsd": 1.569983,
   "tier": "opus",
-  "startedAt": "2026-07-05T08:05:34.795Z",
-  "endedAt": "2026-07-05T08:08:19.013Z",
+  "startedAt": "2026-07-05T12:42:38.378Z",
+  "endedAt": "2026-07-05T12:51:02.842Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "rounds": 1,
+    "rounds": 3,
     "compromisesAudited": [
       "toy-numbers",
       "two-dimensions"
+    ],
+    "veraBlocking": [
+      "V-DASH: \"Take one amber probe arrow, that's you, and four candidate arrows, four songs sitting still.\""
     ]
   }
 }
