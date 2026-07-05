@@ -4,11 +4,11 @@
   "inputs": [
     {
       "path": "script.md",
-      "sha256": "f149f1ebc94d7d73e5d6ea8a4d6b0d5f993c8228f3428efdb1be24e0e6b7aabb"
+      "sha256": "e0bbca54d0941c43f112ab0e2b6d439b98d45140e14703caa97082f3ab3ca847"
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "ce8b98f586bff94f8dfab7dd485565fa582e6945b55a285ebbf3e2800292fb57"
+      "sha256": "c6b8181af10ff6a513dcafe6eec52d2092c85b0885bd59ba86e1a23d7235debf"
     },
     {
       "path": "spine.md",
@@ -48,10 +48,10 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 0.487749,
+  "costUsd": 0.3329081,
   "tier": "opus",
-  "startedAt": "2026-07-05T03:20:46.124Z",
-  "endedAt": "2026-07-05T03:23:42.204Z",
+  "startedAt": "2026-07-05T03:52:58.140Z",
+  "endedAt": "2026-07-05T03:55:18.970Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
