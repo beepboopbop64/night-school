@@ -256,3 +256,6 @@
 {"ts":"2026-07-05T02:58:10.963Z","runId":"run-2026-07-05T0243-0cec12","node":"s7.packet","event":"commit","data":{"sha":"189824616da912d27a58390529de643194fb7d37"}}
 {"ts":"2026-07-05T03:01:02.320Z","runId":"round-2026-07-05T0301-2aa5ac","node":"s8.round-01","event":"node_started","data":{"notes":4}}
 {"ts":"2026-07-05T03:01:40.288Z","runId":"round-2026-07-05T0301-2aa5ac","node":"s8.round-01","agent":"triage","event":"agent_call","data":{"costUsd":0.147455,"rows":4}}
+{"ts":"2026-07-05T03:02:43.113Z","runId":"round-2026-07-05T0301-2aa5ac","node":"s8.round-01","agent":"showrunner","event":"agent_call","data":{"orderId":"r01-n01","filesChanged":["storyboard.yaml","storyboard.yaml#beat-02"],"costUsd":0.195805}}
+{"ts":"2026-07-05T03:02:49.211Z","runId":"round-2026-07-05T0301-2aa5ac","node":"s8.round-01","agent":"showrunner","event":"agent_call","data":{"orderId":"r01-n02","filesChanged":["page/sections/beat-01.md"],"costUsd":0.04357}}
+{"ts":"2026-07-05T03:03:45.611Z","runId":"round-2026-07-05T0301-2aa5ac","node":"s8.round-01","agent":"showrunner","event":"agent_call","data":{"orderId":"r01-n03","filesChanged":["page/interactives/dot-alignment.yaml"],"costUsd":0.18424500000000002}}

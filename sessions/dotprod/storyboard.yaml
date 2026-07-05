@@ -52,35 +52,37 @@ beats:
     estimatedSeconds: 26
   - id: beat-02
     title: Turn the probe and feel it
-    narration: >-
-      Strip it down. A taste is an arrow: each direction is a quality, and
-      the length is how hard the song leans that way. Take one probe arrow
+    narration: "Strip it down. A taste is an arrow: each direction is a quality,
+      and the length is how hard the song leans that way. Take one probe arrow
       and four candidate arrows. Multiply them entry by entry and add. That
       single sum is the score. Before you drag anything, call it: which
       candidate ends up on top, and does any score go negative? Now turn the
       probe and watch the bars answer. Point at a candidate and its score
       climbs. Turn away and it dies. So a big score means two songs are the
-      same, right? Watch again. The bars moved while the candidates never
-      moved at all. The score reads agreement of direction, not sameness.
-    visual: >-
-      [visual: covary | dynamic-concept] One amber probe arrow sweeps
+      same, right? Watch again. The bars moved while the candidates never moved
+      at all. The score reads agreement of direction, not sameness."
+    visual: "[visual: covary | dynamic-concept] One amber probe arrow sweeps
       through directions; four periwinkle candidate arrows hold still; under
-      each candidate a lilac score bar with a numeric readout climbs and
-      dies as the probe turns toward and away from it. A freeze frame before
-      the sweep carries the prediction card; after the sweep the probe parks
-      and the four scores land as integers on the bars.
-    tracks: [video, page]
-    newIdea: >-
-      Multiply pairwise and add: the score moves continuously with the
-      probe's direction, and agreement is not identity.
+      each candidate a lilac score bar with a numeric readout climbs and dies as
+      the probe turns toward and away from it. Each candidate label sits nudged
+      outward past its arrow tip so the sweeping amber probe never buries it,
+      staying readable at every probe angle including when the probe passes
+      candidate B. A freeze frame before the sweep carries the prediction card;
+      after the sweep the probe parks and the four scores land as integers on
+      the bars."
+    tracks:
+      - video
+      - page
+    newIdea: "Multiply pairwise and add: the score moves continuously with the
+      probe's direction, and agreement is not identity."
     novelElements:
       - the probe arrow
       - the candidate arrows
       - the score bars
     onScreenText:
-      - "probe"
-      - "candidates"
-      - "3  2  0  -2"
+      - probe
+      - candidates
+      - 3  2  0  -2
     colors:
       probe: data.heat
       candidates: data.observed
@@ -89,12 +91,11 @@ beats:
       labels: text
     interactiveSpec: page/interactives/dot-alignment.yaml
     predictionPrompt:
-      prompt: >-
-        Before you drag anything, call it: which candidate ends up on top,
-        and does any score go negative?
-      expectedWrongAnswer: >-
-        The candidate that looks most similar to the probe wins, and
-        nothing goes negative because similarity cannot be less than zero.
+      prompt: "Before you drag anything, call it: which candidate ends up on top,
+        and does any score go negative?"
+      expectedWrongAnswer: The candidate that looks most similar to the probe wins,
+        and nothing goes negative because similarity cannot be less than zero.
+    majorReveal: false
     misconceptionBeat: true
     misconception: similarity-means-identical
     estimatedSeconds: 42

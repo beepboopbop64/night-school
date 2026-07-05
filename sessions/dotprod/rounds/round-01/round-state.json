@@ -2,9 +2,122 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "round": "round-01",
-  "phase": "triaged",
-  "appliedOrders": [],
-  "applyCostUsd": 0,
+  "phase": "applied",
+  "appliedOrders": [
+    "r01-n01",
+    "r01-n02",
+    "r01-n03"
+  ],
+  "applyCostUsd": 0.42362,
   "triageCostUsd": 0.147455,
-  "orderResults": []
+  "preHashes": {
+    "files": {
+      "video/beats/beat-01.yaml": "8b49598e1cbc1a13f4accaad49912abead3f65abdecfa8c6e7ee779915e31324",
+      "video/scenes/scene_beat_01.py": "bdad46faed358bfb6e8abfeac3b059285913076c7cb7299681f564afa4a283cf",
+      "media/beat-01.mp4": "c6578f7b293d3b5d27cde411e2b7676a9eff54665c17ddaf6bee56a05d4d6bf6",
+      "video/beats/beat-02.yaml": "88b8ed7b06efcb07ed118f848ddc3d2b86a9851909d764af3b9dcdc6a033944c",
+      "video/scenes/scene_beat_02.py": "9dfe7d29a30633e6aca63552930850933d0438620f763aec054480c57cbebddb",
+      "media/beat-02.mp4": "97cef7dc320b0a1ecd63416fd8470984a192874602d13b095790fe516b05c2bc",
+      "video/beats/beat-03.yaml": "9469c8bf2afae44f20352f63979448f89c3808af85e8d3ae2a1c1347878e775d",
+      "video/scenes/scene_beat_03.py": "ccfd69fe68ab5b1cb2ffc4812747d28652f3201447550349a6f4449022294aaa",
+      "media/beat-03.mp4": "323a9e2bbaa7687360d08d6aedb2d63ea15bb96e790597c7c5501169e0ad3516",
+      "video/beats/beat-04.yaml": "4ef486899ec25f9e194e387ee05db8c061e1c7256992d8879f66a3e7554d0edf",
+      "video/scenes/scene_beat_04.py": "8e2e3bcc1b742dcaecf0ef63af36b1acde36037dbcb8d5863b7675dba8388441",
+      "media/beat-04.mp4": "3ccff65eafa9c4111e91b934762299091407e4c1e2c4f747ad1e7472e47b28c5",
+      "page/interactives/DotAlignment.svelte": "1be655b6dcef53b6617ea007d95307e3156d2bd110a8ad81cc259af09f4fd936",
+      "page/sections/beat-01.md": "704621587b2fa1c6f689b74b679a82075e0fe8963c1f558b0bc1106b65fc9304",
+      "page/sections/beat-02.md": "174c6e778cc19c99e1942e7e84b3cd29e894ff18c17b1fa23b83c86ba03f601d",
+      "page/sections/beat-03.md": "e6b35d9b0ebe9889153398072cc9e8813e9c3bf0db49336a0703afdae5b8e3b7",
+      "page/sections/beat-04.md": "da0d78276dd7b73f71e4935c4754b914dc704c1c647cecfe4479f7be84ad52fe",
+      "doc/lesson.md": "8c3018b4fa585ecb7616b2c3f9bb1af030f54343aa236a14d5b001cb85847515",
+      "extensions.yaml": "cf9bdadda77c6ae9c2f382ca58891c5ee6b0a3d6974b28d86f0793c289ac0c9d",
+      "notebook/lesson.ipynb": "a7f0b5c38bfdf5471748a86a5d163d376225c0a03713a611051e36804ef5307f",
+      "video/audio/beat-01.mp3": "c2e113c8269dfdc8eacf686c3746639b2c70d46c93031f3a81fe4abbe279ecc9",
+      "video/audio/beat-02.mp3": "6e4f70ac164545809b2724a12e16db960f7aac17ab09c8f4ea698bff27adf2d9",
+      "video/audio/beat-03.mp3": "33d5747c04c6b6d95a1305bf9106171d7f7748e077e6e0e897e52b9ea56ef37b",
+      "video/audio/beat-04.mp3": "d5734446c93189cabc296c75b698dc0ee5af4c93620edc4d2b534cac8396e7d1",
+      "media/session.mp4": "aa2fe7a00f9e06d640a9a0f2174e711dad41491023772ad22805b831272cde06",
+      "video/captions.vtt": "b037227372c0d24e8e46d8424eda71d226d0b8f82348c9214461f7194c8b19d1",
+      "page/video.json": "c83c311832552cbb8dc7a394ec27230494e2e0636846a96cbedff05a60a0898b",
+      "manifest.yaml": "3fa6c804e76afd21cd97dcb520f38258df4a16eeabfb20bdf1f0a55f2b784004",
+      "rounds/round-01/screening-report.md": "a8ba8a8bb8e48a23bbffc0971c7fa747d9146f9168917a6860add50c98f6fe6b",
+      "rounds/round-01/packet/README.md": "65456d684cdbf88a3361ad1bb7a96e0b34630c5c3ef316ea8cd210bcfcbd0d30",
+      "rounds/round-01/notes.md": "c98e40a91a30dead7c590ad4d25479dc5828b61cfba70883534f233b27f6ec26",
+      "rounds/round-01/flags.md": "90111d408d6e2ca54fb69f22d532db0cc02822ecd8d604412b2772620b8dea35"
+    },
+    "fragments": {
+      "storyboard.yaml#beat-01": "4aaab0ec0ea78135176f063979729b1e4d88657c640a94763af73ec9166f6a43",
+      "script.md#beat-01": "3a9ffed8506304f5d2cef2d8506188f9f0daaa3834b5db446d6ac9ad15640e69",
+      "storyboard.yaml#beat-02": "64ae593fdc809a2dcfc0648eb2be6aa0b9cbe1579f903a313e7c288165e600a3",
+      "script.md#beat-02": "4b817f3b661cf0cfe8cdd99673fdf69fdd0b9ae216aefd9f85f83b968a27681b",
+      "storyboard.yaml#beat-03": "e604cf58ab9595db323b07fc50224b73ebafc08292df95d85b235436c3ea98fc",
+      "script.md#beat-03": "3dbf70c80cd9283ce1397b4b26ff88ea4af6ed19d74c13dc190f2dc6fb9ad745",
+      "storyboard.yaml#beat-04": "68f19a35b9d628242e0e2ffb98cef0585724d1290bff0c70ca6e29cb261a6670",
+      "script.md#beat-04": "ac0a8b2a606bb32f44ad249a44e2a54a8750d916f7382a77b86e92a6ac97930d"
+    },
+    "producers": {
+      "video/beats/beat-01.yaml": "s4a.beat-01",
+      "video/scenes/scene_beat_01.py": "s4a.beat-01",
+      "media/beat-01.mp4": "s4a.beat-01",
+      "video/beats/beat-02.yaml": "s4a.beat-02",
+      "video/scenes/scene_beat_02.py": "s4a.beat-02",
+      "media/beat-02.mp4": "s4a.beat-02",
+      "video/beats/beat-03.yaml": "s4a.beat-03",
+      "video/scenes/scene_beat_03.py": "s4a.beat-03",
+      "media/beat-03.mp4": "s4a.beat-03",
+      "video/beats/beat-04.yaml": "s4a.beat-04",
+      "video/scenes/scene_beat_04.py": "s4a.beat-04",
+      "media/beat-04.mp4": "s4a.beat-04",
+      "page/interactives/DotAlignment.svelte": "s4b.dot-alignment",
+      "page/sections/beat-01.md": "s4b.sec-beat-01",
+      "page/sections/beat-02.md": "s4b.sec-beat-02",
+      "page/sections/beat-03.md": "s4b.sec-beat-03",
+      "page/sections/beat-04.md": "s4b.sec-beat-04",
+      "doc/lesson.md": "s4c.doc",
+      "extensions.yaml": "s4d.extensions",
+      "notebook/lesson.ipynb": "s4e.notebook",
+      "video/audio/beat-01.mp3": "s4f.beat-01",
+      "video/audio/beat-02.mp3": "s4f.beat-02",
+      "video/audio/beat-03.mp3": "s4f.beat-03",
+      "video/audio/beat-04.mp3": "s4f.beat-04",
+      "media/session.mp4": "s5.assemble",
+      "video/captions.vtt": "s5.assemble",
+      "page/video.json": "s5.assemble",
+      "manifest.yaml": "s5.assemble",
+      "rounds/round-01/screening-report.md": "s6.screening",
+      "rounds/round-01/packet/README.md": "s7.packet",
+      "rounds/round-01/notes.md": "s7.packet",
+      "rounds/round-01/flags.md": "s7.packet"
+    }
+  },
+  "orderResults": [
+    {
+      "id": "r01-n01",
+      "status": "applied",
+      "summary": "Nudged each candidate label outward past its arrow tip so the amber probe never buries a label (esp. B) at any sweep angle; storyboard visual only, narration untouched.",
+      "filesChanged": [
+        "storyboard.yaml",
+        "storyboard.yaml#beat-02"
+      ],
+      "costUsd": 0.195805
+    },
+    {
+      "id": "r01-n02",
+      "status": "applied",
+      "summary": "Rephrased 'sitting with' to 'chewing on' in beat-01 to drop the 'sit with' crutch flagged by Vera.",
+      "filesChanged": [
+        "page/sections/beat-01.md"
+      ],
+      "costUsd": 0.04357
+    },
+    {
+      "id": "r01-n03",
+      "status": "applied",
+      "summary": "Simplified the numeric readouts under the bars (round to whole numbers, small and low-contrast) so bars carry the motion, per Jake's busyness note.",
+      "filesChanged": [
+        "page/interactives/dot-alignment.yaml"
+      ],
+      "costUsd": 0.18424500000000002
+    }
+  ]
 }

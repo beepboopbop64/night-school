@@ -18,9 +18,10 @@ interactive:
     or with arrow keys. Four periwinkle candidate arrows (labeled c1..c4 at
     their tips) hold still at 20, 70, 110, and 160 degrees. Under each
     candidate sits a lilac score bar with a mono numeric readout of the dot
-    product: bar and number rise and fall WITH the probe's alignment to
-    that candidate, live, as the probe turns; negative scores drop below a
-    zero baseline. At any moment the best-aligned candidate's bar visibly
+    product, rounded to whole numbers and kept small and low-contrast so the
+    bars carry the motion and the digits stay quiet: bar and number rise and
+    fall WITH the probe's alignment to that candidate, live, as the probe
+    turns; negative scores drop below a zero baseline. At any moment the best-aligned candidate's bar visibly
     leads. Labels are cream and sit on their objects; no legends. The
     covariation (probe direction to score height, including sign) must be
     readable from a still frame alone at 375, 768, and 1280 px widths.
