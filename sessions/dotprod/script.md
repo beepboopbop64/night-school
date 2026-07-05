@@ -39,25 +39,27 @@ Look at what your hands just learned. Point the probe along a candidate and the 
 
 So say it plainly: the dot product is a similarity meter. Two lists of numbers go in. One honest reading of alignment comes out. And the reading tracks direction, because direction is all the sweep ever changed.
 
-## beat-04: What the meter gets wrong
+## beat-04: Same meter, different aisle
 
 [visual: dynamic-process] The retrieval prompt holds as a card while the meter idles.
 
-[visual: connect-to-reality] The same meter and its dial stay put; only the columns slide over, the song labels swapping for two new ones, "you" and "the role": Python hours, SQL reps, nights free. Matched entries multiply and the products pool into the same lilac readout on the same dial.
+Time to close the loop. Rebuild the meter from memory: two arrows go in, so what two operations turn them into the score?
 
-[visual: dynamic-process] A guess card holds: one candidate outlined, an arrow hinting it is about to grow, the score readout hidden.
+[visual: connect-to-reality] The song columns swap for two labeled "you" and "the role": Python hours, SQL reps, nights free, six rows at full readable size with the whole frame to breathe; matched entries multiply and pool into the same lilac readout on the same dial.
 
-[visual: dynamic-process] One periwinkle candidate stretches longer; its lilac score climbs while its direction holds still; a small rose flag marks the unearned win.
+While you think, one detour worth naming. Swap the songs for a job posting. Score yourself against what the role wants: multiply the matched entries, add them up, one number for the fit. Different aisle, same meter. The multiply-and-add never asked what the numbers meant, and that is exactly why it travels.
+
+## beat-04b: The honest look
+
+[visual: dynamic-process] A guess card holds with one candidate outlined and the score readout hidden, asking whether doubling c1 doubles the number.
+
+Now the honest look, and guess before you watch. Double c1's length exactly, leave its direction untouched, does the number double too?
+
+[visual: dynamic-process] That periwinkle candidate doubles in length while its direction holds still; its lilac score reads out at exactly twice its former value, the two numbers stacked to show the clean doubling; a small rose flag marks that size passed straight through.
+
+It does, exactly. Double one input, double the output: the meter is linear in each arrow you feed it. That clean scaling is the crack. Long songs would win on sheer loudness, and padded resumes would win on sheer length, because size passes straight through.
 
 [visual: connect-to-reality] The walk-home question lands as the closing card, and a quiet chip points to the extensions menu on the page.
 
-Time to close the loop. Rebuild the meter from memory: two arrows go in, so what two operations turn them into the score?
-
-While you think, keep the meter running and walk it one aisle over. Same needle, same recipe, we just point it at a job posting instead of a song. Score yourself against what the role wants: multiply the matched entries, add them up, one number for the fit. Nothing about the meter changed, only the shelf it is reading. The multiply-and-add never asked what the numbers meant, and that is exactly why it travels.
-
-Now the honest look, and guess before you watch. If a candidate's numbers just get bigger, same direction, longer arrow, does its score change?
-
-It climbs. The direction never moved, and the score climbed anyway. Long songs would win on sheer loudness, and padded resumes would win on sheer length. So the meter has a gap with a shape: it cannot tell direction apart from size.
-
-That is the thread to pull for the walk home. If the score keeps rewarding size, what is the cheapest fix that keeps the direction and forgets the size? Still up? The menu below has three ways to keep going.
+For the walk home: what is the cheapest fix that keeps the direction and forgets the size, now that you know size scales the score in lockstep? Still up? The menu below has three ways to keep going.
 
