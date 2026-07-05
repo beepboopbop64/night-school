@@ -1,0 +1,30 @@
+# DERIVED by the s4a.beat-04 node from storyboard.yaml#beat-04; do not edit.
+schemaVersion: 1
+session: dotprod
+beat:
+  id: beat-04
+  title: What the meter gets wrong
+  narration: >-
+    Time to close the loop. Rebuild the meter from memory: two arrows go in, so
+    what two operations turn them into the score?
+
+
+    While you think, one more honest look. Stretch a candidate longer and its
+    score climbs, even though its direction never moved. Long songs would win on
+    sheer loudness.
+
+
+    For the walk home: what is the cheapest fix that keeps the direction and
+    forgets the size? Still up? The menu below has three ways to keep going.
+  visual: "[visual: dynamic-process | connect-to-reality] The retrieval prompt
+    holds as a card while the meter idles. Then one periwinkle candidate
+    stretches longer; its lilac score climbs while its direction holds still; a
+    small rose flag marks the unearned win. The walk-home question lands as the
+    closing card, and a quiet chip points to the extensions menu on the page."
+  colors:
+    candidates: data.observed
+    score: data.params
+    failureFlag: data.error
+    background: bg
+    labels: text
+  durationTargetSeconds: 28.8

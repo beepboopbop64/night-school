@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "session": "dotprod",
-  "stage": "S4a",
+  "stage": "S4b",
   "round": 0,
   "fidelity": "half-trued",
   "nodes": {
@@ -43,15 +43,21 @@
     },
     "s4a.beat-03": {
       "status": "passed",
-      "costUsd": 1.0160084999999999,
       "iter": 1,
+      "costUsd": 1.0160084999999999,
       "receipt": "state/receipts/s4a.beat-03.receipt.json"
     },
     "s4a.beat-04": {
-      "status": "pending"
+      "status": "passed",
+      "iter": 1,
+      "costUsd": 0.9840236,
+      "receipt": "state/receipts/s4a.beat-04.receipt.json"
     },
     "s4b.sec-beat-01": {
-      "status": "pending"
+      "status": "passed",
+      "costUsd": 0.025208699999999997,
+      "iter": 0,
+      "receipt": "state/receipts/s4b.sec-beat-01.receipt.json"
     },
     "s4b.sec-beat-02": {
       "status": "pending"

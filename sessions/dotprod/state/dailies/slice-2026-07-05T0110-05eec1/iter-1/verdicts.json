@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one focus: the prompt card alone, then the candidate/meter/score trio anchored by the growing arrow, then the centered walk-home question card.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "At most three or four elements appear together (card, meter, candidate arrow, score readout), well under the budget.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "'candidate' sits beside the arrow, 'meter' under the gauge, and 'score' is the readout itself; no boxed legend appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is confined to labels and short prompt cards ('retrieval prompt', 'for the walk home / same direction, smaller size?', '3 ways to continue').",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text including 'direction unchanged' and the score readout is comfortably readable at frame resolution.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All cards, the meter, the candidate arrow, and readouts sit fully inside the frame with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or labels overlap; the arrow, score, meter, and cards occupy separate regions.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Candidate/observed is periwinkle blue and the climbing score is lilac, consistent with token semantics across frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No mascots or ornaments appear; the intervening blank frame is a transition rather than decorative filler.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The prompt card holds while the meter idles, the periwinkle candidate stretches longer as its lilac score climbs to 4.80 with 'direction unchanged', and the walk-home card plus '3 ways to continue' chip close the beat.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The 'direction unchanged' note sits near the candidate arrow and the score sits under the meter it drives.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the candidate arrow lengthens and the score climbs as a continuous progression rather than a cut.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Elements are spaced with ample negative space and a clear left-to-right reading order.",
+    "suggestion": ""
+  }
+]
