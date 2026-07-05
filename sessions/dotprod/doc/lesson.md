@@ -18,7 +18,7 @@ You just tried to score that match by hand, and it fought back: too many qualiti
 
 Strip a taste down until it fits in your palm. It's an arrow. Each direction is one quality, some axis like "loud" or "mellow," and the length along that direction is how hard the song leans that way. Two dimensions, so we can actually see the thing. Take one amber probe arrow, that's you, and four candidate arrows, four songs sitting still. Multiply the two arrows entry by entry, then add up the products. That single sum is the score. One multiply, one add, and the whole tangle collapses to one number.
 
-> Honest edges: the numbers in this session are chosen for readability. Real embedding coordinates are neither small nor round. We use tidy integers so the reading stays clean while the machine does the same work silently.
+> Honest edges: the numbers in this session are chosen for readability. Real embedding coordinates are neither small nor round. The machine does the same work on messy ones.
 
 Call your shot before anything moves: name the one candidate whose bar tops out. Say it out loud. The tempting guess is that the arrow that looks most like the probe wins, and that no score dips below zero, because how could similarity be less than nothing?
 
