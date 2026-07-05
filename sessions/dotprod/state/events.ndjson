@@ -922,3 +922,8 @@
 {"ts":"2026-07-05T23:34:33.542Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04","event":"artifact_written","data":{"path":"video/audio/beat-04.mp3","audioSeconds":44.72,"cacheHit":false,"textHash":"ba6cac40315eef4d4c3d85f2805aa71c276a8616a6e3fa9ca8945fa3304fd789","stitching":false}}
 {"ts":"2026-07-05T23:34:33.547Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.safe-lint","pass":true},{"id":"tts.audio-written","pass":true}]}}
 {"ts":"2026-07-05T23:34:33.549Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04","event":"node_completed","data":{"costUsd":0,"durationMs":10213}}
+{"ts":"2026-07-05T23:34:34.067Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04","event":"commit","data":{"sha":"040a9ed4898ff677b5a155724bae491bdade8b34"}}
+{"ts":"2026-07-05T23:34:34.071Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04b","event":"node_started","data":{"reason":"input-changed:script.md#beat-04b"}}
+{"ts":"2026-07-05T23:34:44.094Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04b","event":"artifact_written","data":{"path":"video/audio/beat-04b.mp3","audioSeconds":41.68,"cacheHit":false,"textHash":"5c87ac7986d4f4e7f8159c676bed902ce4958f59c6a4364fb195d925e0a17cb0","stitching":false}}
+{"ts":"2026-07-05T23:34:44.102Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04b","event":"gate_result","data":{"passed":true,"checks":[{"id":"tts.safe-lint","pass":true},{"id":"tts.audio-written","pass":true}]}}
+{"ts":"2026-07-05T23:34:44.104Z","runId":"run-2026-07-05T2333-aa9bec","node":"s4f.beat-04b","event":"node_completed","data":{"costUsd":0,"durationMs":10026}}
