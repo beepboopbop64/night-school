@@ -3,14 +3,30 @@
   "node": "s4a.beat-04",
   "inputs": [
     {
-      "path": "beat.yaml",
-      "sha256": "34a212724c318e913c96fb71399ba985de6270fbb46d9c91a676f982f3193b4f"
+      "path": "storyboard.yaml#beat-04",
+      "sha256": "672dd042cd9741a5cd49551485fb793a4a081823585e2bb8cc12e7bba03bd1e7"
+    },
+    {
+      "path": "script.md#beat-04",
+      "sha256": "9826e924e9937b96e7bbad3223204d8ed2c060e15f451999abfab3230c5c7c6f"
+    },
+    {
+      "path": "video/audio/beat-04.mp3",
+      "sha256": "b4d4a950542f4bb0e0bbcd6153052f7c4fb741bf3e6a666e745d1c7a8fa565d5"
     }
   ],
   "outputs": [
     {
+      "path": "video/beats/beat-04.yaml",
+      "sha256": "34a212724c318e913c96fb71399ba985de6270fbb46d9c91a676f982f3193b4f"
+    },
+    {
       "path": "video/scenes/scene_beat_04.py",
-      "sha256": "0fa026642317c7ac9f9502adcf0d6ab6ef9f04265f4bdb623b0233a95a5ef254"
+      "sha256": "26daf66e19cb0529ce8df183082becaeb6c0e887b4493527d12e0f032843b203"
+    },
+    {
+      "path": "media/beat-04.mp4",
+      "sha256": "24a88840c6cccabb086c5ca6b54108de0bfc6b3892070cafebf3fdad760a9eae"
     }
   ],
   "gate": {
@@ -18,40 +34,40 @@
     "checks": [
       {
         "id": "bbox.clean",
-        "pass": false
+        "pass": true
       },
       {
         "id": "iris.pass",
+        "pass": true,
+        "iter": 1
+      },
+      {
+        "id": "scene.duration-within-tolerance",
         "pass": false
       }
     ]
   },
   "iterations": 1,
-  "costUsd": 1.08,
+  "costUsd": 1.2494368999999999,
   "tier": "opus",
-  "startedAt": "2026-07-05T09:14:09.337Z",
-  "endedAt": "2026-07-05T09:22:43.161Z",
-  "transcript": "state/dailies/slice-2026-07-05T0914-0f2fe9",
-  "promptSha": "77d52501b62db673297245c99acd06d26192e76c68d81a2018290bc916c247c1",
+  "startedAt": "2026-07-05T14:11:33.762Z",
+  "endedAt": "2026-07-05T14:21:05.997Z",
+  "transcript": "state/dailies/slice-2026-07-05T1411-19926f",
+  "promptSha": "",
   "meta": {
-    "runId": "slice-2026-07-05T0914-0f2fe9",
-    "coderModel": "claude-sonnet-5",
-    "videoSeconds": 31.1987,
+    "videoSeconds": 26.666344,
+    "audioSeconds": 31.76,
+    "toleranceSeconds": 3.18,
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "bbox-failed",
-        "coderCostUsd": 1.0783799999999997,
-        "irisCostUsd": 0,
-        "wallMs": 513819,
-        "fingerprints": [
-          "bbox:bbox.text-height:Text:=",
-          "bbox:bbox.text-height:Text:=",
-          "bbox:bbox.text-height:Text:="
-        ],
+        "outcome": "iris-passed",
+        "coderCostUsd": 1.0698203999999998,
+        "irisCostUsd": 0.1796165,
+        "wallMs": 571233,
+        "fingerprints": [],
         "replanWasForced": false
       }
-    ],
-    "flagReason": "no-progress: bbox defect repeated 3x"
+    ]
   }
 }

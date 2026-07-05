@@ -84,9 +84,9 @@
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"
     },
     "s4c.doc": {
-      "status": "flagged",
+      "status": "passed",
       "iter": 1,
-      "costUsd": 0.4343499999999999,
+      "costUsd": 0.653761,
       "receipt": "state/receipts/s4c.doc.receipt.json"
     },
     "s4d.extensions": {
@@ -141,13 +141,8 @@
   "needsJake": [
     {
       "node": "s4a.beat-04",
-      "reason": "slice beat-04 failed: no-progress: bbox defect repeated 3x (dailies: C:\\Users\\jaker\\Desktop\\projects\\harnesses\\lessons\\sessions\\dotprod\\state\\dailies\\slice-2026-07-05T0914-0f2fe9)",
-      "since": "2026-07-05T09:22:43.165Z"
-    },
-    {
-      "node": "s4c.doc",
-      "reason": "gate failed: doc.vera-pass",
-      "since": "2026-07-05T12:51:02.848Z"
+      "reason": "gate failed: scene.duration-within-tolerance",
+      "since": "2026-07-05T14:21:06.021Z"
     }
   ]
 }

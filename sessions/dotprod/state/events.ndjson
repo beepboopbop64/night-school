@@ -742,3 +742,30 @@
 {"ts":"2026-07-05T12:52:21.333Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s6.screening","event":"node_skipped","data":{"reason":"dep_failed:s5.assemble"}}
 {"ts":"2026-07-05T12:52:21.333Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s7.packet","event":"node_skipped","data":{"reason":"dep_failed:s6.screening"}}
 {"ts":"2026-07-05T12:52:21.482Z","runId":"round-2026-07-05T0842-5f0f06","node":"s8.round-04","event":"node_completed","data":{"costUsd":8.81,"failedOrders":[],"proofViolations":0,"runFailed":["s4a.beat-04","s4c.doc"]}}
+{"ts":"2026-07-05T14:11:33.720Z","runId":"run-2026-07-05T1411-445d74","node":"s4f.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.721Z","runId":"run-2026-07-05T1411-445d74","node":"s4f.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.722Z","runId":"run-2026-07-05T1411-445d74","node":"s4f.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.723Z","runId":"run-2026-07-05T1411-445d74","node":"s4f.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.724Z","runId":"run-2026-07-05T1411-445d74","node":"s4f.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.735Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.749Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.760Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:11:33.764Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-04","event":"node_started","data":{"reason":"gate-failed"}}
+{"ts":"2026-07-05T14:11:34.616Z","runId":"slice-2026-07-05T1411-19926f","node":"s4a.beat-04","event":"node_started","data":{"beat":"beat-04","session":"dotprod","maxIter":5}}
+{"ts":"2026-07-05T14:19:17.149Z","runId":"slice-2026-07-05T1411-19926f","node":"s4a.beat-04","agent":"manim-coder","event":"agent_call","data":{"iter":1,"costUsd":1.0698203999999998,"replanForced":false,"summary":"DONE Built C:\\Users\\jaker\\Desktop\\projects\\harnesses\\lessons\\sessions\\dotprod\\video\\scenes\\scene_beat_04.py — `Beat04` scene: an idle half-dial meter builds first, then a question card (\"Two arrows go in. What two operations turn them into the score?\") appears while the dimmed dial waits; the card c"}}
+{"ts":"2026-07-05T14:21:05.848Z","runId":"slice-2026-07-05T1411-19926f","node":"s4a.beat-04","agent":"iris","event":"critique_iteration","data":{"iter":1,"blocking":0,"rules":[],"costUsd":0.1796165,"attempts":1},"verdictRef":"state/dailies/slice-2026-07-05T1411-19926f/iter-1"}
+{"ts":"2026-07-05T14:21:05.853Z","runId":"slice-2026-07-05T1411-19926f","node":"s4a.beat-04","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.2494368999999999,"wallMs":571240}}
+{"ts":"2026-07-05T14:21:06.020Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-04","event":"gate_result","data":{"passed":false,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":false}]}}
+{"ts":"2026-07-05T14:21:06.021Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-04","event":"needs_jake","data":{"reason":"gate failed: scene.duration-within-tolerance"}}
+{"ts":"2026-07-05T14:21:06.037Z","runId":"run-2026-07-05T1411-445d74","node":"s4a.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.046Z","runId":"run-2026-07-05T1411-445d74","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.054Z","runId":"run-2026-07-05T1411-445d74","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.063Z","runId":"run-2026-07-05T1411-445d74","node":"s4b.sec-beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.070Z","runId":"run-2026-07-05T1411-445d74","node":"s4b.sec-beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.077Z","runId":"run-2026-07-05T1411-445d74","node":"s4b.sec-beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.080Z","runId":"run-2026-07-05T1411-445d74","node":"s4b.dot-alignment","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T14:21:06.083Z","runId":"run-2026-07-05T1411-445d74","node":"s4c.doc","event":"node_started","data":{"reason":"gate-failed"}}
+{"ts":"2026-07-05T14:23:34.138Z","runId":"run-2026-07-05T1411-445d74","node":"s4c.doc","agent":"doc-writer","event":"agent_call","data":{"round":1,"costUsd":0.545848,"summary":"The existing draft at `doc/lesson.md` already conforms to every binding ruling and the output contract. Let me verify the key compliance points against the rulings before finalizing.\n\nChecking the cur"}}
+{"ts":"2026-07-05T14:24:35.747Z","runId":"run-2026-07-05T1411-445d74","node":"s4c.doc","agent":"vera","event":"critique_iteration","data":{"round":1,"blocking":0,"advisory":2,"costUsd":0.10791300000000001}}
+{"ts":"2026-07-05T14:24:35.749Z","runId":"run-2026-07-05T1411-445d74","node":"s4c.doc","event":"gate_result","data":{"passed":true,"checks":[{"id":"doc.dash-lint","pass":true},{"id":"doc.aha-verbatim","pass":true},{"id":"doc.no-handwave","pass":true},{"id":"doc.vera-pass","pass":true,"iter":1}]}}
+{"ts":"2026-07-05T14:24:35.750Z","runId":"run-2026-07-05T1411-445d74","node":"s4c.doc","event":"node_completed","data":{"costUsd":0.653761,"durationMs":209666}}

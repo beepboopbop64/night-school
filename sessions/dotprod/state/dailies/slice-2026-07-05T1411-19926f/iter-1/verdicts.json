@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The build stays single-focus per frame: the meter arc alone in frame 1, then columns appear, and by frames 5-6 the '58' readout is the bright center while the you/the-role columns recede to dim support.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Elements accumulate gradually across frames (meter, then two-row columns, then a third row, then products, then readout), so no more than a few novel items land at equal weight in any one frame.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each value sits on its own labeled row ('Python hours: 12', 'SQL reps: 5', 'nights free: 2') under the 'you' and 'the role' headers, with no separate legend or key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "'two arrows in, one number out' annotates the '58' readout directly below it and 'Different aisle, same meter.' captions the shared meter it refers to.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All row labels, product numbers, the '58' readout, and both caption lines are rendered at comfortably readable size.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Both columns, the meter, and all captions sit fully inside the frame with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text, product numbers, or labels overlap; the columns, center products, and meter occupy clearly separated regions.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Observed row values are consistently periwinkle blue while the pooled products, meter needle, and '58' readout are consistently lilac, matching the parameter/readout role throughout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The half-dial meter is a load-bearing scoring device, not decoration, and every other element is a label or value.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The promised columns swap to 'you' and 'the role' with Python hours / SQL reps / nights free at readable size, matched entries multiply into a shared lilac readout, and both 'two arrows in, one number out' and 'Different aisle, same meter' land.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Products sit centered between the two columns and the '58' readout sits directly under the meter, keeping each claim beside its object.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across the six frames the diagram builds in reasoning order: idle meter, columns, added third row, products, then the summed readout and closing line.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The layout keeps wide side and top margins with clear separation between the two columns, the central products, and the meter below.",
+    "suggestion": ""
+  }
+]

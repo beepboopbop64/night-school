@@ -26,7 +26,7 @@
     }
   ],
   "gate": {
-    "passed": false,
+    "passed": true,
     "checks": [
       {
         "id": "doc.dash-lint",
@@ -42,26 +42,23 @@
       },
       {
         "id": "doc.vera-pass",
-        "pass": false,
-        "iter": 3
+        "pass": true,
+        "iter": 1
       }
     ]
   },
-  "iterations": 3,
-  "costUsd": 1.569983,
+  "iterations": 1,
+  "costUsd": 0.653761,
   "tier": "opus",
-  "startedAt": "2026-07-05T12:42:38.378Z",
-  "endedAt": "2026-07-05T12:51:02.842Z",
+  "startedAt": "2026-07-05T14:21:06.081Z",
+  "endedAt": "2026-07-05T14:24:35.747Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "rounds": 3,
+    "rounds": 1,
     "compromisesAudited": [
       "toy-numbers",
       "two-dimensions"
-    ],
-    "veraBlocking": [
-      "V-DASH: \"Take one amber probe arrow, that's you, and four candidate arrows, four songs sitting still.\""
     ]
   }
 }
