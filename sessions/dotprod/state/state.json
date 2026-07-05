@@ -92,7 +92,7 @@
     "s4d.extensions": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 0.20039219999999996,
+      "costUsd": 0.3685914,
       "receipt": "state/receipts/s4d.extensions.receipt.json"
     },
     "s4e.notebook": {

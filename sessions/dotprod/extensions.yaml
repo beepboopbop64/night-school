@@ -18,17 +18,17 @@ lanes:
         your fix actually stops length from moving the ranking or just
         hides the cheat somewhere else in the arithmetic.
     - prompt: >-
-        Ask an LLM to walk you through scaled dot-product attention as
-        tonight's meter in its work uniform: a dot product, divided by
-        sqrt(d_k), then softmaxed, scoring every word against every other
-        word. Push on one specific question: given what the amber probe
-        showed you about a candidate's length hijacking the raw score,
-        what problem is the division by sqrt(d_k) actually solving?
+        Tonight's honest look proved that while every candidate held the
+        same length, the score's sign alone told you aligned, perpendicular,
+        or opposed. Argue with an LLM about how much of that guarantee
+        survives once candidates are allowed to differ in length again: is
+        the sign still trustworthy the moment lengths diverge, or does your
+        fix from the first prompt have to be in place before the sign means
+        anything?
       whatGoodLooksLike: >-
-        A good answer ties the sqrt(d_k) division back to a length-style
-        problem at the scale of many dimensions, not just to a vague claim
-        about numerical stability, and leaves you able to say in your own
-        words what changes if that division is dropped.
+        A good answer separates what the sign tells you from what the raw
+        size of the score tells you, and lands on a clear yes-or-no about
+        whether sign alone survives unequal lengths, with a reason.
     - prompt: >-
         In the session's close, the probe list and candidate lists moved
         from songs to a job posting and the score kept working the same
@@ -47,10 +47,11 @@ lanes:
       url: https://arxiv.org/abs/1706.03762
       hook: >-
         Next session's machine: you'll see tonight's meter in its work
-        uniform, a dot product divided by sqrt(d_k) then softmaxed,
-        scoring every word in a sentence against every other word. Read
-        section 3.2.1 tonight if you want the preview before the next
-        session opens with it.
+        uniform, a dot product divided by sqrt(d_k) (the square root of the
+        key dimension, a size correction) then softmaxed (squashed into
+        weights that sum to one), scoring every word in a sentence against
+        every other word. Read section 3.2.1 tonight if you want the
+        preview before the next session opens with it.
     - title: >-
         Neural Machine Translation by Jointly Learning to Align and
         Translate
