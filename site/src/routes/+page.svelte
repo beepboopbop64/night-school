@@ -1,3 +1,19 @@
+<script lang="ts">
+	import { catalog } from '$lib/catalog';
+
+	let query = $state('');
+	const hits = $derived(
+		catalog.filter((entry) => {
+			const q = query.trim().toLowerCase();
+			if (q.length === 0) return true;
+			return [entry.title, entry.question, entry.aha, entry.slug]
+				.join(' ')
+				.toLowerCase()
+				.includes(q);
+		})
+	);
+</script>
+
 <svelte:head>
 	<title>Night School</title>
 	<meta name="description" content="Advanced machine learning, after hours." />
@@ -14,7 +30,38 @@
 		<span class="tagline-creed">Stories first. Rigor always. Kettle’s on.</span>
 	</h1>
 
-	<p class="quiet">No sessions published yet. The kettle’s on.</p>
+	<div class="index">
+		<input
+			class="search"
+			type="search"
+			placeholder="Search the sessions…"
+			aria-label="Search the sessions"
+			bind:value={query}
+		/>
+
+		<ul class="cards">
+			{#each hits as entry (entry.slug)}
+				<li>
+					{#if entry.status === 'live'}
+						<a class="card" href={`/sessions/${entry.slug}`}>
+							<span class="card-q">{entry.question}</span>
+							<span class="card-aha">“{entry.aha}”</span>
+							<span class="card-meta mono">{entry.title} · ~{entry.minutes} min</span>
+						</a>
+					{:else}
+						<div class="card coming" aria-label={`${entry.title}, in production`}>
+							<span class="card-q">{entry.question}</span>
+							<span class="card-aha">“{entry.aha}”</span>
+							<span class="card-meta mono">{entry.title} · in the oven</span>
+						</div>
+					{/if}
+				</li>
+			{/each}
+			{#if hits.length === 0}
+				<li class="none">Nothing matches. The kettle’s still on, though.</li>
+			{/if}
+		</ul>
+	</div>
 </main>
 
 <style>
@@ -23,9 +70,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		gap: 2.75rem;
-		padding: 2rem;
+		gap: 2.4rem;
+		padding: 4rem 2rem 3rem;
 		text-align: center;
 	}
 
@@ -34,7 +80,7 @@
 		font-family: var(--font-mono), monospace;
 		font-size: 0.85rem;
 		letter-spacing: 0.45em;
-		text-indent: 0.45em; /* recenters tracked caps */
+		text-indent: 0.45em;
 		color: var(--color-brand-periwinkle);
 	}
 
@@ -46,37 +92,65 @@
 		background: var(--color-brand-mint);
 	}
 
-	.tagline {
-		margin: 0;
-		max-width: 24ch;
-	}
-
+	.tagline { margin: 0; max-width: 26ch; }
 	.tagline-lead {
 		display: block;
 		font-family: var(--font-heading), sans-serif;
 		font-weight: 600;
 		font-size: clamp(1.9rem, 5vw, 3.1rem);
 		line-height: 1.15;
-		color: var(--color-text);
 	}
-
 	.tagline-creed {
 		display: block;
 		margin-top: 1.1rem;
-		font-family: var(--font-body), Georgia, serif;
 		font-style: italic;
-		font-weight: 400;
 		font-size: clamp(1rem, 2.2vw, 1.25rem);
-		color: var(--color-text);
 		opacity: 0.85;
 	}
 
-	.quiet {
-		margin: 0;
+	.index { width: min(44rem, 100%); display: flex; flex-direction: column; gap: 1.4rem; }
+
+	.search {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.7rem 1rem;
 		font-family: var(--font-body), Georgia, serif;
-		font-style: italic;
-		font-size: 0.95rem;
+		font-size: 1rem;
 		color: var(--color-text);
-		opacity: 0.6;
+		background: var(--color-surface);
+		border: 1px solid color-mix(in oklab, var(--color-text) 12%, transparent);
+		border-radius: 10px;
 	}
+	.search:focus { outline: 2px solid var(--color-brand-mint); outline-offset: 1px; }
+	.search::placeholder { color: color-mix(in oklab, var(--color-text) 45%, transparent); }
+
+	.cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		gap: 0.45rem;
+		padding: 1.1rem 1.3rem;
+		text-align: left;
+		background: var(--color-surface);
+		border: 1px solid color-mix(in oklab, var(--color-text) 8%, transparent);
+		border-radius: 12px;
+		text-decoration: none;
+		color: var(--color-text);
+		transition: border-color var(--motion-min-ms) var(--ease-out-quint);
+	}
+	a.card:hover { border-color: var(--color-brand-mint); }
+	.card.coming { opacity: 0.55; }
+
+	.card-q {
+		font-family: var(--font-heading), sans-serif;
+		font-weight: 600;
+		font-size: 1.15rem;
+		line-height: 1.3;
+	}
+	.card-aha { font-style: italic; opacity: 0.8; font-size: 0.95rem; }
+	.card-meta { font-size: 0.75rem; opacity: 0.55; letter-spacing: 0.04em; }
+	.mono { font-family: var(--font-mono), monospace; }
+
+	.none { font-style: italic; opacity: 0.6; padding: 1rem; }
 </style>
