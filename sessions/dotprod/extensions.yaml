@@ -3,81 +3,83 @@ session: dotprod
 lanes:
   llm:
     - prompt: >-
-        Tonight's aha was "the dot product is a similarity meter." Ask an
-        LLM to walk you through scaled dot-product attention from "Attention
-        Is All You Need" using that exact meter language: which two vectors
-        get pressed against each other, what the raw meter reading looks
-        like before softmax, and why dividing by sqrt(d_k) is needed once
-        the dimension gets large. Push it to connect the scaling term back
-        to "what the meter gets wrong."
+        We called the dot product a similarity meter and watched it turn
+        into a score behind the song. Walk me through scaled dot-product
+        attention in "Attention Is All You Need" line by line: which
+        vectors are the probes, which are being measured, and where the
+        divide by sqrt(d_k) shows up. Then answer this: if the meter's
+        reading grows with vector length, why does that break the softmax
+        it feeds, and how does the sqrt(d_k) division count as "the
+        cheapest fix"?
       whatGoodLooksLike: >-
-        A good answer names the query and key vectors explicitly, shows the
-        reading growing with dimension count even when direction hasn't
-        changed, and explains sqrt(d_k) as damage control on that drift, not
-        a magic constant.
+        A good answer names query and key vectors explicitly, shows the
+        dot product as the raw meter reading before softmax, and explains
+        the scaling as damage control on variance, not a cosmetic tweak.
     - prompt: >-
-        The breadcrumb question was "what is the cheapest fix that keeps
-        the direction and forgets the size?" Ask an LLM to derive cosine
-        similarity from the plain dot product step by step, then have it
-        argue whether transformers should have used cosine similarity
-        instead of the scaled dot product for attention scores, and why
-        they didn't.
+        Tonight's breadcrumb question was: what is the cheapest fix that
+        keeps the direction and forgets the size? Explain cosine
+        similarity to me as that fix applied to the similarity meter from
+        our session, then give me a case where forgetting the size is
+        wrong, a case where a longer vector should score higher, not just
+        a more aligned one.
       whatGoodLooksLike: >-
-        A good answer shows the normalization step clearly, then explains
-        that dropping magnitude also drops information the model can learn
-        to use, which is the actual tradeoff behind the "cheapest fix"
-        framing.
+        A good answer defines cosine similarity as dot product divided by
+        the product of norms, then gives a concrete example, like
+        confidence-weighted embeddings, where dropping magnitude throws
+        away real signal.
     - prompt: >-
-        You met two scoring machines tonight: Bahdanau's learned alignment
-        score and Vaswani's scaled dot product. Ask an LLM to "name the
-        machine you just used" for each, explaining what Bahdanau's small
-        feedforward scorer computes versus what the dot product computes,
-        and why the field moved from one to the other.
+        We named the machine we used tonight: the dot product doing
+        learned similarity scoring inside attention. Bahdanau et al.'s
+        2014 alignment model scored decoder-encoder pairs before the
+        dot-product version existed. Compare Bahdanau's additive scoring
+        function to the dot-product score in Vaswani et al., and tell me
+        what the field gained by switching machines, not just what
+        changed.
       whatGoodLooksLike: >-
-        A good answer treats both as similarity meters with different
-        internals, one learned end to end as a tiny network, one a fixed
-        geometric operation, and explains the dot product's win as speed
-        and parallelism, not accuracy alone.
+        A good answer identifies additive attention's extra learned
+        weight matrix and nonlinearity, contrasts it with the dot
+        product's cheapness, and names parallelizability or matrix
+        multiply efficiency as the real gain, not just novelty.
   papers:
     - title: Attention Is All You Need
       url: https://arxiv.org/abs/1706.03762
       hook: >-
-        This is tonight's meter wearing a softmax. Read section 3.2.1 for
-        the sqrt(d_k) scaling and you'll see the exact fix for the magnitude
-        drift the beat "what the meter gets wrong" warned you about.
+        This is the score behind the song made explicit: read the
+        attention section slowly and you will see tonight's meter, query
+        dotted with key, doing the entire alignment job inside a
+        transformer.
     - title: >-
         Neural Machine Translation by Jointly Learning to Align and
         Translate
       url: https://arxiv.org/abs/1409.0473
       hook: >-
-        Before the dot product was the shortcut, alignment scores were
-        computed by a small learned network comparing decoder state to
-        encoder annotations. Read this to see what "the machine you just
-        used" replaced, and why replacing it mattered.
+        Before the dot product was the machine, this paper's alignment
+        score was. Read it to see the same job, scoring how well two
+        things match, solved with a different meter, so you feel what the
+        dot product actually bought later.
     - title: Dot products and duality
       url: https://www.3blue1brown.com/lessons/dot-products
       hook: >-
-        The projection-times-length picture and the sign behavior, aligned
-        positive, perpendicular zero, opposed negative, is the exact visual
-        grammar behind "turn the probe and feel it." Read it to make the
-        sweep permanent.
+        This is the sweep you just turned with your own hands, drawn out
+        as projection times length. Watch it once more now that you know
+        the sign flip is the meter reporting aligned, perpendicular, or
+        opposed.
   projects:
-    - title: Build the meter and break it
+    - title: Build the meter before and after the fix
       brief: >-
-        In NumPy, build three scoring functions on a handful of toy word
-        vectors: plain dot product, cosine similarity, and scaled dot
-        product with sqrt(d_k). Rank the same query against your vector set
-        under each meter, then rescale one candidate vector's magnitude
-        without changing its direction and rerun all three rankings.
-        Finish line: a table showing the dot product's ranking flip when
-        magnitude changes while cosine similarity's ranking holds steady,
-        proving what the cheapest fix actually buys you.
-    - title: One head, by hand
+        Take a small set of toy vectors, 5 to 10, some short, some long,
+        at varying angles, and compute a full pairwise dot-product table
+        with NumPy. Then compute the cosine-similarity table for the same
+        vectors. Print both tables side by side and rank each vector's
+        top-3 nearest neighbors under each meter. Finish line: find and
+        report at least one pair whose ranking flips between the two
+        tables, and explain in one sentence why size caused the flip.
+    - title: Scale or collapse
       brief: >-
-        Implement a single attention head from scratch in NumPy on a short
-        toy sequence of 5 to 8 token vectors you make up yourself: compute
-        query-key dot products, scale by sqrt(d_k), softmax, and use the
-        weights to blend value vectors. Finish line: two attention-weight
-        heatmaps for the same sequence, one with scaling and one without,
-        showing the unscaled version collapsing toward one-hot picks as you
-        raise the vector dimension.
+        Implement scaled dot-product attention from scratch in NumPy on a
+        toy sequence of 4 to 6 vectors with a dimension d_k you control.
+        Run it once with the sqrt(d_k) division and once without, for
+        d_k values of 8, 64, and 512. Print the softmax output each time.
+        Finish line: show that the unscaled version's softmax collapses
+        toward one-hot as d_k grows while the scaled version stays soft,
+        proving the sqrt(d_k) fix earns its place.
