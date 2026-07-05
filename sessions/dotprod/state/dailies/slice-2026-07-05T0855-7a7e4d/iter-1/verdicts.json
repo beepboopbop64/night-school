@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one focus: the lilac meter dial with its needle and score readout, the sentence entering last as the resolution; nothing competes at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "At most the dial, needle, three region labels, and the a·b score appear together, and they build progressively across frames rather than flooding in at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The labels oppose/ignore/agree sit directly on the dial arc, and a·b sits on the score readout; there is no boxed legend or corner key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only sentence, 'the dot product is a similarity meter', annotates the visible dial directly below it; other text is short labels on objects.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — region labels, the a·b annotation, the +2.40 readout, and the tagline — is rendered well above the ~2.2% frame-height threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The dial, needle, score, and sentence all sit fully inside the frame with comfortable margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels, arrows, dial, and text are cleanly separated with no overlapping or stamped-over elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Periwinkle and amber mark the two probe vectors consistently, lilac carries the meter dial/needle and the a·b readout throughout, and the resolved sentence gets a mint fit-family glow.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — vectors, dial, needle, labels, score, sentence — carries propositional content; no decorative filler is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The stills collapse into a lilac meter dial whose needle swings oppose→ignore→agree, the a·b annotation sits on the score readout, and the aha sentence trues up with a mint glow, matching the intent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The a·b label and score sit directly under the needle, and the sentence sits under the dial it describes.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the probe stills give way to the arc, the needle, the score sweep, and finally the sentence, reading as a continuous build in reasoning order.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition is centered with generous negative space and a clear top-to-bottom scan path from dial to score to sentence.",
+    "suggestion": ""
+  }
+]

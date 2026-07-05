@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "stage": "S7",
-  "round": 3,
+  "round": 4,
   "fidelity": "half-trued",
   "nodes": {
     "s4f.beat-01": {
@@ -44,7 +44,7 @@
     "s4a.beat-03": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 1.5677221999999997,
+      "costUsd": 1.4942386000000003,
       "receipt": "state/receipts/s4a.beat-03.receipt.json"
     },
     "s4a.beat-04": {
@@ -121,20 +121,20 @@
     },
     "s4f.beat-04b": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-04b.receipt.json"
     },
     "s4a.beat-04b": {
       "status": "passed",
-      "costUsd": 2.1091746,
       "iter": 2,
+      "costUsd": 2.1091746,
       "receipt": "state/receipts/s4a.beat-04b.receipt.json"
     },
     "s4b.sec-beat-04b": {
       "status": "passed",
-      "costUsd": 0.025899,
       "iter": 0,
+      "costUsd": 0.025899,
       "receipt": "state/receipts/s4b.sec-beat-04b.receipt.json"
     }
   },

@@ -660,3 +660,17 @@
 {"ts":"2026-07-05T08:52:06.156Z","runId":"round-2026-07-05T0842-5f0f06","node":"s8.round-04","agent":"showrunner","event":"agent_call","data":{"orderId":"r04-n09","filesChanged":["page/interactives/dot-alignment.yaml"],"costUsd":0.13033499999999998}}
 {"ts":"2026-07-05T08:53:49.962Z","runId":"round-2026-07-05T0842-5f0f06","node":"s8.round-04","agent":"showrunner","event":"agent_call","data":{"orderId":"r04-n10","filesChanged":["doc/lesson.md"],"costUsd":0.26469}}
 {"ts":"2026-07-05T08:55:14.733Z","runId":"round-2026-07-05T0842-5f0f06","node":"s8.round-04","agent":"showrunner","event":"agent_call","data":{"orderId":"r04-n11","filesChanged":["extensions.yaml"],"costUsd":0.25298000000000004}}
+{"ts":"2026-07-05T08:55:15.206Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4f.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.207Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4f.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.208Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4f.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.209Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4f.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.209Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4f.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.217Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.229Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-05T08:55:15.238Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-03","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-03"}}
+{"ts":"2026-07-05T08:55:15.376Z","runId":"slice-2026-07-05T0855-7a7e4d","node":"s4a.beat-03","event":"node_started","data":{"beat":"beat-03","session":"dotprod","maxIter":5}}
+{"ts":"2026-07-05T09:04:18.347Z","runId":"slice-2026-07-05T0855-7a7e4d","node":"s4a.beat-03","agent":"manim-coder","event":"agent_call","data":{"iter":1,"costUsd":1.3413336000000002,"replanForced":false,"summary":"This looks solid: single candidate + probe recap collapsing into one lilac dial, needle sweep oppose→ignore→agree, dot-product readout with `a · b` annotation, and the aha sentence true-up in mint — all on brand fonts/colors, within novelty and bbox constraints, totaling ~38.85s.\n\nDONE Wrote scene_b"}}
+{"ts":"2026-07-05T09:14:08.361Z","runId":"slice-2026-07-05T0855-7a7e4d","node":"s4a.beat-03","agent":"iris","event":"critique_iteration","data":{"iter":1,"blocking":0,"rules":[],"costUsd":0.152905,"attempts":1},"verdictRef":"state/dailies/slice-2026-07-05T0855-7a7e4d/iter-1"}
+{"ts":"2026-07-05T09:14:08.369Z","runId":"slice-2026-07-05T0855-7a7e4d","node":"s4a.beat-03","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.4942386000000003,"wallMs":1132997}}
+{"ts":"2026-07-05T09:14:08.516Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-03","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
+{"ts":"2026-07-05T09:14:08.517Z","runId":"run-2026-07-05T0855-bcf2b8","node":"s4a.beat-03","event":"node_completed","data":{"costUsd":1.4942386000000003,"durationMs":1133265}}

@@ -18,12 +18,13 @@ beat:
     stills: along, across, against, each with its frozen score. The stills
     collapse into one lilac meter dial whose needle swings from oppose through
     ignore to agree as the probe sweep replays. The aha sentence trues up on
-    screen, freehand to exact with a mint glow. A small periwinkle mono
-    annotation, a . b, sits on the score readout."
+    screen, freehand to exact with a mint glow. A small lilac mono annotation, a
+    . b, sits on the score readout."
   colors:
     probe: data.heat
     candidates: data.observed
     meter: data.params
+    annotation: data.params
     ahaTrueUp: data.fit
     background: bg
     labels: text
