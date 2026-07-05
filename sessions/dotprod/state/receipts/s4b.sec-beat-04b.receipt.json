@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-04b",
-      "sha256": "e82e3a8a397d6cdecee65ee509726a09ee9157fd2574ae123d8ba367a645a8c6"
+      "sha256": "866a590ae9b27e582f33f75c23dbea4da6c1d88a16ef859d64f90c09a826832e"
     }
   ],
   "outputs": [
     {
       "path": "page/sections/beat-04b.md",
-      "sha256": "2d4ca854858d560193354363b1a69fdbbbb917663aa7bedf2ac56cfec6bec961"
+      "sha256": "1b09d2b5232e05a5a644072b6ccd4c619262283a1d4ea68c0cc27477dda466c1"
     }
   ],
   "gate": {
@@ -35,10 +35,10 @@
     ]
   },
   "iterations": 0,
-  "costUsd": 0.025899,
+  "costUsd": 0.1839294,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T08:05:22.146Z",
-  "endedAt": "2026-07-05T08:05:34.431Z",
+  "startedAt": "2026-07-05T09:31:14.026Z",
+  "endedAt": "2026-07-05T09:32:33.645Z",
   "transcript": "",
   "promptSha": "",
   "meta": {

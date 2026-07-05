@@ -1,13 +1,14 @@
 ## Double the arrow, double the number?
 
-Here's a test worth running in your head before we run it for real. First, point the probe straight along c1 and set its length back to 1.0, so the readout starts at a clean 1.0. Now take that same c1 arrow, keep it pointing exactly where it was pointing, and just stretch it twice as long. Nothing else changes. What happens to the score?
+We've been sweeping the probe around while holding every length fixed, watching only direction move the score. Time for the other half of the honest look: freeze the direction and change the length instead. Point the probe straight along c1 and set its length back to 1.0 first, so the doubling reads clean: 1.0 to 2.0.
 
 > If you double c1's length exactly, same direction, just twice as long, does the number double too?
 
-It does. Exactly. No fudge factor, no diminishing returns, no ceiling. Feed the meter an input twice as big and it hands back an output twice as big, every time. That's what it means for the meter to be linear in each arrow you give it: scale one input by some factor, and the output scales by that same factor, cleanly, in lockstep.
+The answer is yes, and it's exact. No fudge factor, no diminishing returns, no ceiling. Double one input and the output doubles right along with it, every time. That's what linear means here: scale one arrow by any factor, and the score scales by that same factor, in lockstep.
 
-That sounds like good behavior, and mechanically it is. But look closer and the honest problem shows up. If size passes straight through the meter untouched, then size is all it takes to win. A song with genuinely nothing new to say could still crush the score just by being loud and long. A resume with no more actual substance could out-score a leaner one just by having more words on the page. The meter was never asked to measure size, it was supposed to measure agreement in direction, but size is riding along for free.
+That clean scaling is generous right up until it isn't. A long song racks up loudness the meter reads as a bigger match, whether or not the taste underneath is any good. A padded resume racks up years and bullet points the same way, size sailing straight through the arithmetic and inflating the score. The meter was only ever supposed to measure agreement in direction, but size rides along for free.
 
-That's the crack. Not a bug exactly, more like a standing invitation: anything hooked up to this meter has an incentive to pad, not to align.
+That's the crack: a standing invitation for anything hooked up to this meter to pad instead of align. So here's the question for the walk home, now that you know size scales the score in lockstep: what's the cheapest fix, the one that keeps the direction and forgets the size?
 
-Next time the app hands you a stranger's song that is exactly right, you will know the number that said ship it, and you will know that number can be shouted over. For the walk home: now that you know size scales the score in lockstep, what's the cheapest fix that keeps the direction and forgets the size? You don't need the answer yet. You just need to feel the shape of the question.
+Next time the app hands you a stranger's song that's exactly right, you'll know the number that said ship it, and you'll know that number can be shouted over.
+</content>
