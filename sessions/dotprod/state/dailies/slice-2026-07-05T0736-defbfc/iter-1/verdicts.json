@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Across the sequence the meter/readout is the load-bearing element, with the retrieval-prompt card dimmed as a persistent anchor and the two-column table serving as supporting context that pools into the dial.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Elements are introduced progressively: prompt card, then dial, then three table rows, then six rows, then the 'fit 176' readout, never flooding more than four novel items at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Column headers 'you' and 'the role' sit atop their number columns and row labels sit beside their values; no boxed legend or corner key maps colors to names.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Text is confined to short labels ('you', 'the role', row names, 'score', 'fit 176') each attached to a visible referent; no spoken-register prose sits alone on the background.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All labels, numbers, and the 'fit 176' readout are rendered at comfortably readable size, well above the ~2.2% frame-height threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The table, dial, and readout all sit fully inside the frame with generous margins; nothing is cropped.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The table columns, dial, and readout are cleanly separated with no overlapping or intersecting text elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Observed entries are periwinkle-blue numbers, the dial and 'fit 176' parameter/score readout are lilac, and the arrows are periwinkle, consistent with Night School token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — prompt card, arrows, dial, table, readout — carries propositional content; no decorative ornaments appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The prompt card holds while the meter idles, columns become 'you' and 'the role' with Python hours/SQL reps/nights free plus more rows at readable size, and the entries pool into the lilac dial readout as intended.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Row labels sit beside their values and the dial's readout sits directly beneath the dial that aggregates the matched entries.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds continuously: card, then dial with arrows, then three rows, then six rows, then the meter fills and resolves to 'fit 176'.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The six-row table and dial each have ample surrounding negative space and a clear left-to-right reading order into the readout.",
+    "suggestion": ""
+  }
+]

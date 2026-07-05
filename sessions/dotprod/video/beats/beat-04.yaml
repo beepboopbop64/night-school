@@ -3,48 +3,25 @@ schemaVersion: 1
 session: dotprod
 beat:
   id: beat-04
-  title: What the meter gets wrong
+  title: Same meter, different aisle
   narration: >-
     Time to close the loop. Rebuild the meter from memory: two arrows go in, so
     what two operations turn them into the score?
 
 
-    While you think, keep the meter running and walk it one aisle over. Same
-    needle, same recipe, we just point it at a job posting instead of a song.
+    While you think, one detour worth naming. Swap the songs for a job posting.
     Score yourself against what the role wants: multiply the matched entries,
-    add them up, one number for the fit. Nothing about the meter changed, only
-    the shelf it is reading. The multiply-and-add never asked what the numbers
-    meant, and that is exactly why it travels.
-
-
-    Now the honest look, and guess before you watch. If a candidate's numbers
-    just get bigger, same direction, longer arrow, does its score change?
-
-
-    It climbs. The direction never moved, and the score climbed anyway. Long
-    songs would win on sheer loudness, and padded resumes would win on sheer
-    length. So the meter has a gap with a shape: it cannot tell direction apart
-    from size.
-
-
-    That is the thread to pull for the walk home. If the score keeps rewarding
-    size, what is the cheapest fix that keeps the direction and forgets the
-    size? Still up? The menu below has three ways to keep going.
+    add them up, one number for the fit. Different aisle, same meter. The
+    multiply-and-add never asked what the numbers meant, and that is exactly why
+    it travels.
   visual: '[visual: dynamic-process | connect-to-reality] The retrieval prompt
     holds as a card while the meter idles. The song columns swap for two labeled
-    "you" and "the role": Python hours, SQL reps, nights free; matched entries
-    multiply and pool into the same lilac readout on the same dial. A guess card
-    holds with one candidate outlined and the score readout hidden, asking
-    whether doubling c1 doubles the number. Then that periwinkle candidate
-    doubles in length while its direction holds still; its lilac score reads out
-    at exactly twice its former value, the two numbers stacked to show the clean
-    doubling; a small rose flag marks that size passed straight through. The
-    walk-home question lands as the closing card, and a quiet chip points to the
-    extensions menu on the page.'
+    "you" and "the role": Python hours, SQL reps, nights free, six rows at full
+    readable size with the whole frame to breathe; matched entries multiply and
+    pool into the same lilac readout on the same dial.'
   colors:
     candidates: data.observed
     score: data.params
-    failureFlag: data.error
     background: bg
     labels: text
-  durationTargetSeconds: 86.4
+  durationTargetSeconds: 31.8
