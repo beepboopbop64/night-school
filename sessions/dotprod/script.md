@@ -45,9 +45,13 @@ So say it plainly: the dot product is a similarity meter. Two lists of numbers g
 
 Time to close the loop. Rebuild the meter from memory: two arrows go in, so what two operations turn them into the score?
 
+[visual: connect-to-reality] The song columns swap for two new ones labeled "you" and "the role": Python hours, SQL reps, nights free. Matched entries multiply and the products pool into the same lilac readout on the same dial.
+
+While you think, one detour worth naming. Swap the songs for a job posting. Score yourself against what the role wants: multiply the matched entries, add them up, one number for the fit. Different aisle, same meter. The multiply-and-add never asked what the numbers meant, and that is exactly why it travels.
+
 [visual: dynamic-process] One periwinkle candidate stretches longer; its lilac score climbs while its direction holds still; a small rose flag marks the unearned win.
 
-While you think, one more honest look. Stretch a candidate longer and its score climbs, even though its direction never moved. Long songs would win on sheer loudness.
+Now the honest look. Stretch a candidate longer and its score climbs, even though its direction never moved. Long songs would win on sheer loudness, and padded resumes would win on sheer length.
 
 [visual: connect-to-reality] The walk-home question lands as the closing card, and a quiet chip points to the extensions menu on the page.
 
