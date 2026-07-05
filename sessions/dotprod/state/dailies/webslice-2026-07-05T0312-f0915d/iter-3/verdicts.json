@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe arrow is the clear single focus in each frame, with the periwinkle candidates and lilac score bars playing supporting roles.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The scene holds one probe, four candidates, and their score bars as a single coherent system, not five unrelated novel ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels 'probe', c1–c4 sit on the arrows and directly above each score bar; there is no legend or corner key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Only the instruction line and object labels/readouts appear, each annotating a visible element.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels, the probe angle readout, and the numeric dot-product readouts are all legible at every viewport including 375px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All arrows, bars, and readouts sit fully within the frame with margins at 375, 768, and 1280.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'probe' text and angle readout sit beside the probe shaft and remain readable without illegible overlap of other elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe is consistently amber, candidates periwinkle, score bars lilac, and labels cream throughout all states.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element—probe, candidates, bars, readouts, baseline—carries propositional content; no ornaments present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Initial shows probe at 90°, aligned shows probe on c1 at 20° with c1 bar peaking at +100, orthogonal shows probe at 110° on c3 with c1 at 0 and c3 peak, anti-aligned shows probe at 200° with c1 at -100 below the baseline.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each score bar and numeric readout sits directly under its labeled candidate, and the probe readout touches the probe.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across the driven states the probe rotation and bar heights change continuously, reading as a morph rather than a cut.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition keeps clear margins and separates the vector dial from the score bars with ample negative space.",
+    "suggestion": ""
+  }
+]

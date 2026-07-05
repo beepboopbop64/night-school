@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe and the four lilac score bars form one covariation system; the probe and the peaking bar clearly lead while candidates recede in muted periwinkle.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The scene reads as a single mechanism (probe + four candidates + their score bars), not five unrelated novel ideas competing at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "c1..c4 sit at each arrow tip, 'probe' rides the amber arrow, and each score bar is labeled directly above with its readout below; no legend or key is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the short instruction 'Turn the probe (drag it or use arrow keys) until a bar peaks,' which annotates the visible interactive rather than replacing it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Candidate labels, the probe angle readout, and the mono score digits (+34, +94, -77, etc.) remain readable at 375, 768, and 1280 px despite being intentionally quiet.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe arrow, candidate arrows, and all bars sit fully inside the frame with margin at every viewport, including the extended probe in the aligned frame.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "In orthogonal-1280 the large amber probe arrowhead at 110° overlaps and partially obscures the 'c3' candidate label at the top-left.",
+    "suggestion": "Offset the c3 label outward or shorten the probe arrowhead so it never covers a candidate label when the probe rotates onto that direction."
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Token semantics hold: amber = attention/probe, periwinkle = observed candidate arrows, lilac = parameter score bars, cream labels; no inverted or stock-primary colors appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element carries content — arrows, labels, bars, readouts, and the reference circle for the unit directions; no mascots or ornaments.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each driven state matches intent: initial probe at 90° with balanced bars, aligned c1 peaks at +100, orthogonal c3 peaks with c1 at 0, and anti-aligned shows c1 -100 with its bar below the zero baseline.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Score bars sit in a labeled row beneath the diagram; the shared c1..c4 labels keep each bar tied to its candidate arrow without much cross-frame hunting.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The alternate driven states read as continuous covariation of bar height and sign with probe angle rather than disjoint cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition has generous margins and a clear top-diagram, bottom-bars reading order at all three widths.",
+    "suggestion": ""
+  }
+]

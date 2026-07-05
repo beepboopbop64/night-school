@@ -15,17 +15,6 @@
 		return { x: cx + r * Math.cos(rad), y: cy - r * Math.sin(rad) };
 	}
 
-	// Offsets a point tangentially (sideways along the circle) so a label
-	// placed near an arrow's tip never sits directly on the arrow's line,
-	// even if another arrow later points at that same angle.
-	function toTangentPoint(deg, r, sideOffset, cx = 200, cy = 200) {
-		const rad = (deg * Math.PI) / 180;
-		return {
-			x: cx + r * Math.cos(rad) - sideOffset * Math.sin(rad),
-			y: cy - r * Math.sin(rad) - sideOffset * Math.cos(rad)
-		};
-	}
-
 	const scores = $derived(
 		candidates.map((c) => {
 			const diff = ((angle - c.deg) * Math.PI) / 180;
@@ -88,7 +77,7 @@
 		return n > 0 ? `+${n}` : `${n}`;
 	}
 
-	const probeTip = $derived(toPoint(angle, 148));
+	const probeTip = $derived(toPoint(angle, 160));
 	const probeLabel = $derived.by(() => {
 		const rad = (angle * Math.PI) / 180;
 		const shaftR = 80;
@@ -134,8 +123,8 @@
 			<circle cx="200" cy="200" r="4" fill="var(--color-text)" opacity="0.3" />
 
 			{#each candidates as c, i}
-				{@const tip = toPoint(c.deg, 130)}
-				{@const lbl = toTangentPoint(c.deg, 160, 26)}
+				{@const tip = toPoint(c.deg, 140)}
+				{@const lbl = toPoint(c.deg, 168)}
 				<line
 					x1="200"
 					y1="200"
@@ -172,7 +161,7 @@
 				dominant-baseline="middle"
 				class="probe-label"
 				style="fill: var(--color-text)"
-			>probe {angle}°</text>
+			>probe {angle}&#176;</text>
 		</svg>
 	</div>
 
