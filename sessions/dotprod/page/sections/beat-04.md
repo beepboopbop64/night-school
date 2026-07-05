@@ -1,13 +1,13 @@
-## So what does the meter actually compute?
+## So does bigger just mean better?
 
-Let's rebuild it from memory, since you've now watched it work on songs and on a job posting. Two arrows come in. You match up their entries, multiply each pair, then add all those products into one number. That's it. That's the whole meter: multiply, then add.
+Let's stress-test the meter we just rebuilt. Same recipe every time: multiply matching entries, add up the products, get one number. That's why it travels so well between wildly different aisles. Swap the songs for a job posting, score a candidate against what the role wants, and you're doing the identical operation: multiply the matched entries, add them up. The math never asked what the numbers meant, which is exactly why it doesn't care whether they're loudness levels or years of experience.
 
-Notice what that meter never asked. It never asked what the numbers meant. Song taste, resume keywords, anything with two lists of numbers the same length: the multiply-and-add doesn't care about the subject, only the shape. That's exactly why it travels so well from aisle to aisle.
+That portability is the whole appeal. It's also where the trouble starts.
 
-But traveling well isn't the same as getting things right, and here's the crack worth staring at. Take a candidate's resume and stretch it, repeat the same skills, pad the list, without changing what they're actually good at. Their score climbs anyway. Nothing about their direction moved. Only the length did.
+> If a candidate's numbers just get bigger, same direction, longer arrow, does its score change?
 
-Same problem with songs: a track that's simply louder in every frequency racks up a bigger score than a quieter track with the exact same taste profile. The raw multiply-and-add rewards size right alongside direction, and it can't tell you which one did the work.
+It climbs. Every single time. Stretch a candidate's arrow without changing its direction at all, an exaggerated "5 years" where the truth was "3," an inflated confidence score, and the meter goes up anyway. The direction, the thing that was supposed to represent fit, never moved. The score climbed on size alone.
 
-> What's the cheapest fix that keeps the direction the meter is sensing but forgets about the size doing the shouting?
+Same story back in the song aisle: a longer track, more notes, more everything, racks up a bigger score even if its taste in genres is identical to a shorter one. Long wins on sheer loudness. Padded resumes win on sheer length. The meter we built to measure alignment is quietly rewarding volume instead, and it never tells you which one did the work.
 
-Sit with that on the way out. You don't need the answer yet. You need the shape of the question, because that gap between direction and size is exactly where the next session picks up.
+That's not a bug we can shrug off, and it's not a reason to distrust the whole idea either. It's a gap with a shape: the raw score bundles direction together with size, and we need a way to keep the direction while forgetting the size. That question, the cheapest fix that does exactly that, is where we pick back up next.

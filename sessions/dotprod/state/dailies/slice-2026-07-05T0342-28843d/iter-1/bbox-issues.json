@@ -1,0 +1,58 @@
+[
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 11,
+    "mobjects": [
+      "m21"
+    ],
+    "message": "Text \"×\" height 0.165 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 11,
+    "mobjects": [
+      "m22"
+    ],
+    "message": "Text \"×\" height 0.165 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 11,
+    "mobjects": [
+      "m23"
+    ],
+    "message": "Text \"×\" height 0.165 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 13,
+    "mobjects": [
+      "m27"
+    ],
+    "message": "Text \"+\" height 0.176 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 13,
+    "mobjects": [
+      "m28"
+    ],
+    "message": "Text \"+\" height 0.176 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 15,
+    "mobjects": [
+      "m31"
+    ],
+    "message": "Text \"score\" height 0.164 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  },
+  {
+    "checkId": "bbox.text-height",
+    "keyframe": 24,
+    "mobjects": [
+      "m36"
+    ],
+    "message": "Text \"score\" height 0.164 < minimum readable 0.176 (2.1999999999999997% of frame height)"
+  }
+]
