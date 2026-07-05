@@ -12,7 +12,7 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "bd0efd3d39b481e969d1d7c2b7d65b446b35175da02d237e86615433f9f9440a"
+      "sha256": "a6b91e2123b57d35ae244bde5ee7867b9b19518c3fb5ac20232efd547893f2f1"
     }
   ],
   "outputs": [
@@ -43,10 +43,10 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 0.062255399999999995,
+  "costUsd": 0.09894720000000001,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T01:38:05.051Z",
-  "endedAt": "2026-07-05T01:38:33.196Z",
+  "startedAt": "2026-07-05T02:12:07.943Z",
+  "endedAt": "2026-07-05T02:12:48.704Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
