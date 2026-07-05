@@ -1,0 +1,507 @@
+# Change orders — THE literal, editable execution input (§7.3).
+# Edit this YAML, then `harness round <session> --execute`: the file IS the plan.
+schemaVersion: 1
+session: dotprod
+round: round-04
+policy:
+  totalEstimateUsd: 17.72
+  capUsd: 25
+  autoExecute: true
+  pauseReasons: []
+orders:
+  - id: r04-n01
+    noteId: n01
+    note: The a . b annotation renders in periwinkle, which is the candidates' color. The annotation
+      names the reading the machine produces, so it belongs in lilac like the score readout it sits
+      on (or neutral cream). One color change, then re-render.
+    kind: change-order
+    targets:
+      - storyboard#beat-03
+      - video/beat-03
+    changeType: visual
+    interpretation: Recolor the a·b annotation from periwinkle (candidates) to lilac (score/params) to
+      match the readout it sits on, then re-render the scene.
+    alternative: Recolor the annotation to neutral cream (labels) instead of lilac.
+    confidence: medium
+    spineTouch: false
+    blastRadius:
+      - s4a.beat-03
+      - s4b.sec-beat-03
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 4.13
+    miss:
+      critic: iris
+      artifact: video/scenes/scene_03.py
+  - id: r04-n02
+    noteId: n02
+    note: "The card on screen literally says \"retrieval prompt\" for the entire beat. That is a stage
+      direction leaking onto the screen, not content; a student pausing the frame sees a box naming
+      the KIND of card instead of the card. Put the actual question on it: \"Two arrows go in. What
+      two operations turn them into the score?\" Also the beat's planned on-screen text never
+      rendered anywhere: land \"two arrows in, one number out\" as the label when the matched
+      entries pool into the readout, and \"different aisle, same meter\" as the landing line. Iris
+      passed this frame, so log the miss: screen text that names the kind of moment instead of its
+      substance should read as a violation."
+    kind: change-order
+    targets:
+      - storyboard#beat-04
+      - video/beat-04
+    changeType: visual+content
+    interpretation: Replace the on-screen 'retrieval prompt' label with the actual question 'Two arrows
+      go in. What two operations turn them into the score?'; land the missing planned text 'two
+      arrows in, one number out' as the readout label when entries pool, and 'different aisle, same
+      meter' as the landing line; re-render.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4a.beat-04
+      - s4b.sec-beat-04
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 2.48
+    miss:
+      critic: iris
+      artifact: video/scenes/scene_04.py
+  - id: r04-n03
+    noteId: n03
+    note: "Same disease, three headers: \"Guess\", \"Reveal\", \"Next\" are the director talking to the
+      crew. The guess card should pose the actual doubling question and need no header; the reveal
+      needs no header at all, the stacked 4.2 / x2 / 8.4 IS the reveal (that part is genuinely good,
+      keep it exactly); the closing card's header, if it needs one, is \"For the walk home\". And
+      the closing card says \"Keep the direction. Lose the size.\" while the breadcrumb everywhere
+      else says keeps the direction and FORGETS the size. Make it \"Keep the direction. Forget the
+      size.\" so the callback lands on the canon phrasing."
+    kind: change-order
+    targets:
+      - storyboard#beat-04b
+      - video/beat-04b
+    changeType: visual+content
+    interpretation: "Drop the 'Guess'/'Reveal'/'Next' headers: the guess card poses the doubling
+      question and needs no header, the stacked 4.2/x2/8.4 reveal stays exactly as-is with no
+      header, the closing card's header (if any) is 'For the walk home'; and change 'Keep the
+      direction. Lose the size.' to 'Keep the direction. Forget the size.' to match the canon
+      breadcrumb; re-render."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4a.beat-04b
+      - s4b.sec-beat-04b
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 2.94
+    miss:
+      critic: iris
+      artifact: video/scenes/scene_04b.py
+  - id: r04-n04
+    noteId: n04
+    note: "\"Try answering that before you read on\" repeats \"before you read on\" from the blockquote
+      one sentence earlier. Cut the second occurrence: \"Try answering it first; it's genuinely
+      harder than it sounds.\""
+    kind: change-order
+    targets:
+      - page/beat-01
+    changeType: content
+    interpretation: Remove the repeated 'before you read on'; rewrite the sentence to 'Try answering it
+      first; it's genuinely harder than it sounds.'
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/beat-01.md
+  - id: r04-n05
+    noteId: n05
+    note: "The call-your-shot cannot be called: all four candidates start at unit length, so every bar
+      tops out at the same 1.0 the moment you point at it, and at the initial 90 degrees c2 and c3
+      tie at 0.9 with c2 arbitrarily bolded as leading. A student who honors the prompt discovers it
+      has no answer and stops taking our prompts seriously. Replace the blockquote with the
+      falsifiable version, and cue the full sweep while you are at it: \"Before you touch the probe:
+      swing it all the way around. Does any bar ever drop below zero? Call it.\" Beat-03's debrief
+      assumes the student saw zero and negative; right now nothing tells them to go look."
+    kind: change-order
+    targets:
+      - page/beat-02
+    changeType: content
+    interpretation: "Replace the un-callable call-your-shot blockquote with the falsifiable,
+      sweep-cueing version: 'Before you touch the probe: swing it all the way around. Does any bar
+      ever drop below zero? Call it.'"
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: petra
+      artifact: page/beat-02.md
+  - id: r04-n06
+    noteId: n06
+    note: >-
+      This one misteaches and it is the aha beat, so it goes first. The section claims "the
+      direction is the only thing the sum ever responded to," "one honest reading of alignment," and
+      "It tracks direction exactly" one screen AFTER the interactive's length handle showed the
+      score climbing on length alone. Scope every direction-only claim to the equal-length sweep
+      ("while every arrow held the same length, direction was all the sum ever responded to"), drop
+      "exactly," and soften "honest": beat-04b's whole point is that this reading can be bought.
+      Keep the aha sentence itself verbatim.
+
+
+      While in there: give the notation a referent in half a clause, "a is the probe's list, b is
+      the candidate's," because right now a . b lands as a decal, not a thing you could use. End the
+      section with the doc's generative close instead of the current restatement: "Before you scroll
+      on: positive, zero, negative. Say what each reading claims about two vectors, in your own
+      words." And "Step back from the sweep for a second" is the "for a second" filler again; vary
+      it.
+    kind: change-order
+    targets:
+      - page/beat-03
+    changeType: content
+    interpretation: "Scope every direction-only claim to the equal-length sweep ('while every arrow held
+      the same length, direction was all the sum ever responded to'), drop 'exactly', soften
+      'honest', keep the aha sentence verbatim; give the notation a referent ('a is the probe's
+      list, b is the candidate's'); end with the doc's generative close ('Before you scroll on:
+      positive, zero, negative. Say what each reading claims about two vectors, in your own
+      words.'); and vary the 'for a second' filler in 'Step back from the sweep for a second.'"
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: petra
+      artifact: page/beat-03.md
+  - id: r04-n07
+    noteId: n07
+    note: >-
+      Retitle: the heading says "Same math, different aisle" while the chapter list above it, the
+      storyboard, and extension prompt 3's verbatim quote all say "Same meter, different aisle." One
+      page, two names for the same section.
+
+
+      "Lift the whole thing out of the record store": no record store was ever planted. Beat-01 is a
+      music app and a data center. Swap to the music app and let "different aisle" carry as plain
+      idiom.
+
+
+      The section also performs the whole transfer for the reader and ends on a summary. Open with
+      the retrieval blockquote the video and doc both carry ("From memory: two arrows go in. What
+      two operations turn them into the score?"), and pose the mapping as a fill-in before
+      confirming it: "In the job aisle, which list plays the probe?" That also fixes the
+      stacked-asks overload screening flagged, because the page now sequences recall, then transfer.
+    kind: change-order
+    targets:
+      - page/beat-04
+    changeType: content
+    interpretation: "Retitle the heading to 'Same meter, different aisle'; swap 'record store' to the
+      beat-01 music app and let 'different aisle' carry as idiom; open with the retrieval blockquote
+      ('From memory: two arrows go in. What two operations turn them into the score?') and pose the
+      mapping as a fill-in ('In the job aisle, which list plays the probe?') before confirming it,
+      sequencing recall then transfer instead of performing the transfer for the reader."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/beat-04.md
+  - id: r04-n08
+    noteId: n08
+    note: >-
+      "Sit with" appears twice in this one section ("But sit with it for a second," "For the walk
+      home, sit with this:"), and we have banned that construction in two separate rounds now. Purge
+      both, no filler phrase repeating anywhere in the section.
+
+
+      "Not a bug exactly, more like an unpaid invitation" does not parse; invitations are not paid.
+      "A standing invitation."
+
+
+      The doubling test can visibly fail in the widget it points at: at the default probe angle the
+      one-decimal readouts show 0.3 becoming 0.7, which reads as MORE than double, and a c1 left
+      stretched from beat-02 cannot double at all because the handle caps at 2.0. One steering
+      sentence before the test fixes all of it: point the probe straight along c1 and set its length
+      back to 1.0 first; then the doubling reads a clean 1.0 to 2.0 under any rounding.
+
+
+      The breadcrumb drifted: this page says "keeps the direction information but forgets the size"
+      while the video, doc, and extension prompt 1's verbatim quote say "keeps the direction and
+      forgets the size." Align to the canon.
+
+
+      And the close never comes home. The opening scene, the app that nailed your taste, never
+      returns. One sentence before the walk-home question: "Next time the app hands you a stranger's
+      song that is exactly right, you will know the number that said ship it, and you will know that
+      number can be shouted over." Mirror the same return in the doc's final section. Page and doc
+      only; the video's closing card is covered by the note above.
+    kind: change-order
+    targets:
+      - page/beat-04b
+      - doc
+    changeType: content
+    interpretation: Purge both 'sit with' occurrences with no repeated filler; fix 'unpaid invitation'
+      to 'a standing invitation'; add one steering sentence before the doubling test ('point the
+      probe straight along c1 and set its length back to 1.0 first') so it reads a clean 1.0 to 2.0;
+      align the breadcrumb to canon 'keeps the direction and forgets the size'; and add a recursive
+      close returning the opening app ('Next time the app hands you a stranger's song that is
+      exactly right, you will know the number that said ship it, and you will know that number can
+      be shouted over.'), mirrored in the doc's final section. Page and doc only.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/beat-04b.md
+  - id: r04-n09
+    noteId: n09
+    note: >-
+      The initial probe angle of 90 degrees sits exactly on the c2/c3 bisector: a dead tie at 0.9
+      that the first-wins tiebreak falsely resolves by bolding c2 as "leading." Move the initial
+      angle off the bisector (40 degrees gives a unique honest leader) and suppress the leading
+      emphasis whenever scores tie.
+
+
+      Accessibility: the SVG's internal labels plus the readout row serialize into an unparseable
+      text run ("c1 c2 c3 c4 probe 0.3 c1 0.9 c2 ...") for assistive tech and text extraction. Give
+      each score readout an aria-label like "c2 score 0.9" and mark the decorative SVG text
+      aria-hidden.
+    kind: change-order
+    targets:
+      - ix/dot-alignment
+    changeType: content+visual
+    interpretation: Move the initial probe angle off the c2/c3 bisector to 40 degrees for a unique
+      honest leader, suppress the leading emphasis whenever scores tie, add aria-labels to each
+      score readout ('c2 score 0.9'), and mark the decorative SVG text aria-hidden.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4b.dot-alignment
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 2.57
+    miss:
+      critic: petra
+      artifact: ix/dot-alignment.py
+  - id: r04-n10
+    noteId: n10
+    note: >-
+      "Same meter, new aisle" is a third name for the beat-04 section; use "Same meter, different
+      aisle" like everything else.
+
+
+      Comma splice: "The meter was never asked to measure size, it was supposed to measure agreement
+      in direction..." Full stop after "size."
+
+
+      "Close the loop yourself before the next section:" is immediately followed by section 4
+      opening "Time to close the loop." Keep the section-4 opener (it is locked in narration);
+      rewrite the section-3 closer without the phrase, and do not reach for "one more," which the
+      doc already uses twice.
+
+
+      The prediction prompts all wear the same "Before you read on" frame, three times, plus the
+      page's copies. Vary at least two so the ritual does not read as a template.
+
+
+      The honest-edges callout promises "tidy integers so your eyes can do the arithmetic," but the
+      interactive the reader is sitting next to shows one-decimal readouts and never shows a single
+      vector entry. Keep the mandated readability phrase, drop the eyes-do-the-arithmetic promise.
+
+
+      Mirror the recursive close from @page/beat-04b in the final section.
+    kind: change-order
+    targets:
+      - doc
+    changeType: content
+    interpretation: Rename 'Same meter, new aisle' to 'Same meter, different aisle'; full-stop the comma
+      splice after 'measure size'; rewrite the section-3 closer to drop 'Close the loop yourself
+      before the next section:' without using 'one more' (keeping the locked section-4 opener); vary
+      at least two of the three 'Before you read on' prediction frames; keep the mandated
+      readability phrase but drop the 'so your eyes can do the arithmetic' promise; and mirror the
+      recursive close from page/beat-04b in the final section.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: doc.md
+  - id: r04-n11
+    noteId: n11
+    note: >-
+      This one is blocking and it is a regression: round-03 already ruled on it. Prompt 2 opens "In
+      'the score behind the song' we said scaled dot-product attention is the similarity meter
+      wearing a work uniform: query dot key, divided by sqrt(d_k), fed into a softmax," and the
+      Attention Is All You Need hook promises "the exact
+      dot-product-divided-by-sqrt(d_k)-then-softmax we walked through." The session never mentions
+      attention, softmax, or sqrt(d_k) on any surface. A student scrolls back, finds nothing, and
+      stops trusting the page at the exact moment we hand them off. Reword both forward-looking,
+      preview framing only: the meter SHOWS UP in transformers as scaled dot-product attention, next
+      session's machine if you want a preview tonight; the hook becomes "you will see tonight's
+      meter in its work uniform: a dot product, divided by sqrt(d_k), then softmaxed, scoring every
+      word against every other word." No "we said," no "we walked through," anywhere in the menu.
+
+
+      Separately: the first LLM prompt's visible text names the answer to the walk-home breadcrumb
+      ("dividing each vector by its own length (cosine similarity)"), and the first project brief
+      names it again. The page must never display the breadcrumb's answer; the gap is the point.
+      Reword so the learner proposes the fix and the LLM stress-tests it, and keep cosine and
+      normalize out of ALL visible menu text: prompts, what-good-looks-like lines, and project
+      briefs alike.
+
+
+      After the beat-04 retitle, confirm prompt 3's quoted section title matches the page heading.
+    kind: change-order
+    targets:
+      - ext
+    changeType: content
+    interpretation: "Reword prompt 2 and the Attention hook to forward preview framing only, removing
+      all 'we said'/'we walked through' — the meter SHOWS UP in transformers as scaled dot-product
+      attention next session ('you will see tonight's meter in its work uniform: a dot product,
+      divided by sqrt(d_k), then softmaxed, scoring every word against every other word'); reword
+      the first LLM prompt and project brief so the learner proposes the fix and the LLM
+      stress-tests it, keeping 'cosine' and 'normalize' out of all visible menu text; and confirm
+      prompt 3's quoted section title matches the retitled beat-04 heading."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: ext.md
+  - id: r04-n12
+    noteId: n12
+    note: '#style: on-screen text in video is content, never stage directions. Words that name the kind
+      of moment ("retrieval prompt," "Guess," "Reveal," "Next," "prediction card") never render; a
+      card that poses a question shows the question itself.'
+    kind: style-amendment
+    targets: []
+    interpretation: Add a bible rule that on-screen video text must show substance, never stage
+      directions naming the kind of moment.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: docs/show-bible.md
+    styleAmendment:
+      rule: "On-screen video text must show substance, never stage directions: a card that poses a
+        question displays the question itself and never a label naming the kind of moment
+        ('retrieval prompt', 'Guess', 'Reveal', 'Next', 'prediction card')."
+      rationale: A learner who pauses the frame gets only the text on screen; naming the kind of card
+        spends that text on crew notes instead of the content the moment exists to deliver.
+  - id: r04-n13
+    noteId: n13
+    note: '#style: a callback may only reference an image the lesson actually planted. Before writing
+      "the X," check that X exists upstream on the same surface.'
+    kind: style-amendment
+    targets: []
+    interpretation: Add a bible rule that callbacks may reference only images the lesson actually
+      planted upstream on the same surface.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: docs/show-bible.md
+    styleAmendment:
+      rule: A callback may reference only an image the lesson actually planted; before writing 'the X',
+        verify X exists upstream on the same surface.
+      rationale: Phantom callbacks (a record store that was never shown) reference a memory the learner
+        does not have and quietly break trust in the lesson's continuity.
+  - id: r04-n14
+    noteId: n14
+    note: "#style: the close returns the opening image, recharged. If the final section never touches
+      the scene that opened the lesson, the lesson is not finished."
+    kind: style-amendment
+    targets: []
+    interpretation: Add a bible rule that every lesson closes by returning its opening image, recharged.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: docs/show-bible.md
+    styleAmendment:
+      rule: Close every lesson by returning its opening image, recharged with what was learned; a final
+        section that never touches the opening scene is unfinished.
+      rationale: The recursive return converts the mechanism back into the felt moment that motivated it,
+        giving the learner the payoff and a sense of completion.
+  - id: r04-n15
+    noteId: n15
+    note: '#style: extensions preview forward, never claim coverage backward. "We said" or "we walked
+      through" may only describe things a student can scroll up and find.'
+    kind: style-amendment
+    targets: []
+    interpretation: Add a bible rule that extensions preview forward and never claim backward coverage
+      of untaught material.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: docs/show-bible.md
+    styleAmendment:
+      rule: "Extensions preview forward, never claim coverage backward: 'we said' and 'we walked through'
+        may describe only content a learner can scroll up and find in this session."
+      rationale: Claiming past coverage of material never taught (attention, softmax, sqrt(d_k)) collapses
+        trust at the exact moment of handoff, when the learner scrolls back and finds nothing.
+  - id: r04-n16
+    noteId: n16
+    note: "#style: no visible surface states the answer to the walk-home breadcrumb; the gap stays open
+      until the next session opens with it."
+    kind: style-amendment
+    targets: []
+    interpretation: Add a bible rule that no visible surface states the walk-home breadcrumb's answer;
+      the gap stays open until the next session.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: docs/show-bible.md
+    styleAmendment:
+      rule: No visible surface — prompt, what-good-looks-like line, or project brief — may state the
+        answer to the walk-home breadcrumb; the gap stays open until the next session opens with it.
+      rationale: The unsolved gap is the pedagogical hook home; naming the fix (cosine, normalize) closes
+        it prematurely and removes the learner's reason to return.

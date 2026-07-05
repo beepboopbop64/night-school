@@ -646,3 +646,6 @@
 {"ts":"2026-07-05T08:19:07.351Z","runId":"run-2026-07-05T0736-2bc703","node":"s7.packet","event":"node_started","data":{"reason":"no-receipt"}}
 {"ts":"2026-07-05T08:19:09.384Z","runId":"run-2026-07-05T0736-2bc703","node":"s7.packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.serves-locally","pass":true},{"id":"packet.notes-preseeded","pass":true},{"id":"packet.flags-written","pass":true}]}}
 {"ts":"2026-07-05T08:19:09.386Z","runId":"run-2026-07-05T0736-2bc703","node":"s7.packet","event":"node_completed","data":{"costUsd":0,"durationMs":2030}}
+{"ts":"2026-07-05T08:19:09.752Z","runId":"run-2026-07-05T0736-2bc703","node":"s7.packet","event":"commit","data":{"sha":"fb06d74b91429bc76b8fcb862279c2e2835aa66a"}}
+{"ts":"2026-07-05T08:42:12.190Z","runId":"round-2026-07-05T0842-5f0f06","node":"s8.round-04","event":"node_started","data":{"notes":16}}
+{"ts":"2026-07-05T08:45:29.364Z","runId":"round-2026-07-05T0842-5f0f06","node":"s8.round-04","agent":"triage","event":"agent_call","data":{"costUsd":0.5730299999999999,"rows":16}}
