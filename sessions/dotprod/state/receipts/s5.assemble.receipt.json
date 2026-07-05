@@ -8,15 +8,15 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "bd0efd3d39b481e969d1d7c2b7d65b446b35175da02d237e86615433f9f9440a"
+      "sha256": "a6b91e2123b57d35ae244bde5ee7867b9b19518c3fb5ac20232efd547893f2f1"
     },
     {
       "path": "script.md",
-      "sha256": "ce8c2c590fe2231bb83ae287dfa169f86872704b5307cbde3a35cc42eaf686b5"
+      "sha256": "f149f1ebc94d7d73e5d6ea8a4d6b0d5f993c8228f3428efdb1be24e0e6b7aabb"
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "556bd1d627b56478ed181812005f62808c07f500b841f14e0fe12bc9c1ed4d67"
+      "sha256": "8c3018b4fa585ecb7616b2c3f9bb1af030f54343aa236a14d5b001cb85847515"
     },
     {
       "path": "extensions.yaml",
@@ -48,11 +48,11 @@
     },
     {
       "path": "media/beat-04.mp4",
-      "sha256": "6a40ac7f19742c4f154d9057819739636ac4d2c0545076407e654f36f1a628e0"
+      "sha256": "3ccff65eafa9c4111e91b934762299091407e4c1e2c4f747ad1e7472e47b28c5"
     },
     {
       "path": "video/audio/beat-04.mp3",
-      "sha256": "a486e66a85f2f958d9ce4f93f03929c674d63ae599f6c5769cc53545cdc9901e"
+      "sha256": "d5734446c93189cabc296c75b698dc0ee5af4c93620edc4d2b534cac8396e7d1"
     },
     {
       "path": "page/sections/beat-01.md",
@@ -68,25 +68,25 @@
     },
     {
       "path": "page/sections/beat-04.md",
-      "sha256": "335ada5272eae0d8b87c096c6b1322ae1fdcff74d7845b5ed311437b83ab0dc8"
+      "sha256": "da0d78276dd7b73f71e4935c4754b914dc704c1c647cecfe4479f7be84ad52fe"
     },
     {
       "path": "notebook/lesson.ipynb",
-      "sha256": "2a3a1acd85803b3daa75029dc7d81b19249b212904c1abcb1485978957d781df"
+      "sha256": "4874b7b33d33bb0f3a2b31701ed701597cd2170699d182ea3f765701fea4a7fd"
     }
   ],
   "outputs": [
     {
       "path": "media/session.mp4",
-      "sha256": "daaf700542f9d7d6d68f5147c02a40acdffc625dd6e4b026c9521f1c0aa8aa92"
+      "sha256": "aa2fe7a00f9e06d640a9a0f2174e711dad41491023772ad22805b831272cde06"
     },
     {
       "path": "video/captions.vtt",
-      "sha256": "2003e7be473de80a7f71f2cddc798488b017298eac5662147ea0d4e04c0a3be2"
+      "sha256": "b037227372c0d24e8e46d8424eda71d226d0b8f82348c9214461f7194c8b19d1"
     },
     {
       "path": "page/video.json",
-      "sha256": "5893bdaef49b5953919f9a90a17afbccc2c4a27b735d841358b1236456809443"
+      "sha256": "c83c311832552cbb8dc7a394ec27230494e2e0636846a96cbedff05a60a0898b"
     },
     {
       "path": "manifest.yaml",
@@ -129,12 +129,12 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T01:40:16.900Z",
-  "endedAt": "2026-07-05T01:40:29.851Z",
+  "startedAt": "2026-07-05T02:14:47.801Z",
+  "endedAt": "2026-07-05T02:15:01.453Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 128.54,
+    "videoSeconds": 151.4,
     "beats": [
       {
         "beatId": "beat-01",
@@ -157,8 +157,8 @@
       {
         "beatId": "beat-04",
         "startSeconds": 99.66,
-        "targetSeconds": 28.839,
-        "measuredSeconds": 28.866667
+        "targetSeconds": 51.733,
+        "measuredSeconds": 51.733333
       }
     ],
     "ahaOk": {
