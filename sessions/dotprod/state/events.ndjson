@@ -438,3 +438,8 @@
 {"ts":"2026-07-05T05:14:44.136Z","runId":"slice-2026-07-05T0502-87e073","node":"s4a.beat-04","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.3694566999999997,"wallMs":708021}}
 {"ts":"2026-07-05T05:14:44.246Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4a.beat-04","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-05T05:14:44.247Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4a.beat-04","event":"node_completed","data":{"costUsd":1.3694566999999997,"durationMs":708228}}
+{"ts":"2026-07-05T05:14:44.713Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4a.beat-04","event":"commit","data":{"sha":"82bccd431c70b34f06f220d3b0f3aaee38998347"}}
+{"ts":"2026-07-05T05:14:44.722Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4b.sec-beat-01","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-01"}}
+{"ts":"2026-07-05T05:15:04.972Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4b.sec-beat-01","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.049641000000000005,"summary":"DONE How do you turn \"same taste\" into a number?"}}
+{"ts":"2026-07-05T05:15:04.987Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4b.sec-beat-01","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true}]}}
+{"ts":"2026-07-05T05:15:04.988Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4b.sec-beat-01","event":"node_completed","data":{"costUsd":0.049641000000000005,"durationMs":20260}}

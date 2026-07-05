@@ -1,9 +1,11 @@
-## How did it know?
+## How do you turn "same taste" into a number?
 
-Think about the last time an app surprised you with something good. A song from a band you'd never heard, a video you didn't search for, a product that showed up before you knew you wanted it. It felt personal, almost like the app knew you.
+Your music app just handed you a song by a band you've never heard of, and it's exactly right. Somewhere in a data center, two descriptions got compared and the machine decided: close enough, ship it. That comparison is doing something stranger than it looks.
 
-It didn't, not the way a friend knows you. What happened is much stranger and much simpler at the same time. Somewhere on a server, your taste got turned into a list of numbers. The song got turned into a list of numbers too. Then something compared the two lists and produced a single number: a score for how well they match.
+A song isn't one thing you can measure with a single ruler. It's loud, it's fast, it's sad in the verses and bright in the chorus, dozens of qualities layered on top of each other at once. Your taste is the same kind of tangle: you like some of that loudness, some of that sadness, in your own particular mix. Neither the song nor your taste reduces to a single word. So how does the app collapse both of them into one verdict?
 
-That's the whole trick. Not magic, not a mind reading your mood, just two lists of numbers and one comparison. The question worth chewing on tonight is exactly that: given two lists of numbers, how do you turn them into one score that means "these two things go together"?
+> Before you read on: if you had two lists of many different qualities, one describing a song and one describing a listener, how would you boil their match down to a single number?
 
-It sounds almost too small to matter. But this one move, comparing two lists of numbers into a single score, is doing more work in modern software than almost any other idea. Recommendations, search, translation, image recognition: a huge share of it comes down to this same comparison, run billions of times a second. Hold onto the question. We're about to build the answer from scratch.
+Sit with that for a second, because it's genuinely harder than it sounds. You can't just check if the two lists agree, because they're not the same kind of thing, and even similar things rarely match on every quality at once. You need some way to let the qualities that matter count more, let the ones that don't cancel out, and still end up with one clean number at the end.
+
+Here's the payoff for pushing through the discomfort: whatever answer you land on, some version of it runs underneath a huge share of modern machine learning. Recommendation, search, even how language models decide which words relate to which. One trick, endlessly reused, and you're about to build it from scratch.
