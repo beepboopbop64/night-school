@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "In frames 2-4 a single cream ruler brightens one row (loud, then fast, then bright) while the rest of the periwinkle stack recedes; frames 5-6 center the lone question card over the 'match: ?' readout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frame presents only the two labeled stacks, the moving ruler, and the match readout/question card — well under four novel elements at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each feature name (loud, fast, sad, bright, and more) is the object itself, and the column headers 'your taste' and 'this song' sit directly atop their respective stacks; no legend or key is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The question card 'How do many features become one match number?' sits directly above its visible referent, the 'match: ?' readout, functioning as an annotation of the unfilled value.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — feature rows, headers, question card, and 'match: ?' — renders well above the ~2.2% frame-height threshold and is clearly readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element, including the bottom 'and more' rows and the match readout, sits entirely inside the frame with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The ruler tick rests just beneath its target row without overlapping text, and no labels or elements intersect anywhere in the set.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Feature rows stay periwinkle (observed), the ruler is cream (ground truth), and the match '?' readout is lilac (parameter/unknown), consistent with locked token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — the two feature stacks, the measuring ruler, the readout, and the question card — carries propositional content; no decoration is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frames deliver the promised composition: two periwinkle feature stacks labeled 'your taste' and 'this song', a short cream ruler laid against one row at a time, a lilac 'match: ?' readout, and a question card holding over the unfilled value with half the frame empty.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The ruler sits directly on the row it measures and the question card sits immediately above the match readout it questions.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames 2-4 the ruler steps continuously down the rows (loud to fast to bright), reading as a moving morph rather than a cut.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The layout keeps ample negative space, with the lower half deliberately empty so the puzzle owns the screen and the reading order stays clear.",
+    "suggestion": ""
+  }
+]

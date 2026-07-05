@@ -4,29 +4,29 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-01",
-      "sha256": "f511152447e95ab3062bff99c32feae7d0e5c33c5e0c14b17adce6abf46bc587"
+      "sha256": "8b67ba127661aab8ff544922b7d4078b5080058d054b1649e9dde540d5268a14"
     },
     {
       "path": "script.md#beat-01",
-      "sha256": "3a9ffed8506304f5d2cef2d8506188f9f0daaa3834b5db446d6ac9ad15640e69"
+      "sha256": "68f7f031fabf8f707a84e8bf76dcb8e52f8ac09795d120cb7837da86363bce04"
     },
     {
       "path": "video/audio/beat-01.mp3",
-      "sha256": "35eea7a82b363689c5d635e9ea009d630a9788090ffd3bf9709878ed54fb3608"
+      "sha256": "fa401886b353f9a9c9109e3e946ec671326e9226b9360a51b578f00e27cf0559"
     }
   ],
   "outputs": [
     {
       "path": "video/beats/beat-01.yaml",
-      "sha256": "1e531d5522a475ddfeffdd32c4c299ebc81c56e59a907b0035ede62ec758a054"
+      "sha256": "8cca5c0ac1cd4e6e497a060a5b675bf4143b06e1a43508ecd5e9e02dc6a08409"
     },
     {
       "path": "video/scenes/scene_beat_01.py",
-      "sha256": "1825786ec58dcfb149567aef0e06c86fb3e9399f01700a225594fb005e27b706"
+      "sha256": "259cd24181f2416438b8eedcba8b621bc7bdfc753d2af962aab5c7ab2e6db34d"
     },
     {
       "path": "media/beat-01.mp4",
-      "sha256": "6600dc697c24ed4f7e59647144077d3d09847391ac420601711854de63c8abc8"
+      "sha256": "40b23ba84b64ae41079016a7876261489bfc4a953b030144cf80cc425ccbc1fa"
     }
   ],
   "gate": {
@@ -39,7 +39,7 @@
       {
         "id": "iris.pass",
         "pass": true,
-        "iter": 2
+        "iter": 1
       },
       {
         "id": "scene.duration-within-tolerance",
@@ -47,38 +47,26 @@
       }
     ]
   },
-  "iterations": 2,
-  "costUsd": 0.846453,
+  "iterations": 1,
+  "costUsd": 1.253181,
   "tier": "opus",
-  "startedAt": "2026-07-05T04:25:54.145Z",
-  "endedAt": "2026-07-05T04:31:41.319Z",
-  "transcript": "state/dailies/slice-2026-07-05T0425-edc63d",
+  "startedAt": "2026-07-05T23:34:55.505Z",
+  "endedAt": "2026-07-05T23:41:54.192Z",
+  "transcript": "state/dailies/slice-2026-07-05T2334-6049c3",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 24.333,
-    "audioSeconds": 24.4,
-    "toleranceSeconds": 2.44,
+    "videoSeconds": 60.5974,
+    "audioSeconds": 59.92,
+    "toleranceSeconds": 5.99,
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "bbox-failed",
-        "coderCostUsd": 0.4781196,
-        "irisCostUsd": 0,
-        "wallMs": 226940,
-        "fingerprints": [
-          "bbox:bbox.text-height:Text:…",
-          "bbox:bbox.text-height:Text:…"
-        ],
-        "replanWasForced": false
-      },
-      {
-        "iter": 2,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.2229039,
-        "irisCostUsd": 0.1454295,
-        "wallMs": 119959,
+        "coderCostUsd": 0.801621,
+        "irisCostUsd": 0.4515600000000001,
+        "wallMs": 418466,
         "fingerprints": [],
-        "replanWasForced": true
+        "replanWasForced": false
       }
     ]
   }
