@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe-and-bars covariation is the single load-bearing system; the amber probe and the leading lilac bar draw the eye while the still periwinkle candidates support.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "One integrated widget of probe, candidate arrows, and score bars is presented; no more than four distinct concepts appear together.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "c1..c4 sit at their arrow tips and above their bars, 'probe' sits on the amber arrow, and no legend or key appears anywhere.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the short instruction 'Turn the probe. Each bar tracks how closely it points at that candidate,' which annotates the visible widget below it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Bar labels and mono readouts (0.34, 1.00, -1.00, etc.) are clearly readable at all three widths, and the in-circle 'probe 99°' and tip labels remain legible even at 375px.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The circle, all arrows, bars, and readouts sit entirely within each frame with generous margins, including the down-left probe in anti-aligned.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'probe' text touches only its own amber arrow (its referent), and candidate labels, bars, and readouts do not overlap unrelated content.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Amber marks the attention probe, periwinkle the observed candidate arrows, lilac the parameter score bars, and cream the labels — all consistent with Night School token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element carries content; the guide circle marks the unit direction space and there are no mascots or ornaments.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All four states deliver the promised moments: aligned c1=1.00 peak, orthogonal c3=1.00 with c1=0.00, anti-aligned c1=-1.00 below baseline, and initial near-vertical with the two central bars leading (probe reads 99° rather than exactly 90°, a minor label deviation).",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each bar is tied to its candidate by a shared c1..c4 label, so the score row reads as belonging to the arrows despite sitting below the circle.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Not applicable: these are independent driven states rather than a morph sequence to judge for continuity.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition has clear margins and a top-to-bottom reading order from instruction to circle to score bars, with ample negative space.",
+    "suggestion": ""
+  }
+]

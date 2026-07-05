@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "node": "s4b.dot-alignment",
+  "inputs": [
+    {
+      "path": "page/interactives/dot-alignment.yaml",
+      "sha256": "74e6f4e149a5db13e771baea214df87b57455de1db2e6a27d0d935f3e28094d6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "page/interactives/DotAlignment.svelte",
+      "sha256": "1be655b6dcef53b6617ea007d95307e3156d2bd110a8ad81cc259af09f4fd936"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "weba11y.clean",
+        "pass": true
+      },
+      {
+        "id": "iris.pass",
+        "pass": true,
+        "iter": 2
+      }
+    ]
+  },
+  "iterations": 2,
+  "costUsd": 1.2639561000000001,
+  "tier": "opus",
+  "startedAt": "2026-07-05T01:21:17.238Z",
+  "endedAt": "2026-07-05T01:31:20.014Z",
+  "transcript": "state/dailies/webslice-2026-07-05T0121-5c6ba3",
+  "promptSha": "",
+  "meta": {
+    "perIteration": [
+      {
+        "iter": 1,
+        "outcome": "iris-failed",
+        "coderCostUsd": 0.34452900000000003,
+        "irisCostUsd": 0.2538855,
+        "wallMs": 279393,
+        "fingerprints": [
+          "iris:V7"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 2,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.3823761,
+        "irisCostUsd": 0.2831655,
+        "wallMs": 323371,
+        "fingerprints": [],
+        "replanWasForced": false
+      }
+    ]
+  }
+}

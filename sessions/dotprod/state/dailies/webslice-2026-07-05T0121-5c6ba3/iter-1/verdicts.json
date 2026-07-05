@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The amber probe and periwinkle candidate dial form the clear central focus, with the lilac score bars playing a supporting readout role below.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frame presents one cohesive system (probe, candidate arrows, score bars) rather than five-plus unrelated novel ideas.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every candidate is labeled c1..c4 at its arrow tip and above its bar, and the probe is labeled on the arrow; there is no legend or key.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only prose is the one-line instruction 'Turn the probe. Each bar tracks how closely it points at that candidate,' which annotates the visible dial directly above it.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The header, degree readouts, bar labels, and mono numeric scores are all legible including at the 375px width.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All elements including the score bars and the down-left probe in the anti-aligned frame sit inside the frame with margin; no term is cut by an edge.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": false,
+    "severity": "blocking",
+    "evidence": "In the aligned and anti-aligned frames the amber probe label collides with its own arrowhead, hiding part of the text so it reads 'probe ' with the degree obscured and 'be 200°' with 'pro' covered.",
+    "suggestion": "Offset the probe's angle label radially outward from the arrowhead so the full 'probe NNN°' text never sits under the arrow tip at any orientation."
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe wears amber (attention), candidate arrows periwinkle (observed), and score bars lilac (parameters), each concept holding one consistent color.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — probe, candidate arrows, unit circle, and score bars with readouts — carries propositional content; no decoration is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each driven state matches its promise: initial probe at 90° with symmetric 0.34/0.94/0.94/0.34, aligned c1 at 1.00, orthogonal c3 at 1.00 with c1 at 0.00, and anti-aligned c1 at -1.00 with its bar below the baseline.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each candidate's arrow, bar, and numeric readout share the same c1..c4 label so the covariation is traceable without cross-frame hunting.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "not applicable: frames are independent driven states and viewport widths, not a sequential morph build.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The dial and bar cluster are centered with generous margins and a clear top-to-bottom reading order at all three widths.",
+    "suggestion": ""
+  }
+]
