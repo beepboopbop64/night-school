@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "node": "s4f.beat-04",
+  "inputs": [
+    {
+      "path": "script.md#beat-04",
+      "sha256": "5dbeee049ea926ca1b5aabd2a809012eb78e9f6ade2edd28b1d52b608eead107"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/audio/beat-04.mp3",
+      "sha256": "a486e66a85f2f958d9ce4f93f03929c674d63ae599f6c5769cc53545cdc9901e"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "tts.safe-lint",
+        "pass": true
+      },
+      {
+        "id": "tts.audio-written",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 0,
+  "costUsd": 0,
+  "tier": "script",
+  "startedAt": "2026-07-05T00:20:59.474Z",
+  "endedAt": "2026-07-05T00:21:04.051Z",
+  "transcript": "",
+  "promptSha": "",
+  "meta": {
+    "mode": "elevenlabs",
+    "voiceId": "XrExE9yKIg1WjnnlVkGX",
+    "voiceName": "Matilda",
+    "textHash": "bdf84d827bf9f2cdb339205a177400136215a25e07a589e046115a1f5a42f497",
+    "cacheHit": false,
+    "audioSeconds": 28.839184
+  }
+}
