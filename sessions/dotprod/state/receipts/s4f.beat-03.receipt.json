@@ -4,7 +4,7 @@
   "inputs": [
     {
       "path": "script.md#beat-03",
-      "sha256": "3dbf70c80cd9283ce1397b4b26ff88ea4af6ed19d74c13dc190f2dc6fb9ad745"
+      "sha256": "2a5966c2bebae6e35f1d29616fe58339a50881391868cdfea1ee56fc15366bbd"
     }
   ],
   "outputs": [
@@ -29,8 +29,8 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T04:25:23.570Z",
-  "endedAt": "2026-07-05T04:25:32.588Z",
+  "startedAt": "2026-07-05T23:34:22.555Z",
+  "endedAt": "2026-07-05T23:34:22.684Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
@@ -38,7 +38,8 @@
     "voiceId": "cgSgspJ2msm6clMCkdW9",
     "voiceName": "Jessica",
     "textHash": "5730b55ff5ce6e1504f6c5672c6abd21d07831cbe26f45bd0b6c181edd6685d6",
-    "cacheHit": false,
-    "audioSeconds": 38.8
+    "cacheHit": true,
+    "audioSeconds": 38.8,
+    "stitching": false
   }
 }
