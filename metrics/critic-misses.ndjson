@@ -4,3 +4,7 @@
 {"ts":"2026-07-05T04:03:08.251Z","session":"dotprod","round":"round-02","noteId":"n01","orderId":"r02-n01","critic":"vera","artifact":"script/beat-04"}
 {"ts":"2026-07-05T04:03:08.251Z","session":"dotprod","round":"round-02","noteId":"n02","orderId":"r02-n02","critic":"iris","artifact":"ix/dot-alignment"}
 {"ts":"2026-07-05T04:03:08.251Z","session":"dotprod","round":"round-02","noteId":"n03","orderId":"r02-n03","critic":"petra","artifact":"spine.md"}
+{"ts":"2026-07-05T06:33:12.954Z","session":"dotprod","round":"round-03","noteId":"n01","orderId":"r03-n01","critic":"petra","artifact":"storyboard/beat-04.md"}
+{"ts":"2026-07-05T06:33:12.954Z","session":"dotprod","round":"round-03","noteId":"n02","orderId":"r03-n02","critic":"vera","artifact":"page/beat-01.md"}
+{"ts":"2026-07-05T06:33:12.954Z","session":"dotprod","round":"round-03","noteId":"n03","orderId":"r03-n03","critic":"iris","artifact":"interactives/dot-alignment.py"}
+{"ts":"2026-07-05T06:33:12.954Z","session":"dotprod","round":"round-03","noteId":"n04","orderId":"r03-n04","critic":"sam","artifact":"ext.md"}

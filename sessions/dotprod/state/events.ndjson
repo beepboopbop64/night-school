@@ -502,3 +502,5 @@
 {"ts":"2026-07-05T05:50:50.485Z","runId":"run-2026-07-05T0425-9fe80e","node":"s7.packet","event":"node_completed","data":{"costUsd":0,"durationMs":2042}}
 {"ts":"2026-07-05T05:50:50.811Z","runId":"run-2026-07-05T0425-9fe80e","node":"s7.packet","event":"commit","data":{"sha":"c74886d9a7c647aa351326207cc32a25207ace82"}}
 {"ts":"2026-07-05T05:50:50.893Z","runId":"round-2026-07-05T0425-8d13f1","node":"s8.round-02","event":"node_completed","data":{"costUsd":11.68,"failedOrders":[],"proofViolations":0,"runFailed":[]}}
+{"ts":"2026-07-05T06:32:06.488Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","event":"node_started","data":{"notes":5}}
+{"ts":"2026-07-05T06:33:12.924Z","runId":"round-2026-07-05T0632-130569","node":"s8.round-03","agent":"triage","event":"agent_call","data":{"costUsd":0.220325,"rows":5}}

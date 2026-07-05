@@ -1,0 +1,143 @@
+# Change orders — THE literal, editable execution input (§7.3).
+# Edit this YAML, then `harness round <session> --execute`: the file IS the plan.
+schemaVersion: 1
+session: dotprod
+round: round-03
+policy:
+  totalEstimateUsd: 9.17
+  capUsd: 25
+  autoExecute: true
+  pauseReasons: []
+orders:
+  - id: r03-n01
+    noteId: n01
+    note: "The stretch guess is dead on arrival: beat-02 already told the learner that stretching climbs
+      the score, so asking \"does its score change?\" here is theater. Make this prediction do new
+      work: ask a quantitative question the learner cannot already answer, \"if you double c1's
+      length exactly, what happens to the number, does it double?\" Then the reveal teaches that the
+      meter is linear in each input, which is exactly the fact the cheapest-fix breadcrumb needs.
+      Same change in the page prose."
+    kind: change-order
+    targets:
+      - storyboard#beat-04
+      - video/beat-04
+      - page/beat-04
+    changeType: content
+    interpretation: Replace beat-04's prediction prompt (the already-answered 'does its score change?')
+      with the quantitative 'if you double c1's length exactly, does the number double?' and make
+      the reveal teach that the meter is linear in each input (feeding the cheapest-fix breadcrumb);
+      mirror the same change in the page prose.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4a.beat-04
+      - s4b.sec-beat-04
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 4.61
+    miss:
+      critic: petra
+      artifact: storyboard/beat-04.md
+  - id: r03-n02
+    noteId: n02
+    note: '"Sit with that for a second" is the exact crutch phrase we banned two rounds ago, back again.
+      And "for a second" appears twice on the page ("Step back from the sweep for a second"). Purge
+      the sit-with construction entirely and vary the rhythm so no filler phrase repeats.'
+    kind: change-order
+    targets:
+      - page/beat-01
+    changeType: voice
+    interpretation: Purge the banned 'sit with that for a second' construction from beat-01 and remove
+      the repeated 'for a second' filler ('Step back from the sweep for a second'), varying the
+      rhythm so no filler phrase repeats.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/beat-01.md
+  - id: r03-n03
+    noteId: n03
+    note: "Two things, same goal: make the cheat visible. First, the integer rounding flattens the
+      story: in the length-cheat state, doubled c1 reads \"1\" while unstretched c2 reads \"1\", so
+      the scandal the narration promises is invisible in the numbers. One decimal place, so 0.3
+      becoming 0.7 is legible. Second, redesign the length-cheat drive state to show an overtake:
+      stretch c1 until its raw score PASSES a better-aligned candidate's reading. The cheat has to
+      land as a ranking flip you can see, not a subtle bump."
+    kind: change-order
+    targets:
+      - ix/dot-alignment
+    changeType: visual+content
+    interpretation: Change the interactive's numeric display to one decimal place so the length-cheat is
+      legible (0.3->0.7 rather than 1 vs 1), and redesign the length-cheat drive state so stretching
+      c1 makes its raw score overtake a better-aligned candidate — the cheat must land as a visible
+      ranking flip.
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4b.dot-alignment
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 2.96
+    miss:
+      critic: iris
+      artifact: interactives/dot-alignment.py
+  - id: r03-n04
+    noteId: n04
+    note: The second LLM prompt tells the learner they "learned that scaled dot-product attention is a
+      bank of similarity meters" in this session. They did not; this session taught the dot product.
+      A learner reads that and wonders what they missed. Reframe it as a forward stretch ("next
+      session's machine, if you want a preview tonight") grounded in what was actually taught, or
+      replace it with a prompt about tonight's content.
+    kind: change-order
+    targets:
+      - ext
+    changeType: content
+    interpretation: Fix the second LLM extension prompt's false claim that the learner 'learned that
+      scaled dot-product attention is a bank of similarity meters' this session; reframe it as a
+      forward-stretch preview ('next session's machine, if you want a preview tonight') grounded in
+      what was actually taught.
+    alternative: Replace the prompt entirely with one about tonight's content (the plain dot product /
+      the length problem).
+    confidence: medium
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: sam
+      artifact: ext.md
+  - id: r03-n05
+    noteId: n05
+    note: "#style: a prediction prompt must ask something the learner does not already know. If an
+      earlier beat revealed the answer, the prompt moves to a sharper question (a quantity, a
+      direction, a boundary case); it never re-asks the known."
+    kind: style-amendment
+    targets: []
+    interpretation: Draft a show-bible rule requiring every prediction prompt to ask something the
+      learner does not already know, sharpening to a new quantity, direction, or boundary case when
+      an earlier beat revealed the answer.
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: show-bible.md
+    styleAmendment:
+      rule: A prediction prompt must ask something the learner does not yet know; if an earlier beat
+        already revealed the answer, sharpen the prompt to a new quantity, direction, or boundary
+        case rather than re-asking the known.
+      rationale: Prediction earns its cost only when the learner cannot already answer; re-asking a
+        revealed fact is theater across any beat, so this generalizes beyond a single fix.
