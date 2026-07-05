@@ -4,11 +4,11 @@
   "inputs": [
     {
       "path": "script.md",
-      "sha256": "cde77a9ae956e290d548271fbf455e2ec8f072dc1d99c8cfaefad5f08c9926be"
+      "sha256": "26bdb1a9d40b868789b58faf5e3dd7b1c5aa1c97ffbecc5df6b90e3913830de0"
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "bcda24eb4bb5f0b04ea436e6f9769e86f816e241310d3f23c79ab0bbef4701b3"
+      "sha256": "5b77a95b7cd851622f47c673e56ef179f67e0716b4c2a5b1d3de94144086e6ce"
     },
     {
       "path": "spine.md",
@@ -22,7 +22,7 @@
   "outputs": [
     {
       "path": "doc/lesson.md",
-      "sha256": "c9e3438d65555d1051da9b23cc68926a98ad615d77beb4a737971827554bb554"
+      "sha256": "4f8208e3e923a92611037974595d96affb803435274e721512120125713c69bd"
     }
   ],
   "gate": {
@@ -43,19 +43,19 @@
       {
         "id": "doc.vera-pass",
         "pass": true,
-        "iter": 2
+        "iter": 1
       }
     ]
   },
-  "iterations": 2,
-  "costUsd": 0.7305935,
+  "iterations": 1,
+  "costUsd": 0.4343499999999999,
   "tier": "opus",
-  "startedAt": "2026-07-05T07:04:46.226Z",
-  "endedAt": "2026-07-05T07:09:19.252Z",
+  "startedAt": "2026-07-05T08:05:34.795Z",
+  "endedAt": "2026-07-05T08:08:19.013Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "rounds": 2,
+    "rounds": 1,
     "compromisesAudited": [
       "toy-numbers",
       "two-dimensions"

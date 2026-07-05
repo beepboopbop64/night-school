@@ -60,7 +60,9 @@ If "multiply pairwise, then add" came back without a peek, you own $a \cdot b$ n
 
 While that settles, keep the same meter running and walk it one aisle over. We don't rebuild anything. We just point the needle at a job posting instead of a song. Score yourself against what the role wants: Python hours, SQL reps, nights free. Multiply the matched entries, add them up, one number for the fit. Same meter, new aisle. The multiply-and-add never asked what the numbers meant, and that's exactly why it travels.
 
-Now one more honest look, because a meter you trust blindly is a meter that will lie to you. Take one candidate and stretch it longer without turning it at all. Its direction holds dead still. Its score climbs anyway.
+Now one more honest look, because a meter you trust blindly is a meter that will lie to you. Guess before you read on: double one candidate's length exactly, leave its direction untouched, does the number double too?
+
+It does, exactly. Double one input, double the output. The meter is linear in each arrow you feed it, and that clean scaling is the crack. Size passes straight through the multiply-and-add, untouched.
 
 That's a problem. It means a long, loud song can win on sheer size, not on agreement, and a padded resume can win on sheer length. The meter can't tell "points the same way" apart from "just bigger." A shout beats a whisper even when the whisper agrees with you more. That gap is exactly where the next session opens, and it leaves you one thread to pull. For the walk home: if the score keeps rewarding size, what is the cheapest fix that keeps the direction and forgets the size?
 

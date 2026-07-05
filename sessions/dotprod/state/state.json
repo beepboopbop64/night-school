@@ -85,8 +85,8 @@
     },
     "s4c.doc": {
       "status": "passed",
-      "iter": 2,
-      "costUsd": 0.7305935,
+      "iter": 1,
+      "costUsd": 0.4343499999999999,
       "receipt": "state/receipts/s4c.doc.receipt.json"
     },
     "s4d.extensions": {
