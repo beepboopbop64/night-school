@@ -478,3 +478,11 @@
 {"ts":"2026-07-05T05:41:34.008Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4e.notebook","agent":"notebook-author","event":"agent_call","data":{"attempt":1,"costUsd":0.4126257,"summary":"DONE 17"}}
 {"ts":"2026-07-05T05:41:34.831Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4e.notebook","event":"gate_result","data":{"passed":true,"checks":[{"id":"nb.json","pass":true},{"id":"nb.numpy-only","pass":true},{"id":"nb.executes","pass":true}]}}
 {"ts":"2026-07-05T05:41:34.832Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4e.notebook","event":"node_completed","data":{"costUsd":0.4126257,"durationMs":139962}}
+{"ts":"2026-07-05T05:41:35.204Z","runId":"run-2026-07-05T0425-9fe80e","node":"s4e.notebook","event":"commit","data":{"sha":"59aafae52c1f4f8a50125a043f01be2972d91082"}}
+{"ts":"2026-07-05T05:41:35.207Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"node_started","data":{"reason":"input-changed:storyboard.yaml"}}
+{"ts":"2026-07-05T05:41:38.287Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-01.mp4","index":0,"targetSeconds":24.4}}
+{"ts":"2026-07-05T05:41:41.004Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-02.mp4","index":1,"targetSeconds":52.665}}
+{"ts":"2026-07-05T05:41:42.966Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-03.mp4","index":2,"targetSeconds":38.8}}
+{"ts":"2026-07-05T05:41:47.239Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"artifact_written","data":{"path":"video/out/seg-beat-04.mp4","index":3,"targetSeconds":86.4}}
+{"ts":"2026-07-05T05:41:54.612Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"gate_result","data":{"passed":true,"checks":[{"id":"assemble.av-drift","pass":true},{"id":"assemble.captions-written","pass":true},{"id":"assemble.aha-consistency","pass":true},{"id":"assemble.lchecks-rerun","pass":true},{"id":"assemble.token-lint","pass":true},{"id":"assemble.site-built","pass":true},{"id":"assemble.manifest-complete","pass":true}]}}
+{"ts":"2026-07-05T05:41:54.613Z","runId":"run-2026-07-05T0425-9fe80e","node":"s5.assemble","event":"node_completed","data":{"costUsd":0,"durationMs":19369}}

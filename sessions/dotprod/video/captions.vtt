@@ -1,193 +1,217 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.369
+00:00:00.000 --> 00:00:05.816
 Your music app just played you a song you love, by a band you have never heard of.
 
 2
-00:00:05.369 --> 00:00:09.428
+00:00:05.816 --> 00:00:10.214
 Somewhere in a data center, two lists of numbers got compared,
 
 3
-00:00:09.428 --> 00:00:11.785
+00:00:10.214 --> 00:00:12.767
 and the comparison said: same taste.
 
 4
-00:00:11.785 --> 00:00:14.208
+00:00:12.767 --> 00:00:15.392
 So here is the question of the night.
 
 5
-00:00:14.208 --> 00:00:17.744
+00:00:15.392 --> 00:00:19.222
 How do you score a match between two lists of numbers?
 
 6
-00:00:17.744 --> 00:00:18.988
+00:00:19.222 --> 00:00:20.570
 Hold that question.
 
 7
-00:00:18.988 --> 00:00:22.523
+00:00:20.570 --> 00:00:24.400
 One answer to it runs half of modern machine learning.
 
 8
-00:00:22.523 --> 00:00:23.520
+00:00:24.400 --> 00:00:25.618
 Strip it down.
 
 9
-00:00:23.520 --> 00:00:27.008
+00:00:25.618 --> 00:00:29.882
 A taste is an arrow: each direction is a quality,
 
 10
-00:00:27.008 --> 00:00:30.640
+00:00:29.882 --> 00:00:34.320
 and the length is how hard the song leans that way.
 
 11
-00:00:30.640 --> 00:00:33.986
+00:00:34.320 --> 00:00:38.410
 Take one probe arrow and four candidate arrows.
 
 12
-00:00:33.986 --> 00:00:36.620
+00:00:38.410 --> 00:00:41.630
 Multiply them entry by entry and add.
 
 13
-00:00:36.620 --> 00:00:38.685
+00:00:41.630 --> 00:00:44.154
 That single sum is the score.
 
 14
-00:00:38.685 --> 00:00:43.384
+00:00:44.154 --> 00:00:49.897
 Before you drag anything, call it: which candidate ends up on top,
 
 15
-00:00:43.384 --> 00:00:45.591
+00:00:49.897 --> 00:00:52.594
 and does any score go negative?
 
 16
-00:00:45.591 --> 00:00:48.795
+00:00:52.594 --> 00:00:56.510
 Now turn the probe and watch the bars answer.
 
 17
-00:00:48.795 --> 00:00:51.785
+00:00:56.510 --> 00:01:00.165
 Point at a candidate and its score climbs.
 
 18
-00:00:51.785 --> 00:00:53.352
+00:01:00.165 --> 00:01:02.080
 Turn away and it dies.
 
 19
-00:00:53.352 --> 00:00:56.983
+00:01:02.080 --> 00:01:06.518
 So a big score means two songs are the same, right?
 
 20
-00:00:56.983 --> 00:00:57.837
+00:01:06.518 --> 00:01:07.562
 Watch again.
 
 21
-00:00:57.837 --> 00:01:01.753
+00:01:07.562 --> 00:01:12.348
 The bars moved while the candidates never moved at all.
 
 22
-00:01:01.753 --> 00:01:05.526
+00:01:12.348 --> 00:01:16.960
 The score reads agreement of direction, not sameness.
 
 23
-00:01:05.527 --> 00:01:08.148
+00:01:17.065 --> 00:01:20.094
 Look at what your hands just learned.
 
 24
-00:01:08.148 --> 00:01:11.902
+00:01:20.094 --> 00:01:24.432
 Point the probe along a candidate and the sum climbs.
 
 25
-00:01:11.902 --> 00:01:14.806
+00:01:24.432 --> 00:01:27.788
 Point it across and the sum dies to zero.
 
 26
-00:01:14.806 --> 00:01:17.852
+00:01:27.788 --> 00:01:31.308
 Point it against and the sum goes negative.
 
 27
-00:01:17.852 --> 00:01:22.173
+00:01:31.308 --> 00:01:36.301
 One multiply and add, and it behaves like a meter with agree,
 
 28
-00:01:22.173 --> 00:01:24.369
+00:01:36.301 --> 00:01:38.839
 ignore, and oppose on the dial.
 
 29
-00:01:24.369 --> 00:01:28.407
+00:01:38.839 --> 00:01:43.505
 So say it plainly: the dot product is a similarity meter.
 
 30
-00:01:28.407 --> 00:01:30.319
+00:01:43.505 --> 00:01:45.715
 Two lists of numbers go in.
 
 31
-00:01:30.319 --> 00:01:33.295
+00:01:45.715 --> 00:01:49.153
 One honest reading of alignment comes out.
 
 32
-00:01:33.295 --> 00:01:39.103
+00:01:49.153 --> 00:01:55.865
 And the reading tracks direction, because direction is all the sweep ever changed.
 
 33
-00:01:39.660 --> 00:01:41.230
+00:01:55.865 --> 00:01:57.673
 Time to close the loop.
 
 34
-00:01:41.230 --> 00:01:44.506
+00:01:57.673 --> 00:02:01.447
 Rebuild the meter from memory: two arrows go in,
 
 35
-00:01:44.506 --> 00:01:47.781
+00:02:01.447 --> 00:02:05.220
 so what two operations turn them into the score?
 
 36
-00:01:47.781 --> 00:01:50.580
-While you think, one detour worth naming.
+00:02:05.220 --> 00:02:10.488
+While you think, keep the meter running and walk it one aisle over.
 
 37
-00:01:50.580 --> 00:01:52.832
-Swap the songs for a job posting.
+00:02:10.488 --> 00:02:16.620
+Same needle, same recipe, we just point it at a job posting instead of a song.
 
 38
-00:01:52.832 --> 00:01:57.814
+00:02:16.620 --> 00:02:22.359
 Score yourself against what the role wants: multiply the matched entries,
 
 39
-00:01:57.814 --> 00:02:00.271
+00:02:22.359 --> 00:02:25.189
 add them up, one number for the fit.
 
 40
-00:02:00.271 --> 00:02:02.182
-Different aisle, same meter.
+00:02:25.189 --> 00:02:30.063
+Nothing about the meter changed, only the shelf it is reading.
 
 41
-00:02:02.182 --> 00:02:06.003
+00:02:30.063 --> 00:02:34.466
 The multiply-and-add never asked what the numbers meant,
 
 42
-00:02:06.003 --> 00:02:08.392
+00:02:34.466 --> 00:02:37.218
 and that is exactly why it travels.
 
 43
-00:02:08.392 --> 00:02:09.757
-Now the honest look.
+00:02:37.218 --> 00:02:40.991
+Now the honest look, and guess before you watch.
 
 44
-00:02:09.757 --> 00:02:15.694
-Stretch a candidate longer and its score climbs, even though its direction never moved.
+00:02:40.991 --> 00:02:44.214
+If a candidate's numbers just get bigger,
 
 45
-00:02:15.694 --> 00:02:21.495
-Long songs would win on sheer loudness, and padded resumes would win on sheer length.
+00:02:44.214 --> 00:02:48.302
+same direction, longer arrow, does its score change?
 
 46
-00:02:21.495 --> 00:02:27.638
-For the walk home: what is the cheapest fix that keeps the direction and forgets the size?
+00:02:48.302 --> 00:02:49.089
+It climbs.
 
 47
-00:02:27.638 --> 00:02:28.338
-Still up?
+00:02:49.089 --> 00:02:53.491
+The direction never moved, and the score climbed anyway.
 
 48
-00:02:28.338 --> 00:02:31.255
+00:02:53.491 --> 00:03:00.174
+Long songs would win on sheer loudness, and padded resumes would win on sheer length.
+
+49
+00:03:00.174 --> 00:03:06.306
+So the meter has a gap with a shape: it cannot tell direction apart from size.
+
+50
+00:03:06.306 --> 00:03:09.844
+That is the thread to pull for the walk home.
+
+51
+00:03:09.844 --> 00:03:12.517
+If the score keeps rewarding size,
+
+52
+00:03:12.517 --> 00:03:18.098
+what is the cheapest fix that keeps the direction and forgets the size?
+
+53
+00:03:18.098 --> 00:03:18.806
+Still up?
+
+54
+00:03:18.806 --> 00:03:22.265
 The menu below has three ways to keep going.

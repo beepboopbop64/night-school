@@ -6,6 +6,7 @@
 	import IxBeat02 from '../../../../../sessions/dotprod/page/interactives/DotAlignment.svelte';
 	import SecBeat03 from '../../../../../sessions/dotprod/page/sections/beat-03.md';
 	import SecBeat04 from '../../../../../sessions/dotprod/page/sections/beat-04.md';
+	import extensionsData from '../../../../../sessions/dotprod/page/extensions.json';
 	import chaptersData from '../../../../../sessions/dotprod/page/video.json';
 
 	let player: HTMLVideoElement | undefined = $state();
@@ -74,6 +75,41 @@
 	</section>
 	<section class="prose" aria-label="beat-04" id="sec-beat-04">
 		<SecBeat04 />
+	</section>
+
+	<section class="extensions" aria-label="extensions">
+		<h2 class="still-up">Still up?</h2>
+		<p class="ext-sub">
+			Pick a door: argue it out with an LLM, read the paper that started all
+			this, or build something small before bed.
+		</p>
+		<div class="lane">
+			<h3>Argue it out</h3>
+			{#each extensionsData.lanes.llm as item (item.prompt)}
+				<div class="ext-card">
+					<p class="ext-main">{item.prompt}</p>
+					<p class="ext-hint">{item.whatGoodLooksLike}</p>
+				</div>
+			{/each}
+		</div>
+		<div class="lane">
+			<h3>Read the real thing</h3>
+			{#each extensionsData.lanes.papers as paper (paper.url)}
+				<div class="ext-card">
+					<p class="ext-main"><a href={paper.url} rel="noopener">{paper.title}</a></p>
+					<p class="ext-hint">{paper.hook}</p>
+				</div>
+			{/each}
+		</div>
+		<div class="lane">
+			<h3>Build something</h3>
+			{#each extensionsData.lanes.projects as project (project.title)}
+				<div class="ext-card">
+					<p class="ext-main">{project.title}</p>
+					<p class="ext-hint">{project.brief}</p>
+				</div>
+			{/each}
+		</div>
 	</section>
 </main>
 
@@ -157,5 +193,59 @@
 
 	.prose :global(p) {
 		line-height: 1.65;
+	}
+
+	.extensions {
+		border-top: 2px solid var(--color-brand-mint);
+		padding-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.still-up {
+		font-family: var(--font-heading), sans-serif;
+		font-weight: 600;
+		font-size: 1.6rem;
+		margin: 0;
+	}
+
+	.ext-sub {
+		margin: 0;
+		color: var(--color-text);
+		opacity: 0.75;
+		font-style: italic;
+	}
+
+	.lane h3 {
+		font-family: var(--font-mono), monospace;
+		font-size: 0.8rem;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: var(--color-brand-periwinkle);
+		margin: 0 0 0.5rem;
+	}
+
+	.ext-card {
+		background: var(--color-surface);
+		border-radius: 10px;
+		padding: 0.85rem 1rem;
+		margin: 0 0 0.6rem;
+	}
+
+	.ext-main {
+		margin: 0 0 0.35rem;
+		line-height: 1.5;
+	}
+
+	.ext-main a {
+		color: var(--color-brand-mint);
+	}
+
+	.ext-hint {
+		margin: 0;
+		font-size: 0.85rem;
+		opacity: 0.7;
+		line-height: 1.5;
 	}
 </style>

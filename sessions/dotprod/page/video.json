@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "videoSeconds": 151.4,
+  "videoSeconds": 202.27,
   "chapters": [
     {
       "beatId": "beat-01",
@@ -10,17 +10,17 @@
     {
       "beatId": "beat-02",
       "title": "Turn the probe and feel it",
-      "startSeconds": 22.523
+      "startSeconds": 24.4
     },
     {
       "beatId": "beat-03",
       "title": "Name the machine you just used",
-      "startSeconds": 65.527
+      "startSeconds": 77.065
     },
     {
       "beatId": "beat-04",
       "title": "What the meter gets wrong",
-      "startSeconds": 99.66
+      "startSeconds": 115.865
     }
   ]
 }
