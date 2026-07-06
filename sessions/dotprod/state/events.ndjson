@@ -1134,3 +1134,8 @@
 {"ts":"2026-07-06T04:29:39.227Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4e.notebook","agent":"notebook-author","event":"agent_call","data":{"attempt":1,"costUsd":0.7889661000000001,"summary":"DONE 24"}}
 {"ts":"2026-07-06T04:29:39.707Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4e.notebook","event":"gate_result","data":{"passed":true,"checks":[{"id":"nb.json","pass":true},{"id":"nb.numpy-only","pass":true},{"id":"nb.executes","pass":true}]}}
 {"ts":"2026-07-06T04:29:39.709Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4e.notebook","event":"node_completed","data":{"costUsd":0.7889661000000001,"durationMs":267731}}
+{"ts":"2026-07-06T04:29:40.182Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4e.notebook","event":"commit","data":{"sha":"0398abe1a10508339fba9b642cc2a157ed9c55ac"}}
+{"ts":"2026-07-06T04:29:40.182Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s5.assemble","event":"node_skipped","data":{"reason":"dep_failed:s4b.dot-alignment"}}
+{"ts":"2026-07-06T04:29:40.182Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s6.screening","event":"node_skipped","data":{"reason":"dep_failed:s5.assemble"}}
+{"ts":"2026-07-06T04:29:40.183Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s7.packet","event":"node_skipped","data":{"reason":"dep_failed:s6.screening"}}
+{"ts":"2026-07-06T04:29:40.289Z","runId":"round-2026-07-06T0331-ca7ef3","node":"s8.round-05","event":"node_completed","data":{"costUsd":5.33,"failedOrders":["r05-n02","r05-n05"],"proofViolations":2,"runFailed":["s4b.dot-alignment"]}}
