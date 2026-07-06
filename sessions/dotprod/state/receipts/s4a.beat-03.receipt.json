@@ -4,29 +4,29 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-03",
-      "sha256": "0ca0457503ee196cdea6ecf378f55e06da090d5e7c7fb1d386b74e4afb76af6e"
+      "sha256": "1341bdf80dcd1f9a4b3f12fac82f8828ed4b62a598d2aaa27a6e3533e22d4e35"
     },
     {
       "path": "script.md#beat-03",
-      "sha256": "2a5966c2bebae6e35f1d29616fe58339a50881391868cdfea1ee56fc15366bbd"
+      "sha256": "453c2a56a12b3869d089740d10477b10c3b1f4f301f2fadca9bb83224acc997f"
     },
     {
       "path": "video/audio/beat-03.mp3",
-      "sha256": "5b4da1b214e90439a0a23478201bda262c420d02f3c4d7ab4eefcedef11c0498"
+      "sha256": "d2db6f3fd6a19da7e7607d07c706b27e345483ab2e9a83b59b6b0fd648c24869"
     }
   ],
   "outputs": [
     {
       "path": "video/beats/beat-03.yaml",
-      "sha256": "7edc30dc4a109587258be11bbc64a7e930217915f282e6c4a905bded7b5ccd53"
+      "sha256": "31107fb2722a35d3180a3e59f11f4f69535d041df6776d33fd3e49055c0f58ec"
     },
     {
       "path": "video/scenes/scene_beat_03.py",
-      "sha256": "9784ed7bd10b3ac60ba2f9e1fb1e2ea9618555045ef5efa5a88be7bec7cbec63"
+      "sha256": "e401cf77c15bdeed400637a14a560ef5416238ba86677cf8685c8ea85a1cc23e"
     },
     {
       "path": "media/beat-03.mp4",
-      "sha256": "c59dd83afc19bfe3cdbeee7dd912ab53e02585e324714fe2173927d74126a49b"
+      "sha256": "a71fd2368d2d28cd697c6c3290902c2d4d80885746eb28da384ab18665a6afa2"
     }
   ],
   "gate": {
@@ -48,23 +48,23 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 1.4997680999999998,
+  "costUsd": 1.5500354,
   "tier": "opus",
-  "startedAt": "2026-07-06T00:03:57.900Z",
-  "endedAt": "2026-07-06T00:16:52.363Z",
-  "transcript": "state/dailies/slice-2026-07-06T0003-3e0799",
+  "startedAt": "2026-07-06T03:40:38.252Z",
+  "endedAt": "2026-07-06T03:52:00.018Z",
+  "transcript": "state/dailies/slice-2026-07-06T0340-fb4fa6",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 38.799344,
-    "audioSeconds": 38.8,
-    "toleranceSeconds": 3.88,
+    "videoSeconds": 55.666011,
+    "audioSeconds": 56.32,
+    "toleranceSeconds": 5.63,
     "perIteration": [
       {
         "iter": 1,
         "outcome": "iris-passed",
-        "coderCostUsd": 1.2700985999999999,
-        "irisCostUsd": 0.22966950000000003,
-        "wallMs": 774194,
+        "coderCostUsd": 1.3823574,
+        "irisCostUsd": 0.167678,
+        "wallMs": 681515,
         "fingerprints": [],
         "replanWasForced": false
       }

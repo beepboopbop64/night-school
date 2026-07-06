@@ -44,7 +44,7 @@
     "s4a.beat-03": {
       "status": "passed",
       "iter": 1,
-      "costUsd": 1.4997680999999998,
+      "costUsd": 1.5500354,
       "receipt": "state/receipts/s4a.beat-03.receipt.json"
     },
     "s4a.beat-04": {

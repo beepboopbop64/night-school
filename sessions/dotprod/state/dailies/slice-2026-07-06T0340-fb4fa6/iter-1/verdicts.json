@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries a single load-bearing element: frame 2 the three probe stills, frame 3 the lilac dial, frame 4 the aha sentence over the worked chip, frames 5-6 the a·b annotation truing up next to the numerals.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No frame introduces more than four novel elements at once; frame 2's three labeled probe stills and the later single dial plus one annotation stay within budget.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Labels sit on their objects: 'candidate'/'probe' beside their arrows, 'along/across/against' under each still, 'oppose/ignore/agree' on the dial rim, and 'a · b' beside the numerals.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'The dot product is a similarity meter.' line is a short key-term heading sitting directly above the visible worked equation it annotates.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All labels, scores, and the equation numerals are rendered at comfortably readable size relative to frame height.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every focal element sits inside the frame with margin; nothing is cropped by an edge.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or symbol overlaps another; the a·b annotation, the numeral chip, and the dial occupy separate regions.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Colors stay consistent: candidate periwinkle and probe amber across stills, lilac for the a·b/parameter annotation and scores, mint for the converged aha line, amber for the needle.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element—arrows, scores, dial, needle, annotation—carries propositional content; no decorative filler is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The intent is delivered: three scored probe stills (frame 2) collapse into a lilac dial with needle over oppose/ignore/agree (frame 3), the mint aha sentence trues up (frame 4), and lilac 'a · b' anchors next to the (2,1)·(1,3)=5 numerals (frames 5-6).",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The a·b annotation sits immediately left of the numerals it names and the dial rests just below the worked equation.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across frames the stills build into the dial and the annotation trues up incrementally rather than materializing whole.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The compositions keep generous negative space with a clear top-to-bottom reading order from heading to equation to dial.",
+    "suggestion": ""
+  }
+]
