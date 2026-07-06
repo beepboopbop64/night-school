@@ -8,7 +8,7 @@
     },
     {
       "path": "script.md#beat-03",
-      "sha256": "3dbf70c80cd9283ce1397b4b26ff88ea4af6ed19d74c13dc190f2dc6fb9ad745"
+      "sha256": "2a5966c2bebae6e35f1d29616fe58339a50881391868cdfea1ee56fc15366bbd"
     },
     {
       "path": "video/audio/beat-03.mp3",
@@ -22,11 +22,11 @@
     },
     {
       "path": "video/scenes/scene_beat_03.py",
-      "sha256": "b647f1dc42a06144af4cb93d64684e34371472a19f5411ac9d9ba547d83e4e72"
+      "sha256": "9784ed7bd10b3ac60ba2f9e1fb1e2ea9618555045ef5efa5a88be7bec7cbec63"
     },
     {
       "path": "media/beat-03.mp4",
-      "sha256": "9f149584f1efc486d0a06d3435076e6fc589c43d1351f9ef07adbc02e793e870"
+      "sha256": "c59dd83afc19bfe3cdbeee7dd912ab53e02585e324714fe2173927d74126a49b"
     }
   ],
   "gate": {
@@ -48,23 +48,23 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 1.4942386000000003,
+  "costUsd": 1.4997680999999998,
   "tier": "opus",
-  "startedAt": "2026-07-05T08:55:15.235Z",
-  "endedAt": "2026-07-05T09:14:08.500Z",
-  "transcript": "state/dailies/slice-2026-07-05T0855-7a7e4d",
+  "startedAt": "2026-07-06T00:03:57.900Z",
+  "endedAt": "2026-07-06T00:16:52.363Z",
+  "transcript": "state/dailies/slice-2026-07-06T0003-3e0799",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 38.932678,
+    "videoSeconds": 38.799344,
     "audioSeconds": 38.8,
     "toleranceSeconds": 3.88,
     "perIteration": [
       {
         "iter": 1,
         "outcome": "iris-passed",
-        "coderCostUsd": 1.3413336000000002,
-        "irisCostUsd": 0.152905,
-        "wallMs": 1132985,
+        "coderCostUsd": 1.2700985999999999,
+        "irisCostUsd": 0.22966950000000003,
+        "wallMs": 774194,
         "fingerprints": [],
         "replanWasForced": false
       }

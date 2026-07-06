@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one focus: the amber probe arrow with score in frame 1, the forming lilac dial in frame 2, and the filled meter plus aha sentence in frames 4-6.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "At most the dial, three labels, and one sentence appear together, well under the four-novel-element ceiling.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The words oppose, ignore, and agree sit directly on the dial's arc positions rather than in a legend.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "'The dot product is a similarity meter.' annotates the visible lilac meter directly beneath it, functioning as a key-term caption.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The dial labels, the '10.00' readout, and the aha sentence are all comfortably above the legibility threshold.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The dial, labels, sentence, and underline all sit fully inside the frame with generous margins.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text elements overlap; the aha sentence and underline sit clear of the dial and labels.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Lilac carries the parameter/meter dial consistently, mint carries the converged aha sentence and its glowing underline, and amber marks the probe vector — all token-consistent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — dial, needle, labels, arrow, readout, sentence — carries propositional content with no decoration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The lilac meter dial with oppose/ignore/agree, a swinging needle, and the aha sentence truing up with a mint glow are all present, though the promised 'a · b' mono readout annotation and the three explicit probe stills are absent.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The aha sentence and its underline sit directly below the meter they describe, keeping claim and referent together.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds continuously: probe arrow and score, dial forming, labels appearing, dial filling, then sentence and mint underline truing up.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition is centered with ample negative space and a clear top-to-bottom reading order, aside from a faint stray glyph near the readout in frame 3.",
+    "suggestion": ""
+  }
+]
