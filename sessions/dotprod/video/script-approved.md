@@ -73,3 +73,22 @@ still up.
 Why: recap + one marked aside + generate-your-own (Jake's consolidation
 design); walk-home question stays open into lesson two; the page is framed
 as a re-read tool, not a duplicate.
+
+## AMENDMENT (Jake + judge, 2026-07-06): Section 2 attempts corrected
+
+The failed attempts must be plausible moves (no strawmen), and the section
+plays on ONE persistent stage: the taste column and three song columns never
+leave the screen; every attempt happens on them.
+
+- Attempt A: compare totals. Yours 3; Night Drive 4, Glass Rain 4, Static 17.
+  Failure shown: (3,1) and (1,3) both total 4; totals lose the mix.
+- Attempt B: measure differences entry by entry (Night Drive: 1 and 2, so
+  3 apart). Reasonable, keeps the mix. Failure: it treats every quality as
+  equally cared about; an indifferent 0 still gets punished. Distance is not
+  what-matters-to-you.
+- The repair: your numbers are VOTES on how much each quality counts.
+  Multiply your vote by their amount per quality, add the votes:
+  2x1 + 1x3 = 5. Why multiply finally has an answer: indifference (0) makes
+  a quality count for nothing, passion makes it count double.
+- Intensity cheating is NOT attempt A's failure; it returns in Section 4 as
+  the dot product's own crack (Static's votes: 2x9 + 1x8 = 26).

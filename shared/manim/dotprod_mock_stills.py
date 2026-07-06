@@ -1,11 +1,9 @@
-"""Hand-built mock stills for the Similarity Meter video, Section 2.
+"""Hand-built mock stills for the Similarity Meter video, Section 2, take 2.
 
-The judge's visual vocabulary for the approved script (2026-07-06):
-QualityColumn, sum meters, match checks, product chips, the scorebox.
-Render each scene with -s for a still; these compositions seed the real
-scene library once Jake signs off on the look.
+One persistent stage: the taste column and three song columns never leave.
+Each scene is a snapshot of that stage as the attempts play out on it.
 
-    manim render -s -qh dotprod_mock_stills.py M3_IntensityContest
+    manim render -s -qh dotprod_mock_stills.py A_Totals
 """
 
 from __future__ import annotations
@@ -15,9 +13,7 @@ from manim import (
     LEFT,
     RIGHT,
     UP,
-    Cross,
     Line,
-    Rectangle,
     RoundedRectangle,
     Scene,
     Text,
@@ -29,224 +25,225 @@ from style import FONT_BODY, FONT_HEADING, FONT_MONO, ensure_brand_fonts
 
 ensure_brand_fonts()
 
-DIM = 0.38  # opacity for de-emphasized elements
 
-
-def quality_column(title: str, bass: float, tempo: float, accent: str, dim: bool = False) -> VGroup:
-    """A song (or taste) as its two named entries, digits large and honest."""
-    head = Text(title, font=FONT_HEADING, font_size=30, color=accent)
+def column(title: str, bass: float, tempo: float, accent: str) -> VGroup:
+    head = Text(title, font=FONT_HEADING, font_size=26, color=accent)
     rows = VGroup()
     for name, value in (("bass", bass), ("tempo", tempo)):
-        label = Text(name, font=FONT_MONO, font_size=22, color=TEXT).set_opacity(0.75)
-        digit = Text(f"{value:g}", font=FONT_MONO, font_size=34, color=accent)
-        row = VGroup(label, digit).arrange(RIGHT, buff=0.32)
-        rows.add(row)
-    rows.arrange(DOWN, buff=0.28, aligned_edge=LEFT)
-    card = VGroup(head, rows).arrange(DOWN, buff=0.4)
+        label = Text(name, font=FONT_MONO, font_size=19, color=TEXT).set_opacity(0.7)
+        digit = Text(f"{value:g}", font=FONT_MONO, font_size=30, color=accent)
+        rows.add(VGroup(label, digit).arrange(RIGHT, buff=0.28))
+    rows.arrange(DOWN, buff=0.24, aligned_edge=LEFT)
+    card = VGroup(head, rows).arrange(DOWN, buff=0.3)
     frame = RoundedRectangle(
-        corner_radius=0.18,
-        width=card.width + 0.7,
-        height=card.height + 0.6,
+        corner_radius=0.16,
+        width=card.width + 0.6,
+        height=card.height + 0.5,
         stroke_color=accent,
-        stroke_width=1.6,
-        stroke_opacity=0.5,
+        stroke_width=1.4,
+        stroke_opacity=0.45,
         fill_opacity=0.0,
     ).move_to(card)
-    group = VGroup(frame, card)
-    if dim:
-        group.set_opacity(DIM)
+    return VGroup(frame, card)
+
+
+def stage() -> tuple[VGroup, VGroup, VGroup, VGroup, VGroup]:
+    taste = column("your taste", 2, 1, DATA_HEAT)
+    night = column("Night Drive", 1, 3, DATA_OBSERVED)
+    glass = column("Glass Rain", 2, 2, DATA_OBSERVED)
+    static = column("Static", 9, 8, DATA_OBSERVED)
+    row = VGroup(taste, night, glass, static).arrange(RIGHT, buff=0.8)
+    row.to_edge(UP, buff=1.15)
+    return row, taste, night, glass, static
+
+
+def total_tag(value: float, color: str, struck: bool = False) -> VGroup:
+    tag = Text(f"total {value:g}", font=FONT_MONO, font_size=22, color=color)
+    group = VGroup(tag)
+    if struck:
+        group.add(
+            Line(tag.get_left(), tag.get_right(), stroke_color=DATA_ERROR, stroke_width=2)
+        )
+        group.set_opacity(0.45)
     return group
 
 
-def sum_meter(total: float, tall: bool = False, crowned: bool = False) -> VGroup:
-    bar = Rectangle(
-        width=0.5,
-        height=2.6 if tall else max(0.5, total / 9.0),
-        fill_color=DATA_PARAMS,
-        fill_opacity=0.95,
-        stroke_width=0,
-    )
-    digits = Text(f"{total:g}", font=FONT_MONO, font_size=30, color=DATA_PARAMS)
-    group = VGroup(bar, digits).arrange(DOWN, buff=0.22)
-    if crowned:
-        crown = Text("wins", font=FONT_MONO, font_size=22, color=DATA_ERROR)
-        group = VGroup(crown, group).arrange(DOWN, buff=0.18)
-    return group
+def caption(text: str, color: str = TEXT) -> Text:
+    return Text(text, font=FONT_BODY, font_size=25, color=color).to_edge(DOWN, buff=0.5)
 
 
-def tombstone(label: str) -> VGroup:
-    words = Text(label, font=FONT_MONO, font_size=20, color=TEXT).set_opacity(0.55)
-    strike = Line(
-        words.get_left() + 0.06 * LEFT,
-        words.get_right() + 0.06 * RIGHT,
-        stroke_color=DATA_ERROR,
-        stroke_width=2.4,
-    )
-    return VGroup(words, strike)
+def header(text: str) -> Text:
+    return Text(text, font=FONT_HEADING, font_size=30, color=TEXT).to_edge(UP, buff=0.35)
 
 
-class M3_IntensityContest(Scene):
-    """Idea one fails: the cranked column wins; your taste sits dimmed, unconsulted."""
+class A_Totals(Scene):
+    """Attempt A: compare totals. Night Drive and Glass Rain tie at closest."""
 
     def construct(self) -> None:
         self.camera.background_color = BG
-        title = Text("idea one: just add them up", font=FONT_HEADING, font_size=34, color=TEXT)
-        title.to_edge(UP, buff=0.6)
+        row, taste, night, glass, static = stage()
+        title = header("attempt one: compare the totals")
+        row.shift(DOWN * 0.35)
 
-        taste = quality_column("your taste", 2, 1, DATA_HEAT, dim=True)
-        night = quality_column("Night Drive", 1, 3, DATA_OBSERVED)
-        glass = quality_column("Glass Rain", 2, 2, DATA_OBSERVED)
-        static = quality_column("Static", 9, 8, DATA_OBSERVED)
-        columns = VGroup(taste, night, glass, static).arrange(RIGHT, buff=0.85)
-        columns.next_to(title, DOWN, buff=0.7)
-
-        sums = VGroup(
-            sum_meter(4),
-            sum_meter(4),
-            sum_meter(17, tall=True, crowned=True),
+        tags = VGroup(
+            total_tag(3, DATA_HEAT),
+            total_tag(4, DATA_PARAMS),
+            total_tag(4, DATA_PARAMS),
+            total_tag(17, DATA_PARAMS),
         )
-        for meter, col in zip(sums, (night, glass, static)):
-            meter.next_to(col, DOWN, buff=0.4)
+        for tag, col in zip(tags, (taste, night, glass, static)):
+            tag.next_to(col, DOWN, buff=0.3)
 
-        verdict = Text(
-            "an intensity contest: whoever is cranked highest wins",
-            font=FONT_BODY,
-            font_size=26,
-            color=DATA_ERROR,
-        ).to_edge(DOWN, buff=0.5)
+        tie = Text("both 1 away. tied?", font=FONT_MONO, font_size=20, color=DATA_FIT)
+        tie.next_to(VGroup(tags[1], tags[2]), DOWN, buff=0.35)
 
-        unconsulted = Text("never consulted", font=FONT_MONO, font_size=18, color=TEXT)
-        unconsulted.set_opacity(0.5).next_to(taste, DOWN, buff=0.4)
-
-        self.add(title, columns, sums, verdict, unconsulted)
-
-
-class M6_ZeroMatches(Scene):
-    """Idea two fails: exact matching finds nothing, anywhere."""
-
-    def construct(self) -> None:
-        self.camera.background_color = BG
-        title = Text("idea two: count exact agreements", font=FONT_HEADING, font_size=34, color=TEXT)
-        title.to_edge(UP, buff=0.6)
-
-        pairs = VGroup()
-        for yours, theirs in ((2, 1), (1, 3)):
-            a = Text(f"{yours}", font=FONT_MONO, font_size=40, color=DATA_HEAT)
-            b = Text(f"{theirs}", font=FONT_MONO, font_size=40, color=DATA_OBSERVED)
-            duo = VGroup(a, b).arrange(RIGHT, buff=0.5)
-            mark = Cross(duo, stroke_color=DATA_ERROR, stroke_width=4).scale(0.72)
-            pairs.add(VGroup(duo, mark))
-        pairs.arrange(RIGHT, buff=1.6).next_to(title, DOWN, buff=1.0)
-
-        counters = VGroup(
-            *[
-                Text("matches: 0", font=FONT_MONO, font_size=26, color=DATA_ERROR)
-                for _ in range(3)
-            ]
-        ).arrange(RIGHT, buff=1.2)
-        counters.next_to(pairs, DOWN, buff=0.9)
-
-        verdict = Text(
-            "near misses count for nothing",
-            font=FONT_BODY,
-            font_size=26,
-            color=TEXT,
-        ).set_opacity(0.85).to_edge(DOWN, buff=0.5)
-
-        graveyard = tombstone("idea one").to_corner(UP + RIGHT, buff=0.5)
-
-        self.add(title, pairs, counters, verdict, graveyard)
-
-
-class M8_Multiply(Scene):
-    """The repair: one pair multiplies, your interest times their amount."""
-
-    def construct(self) -> None:
-        self.camera.background_color = BG
-        title = Text(
-            "idea three: multiply each pair, then add",
-            font=FONT_HEADING,
-            font_size=34,
-            color=TEXT,
-        ).to_edge(UP, buff=0.6)
-
-        bass_label = Text("bass", font=FONT_MONO, font_size=24, color=DATA_PARAMS)
-        yours = Text("2", font=FONT_MONO, font_size=48, color=DATA_HEAT)
-        times = Text("x", font=FONT_MONO, font_size=34, color=TEXT).set_opacity(0.6)
-        theirs = Text("1", font=FONT_MONO, font_size=48, color=DATA_OBSERVED)
-        equals = Text("=", font=FONT_MONO, font_size=34, color=TEXT).set_opacity(0.6)
-        product = Text("2", font=FONT_MONO, font_size=48, color=DATA_PARAMS)
-        line = VGroup(yours, times, theirs, equals, product).arrange(RIGHT, buff=0.4)
-        bass_label.next_to(line, UP, buff=0.5)
-        working = VGroup(bass_label, line).move_to(UP * 0.4)
-
-        caption_a = Text("your interest", font=FONT_MONO, font_size=20, color=DATA_HEAT)
-        caption_a.next_to(yours, DOWN, buff=0.45)
-        caption_b = Text("their amount", font=FONT_MONO, font_size=20, color=DATA_OBSERVED)
-        caption_b.next_to(theirs, DOWN, buff=0.45)
-
-        queued = Text("tempo: 1 x 3 next", font=FONT_MONO, font_size=22, color=TEXT)
-        queued.set_opacity(0.5).to_edge(DOWN, buff=0.8)
-
-        self.add(title, working, caption_a, caption_b, queued)
-
-
-class M9_Add(Scene):
-    """The products pool into 5, landing in Section 1's empty scorebox."""
-
-    def construct(self) -> None:
-        self.camera.background_color = BG
-        products = VGroup(
-            Text("2", font=FONT_MONO, font_size=44, color=DATA_PARAMS),
-            Text("+", font=FONT_MONO, font_size=34, color=TEXT).set_opacity(0.6),
-            Text("3", font=FONT_MONO, font_size=44, color=DATA_PARAMS),
-        ).arrange(RIGHT, buff=0.4)
-        products.move_to(UP * 1.4)
-
-        box = RoundedRectangle(
-            corner_radius=0.2,
-            width=2.2,
-            height=1.4,
-            stroke_color=DATA_FIT,
-            stroke_width=2.4,
-        )
-        score = Text("5", font=FONT_MONO, font_size=64, color=DATA_FIT)
-        scorebox = VGroup(box, score).move_to(DOWN * 0.6)
-
-        label = Text("the question from the opening, answered", font=FONT_BODY, font_size=24, color=TEXT)
-        label.set_opacity(0.75).next_to(scorebox, DOWN, buff=0.55)
-
-        self.add(products, scorebox, label)
-
-
-class M10_Chip(Scene):
-    """The recipe compacts into the chip that anchors the notation later."""
-
-    def construct(self) -> None:
-        self.camera.background_color = BG
-        chip_text = Text("2x1 + 1x3 = 5", font=FONT_MONO, font_size=30, color=DATA_PARAMS)
-        chip_frame = RoundedRectangle(
-            corner_radius=0.16,
-            width=chip_text.width + 0.6,
-            height=chip_text.height + 0.5,
-            stroke_color=DATA_PARAMS,
-            stroke_width=1.8,
-            stroke_opacity=0.7,
-        ).move_to(chip_text)
-        chip = VGroup(chip_frame, chip_text).to_corner(UP + RIGHT, buff=0.6)
-
-        line = Text(
-            "the whole recipe, kept in the corner",
-            font=FONT_BODY,
-            font_size=28,
-            color=TEXT,
-        ).set_opacity(0.85)
-
-        note = Text(
-            "this chip is what a . b lands next to in the naming scene",
+        ghost = Text(
+            "but (3,1) and (1,3) also both total 4, and they are opposites",
             font=FONT_MONO,
             font_size=20,
-            color=DATA_FIT,
-        ).set_opacity(0.8).next_to(line, DOWN, buff=0.6)
+            color=DATA_ERROR,
+        ).next_to(tie, DOWN, buff=0.4)
 
-        self.add(chip, line, note)
+        self.add(title, row, tags, tie, ghost, caption("totals lose the mix"))
+
+
+class B_Differences(Scene):
+    """Attempt B: differences entry by entry. Keeps the mix; ignores caring."""
+
+    def construct(self) -> None:
+        self.camera.background_color = BG
+        row, taste, night, glass, static = stage()
+        title = header("attempt two: measure the differences")
+        row.shift(DOWN * 0.35)
+
+        struck = VGroup(total_tag(3, DATA_HEAT, True), total_tag(4, DATA_PARAMS, True))
+        struck[0].next_to(taste, DOWN, buff=0.3)
+        struck[1].next_to(night, DOWN, buff=0.3)
+
+        diff = VGroup(
+            Text("bass: 2 vs 1, apart 1", font=FONT_MONO, font_size=22, color=DATA_PARAMS),
+            Text("tempo: 1 vs 3, apart 2", font=FONT_MONO, font_size=22, color=DATA_PARAMS),
+            Text("distance 3", font=FONT_MONO, font_size=26, color=DATA_PARAMS),
+        ).arrange(DOWN, buff=0.22, aligned_edge=LEFT)
+        diff.next_to(struck[1], DOWN, buff=0.45)
+
+        bridge = Line(
+            taste.get_right() + 0.08 * RIGHT,
+            night.get_left() + 0.08 * LEFT,
+            stroke_color=DATA_PARAMS,
+            stroke_width=2,
+        ).set_opacity(0.6)
+
+        self.add(
+            title,
+            row,
+            struck,
+            bridge,
+            diff,
+            caption("closer, but a quality you care nothing about still gets punished"),
+        )
+
+
+class C_Votes(Scene):
+    """The repair: your numbers are votes on how much each quality counts."""
+
+    def construct(self) -> None:
+        self.camera.background_color = BG
+        row, taste, night, glass, static = stage()
+        title = header("the repair: your numbers are votes")
+        row.shift(DOWN * 0.35)
+
+        votes = VGroup(
+            VGroup(
+                Text("bass", font=FONT_MONO, font_size=20, color=TEXT).set_opacity(0.7),
+                Text("2", font=FONT_MONO, font_size=32, color=DATA_HEAT),
+                Text("x", font=FONT_MONO, font_size=24, color=TEXT).set_opacity(0.6),
+                Text("1", font=FONT_MONO, font_size=32, color=DATA_OBSERVED),
+                Text("=", font=FONT_MONO, font_size=24, color=TEXT).set_opacity(0.6),
+                Text("2", font=FONT_MONO, font_size=32, color=DATA_PARAMS),
+            ).arrange(RIGHT, buff=0.3),
+            VGroup(
+                Text("tempo", font=FONT_MONO, font_size=20, color=TEXT).set_opacity(0.7),
+                Text("1", font=FONT_MONO, font_size=32, color=DATA_HEAT),
+                Text("x", font=FONT_MONO, font_size=24, color=TEXT).set_opacity(0.6),
+                Text("3", font=FONT_MONO, font_size=32, color=DATA_OBSERVED),
+                Text("=", font=FONT_MONO, font_size=24, color=TEXT).set_opacity(0.6),
+                Text("3", font=FONT_MONO, font_size=32, color=DATA_PARAMS),
+            ).arrange(RIGHT, buff=0.3),
+        ).arrange(DOWN, buff=0.35, aligned_edge=LEFT)
+        votes.next_to(VGroup(taste, night), DOWN, buff=0.6)
+
+        legend = Text(
+            "your vote x their amount. a 0 vote makes a quality count for nothing",
+            font=FONT_MONO,
+            font_size=19,
+            color=TEXT,
+        ).set_opacity(0.75).next_to(votes, DOWN, buff=0.45)
+
+        self.add(title, row, votes, legend, caption("weight the agreement by how much you care"))
+
+
+class D_Score(Scene):
+    """The votes add into 5 under Night Drive; lineage stays visible."""
+
+    def construct(self) -> None:
+        self.camera.background_color = BG
+        row, taste, night, glass, static = stage()
+        title = header("add the votes: one score")
+        row.shift(DOWN * 0.35)
+
+        lineage = VGroup(
+            Text("bass vote 2", font=FONT_MONO, font_size=22, color=DATA_PARAMS),
+            Text("+", font=FONT_MONO, font_size=24, color=TEXT).set_opacity(0.6),
+            Text("tempo vote 3", font=FONT_MONO, font_size=22, color=DATA_PARAMS),
+        ).arrange(RIGHT, buff=0.35)
+        lineage.next_to(VGroup(taste, night), DOWN, buff=0.55)
+
+        box = RoundedRectangle(
+            corner_radius=0.16,
+            width=2.4,
+            height=1.1,
+            stroke_color=DATA_FIT,
+            stroke_width=2.2,
+        )
+        score = Text("match: 5", font=FONT_MONO, font_size=32, color=DATA_FIT)
+        scorebox = VGroup(box, score.move_to(box)).next_to(lineage, DOWN, buff=0.5)
+
+        self.add(
+            title,
+            row,
+            lineage,
+            scorebox,
+            caption("the scorebox from the opening finally gets its number"),
+        )
+
+
+class E_Chip(Scene):
+    """The recipe compacts to the corner chip the notation will land beside."""
+
+    def construct(self) -> None:
+        self.camera.background_color = BG
+        row, taste, night, glass, static = stage()
+        title = header("the whole recipe, kept")
+        row.shift(DOWN * 0.35)
+        row.set_opacity(0.5)
+
+        chip_text = Text("2x1 + 1x3 = 5", font=FONT_MONO, font_size=26, color=DATA_PARAMS)
+        chip_frame = RoundedRectangle(
+            corner_radius=0.14,
+            width=chip_text.width + 0.5,
+            height=chip_text.height + 0.4,
+            stroke_color=DATA_PARAMS,
+            stroke_width=1.6,
+            stroke_opacity=0.7,
+        ).move_to(chip_text)
+        chip = VGroup(chip_frame, chip_text).to_corner(UP + RIGHT, buff=0.45)
+
+        line = Text(
+            "big when you agree where it matters",
+            font=FONT_BODY,
+            font_size=30,
+            color=DATA_FIT,
+        ).move_to(DOWN * 1.2)
+
+        self.add(title, row, chip, line)

@@ -1,18 +1,18 @@
 <script lang="ts">
 	const stills = [
-		{ file: 'M3_IntensityContest_ManimCE_v0.20.1.png', moment: 'Moment 3', line: 'Idea one fails: the cranked column wins and your taste was never consulted.' },
-		{ file: 'M6_ZeroMatches_ManimCE_v0.20.1.png', moment: 'Moment 6', line: 'Idea two fails: exact matching finds nothing, anywhere.' },
-		{ file: 'M8_Multiply_ManimCE_v0.20.1.png', moment: 'Moment 8', line: 'The repair: your interest times their amount, one pair at a time.' },
-		{ file: 'M9_Add_ManimCE_v0.20.1.png', moment: 'Moment 9', line: 'The products pool into 5 and answer the opening scorebox.' },
-		{ file: 'M10_Chip_ManimCE_v0.20.1.png', moment: 'Moment 10', line: 'The recipe compacts into the chip the notation will land next to.' }
+		{ file: 'A_Totals_ManimCE_v0.20.1.png', moment: 'Snapshot A', line: 'Attempt one, compare totals: Night Drive and Glass Rain tie at 1 away, and (3,1) vs (1,3) exposes the flaw.' },
+		{ file: 'B_Differences_ManimCE_v0.20.1.png', moment: 'Snapshot B', line: 'Attempt two, entry-by-entry differences: keeps the mix, ignores how much you care.' },
+		{ file: 'C_Votes_ManimCE_v0.20.1.png', moment: 'Snapshot C', line: 'The repair: your numbers are votes; multiply your vote by their amount.' },
+		{ file: 'D_Score_ManimCE_v0.20.1.png', moment: 'Snapshot D', line: 'Add the votes: match 5, with its lineage still on screen.' },
+		{ file: 'E_Chip_ManimCE_v0.20.1.png', moment: 'Snapshot E', line: 'The recipe compacts into the corner chip the notation lands beside.' }
 	];
 </script>
 
 <svelte:head><title>dev · section 2 stills</title></svelte:head>
 
 <main>
-	<h1>Section 2 mock stills</h1>
-	<p class="sub">Hand-built compositions for the approved script. Mark up anything.</p>
+	<h1>Section 2 mock stills, take 2</h1>
+	<p class="sub">One persistent stage: the four columns never leave; every attempt happens on them.</p>
 	{#each stills as s (s.file)}
 		<figure>
 			<figcaption><span class="mono">{s.moment}</span> {s.line}</figcaption>
