@@ -135,7 +135,9 @@
 	function onArenaPointer(e: PointerEvent) {
 		const a = anglesFromEvent(e);
 		if (!a || !dragging) return;
-		if (dragging === 'probe') probeAngle = Math.round(a.angle / 5) * 5 % 360;
+		// Pointer drags resolve to 1 degree (smooth by hand, and a short
+		// near-radial drag still registers); arrow keys keep the spec's 5.
+		if (dragging === 'probe') probeAngle = Math.round(a.angle) % 360;
 		else lengthC1 = Math.max(0.5, Math.min(2, Math.round(a.dist * 10) / 10));
 	}
 

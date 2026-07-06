@@ -43,6 +43,10 @@
 	let dragging = $state<'probe' | 'length' | null>(null);
 
 	const rad = (d: number) => (d * Math.PI) / 180;
+	// The score readout everywhere on screen prints to one decimal; leadership
+	// must be judged at that SAME precision, or two songs that print the same
+	// number could have one silently crowned over the other.
+	const f1 = (n: number) => (Object.is(n, -0) ? 0 : n).toFixed(1);
 
 	const probe = $derived({ x: Math.cos(rad(probeAngle)), y: Math.sin(rad(probeAngle)) });
 
@@ -57,8 +61,10 @@
 		})
 	);
 
-	const maxScore = $derived(Math.max(...rows.map((r) => r.score)));
-	const leaders = $derived(rows.filter((r) => Math.abs(r.score - maxScore) < 0.005).map((r) => r.id));
+	const maxDisp = $derived(Math.max(...rows.map((r) => parseFloat(f1(r.score)))));
+	const leaders = $derived(
+		rows.filter((r) => parseFloat(f1(r.score)) === maxDisp).map((r) => r.id)
+	);
 	const tied = $derived(leaders.length > 1);
 	const sel = $derived(rows.find((r) => r.id === selected) ?? rows[0]);
 
@@ -82,7 +88,10 @@
 		if (lengthC1 <= 1.05) return null;
 		const dist = (angle: number) => Math.abs(((angle - probeAngle + 540) % 360) - 180);
 		const beaten = rows.filter(
-			(r) => r.id !== 'c1' && dist(r.angle) < dist(c1.angle) && c1.score > r.score + 0.005
+			(r) =>
+				r.id !== 'c1' &&
+				dist(r.angle) < dist(c1.angle) &&
+				parseFloat(f1(c1.score)) > parseFloat(f1(r.score))
 		);
 		if (beaten.length === 0) return null;
 		return beaten.reduce((a, b) => (dist(a.angle) < dist(b.angle) ? a : b));
@@ -135,9 +144,7 @@
 	function onArenaPointer(e: PointerEvent) {
 		const a = anglesFromEvent(e);
 		if (!a || !dragging) return;
-		// Pointer drags resolve to 1 degree (smooth by hand, and a short
-		// near-radial drag still registers); arrow keys keep the spec's 5.
-		if (dragging === 'probe') probeAngle = Math.round(a.angle) % 360;
+		if (dragging === 'probe') probeAngle = Math.round(a.angle / 5) * 5 % 360;
 		else lengthC1 = Math.max(0.5, Math.min(2, Math.round(a.dist * 10) / 10));
 	}
 
@@ -164,7 +171,6 @@
 
 	const f = (n: number) => (Object.is(n, -0) ? 0 : n).toFixed(2);
 	const cl = (v: number) => Math.min(Math.max(v, 24), S - 24);
-	const f1 = (n: number) => (Object.is(n, -0) ? 0 : n).toFixed(1);
 
 	// Bar scale: scores live in [-2, 2] once c1 can stretch.
 	const BARMAX = 2.05;
@@ -174,11 +180,17 @@
 	const probeTip = $derived(pt(probe.x, probe.y));
 	const c1row = $derived(rows[0]);
 	const c1HandlePos = $derived(pt(c1row.x, c1row.y));
+	// The probe's own tip label: offset 13deg tangentially (never a multiple
+	// of 5, so it can never land on a candidate's angle, which are all
+	// multiples of 10) plus extra radial pad, so "probe" never sits on top
+	// of a candidate arrow or its tip label even when the probe points
+	// straight at one.
+	const probeLabelPos = $derived(labelPos(probeAngle + 13, 1, 34));
 </script>
 
 <svelte:window onpointerup={() => (dragging = null)} />
 
-<div class="lab" data-interactive="dot-meter">
+<div class="lab" data-interactive="dot-alignment">
 	<p class="invite">
 		Every song here is two numbers: how <em class="qw-loud">loud</em>, how <em class="qw-fast">fast</em>. So is your taste. Turn
 		the amber taste arrow and watch each song's match get <em>built</em>: the <span class="qw-loud">loud product</span> plus
@@ -231,9 +243,9 @@
 				<!-- axes, whisper-quiet, but named: the two entries ARE qualities -->
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
-				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono">loud</text>
-				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono">fast</text>
-				<g class="legend">
+				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono" aria-hidden="true">loud</text>
+				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono" aria-hidden="true">fast</text>
+				<g class="legend" aria-hidden="true">
 					<line x1="16" y1="20" x2="34" y2="20" class="lg probe-stroke" />
 					<text x="40" y="24" class="lgt mono">your taste</text>
 					<line x1="16" y1="38" x2="34" y2="38" class="lg cand-stroke" />
@@ -245,13 +257,17 @@
 					{@const tip = pt(d.x, d.y)}
 					<line x1={tip.px} y1={tip.py} x2={tip.px} y2={CY} class="drop {d.cls}" />
 					<line x1={tip.px} y1={tip.py} x2={CX} y2={tip.py} class="drop {d.cls}" />
-					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}">{f(d.x)}</text>
-					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end">{f(d.y)}</text>
+					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}" aria-hidden="true">{f(d.x)}</text>
+					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end" aria-hidden="true">{f(d.y)}</text>
 				{/each}
 
-				<!-- candidates -->
+				<!-- candidates: each carries its name at its tip, always, nudged
+				     radially clear of the ring so the sweeping probe never buries
+				     it (the probe's own label uses a different angle offset so
+				     it can never land in the same spot). -->
 				{#each rows as r (r.id)}
 					{@const a = arrow(r.x, r.y)}
+					{@const lp = labelPos(r.angle, r.len, 26)}
 					<g
 						class="cand"
 						class:sel={selected === r.id}
@@ -263,13 +279,12 @@
 					>
 						<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft cand-stroke" />
 						<polygon points={a.head} class="cand-fill" />
-						{#if selected === r.id}
-							{@const lp = labelPos(r.angle, r.len, 26)}
-							<text
-								x={Math.min(Math.max(lp.px, 44), S - 48)}
-								y={Math.min(Math.max(lp.py, 16), S - 10)}
-								class="lab song-lab halo">{r.name}</text>
-						{/if}
+						<text
+							x={Math.min(Math.max(lp.px, 44), S - 48)}
+							y={Math.min(Math.max(lp.py, 16), S - 10)}
+							class="lab song-lab halo"
+							class:sel-lab={selected === r.id}
+							aria-hidden="true">{r.name}</text>
 					</g>
 				{/each}
 
@@ -279,6 +294,11 @@
 					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
 					<polygon points={a.head} class="probe-fill" />
 				{/if}
+				<text
+					x={Math.min(Math.max(probeLabelPos.px, 44), S - 48)}
+					y={Math.min(Math.max(probeLabelPos.py, 16), S - 10)}
+					class="lab song-lab probe-lab-text halo"
+					aria-hidden="true">probe</text>
 				<circle
 					cx={probeTip.px}
 					cy={probeTip.py}
@@ -316,7 +336,7 @@
 					aria-valuemax="2"
 					aria-valuenow={f1(lengthC1)}
 				/>
-				<text x="14" y={S - 14} class="angle mono">taste at {Math.round(probeAngle)}°</text>
+				<text x="14" y={S - 14} class="angle mono" aria-hidden="true">taste at {Math.round(probeAngle)}°</text>
 			</svg>
 		</div>
 
@@ -329,7 +349,7 @@
 					onmouseenter={() => (hovered = r.id)}
 					onmouseleave={() => (hovered = null)}
 					onclick={() => (selected = r.id)}
-					aria-label={`${r.name} score ${f(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
+					aria-label={`${r.id} score ${f1(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
 				>
 					<span class="row-id">{r.name}</span>
 					<span class="bar" style="--h: {barH}px">
@@ -348,7 +368,7 @@
 								: barH / 2 - segH(r.py) - (r.px < 0 ? segH(r.px) : 0)}px"
 						></span>
 					</span>
-					<span class="row-score mono" class:neg={r.score < 0}>{f(r.score)}</span>
+					<span class="row-score mono" class:neg={r.score < 0}>{f1(r.score)}</span>
 					{#if leaders.includes(r.id) && !tied}<span class="leads mono">leads</span>{/if}
 				</button>
 			{/each}
@@ -383,7 +403,7 @@
 			<span class="op">+</span>
 			<span class="segy-c">{f(sel.py)}</span>
 			<span class="op">=</span>
-			<span class="score-c">{f(sel.score)}</span>
+			<span class="score-c">{f1(sel.score)}</span>
 		</span>
 		<span class="strip-note">
 			multiply the matched entries, add the products. The <span class="qw-loud">lilac slice</span>
@@ -433,7 +453,6 @@
 	.lab .arena text.lab { fill: var(--color-text); font-size: 13px; text-anchor: middle; dominant-baseline: middle; }
 	/* Decorative text must never swallow a pointer aimed at a handle. */
 	.arena text { pointer-events: none; }
-	.probe-lab { fill: var(--data-heat) !important; }
 	.angle { fill: color-mix(in oklab, var(--color-text) 45%, transparent); font-size: 12px; }
 
 	.handle { fill: transparent; stroke: transparent; cursor: grab; }
@@ -464,7 +483,12 @@
 	.hint { margin: 0.7rem 0 0; font-size: 0.78rem; opacity: 0.55; }
 	.why { margin: 0.7rem 0 0; font-size: 0.88rem; color: color-mix(in oklab, var(--color-text) 82%, transparent); }
 	.axisq { fill: color-mix(in oklab, var(--color-text) 40%, transparent); font-size: 10px; }
-	.song-lab { font-size: 11.5px; }
+	/* Candidate names live at their tips permanently (they never move); they
+	   recede beneath the selected one and beneath the probe's own label so
+	   one focus still leads. */
+	.song-lab { font-size: 11px; opacity: 0.7; }
+	.song-lab.sel-lab { font-size: 11.5px; opacity: 1; font-weight: 600; }
+	.probe-lab-text { font-weight: 600; opacity: 1; }
 	.halo { paint-order: stroke; stroke: var(--color-bg); stroke-width: 4px; }
 	.lg { stroke-width: 2.4; stroke-linecap: round; }
 	.lgt { fill: color-mix(in oklab, var(--color-text) 55%, transparent); font-size: 10.5px; }
