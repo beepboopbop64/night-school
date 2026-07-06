@@ -1,0 +1,12 @@
+[
+  {
+    "checkId": "web.reduced-motion",
+    "target": "DotAlignment.svelte",
+    "message": "no prefers-reduced-motion code path found in the component source; every animation/transition must have a reduced-motion fallback"
+  },
+  {
+    "checkId": "web.no-dashes",
+    "target": "DotAlignment.svelte:2",
+    "message": "em/en dash on line 2: \"// DotMeter v2 — the judge's hand-built take, for direct iteration with Jake.\" — banned in learner-facing copy; use a period, comma, colon, or parentheses"
+  }
+]

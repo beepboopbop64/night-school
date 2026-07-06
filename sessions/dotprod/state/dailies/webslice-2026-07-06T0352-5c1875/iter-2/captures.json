@@ -1,0 +1,92 @@
+[
+  {
+    "stateId": "initial",
+    "width": 375,
+    "frame": "initial-375.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n0.94\n0.34\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n0.9\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\ntied\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·0.94 + fast 0.64·0.34 = 0.72 + 0.22 = 0.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "aligned",
+    "width": 375,
+    "frame": "aligned-375.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "orthogonal",
+    "width": 375,
+    "frame": "orthogonal-375.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "anti-aligned",
+    "width": 375,
+    "frame": "anti-aligned-375.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "length-cheat",
+    "width": 375,
+    "frame": "length-cheat-375.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "initial",
+    "width": 768,
+    "frame": "initial-768.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n0.94\n0.34\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n0.9\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\ntied\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·0.94 + fast 0.64·0.34 = 0.72 + 0.22 = 0.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "aligned",
+    "width": 768,
+    "frame": "aligned-768.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "orthogonal",
+    "width": 768,
+    "frame": "orthogonal-768.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "anti-aligned",
+    "width": 768,
+    "frame": "anti-aligned-768.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "length-cheat",
+    "width": 768,
+    "frame": "length-cheat-768.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "initial",
+    "width": 1280,
+    "frame": "initial-1280.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n0.94\n0.34\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n0.9\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\ntied\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·0.94 + fast 0.64·0.34 = 0.72 + 0.22 = 0.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "aligned",
+    "width": 1280,
+    "frame": "aligned-1280.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "orthogonal",
+    "width": 1280,
+    "frame": "orthogonal-1280.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "anti-aligned",
+    "width": 1280,
+    "frame": "anti-aligned-1280.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  },
+  {
+    "stateId": "length-cheat",
+    "width": 1280,
+    "frame": "length-cheat-1280.png",
+    "innerText": "Every song here is two numbers: how loud, how fast. So is your taste. Turn the amber taste arrow and watch each song's match get built: the loud product plus the fast product, stacked into one bar. Then grab Night Drive's round handle and change its size.\n\nchallenge 01\nMake a worse match win\nchallenge 02\nMake the truest song lose\nloud\nfast\nyour taste\nsongs\n0.77\n0.64\n1.88\n0.68\nNight Drive\nGlass Rain\nSlow Burn\nStatic\nyour taste\ntaste at 40°\nNight Drive\n1.9\nleads\nGlass Rain\n0.9\nSlow Burn\n0.3\nStatic\n-0.5\n\nClick any bar or arrow to inspect it. The dashed lines are that arrow's two entries (its loudness and its speed), the numbers the recipe multiplies.\n\nthe whole recipe, live for Night Drive:\nloud 0.77·1.88 + fast 0.64·0.68 = 1.44 + 0.44 = 1.9\nmultiply the matched entries, add the products. The lilac slice of each bar is its loud product, the mint slice its fast product; stacked, they are the score."
+  }
+]

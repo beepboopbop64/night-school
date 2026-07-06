@@ -1,0 +1,32 @@
+[
+  {
+    "checkId": "web.drive",
+    "target": "state:aligned",
+    "message": "arrow keys stopped moving the slider at 2 before reaching 20; check key handling and clamping"
+  },
+  {
+    "checkId": "web.drive",
+    "target": "state:orthogonal",
+    "message": "arrow keys stopped moving the slider at 2 before reaching 110; check key handling and clamping"
+  },
+  {
+    "checkId": "web.drive",
+    "target": "state:anti-aligned",
+    "message": "arrow keys stopped moving the slider at 2 before reaching 200; check key handling and clamping"
+  },
+  {
+    "checkId": "web.drive",
+    "target": "state:length-cheat",
+    "message": "arrow keys stopped moving the slider at 2 before reaching 70; check key handling and clamping"
+  },
+  {
+    "checkId": "web.touch-target",
+    "target": "circle[role=slider]\"c1 length\"",
+    "message": "circle[role=slider]\"c1 length\" measures 18x18px at 375px viewport; interactive targets must be >= 44px in both dimensions"
+  },
+  {
+    "checkId": "web.touch-target",
+    "target": "circle[role=slider]\"probe angle in degrees\"",
+    "message": "circle[role=slider]\"probe angle in degrees\" measures 22x22px at 375px viewport; interactive targets must be >= 44px in both dimensions"
+  }
+]

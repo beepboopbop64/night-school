@@ -1,0 +1,7 @@
+[
+  {
+    "checkId": "web.pointer-drag",
+    "target": "slider",
+    "message": "a pointer drag across the slider did not change its value (before=40, after=40); the control must be pointer-operable"
+  }
+]

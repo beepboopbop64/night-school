@@ -78,13 +78,13 @@
       "receipt": "state/receipts/s4b.sec-beat-04.receipt.json"
     },
     "s4b.dot-alignment": {
-      "status": "passed",
+      "status": "flagged",
       "iter": 5,
       "costUsd": 3.360289,
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"
     },
     "s4c.doc": {
-      "status": "passed",
+      "status": "running",
       "iter": 1,
       "costUsd": 0.8953169999999999,
       "receipt": "state/receipts/s4c.doc.receipt.json"
@@ -153,5 +153,11 @@
       "status": "passed"
     }
   },
-  "needsJake": []
+  "needsJake": [
+    {
+      "node": "s4b.dot-alignment",
+      "reason": "webslice dot-alignment failed: cap-exhausted (dailies: C:\\Users\\jaker\\Desktop\\projects\\harnesses\\lessons\\sessions\\dotprod\\state\\dailies\\webslice-2026-07-06T0352-5c1875)",
+      "since": "2026-07-06T04:15:09.503Z"
+    }
+  ]
 }

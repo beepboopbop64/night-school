@@ -1,5 +1,5 @@
 <script lang="ts">
-	// DotMeter v2, the judge's hand-built take, for direct iteration with Jake.
+	// DotMeter v2 (the judge's hand-built take, for direct iteration with Jake).
 	// The design thesis: multiply-and-add should be VISIBLE, not narrated.
 	// Every bar is literally its two products stacked; the strip below shows
 	// the arithmetic for whichever candidate you select, live, to two decimals.
@@ -53,12 +53,16 @@
 			const y = len * Math.sin(rad(c.angle));
 			const px = probe.x * x; // the x-term product
 			const py = probe.y * y; // the y-term product
-			return { ...c, len, x, y, px, py, score: px + py };
+			const score = px + py;
+			// r1 is the score at the SAME one-decimal precision the meter
+			// displays, so leader/tie judgments always match what's on screen.
+			const r1 = Number((Object.is(score, -0) ? 0 : score).toFixed(1));
+			return { ...c, len, x, y, px, py, score, r1 };
 		})
 	);
 
-	const maxScore = $derived(Math.max(...rows.map((r) => r.score)));
-	const leaders = $derived(rows.filter((r) => Math.abs(r.score - maxScore) < 0.005).map((r) => r.id));
+	const maxR1 = $derived(Math.max(...rows.map((r) => r.r1)));
+	const leaders = $derived(rows.filter((r) => r.r1 === maxR1).map((r) => r.id));
 	const tied = $derived(leaders.length > 1);
 	const sel = $derived(rows.find((r) => r.id === selected) ?? rows[0]);
 
@@ -82,7 +86,7 @@
 		if (lengthC1 <= 1.05) return null;
 		const dist = (angle: number) => Math.abs(((angle - probeAngle + 540) % 360) - 180);
 		const beaten = rows.filter(
-			(r) => r.id !== 'c1' && dist(r.angle) < dist(c1.angle) && c1.score > r.score + 0.005
+			(r) => r.id !== 'c1' && dist(r.angle) < dist(c1.angle) && c1.r1 > r.r1
 		);
 		if (beaten.length === 0) return null;
 		return beaten.reduce((a, b) => (dist(a.angle) < dist(b.angle) ? a : b));
@@ -117,12 +121,34 @@
 		};
 	}
 
-	function labelPos(angle: number, len: number, pad = 20) {
-		const d = len * R + pad;
-		return { px: CX + d * Math.cos(rad(angle)), py: CY - d * Math.sin(rad(angle)) };
+	// Tip label placement, in pixel space, not polar: push a touch past the
+	// tip along the arrow's own direction, then sideways, perpendicular to
+	// it. Candidates and the probe pass opposite `side` values, so even when
+	// the probe sweeps exactly onto a candidate's angle the two labels land
+	// on opposite sides of the shared line and never collide.
+	function tipLabel(x: number, y: number, side: 1 | -1) {
+		const tip = pt(x, y);
+		const dx = tip.px - CX;
+		const dy = tip.py - CY;
+		const mag = Math.hypot(dx, dy) || 1;
+		const ux = dx / mag;
+		const uy = dy / mag;
+		const perpx = -uy;
+		const perpy = ux;
+		const px = tip.px + ux * 12 + perpx * 17 * side;
+		const py = tip.py + uy * 12 + perpy * 17 * side;
+		return { px: cl(px), py: Math.min(Math.max(py, 14), S - 8) };
 	}
 
 	let arenaEl = $state<SVGSVGElement | null>(null);
+	// Measured render width of the arena (viewBox units are S=400, but the
+	// SVG is scaled fluidly by CSS). The two drag handles are invisible hit
+	// circles; size them in real px, not viewBox units, so their on-screen
+	// footprint clears the 44x44 touch-target minimum at every width,
+	// including the narrowest (375px) where the arena shrinks the most.
+	let arenaWidth = $state(400);
+	const scale = $derived(arenaWidth > 0 ? arenaWidth / S : 1);
+	const hitR = $derived(Math.max(12, 24 / scale));
 
 	function anglesFromEvent(e: PointerEvent) {
 		if (!arenaEl) return null;
@@ -206,7 +232,7 @@
 	</div>
 
 	<div class="stage">
-		<div class="arena-wrap">
+		<div class="arena-wrap" bind:clientWidth={arenaWidth}>
 			<svg
 				bind:this={arenaEl}
 				viewBox="0 0 {S} {S}"
@@ -229,9 +255,9 @@
 				<!-- axes, whisper-quiet, but named: the two entries ARE qualities -->
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
-				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono">loud</text>
-				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono">fast</text>
-				<g class="legend">
+				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono" aria-hidden="true">loud</text>
+				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono" aria-hidden="true">fast</text>
+				<g class="legend" aria-hidden="true">
 					<line x1="16" y1="20" x2="34" y2="20" class="lg probe-stroke" />
 					<text x="40" y="24" class="lgt mono">your taste</text>
 					<line x1="16" y1="38" x2="34" y2="38" class="lg cand-stroke" />
@@ -243,13 +269,14 @@
 					{@const tip = pt(d.x, d.y)}
 					<line x1={tip.px} y1={tip.py} x2={tip.px} y2={CY} class="drop {d.cls}" />
 					<line x1={tip.px} y1={tip.py} x2={CX} y2={tip.py} class="drop {d.cls}" />
-					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}">{f(d.x)}</text>
-					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end">{f(d.y)}</text>
+					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}" aria-hidden="true">{f(d.x)}</text>
+					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end" aria-hidden="true">{f(d.y)}</text>
 				{/each}
 
-				<!-- candidates -->
+				<!-- candidates: each holds still, always named at its own tip -->
 				{#each rows as r (r.id)}
 					{@const a = arrow(r.x, r.y)}
+					{@const lp = tipLabel(r.x, r.y, -1)}
 					<g
 						class="cand"
 						class:sel={selected === r.id}
@@ -261,13 +288,7 @@
 					>
 						<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft cand-stroke" />
 						<polygon points={a.head} class="cand-fill" />
-						{#if selected === r.id}
-							{@const lp = labelPos(r.angle, r.len, 26)}
-							<text
-								x={Math.min(Math.max(lp.px, 44), S - 48)}
-								y={Math.min(Math.max(lp.py, 16), S - 10)}
-								class="lab song-lab halo">{r.name}</text>
-						{/if}
+						<text x={lp.px} y={lp.py} class="lab song-lab halo" aria-hidden="true">{r.name}</text>
 					</g>
 				{/each}
 
@@ -275,14 +296,13 @@
 				<circle
 					cx={c1HandlePos.px}
 					cy={c1HandlePos.py}
-					r="22"
-					onpointermove={onArenaPointer}
+					r={hitR}
 					class="handle length-handle"
 					class:active={dragging === 'length'}
 					class:pulse={challenge !== null && !((challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged))}
 					onpointerdown={(e) => startDrag('length', e)}
 					onkeydown={lengthKeys}
-					role="slider"
+					role="spinbutton"
 					tabindex="0"
 					data-control="length-c1"
 					aria-label="c1 length"
@@ -291,17 +311,20 @@
 					aria-valuenow={f1(lengthC1)}
 				/>
 
-				<!-- probe on top -->
+				<!-- probe on top: labeled on the object, offset to the opposite
+				     side from any candidate label so a direct sweep-through
+				     never buries either one -->
 				{#if true}
 					{@const a = arrow(probe.x, probe.y)}
+					{@const plab = tipLabel(probe.x, probe.y, 1)}
 					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
 					<polygon points={a.head} class="probe-fill" />
+					<text x={plab.px} y={plab.py} class="lab probe-lab halo" aria-hidden="true">your taste</text>
 				{/if}
 				<circle
 					cx={probeTip.px}
 					cy={probeTip.py}
-					r="22"
-					onpointermove={onArenaPointer}
+					r={hitR}
 					class="handle probe-handle"
 					class:active={dragging === 'probe'}
 					onpointerdown={(e) => startDrag('probe', e)}
@@ -313,7 +336,7 @@
 					aria-valuemax="360"
 					aria-valuenow={Math.round(probeAngle)}
 				/>
-				<text x="14" y={S - 14} class="angle mono">taste at {Math.round(probeAngle)}°</text>
+				<text x="14" y={S - 14} class="angle mono" aria-hidden="true">taste at {Math.round(probeAngle)}°</text>
 			</svg>
 		</div>
 
@@ -326,7 +349,7 @@
 					onmouseenter={() => (hovered = r.id)}
 					onmouseleave={() => (hovered = null)}
 					onclick={() => (selected = r.id)}
-					aria-label={`${r.name} score ${f(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
+					aria-label={`${r.id} score ${f1(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
 				>
 					<span class="row-id">{r.name}</span>
 					<span class="bar" style="--h: {barH}px">
@@ -345,7 +368,7 @@
 								: barH / 2 - segH(r.py) - (r.px < 0 ? segH(r.px) : 0)}px"
 						></span>
 					</span>
-					<span class="row-score mono" class:neg={r.score < 0}>{f(r.score)}</span>
+					<span class="row-score mono">{f1(r.score)}</span>
 					{#if leaders.includes(r.id) && !tied}<span class="leads mono">leads</span>{/if}
 				</button>
 			{/each}
@@ -380,7 +403,7 @@
 			<span class="op">+</span>
 			<span class="segy-c">{f(sel.py)}</span>
 			<span class="op">=</span>
-			<span class="score-c">{f(sel.score)}</span>
+			<span class="score-c">{f1(sel.score)}</span>
 		</span>
 		<span class="strip-note">
 			multiply the matched entries, add the products. The <span class="qw-loud">lilac slice</span>
@@ -485,17 +508,16 @@
 		max-width: 30rem; font-size: 0.78rem; line-height: 1.45;
 		color: color-mix(in oklab, var(--color-text) 78%, transparent);
 	}
-	@media (prefers-reduced-motion: no-preference) {
-		.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
-	}
+	.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
 	@keyframes hpulse {
 		0%, 100% { stroke-width: 1.5; }
 		50% { stroke-width: 4.5; stroke-opacity: 1; }
 	}
 	.row.leading .row-id { color: var(--color-brand-mint); }
 	.row-id { font-size: 0.8rem; opacity: 0.85; }
-	.row-score { font-size: 0.85rem; color: var(--data-params); }
-	.row-score.neg { color: var(--data-error); }
+	/* one hue for the score quantity everywhere: the sign shows in the digit
+	   and the bar's position below baseline, never in a hue swap. */
+	.row-score { font-size: 0.85rem; color: var(--data-params); opacity: 0.82; }
 
 	.bar { position: relative; width: 18px; height: var(--h); }
 	.zero {
@@ -533,11 +555,20 @@
 	.qw-fast { color: color-mix(in oklab, var(--color-brand-mint) 85%, var(--color-text)); opacity: 0.9; }
 	.q-loud { fill: color-mix(in oklab, var(--data-params) 80%, transparent); }
 	.q-fast { fill: color-mix(in oklab, var(--color-brand-mint) 70%, transparent); }
-	.score-c { color: var(--data-fit); font-weight: 600; }
+	.score-c { color: var(--data-params); font-weight: 600; }
 	.strip-note { flex-basis: 100%; font-size: 0.8rem; opacity: 0.55; }
 
 	@media (max-width: 700px) {
 		.stage { flex-direction: column; }
 		.meter { align-self: center; }
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		/* decorative motion off: the pulse hint and the hover/select fades.
+		   the bar's height/bottom still tracks the live score every frame,
+		   since that motion IS the data, not decoration. */
+		.handle.pulse { animation: none; }
+		.cand { transition: none; }
+		.seg { transition: none; }
 	}
 </style>

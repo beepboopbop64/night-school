@@ -1,5 +1,5 @@
 <script lang="ts">
-	// DotMeter v2 — the judge's hand-built take, for direct iteration with Jake.
+	// DotMeter v2, the judge's hand-built take, for direct iteration with Jake.
 	// The design thesis: multiply-and-add should be VISIBLE, not narrated.
 	// Every bar is literally its two products stacked; the strip below shows
 	// the arithmetic for whichever candidate you select, live, to two decimals.
@@ -275,7 +275,8 @@
 				<circle
 					cx={c1HandlePos.px}
 					cy={c1HandlePos.py}
-					r="9"
+					r="22"
+					onpointermove={onArenaPointer}
 					class="handle length-handle"
 					class:active={dragging === 'length'}
 					class:pulse={challenge !== null && !((challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged))}
@@ -299,7 +300,8 @@
 				<circle
 					cx={probeTip.px}
 					cy={probeTip.py}
-					r="11"
+					r="22"
+					onpointermove={onArenaPointer}
 					class="handle probe-handle"
 					class:active={dragging === 'probe'}
 					onpointerdown={(e) => startDrag('probe', e)}
@@ -483,7 +485,9 @@
 		max-width: 30rem; font-size: 0.78rem; line-height: 1.45;
 		color: color-mix(in oklab, var(--color-text) 78%, transparent);
 	}
-	.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
+	@media (prefers-reduced-motion: no-preference) {
+		.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
+	}
 	@keyframes hpulse {
 		0%, 100% { stroke-width: 1.5; }
 		50% { stroke-width: 4.5; stroke-opacity: 1; }

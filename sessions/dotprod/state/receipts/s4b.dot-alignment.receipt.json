@@ -3,92 +3,118 @@
   "node": "s4b.dot-alignment",
   "inputs": [
     {
-      "path": "page/interactives/dot-alignment.yaml",
-      "sha256": "4c7e068fb916ac4a76eaf398697754fccd9ae5f5b903b7081cffe4e1b7dbf66d"
+      "path": "interactive.yaml",
+      "sha256": "40241430f9fa9532c3fada958b56d242f628a5369bc03019df01c20cc7570b3c"
     }
   ],
   "outputs": [
     {
       "path": "page/interactives/DotAlignment.svelte",
-      "sha256": "7ecc5b073eb3e302c0019408bdcaf401ffb0759946a3d55a05adb86bd8ecf979"
+      "sha256": "f8ed50e436f43d1a6013857fb5922cce43de44d109e10f59c4011ed27af5364f"
+    },
+    {
+      "path": "../../site/src/routes/dev/dotprod/dot-alignment/+page.svelte",
+      "sha256": "9755f04671486c1745f288bd958e5de4ecfa48df6d63a92b4e694c4602f693e7"
     }
   ],
   "gate": {
-    "passed": true,
+    "passed": false,
     "checks": [
       {
         "id": "weba11y.clean",
-        "pass": true
+        "pass": false
       },
       {
         "id": "iris.pass",
-        "pass": true,
-        "iter": 5
+        "pass": false
       }
     ]
   },
   "iterations": 5,
-  "costUsd": 3.360289,
+  "costUsd": 3.09,
   "tier": "opus",
-  "startedAt": "2026-07-05T09:32:34.131Z",
-  "endedAt": "2026-07-05T12:42:37.107Z",
-  "transcript": "state/dailies/webslice-2026-07-05T0932-ed804a",
-  "promptSha": "",
+  "startedAt": "2026-07-06T03:52:46.163Z",
+  "endedAt": "2026-07-06T04:15:09.500Z",
+  "transcript": "state/dailies/webslice-2026-07-06T0352-5c1875",
+  "promptSha": "909266f9567a3f4eb30602eebde80c9ebf695fa662e5a682e3331f7f1aab1c60",
   "meta": {
+    "runId": "webslice-2026-07-06T0352-5c1875",
+    "coderModel": "claude-sonnet-5",
+    "widths": [
+      375,
+      768,
+      1280
+    ],
+    "states": [
+      "initial",
+      "aligned",
+      "orthogonal",
+      "anti-aligned",
+      "length-cheat"
+    ],
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "build-failed",
-        "coderCostUsd": 1.0810655999999998,
+        "outcome": "source-checks-failed",
+        "coderCostUsd": 1.1906382,
         "irisCostUsd": 0,
-        "wallMs": 459510,
+        "wallMs": 384191,
         "fingerprints": [
-          "build:failed"
+          "web:web.reduced-motion:DotAlignment.svelte",
+          "web:web.no-dashes:DotAlignment.svelte"
         ],
         "replanWasForced": false
       },
       {
         "iter": 2,
-        "outcome": "build-failed",
-        "coderCostUsd": 0.863844,
+        "outcome": "web-checks-failed",
+        "coderCostUsd": 0.1574415,
         "irisCostUsd": 0,
-        "wallMs": 405444,
+        "wallMs": 96594,
         "fingerprints": [
-          "build:failed"
+          "web:web.drive:state:aligned",
+          "web:web.drive:state:orthogonal",
+          "web:web.drive:state:anti-aligned",
+          "web:web.drive:state:length-cheat",
+          "web:web.touch-target:circle[role=slider]\"c1 length\"",
+          "web:web.touch-target:circle[role=slider]\"probe angle in degrees\""
         ],
         "replanWasForced": false
       },
       {
         "iter": 3,
         "outcome": "web-checks-failed",
-        "coderCostUsd": 0,
+        "coderCostUsd": 0.4531389,
         "irisCostUsd": 0,
-        "wallMs": 9881770,
+        "wallMs": 285932,
         "fingerprints": [
           "web:web.pointer-drag:slider"
         ],
-        "replanWasForced": true
+        "replanWasForced": false
       },
       {
         "iter": 4,
-        "outcome": "iris-failed",
-        "coderCostUsd": 0.513783,
-        "irisCostUsd": 0.2320705,
-        "wallMs": 349221,
+        "outcome": "web-checks-failed",
+        "coderCostUsd": 0.46494840000000004,
+        "irisCostUsd": 0,
+        "wallMs": 256861,
         "fingerprints": [
-          "iris:V7"
+          "web:web.pointer-drag:slider"
         ],
         "replanWasForced": false
       },
       {
         "iter": 5,
-        "outcome": "iris-passed",
-        "coderCostUsd": 0.3586104,
-        "irisCostUsd": 0.3109155,
-        "wallMs": 307012,
-        "fingerprints": [],
-        "replanWasForced": false
+        "outcome": "build-failed",
+        "coderCostUsd": 0.8265129,
+        "irisCostUsd": 0,
+        "wallMs": 319744,
+        "fingerprints": [
+          "build:failed"
+        ],
+        "replanWasForced": true
       }
-    ]
+    ],
+    "flagReason": "cap-exhausted"
   }
 }
