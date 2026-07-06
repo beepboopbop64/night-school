@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one load-bearing element: the empty guess card, then the doubling question with c1 and 4.2, then the stacked 4.2/x2/8.4 reveal, then the two-bar comparison.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No frame presents more than a handful of novel elements; the busiest (frame 5) holds two labeled bars plus one annotation.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The c1 label sits on its arrow, c2/c3 labels sit directly under their bars, and score readouts sit atop each bar with no legend anywhere.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The doubling question annotates the visible c1 arrow and 4.2 score, and 'c2 outscores c3 on size alone' annotates the two visible bars.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text — the question, scores 4.2/8.4/6.0/3.5, and labels — is well above the ~2.2% height threshold and clearly readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Bars, arrow, scores, and card are entirely within the frame; the bottom annotation in frames 5-6 is close to the edge but fully visible.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or label overlaps another element in any frame; the stacked 4.2/x2/8.4 numbers are cleanly separated.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The candidate c1 arrow and c2/c3 labels read periwinkle blue while the score readouts and bar magnitudes read lilac, consistent with observed-vs-parameter token semantics.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — card, arrow, scores, bars, annotations — carries propositional content; no decoration is present.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The headerless doubling question, the periwinkle candidate with its lilac score reading out the stacked 4.2/x2/8.4, and the loud c2 bar outranking the better-aligned c3 bar with both on screen are all delivered.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "In frames 2-3 the c1 arrow sits lower-left while its 4.2/8.4 readout sits upper-right, a modest separation, but the bar scores sit directly on their bars.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The card scene builds empty→question+score→doubling in reasoning order, and the bar scene grows from one bar to two, though a scene cut separates the two sequences.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Compositions have generous negative space; the only tightness is the 'c2 outscores c3 on size alone' line sitting near the bottom edge in frames 5-6.",
+    "suggestion": ""
+  }
+]

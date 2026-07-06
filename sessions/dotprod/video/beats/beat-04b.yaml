@@ -5,33 +5,29 @@ beat:
   id: beat-04b
   title: The honest look
   narration: >-
-    Now the honest look, and guess before you watch. Double c1's length exactly,
-    leave its direction untouched, does the number double too?
+    Now the honest look, and guess before you watch. You saw length raise the
+    score. But by how much? Double c1's length exactly, same direction, just
+    twice as long: does the score double exactly, or just drift up?
 
 
-    It does, exactly. Double one input, double the output: the meter is linear
-    in each arrow you feed it. That clean scaling is the crack. Long songs would
-    win on sheer loudness, and padded resumes would win on sheer length, because
-    size passes straight through.
-
-
-    For the walk home: what is the cheapest fix that keeps the direction and
-    forgets the size, now that you know size scales the score in lockstep? Still
-    up? The menu below has three ways to keep going.
-  visual: "[visual: dynamic-process | connect-to-reality] A guess card holds with
-    one candidate outlined and the score readout hidden; the card carries no
-    header and instead poses the doubling question directly, asking whether
-    doubling c1 doubles the number. Then that periwinkle candidate doubles in
-    length while its direction holds still; its lilac score reads out at exactly
-    twice its former value, the two numbers stacked with no header so the
-    stacked 4.2 / x2 / 8.4 stands as the reveal itself; a small rose flag marks
-    that size passed straight through. The walk-home question lands as the
-    closing card under a single 'For the walk home' header, and a quiet chip
-    points to the extensions menu on the page."
+    It doubles, exactly. Four point two becomes eight point four, to the last
+    digit. Double one input, double the output: the meter is linear in each
+    arrow you feed it. That clean scaling is the crack. A loud song wins on
+    sheer loudness, whether or not the taste underneath agrees, because size
+    passes straight through the arithmetic.
+  visual: "[visual: dynamic-process] A guess card holds with candidate c1 outlined
+    and its score readout hidden; the card carries no header and poses the
+    doubling question directly, asking whether the score doubles exactly or just
+    drifts up. Then the periwinkle candidate doubles in length while its
+    direction holds still; its lilac score reads out at exactly twice its former
+    value, the two numbers stacked with no header so the stacked 4.2 / x2 / 8.4
+    stands as the reveal itself; a small rose flag marks that size passed
+    straight through, and a long loud candidate's bar outranks a better-aligned
+    short one while both stay on screen."
   colors:
     candidates: data.observed
     score: data.params
     failureFlag: data.error
     background: bg
     labels: text
-  durationTargetSeconds: 46.3
+  durationTargetSeconds: 41.7
