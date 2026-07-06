@@ -10,4 +10,6 @@ The dot product is a similarity meter.
 
 Two lists of numbers go in. One reading of alignment comes out, and that reading has a shape you can count on: agree pushes it positive, ignore parks it at zero, oppose drags it negative. You already found all three settings on the dial before anyone told you their names.
 
+Written the way you will meet it everywhere else: a · b = a₁b₁ + a₂b₂ + … and so on down the entries. For the taste and song from the worked example, (2, 1) · (1, 3) = 2×1 + 1×3 = 5. Same recipe you already ran by hand, now wearing its symbol.
+
 > Before you scroll on: positive, zero, negative. Say what each reading claims about two vectors, in your own words.

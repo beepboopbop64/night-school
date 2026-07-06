@@ -62,7 +62,7 @@ Predict one thing first: if a song points exactly the way your taste does but it
 
 You saw length raise the score. The question the honest look asks is by how much.
 
-Point the probe straight along c1 and set its length back to 1.0 first, so it reads a clean starting number. Now guess before the reveal: double c1's length exactly, same direction, just twice as long. Does the number double exactly, or just drift up?
+Point the probe straight along Night Drive, the widget's stretchable song, and set its length back to 1.0 first, so it reads a clean starting number. Now guess before the reveal: double Night Drive's length exactly, same direction, just twice as long. Does the number double exactly, or just drift up?
 
 It doubles, exactly. 4.2 becomes 8.4, to the last digit. Double one input, double the output: the meter is linear in each arrow you feed it. Feed it an arrow twice as long and you get back precisely twice the score, no surprise hiding in the arithmetic.
 

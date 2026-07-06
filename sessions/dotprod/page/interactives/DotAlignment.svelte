@@ -408,8 +408,8 @@
 	.invite .qw-fast, .lab .invite .qw-fast { color: color-mix(in oklab, var(--color-brand-mint) 85%, var(--color-text)); font-style: normal; }
 	.mono { font-family: var(--font-mono); }
 
-	.stage { display: flex; gap: 1.4rem; align-items: stretch; }
-	.arena-wrap { flex: 1 1 62%; min-width: 0; }
+	.stage { display: flex; flex-direction: column; gap: 0.8rem; align-items: center; }
+	.arena-wrap { width: 100%; max-width: 620px; }
 	.arena { width: 100%; height: auto; touch-action: none; display: block; }
 
 	.ring { fill: none; stroke: color-mix(in oklab, var(--color-text) 10%, transparent); stroke-width: 1; }

@@ -1,10 +1,10 @@
 ## Double the arrow, double the number?
 
-We've been sweeping the probe around while holding every length fixed, watching only direction move the score. Time for the other half of the honest look: freeze the direction and change the length instead. You already saw length raise the score when c1 stretched. The sharper question is by how much.
+We've been sweeping the probe around while holding every length fixed, watching only direction move the score. Time for the other half of the honest look: freeze the direction and change the length instead. You already saw length raise the score when Night Drive stretched. The sharper question is by how much.
 
-Before you answer, set the test up clean: point the probe straight along c1 and set its length back to 1.0 first. That way doubling c1 reads as an honest 1.0 to 2.0, nothing else moving.
+Before you answer, set the test up clean: point the probe straight along Night Drive and set its length back to 1.0 first. That way doubling Night Drive reads as an honest 1.0 to 2.0, nothing else moving.
 
-> Double c1's length exactly, same direction, just twice as long: does the score double exactly, or just drift up?
+> Double Night Drive's length exactly, same direction, just twice as long: does the score double exactly, or just drift up?
 
 <details class="reveal">
 <summary>Made your call?</summary>
