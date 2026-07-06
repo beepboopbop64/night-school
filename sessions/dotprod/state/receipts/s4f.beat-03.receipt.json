@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "script.md#beat-03",
-      "sha256": "2a5966c2bebae6e35f1d29616fe58339a50881391868cdfea1ee56fc15366bbd"
+      "sha256": "453c2a56a12b3869d089740d10477b10c3b1f4f301f2fadca9bb83224acc997f"
     }
   ],
   "outputs": [
     {
       "path": "video/audio/beat-03.mp3",
-      "sha256": "5b4da1b214e90439a0a23478201bda262c420d02f3c4d7ab4eefcedef11c0498"
+      "sha256": "d2db6f3fd6a19da7e7607d07c706b27e345483ab2e9a83b59b6b0fd648c24869"
     }
   ],
   "gate": {
@@ -29,17 +29,17 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T23:34:22.555Z",
-  "endedAt": "2026-07-05T23:34:22.684Z",
+  "startedAt": "2026-07-06T03:40:23.101Z",
+  "endedAt": "2026-07-06T03:40:37.874Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
     "mode": "elevenlabs",
     "voiceId": "cgSgspJ2msm6clMCkdW9",
     "voiceName": "Jessica",
-    "textHash": "5730b55ff5ce6e1504f6c5672c6abd21d07831cbe26f45bd0b6c181edd6685d6",
-    "cacheHit": true,
-    "audioSeconds": 38.8,
+    "textHash": "dd7bf64a259a2337f3e8bbc265a3991c35e05cd760a36c78a3a5561f855b8631",
+    "cacheHit": false,
+    "audioSeconds": 56.32,
     "stitching": false
   }
 }

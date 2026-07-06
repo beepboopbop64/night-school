@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "stage": "S7",
-  "round": 4,
+  "round": 5,
   "fidelity": "half-trued",
   "nodes": {
     "s4f.beat-01": {
@@ -139,14 +139,14 @@
     },
     "s4f.beat-05": {
       "status": "passed",
-      "costUsd": 0,
       "iter": 0,
+      "costUsd": 0,
       "receipt": "state/receipts/s4f.beat-05.receipt.json"
     },
     "s4a.beat-05": {
       "status": "passed",
-      "costUsd": 2.5562686,
       "iter": 3,
+      "costUsd": 2.5562686,
       "receipt": "state/receipts/s4a.beat-05.receipt.json"
     },
     "s4b.sec-beat-05": {
