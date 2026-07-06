@@ -1185,3 +1185,47 @@
 {"ts":"2026-07-06T18:09:10.432Z","runId":"webslice-2026-07-06T1809-c175aa","node":"s4b.dot-alignment","event":"node_started","data":{"interactive":"dot-alignment","session":"dotprod","maxIter":5}}
 {"ts":"2026-07-06T18:17:45.899Z","runId":"webslice-2026-07-06T1809-c175aa","node":"s4b.dot-alignment","agent":"web-coder","event":"agent_call","data":{"iter":1,"costUsd":1.4873918999999998,"replanForced":false,"summary":"This all looks consistent. The file builds correctly, precision issues are fixed, labels are always visible, and aria-labels use the exact `c# score value` form requested.\n\nDONE Revised DotAlignment.svelte: fixed leader/tie detection to judge at the same one-decimal precision the readouts display (p"}}
 {"ts":"2026-07-06T18:18:57.488Z","runId":"webslice-2026-07-06T1809-c175aa","node":"s4b.dot-alignment","agent":"weba11y","event":"critique_iteration","data":{"iter":1,"issues":1,"checkIds":["web.pointer-drag"]},"verdictRef":"state/dailies/webslice-2026-07-06T1809-c175aa/iter-1"}
+{"ts":"2026-07-06T18:20:02.231Z","runId":"run-2026-07-06T1820-f0d261","node":"s4f.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.246Z","runId":"run-2026-07-06T1820-f0d261","node":"s4f.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.263Z","runId":"run-2026-07-06T1820-f0d261","node":"s4f.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.264Z","runId":"run-2026-07-06T1820-f0d261","node":"s4f.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.265Z","runId":"run-2026-07-06T1820-f0d261","node":"s4f.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.266Z","runId":"run-2026-07-06T1820-f0d261","node":"s4f.beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.367Z","runId":"run-2026-07-06T1820-f0d261","node":"s4a.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.407Z","runId":"run-2026-07-06T1820-f0d261","node":"s4a.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.416Z","runId":"run-2026-07-06T1820-f0d261","node":"s4a.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.441Z","runId":"run-2026-07-06T1820-f0d261","node":"s4a.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.450Z","runId":"run-2026-07-06T1820-f0d261","node":"s4a.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.458Z","runId":"run-2026-07-06T1820-f0d261","node":"s4a.beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.462Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.466Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.471Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.sec-beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.475Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.sec-beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.479Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.sec-beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.482Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.sec-beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:20:02.485Z","runId":"run-2026-07-06T1820-f0d261","node":"s4b.dot-alignment","event":"node_started","data":{"reason":"gate-failed"}}
+{"ts":"2026-07-06T18:20:02.491Z","runId":"webslice-2026-07-06T1820-589c9c","node":"s4b.dot-alignment","event":"node_started","data":{"interactive":"dot-alignment","session":"dotprod","maxIter":5}}
+{"ts":"2026-07-06T18:27:29.332Z","runId":"webslice-2026-07-06T1820-589c9c","node":"s4b.dot-alignment","agent":"web-coder","event":"agent_call","data":{"iter":1,"costUsd":1.2459198,"replanForced":false,"summary":"This all looks correct and consistent. The file is complete and coherent.\n\nDONE Revised DotAlignment.svelte: removed the corner legend (spec forbids legends), added always-on c1..c4 tip tags on every candidate (radially placed, halo-backed, aria-hidden) plus a persistent angle-offset \"probe\" tip tag"}}
+{"ts":"2026-07-06T18:28:33.105Z","runId":"webslice-2026-07-06T1820-589c9c","node":"s4b.dot-alignment","agent":"weba11y","event":"critique_iteration","data":{"iter":1,"issues":1,"checkIds":["web.pointer-drag"]},"verdictRef":"state/dailies/webslice-2026-07-06T1820-589c9c/iter-1"}
+{"ts":"2026-07-06T18:41:15.704Z","runId":"run-2026-07-06T1841-92d508","node":"s4f.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.705Z","runId":"run-2026-07-06T1841-92d508","node":"s4f.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.706Z","runId":"run-2026-07-06T1841-92d508","node":"s4f.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.707Z","runId":"run-2026-07-06T1841-92d508","node":"s4f.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.708Z","runId":"run-2026-07-06T1841-92d508","node":"s4f.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.709Z","runId":"run-2026-07-06T1841-92d508","node":"s4f.beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.719Z","runId":"run-2026-07-06T1841-92d508","node":"s4a.beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.732Z","runId":"run-2026-07-06T1841-92d508","node":"s4a.beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.740Z","runId":"run-2026-07-06T1841-92d508","node":"s4a.beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.749Z","runId":"run-2026-07-06T1841-92d508","node":"s4a.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.756Z","runId":"run-2026-07-06T1841-92d508","node":"s4a.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.763Z","runId":"run-2026-07-06T1841-92d508","node":"s4a.beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.768Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.772Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.776Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.sec-beat-03","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.784Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.sec-beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.788Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.sec-beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.795Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.sec-beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T18:41:15.799Z","runId":"run-2026-07-06T1841-92d508","node":"s4b.dot-alignment","event":"node_started","data":{"reason":"gate-failed"}}
+{"ts":"2026-07-06T18:41:15.802Z","runId":"webslice-2026-07-06T1841-5e09e1","node":"s4b.dot-alignment","event":"node_started","data":{"interactive":"dot-alignment","session":"dotprod","maxIter":5}}
+{"ts":"2026-07-06T18:41:15.804Z","runId":"webslice-2026-07-06T1841-5e09e1","node":"s4b.dot-alignment","event":"decision","data":{"kind":"verify-first","reason":"component exists on disk; verifying as-is before any coder call"}}
+{"ts":"2026-07-06T18:42:20.948Z","runId":"webslice-2026-07-06T1841-5e09e1","node":"s4b.dot-alignment","agent":"weba11y","event":"critique_iteration","data":{"iter":0,"issues":1,"checkIds":["web.pointer-drag"]},"verdictRef":"state/dailies/webslice-2026-07-06T1841-5e09e1/iter-0"}
