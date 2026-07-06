@@ -4,11 +4,11 @@
   "inputs": [
     {
       "path": "manifest.yaml",
-      "sha256": "d289d28018122d90488714748fdbb23233e1bb969605d6e09293b34e28095285"
+      "sha256": "7892bc247afdf5c300a4865baae7f1acb24abda6ec881b43c40bcaafc0d5b7d0"
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "d25bd1b5f7da75ff2a324718875474383a3336f1681e45aac627aeb5123dd626"
+      "sha256": "74d58b5353c5c1c07ac95a2f34f52dbd714e87acd73d72b17649b1b53b1c58e3"
     },
     {
       "path": "brief.md",
@@ -22,11 +22,11 @@
     },
     {
       "path": "rounds/round-05/notes.md",
-      "sha256": "15f2cdc89f1d5de70eeb6659c1ce223470ad110a6273ed79691265dbaf1de284"
+      "sha256": "1020eaf4a9fd0a93c8d42bebb51e1eca4394f3d4426031bbe805c33b22fa738a"
     },
     {
       "path": "rounds/round-05/flags.md",
-      "sha256": "6a8a94c2b3519fe7483e130f4daff5bb1bb28399c3e6481bd7a82c51da8fac1b"
+      "sha256": "ced8fe9425549cd6b06eeb1c1d1ed082089e8e5074c25c1dbf85040ca1da7651"
     }
   ],
   "gate": {
@@ -49,8 +49,8 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T15:14:59.273Z",
-  "endedAt": "2026-07-05T15:15:01.091Z",
+  "startedAt": "2026-07-06T01:06:18.542Z",
+  "endedAt": "2026-07-06T01:06:20.622Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
@@ -60,11 +60,13 @@
       "@video/beat-03",
       "@video/beat-04",
       "@video/beat-04b",
+      "@video/beat-05",
       "@page/beat-01",
       "@page/beat-02",
       "@page/beat-03",
       "@page/beat-04",
       "@page/beat-04b",
+      "@page/beat-05",
       "@ix/dot-alignment",
       "@doc",
       "@ext",
