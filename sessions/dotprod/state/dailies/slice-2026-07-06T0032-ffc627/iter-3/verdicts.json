@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one load-bearing element: the aside panel in frame 3, the 0.82 readout with blank columns in frame 4, and the 'For the walk home' card in frames 5-6, with the replayed chain kept as a dimmed persistent anchor above.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No more than four novel elements appear at once; the chain is established context and each frame adds one new grouping (columns, readout, or closing prompt).",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "'you' and 'the posting' labels sit directly atop their column pairs and 'song'/'taste' sit beside their icons; no boxed legend or color key appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'For the walk home' card and 'Two matching lists of your own' text annotate the visible blank columns and chain rather than replacing a visual with standalone prose.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All text including the two-line walk-home question, 'score', and column headers renders well above the ~2.2% frame-height threshold and is readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The chain, aside panel, columns, dial, and closing card all sit fully inside the frame with margins on every edge.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "No text or label overlaps another; the aside panel in frame 3 sits below the dimmed chain without collision.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Token semantics hold consistently: periwinkle input arrows, lilac score bar and 0.82 readout, and a rose crack on the dial, with no concept switching color across frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element—chain stills, columns, dial, readout, and prompt—carries propositional content; no mascots or ornaments appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frames deliver the intent: the replayed chain, the 'you'/'the posting' aside multiplying into a lilac readout on the dial, blank columns for the learner, and the walk-home closing card with a chip below.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The multiply symbols sit between the two column groups and the readout sits beside the dial it feeds, keeping claims adjacent to their objects.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across the sequence the chain replays, the aside slides in and out, and the closing card lands in reasoning order rather than materializing whole.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The compositions keep margins and a clear top-to-bottom reading order from chain to columns to closing prompt.",
+    "suggestion": ""
+  }
+]

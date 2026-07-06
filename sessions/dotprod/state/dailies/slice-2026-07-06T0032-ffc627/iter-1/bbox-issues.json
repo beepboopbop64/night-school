@@ -1,0 +1,10 @@
+[
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 36,
+    "mobjects": [
+      "m36"
+    ],
+    "message": "Triangle m36 is 77% out of frame (max 15%)"
+  }
+]

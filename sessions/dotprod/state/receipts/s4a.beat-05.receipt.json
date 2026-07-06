@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "node": "s4a.beat-05",
+  "inputs": [
+    {
+      "path": "storyboard.yaml#beat-05",
+      "sha256": "38a068481d927413689956406b6547e11b76858e257cf259dff546cb1746cd65"
+    },
+    {
+      "path": "script.md#beat-05",
+      "sha256": "ae5784affafe8bbcb91f4b357ee1d5212803b22027ba00374f5926c5bdb634cf"
+    },
+    {
+      "path": "video/audio/beat-05.mp3",
+      "sha256": "82b8b1479e969f62e6042581b94d6ecc63baab4715352f88994cbfd5e30b727e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "video/beats/beat-05.yaml",
+      "sha256": "ed1b18ca0a08aeece82798bcec9119e0b7ce1ff9678e805a4930858ce7ad5792"
+    },
+    {
+      "path": "video/scenes/scene_beat_05.py",
+      "sha256": "e22e594ddee39118a567921dba32dda50e9dd11116547d9c40688e04cb913c87"
+    },
+    {
+      "path": "media/beat-05.mp4",
+      "sha256": "e69aae92dbbb77827f5870e285d4cbc8ed25a0926a00d5885626960f7fa901de"
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "bbox.clean",
+        "pass": true
+      },
+      {
+        "id": "iris.pass",
+        "pass": true,
+        "iter": 3
+      },
+      {
+        "id": "scene.duration-within-tolerance",
+        "pass": true
+      }
+    ]
+  },
+  "iterations": 3,
+  "costUsd": 2.5562686,
+  "tier": "opus",
+  "startedAt": "2026-07-06T00:32:21.512Z",
+  "endedAt": "2026-07-06T00:50:48.821Z",
+  "transcript": "state/dailies/slice-2026-07-06T0032-ffc627",
+  "promptSha": "",
+  "meta": {
+    "videoSeconds": 42.999678,
+    "audioSeconds": 43.12,
+    "toleranceSeconds": 4.31,
+    "perIteration": [
+      {
+        "iter": 1,
+        "outcome": "bbox-failed",
+        "coderCostUsd": 1.2783903,
+        "irisCostUsd": 0,
+        "wallMs": 640126,
+        "fingerprints": [
+          "bbox:bbox.out-of-frame:Triangle:"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 2,
+        "outcome": "bbox-failed",
+        "coderCostUsd": 0.47349150000000007,
+        "irisCostUsd": 0,
+        "wallMs": 194687,
+        "fingerprints": [
+          "bbox:bbox.out-of-frame:VMobject:",
+          "bbox:bbox.out-of-frame:Text:song",
+          "bbox:bbox.out-of-frame:Arrow:",
+          "bbox:bbox.out-of-frame:Rectangle:",
+          "bbox:bbox.out-of-frame:Circle:",
+          "bbox:bbox.out-of-frame:Line:",
+          "bbox:bbox.out-of-frame:VMobject:"
+        ],
+        "replanWasForced": false
+      },
+      {
+        "iter": 3,
+        "outcome": "iris-passed",
+        "coderCostUsd": 0.5681823,
+        "irisCostUsd": 0.23620449999999998,
+        "wallMs": 272153,
+        "fingerprints": [],
+        "replanWasForced": false
+      }
+    ]
+  }
+}

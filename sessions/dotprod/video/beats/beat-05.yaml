@@ -1,0 +1,36 @@
+# DERIVED by the s4a.beat-05 node from storyboard.yaml#beat-05; do not edit.
+schemaVersion: 1
+session: dotprod
+beat:
+  id: beat-05
+  title: Take it with you
+  narration: >-
+    Take it with you. A song and a taste, folded into arrows, collapsed by
+    multiply-and-add into one score: a meter with a crack in it.
+
+
+    One more aisle, to make sure it lands: score yourself against a job posting.
+    Same multiply-and-add, one number for the fit.
+
+
+    Now invent your own pair. Anything you can describe as two matching lists,
+    the meter can score. For the walk home: what is the cheapest fix that keeps
+    the direction and forgets the size? Still up? The menu below has three ways
+    to keep going.
+  visual: "[visual: connect | connect-to-reality] The chain replays as a strip of
+    four small stills drawing left to right in reasoning order: the two stacked
+    tangles from the hook, the arrows they folded into, the multiply-and-add
+    pooling into one score bar, and the meter dial with its hairline rose crack.
+    Then a clearly framed aside panel slides in: two short columns labeled 'you'
+    and 'the posting', matched entries multiplying and pooling into one lilac
+    fit readout on the same dial. The aside panel slides out and leaves a pair
+    of blank columns under the invitation to invent your own pair; the walk-home
+    question lands as the closing card under the 'For the walk home' header, and
+    a quiet chip points to the extensions menu below."
+  colors:
+    asideColumns: data.observed
+    score: data.params
+    crack: data.error
+    background: bg
+    labels: text
+  durationTargetSeconds: 43.1

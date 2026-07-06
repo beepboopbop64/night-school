@@ -1,0 +1,58 @@
+[
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m0"
+    ],
+    "message": "VMobject m0 is 62% out of frame (max 15%)"
+  },
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m2"
+    ],
+    "message": "Text \"song\" is 65% out of frame (max 15%)"
+  },
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m5"
+    ],
+    "message": "Arrow m5 is 50% out of frame (max 15%)"
+  },
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m9"
+    ],
+    "message": "Rectangle m9 is 28% out of frame (max 15%)"
+  },
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m12"
+    ],
+    "message": "Circle m12 is 27% out of frame (max 15%)"
+  },
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m13"
+    ],
+    "message": "Line m13 is 44% out of frame (max 15%)"
+  },
+  {
+    "checkId": "bbox.out-of-frame",
+    "keyframe": 30,
+    "mobjects": [
+      "m14"
+    ],
+    "message": "VMobject m14 is 50% out of frame (max 15%)"
+  }
+]
