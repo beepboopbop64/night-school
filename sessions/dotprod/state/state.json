@@ -108,9 +108,9 @@
       "receipt": "state/receipts/s5.assemble.receipt.json"
     },
     "s6.screening": {
-      "status": "flagged",
-      "iter": 1,
-      "costUsd": 0.7916129999999999,
+      "status": "passed",
+      "iter": 2,
+      "costUsd": 1.4898086000000001,
       "receipt": "state/receipts/s6.screening.receipt.json"
     },
     "s7.packet": {
@@ -153,11 +153,5 @@
       "status": "passed"
     }
   },
-  "needsJake": [
-    {
-      "node": "s6.screening",
-      "reason": "gate failed: screening.vera-opus, screening.rounds-within-cap",
-      "since": "2026-07-05T15:14:59.271Z"
-    }
-  ]
+  "needsJake": []
 }
