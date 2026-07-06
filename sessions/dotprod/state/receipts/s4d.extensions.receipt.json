@@ -12,13 +12,13 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "74d58b5353c5c1c07ac95a2f34f52dbd714e87acd73d72b17649b1b53b1c58e3"
+      "sha256": "76855cdf74173f00c2f3cfa49b1f7bd346f8b812ee3751b1d39e9dae4d91b336"
     }
   ],
   "outputs": [
     {
       "path": "extensions.yaml",
-      "sha256": "fa44e3890d5a5e7d50bd4d2eff8eaae77510dc0cfaf42a9abb72e5e3f819a3d5"
+      "sha256": "87f04bb25c68253ce16bed25a14194a9d06952ec174ac2adc2961b97aa17f203"
     }
   ],
   "gate": {
@@ -43,10 +43,10 @@
     ]
   },
   "iterations": 1,
-  "costUsd": 0.3685914,
+  "costUsd": 0.411501,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T23:49:35.061Z",
-  "endedAt": "2026-07-05T23:51:40.487Z",
+  "startedAt": "2026-07-06T04:22:21.098Z",
+  "endedAt": "2026-07-06T04:25:11.395Z",
   "transcript": "",
   "promptSha": "",
   "meta": {

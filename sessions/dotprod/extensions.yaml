@@ -3,93 +3,93 @@ session: dotprod
 lanes:
   llm:
     - prompt: >-
-        Tonight's meter is two arrows in, one number out, and you watched a
-        candidate win purely by getting longer, not more aligned. Before
-        you ask for help, propose your own cheapest fix: one change you'd
-        make to how the candidate lists are compared so that stretching a
-        candidate's length can never shout over a better-aligned one. Hand
-        your fix to an LLM and ask it to stress-test it: what happens under
-        your fix if a candidate doubles in length, and what happens if two
-        candidates point in exactly the same direction but different
-        lengths?
+        Tonight's meter (the score behind the song, multiply the matching
+        entries and add the products) has a cheat: stretch a candidate's
+        arrow and its raw score climbs even if the direction is worse.
+        Propose your own cheapest fix that would stop the stretch from
+        working without throwing away the direction, then hand it to an LLM
+        and have it try to break your fix with a specific pair of arrows.
       whatGoodLooksLike: >-
-        A good conversation pressure-tests your fix with concrete numbers
-        rather than taking your word for it, and it should surface whether
-        your fix actually stops length from moving the ranking or just
-        hides the cheat somewhere else in the arithmetic.
+        A good answer produces a concrete pair of arrows, one stretched,
+        and shows whether your fix's score still ranks them the same way
+        as before, not just a restatement of why stretching worked.
     - prompt: >-
-        Tonight's honest look proved that while every candidate held the
-        same length, the score's sign alone told you aligned, perpendicular,
-        or opposed. Argue with an LLM about how much of that guarantee
-        survives once candidates are allowed to differ in length again: is
-        the sign still trustworthy the moment lengths diverge, or does your
-        fix from the first prompt have to be in place before the sign means
-        anything?
+        Tonight's honest look showed that while every candidate held the
+        same length, the score's sign, positive, zero, negative, told you
+        everything about alignment between the probe and a song like Night
+        Drive or Static. Argue with an LLM about whether "similarity meter"
+        is a fair name for the raw multiply-and-add score once lengths are
+        allowed to differ. See if it can talk you out of your position with
+        a concrete counterexample pair of arrows.
       whatGoodLooksLike: >-
-        A good answer separates what the sign tells you from what the raw
-        size of the score tells you, and lands on a clear yes-or-no about
-        whether sign alone survives unequal lengths, with a reason.
+        A good exchange ends with an actual pair of arrows, not just a
+        concession, where the raw score's ranking would mislead someone
+        trusting it as an honest meter.
     - prompt: >-
-        In the session's close, the probe list and candidate lists moved
-        from songs to a job posting and the score kept working the same
-        way. Pick a third aisle from your own life, anything you compare
-        using a handful of features, and ask an LLM to help you write out
-        what the probe list and candidate lists would look like there,
-        and what a high, zero, and negative score would each mean in that
-        setting.
+        In "Same meter, different aisle," the session asked you to fill in
+        the mapping: "In the job aisle, which list plays the probe?" Pick
+        your own second aisle, recipes, sports stats, anything with
+        matching feature lists, answer that same fill-in for your aisle,
+        and defend to an LLM that the multiply-and-add recipe from "the
+        score behind the song" still applies unchanged. Make it try to find
+        a feature list where the mapping breaks.
       whatGoodLooksLike: >-
-        A good answer keeps the sign readings straight in your new aisle:
-        positive still means aligned, zero still means unrelated, negative
-        still means opposed, just translated into words that fit whatever
-        you picked.
+        A solid answer names the exact probe list and candidate list in
+        your new aisle and shows the multiply-and-add recipe producing a
+        sensible score, not just a general claim that the analogy
+        transfers.
   papers:
-    - title: Attention Is All You Need
-      url: https://arxiv.org/abs/1706.03762
+    - title: Dot products and duality
+      url: https://www.3blue1brown.com/lessons/dot-products
       hook: >-
-        Next session's machine: you'll see tonight's meter in its work
-        uniform, a dot product divided by sqrt(d_k) (the square root of the
-        key dimension, a size correction) then softmaxed (squashed into
-        weights that sum to one), scoring every word in a sentence against
-        every other word. Read section 3.2.1 tonight if you want the
-        preview before the next session opens with it.
+        Tonight's honest look gave you the sign story, aligned positive,
+        perpendicular zero, opposed negative, but only while every arrow
+        held the same length. This walkthrough gives you the geometric half
+        underneath it, the dot product as one arrow's shadow length along
+        another times that other arrow's own length, which is exactly the
+        piece that let stretching cheat the meter.
     - title: >-
         Neural Machine Translation by Jointly Learning to Align and
         Translate
       url: https://arxiv.org/abs/1409.0473
       hook: >-
-        Before the dot product got the job of scoring alignment, a small
-        trained network did it by hand, one learned function per
-        comparison. Read this to see the score you built tonight replacing
-        that learned function with a much cheaper piece of arithmetic.
-    - title: Dot products and duality
-      url: https://www.3blue1brown.com/lessons/dot-products
+        Tonight's meter used one fixed recipe, multiply the matching
+        entries and add the products, to score two lists against each
+        other. This paper scores alignment a different way, with a small
+        trained function standing in for the fixed formula. Read it to see
+        the fork in the road the fixed multiply-and-add recipe eventually
+        won.
+    - title: Attention Is All You Need
+      url: https://arxiv.org/abs/1706.03762
       hook: >-
-        The sweep you turned by hand tonight, projection times length,
-        sign flipping as the probe crosses perpendicular, gets its full
-        moving picture here. Watch it if you want the geometry behind the
-        honest look you just took.
+        A peek at next session: you will meet tonight's meter in its work
+        uniform, scaled dot-product attention. It is the same
+        multiply-and-add score, shrunk by dividing by the square root of
+        the arrow length, sqrt(d_k), a fixed shrinking number, then run
+        through softmax, a squash that turns raw scores into weights
+        summing to one, so every word can score every other word at once.
   projects:
-    - title: Stress-test the length cheat
+    - title: Rebuild the arena in code
       brief: >-
-        Rebuild tonight's probe-and-candidates setup in NumPy: one probe
-        vector and three candidate vectors, each just a short list of
-        floats. Write a plain_score(probe, candidate) function that
-        returns the raw dot product, and confirm you can reproduce the
-        length cheat by stretching one candidate until it overtakes a
-        better-aligned rival. Then write your own fixed_score function
-        that applies the cheapest fix you can think of, and prove in code
-        that stretching a candidate's length no longer changes who wins.
-        Finish line: a printed table of raw vs. fixed scores across at
-        least three length settings, showing the ranking holding steady
-        under your fix while it still visibly flips under the raw score.
-    - title: Score your own aisle
+        Rebuild tonight's dot-alignment arena in NumPy. Give your amber
+        probe (taste) a short list of numbers, and give Night Drive, Glass
+        Rain, Slow Burn, and Static their own lists. Write the
+        multiply-and-add score for the probe against all four, sweep the
+        probe through a full rotation in fixed steps, and print the score
+        at each angle. Confirm the honest look's sign story (positive when
+        aligned, zero at ninety degrees, negative when opposed) holds while
+        every candidate keeps the same length. Then stretch Night Drive's
+        list alone and find the exact length where it overtakes whichever
+        candidate led before. Finish line: a print or plot showing the
+        ranking flip, labeled with the length that caused it.
+    - title: Score a different aisle
       brief: >-
-        Pick ten short things you actually care about comparing, songs,
-        job posts, anything you can turn into a handful of numeric
-        features, and hand-build feature vectors for a probe and every
-        candidate. Compute the plain dot-product score for each candidate,
-        print them ranked high to low, and read down the list against your
-        own gut feeling. Finish line: a ranked printout plus one sentence
-        naming a spot where the raw score's blindness to length pushed a
-        candidate higher than your gut says it deserved, the same blind
-        spot the amber probe showed you tonight.
+        Take the different aisle from tonight's session, resumes against a
+        job posting, and build a tiny matching demo. Invent three or four
+        short resumes and one job posting, each turned by hand into a small
+        list of numbers (years of experience, count of a key skill word,
+        whatever you pick). Score every resume against the job with the
+        same multiply-and-add recipe from "the score behind the song," and
+        rank the resumes by raw score. Finish line: a printed ranking, plus
+        one sentence saying whether you would trust that ranking if one
+        resume's numbers were simply bigger across the board.
