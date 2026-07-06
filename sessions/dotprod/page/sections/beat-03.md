@@ -4,9 +4,7 @@ Pull back from the sweep and look at what your hands actually learned to do. Poi
 
 One multiply-and-add, run once, and it already reads like a meter: agree on one side, ignore in the middle, oppose on the other. While every arrow held the same length, direction was all the sum ever responded to.
 
-So say it plainly. In the numbers underneath the bars, a is the probe's list, b is the candidate's. Multiply the matching entries, add up the products, and one number comes back.
-
-The dot product is a similarity meter.
+So say it plainly. In the numbers underneath the bars, a is the probe's list, b is the candidate's. Multiply the matching entries, add up the products, and one number comes back. The dot product is a similarity meter.
 
 Written the way you will meet it everywhere else: a · b = a₁b₁ + a₂b₂ + … and so on down the entries. For the taste and song from the worked example, (2, 1) · (1, 3) = 2×1 + 1×3 = 5. Same recipe you already ran by hand, now wearing its symbol.
 

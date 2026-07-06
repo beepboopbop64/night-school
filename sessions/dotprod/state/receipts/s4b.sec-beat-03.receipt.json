@@ -4,13 +4,13 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-03",
-      "sha256": "0ca0457503ee196cdea6ecf378f55e06da090d5e7c7fb1d386b74e4afb76af6e"
+      "sha256": "1341bdf80dcd1f9a4b3f12fac82f8828ed4b62a598d2aaa27a6e3533e22d4e35"
     }
   ],
   "outputs": [
     {
       "path": "page/sections/beat-03.md",
-      "sha256": "1535b52444e3b0f6ee8ffd9f1f489f69e861fe46589169952c2c907d4254d2a2"
+      "sha256": "3fa35e473d0783dfeee7051fc51fec67e0c1c60484d7b932a0d2999d74e6fcef"
     }
   ],
   "gate": {
@@ -31,14 +31,18 @@
       {
         "id": "section.aha-verbatim",
         "pass": true
+      },
+      {
+        "id": "section.no-wrapper-tags",
+        "pass": true
       }
     ]
   },
   "iterations": 0,
-  "costUsd": 0.09327210000000001,
+  "costUsd": 0.1404711,
   "tier": "sonnet",
-  "startedAt": "2026-07-05T09:29:34.026Z",
-  "endedAt": "2026-07-05T09:30:08.538Z",
+  "startedAt": "2026-07-06T03:52:00.994Z",
+  "endedAt": "2026-07-06T03:52:45.539Z",
   "transcript": "",
   "promptSha": "",
   "meta": {

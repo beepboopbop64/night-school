@@ -1091,3 +1091,13 @@
 {"ts":"2026-07-06T03:51:59.873Z","runId":"slice-2026-07-06T0340-fb4fa6","node":"s4a.beat-03","event":"node_completed","data":{"passed":true,"iterations":1,"costUsd":1.5500354,"wallMs":681532}}
 {"ts":"2026-07-06T03:52:00.043Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4a.beat-03","event":"gate_result","data":{"passed":true,"checks":[{"id":"bbox.clean","pass":true},{"id":"iris.pass","pass":true,"iter":1},{"id":"scene.duration-within-tolerance","pass":true}]}}
 {"ts":"2026-07-06T03:52:00.044Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4a.beat-03","event":"node_completed","data":{"costUsd":1.5500354,"durationMs":681766}}
+{"ts":"2026-07-06T03:52:00.871Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4a.beat-03","event":"commit","data":{"sha":"9ed2d7eb4e39ccb9d32ccfdf1a639e5074e05f3f"}}
+{"ts":"2026-07-06T03:52:00.892Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4a.beat-04","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T03:52:00.920Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4a.beat-04b","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T03:52:00.941Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4a.beat-05","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T03:52:00.961Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4b.sec-beat-01","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T03:52:00.983Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4b.sec-beat-02","event":"node_skipped","data":{"reason":"clean"}}
+{"ts":"2026-07-06T03:52:01.001Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4b.sec-beat-03","event":"node_started","data":{"reason":"input-changed:storyboard.yaml#beat-03"}}
+{"ts":"2026-07-06T03:52:45.537Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4b.sec-beat-03","agent":"section-writer","event":"agent_call","data":{"attempt":1,"costUsd":0.1404711,"summary":"DONE What did that sweep actually teach you?"}}
+{"ts":"2026-07-06T03:52:45.544Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4b.sec-beat-03","event":"gate_result","data":{"passed":true,"checks":[{"id":"section.nonempty","pass":true},{"id":"section.heading","pass":true},{"id":"section.dash-lint","pass":true},{"id":"section.aha-verbatim","pass":true},{"id":"section.no-wrapper-tags","pass":true}]}}
+{"ts":"2026-07-06T03:52:45.545Z","runId":"run-2026-07-06T0340-c4c4ed","node":"s4b.sec-beat-03","event":"node_completed","data":{"costUsd":0.1404711,"durationMs":44545}}
