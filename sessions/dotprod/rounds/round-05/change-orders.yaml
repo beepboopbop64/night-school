@@ -1,0 +1,232 @@
+# Change orders — THE literal, editable execution input (§7.3).
+# Edit this YAML, then `harness round <session> --execute`: the file IS the plan.
+schemaVersion: 1
+session: dotprod
+round: round-05
+policy:
+  totalEstimateUsd: 15.04
+  capUsd: 25
+  autoExecute: true
+  pauseReasons: []
+orders:
+  - id: r05-n01
+    noteId: n01
+    note: "Jake's core complaint this round: the lesson keeps tiptoeing around the actual math. The page
+      now runs the worked calculation and states the formal line; the video must match. Add to this
+      beat's narration, right after the aha sentence lands: \"In symbols, a dot b: multiply the
+      matching entries, add the products. The taste and song from the worked chip, two and one dot
+      one and three, come out to five. Same recipe, now wearing its symbol.\" And in the visual, the
+      a . b annotation must true up NEXT TO the worked chip's numerals so the symbol is anchored to
+      numbers the viewer already computed (this is also Petra's standing R11 advisory from the
+      table-read). Keep the aha sentence and everything else untouched."
+    kind: change-order
+    targets:
+      - script#beat-03
+      - storyboard#beat-03
+      - video/beat-03
+    changeType: voice+visual+content
+    interpretation: "In beat-03, add to the narration right after the aha sentence the lines 'In
+      symbols, a dot b: multiply the matching entries, add the products. The taste and song from the
+      worked chip, two and one dot one and three, come out to five. Same recipe, now wearing its
+      symbol.'; and in the storyboard/scene, true up the a·b annotation NEXT TO the worked chip's
+      numerals. Keep the aha sentence and everything else untouched."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4f.beat-03
+      - s4a.beat-03
+      - s4b.sec-beat-03
+      - s4c.doc
+      - s4d.extensions
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 7.68
+    miss:
+      critic: petra
+      ruleId: R11
+      artifact: video/scenes/scene_03.py
+  - id: r05-n02
+    noteId: n02
+    note: "Already applied by the judge, record as ruling: the semicolon splice in \"Try answering it
+      first; it's genuinely harder\" was split into two sentences."
+    kind: change-order
+    targets:
+      - page/beat-01
+    changeType: content
+    interpretation: "Already applied by the judge; record as ruling: the semicolon splice in 'Try
+      answering it first; it's genuinely harder' was split into two sentences."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/sections/beat-01.md
+  - id: r05-n03
+    noteId: n03
+    note: "Already applied by the judge, record as rulings: (1) the section now runs the full worked
+      calculation with real numbers before the prediction (taste (2, 1), song (1, 3), 2×1 + 1×3 = 5,
+      \"run it once by hand\"), and the prediction references the recipe (\"Can the multiply-and-add
+      ever push a bar below zero?\") instead of bars the reader has not met; (2) the interactive's
+      objects are introduced by their story names (amber probe is your taste; the four songs are
+      Night Drive, Glass Rain, Slow Burn, Static); (3) the stretch paragraph names Night Drive and
+      its round handle, and the splice \"changed; it never\" was split."
+    kind: change-order
+    targets:
+      - page/beat-02
+    changeType: content+structure
+    interpretation: "Already applied by the judge; record as rulings on beat-02's page section: (1) the
+      full worked calculation with real numbers (taste (2,1), song (1,3), 2×1+1×3=5, 'run it once by
+      hand') now runs before the prediction, and the prediction references the recipe ('Can the
+      multiply-and-add ever push a bar below zero?') not un-met bars; (2) the interactive's objects
+      are introduced by story names (amber probe = your taste; songs Night Drive, Glass Rain, Slow
+      Burn, Static); (3) the stretch paragraph names Night Drive and its round handle, and the
+      'changed; it never' splice was split."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: petra
+      artifact: page/sections/beat-02.md
+  - id: r05-n04
+    noteId: n04
+    note: "Already applied by the judge, record as ruling: the naming beat now states the formal
+      definition, a · b = a₁b₁ + a₂b₂ + …, re-run on the same worked example (2, 1) · (1, 3) = 5,
+      placed after the aha sentence. The symbol arrives carrying the calculation."
+    kind: change-order
+    targets:
+      - page/beat-03
+    changeType: content
+    interpretation: "Already applied by the judge; record as ruling: beat-03's page section now states
+      the formal definition a · b = a₁b₁ + a₂b₂ + …, re-run on the worked example (2,1)·(1,3)=5,
+      placed after the aha sentence so the symbol arrives carrying the calculation."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: petra
+      ruleId: R11
+      artifact: page/sections/beat-03.md
+  - id: r05-n05
+    noteId: n05
+    note: "Already applied by the judge, record as ruling: every \"c1\" became \"Night Drive\" so the
+      prose names match the widget (the tracer's T2 catch). Same fix applied in the doc's
+      honest-look section."
+    kind: change-order
+    targets:
+      - page/beat-04b
+      - doc
+    changeType: content
+    interpretation: "Already applied by the judge; record as ruling: every 'c1' became 'Night Drive' in
+      beat-04b's page section (and the doc's honest-look section) so the prose names match the
+      widget."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4e.notebook
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 0.8
+    miss:
+      critic: vera
+      artifact: page/sections/beat-04b.md
+  - id: r05-n06
+    noteId: n06
+    note: "Already applied by the judge, record as ruling: the meter cards moved below the arena so the
+      arena renders at full card width (620px); the arrows must stay clearly legible at every
+      viewport."
+    kind: change-order
+    targets:
+      - ix/dot-alignment
+    changeType: visual+structure
+    interpretation: "Already applied by the judge; record as ruling: the meter cards moved below the
+      arena so it renders at full card width (620px); the arrows must stay clearly legible at every
+      viewport."
+    confidence: high
+    spineTouch: false
+    blastRadius:
+      - s4b.dot-alignment
+      - s5.assemble
+      - s6.screening
+      - s7.packet
+    costEstimateUsd: 4.16
+    miss:
+      critic: iris
+      artifact: ix/dot-alignment/widget.tsx
+  - id: r05-n07
+    noteId: n07
+    note: '#style: before any prediction that depends on a computation, the surface states the full
+      worked calculation with real numbers the learner can check by hand. Abstract recipes
+      ("multiply entry by entry") never carry a prediction alone.'
+    kind: style-amendment
+    targets: []
+    interpretation: "Taste rule for the show bible: worked calculations must precede any
+      computation-dependent prediction; no session fix demanded here."
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: ""
+    styleAmendment:
+      rule: Before any prediction that depends on a computation, state the full worked calculation with
+        real numbers the learner can check by hand; never let an abstract recipe carry a prediction
+        alone.
+      rationale: A prediction the learner cannot verify by hand tests faith, not understanding; the worked
+        numbers give the prediction something concrete to be right or wrong about.
+  - id: r05-n08
+    noteId: n08
+    note: "#style: every named object keeps ONE name across every surface: page, doc, video, and widget
+      agree (Night Drive, never c1). A reader who meets two names for one thing assumes two things."
+    kind: style-amendment
+    targets: []
+    interpretation: "Taste rule for the show bible: one name per named object across every surface; no
+      session fix demanded here."
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: ""
+    styleAmendment:
+      rule: Give every named object exactly one name across every surface — page, doc, video, and widget
+        must agree (e.g. Night Drive, never c1).
+      rationale: A reader who meets two names for one thing assumes two things, fracturing the single
+        walked example the session depends on.
+  - id: r05-n09
+    noteId: n09
+    note: "#style: the formal symbol is always anchored to the worked numbers the learner already
+      computed, on every surface where the symbol appears; a symbol floating without its numbers
+      reads as decoration."
+    kind: style-amendment
+    targets: []
+    interpretation: "Taste rule for the show bible: formal symbols must be anchored to already-computed
+      worked numbers on every surface; no session fix demanded here."
+    confidence: high
+    spineTouch: false
+    blastRadius: []
+    costEstimateUsd: 0
+    miss:
+      critic: none
+      artifact: ""
+    styleAmendment:
+      rule: Anchor every formal symbol to the worked numbers the learner already computed, on every
+        surface where the symbol appears.
+      rationale: A symbol introduced without its numbers reads as decoration; tying it to a calculation
+        the learner just did makes the notation feel earned rather than imposed.

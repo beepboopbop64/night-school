@@ -1064,3 +1064,5 @@
 {"ts":"2026-07-06T01:06:20.630Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.serves-locally","pass":true},{"id":"packet.notes-preseeded","pass":true},{"id":"packet.flags-written","pass":true}]}}
 {"ts":"2026-07-06T01:06:20.631Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"node_completed","data":{"costUsd":0,"durationMs":2080}}
 {"ts":"2026-07-06T01:06:20.976Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"commit","data":{"sha":"1d88aefa93ebf86f883338db8b88b46283615458"}}
+{"ts":"2026-07-06T03:31:20.081Z","runId":"round-2026-07-06T0331-ca7ef3","node":"s8.round-05","event":"node_started","data":{"notes":9}}
+{"ts":"2026-07-06T03:33:02.870Z","runId":"round-2026-07-06T0331-ca7ef3","node":"s8.round-05","agent":"triage","event":"agent_call","data":{"costUsd":0.32030000000000003,"rows":9}}

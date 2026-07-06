@@ -19,3 +19,9 @@
 {"ts":"2026-07-05T08:45:29.388Z","session":"dotprod","round":"round-04","noteId":"n09","orderId":"r04-n09","critic":"petra","artifact":"ix/dot-alignment.py"}
 {"ts":"2026-07-05T08:45:29.388Z","session":"dotprod","round":"round-04","noteId":"n10","orderId":"r04-n10","critic":"vera","artifact":"doc.md"}
 {"ts":"2026-07-05T08:45:29.388Z","session":"dotprod","round":"round-04","noteId":"n11","orderId":"r04-n11","critic":"vera","artifact":"ext.md"}
+{"ts":"2026-07-06T03:33:02.907Z","session":"dotprod","round":"round-05","noteId":"n01","orderId":"r05-n01","critic":"petra","ruleId":"R11","artifact":"video/scenes/scene_03.py"}
+{"ts":"2026-07-06T03:33:02.907Z","session":"dotprod","round":"round-05","noteId":"n02","orderId":"r05-n02","critic":"vera","artifact":"page/sections/beat-01.md"}
+{"ts":"2026-07-06T03:33:02.907Z","session":"dotprod","round":"round-05","noteId":"n03","orderId":"r05-n03","critic":"petra","artifact":"page/sections/beat-02.md"}
+{"ts":"2026-07-06T03:33:02.907Z","session":"dotprod","round":"round-05","noteId":"n04","orderId":"r05-n04","critic":"petra","ruleId":"R11","artifact":"page/sections/beat-03.md"}
+{"ts":"2026-07-06T03:33:02.907Z","session":"dotprod","round":"round-05","noteId":"n05","orderId":"r05-n05","critic":"vera","artifact":"page/sections/beat-04b.md"}
+{"ts":"2026-07-06T03:33:02.907Z","session":"dotprod","round":"round-05","noteId":"n06","orderId":"r05-n06","critic":"iris","artifact":"ix/dot-alignment/widget.tsx"}
