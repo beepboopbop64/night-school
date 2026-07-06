@@ -1,213 +1,321 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.816
-Your music app just played you a song you love, by a band you have never heard of.
+00:00:00.000 --> 00:00:06.283
+Say your music app plays you a song you love, by a band you have never heard of.
 
 2
-00:00:05.816 --> 00:00:10.214
-Somewhere in a data center, two lists of numbers got compared,
+00:00:06.283 --> 00:00:13.036
+Two descriptions get compared in a data center and the verdict comes back: same taste.
 
 3
-00:00:10.214 --> 00:00:12.767
-and the comparison said: same taste.
+00:00:13.036 --> 00:00:16.256
+But weigh what that comparison has to do.
 
 4
-00:00:12.767 --> 00:00:15.392
-So here is the question of the night.
+00:00:16.256 --> 00:00:18.219
+A song is not one number.
 
 5
-00:00:15.392 --> 00:00:19.222
-How do you score a match between two lists of numbers?
+00:00:18.219 --> 00:00:25.287
+It is loud, fast, sad, bright, many qualities at once, and your taste is that same tangle.
 
 6
-00:00:19.222 --> 00:00:20.570
-Hold that question.
+00:00:25.287 --> 00:00:32.198
+No single ruler works here, because the ruler that measures loud says nothing about sad.
 
 7
-00:00:20.570 --> 00:00:24.400
-One answer to it runs half of modern machine learning.
+00:00:32.198 --> 00:00:39.659
+And waiting for two tangles to agree on every quality at once is a lottery you would never win,
 
 8
-00:00:24.400 --> 00:00:25.618
-Strip it down.
+00:00:39.659 --> 00:00:45.941
+so the comparison needs a principled way to collapse many measurements into one.
 
 9
-00:00:25.618 --> 00:00:29.882
-A taste is an arrow: each direction is a quality,
+00:00:45.941 --> 00:00:47.198
+So try it first.
 
 10
-00:00:29.882 --> 00:00:34.320
-and the length is how hard the song leans that way.
+00:00:47.198 --> 00:00:53.952
+How would you boil the match between two many-featured things down to a single number?
 
 11
-00:00:34.320 --> 00:00:38.410
-Take one probe arrow and four candidate arrows.
+00:00:53.952 --> 00:00:55.679
+Harder than it sounds.
 
 12
-00:00:38.410 --> 00:00:41.630
-Multiply them entry by entry and add.
+00:00:55.679 --> 00:00:59.920
+One answer to it runs half of modern machine learning.
 
 13
-00:00:41.630 --> 00:00:44.154
-That single sum is the score.
+00:01:00.597 --> 00:01:05.934
+You just tried to score that match by hand, and it fought back.
 
 14
-00:00:44.154 --> 00:00:49.897
-Before you drag anything, call it: which candidate ends up on top,
+00:01:05.934 --> 00:01:10.254
+Add everything up and loudness wins, not agreement.
 
 15
-00:00:49.897 --> 00:00:52.594
-and does any score go negative?
+00:01:10.254 --> 00:01:14.066
+Count exact matches and nothing ever matches.
 
 16
-00:00:52.594 --> 00:00:56.510
-Now turn the probe and watch the bars answer.
+00:01:14.066 --> 00:01:16.692
+Here is the move that lands it.
 
 17
-00:00:56.510 --> 00:01:00.165
-Point at a candidate and its score climbs.
+00:01:16.692 --> 00:01:21.013
+A taste is an arrow: each direction is one quality,
 
 18
-00:01:00.165 --> 00:01:02.080
-Turn away and it dies.
+00:01:21.013 --> 00:01:25.333
+and the length is how hard the song leans that way.
 
 19
-00:01:02.080 --> 00:01:06.518
-So a big score means two songs are the same, right?
+00:01:25.333 --> 00:01:28.891
+The recipe is almost embarrassingly small.
 
 20
-00:01:06.518 --> 00:01:07.562
-Watch again.
+00:01:28.891 --> 00:01:33.042
+Multiply the two arrows entry by entry, then add.
 
 21
-00:01:07.562 --> 00:01:12.348
-The bars moved while the candidates never moved at all.
+00:01:33.042 --> 00:01:37.955
+If your taste is two and one, and a song is one and three,
 
 22
-00:01:12.348 --> 00:01:16.960
-The score reads agreement of direction, not sameness.
+00:01:37.955 --> 00:01:42.106
+that is two times one plus one times three: five.
 
 23
-00:01:17.065 --> 00:01:20.094
-Look at what your hands just learned.
+00:01:42.106 --> 00:01:45.410
+One number, the whole tangle collapsed.
 
 24
-00:01:20.094 --> 00:01:24.432
-Point the probe along a candidate and the sum climbs.
+00:01:45.410 --> 00:01:47.443
+Now meet the instrument.
 
 25
-00:01:24.432 --> 00:01:27.788
-Point it across and the sum dies to zero.
+00:01:47.443 --> 00:01:51.171
+One probe arrow, the thing doing the asking.
 
 26
-00:01:27.788 --> 00:01:31.308
-Point it against and the sum goes negative.
+00:01:51.171 --> 00:01:58.710
+Four candidates, holding still, and under each candidate a bar showing its current score.
 
 27
-00:01:31.308 --> 00:01:36.301
-One multiply and add, and it behaves like a meter with agree,
+00:01:58.710 --> 00:02:01.929
+Before anything moves, call your shot,
 
 28
-00:01:36.301 --> 00:01:38.839
-ignore, and oppose on the dial.
+00:02:01.929 --> 00:02:09.553
+and make it one the sweep can prove wrong: as the probe turns, does any score go negative?
 
 29
-00:01:38.839 --> 00:01:43.505
-So say it plainly: the dot product is a similarity meter.
+00:02:09.553 --> 00:02:15.229
+Now the sweep, and everything on screen is frozen except the probe.
 
 30
-00:01:43.505 --> 00:01:45.715
-Two lists of numbers go in.
+00:02:15.229 --> 00:02:19.888
+As the probe turns toward a candidate, that bar climbs.
 
 31
-00:01:45.715 --> 00:01:49.153
-One honest reading of alignment comes out.
+00:02:19.888 --> 00:02:22.514
+As it turns away, the bar dies.
 
 32
-00:01:49.153 --> 00:01:55.865
-And the reading tracks direction, because direction is all the sweep ever changed.
+00:02:22.514 --> 00:02:29.630
+The candidates never moved, so direction is the only thing the score can be reading.
 
 33
-00:01:55.998 --> 00:01:57.733
-Time to close the loop.
+00:02:29.630 --> 00:02:33.951
+So a big score means two songs are the same, right?
 
 34
-00:01:57.733 --> 00:02:01.354
-Rebuild the meter from memory: two arrows go in,
+00:02:33.951 --> 00:02:36.238
+Now watch what length does.
 
 35
-00:02:01.354 --> 00:02:04.975
-so what two operations turn them into the score?
+00:02:36.238 --> 00:02:42.676
+One candidate stretches longer, direction pinned, and its bar climbs anyway,
 
 36
-00:02:04.975 --> 00:02:08.068
-While you think, one detour worth naming.
+00:02:42.676 --> 00:02:47.759
+on length alone, even though its direction never got closer.
 
 37
-00:02:08.068 --> 00:02:10.558
-Swap the songs for a job posting.
+00:02:47.759 --> 00:02:52.248
+The score reads agreement of direction, not sameness,
 
 38
-00:02:10.558 --> 00:02:16.065
-Score yourself against what the role wants: multiply the matched entries,
+00:02:52.248 --> 00:02:55.637
+and a long arrow can fake a high number.
 
 39
-00:02:16.065 --> 00:02:18.781
-add them up, one number for the fit.
+00:02:55.637 --> 00:02:58.666
+Look at what your hands just learned.
 
 40
-00:02:18.781 --> 00:02:20.893
-Different aisle, same meter.
+00:02:58.666 --> 00:03:03.004
+Point the probe along a candidate and the sum climbs.
 
 41
-00:02:20.893 --> 00:02:25.118
-The multiply-and-add never asked what the numbers meant,
+00:03:03.004 --> 00:03:06.360
+Point it across and the sum dies to zero.
 
 42
-00:02:25.118 --> 00:02:27.758
-and that is exactly why it travels.
+00:03:06.360 --> 00:03:09.880
+Point it against and the sum goes negative.
 
 43
-00:02:28.197 --> 00:02:32.011
-Now the honest look, and guess before you watch.
+00:03:09.880 --> 00:03:14.873
+One multiply and add, and it behaves like a meter with agree,
 
 44
-00:02:32.011 --> 00:02:38.843
-Double c1's length exactly, leave its direction untouched, does the number double too?
+00:03:14.873 --> 00:03:17.411
+ignore, and oppose on the dial.
 
 45
-00:02:38.843 --> 00:02:40.194
-It does, exactly.
+00:03:17.411 --> 00:03:22.077
+So say it plainly: the dot product is a similarity meter.
 
 46
-00:02:40.194 --> 00:02:46.789
-Double one input, double the output: the meter is linear in each arrow you feed it.
+00:03:22.077 --> 00:03:24.287
+Two lists of numbers go in.
 
 47
-00:02:46.789 --> 00:02:49.331
-That clean scaling is the crack.
+00:03:24.287 --> 00:03:27.725
+One honest reading of alignment comes out.
 
 48
-00:02:49.331 --> 00:02:56.084
-Long songs would win on sheer loudness, and padded resumes would win on sheer length,
+00:03:27.725 --> 00:03:34.437
+And the reading tracks direction, because direction is all the sweep ever changed.
 
 49
-00:02:56.084 --> 00:02:59.024
-because size passes straight through.
+00:03:34.437 --> 00:03:36.338
+Time to close the loop.
 
 50
-00:02:59.024 --> 00:03:06.175
-For the walk home: what is the cheapest fix that keeps the direction and forgets the size,
+00:03:36.338 --> 00:03:40.306
+Rebuild the meter from memory: two arrows go in,
 
 51
-00:03:06.175 --> 00:03:10.306
-now that you know size scales the score in lockstep?
+00:03:40.306 --> 00:03:44.852
+and which two operations turn them into a single score?
 
 52
-00:03:10.306 --> 00:03:11.021
-Still up?
+00:03:44.852 --> 00:03:49.151
+Hold your answer while the opening scene comes back.
 
 53
-00:03:11.021 --> 00:03:14.517
+00:03:49.151 --> 00:03:54.358
+Your app played you a stranger's song and called it your taste.
+
+54
+00:03:54.358 --> 00:03:56.673
+You know what that took now.
+
+55
+00:03:56.673 --> 00:03:58.657
+Your taste is the probe.
+
+56
+00:03:58.657 --> 00:04:03.865
+The catalog is a shelf of candidates, thousands of arrows long.
+
+57
+00:04:03.865 --> 00:04:09.072
+And the machine in the data center is the thing you just built,
+
+58
+00:04:09.072 --> 00:04:15.107
+running multiply-and-add a few million times and handing you the top bar.
+
+59
+00:04:15.107 --> 00:04:19.157
+That was the whole mystery: your meter, at scale.
+
+60
+00:04:19.157 --> 00:04:22.925
+Now the honest look, and guess before you watch.
+
+61
+00:04:22.925 --> 00:04:25.358
+You saw length raise the score.
+
+62
+00:04:25.358 --> 00:04:26.614
+But by how much?
+
+63
+00:04:26.614 --> 00:04:29.989
+Double c1's length exactly, same direction,
+
+64
+00:04:29.989 --> 00:04:35.327
+just twice as long: does the score double exactly, or just drift up?
+
+65
+00:04:35.327 --> 00:04:36.897
+It doubles, exactly.
+
+66
+00:04:36.897 --> 00:04:41.528
+Four point two becomes eight point four, to the last digit.
+
+67
+00:04:41.528 --> 00:04:48.043
+Double one input, double the output: the meter is linear in each arrow you feed it.
+
+68
+00:04:48.043 --> 00:04:50.554
+That clean scaling is the crack.
+
+69
+00:04:50.554 --> 00:04:56.755
+A loud song wins on sheer loudness, whether or not the taste underneath agrees,
+
+70
+00:04:56.755 --> 00:05:00.837
+because size passes straight through the arithmetic.
+
+71
+00:05:01.490 --> 00:05:02.992
+Take it with you.
+
+72
+00:05:02.992 --> 00:05:06.438
+A song and a taste, folded into arrows,
+
+73
+00:05:06.438 --> 00:05:12.889
+collapsed by multiply-and-add into one score: a meter with a crack in it.
+
+74
+00:05:12.889 --> 00:05:19.604
+One more aisle, to make sure it lands: score yourself against a job posting.
+
+75
+00:05:19.604 --> 00:05:23.669
+Same multiply-and-add, one number for the fit.
+
+76
+00:05:23.669 --> 00:05:25.878
+Now invent your own pair.
+
+77
+00:05:25.878 --> 00:05:31.974
+Anything you can describe as two matching lists, the meter can score.
+
+78
+00:05:31.974 --> 00:05:39.927
+For the walk home: what is the cheapest fix that keeps the direction and forgets the size?
+
+79
+00:05:39.927 --> 00:05:40.722
+Still up?
+
+80
+00:05:40.722 --> 00:05:44.610
 The menu below has three ways to keep going.

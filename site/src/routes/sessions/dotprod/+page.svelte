@@ -7,6 +7,7 @@
 	import SecBeat03 from '../../../../../sessions/dotprod/page/sections/beat-03.md';
 	import SecBeat04 from '../../../../../sessions/dotprod/page/sections/beat-04.md';
 	import SecBeat04b from '../../../../../sessions/dotprod/page/sections/beat-04b.md';
+	import SecBeat05 from '../../../../../sessions/dotprod/page/sections/beat-05.md';
 	import extensionsData from '../../../../../sessions/dotprod/page/extensions.json';
 	import chaptersData from '../../../../../sessions/dotprod/page/video.json';
 
@@ -14,7 +15,7 @@
 	const chapters: { beatId: string; title: string; startSeconds: number }[] =
 		chaptersData.chapters ?? [];
 	const videoMinutes = Math.max(1, Math.round((chaptersData.videoSeconds ?? 0) / 60));
-	const sectionBeatIds = new Set<string>(["beat-01","beat-02","beat-03","beat-04","beat-04b"]);
+	const sectionBeatIds = new Set<string>(["beat-01","beat-02","beat-03","beat-04","beat-04b","beat-05"]);
 
 	function seek(seconds: number): void {
 		if (player) {
@@ -96,6 +97,9 @@
 	</section>
 	<section class="prose" aria-label="beat-04b" id="sec-beat-04b">
 		<SecBeat04b />
+	</section>
+	<section class="prose" aria-label="beat-05" id="sec-beat-05">
+		<SecBeat05 />
 	</section>
 
 	<section class="extensions" aria-label="extensions" id="extensions">

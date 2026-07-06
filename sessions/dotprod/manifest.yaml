@@ -51,6 +51,14 @@ artifacts:
   - path: video/audio/beat-04b.mp3
     status: valid
     note: "gitignored; cached by (voiceId, textHash)"
+  - path: video/scenes/scene_beat_05.py
+    status: valid
+  - path: media/beat-05.mp4
+    status: valid
+    note: "gitignored; hosting is open decision D-O1"
+  - path: video/audio/beat-05.mp3
+    status: valid
+    note: "gitignored; cached by (voiceId, textHash)"
   - path: page/sections/beat-01.md
     status: valid
   - path: page/sections/beat-02.md
@@ -60,6 +68,8 @@ artifacts:
   - path: page/sections/beat-04.md
     status: valid
   - path: page/sections/beat-04b.md
+    status: valid
+  - path: page/sections/beat-05.md
     status: valid
   - path: page/interactives/DotAlignment.svelte
     status: valid

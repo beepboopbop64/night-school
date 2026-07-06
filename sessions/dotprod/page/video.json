@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "videoSeconds": 194.53,
+  "videoSeconds": 344.67,
   "chapters": [
     {
       "beatId": "beat-01",
@@ -10,22 +10,27 @@
     {
       "beatId": "beat-02",
       "title": "Turn the probe and feel it",
-      "startSeconds": 24.4
+      "startSeconds": 60.597
     },
     {
       "beatId": "beat-03",
       "title": "Name the machine you just used",
-      "startSeconds": 77.065
+      "startSeconds": 175.637
     },
     {
       "beatId": "beat-04",
-      "title": "Same meter, different aisle",
-      "startSeconds": 115.998
+      "title": "Back to the data center",
+      "startSeconds": 214.437
     },
     {
       "beatId": "beat-04b",
       "title": "The honest look",
-      "startSeconds": 148.197
+      "startSeconds": 259.157
+    },
+    {
+      "beatId": "beat-05",
+      "title": "Take it with you",
+      "startSeconds": 301.49
     }
   ]
 }

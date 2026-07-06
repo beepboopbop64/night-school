@@ -8,39 +8,39 @@
     },
     {
       "path": "storyboard.yaml",
-      "sha256": "d25bd1b5f7da75ff2a324718875474383a3336f1681e45aac627aeb5123dd626"
+      "sha256": "74d58b5353c5c1c07ac95a2f34f52dbd714e87acd73d72b17649b1b53b1c58e3"
     },
     {
       "path": "script.md",
-      "sha256": "26bdb1a9d40b868789b58faf5e3dd7b1c5aa1c97ffbecc5df6b90e3913830de0"
+      "sha256": "83138022d544f4d1432eabf9ebe4a46e7db25805a4239729bfd4e0e11b14f62d"
     },
     {
       "path": "doc/lesson.md",
-      "sha256": "5d9728ff0bdf8415c86f8cd231f1d678ad3e2424f9af7ea0ddd91db045c4dc44"
+      "sha256": "a0b49b1367490edb2293941b7487100cc46f31c0afe97f6251f9caea4ca62bbd"
     },
     {
       "path": "extensions.yaml",
-      "sha256": "d02d71241672879c62a8edcaa2157f810e0f7c3ba6d09f45dbb29631c56a99de"
+      "sha256": "fa44e3890d5a5e7d50bd4d2eff8eaae77510dc0cfaf42a9abb72e5e3f819a3d5"
     },
     {
       "path": "media/beat-01.mp4",
-      "sha256": "6600dc697c24ed4f7e59647144077d3d09847391ac420601711854de63c8abc8"
+      "sha256": "40b23ba84b64ae41079016a7876261489bfc4a953b030144cf80cc425ccbc1fa"
     },
     {
       "path": "video/audio/beat-01.mp3",
-      "sha256": "35eea7a82b363689c5d635e9ea009d630a9788090ffd3bf9709878ed54fb3608"
+      "sha256": "fa401886b353f9a9c9109e3e946ec671326e9226b9360a51b578f00e27cf0559"
     },
     {
       "path": "media/beat-02.mp4",
-      "sha256": "3537ccba6d39025def2c341530b4ec9542d48ced7a4c228604d118b290b4dcd8"
+      "sha256": "1b769e03ed1b9f687687e4048ef83923549aaecb60ccd151b7fcb7e0ec41e268"
     },
     {
       "path": "video/audio/beat-02.mp3",
-      "sha256": "ef5c80d0882dba86be16b2398fe46fd78bd98268cac401f20908b1e41e319f7c"
+      "sha256": "d509e6bc23caffd43c5f07453f9b85050c0f13c2fbe9bb73d450f66a72e79f58"
     },
     {
       "path": "media/beat-03.mp4",
-      "sha256": "9f149584f1efc486d0a06d3435076e6fc589c43d1351f9ef07adbc02e793e870"
+      "sha256": "c59dd83afc19bfe3cdbeee7dd912ab53e02585e324714fe2173927d74126a49b"
     },
     {
       "path": "video/audio/beat-03.mp3",
@@ -48,27 +48,35 @@
     },
     {
       "path": "media/beat-04.mp4",
-      "sha256": "f79febfef9123660d422748694ea6ad41cf3e5668d13a066859bc632a794c60e"
+      "sha256": "3c048169395f0e2022eb4d16221e1ee8426e1699cf0c32b24b4fdeda545d3909"
     },
     {
       "path": "video/audio/beat-04.mp3",
-      "sha256": "b4d4a950542f4bb0e0bbcd6153052f7c4fb741bf3e6a666e745d1c7a8fa565d5"
+      "sha256": "b4a6f2313379eadd688253a36c293bd81fcfa87ecb2b6754e67f92dfd953acfa"
     },
     {
       "path": "media/beat-04b.mp4",
-      "sha256": "513ebc774dd6f10175a6329b784fa3eb8deae3b9eed523a2db78e04bb8d77487"
+      "sha256": "3165fc80c4c9788cba828ee37880d3c2dcbd5342743bd9d8d57608250580b62e"
     },
     {
       "path": "video/audio/beat-04b.mp3",
-      "sha256": "73c3fd3d30416a6bd060c682a83ddc70792ddf88c3f1c82402031678fa35e5fb"
+      "sha256": "9ad0e1b8d5f964046666d7fd70554a22a104564224e433f02620922e638f7f3f"
+    },
+    {
+      "path": "media/beat-05.mp4",
+      "sha256": "e69aae92dbbb77827f5870e285d4cbc8ed25a0926a00d5885626960f7fa901de"
+    },
+    {
+      "path": "video/audio/beat-05.mp3",
+      "sha256": "82b8b1479e969f62e6042581b94d6ecc63baab4715352f88994cbfd5e30b727e"
     },
     {
       "path": "page/sections/beat-01.md",
-      "sha256": "aabd04aab8a2e76f469909425e4657841a2f6e11213ca87a22f8316dc0bece90"
+      "sha256": "771935542d19949fde7454f1afccfe789e18f38aafed1a5e0c6f91222e57da19"
     },
     {
       "path": "page/sections/beat-02.md",
-      "sha256": "768e718a69ff5270d665ff9ed23dc0f73c04cba1c5dfe1ce7f530b7092b27c3d"
+      "sha256": "295981c5b60cd1317d4f0a1b8d3df0631b85a8763976ad89b9f55fb741744b6b"
     },
     {
       "path": "page/sections/beat-03.md",
@@ -76,37 +84,41 @@
     },
     {
       "path": "page/sections/beat-04.md",
-      "sha256": "7fb852d2f7133801477ab453e4404dd504134a99712851a097f3f96fef61560d"
+      "sha256": "8c6cf68539b8882812c7d16a3b7718ef87c53fe1d6079f71753fd9d95b794dd3"
     },
     {
       "path": "page/sections/beat-04b.md",
-      "sha256": "f689dfa1176973190d15ace2bac1aef74737568d9866dae32927e22615368660"
+      "sha256": "a913b0662a237daf78e947b2403307cc6a75d31ad9efb3a841bdb3ed0df67bf1"
+    },
+    {
+      "path": "page/sections/beat-05.md",
+      "sha256": "4d5bcaac8ba73728f0209b9c1ad09e533b0f33b4ff842c42c5b479868524f6ae"
     },
     {
       "path": "notebook/lesson.ipynb",
-      "sha256": "8d42d012e208b43034521bd2cc1c979388affa35a498759a8451e20be7b7093d"
+      "sha256": "bfdeff01864f63d9ee378af22b19bc46cae90d335cebf4e3a50d6722a7fcb0a7"
     }
   ],
   "outputs": [
     {
       "path": "media/session.mp4",
-      "sha256": "263e7e485933487846ee00414e4a5b42869c85fa7f20b56e97c0812284b90078"
+      "sha256": "3a538095330d3ef3fde5f072f10ddeaf3dfc41b04c5f480ed0b38b16e587d205"
     },
     {
       "path": "video/captions.vtt",
-      "sha256": "a9baf5ce92cc8f249f6a6ebd7eaa890ce5c97844bb754242a5aed22e6e2bb838"
+      "sha256": "689dc21d3f90fb641558649fb5facb56b1a0b693378f9140429705ae14b1f72b"
     },
     {
       "path": "page/video.json",
-      "sha256": "dc93ac4c14468c8b28074c3e66be0595e5b9f6ba02c9c4544c115377b48dbc1d"
+      "sha256": "2a248bea8ac2dbf34a32660c1110a7f065f91a0a2e050985cb388904ab1048f3"
     },
     {
       "path": "page/extensions.json",
-      "sha256": "f86140484071e22f7526b4ce320a38f38bebf086c9efd690c311875f17b287c0"
+      "sha256": "cf44c7db90f391f626e271a27e891cb7c10274b9751e28109a7a7fe69988d204"
     },
     {
       "path": "manifest.yaml",
-      "sha256": "d289d28018122d90488714748fdbb23233e1bb969605d6e09293b34e28095285"
+      "sha256": "7892bc247afdf5c300a4865baae7f1acb24abda6ec881b43c40bcaafc0d5b7d0"
     }
   ],
   "gate": {
@@ -145,42 +157,48 @@
   "iterations": 0,
   "costUsd": 0,
   "tier": "script",
-  "startedAt": "2026-07-05T15:06:29.956Z",
-  "endedAt": "2026-07-05T15:06:54.777Z",
+  "startedAt": "2026-07-06T00:50:50.023Z",
+  "endedAt": "2026-07-06T00:51:31.964Z",
   "transcript": "",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 194.53,
+    "videoSeconds": 344.67,
     "beats": [
       {
         "beatId": "beat-01",
         "startSeconds": 0,
-        "targetSeconds": 24.4,
-        "measuredSeconds": 24.4
+        "targetSeconds": 60.597,
+        "measuredSeconds": 60.6
       },
       {
         "beatId": "beat-02",
-        "startSeconds": 24.4,
-        "targetSeconds": 52.665,
-        "measuredSeconds": 52.666667
+        "startSeconds": 60.597,
+        "targetSeconds": 115.04,
+        "measuredSeconds": 115.066667
       },
       {
         "beatId": "beat-03",
-        "startSeconds": 77.065,
-        "targetSeconds": 38.933,
-        "measuredSeconds": 38.933333
+        "startSeconds": 175.637,
+        "targetSeconds": 38.8,
+        "measuredSeconds": 38.8
       },
       {
         "beatId": "beat-04",
-        "startSeconds": 115.998,
-        "targetSeconds": 32.199,
-        "measuredSeconds": 32.2
+        "startSeconds": 214.437,
+        "targetSeconds": 44.72,
+        "measuredSeconds": 44.733333
       },
       {
         "beatId": "beat-04b",
-        "startSeconds": 148.197,
-        "targetSeconds": 46.333,
-        "measuredSeconds": 46.333333
+        "startSeconds": 259.157,
+        "targetSeconds": 42.333,
+        "measuredSeconds": 42.333333
+      },
+      {
+        "beatId": "beat-05",
+        "startSeconds": 301.49,
+        "targetSeconds": 43.12,
+        "measuredSeconds": 43.133333
       }
     ],
     "ahaOk": {
