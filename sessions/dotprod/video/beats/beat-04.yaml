@@ -3,28 +3,30 @@ schemaVersion: 1
 session: dotprod
 beat:
   id: beat-04
-  title: Same meter, different aisle
+  title: Back to the data center
   narration: >-
-    Time to close the loop. Rebuild the meter from memory: two arrows go in, so
-    what two operations turn them into the score?
+    Time to close the loop. Rebuild the meter from memory: two arrows go in, and
+    which two operations turn them into a single score?
 
 
-    While you think, one detour worth naming. Swap the songs for a job posting.
-    Score yourself against what the role wants: multiply the matched entries,
-    add them up, one number for the fit. Different aisle, same meter. The
-    multiply-and-add never asked what the numbers meant, and that is exactly why
-    it travels.
-  visual: '[visual: dynamic-process | connect-to-reality] The card holds the
-    actual question in compressed form, "Rebuild the meter from memory. Which
-    two operations?", while the meter idles. The song columns swap for two
-    labeled "you" and "the role": Python hours, SQL reps, nights free, six rows
-    at full readable size with the whole frame to breathe; matched entries
-    multiply and pool into the same lilac readout on the same dial, and "two
-    arrows in, one number out" lands as the readout label. "Different aisle,
-    same meter" lands as the closing line.'
+    Hold your answer while the opening scene comes back. Your app played you a
+    stranger's song and called it your taste. You know what that took now. Your
+    taste is the probe. The catalog is a shelf of candidates, thousands of
+    arrows long. And the machine in the data center is the thing you just built,
+    running multiply-and-add a few million times and handing you the top bar.
+    That was the whole mystery: your meter, at scale.
+  visual: "[visual: connect | connect-to-reality] The retrieval card holds the
+    compressed question while the meter idles. Then the hook's frame returns:
+    the two tall stacks from beat-01 stand beside the arrows they folded into,
+    the amber probe takes the label 'your taste', and the candidate row extends
+    into a long periwinkle catalog shelf running off frame, arrows all the way
+    down. Score bars rank themselves under the shelf, the top bar slides forward
+    as the played song, and the data center readout from the opening fills its
+    question mark with the winning score."
   colors:
+    probe: data.heat
     candidates: data.observed
     score: data.params
     background: bg
     labels: text
-  durationTargetSeconds: 31.8
+  durationTargetSeconds: 44.7

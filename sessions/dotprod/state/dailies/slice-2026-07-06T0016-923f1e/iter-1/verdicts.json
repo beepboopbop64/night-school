@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one clear focus: the retrieval card (f1), the two stacks (f2), the amber 'your taste' probe against the periwinkle shelf (f3-f4), and the winning bar with the 0.87 readout (f5-f6), with earlier elements receding to supporting weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Elements accrete gradually across frames — stacks, then arrows, then score bars, then the readout — never exceeding four novel elements introduced together at equal weight.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The only text label, 'your taste', sits directly above the amber probe arrow it names; no boxed legend or color key appears.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "On-screen text is limited to the 'your taste' label on the amber arrow and the '0.87' score readout, both annotating visible referents; no spoken-register prose sits on the background.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "'your taste' and '0.87' are both rendered well above ~2.2% of frame height and are clearly readable.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The periwinkle shelf trails off deliberately with an ellipsis ('. . .') rather than being hard-cropped, and all focal elements — card, stacks, probe, readout — sit fully inside the frame.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Arrows, bars, the label, and the readout occupy distinct rows and columns with no overlapping or intersecting elements.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Colors stay consistent to their referents: observed/catalog candidates in periwinkle blue, the amber 'your taste' probe as attention, and the winning score bar/readout in lilac; no token semantics are inverted within the Night School cast.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every element — the retrieval card, arrows, score bars, and readout — carries a propositional role; no decorative mascots or ornaments appear.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The frames deliver the intent: the retrieval card idles (f1), the two stacks return beside their arrows with the amber probe labeled 'your taste' (f2-f3), the candidate row extends into a long periwinkle shelf running off frame (f3-f4), score bars rank under the shelf with the top slid forward (f5), and the readout fills with the winning 0.87 (f5-f6).",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The 'your taste' label sits directly on its probe, score bars sit beneath the arrows they score, and the 0.87 readout sits above the winning bar it reports.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Across the six frames the diagram builds in reasoning order — card, stacks, arrows, extended shelf, ranked bars, winning readout — as continuous accretion rather than a whole diagram cut in.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The composition keeps generous margins and a clear left-to-right, top-to-bottom reading order with ample negative space around the readout and shelf.",
+    "suggestion": ""
+  }
+]
