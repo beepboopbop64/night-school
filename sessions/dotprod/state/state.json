@@ -84,9 +84,9 @@
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"
     },
     "s4c.doc": {
-      "status": "running",
+      "status": "passed",
       "iter": 1,
-      "costUsd": 0.8953169999999999,
+      "costUsd": 1.244158,
       "receipt": "state/receipts/s4c.doc.receipt.json"
     },
     "s4d.extensions": {
