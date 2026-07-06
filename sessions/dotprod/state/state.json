@@ -78,7 +78,7 @@
       "receipt": "state/receipts/s4b.sec-beat-04.receipt.json"
     },
     "s4b.dot-alignment": {
-      "status": "flagged",
+      "status": "running",
       "iter": 5,
       "costUsd": 3.360289,
       "receipt": "state/receipts/s4b.dot-alignment.receipt.json"

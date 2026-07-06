@@ -271,26 +271,6 @@
 					</g>
 				{/each}
 
-				<!-- c1 length handle -->
-				<circle
-					cx={c1HandlePos.px}
-					cy={c1HandlePos.py}
-					r="22"
-					onpointermove={onArenaPointer}
-					class="handle length-handle"
-					class:active={dragging === 'length'}
-					class:pulse={challenge !== null && !((challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged))}
-					onpointerdown={(e) => startDrag('length', e)}
-					onkeydown={lengthKeys}
-					role="slider"
-					tabindex="0"
-					data-control="length-c1"
-					aria-label="c1 length"
-					aria-valuemin="0.5"
-					aria-valuemax="2"
-					aria-valuenow={f1(lengthC1)}
-				/>
-
 				<!-- probe on top -->
 				{#if true}
 					{@const a = arrow(probe.x, probe.y)}
@@ -312,6 +292,27 @@
 					aria-valuemin="0"
 					aria-valuemax="360"
 					aria-valuenow={Math.round(probeAngle)}
+				/>
+				<!-- Night Drive's length handle. AFTER the probe handle on purpose:
+				     the primary angle slider must be the FIRST [role="slider"] in
+				     the DOM (the drive contract grabs the first one). -->
+				<circle
+					cx={c1HandlePos.px}
+					cy={c1HandlePos.py}
+					r="22"
+					onpointermove={onArenaPointer}
+					class="handle length-handle"
+					class:active={dragging === 'length'}
+					class:pulse={challenge !== null && !((challenge === 'cheat' && cheatActive) || (challenge === 'short' && shortChanged))}
+					onpointerdown={(e) => startDrag('length', e)}
+					onkeydown={lengthKeys}
+					role="slider"
+					tabindex="0"
+					data-control="length-c1"
+					aria-label="c1 length"
+					aria-valuemin="0.5"
+					aria-valuemax="2"
+					aria-valuenow={f1(lengthC1)}
 				/>
 				<text x="14" y={S - 14} class="angle mono">taste at {Math.round(probeAngle)}°</text>
 			</svg>
@@ -428,6 +429,8 @@
 	.cand.sel .shaft { stroke-width: 3; }
 
 	.lab .arena text.lab { fill: var(--color-text); font-size: 13px; text-anchor: middle; dominant-baseline: middle; }
+	/* Decorative text must never swallow a pointer aimed at a handle. */
+	.arena text { pointer-events: none; }
 	.probe-lab { fill: var(--data-heat) !important; }
 	.angle { fill: color-mix(in oklab, var(--color-text) 45%, transparent); font-size: 12px; }
 

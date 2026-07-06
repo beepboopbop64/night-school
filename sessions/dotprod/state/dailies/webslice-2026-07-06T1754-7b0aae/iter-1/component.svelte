@@ -6,10 +6,10 @@
 
 	// The two entries mean something: x is how loud, y is how fast.
 	const CANDIDATES = [
-		{ id: 'c1', name: 'Night Drive', angle: 20 },
-		{ id: 'c2', name: 'Glass Rain', angle: 70 },
-		{ id: 'c3', name: 'Slow Burn', angle: 110 },
-		{ id: 'c4', name: 'Static', angle: 160 }
+		{ id: 'c1', name: 'c1', angle: 20 },
+		{ id: 'c2', name: 'c2', angle: 70 },
+		{ id: 'c3', name: 'c3', angle: 110 },
+		{ id: 'c4', name: 'c4', angle: 160 }
 	];
 
 	let challenge = $state<null | 'cheat' | 'short'>(null);
@@ -17,9 +17,9 @@
 	let solvedShort = $state(false);
 	const WHY = {
 		cheat:
-			'A song that is simply louder and faster everywhere piles up score without matching your mix. A raw meter overrates intense tracks, so a recommender built on it keeps pushing whatever is biggest.',
+			"A candidate that is simply bigger everywhere piles up score without matching the probe's direction. A raw dot product overrates large vectors, so a system built on it keeps preferring whatever is biggest.",
 		short:
-			'A quiet song that matches your mix exactly gets buried under bigger ones. Size is drowning direction, and fixing that is exactly where this lesson is headed.'
+			"A small candidate that matches the probe exactly gets buried under bigger ones. Size is drowning direction, and fixing that is exactly where this lesson is headed."
 	};
 	function startChallenge(kind: 'cheat' | 'short') {
 		// one click always re-arms: a solved card resets on first click,
@@ -117,9 +117,10 @@
 		};
 	}
 
-	function labelPos(angle: number, len: number, pad = 20) {
+	function labelPos(angle: number, len: number, pad = 20, tangentDeg = 0) {
 		const d = len * R + pad;
-		return { px: CX + d * Math.cos(rad(angle)), py: CY - d * Math.sin(rad(angle)) };
+		const a = angle + tangentDeg;
+		return { px: CX + d * Math.cos(rad(a)), py: CY - d * Math.sin(rad(a)) };
 	}
 
 	let arenaEl = $state<SVGSVGElement | null>(null);
@@ -176,11 +177,9 @@
 
 <svelte:window onpointerup={() => (dragging = null)} />
 
-<div class="lab" data-interactive="dot-meter">
+<div class="lab" data-interactive="dot-alignment">
 	<p class="invite">
-		Every song here is two numbers: how <em class="qw-loud">loud</em>, how <em class="qw-fast">fast</em>. So is your taste. Turn
-		the amber taste arrow and watch each song's match get <em>built</em>: the <span class="qw-loud">loud product</span> plus
-		the <span class="qw-fast">fast product</span>, stacked into one bar. Then grab Night Drive's round handle and change its size.
+		Turn the probe or drag c1's round handle: watch every score rise, fall, or flip sign, live.
 	</p>
 	<div class="challenges">
 		<button class="chal" class:active={challenge === 'cheat' && !solvedCheat} class:done={solvedCheat} onclick={() => startChallenge('cheat')}>
@@ -195,7 +194,7 @@
 		</button>
 		<button class="chal" class:active={challenge === 'short' && !solvedShort} class:done={solvedShort} onclick={() => startChallenge('short')}>
 			<span class="chal-t mono">challenge 02</span>
-			<span class="chal-g">Make the truest song lose</span>
+			<span class="chal-g">Make the truest match lose</span>
 			{#if solvedShort}
 				<span class="chal-s mono">✓ solved · click to retry</span>
 				<span class="chal-why">{WHY.short}</span>
@@ -229,22 +228,16 @@
 				<!-- axes, whisper-quiet, but named: the two entries ARE qualities -->
 				<line x1={CX - R - 14} y1={CY} x2={CX + R + 14} y2={CY} class="axis" />
 				<line x1={CX} y1={CY - R - 14} x2={CX} y2={CY + R + 14} class="axis" />
-				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono">loud</text>
-				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono">fast</text>
-				<g class="legend">
-					<line x1="16" y1="20" x2="34" y2="20" class="lg probe-stroke" />
-					<text x="40" y="24" class="lgt mono">your taste</text>
-					<line x1="16" y1="38" x2="34" y2="38" class="lg cand-stroke" />
-					<text x="40" y="42" class="lgt mono">songs</text>
-				</g>
+				<text x={CX + R + 18} y={CY - 6} class="axisq q-loud mono" aria-hidden="true">loud</text>
+				<text x={CX - 10} y={CY - R - 8} text-anchor="end" class="axisq q-fast mono" aria-hidden="true">fast</text>
 
 				<!-- coordinates made visible: dashed drops for probe and selected -->
 				{#each [{ x: probe.x, y: probe.y, cls: 'p' }, { x: sel.x, y: sel.y, cls: 'c' }] as d (d.cls)}
 					{@const tip = pt(d.x, d.y)}
 					<line x1={tip.px} y1={tip.py} x2={tip.px} y2={CY} class="drop {d.cls}" />
 					<line x1={tip.px} y1={tip.py} x2={CX} y2={tip.py} class="drop {d.cls}" />
-					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}">{f(d.x)}</text>
-					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end">{f(d.y)}</text>
+					<text x={cl(tip.px)} y={CY + (d.cls === 'p' ? 13 : 25)} class="coord mono {d.cls}" aria-hidden="true">{f(d.x)}</text>
+					<text x={CX - (d.cls === 'p' ? 4 : 32)} y={cl(tip.py) - 3} class="coord mono {d.cls}" text-anchor="end" aria-hidden="true">{f(d.y)}</text>
 				{/each}
 
 				<!-- candidates -->
@@ -261,45 +254,21 @@
 					>
 						<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft cand-stroke" />
 						<polygon points={a.head} class="cand-fill" />
-						{#if selected === r.id}
-							{@const lp = labelPos(r.angle, r.len, 26)}
-							<text
-								x={Math.min(Math.max(lp.px, 44), S - 48)}
-								y={Math.min(Math.max(lp.py, 16), S - 10)}
-								class="lab song-lab halo">{r.name}</text>
-						{/if}
+						{@const lp = labelPos(r.angle, r.len, 26)}
+						<text
+							x={Math.min(Math.max(lp.px, 44), S - 48)}
+							y={Math.min(Math.max(lp.py, 16), S - 10)}
+							class="lab song-lab halo"
+							class:sel-lab={selected === r.id}
+							aria-hidden="true">{r.name}</text>
 					</g>
 				{/each}
 
-				<!-- probe on top -->
-				{#if true}
-					{@const a = arrow(probe.x, probe.y)}
-					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
-					<polygon points={a.head} class="probe-fill" />
-				{/if}
-				<circle
-					cx={probeTip.px}
-					cy={probeTip.py}
-					r="22"
-					onpointermove={onArenaPointer}
-					class="handle probe-handle"
-					class:active={dragging === 'probe'}
-					onpointerdown={(e) => startDrag('probe', e)}
-					onkeydown={probeKeys}
-					role="slider"
-					tabindex="0"
-					aria-label="probe angle in degrees"
-					aria-valuemin="0"
-					aria-valuemax="360"
-					aria-valuenow={Math.round(probeAngle)}
-				/>
-				<!-- Night Drive's length handle. AFTER the probe handle on purpose:
-				     the primary angle slider must be the FIRST [role="slider"] in
-				     the DOM (the drive contract grabs the first one). -->
+				<!-- c1 length handle -->
 				<circle
 					cx={c1HandlePos.px}
 					cy={c1HandlePos.py}
-					r="22"
+					r="32"
 					onpointermove={onArenaPointer}
 					class="handle length-handle"
 					class:active={dragging === 'length'}
@@ -314,7 +283,36 @@
 					aria-valuemax="2"
 					aria-valuenow={f1(lengthC1)}
 				/>
-				<text x="14" y={S - 14} class="angle mono">taste at {Math.round(probeAngle)}°</text>
+
+				<!-- probe on top -->
+				{#if true}
+					{@const a = arrow(probe.x, probe.y)}
+					{@const plp = labelPos(probeAngle, 1, 30, 16)}
+					<line {...{ x1: a.shaft.x1, y1: a.shaft.y1, x2: a.shaft.x2, y2: a.shaft.y2 }} class="shaft probe-stroke" />
+					<polygon points={a.head} class="probe-fill" />
+					<text
+						x={Math.min(Math.max(plp.px, 44), S - 48)}
+						y={Math.min(Math.max(plp.py, 16), S - 10)}
+						class="lab probe-lab halo"
+						aria-hidden="true">probe</text>
+				{/if}
+				<circle
+					cx={probeTip.px}
+					cy={probeTip.py}
+					r="32"
+					onpointermove={onArenaPointer}
+					class="handle probe-handle"
+					class:active={dragging === 'probe'}
+					onpointerdown={(e) => startDrag('probe', e)}
+					onkeydown={probeKeys}
+					role="slider"
+					tabindex="0"
+					aria-label="probe angle in degrees"
+					aria-valuemin="0"
+					aria-valuemax="360"
+					aria-valuenow={Math.round(probeAngle)}
+				/>
+				<text x="14" y={S - 14} class="angle mono" aria-hidden="true">probe at {Math.round(probeAngle)}°</text>
 			</svg>
 		</div>
 
@@ -327,7 +325,7 @@
 					onmouseenter={() => (hovered = r.id)}
 					onmouseleave={() => (hovered = null)}
 					onclick={() => (selected = r.id)}
-					aria-label={`${r.name} score ${f(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
+					aria-label={`${r.name} score ${f1(r.score)}${leaders.includes(r.id) && !tied ? ', leading' : ''}`}
 				>
 					<span class="row-id">{r.name}</span>
 					<span class="bar" style="--h: {barH}px">
@@ -346,15 +344,15 @@
 								: barH / 2 - segH(r.py) - (r.px < 0 ? segH(r.px) : 0)}px"
 						></span>
 					</span>
-					<span class="row-score mono" class:neg={r.score < 0}>{f(r.score)}</span>
+					<span class="row-score mono" class:neg={r.score < 0}>{f1(r.score)}</span>
 					{#if leaders.includes(r.id) && !tied}<span class="leads mono">leads</span>{/if}
 				</button>
 			{/each}
 			{#if tied}<span class="tie mono">tied</span>{/if}
 			{#if cheatVictim}
-				<span class="flag mono">⚑ {cheatVictim.name} matches your taste better, but Night Drive outscores it on size</span>
+				<span class="flag mono">⚑ {cheatVictim.name} matches the probe better, but {c1row.name} outscores it on size</span>
 			{:else if shortChanged}
-				<span class="flag short mono">⚑ Night Drive matches best, but {leaderName} wins on size</span>
+				<span class="flag short mono">⚑ {c1row.name} matches best, but {leaderName} wins on size</span>
 			{/if}
 		</div>
 	</div>
@@ -381,7 +379,7 @@
 			<span class="op">+</span>
 			<span class="segy-c">{f(sel.py)}</span>
 			<span class="op">=</span>
-			<span class="score-c">{f(sel.score)}</span>
+			<span class="score-c">{f1(sel.score)}</span>
 		</span>
 		<span class="strip-note">
 			multiply the matched entries, add the products. The <span class="qw-loud">lilac slice</span>
@@ -429,8 +427,6 @@
 	.cand.sel .shaft { stroke-width: 3; }
 
 	.lab .arena text.lab { fill: var(--color-text); font-size: 13px; text-anchor: middle; dominant-baseline: middle; }
-	/* Decorative text must never swallow a pointer aimed at a handle. */
-	.arena text { pointer-events: none; }
 	.probe-lab { fill: var(--data-heat) !important; }
 	.angle { fill: color-mix(in oklab, var(--color-text) 45%, transparent); font-size: 12px; }
 
@@ -462,7 +458,8 @@
 	.hint { margin: 0.7rem 0 0; font-size: 0.78rem; opacity: 0.55; }
 	.why { margin: 0.7rem 0 0; font-size: 0.88rem; color: color-mix(in oklab, var(--color-text) 82%, transparent); }
 	.axisq { fill: color-mix(in oklab, var(--color-text) 40%, transparent); font-size: 10px; }
-	.song-lab { font-size: 11.5px; }
+	.song-lab { font-size: 11.5px; opacity: 0.68; }
+	.song-lab.sel-lab { opacity: 1; font-weight: 600; }
 	.halo { paint-order: stroke; stroke: var(--color-bg); stroke-width: 4px; }
 	.lg { stroke-width: 2.4; stroke-linecap: round; }
 	.lgt { fill: color-mix(in oklab, var(--color-text) 55%, transparent); font-size: 10.5px; }
@@ -490,6 +487,10 @@
 	}
 	@media (prefers-reduced-motion: no-preference) {
 		.handle.pulse { animation: hpulse 1.5s ease-in-out infinite; }
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.handle.pulse { animation: none; }
+		.cand { transition: none; }
 	}
 	@keyframes hpulse {
 		0%, 100% { stroke-width: 1.5; }
