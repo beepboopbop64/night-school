@@ -1063,3 +1063,4 @@
 {"ts":"2026-07-06T01:06:18.543Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"node_started","data":{"reason":"input-changed:manifest.yaml"}}
 {"ts":"2026-07-06T01:06:20.630Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"gate_result","data":{"passed":true,"checks":[{"id":"packet.serves-locally","pass":true},{"id":"packet.notes-preseeded","pass":true},{"id":"packet.flags-written","pass":true}]}}
 {"ts":"2026-07-06T01:06:20.631Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"node_completed","data":{"costUsd":0,"durationMs":2080}}
+{"ts":"2026-07-06T01:06:20.976Z","runId":"run-2026-07-05T2333-aa9bec","node":"s7.packet","event":"commit","data":{"sha":"1d88aefa93ebf86f883338db8b88b46283615458"}}
