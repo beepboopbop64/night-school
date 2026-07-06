@@ -1,0 +1,93 @@
+[
+  {
+    "ruleId": "V1",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each frame carries one load-bearing move: frame 1 the fold-down to a dot, frames 4-5 the probe sweep with the score bars as the current work while the candidate arrows anchor above.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V2",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The busiest frame (4) holds one amber probe, four periwinkle candidates as a group, and four lilac bars as a group, built up across prior frames rather than dumped at once.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V3",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Each arrow is labeled beside it (probe, c1-c4) and each score bar sits under its own c1-c4 label with its numeric readout attached; no legend or key is used.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V4",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All on-screen text is labels or numeric readouts (timbre/tempo values, c1-c4, signed scores) attached to visible arrows and bars; no free-floating prose.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V5",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The mono numerics and labels are comfortably readable, though the faint half-rendered shapes near center-left in frame 3 are illegible ghosts rather than intended text.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V6",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "All arrows, labels, and bars sit inside the frame with margin in every frame; nothing is truncated by an edge.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V7",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The 'c1' label sits immediately adjacent to the amber probe head in frames 2 and 5-6 but does not overlap it, and no text is stamped across an unrelated line.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V8",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The probe is consistently amber (attention), the four candidates periwinkle (observed), and the score bars/readouts lilac (parameters), matching Night School token semantics throughout.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V9",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "Every deliberate element carries content; the only questionable marks are faint leftover shapes in frame 3, which read as an incomplete render rather than decoration.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V10",
+    "pass": true,
+    "severity": "blocking",
+    "evidence": "The promised instrument is on screen: amber probe, four periwinkle candidates, per-candidate lilac score bars with mono readouts, the probe sweeping while bars climb and die, and c1 stretched longer in the final frames.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V11",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "Each score bar is placed in a column beneath its named candidate and each label hugs its arrow, keeping claims near their objects.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V12",
+    "pass": true,
+    "severity": "advisory",
+    "evidence": "The sequence builds in reasoning order — fold-down to a point, then arrows, then bars, then sweep and stretch — reading as a continuous construction rather than cuts.",
+    "suggestion": ""
+  },
+  {
+    "ruleId": "V13",
+    "pass": false,
+    "severity": "advisory",
+    "evidence": "Frame 3 contains faint half-rendered ghost shapes (a dim square and dim text near center-left) beside the +2.5 chip, muddying the reading order and negative space.",
+    "suggestion": "Remove or fully resolve the faint leftover chip/text elements in frame 3 so only the intended worked recipe chip is visible."
+  }
+]

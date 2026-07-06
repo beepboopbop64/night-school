@@ -4,29 +4,29 @@
   "inputs": [
     {
       "path": "storyboard.yaml#beat-02",
-      "sha256": "73f262919de1285f15d2e91502f8c4edd454a3516e427c9950854999a7908f7c"
+      "sha256": "c0f1edc3acfad0062c4e0f48a9a638189152efca09a369bd6508968f7874b520"
     },
     {
       "path": "script.md#beat-02",
-      "sha256": "4b817f3b661cf0cfe8cdd99673fdf69fdd0b9ae216aefd9f85f83b968a27681b"
+      "sha256": "68408f211973e9956553393f21cc4544c0beeba8492066ee40b5828cffd03749"
     },
     {
       "path": "video/audio/beat-02.mp3",
-      "sha256": "ef5c80d0882dba86be16b2398fe46fd78bd98268cac401f20908b1e41e319f7c"
+      "sha256": "d509e6bc23caffd43c5f07453f9b85050c0f13c2fbe9bb73d450f66a72e79f58"
     }
   ],
   "outputs": [
     {
       "path": "video/beats/beat-02.yaml",
-      "sha256": "44b23badca5babac42b2173c1986d736f8e92e6454a4786acd8aea640c2240d4"
+      "sha256": "6b2cee3d02d9f8fd3b8a5f3c7e7486fb51de3160de92f853bb26e2c5cfdc4db1"
     },
     {
       "path": "video/scenes/scene_beat_02.py",
-      "sha256": "f72cdb78b56ce20df3c95d887f0642e30ece6cc7bcb56db3f863dfeeb6461169"
+      "sha256": "97c65bffb647953d1250b9d2e2db490078d40ec5ba5b3130b4b683e26ef01974"
     },
     {
       "path": "media/beat-02.mp4",
-      "sha256": "3537ccba6d39025def2c341530b4ec9542d48ced7a4c228604d118b290b4dcd8"
+      "sha256": "1b769e03ed1b9f687687e4048ef83923549aaecb60ccd151b7fcb7e0ec41e268"
     }
   ],
   "gate": {
@@ -48,34 +48,34 @@
     ]
   },
   "iterations": 2,
-  "costUsd": 1.8491805000000001,
+  "costUsd": 0.6636432999999999,
   "tier": "opus",
-  "startedAt": "2026-07-05T04:31:41.759Z",
-  "endedAt": "2026-07-05T04:50:06.026Z",
-  "transcript": "state/dailies/slice-2026-07-05T0431-1cd8dc",
+  "startedAt": "2026-07-05T23:41:54.734Z",
+  "endedAt": "2026-07-06T00:03:57.214Z",
+  "transcript": "state/dailies/slice-2026-07-05T2341-2ae346",
   "promptSha": "",
   "meta": {
-    "videoSeconds": 52.665367,
-    "audioSeconds": 52.56,
-    "toleranceSeconds": 5.26,
+    "videoSeconds": 114.399678,
+    "audioSeconds": 115.04,
+    "toleranceSeconds": 11.5,
     "perIteration": [
       {
         "iter": 1,
-        "outcome": "bbox-failed",
-        "coderCostUsd": 1.3765887,
+        "outcome": "duration-failed",
+        "coderCostUsd": 0,
         "irisCostUsd": 0,
-        "wallMs": 896624,
+        "wallMs": 964326,
         "fingerprints": [
-          "bbox:bbox.out-of-frame:Text:c1"
+          "duration:short"
         ],
         "replanWasForced": false
       },
       {
         "iter": 2,
         "outcome": "iris-passed",
-        "coderCostUsd": 0.28594080000000005,
-        "irisCostUsd": 0.186651,
-        "wallMs": 207432,
+        "coderCostUsd": 0.40085879999999996,
+        "irisCostUsd": 0.2627845,
+        "wallMs": 357905,
         "fingerprints": [],
         "replanWasForced": false
       }
