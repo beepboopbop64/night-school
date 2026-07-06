@@ -1,6 +1,6 @@
 ## What happens when you actually turn the probe?
 
-Scoring by hand fell apart because you were juggling too many qualities at once with no clean way to fold them into one number. Here's the move that fixes that. Treat a taste as an arrow: each entry is one quality, and the length is how hard the song leans that way. In the widget below, your taste is the amber probe arrow, and the four songs (Night Drive, Glass Rain, Slow Burn, Static) are the candidate arrows beside it.
+Scoring by hand fell apart because you were juggling too many qualities at once with no clean way to fold them into one number. Here's the move that fixes that. Treat a taste as an arrow: each entry is one quality, and the length is how hard the song leans that way. In the widget below, the amber probe is your taste, and the four songs (Night Drive, Glass Rain, Slow Burn, Static) are the candidate arrows beside it.
 
 The recipe is almost embarrassingly simple. Multiply the two arrows entry by entry, then add up all those products. That single sum is the score. Concretely, with numbers you can check: say each arrow is just two entries, how loud and how fast. Your taste leans (2, 1), two parts loud to one part fast, and a song sits at (1, 3). Multiply the matched entries and add the products: 2×1 + 1×3 = 5. That 5 is the score. Run it once by hand before you go on; everything below is only ever doing this.
 

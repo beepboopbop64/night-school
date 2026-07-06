@@ -50,11 +50,12 @@ So a big score means two songs are the same, right? Now watch what length does. 
 
 [visual: connect] The three probe positions replay as stills: along, across, against, each with its frozen score. The stills collapse into one lilac meter dial whose needle swings from oppose through ignore to agree as the sweep replays.
 
+[visual: symbol-sense] The aha sentence trues up on screen, freehand to exact with a mint glow. The lilac mono annotation, a . b, trues up next to the worked chip's numerals, two and one dot one and three, so the symbol is anchored to numbers the viewer already computed.
+
 Look at what your hands just learned. Point the probe along a candidate and the sum climbs. Point it across and the sum dies to zero. Point it against and the sum goes negative. One multiply and add, and it behaves like a meter with agree, ignore, and oppose on the dial.
 
-[visual: symbol-sense] The aha sentence trues up on screen, freehand to exact with a mint glow. A small lilac mono annotation, a . b, sits on the score readout.
+So say it plainly: the dot product is a similarity meter. In symbols, a dot b: multiply the matching entries, add the products. The taste and song from the worked chip, two and one dot one and three, come out to five. Same recipe, now wearing its symbol. Two lists of numbers go in. One honest reading of alignment comes out. And the reading tracks direction, because direction is all the sweep ever changed.
 
-So say it plainly: the dot product is a similarity meter. Two lists of numbers go in. One honest reading of alignment comes out. And the reading tracks direction, because direction is all the sweep ever changed.
 
 ## beat-04: Back to the data center
 

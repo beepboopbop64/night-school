@@ -147,15 +147,19 @@ beats:
       candidate and the sum climbs. Point it across and the sum dies to zero.
       Point it against and the sum goes negative. One multiply and add, and it
       behaves like a meter with agree, ignore, and oppose on the dial. So say it
-      plainly: the dot product is a similarity meter. Two lists of numbers go
-      in. One honest reading of alignment comes out. And the reading tracks
-      direction, because direction is all the sweep ever changed."
+      plainly: the dot product is a similarity meter. In symbols, a dot b:
+      multiply the matching entries, add the products. The taste and song from
+      the worked chip, two and one dot one and three, come out to five. Same
+      recipe, now wearing its symbol. Two lists of numbers go in. One honest
+      reading of alignment comes out. And the reading tracks direction, because
+      direction is all the sweep ever changed."
     visual: "[visual: connect | symbol-sense] The three probe positions replay as
       stills: along, across, against, each with its frozen score. The stills
       collapse into one lilac meter dial whose needle swings from oppose through
       ignore to agree as the probe sweep replays. The aha sentence trues up on
-      screen, freehand to exact with a mint glow. A small lilac mono annotation,
-      a . b, sits on the score readout."
+      screen, freehand to exact with a mint glow. The lilac mono annotation, a .
+      b, trues up next to the worked chip's numerals, two and one dot one and
+      three, so the symbol is anchored to numbers the viewer already computed."
     tracks:
       - video
       - page
@@ -178,7 +182,7 @@ beats:
       labels: text
     majorReveal: true
     misconceptionBeat: false
-    estimatedSeconds: 36
+    estimatedSeconds: 50
   - id: beat-04
     title: Back to the data center
     narration: "Time to close the loop. Rebuild the meter from memory: two arrows

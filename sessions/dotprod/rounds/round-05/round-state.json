@@ -2,9 +2,174 @@
   "schemaVersion": 1,
   "session": "dotprod",
   "round": "round-05",
-  "phase": "triaged",
-  "appliedOrders": [],
-  "applyCostUsd": 0,
+  "phase": "applied",
+  "appliedOrders": [
+    "r05-n01",
+    "r05-n03",
+    "r05-n04",
+    "r05-n06"
+  ],
+  "applyCostUsd": 0.873725,
   "triageCostUsd": 0.32030000000000003,
-  "orderResults": []
+  "preHashes": {
+    "files": {
+      "video/beats/beat-01.yaml": "8cca5c0ac1cd4e6e497a060a5b675bf4143b06e1a43508ecd5e9e02dc6a08409",
+      "video/scenes/scene_beat_01.py": "259cd24181f2416438b8eedcba8b621bc7bdfc753d2af962aab5c7ab2e6db34d",
+      "media/beat-01.mp4": "40b23ba84b64ae41079016a7876261489bfc4a953b030144cf80cc425ccbc1fa",
+      "video/beats/beat-02.yaml": "6b2cee3d02d9f8fd3b8a5f3c7e7486fb51de3160de92f853bb26e2c5cfdc4db1",
+      "video/scenes/scene_beat_02.py": "97c65bffb647953d1250b9d2e2db490078d40ec5ba5b3130b4b683e26ef01974",
+      "media/beat-02.mp4": "1b769e03ed1b9f687687e4048ef83923549aaecb60ccd151b7fcb7e0ec41e268",
+      "video/beats/beat-03.yaml": "7edc30dc4a109587258be11bbc64a7e930217915f282e6c4a905bded7b5ccd53",
+      "video/scenes/scene_beat_03.py": "9784ed7bd10b3ac60ba2f9e1fb1e2ea9618555045ef5efa5a88be7bec7cbec63",
+      "media/beat-03.mp4": "c59dd83afc19bfe3cdbeee7dd912ab53e02585e324714fe2173927d74126a49b",
+      "video/beats/beat-04.yaml": "ba2ff08ae800215b3b8a65f2a1eac6c08de1442c5ac0d6ea513b2e764f966d27",
+      "video/scenes/scene_beat_04.py": "1dd8def559633aa698d1d79e35c3dc5291e6977f2b693aeadf5861eac40ca781",
+      "media/beat-04.mp4": "3c048169395f0e2022eb4d16221e1ee8426e1699cf0c32b24b4fdeda545d3909",
+      "video/beats/beat-04b.yaml": "9088ec70a35301110904ec718e175e57708315be914c5e77acc00d65fe2ca900",
+      "video/scenes/scene_beat_04b.py": "1a89b84420353367443b965a7492530198a48199a8e2ba2dda620ffe30dcdffa",
+      "media/beat-04b.mp4": "3165fc80c4c9788cba828ee37880d3c2dcbd5342743bd9d8d57608250580b62e",
+      "video/beats/beat-05.yaml": "ed1b18ca0a08aeece82798bcec9119e0b7ce1ff9678e805a4930858ce7ad5792",
+      "video/scenes/scene_beat_05.py": "e22e594ddee39118a567921dba32dda50e9dd11116547d9c40688e04cb913c87",
+      "media/beat-05.mp4": "e69aae92dbbb77827f5870e285d4cbc8ed25a0926a00d5885626960f7fa901de",
+      "page/interactives/DotAlignment.svelte": "7ecc5b073eb3e302c0019408bdcaf401ffb0759946a3d55a05adb86bd8ecf979",
+      "page/sections/beat-01.md": "771935542d19949fde7454f1afccfe789e18f38aafed1a5e0c6f91222e57da19",
+      "page/sections/beat-02.md": "295981c5b60cd1317d4f0a1b8d3df0631b85a8763976ad89b9f55fb741744b6b",
+      "page/sections/beat-03.md": "1535b52444e3b0f6ee8ffd9f1f489f69e861fe46589169952c2c907d4254d2a2",
+      "page/sections/beat-04.md": "8c6cf68539b8882812c7d16a3b7718ef87c53fe1d6079f71753fd9d95b794dd3",
+      "page/sections/beat-04b.md": "a913b0662a237daf78e947b2403307cc6a75d31ad9efb3a841bdb3ed0df67bf1",
+      "page/sections/beat-05.md": "4d5bcaac8ba73728f0209b9c1ad09e533b0f33b4ff842c42c5b479868524f6ae",
+      "doc/lesson.md": "a0b49b1367490edb2293941b7487100cc46f31c0afe97f6251f9caea4ca62bbd",
+      "extensions.yaml": "fa44e3890d5a5e7d50bd4d2eff8eaae77510dc0cfaf42a9abb72e5e3f819a3d5",
+      "notebook/lesson.ipynb": "bfdeff01864f63d9ee378af22b19bc46cae90d335cebf4e3a50d6722a7fcb0a7",
+      "video/audio/beat-01.mp3": "fa401886b353f9a9c9109e3e946ec671326e9226b9360a51b578f00e27cf0559",
+      "video/audio/beat-02.mp3": "d509e6bc23caffd43c5f07453f9b85050c0f13c2fbe9bb73d450f66a72e79f58",
+      "video/audio/beat-03.mp3": "5b4da1b214e90439a0a23478201bda262c420d02f3c4d7ab4eefcedef11c0498",
+      "video/audio/beat-04.mp3": "b4a6f2313379eadd688253a36c293bd81fcfa87ecb2b6754e67f92dfd953acfa",
+      "video/audio/beat-04b.mp3": "9ad0e1b8d5f964046666d7fd70554a22a104564224e433f02620922e638f7f3f",
+      "video/audio/beat-05.mp3": "82b8b1479e969f62e6042581b94d6ecc63baab4715352f88994cbfd5e30b727e",
+      "media/session.mp4": "3a538095330d3ef3fde5f072f10ddeaf3dfc41b04c5f480ed0b38b16e587d205",
+      "video/captions.vtt": "689dc21d3f90fb641558649fb5facb56b1a0b693378f9140429705ae14b1f72b",
+      "page/video.json": "2a248bea8ac2dbf34a32660c1110a7f065f91a0a2e050985cb388904ab1048f3",
+      "page/extensions.json": "cf44c7db90f391f626e271a27e891cb7c10274b9751e28109a7a7fe69988d204",
+      "manifest.yaml": "7892bc247afdf5c300a4865baae7f1acb24abda6ec881b43c40bcaafc0d5b7d0",
+      "rounds/round-05/screening-report.md": "56bb66b6d426b5da2a1f0db14a9b6c1adb95b5d2bfa8790543e543f9c0fea0b5",
+      "rounds/round-05/packet/README.md": "41a526df6ad69b5cfc11ed983cad00fe6df04f62572ae25466101a33b32c6d73",
+      "rounds/round-05/notes.md": "1020eaf4a9fd0a93c8d42bebb51e1eca4394f3d4426031bbe805c33b22fa738a",
+      "rounds/round-05/flags.md": "ced8fe9425549cd6b06eeb1c1d1ed082089e8e5074c25c1dbf85040ca1da7651"
+    },
+    "fragments": {
+      "storyboard.yaml#beat-01": "8b67ba127661aab8ff544922b7d4078b5080058d054b1649e9dde540d5268a14",
+      "script.md#beat-01": "68f7f031fabf8f707a84e8bf76dcb8e52f8ac09795d120cb7837da86363bce04",
+      "storyboard.yaml#beat-02": "c0f1edc3acfad0062c4e0f48a9a638189152efca09a369bd6508968f7874b520",
+      "script.md#beat-02": "68408f211973e9956553393f21cc4544c0beeba8492066ee40b5828cffd03749",
+      "storyboard.yaml#beat-03": "0ca0457503ee196cdea6ecf378f55e06da090d5e7c7fb1d386b74e4afb76af6e",
+      "script.md#beat-03": "2a5966c2bebae6e35f1d29616fe58339a50881391868cdfea1ee56fc15366bbd",
+      "storyboard.yaml#beat-04": "3a2a174f087521f290145c999e2f1224faf7afc191fb3e93954fb2263a710db8",
+      "script.md#beat-04": "fbd7e1e9a03b33f0ec9177075ac67b42ae32af67418675885da4a7eb163bbfb9",
+      "storyboard.yaml#beat-04b": "6f35947a6734a70749438e419b0d196bfa5fa205997bbe7618dfadc13d12fa08",
+      "script.md#beat-04b": "87a0f42c94f5d0002c115ade322b714c15169bbb8d489035c01e029b1e57177c",
+      "storyboard.yaml#beat-05": "38a068481d927413689956406b6547e11b76858e257cf259dff546cb1746cd65",
+      "script.md#beat-05": "ae5784affafe8bbcb91f4b357ee1d5212803b22027ba00374f5926c5bdb634cf"
+    },
+    "producers": {
+      "video/beats/beat-01.yaml": "s4a.beat-01",
+      "video/scenes/scene_beat_01.py": "s4a.beat-01",
+      "media/beat-01.mp4": "s4a.beat-01",
+      "video/beats/beat-02.yaml": "s4a.beat-02",
+      "video/scenes/scene_beat_02.py": "s4a.beat-02",
+      "media/beat-02.mp4": "s4a.beat-02",
+      "video/beats/beat-03.yaml": "s4a.beat-03",
+      "video/scenes/scene_beat_03.py": "s4a.beat-03",
+      "media/beat-03.mp4": "s4a.beat-03",
+      "video/beats/beat-04.yaml": "s4a.beat-04",
+      "video/scenes/scene_beat_04.py": "s4a.beat-04",
+      "media/beat-04.mp4": "s4a.beat-04",
+      "video/beats/beat-04b.yaml": "s4a.beat-04b",
+      "video/scenes/scene_beat_04b.py": "s4a.beat-04b",
+      "media/beat-04b.mp4": "s4a.beat-04b",
+      "video/beats/beat-05.yaml": "s4a.beat-05",
+      "video/scenes/scene_beat_05.py": "s4a.beat-05",
+      "media/beat-05.mp4": "s4a.beat-05",
+      "page/interactives/DotAlignment.svelte": "s4b.dot-alignment",
+      "page/sections/beat-01.md": "s4b.sec-beat-01",
+      "page/sections/beat-02.md": "s4b.sec-beat-02",
+      "page/sections/beat-03.md": "s4b.sec-beat-03",
+      "page/sections/beat-04.md": "s4b.sec-beat-04",
+      "page/sections/beat-04b.md": "s4b.sec-beat-04b",
+      "page/sections/beat-05.md": "s4b.sec-beat-05",
+      "doc/lesson.md": "s4c.doc",
+      "extensions.yaml": "s4d.extensions",
+      "notebook/lesson.ipynb": "s4e.notebook",
+      "video/audio/beat-01.mp3": "s4f.beat-01",
+      "video/audio/beat-02.mp3": "s4f.beat-02",
+      "video/audio/beat-03.mp3": "s4f.beat-03",
+      "video/audio/beat-04.mp3": "s4f.beat-04",
+      "video/audio/beat-04b.mp3": "s4f.beat-04b",
+      "video/audio/beat-05.mp3": "s4f.beat-05",
+      "media/session.mp4": "s5.assemble",
+      "video/captions.vtt": "s5.assemble",
+      "page/video.json": "s5.assemble",
+      "page/extensions.json": "s5.assemble",
+      "manifest.yaml": "s5.assemble",
+      "rounds/round-05/screening-report.md": "s6.screening",
+      "rounds/round-05/packet/README.md": "s7.packet",
+      "rounds/round-05/notes.md": "s7.packet",
+      "rounds/round-05/flags.md": "s7.packet"
+    }
+  },
+  "orderResults": [
+    {
+      "id": "r05-n01",
+      "status": "applied",
+      "summary": "Beat-03: added the four symbol-anchoring narration lines right after the aha sentence and trued up the a·b annotation next to the worked chip's numerals; aha sentence and all else untouched.",
+      "filesChanged": [
+        "script.md",
+        "script.md#beat-03",
+        "storyboard.yaml",
+        "storyboard.yaml#beat-03"
+      ],
+      "costUsd": 0.112805
+    },
+    {
+      "id": "r05-n02",
+      "status": "failed",
+      "summary": "r05-n02: application failed twice: merge: edit target not found in page/sections/beat-01.md: \"Try answering it first; it's genuinely harder than it sounds.\"",
+      "filesChanged": [],
+      "costUsd": 0
+    },
+    {
+      "id": "r05-n03",
+      "status": "applied",
+      "summary": "Aligned beat-02's interactive intro to the judge's ruling phrasing (amber probe = your taste); worked calculation before prediction, recipe-referenced prediction, story names, and split splice were already in place and are recorded as applied.",
+      "filesChanged": [
+        "page/sections/beat-02.md"
+      ],
+      "costUsd": 0.49196
+    },
+    {
+      "id": "r05-n04",
+      "status": "applied",
+      "summary": "Moved the formal definition and re-run (2,1)·(1,3)=5 to directly after the aha sentence so the symbol arrives carrying the calculation.",
+      "filesChanged": [
+        "page/sections/beat-03.md"
+      ],
+      "costUsd": 0.14942
+    },
+    {
+      "id": "r05-n05",
+      "status": "failed",
+      "summary": "r05-n05: application failed twice: merge: edit target not found in page/sections/beat-04b.md: \"c1\"",
+      "filesChanged": [],
+      "costUsd": 0
+    },
+    {
+      "id": "r05-n06",
+      "status": "applied",
+      "summary": "Moved the score meter cards below the arena so the arena renders at full card width (620px), and required arrows stay clearly legible at every viewport.",
+      "filesChanged": [
+        "page/interactives/dot-alignment.yaml"
+      ],
+      "costUsd": 0.11954000000000001
+    }
+  ]
 }
